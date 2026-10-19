@@ -53,6 +53,11 @@ import vision from '@google-cloud/vision';
 import { logInfo, logError } from '../shared/utils';
 import { screenUploadAgainstHashLists } from './takedowns/uploadScreening';
 import { createModerationDecision } from './moderationDecisions';
+import {
+  PROFILE_PHOTO_PATH,
+  enforceAfterVerdict,
+  firestoreFaceRulePorts,
+} from './mainPhotoFaceRule';
 
 const db = admin.firestore();
 // Constructed lazily: this module is loaded by index.js along with every other
@@ -167,9 +172,15 @@ export const moderateUploadedImage = onObjectFinalized(
     } catch (e) {
       logError(`[moderate] verdict read failed for ${objectPath}`, e);
     }
-    // Only a MAIN profile photo must contain a face; everything else is
-    // checked for explicit content alone.
+    // `requireFace` is CLIENT metadata (set for a personal account's main
+    // photo upload): it only decides whether a missing face rejects the upload
+    // right away (upload UX). It is NOT the enforcement point - a modified
+    // client can send false. The server records the face count of every
+    // public profile photo and mainPhotoFaceRule.ts enforces the owner rule
+    // whenever photoUrls[0] changes (see the header there).
     const requireFace = (meta.requireFace || '').toLowerCase() === 'true';
+    const recordFaces = requireFace
+      || (visibility === 'public' && PROFILE_PHOTO_PATH.test(objectPath));
 
     const bucket = admin.storage().bucket(event.data.bucket);
     const gcsUri = `gs://${event.data.bucket}/${objectPath}`;
@@ -207,13 +218,14 @@ export const moderateUploadedImage = onObjectFinalized(
     try {
       // ONE annotate call for all three features. SafeSearch is billed free
       // when requested alongside Label Detection, so labels cost nothing extra
-      // here and give admins context on a rejection.
+      // here and give admins context on a rejection. FACE_DETECTION is billed
+      // per image as its own feature; it runs for public profile photos only.
       const [result] = await client().annotateImage({
         image: { source: { imageUri: gcsUri } },
         features: [
           { type: 'SAFE_SEARCH_DETECTION' },
           { type: 'LABEL_DETECTION', maxResults: 10 },
-          ...(requireFace ? [{ type: 'FACE_DETECTION' as const, maxResults: 5 }] : []),
+          ...(recordFaces ? [{ type: 'FACE_DETECTION' as const, maxResults: 5 }] : []),
         ],
       });
 
@@ -308,16 +320,32 @@ export const moderateUploadedImage = onObjectFinalized(
         }
       }
 
-      await docRef.set({
+      const verdict: Record<string, unknown> = {
         status: approved ? 'approved' : 'rejected',
         userId,
         objectPath,
         reasons,
+        ...(recordFaces ? { faces: faces.length, hasFace: faces.length > 0 } : {}),
+      };
+      await docRef.set({
+        ...verdict,
         checkedAt: admin.firestore.FieldValue.serverTimestamp(),
         // Short-lived: the uploader reads this once. A TTL policy on this field
         // keeps the collection from growing without bound.
         expiresAt: admin.firestore.Timestamp.fromMillis(Date.now() + 24 * 3600 * 1000),
       });
+
+      // Race cover for the main-photo face rule: the URL may already be the
+      // profile's photoUrls[0] (a client that did not wait for this verdict,
+      // or an overwrite of an approved object). Acts only on a faceless /
+      // rejected verdict for a profiles/{uid}/photos/ object.
+      if (PROFILE_PHOTO_PATH.test(objectPath)) {
+        try {
+          await enforceAfterVerdict(objectPath, verdict, firestoreFaceRulePorts());
+        } catch (e) {
+          logError(`[moderate] main-photo face rule failed for ${objectPath}`, e);
+        }
+      }
 
       logInfo(`[moderate] ${approved ? 'APPROVED' : 'REJECTED'} ${objectPath}` +
         (approved ? '' : ` reasons=${reasons.join(',')}`));

@@ -38865,6 +38865,24 @@ abstract class AppLocalizations {
   /// **'A gift from GreenGo'**
   String get srvGiftFromGreenGo;
 
+  /// No description provided for @srvMainPhotoFaceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your main photo needs your face'**
+  String get srvMainPhotoFaceTitle;
+
+  /// No description provided for @srvMainPhotoFaceMovedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your main profile photo must clearly show your face. A photo without a visible face was moved out of the first position.'**
+  String get srvMainPhotoFaceMovedBody;
+
+  /// No description provided for @srvMainPhotoFaceNeededBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your main profile photo must clearly show your face. Please add a photo of yourself and make it your main photo.'**
+  String get srvMainPhotoFaceNeededBody;
+
   /// No description provided for @srvAccountNotApprovedTitle.
   ///
   /// In en, this message translates to:

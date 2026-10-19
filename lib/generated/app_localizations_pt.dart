@@ -22696,6 +22696,18 @@ class AppLocalizationsPt extends AppLocalizations {
   String get srvGiftFromGreenGo => 'Um presente da GreenGo';
 
   @override
+  String get srvMainPhotoFaceTitle =>
+      'A sua foto principal precisa do seu rosto';
+
+  @override
+  String get srvMainPhotoFaceMovedBody =>
+      'A sua foto de perfil principal tem de mostrar claramente o seu rosto. Uma foto sem rosto visível foi retirada da primeira posição.';
+
+  @override
+  String get srvMainPhotoFaceNeededBody =>
+      'A sua foto de perfil principal tem de mostrar claramente o seu rosto. Adicione uma foto sua e defina-a como foto principal.';
+
+  @override
   String get srvAccountNotApprovedTitle => 'Conta não aprovada';
 
   @override
@@ -49363,6 +49375,18 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get srvGiftFromGreenGo => 'Um presente da GreenGo';
+
+  @override
+  String get srvMainPhotoFaceTitle =>
+      'Sua foto principal precisa mostrar seu rosto';
+
+  @override
+  String get srvMainPhotoFaceMovedBody =>
+      'Sua foto de perfil principal precisa mostrar seu rosto com clareza. Uma foto sem rosto visível foi retirada da primeira posição.';
+
+  @override
+  String get srvMainPhotoFaceNeededBody =>
+      'Sua foto de perfil principal precisa mostrar seu rosto com clareza. Adicione uma foto sua e defina-a como foto principal.';
 
   @override
   String get srvAccountNotApprovedTitle => 'Conta não aprovada';

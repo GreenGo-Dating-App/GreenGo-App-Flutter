@@ -12107,6 +12107,9 @@
   "srvPaymentFailedTitle": "Payment failed",
   "srvSubscriptionPaymentFailedBody": "Your subscription payment failed. Please update your payment method to keep your membership active.",
   "srvGiftFromGreenGo": "A gift from GreenGo",
+  "srvMainPhotoFaceTitle": "Your main photo needs your face",
+  "srvMainPhotoFaceMovedBody": "Your main profile photo must clearly show your face. A photo without a visible face was moved out of the first position.",
+  "srvMainPhotoFaceNeededBody": "Your main profile photo must clearly show your face. Please add a photo of yourself and make it your main photo.",
   "srvAccountNotApprovedTitle": "Account not approved",
   "srvAccountNotApprovedReason": "Your account could not be approved. Reason: {reason}",
   "@srvAccountNotApprovedReason": {
