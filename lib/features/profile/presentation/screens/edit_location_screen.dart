@@ -6,9 +6,11 @@ import 'package:geolocator/geolocator.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/services/place_search_service.dart';
 import '../../../../core/services/web_location_fallback.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
+import '../../../../core/widgets/location_picker.dart';
 import '../../../../generated/app_localizations.dart';
 import 'onboarding/onboarding_value_labels.dart';
 import '../../data/models/profile_model.dart' show normalizeCountryName;
@@ -22,9 +24,14 @@ import '../../../../core/utils/user_error.dart';
 class EditLocationScreen extends StatefulWidget {
 
   const EditLocationScreen({
-    required this.profile, super.key,
+    required this.profile, super.key, this.placeSearchRepository,
   });
   final Profile profile;
+
+  /// Search/geocoding backend for the map picker (tests); defaults to
+  /// [PlaceSearchRepository.instance].
+  @visibleForTesting
+  final PlaceSearchRepository? placeSearchRepository;
 
   @override
   State<EditLocationScreen> createState() => _EditLocationScreenState();
@@ -203,6 +210,46 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
     });
   }
 
+  /// Search an address or pick a point on the map (the same picker events and
+  /// experiences use), prefilled with the current location. The result goes
+  /// into the same [profile_entity.Location] the GPS button fills, so it is
+  /// saved through the usual path (exact coordinates -> profiles_private).
+  Future<void> _pickOnMap() async {
+    final current = _selectedLocation;
+    final hasCurrent = current != null &&
+        !(current.latitude == 0 && current.longitude == 0);
+    final picked = await Navigator.of(context).push<PickedPlace>(
+      MaterialPageRoute<PickedPlace>(
+        builder: (_) => LocationPickerScreen(
+          initialLat: hasCurrent ? current.latitude : null,
+          initialLng: hasCurrent ? current.longitude : null,
+          initialAddress: hasCurrent ? current.displayAddress : null,
+          title: AppLocalizations.of(context)!.profileEditLocation,
+          repository: widget.placeSearchRepository,
+        ),
+      ),
+    );
+    if (picked == null || !mounted) return;
+    final city = picked.city.trim();
+    final country = normalizeCountryName(picked.country.trim());
+    // Public label stays city-level (never the picked street address); with
+    // no city/country, a coordinate label that the public copy strips.
+    final displayAddress = city.isNotEmpty
+        ? (country.isNotEmpty ? '$city, $country' : city)
+        : (country.isNotEmpty
+            ? country
+            : '${picked.lat.toStringAsFixed(4)}, ${picked.lng.toStringAsFixed(4)}');
+    setState(() {
+      _selectedLocation = profile_entity.Location(
+        latitude: picked.lat,
+        longitude: picked.lng,
+        city: city,
+        country: country,
+        displayAddress: displayAddress,
+      );
+    });
+  }
+
   void _saveChanges() {
     if (_isSaving) return;
 
@@ -354,6 +401,44 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
                     ),
                     const SizedBox(height: 16),
                   ],
+                  // Search an address or pick on the map (owner 2026-10-19).
+                  InkWell(
+                    key: const ValueKey('edit-location-search-field'),
+                    onTap: _isLoadingLocation ? null : _pickOnMap,
+                    borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                    child: Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 14, vertical: 14),
+                      decoration: BoxDecoration(
+                        color: AppColors.backgroundDark,
+                        borderRadius:
+                            BorderRadius.circular(AppDimensions.radiusM),
+                        border: Border.all(
+                            color: AppColors.richGold.withOpacity(0.5)),
+                      ),
+                      child: Row(
+                        children: [
+                          const Icon(Icons.search,
+                              color: AppColors.richGold, size: 22),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Text(
+                              AppLocalizations.of(context)!
+                                  .profileLocationSearchOrPick,
+                              style: const TextStyle(
+                                color: AppColors.textSecondary,
+                                fontSize: 15,
+                              ),
+                            ),
+                          ),
+                          const Icon(Icons.map_outlined,
+                              color: AppColors.richGold, size: 22),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 12),
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton.icon(

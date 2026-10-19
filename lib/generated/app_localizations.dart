@@ -22236,30 +22236,6 @@ abstract class AppLocalizations {
   /// **'Add featured image'**
   String get storefrontAddFeaturedImage;
 
-  /// No description provided for @storefrontProfileImage.
-  ///
-  /// In en, this message translates to:
-  /// **'Profile image'**
-  String get storefrontProfileImage;
-
-  /// No description provided for @storefrontProfileImageSubtitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Your avatar, shown next to your business name.'**
-  String get storefrontProfileImageSubtitle;
-
-  /// No description provided for @storefrontAddProfileImage.
-  ///
-  /// In en, this message translates to:
-  /// **'Add profile image'**
-  String get storefrontAddProfileImage;
-
-  /// No description provided for @storefrontReplaceProfileImage.
-  ///
-  /// In en, this message translates to:
-  /// **'Replace profile image'**
-  String get storefrontReplaceProfileImage;
-
   /// No description provided for @preferenceBusinessOnly.
   ///
   /// In en, this message translates to:
@@ -43458,12 +43434,6 @@ abstract class AppLocalizations {
   /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
   ///
   /// In en, this message translates to:
-  /// **'Cover photo'**
-  String get bcCheckCover;
-
-  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
-  ///
-  /// In en, this message translates to:
   /// **'Verified badge'**
   String get bcCheckVerification;
 
@@ -45159,22 +45129,16 @@ abstract class AppLocalizations {
   /// **'Businesses'**
   String get discoverySegmentBusinesses;
 
-  /// Storefront editor: inline error when saving a business storefront with an empty gallery (at least one image is required).
+  /// Business Center Settings checklist: REQUIRED item, the storefront featured (cover) image.
   ///
   /// In en, this message translates to:
-  /// **'Add at least one gallery photo. The first one is your business photo in Discover.'**
-  String get storefrontGalleryRequiredError;
-
-  /// Business Center Settings checklist: REQUIRED item, at least one storefront gallery photo.
-  ///
-  /// In en, this message translates to:
-  /// **'Storefront photo'**
+  /// **'Featured image'**
   String get bcCheckStorefrontPhoto;
 
-  /// Business Center Overview 'Action needed' row when the storefront gallery is empty.
+  /// Business Center Overview 'Action needed' row when the storefront featured (cover) image is missing.
   ///
   /// In en, this message translates to:
-  /// **'Add a storefront photo: it is your business photo in Discover'**
+  /// **'Add a featured image: it is your business photo in Discover'**
   String get bcTodoStorefrontPhoto;
 
   /// Business storefront header: primary button next to Share that opens the business chat.
@@ -45194,6 +45158,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Enter your business profile name.'**
   String get businessProfileNameRequiredError;
+
+  /// Storefront editor: shown when saving without a featured (cover) image.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a featured image. It\'s your business photo in Discover and the top of your storefront.'**
+  String get storefrontFeaturedRequiredError;
+
+  /// Edit location: tappable field that opens the address search / map picker.
+  ///
+  /// In en, this message translates to:
+  /// **'Search address or pick on map'**
+  String get profileLocationSearchOrPick;
 }
 
 class _AppLocalizationsDelegate

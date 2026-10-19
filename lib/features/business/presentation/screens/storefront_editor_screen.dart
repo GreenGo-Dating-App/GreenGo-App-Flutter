@@ -38,24 +38,25 @@ import '../../domain/business_name.dart';
 /// (`ProfileUpdateRequested`), so no new repository/datasource wiring is needed.
 ///
 /// Images are curated in three distinct roles:
-///   * Featured/cover (hero) image → `Profile.coverImageUrl`
-///   * Gallery → `Profile.galleryImages`
-///   * Profile image/avatar → `Profile.photoUrls.first`
+///   * Featured/cover (hero) image → `Profile.coverImageUrl` (REQUIRED: it is
+///     the business tile photo in Discover and the top of the storefront)
+///   * Gallery → `Profile.galleryImages` (optional)
+/// The storefront NEVER touches the owner's personal avatar (`photoUrls`).
 /// Uploads flow through a single bloc event that returns only a URL, so the
 /// pending upload's target is tracked in [_pendingUploadTarget] before dispatch
-/// and applied in the listener — this keeps the three uploads from mixing up.
-enum _UploadTarget { featured, gallery, avatar }
+/// and applied in the listener — this keeps the uploads from mixing up.
+enum _UploadTarget { featured, gallery }
 
 class StorefrontEditorScreen extends StatefulWidget {
   const StorefrontEditorScreen({required this.profile, super.key});
 
   final Profile profile;
 
-  /// Business accounts must keep at least ONE storefront gallery image: the
-  /// first one is the business's tile photo in Discover and the storefront
-  /// hero fallback, so an empty gallery would show an empty tile/hero.
-  static bool hasRequiredGallery(List<String> galleryImages) =>
-      galleryImages.any((u) => u.trim().isNotEmpty);
+  /// Business accounts must have a FEATURED (cover) image: it is the
+  /// business's tile photo in Discover and the top of the storefront.
+  /// Empty string is the "removed" sentinel, so it counts as missing.
+  static bool hasRequiredFeatured(String? coverImageUrl) =>
+      (coverImageUrl ?? '').trim().isNotEmpty;
 
   @override
   State<StorefrontEditorScreen> createState() => _StorefrontEditorScreenState();
@@ -85,28 +86,22 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   // Featured/cover (hero) image URL. Empty string is the "removed" sentinel so
   // the removal survives the copyWith(coverImageUrl:) null-coalescing on save.
   String? _coverImageUrl;
-  // Profile image/avatar URL (mirrors photoUrls.first).
-  String? _avatarUrl;
 
   // Which image slot the in-flight upload belongs to (null = no upload).
   _UploadTarget? _pendingUploadTarget;
   bool _saving = false;
-  // Inline "add at least one photo" error under the gallery (set on a save
-  // attempt with an empty gallery, cleared as soon as an image is added).
-  bool _galleryRequiredError = false;
+  // Inline "add a featured image" error under the Featured image section (set
+  // on a save attempt without a cover, cleared as soon as one is uploaded).
+  bool _featuredRequiredError = false;
 
   bool get _uploadingFeatured => _pendingUploadTarget == _UploadTarget.featured;
   bool get _uploadingGallery => _pendingUploadTarget == _UploadTarget.gallery;
-  bool get _uploadingAvatar => _pendingUploadTarget == _UploadTarget.avatar;
 
   @override
   void initState() {
     super.initState();
     _galleryImages = List<String>.from(widget.profile.galleryImages);
     _coverImageUrl = widget.profile.coverImageUrl;
-    _avatarUrl = widget.profile.photoUrls.isNotEmpty
-        ? widget.profile.photoUrls.first
-        : null;
 
     // Seed 7 weekday rows, hydrating from any saved entries.
     final saved = <int, OpeningHours>{
@@ -151,8 +146,8 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   // ─── Shared image picker + upload dispatch ──────────────────────────────
   /// Picks an image and dispatches it through the shared validated upload path.
   /// [target] disambiguates which slot the returned URL belongs to (applied in
-  /// the bloc listener). [isMainPhoto] gates the validation: the avatar (main)
-  /// requires a face + no NSFW; featured/gallery only run the NSFW check.
+  /// the bloc listener). [isMainPhoto] gates the validation (face + NSFW);
+  /// storefront images are never the main photo, so only NSFW runs.
   Future<void> _pickAndUpload(_UploadTarget target,
       {required bool isMainPhoto}) async {
     if (_pendingUploadTarget != null) return; // one upload at a time
@@ -187,10 +182,6 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
     // actually persists (the display treats empty as "no cover").
     setState(() => _coverImageUrl = '');
   }
-
-  // ─── Profile image / avatar ─────────────────────────────────────────────
-  Future<void> _pickAvatarImage() =>
-      _pickAndUpload(_UploadTarget.avatar, isMainPhoto: true);
 
   // ─── Gallery ────────────────────────────────────────────────────────────
   Future<void> _addGalleryImage() async {
@@ -274,23 +265,12 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
         .where((t) => t.isNotEmpty)
         .toList();
 
-    // Apply the (optionally replaced) avatar into slot 0 of photoUrls, which is
-    // what the storefront and discovery surfaces read as the business avatar.
-    final photoUrls = List<String>.from(widget.profile.photoUrls);
-    if (_avatarUrl != null && _avatarUrl!.isNotEmpty) {
-      if (photoUrls.isEmpty) {
-        photoUrls.add(_avatarUrl!);
-      } else {
-        photoUrls[0] = _avatarUrl!;
-      }
-    }
-
     final businessName =
         BusinessName.normalize(_businessNameController.text);
     return widget.profile.copyWith(
       // Empty (only in a nested, not-yet-validated draft) keeps the stored one.
       businessName: businessName.isNotEmpty ? businessName : null,
-      photoUrls: photoUrls,
+      // photoUrls (the owner's personal avatar) is deliberately NOT touched.
       galleryImages: _galleryImages,
       // '' sentinel persists a removal; a URL persists the new cover; null
       // leaves the existing value untouched via copyWith's null-coalescing.
@@ -313,17 +293,18 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   void _save() {
     final l10n = AppLocalizations.of(context)!;
     final nameOk = BusinessName.isValid(_businessNameController.text);
-    final galleryOk = StorefrontEditorScreen.hasRequiredGallery(_galleryImages);
-    if (!nameOk || !galleryOk) {
+    final featuredOk =
+        StorefrontEditorScreen.hasRequiredFeatured(_coverImageUrl);
+    if (!nameOk || !featuredOk) {
       setState(() {
         _businessNameError = !nameOk;
-        _galleryRequiredError = !galleryOk;
+        _featuredRequiredError = !featuredOk;
       });
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(!nameOk
               ? l10n.businessProfileNameRequiredError
-              : l10n.storefrontGalleryRequiredError),
+              : l10n.storefrontFeaturedRequiredError),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -387,13 +368,10 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
               switch (target!) {
                 case _UploadTarget.featured:
                   _coverImageUrl = state.photoUrl;
+                  _featuredRequiredError = false;
                   break;
                 case _UploadTarget.gallery:
                   _galleryImages.add(state.photoUrl);
-                  _galleryRequiredError = false;
-                  break;
-                case _UploadTarget.avatar:
-                  _avatarUrl = state.photoUrl;
                   break;
               }
             });
@@ -407,7 +385,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             );
             SafeNavigation.pop(context);
           } else if (state is ProfilePhotoValidationFailed) {
-            // Image rejected (NSFW / no face for avatar) — clear the spinner.
+            // Image rejected (NSFW) — clear the spinner.
             if (_pendingUploadTarget != null && mounted) {
               setState(() => _pendingUploadTarget = null);
             }
@@ -442,36 +420,22 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             const SizedBox(height: 28),
 
             // Featured / cover (hero) image
-            _sectionHeader(
-                l10n.storefrontFeaturedImage, l10n.storefrontFeaturedImageSubtitle),
+            _sectionHeader('${l10n.storefrontFeaturedImage} *',
+                l10n.storefrontFeaturedImageSubtitle),
             const SizedBox(height: 12),
             _featuredImagePicker(l10n),
-            const SizedBox(height: 28),
-
-            // Profile image / avatar
-            _sectionHeader(
-                l10n.storefrontProfileImage, l10n.storefrontProfileImageSubtitle),
-            const SizedBox(height: 12),
-            _avatarPicker(l10n),
-            const SizedBox(height: 28),
-
-            // Gallery
-            _sectionHeader('${l10n.businessGallery} *',
-                l10n.storefrontGallerySubtitle),
-            const SizedBox(height: 12),
-            _galleryGrid(l10n),
-            if (_galleryRequiredError &&
-                !StorefrontEditorScreen.hasRequiredGallery(_galleryImages)) ...[
+            if (_featuredRequiredError &&
+                !StorefrontEditorScreen.hasRequiredFeatured(_coverImageUrl)) ...[
               const SizedBox(height: 8),
               Row(
-                key: const Key('storefront_gallery_required_error'),
+                key: const Key('storefront_featured_required_error'),
                 children: [
                   const Icon(Icons.error_outline,
                       color: AppColors.errorRed, size: 16),
                   const SizedBox(width: 6),
                   Expanded(
                     child: Text(
-                      l10n.storefrontGalleryRequiredError,
+                      l10n.storefrontFeaturedRequiredError,
                       style: const TextStyle(
                           color: AppColors.errorRed, fontSize: 12),
                     ),
@@ -479,6 +443,13 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
                 ],
               ),
             ],
+            const SizedBox(height: 28),
+
+            // Gallery (optional)
+            _sectionHeader(
+                l10n.businessGallery, l10n.storefrontGallerySubtitle),
+            const SizedBox(height: 12),
+            _galleryGrid(l10n),
             const SizedBox(height: 28),
 
             // Opening hours
@@ -929,76 +900,6 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
           child: Icon(icon, color: Colors.white, size: 18),
         ),
       );
-
-  // ─── Profile image / avatar picker ──────────────────────────────────────
-  Widget _avatarPicker(AppLocalizations l10n) {
-    final hasAvatar = _avatarUrl != null && _avatarUrl!.isNotEmpty;
-    return Row(
-      children: [
-        Stack(
-          children: [
-            Container(
-              width: 96,
-              height: 96,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: AppColors.backgroundCard,
-                border: Border.all(
-                    color: AppColors.richGold.withOpacity(0.5), width: 2),
-                image: hasAvatar
-                    ? DecorationImage(
-                        image: NetworkImage(_avatarUrl!), fit: BoxFit.cover)
-                    : null,
-              ),
-              child: _uploadingAvatar
-                  ? const Center(
-                      child: SizedBox(
-                        width: 24,
-                        height: 24,
-                        child: CircularProgressIndicator(
-                            strokeWidth: 2, color: AppColors.richGold),
-                      ),
-                    )
-                  : (hasAvatar
-                      ? null
-                      : const Icon(Icons.storefront,
-                          color: AppColors.richGold, size: 36)),
-            ),
-            Positioned(
-              bottom: 0,
-              right: 0,
-              child: GestureDetector(
-                onTap: _pendingUploadTarget != null ? null : _pickAvatarImage,
-                child: Container(
-                  padding: const EdgeInsets.all(6),
-                  decoration: const BoxDecoration(
-                    color: AppColors.richGold,
-                    shape: BoxShape.circle,
-                  ),
-                  child: const Icon(Icons.edit,
-                      color: AppColors.deepBlack, size: 16),
-                ),
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(width: 16),
-        Expanded(
-          child: TextButton.icon(
-            onPressed: _pendingUploadTarget != null ? null : _pickAvatarImage,
-            icon: const Icon(Icons.add_photo_alternate,
-                color: AppColors.richGold, size: 18),
-            label: Text(
-              hasAvatar
-                  ? l10n.storefrontReplaceProfileImage
-                  : l10n.storefrontAddProfileImage,
-              style: const TextStyle(color: AppColors.richGold),
-            ),
-          ),
-        ),
-      ],
-    );
-  }
 
   Widget _galleryGrid(AppLocalizations l10n) {
     return Wrap(

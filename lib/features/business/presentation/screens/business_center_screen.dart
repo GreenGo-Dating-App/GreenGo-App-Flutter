@@ -431,7 +431,6 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
                 CompanyItem.traderStatus => l.bcCheckTrader,
                 CompanyItem.hours => l.bcCheckHours,
                 CompanyItem.contact => l.bcCheckContact,
-                CompanyItem.cover => l.bcCheckCover,
                 CompanyItem.verification => l.bcCheckVerification,
               };
           Future<void> open(CompanyItem i) => switch (i) {

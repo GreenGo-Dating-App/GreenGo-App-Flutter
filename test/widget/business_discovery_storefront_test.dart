@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
@@ -87,20 +89,33 @@ void main() {
   );
 
   group('1. Discover business tile photo', () {
-    test('first gallery image, legacy fallback to the profile photo', () {
-      expect(NetworkGridCard.mainPhotoUrl(business, isBusiness: true), 'https://example.com/g1.jpg');
-      expect(NetworkGridCard.mainPhotoUrl(business.copyWith(galleryImages: const []), isBusiness: true),
+    test('featured (cover) image, else first gallery image, else the profile photo', () {
+      expect(NetworkGridCard.mainPhotoUrl(business, isBusiness: true), 'https://example.com/elena_cover.jpg');
+      final noCover = business.copyWith(coverImageUrl: '');
+      expect(NetworkGridCard.mainPhotoUrl(noCover, isBusiness: true), 'https://example.com/g1.jpg');
+      expect(NetworkGridCard.mainPhotoUrl(noCover.copyWith(galleryImages: const []), isBusiness: true),
           'https://example.com/profile.jpg');
+      // Cover first, then the gallery (no duplicate of the cover).
+      expect(
+          NetworkGridCard.tilePhotoUrls(
+              business.copyWith(galleryImages: const ['https://example.com/elena_cover.jpg', 'https://example.com/g2.jpg']),
+              isBusiness: true),
+          ['https://example.com/elena_cover.jpg', 'https://example.com/g2.jpg']);
       // People tiles are unchanged.
       expect(NetworkGridCard.mainPhotoUrl(business, isBusiness: false), 'https://example.com/profile.jpg');
     });
 
-    testWidgets('business tile renders the first gallery image', (t) async {
-      expect(await _tileImage(t, business, isBusiness: true), 'https://example.com/g1.jpg');
+    testWidgets('business tile renders the featured (cover) image', (t) async {
+      expect(await _tileImage(t, business, isBusiness: true), 'https://example.com/elena_cover.jpg');
     });
 
-    testWidgets('business tile with an empty gallery falls back to the profile photo', (t) async {
-      expect(await _tileImage(t, business.copyWith(galleryImages: const []), isBusiness: true),
+    testWidgets('business tile without a cover falls back to the first gallery image', (t) async {
+      expect(await _tileImage(t, business.copyWith(coverImageUrl: ''), isBusiness: true),
+          'https://example.com/g1.jpg');
+    });
+
+    testWidgets('business tile without cover and gallery falls back to the profile photo', (t) async {
+      expect(await _tileImage(t, business.copyWith(coverImageUrl: '', galleryImages: const []), isBusiness: true),
           'https://example.com/profile.jpg');
     });
 
@@ -134,12 +149,18 @@ void main() {
       expect(BusinessName.displayFor(business.copyWith(businessName: '  ')), 'Elena Marco');
     });
 
-    testWidgets('own tile in Businesses mode: business name + first gallery image, no age', (t) async {
+    testWidgets('own tile in Businesses mode: business name + featured image, no age', (t) async {
       final url = await _tileImage(t, business, isBusiness: true, isSelf: true);
-      expect(url, 'https://example.com/g1.jpg');
+      expect(url, 'https://example.com/elena_cover.jpg');
       final name = t.widget<Text>(find.byKey(const ValueKey('network-grid-card-name'))).data;
       expect(name, "Elena's Cafe");
       expect(find.textContaining('Elena Marco'), findsNothing);
+    });
+
+    test('Discover AppBar has no mode title text (owner 2026-10-19)', () {
+      final src = File('lib/features/explore/presentation/screens/network_discovery_screen.dart').readAsStringSync();
+      expect(src.contains('discover-mode-title'), isFalse);
+      expect(src.contains('l10n.exploreBusinessAccounts'), isFalse);
     });
 
     testWidgets('person tile keeps "Name, age"', (t) async {
@@ -149,23 +170,25 @@ void main() {
     });
   });
 
-  group('2. mandatory storefront photo', () {
-    test('checklist: storefront photo is a REQUIRED item', () {
+  group('2. mandatory FEATURED image', () {
+    test('checklist: featured image is a REQUIRED item (gallery does not count)', () {
       expect(CompanyItem.storefrontPhoto.required, isTrue);
       expect(companyChecklist(business)[CompanyItem.storefrontPhoto], isTrue);
-      final empty = business.copyWith(galleryImages: const ['  ']);
+      final empty = business.copyWith(coverImageUrl: ' ');
+      expect(empty.galleryImages, isNotEmpty);
       expect(companyChecklist(empty)[CompanyItem.storefrontPhoto], isFalse);
       expect(missingRequired(companyChecklist(empty)), contains(CompanyItem.storefrontPhoto));
       expect(missingRequired(companyChecklist(business)), isNot(contains(CompanyItem.storefrontPhoto)));
     });
 
     test('editor validator', () {
-      expect(StorefrontEditorScreen.hasRequiredGallery(const []), isFalse);
-      expect(StorefrontEditorScreen.hasRequiredGallery(const [' ']), isFalse);
-      expect(StorefrontEditorScreen.hasRequiredGallery(const ['https://x/1.jpg']), isTrue);
+      expect(StorefrontEditorScreen.hasRequiredFeatured(null), isFalse);
+      expect(StorefrontEditorScreen.hasRequiredFeatured(''), isFalse);
+      expect(StorefrontEditorScreen.hasRequiredFeatured(' '), isFalse);
+      expect(StorefrontEditorScreen.hasRequiredFeatured('https://x/c.jpg'), isTrue);
     });
 
-    testWidgets('editor: save with an empty gallery shows the inline error and does not save', (t) async {
+    testWidgets('editor: save without a featured image shows the inline error and does not save', (t) async {
       t.view.physicalSize = const Size(1200, 6000);
       t.view.devicePixelRatio = 1;
       addTearDown(t.view.resetPhysicalSize);
@@ -174,19 +197,21 @@ void main() {
       final bloc = _MockProfileBloc();
       when(() => bloc.state).thenReturn(const ProfileInitial());
       when(() => bloc.stream).thenAnswer((_) => const Stream.empty());
-      final p = business.copyWith(galleryImages: const [], coverImageUrl: '', photoUrls: const []);
+      // A gallery alone is not enough.
+      final p = business.copyWith(coverImageUrl: '', photoUrls: const []);
       await t.pumpWidget(_app(BlocProvider<ProfileBloc>.value(
         value: bloc,
         child: StorefrontEditorScreen(profile: p),
       )));
       await t.pump();
       final l = AppLocalizations.of(t.element(find.byType(StorefrontEditorScreen)))!;
-      expect(find.byKey(const Key('storefront_gallery_required_error')), findsNothing);
+      expect(find.byKey(const Key('storefront_featured_required_error')), findsNothing);
       final save = find.widgetWithText(ElevatedButton, l.save);
       await t.ensureVisible(save);
       await t.tap(save);
       await t.pump();
-      expect(find.byKey(const Key('storefront_gallery_required_error')), findsOneWidget);
+      expect(find.byKey(const Key('storefront_featured_required_error')), findsOneWidget);
+      expect(find.text(l.storefrontFeaturedRequiredError), findsWidgets);
       verifyNever(() => bloc.add(any()));
     });
   });
@@ -205,10 +230,7 @@ void main() {
       t.view.devicePixelRatio = 1;
       addTearDown(t.view.resetPhysicalSize);
       addTearDown(t.view.resetDevicePixelRatio);
-      // No avatar / cover (their previews have no network error handler in
-      // tests); the gallery tiles do.
-      final noNet = p.copyWith(photoUrls: const [], coverImageUrl: '');
-      await t.pumpWidget(_app(BlocProvider<ProfileBloc>.value(value: bloc, child: StorefrontEditorScreen(profile: noNet))));
+      await t.pumpWidget(_app(BlocProvider<ProfileBloc>.value(value: bloc, child: StorefrontEditorScreen(profile: p))));
       await t.pump();
       return AppLocalizations.of(t.element(find.byType(StorefrontEditorScreen)))!;
     }
@@ -243,6 +265,22 @@ void main() {
       final ev = verify(() => bloc.add(captureAny())).captured.single as ProfileUpdateRequested;
       expect(ev.profile.businessName, 'Cafe Lua');
       expect(ev.profile.galleryImages, business.galleryImages);
+      // The storefront never touches the owner's personal avatar.
+      expect(ev.profile.photoUrls, business.photoUrls);
+      expect(ev.profile.coverImageUrl, business.coverImageUrl);
+    });
+
+    testWidgets('no personal Profile image section; gallery is optional', (t) async {
+      final l = await pumpEditor(t, business.copyWith(galleryImages: const []));
+      expect(find.text('Profile image'), findsNothing);
+      expect(find.text('Add profile image'), findsNothing);
+      final save = find.widgetWithText(ElevatedButton, l.save);
+      await t.ensureVisible(save);
+      await t.tap(save);
+      await t.pump();
+      final ev = verify(() => bloc.add(captureAny())).captured.single as ProfileUpdateRequested;
+      expect(ev.profile.galleryImages, isEmpty);
+      expect(ev.profile.photoUrls, business.photoUrls);
     });
   });
 

@@ -12654,20 +12654,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get storefrontAddFeaturedImage => 'Aggiungi immagine in evidenza';
 
   @override
-  String get storefrontProfileImage => 'Immagine del profilo';
-
-  @override
-  String get storefrontProfileImageSubtitle =>
-      'Il tuo avatar, mostrato accanto al nome della tua attività.';
-
-  @override
-  String get storefrontAddProfileImage => 'Aggiungi immagine del profilo';
-
-  @override
-  String get storefrontReplaceProfileImage =>
-      'Sostituisci immagine del profilo';
-
-  @override
   String get preferenceBusinessOnly => 'Solo account business';
 
   @override
@@ -25643,9 +25629,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get bcCheckContact => 'Contatto: WhatsApp o link';
 
   @override
-  String get bcCheckCover => 'Foto di copertina';
-
-  @override
   String get bcCheckVerification => 'Badge di verifica';
 
   @override
@@ -26689,15 +26672,11 @@ class AppLocalizationsIt extends AppLocalizations {
   String get discoverySegmentBusinesses => 'Attività';
 
   @override
-  String get storefrontGalleryRequiredError =>
-      'Aggiungi almeno una foto alla galleria. La prima è la foto della tua attività in Scopri.';
-
-  @override
-  String get bcCheckStorefrontPhoto => 'Foto della vetrina';
+  String get bcCheckStorefrontPhoto => 'Immagine in evidenza';
 
   @override
   String get bcTodoStorefrontPhoto =>
-      'Aggiungi una foto della vetrina: è la foto della tua attività in Scopri';
+      'Aggiungi un\'immagine in evidenza: è la foto della tua attività in Scopri';
 
   @override
   String get storefrontChatButton => 'Chat';
@@ -26709,4 +26688,12 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get businessProfileNameRequiredError =>
       'Inserisci il nome del profilo della tua attività.';
+
+  @override
+  String get storefrontFeaturedRequiredError =>
+      'Aggiungi un\'immagine in evidenza. È la foto della tua attività in Scopri e la parte alta della tua vetrina.';
+
+  @override
+  String get profileLocationSearchOrPick =>
+      'Cerca un indirizzo o scegli sulla mappa';
 }

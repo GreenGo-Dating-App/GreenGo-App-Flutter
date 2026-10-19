@@ -12626,19 +12626,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get storefrontAddFeaturedImage => 'Adicionar imagem em destaque';
 
   @override
-  String get storefrontProfileImage => 'Imagem de perfil';
-
-  @override
-  String get storefrontProfileImageSubtitle =>
-      'O teu avatar, apresentado junto ao nome do teu negócio.';
-
-  @override
-  String get storefrontAddProfileImage => 'Adicionar imagem de perfil';
-
-  @override
-  String get storefrontReplaceProfileImage => 'Substituir imagem de perfil';
-
-  @override
   String get preferenceBusinessOnly => 'Apenas contas empresariais';
 
   @override
@@ -25583,9 +25570,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get bcCheckContact => 'Contacto: WhatsApp ou ligações';
 
   @override
-  String get bcCheckCover => 'Foto de capa';
-
-  @override
   String get bcCheckVerification => 'Selo de verificação';
 
   @override
@@ -26627,15 +26611,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get discoverySegmentBusinesses => 'Negócios';
 
   @override
-  String get storefrontGalleryRequiredError =>
-      'Adicione pelo menos uma foto à galeria. A primeira é a foto do seu negócio em Descobrir.';
-
-  @override
-  String get bcCheckStorefrontPhoto => 'Foto da montra';
+  String get bcCheckStorefrontPhoto => 'Imagem em destaque';
 
   @override
   String get bcTodoStorefrontPhoto =>
-      'Adicione uma foto da montra: é a foto do seu negócio em Descobrir';
+      'Adicione uma imagem em destaque: é a foto do seu negócio em Descobrir';
 
   @override
   String get storefrontChatButton => 'Chat';
@@ -26647,6 +26627,14 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get businessProfileNameRequiredError =>
       'Introduza o nome do perfil do seu negócio.';
+
+  @override
+  String get storefrontFeaturedRequiredError =>
+      'Adicione uma imagem em destaque. É a foto do seu negócio em Descobrir e o topo da sua montra.';
+
+  @override
+  String get profileLocationSearchOrPick =>
+      'Pesquise uma morada ou escolha no mapa';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -39277,19 +39265,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get storefrontAddFeaturedImage => 'Adicionar imagem de destaque';
-
-  @override
-  String get storefrontProfileImage => 'Imagem de perfil';
-
-  @override
-  String get storefrontProfileImageSubtitle =>
-      'Seu avatar, exibido ao lado do nome da sua empresa.';
-
-  @override
-  String get storefrontAddProfileImage => 'Adicionar imagem de perfil';
-
-  @override
-  String get storefrontReplaceProfileImage => 'Substituir imagem de perfil';
 
   @override
   String get preferenceBusinessOnly => 'Apenas contas empresariais';
@@ -52235,9 +52210,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get bcCheckContact => 'Contato: WhatsApp ou links';
 
   @override
-  String get bcCheckCover => 'Foto de capa';
-
-  @override
   String get bcCheckVerification => 'Selo de verificação';
 
   @override
@@ -53278,15 +53250,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get discoverySegmentBusinesses => 'Negócios';
 
   @override
-  String get storefrontGalleryRequiredError =>
-      'Adicione pelo menos uma foto à galeria. A primeira é a foto do seu negócio em Descobrir.';
-
-  @override
-  String get bcCheckStorefrontPhoto => 'Foto da vitrine';
+  String get bcCheckStorefrontPhoto => 'Imagem de destaque';
 
   @override
   String get bcTodoStorefrontPhoto =>
-      'Adicione uma foto da vitrine: é a foto do seu negócio em Descobrir';
+      'Adicione uma imagem de destaque: é a foto do seu negócio em Descobrir';
 
   @override
   String get storefrontChatButton => 'Chat';
@@ -53298,4 +53266,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get businessProfileNameRequiredError =>
       'Informe o nome do perfil do seu negócio.';
+
+  @override
+  String get storefrontFeaturedRequiredError =>
+      'Adicione uma imagem de destaque. É a foto do seu negócio em Descobrir e o topo da sua vitrine.';
+
+  @override
+  String get profileLocationSearchOrPick =>
+      'Pesquise um endereço ou escolha no mapa';
 }

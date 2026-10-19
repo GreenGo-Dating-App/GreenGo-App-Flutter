@@ -12678,19 +12678,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get storefrontAddFeaturedImage => 'Titelbild hinzufügen';
 
   @override
-  String get storefrontProfileImage => 'Profilbild';
-
-  @override
-  String get storefrontProfileImageSubtitle =>
-      'Dein Avatar, der neben deinem Firmennamen angezeigt wird.';
-
-  @override
-  String get storefrontAddProfileImage => 'Profilbild hinzufügen';
-
-  @override
-  String get storefrontReplaceProfileImage => 'Profilbild ersetzen';
-
-  @override
   String get preferenceBusinessOnly => 'Nur Business-Konten';
 
   @override
@@ -25667,9 +25654,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get bcCheckContact => 'Kontakt: WhatsApp oder Links';
 
   @override
-  String get bcCheckCover => 'Titelbild';
-
-  @override
   String get bcCheckVerification => 'Verifizierungsabzeichen';
 
   @override
@@ -26714,15 +26698,11 @@ class AppLocalizationsDe extends AppLocalizations {
   String get discoverySegmentBusinesses => 'Unternehmen';
 
   @override
-  String get storefrontGalleryRequiredError =>
-      'Füge mindestens ein Galeriefoto hinzu. Das erste ist dein Unternehmensfoto in Entdecken.';
-
-  @override
-  String get bcCheckStorefrontPhoto => 'Storefront-Foto';
+  String get bcCheckStorefrontPhoto => 'Titelbild';
 
   @override
   String get bcTodoStorefrontPhoto =>
-      'Füge ein Storefront-Foto hinzu: Es ist dein Unternehmensfoto in Entdecken';
+      'Füge ein Titelbild hinzu: Es ist dein Unternehmensfoto in Entdecken';
 
   @override
   String get storefrontChatButton => 'Chat';
@@ -26734,4 +26714,12 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get businessProfileNameRequiredError =>
       'Gib den Namen deines Unternehmensprofils ein.';
+
+  @override
+  String get storefrontFeaturedRequiredError =>
+      'Füge ein Titelbild hinzu. Es ist dein Unternehmensfoto in Entdecken und steht oben in deinem Storefront.';
+
+  @override
+  String get profileLocationSearchOrPick =>
+      'Adresse suchen oder auf der Karte wählen';
 }

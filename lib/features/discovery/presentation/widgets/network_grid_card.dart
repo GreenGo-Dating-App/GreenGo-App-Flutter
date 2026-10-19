@@ -59,14 +59,20 @@ class NetworkGridCard extends StatefulWidget {
   final VoidCallback onLongPressTag;
 
   /// The photos a tile cycles through. Business tiles lead with the
-  /// business's storefront gallery (its FIRST image is the tile's main photo,
-  /// owner 2026-10-19), falling back to the profile photos when the gallery is
-  /// empty (legacy businesses). People tiles: their profile photos.
+  /// storefront FEATURED image (`coverImageUrl`, '' = none) as the tile's main
+  /// photo (owner 2026-10-19), then the storefront gallery; when both are
+  /// empty (legacy businesses) they fall back to the profile photos.
+  /// People tiles: their profile photos.
   static List<String> tilePhotoUrls(Profile profile, {required bool isBusiness}) {
     if (isBusiness) {
-      final gallery =
-          profile.galleryImages.where((u) => u.trim().isNotEmpty).toList();
-      if (gallery.isNotEmpty) return gallery;
+      final cover = (profile.coverImageUrl ?? '').trim();
+      final urls = <String>[
+        if (cover.isNotEmpty) cover,
+        ...profile.galleryImages
+            .map((u) => u.trim())
+            .where((u) => u.isNotEmpty && u != cover),
+      ];
+      if (urls.isNotEmpty) return urls;
     }
     return profile.photoUrls;
   }

@@ -12664,19 +12664,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get storefrontAddFeaturedImage => 'Añadir imagen destacada';
 
   @override
-  String get storefrontProfileImage => 'Imagen de perfil';
-
-  @override
-  String get storefrontProfileImageSubtitle =>
-      'Tu avatar, mostrado junto al nombre de tu negocio.';
-
-  @override
-  String get storefrontAddProfileImage => 'Añadir imagen de perfil';
-
-  @override
-  String get storefrontReplaceProfileImage => 'Reemplazar imagen de perfil';
-
-  @override
   String get preferenceBusinessOnly => 'Solo cuentas de empresa';
 
   @override
@@ -25604,9 +25591,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get bcCheckContact => 'Contacto: WhatsApp o enlaces';
 
   @override
-  String get bcCheckCover => 'Foto de portada';
-
-  @override
   String get bcCheckVerification => 'Insignia de verificación';
 
   @override
@@ -26646,15 +26630,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get discoverySegmentBusinesses => 'Negocios';
 
   @override
-  String get storefrontGalleryRequiredError =>
-      'Añade al menos una foto a la galería. La primera es la foto de tu negocio en Descubrir.';
-
-  @override
-  String get bcCheckStorefrontPhoto => 'Foto de la tienda';
+  String get bcCheckStorefrontPhoto => 'Imagen destacada';
 
   @override
   String get bcTodoStorefrontPhoto =>
-      'Añade una foto de la tienda: es la foto de tu negocio en Descubrir';
+      'Añade una imagen destacada: es la foto de tu negocio en Descubrir';
 
   @override
   String get storefrontChatButton => 'Chat';
@@ -26666,4 +26646,12 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get businessProfileNameRequiredError =>
       'Introduce el nombre del perfil de tu negocio.';
+
+  @override
+  String get storefrontFeaturedRequiredError =>
+      'Añade una imagen destacada. Es la foto de tu negocio en Descubrir y la parte superior de tu tienda.';
+
+  @override
+  String get profileLocationSearchOrPick =>
+      'Busca una dirección o elige en el mapa';
 }

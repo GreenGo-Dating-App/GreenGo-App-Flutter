@@ -7,8 +7,8 @@ enum CompanyItem {
   name(required: true),
   category(required: true),
   description(required: true),
-  // Owner 2026-10-19: at least one storefront gallery photo. Its first image
-  // is the business's tile photo in Discover and the storefront hero fallback.
+  // Owner 2026-10-19: a storefront FEATURED image (coverImageUrl). It is the
+  // business's tile photo in Discover and the top of the storefront.
   storefrontPhoto(required: true),
   address(required: true),
   invoiceDetails(required: true),
@@ -17,7 +17,6 @@ enum CompanyItem {
   traderStatus(required: true),
   hours(required: false),
   contact(required: false),
-  cover(required: false),
   verification(required: false);
 
   const CompanyItem({required this.required});
@@ -39,14 +38,13 @@ Map<CompanyItem, bool?> companyChecklist(Profile p,
     CompanyItem.name: has(p.businessName),
     CompanyItem.category: has(p.businessCategory),
     CompanyItem.description: has(p.storefrontBio),
-    CompanyItem.storefrontPhoto: p.galleryImages.any(has),
+    CompanyItem.storefrontPhoto: has(p.coverImageUrl),
     CompanyItem.address: p.businessAddress != null,
     CompanyItem.invoiceDetails: billingComplete,
     CompanyItem.payments: paymentsConnected,
     CompanyItem.traderStatus: traderDeclared,
     CompanyItem.hours: p.openingHours.isNotEmpty,
     CompanyItem.contact: anyContact,
-    CompanyItem.cover: has(p.coverImageUrl),
     CompanyItem.verification: p.businessVerified,
   };
 }

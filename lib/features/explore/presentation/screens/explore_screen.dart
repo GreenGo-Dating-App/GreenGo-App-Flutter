@@ -1566,9 +1566,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
   void _precacheAvatars(List<MatchCandidate> people) {
     if (!mounted) return;
     for (final c in people.take(8)) {
-      final urls = c.profile.photoUrls;
-      if (urls.isEmpty || urls.first.isEmpty) continue;
-      unawaited(NetworkGridCard.precachePhoto(urls.first));
+      // Same choice as the tile (business = featured image first).
+      final url = NetworkGridCard.mainPhotoUrl(c.profile,
+          isBusiness: c.profile.isBusiness);
+      if (url == null) continue;
+      unawaited(NetworkGridCard.precachePhoto(url));
     }
   }
 

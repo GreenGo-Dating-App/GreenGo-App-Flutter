@@ -12718,19 +12718,6 @@ class AppLocalizationsFr extends AppLocalizations {
   String get storefrontAddFeaturedImage => 'Ajouter une image à la une';
 
   @override
-  String get storefrontProfileImage => 'Photo de profil';
-
-  @override
-  String get storefrontProfileImageSubtitle =>
-      'Votre avatar, affiché à côté du nom de votre entreprise.';
-
-  @override
-  String get storefrontAddProfileImage => 'Ajouter une photo de profil';
-
-  @override
-  String get storefrontReplaceProfileImage => 'Remplacer la photo de profil';
-
-  @override
   String get preferenceBusinessOnly => 'Comptes professionnels uniquement';
 
   @override
@@ -25755,9 +25742,6 @@ class AppLocalizationsFr extends AppLocalizations {
   String get bcCheckContact => 'Contact : WhatsApp ou liens';
 
   @override
-  String get bcCheckCover => 'Photo de couverture';
-
-  @override
   String get bcCheckVerification => 'Badge vérifié';
 
   @override
@@ -26803,15 +26787,11 @@ class AppLocalizationsFr extends AppLocalizations {
   String get discoverySegmentBusinesses => 'Entreprises';
 
   @override
-  String get storefrontGalleryRequiredError =>
-      'Ajoutez au moins une photo à la galerie. La première est la photo de votre entreprise dans Découvrir.';
-
-  @override
-  String get bcCheckStorefrontPhoto => 'Photo de la vitrine';
+  String get bcCheckStorefrontPhoto => 'Image à la une';
 
   @override
   String get bcTodoStorefrontPhoto =>
-      'Ajoutez une photo de vitrine : c\'est la photo de votre entreprise dans Découvrir';
+      'Ajoutez une image à la une : c\'est la photo de votre entreprise dans Découvrir';
 
   @override
   String get storefrontChatButton => 'Chat';
@@ -26823,4 +26803,12 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get businessProfileNameRequiredError =>
       'Saisissez le nom du profil de votre entreprise.';
+
+  @override
+  String get storefrontFeaturedRequiredError =>
+      'Ajoutez une image à la une. C\'est la photo de votre entreprise dans Découvrir et le haut de votre vitrine.';
+
+  @override
+  String get profileLocationSearchOrPick =>
+      'Rechercher une adresse ou choisir sur la carte';
 }

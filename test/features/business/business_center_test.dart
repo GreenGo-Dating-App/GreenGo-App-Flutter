@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/features/business/data/business_center_repository.dart';
+import 'package:greengo_chat/features/business/presentation/company_checklist.dart';
 import 'package:greengo_chat/features/business/presentation/screens/business_center_screen.dart';
 import 'package:greengo_chat/features/finance_documents/data/billing_profile_repository.dart';
 import 'package:greengo_chat/features/finance_documents/domain/billing_profile.dart';
@@ -51,7 +52,9 @@ Profile _business({MembershipTier tier = MembershipTier.gold, bool complete = tr
       businessCategory: complete ? 'cafe' : null,
       storefrontBio: complete ? 'Coffee and cake' : null,
       businessAddress: complete ? const BusinessAddress(address: 'Rua A 1', latitude: -23.5, longitude: -46.6) : null,
-      galleryImages: complete ? const ['https://example.com/g1.jpg'] : const [],
+      // Gallery present either way: the required photo is the FEATURED image.
+      galleryImages: const ['https://example.com/g1.jpg'],
+      coverImageUrl: complete ? 'https://example.com/cover.jpg' : '',
     );
 
 Widget _app(Widget child) => MaterialApp(
@@ -63,6 +66,16 @@ Widget _app(Widget child) => MaterialApp(
 String _text(WidgetTester t, String key) => (t.widget(find.byKey(ValueKey(key))) as Text).data!;
 
 void main() {
+  test('storefront photo checklist item = featured (cover) image, not gallery', () {
+    final p = _business();
+    expect(companyChecklist(p)[CompanyItem.storefrontPhoto], isTrue);
+    expect(companyChecklist(p.copyWith(coverImageUrl: ''))[CompanyItem.storefrontPhoto], isFalse);
+    expect(
+        companyChecklist(p.copyWith(coverImageUrl: '', galleryImages: const ['https://x/1.jpg']))[
+            CompanyItem.storefrontPhoto],
+        isFalse);
+  });
+
   testWidgets('overview: this month figures and what needs action', (t) async {
     t.view.physicalSize = const Size(1200, 2400);
     t.view.devicePixelRatio = 1;

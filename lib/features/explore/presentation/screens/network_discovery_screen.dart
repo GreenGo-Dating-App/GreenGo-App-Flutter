@@ -910,18 +910,9 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
                   _runNicknameLookup(nickname);
                 },
               )
-            // Title = the mode being shown (owner, 2026-10-19): "People" or
-            // "Businesses", following the People | Businesses switch.
-            : Text(
-                _effectiveShowBusinesses
-                    ? l10n.discoverySegmentBusinesses
-                    : l10n.discoverySegmentPeople,
-                key: const ValueKey('discover-mode-title'),
-                style: const TextStyle(
-                  color: AppColors.textPrimary,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
+            // No title text (owner, 2026-10-19): the People | Businesses
+            // switch in the actions already shows the mode.
+            : null,
         actions: [
           // People | Businesses mini switch next to search (owner, 2026-10-19):
           // both icons always visible, the active one gold. Instant, no reload.

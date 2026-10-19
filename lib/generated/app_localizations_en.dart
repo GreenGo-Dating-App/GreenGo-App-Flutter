@@ -12509,19 +12509,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get storefrontAddFeaturedImage => 'Add featured image';
 
   @override
-  String get storefrontProfileImage => 'Profile image';
-
-  @override
-  String get storefrontProfileImageSubtitle =>
-      'Your avatar, shown next to your business name.';
-
-  @override
-  String get storefrontAddProfileImage => 'Add profile image';
-
-  @override
-  String get storefrontReplaceProfileImage => 'Replace profile image';
-
-  @override
   String get preferenceBusinessOnly => 'Business accounts only';
 
   @override
@@ -25365,9 +25352,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get bcCheckContact => 'Contact: WhatsApp or links';
 
   @override
-  String get bcCheckCover => 'Cover photo';
-
-  @override
   String get bcCheckVerification => 'Verified badge';
 
   @override
@@ -26402,15 +26386,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get discoverySegmentBusinesses => 'Businesses';
 
   @override
-  String get storefrontGalleryRequiredError =>
-      'Add at least one gallery photo. The first one is your business photo in Discover.';
-
-  @override
-  String get bcCheckStorefrontPhoto => 'Storefront photo';
+  String get bcCheckStorefrontPhoto => 'Featured image';
 
   @override
   String get bcTodoStorefrontPhoto =>
-      'Add a storefront photo: it is your business photo in Discover';
+      'Add a featured image: it is your business photo in Discover';
 
   @override
   String get storefrontChatButton => 'Chat';
@@ -26422,4 +26402,11 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get businessProfileNameRequiredError =>
       'Enter your business profile name.';
+
+  @override
+  String get storefrontFeaturedRequiredError =>
+      'Add a featured image. It\'s your business photo in Discover and the top of your storefront.';
+
+  @override
+  String get profileLocationSearchOrPick => 'Search address or pick on map';
 }

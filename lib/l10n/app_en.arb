@@ -5955,10 +5955,6 @@
   "storefrontFeaturedImage": "Featured image",
   "storefrontFeaturedImageSubtitle": "The hero banner shown at the top of your storefront.",
   "storefrontAddFeaturedImage": "Add featured image",
-  "storefrontProfileImage": "Profile image",
-  "storefrontProfileImageSubtitle": "Your avatar, shown next to your business name.",
-  "storefrontAddProfileImage": "Add profile image",
-  "storefrontReplaceProfileImage": "Replace profile image",
   "preferenceBusinessOnly": "Business accounts only",
   "preferenceBusinessOnlyDesc": "Show only business accounts in discovery",
   "businessProfileNameLabel": "Business profile name",
@@ -14588,10 +14584,6 @@
   "@bcCheckContact": {
     "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
   },
-  "bcCheckCover": "Cover photo",
-  "@bcCheckCover": {
-    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
-  },
   "bcCheckVerification": "Verified badge",
   "@bcCheckVerification": {
     "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
@@ -15936,17 +15928,13 @@
   "@discoverySegmentBusinesses": {
     "description": "Discover page: People / Businesses segmented switch"
   },
-  "storefrontGalleryRequiredError": "Add at least one gallery photo. The first one is your business photo in Discover.",
-  "@storefrontGalleryRequiredError": {
-    "description": "Storefront editor: inline error when saving a business storefront with an empty gallery (at least one image is required)."
-  },
-  "bcCheckStorefrontPhoto": "Storefront photo",
+  "bcCheckStorefrontPhoto": "Featured image",
   "@bcCheckStorefrontPhoto": {
-    "description": "Business Center Settings checklist: REQUIRED item, at least one storefront gallery photo."
+    "description": "Business Center Settings checklist: REQUIRED item, the storefront featured (cover) image."
   },
-  "bcTodoStorefrontPhoto": "Add a storefront photo: it is your business photo in Discover",
+  "bcTodoStorefrontPhoto": "Add a featured image: it is your business photo in Discover",
   "@bcTodoStorefrontPhoto": {
-    "description": "Business Center Overview 'Action needed' row when the storefront gallery is empty."
+    "description": "Business Center Overview 'Action needed' row when the storefront featured (cover) image is missing."
   },
   "storefrontChatButton": "Chat",
   "@storefrontChatButton": {
@@ -15959,5 +15947,13 @@
   "businessProfileNameRequiredError": "Enter your business profile name.",
   "@businessProfileNameRequiredError": {
     "description": "Storefront editor: error when the required business profile name (profiles.businessName) is empty."
+  },
+  "storefrontFeaturedRequiredError": "Add a featured image. It's your business photo in Discover and the top of your storefront.",
+  "@storefrontFeaturedRequiredError": {
+    "description": "Storefront editor: shown when saving without a featured (cover) image."
+  },
+  "profileLocationSearchOrPick": "Search address or pick on map",
+  "@profileLocationSearchOrPick": {
+    "description": "Edit location: tappable field that opens the address search / map picker."
   }
 }
