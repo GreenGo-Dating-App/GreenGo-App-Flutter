@@ -46,6 +46,9 @@ import '../../../saved_searches/presentation/screens/saved_searches_screen.dart'
 import '../../../../core/services/effective_tier.dart';
 import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
 import '../../../../core/utils/grid_columns.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
 
 /// A full-screen, Apple-safe people directory reached from the Explore
 /// "Network Discovery → See all" action.
@@ -1077,15 +1080,32 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   Widget _buildGated(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     final reduceMotion = MediaQuery.of(context).disableAnimations;
+    const tour = TourController.discoverTourId;
 
-    return Scaffold(
+    return PageTourHost(
+      tourId: tour,
+      userId: widget.userId,
+      keys: () => [
+        TourKeys.discoverSwitch,
+        TourKeys.discoverFilters,
+        TourKeys.discoverSearch,
+        TourKeys.discoverSaved,
+        if (FlavorConfig.enableWorldMap) TourKeys.discoverWorldMap,
+      ],
+      child: Scaffold(
       // People | Businesses switch floats at the BOTTOM of the screen, just
       // above the app's menu bar (owner, 2026-10-19). Both icons always
       // visible, the active one gold. Instant, no reload.
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: _searching
           ? null
-          : _PeopleBusinessSwitch(
+          : TourAnchor(
+              tourId: tour,
+              showcaseKey: TourKeys.discoverSwitch,
+              title: l10n.tourDiscoverSwitchTitle,
+              description: l10n.tourDiscoverSwitchDesc,
+              targetShapeBorder: const StadiumBorder(),
+              child: _PeopleBusinessSwitch(
               key: const ValueKey('discover-people-business-switch'),
               showBusinesses: _effectiveShowBusinesses,
               peopleLabel: l10n.discoverySegmentPeople,
@@ -1098,6 +1118,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
                 });
                 if (businesses) unawaited(_startBizGeo());
               },
+            ),
             ),
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
@@ -1127,33 +1148,60 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
             // switch in the actions already shows the mode.
             : null,
         actions: [
-          IconButton(
-            icon: Icon(_searching ? Icons.close : Icons.search),
-            tooltip: l10n.searchByNicknameTooltip,
-            onPressed: _toggleSearch,
+          TourAnchor(
+            tourId: tour,
+            showcaseKey: TourKeys.discoverSearch,
+            title: l10n.tourDiscoverSearchTitle,
+            description: l10n.tourDiscoverSearchDesc,
+            targetShapeBorder: const CircleBorder(),
+            child: IconButton(
+              icon: Icon(_searching ? Icons.close : Icons.search),
+              tooltip: l10n.searchByNicknameTooltip,
+              onPressed: _toggleSearch,
+            ),
           ),
           if (!_searching)
-            IconButton(
-              icon: const Icon(Icons.tune),
-              tooltip: l10n.settings,
-              onPressed: _openSettings,
+            TourAnchor(
+              tourId: tour,
+              showcaseKey: TourKeys.discoverFilters,
+              title: l10n.tourDiscoverFiltersTitle,
+              description: l10n.tourDiscoverFiltersDesc,
+              targetShapeBorder: const CircleBorder(),
+              child: IconButton(
+                icon: const Icon(Icons.tune),
+                tooltip: l10n.settings,
+                onPressed: _openSettings,
+              ),
             ),
           // World map of the user's network (FlavorConfig.enableWorldMap).
           if (!_searching && FlavorConfig.enableWorldMap)
-            IconButton(
-              icon: const Icon(Icons.public),
-              tooltip: l10n.networkWorldMap,
-              onPressed: () => Navigator.of(context).push(
-                MaterialPageRoute<void>(
-                  builder: (_) => BlocProvider(
-                    create: (_) => di.sl<GlobeBloc>(),
-                    child: GlobeScreen(userId: widget.userId),
+            TourAnchor(
+              tourId: tour,
+              showcaseKey: TourKeys.discoverWorldMap,
+              title: l10n.tourDiscoverWorldMapTitle,
+              description: l10n.tourDiscoverWorldMapDesc,
+              targetShapeBorder: const CircleBorder(),
+              child: IconButton(
+                icon: const Icon(Icons.public),
+                tooltip: l10n.networkWorldMap,
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute<void>(
+                    builder: (_) => BlocProvider(
+                      create: (_) => di.sl<GlobeBloc>(),
+                      child: GlobeScreen(userId: widget.userId),
+                    ),
                   ),
                 ),
               ),
             ),
           if (!_searching)
-            PopupMenuButton<String>(
+            TourAnchor(
+              tourId: tour,
+              showcaseKey: TourKeys.discoverSaved,
+              title: l10n.tourDiscoverSavedTitle,
+              description: l10n.tourDiscoverSavedDesc,
+              targetShapeBorder: const CircleBorder(),
+              child: PopupMenuButton<String>(
               icon: const Icon(Icons.bookmark_border),
               tooltip: l10n.savedSearchesTitle,
               color: AppColors.backgroundCard,
@@ -1195,6 +1243,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
                 ),
               ],
             ),
+            ),
         ],
       ),
       body: SafeArea(
@@ -1220,6 +1269,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
           ],
         ),
       ),
+    ),
     );
   }
 

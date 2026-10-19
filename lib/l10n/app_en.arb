@@ -15990,5 +15990,731 @@
   "globeFilterBusinesses": "Businesses",
   "@globeFilterBusinesses": {
     "description": "World map filter chip and legend: business accounts the user follows or chatted with, pinned at the business address."
+  },
+  "tourDiscoverSwitchTitle": "People or businesses",
+  "@tourDiscoverSwitchTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourDiscoverSwitchDesc": "Switch between people and local businesses - instantly.",
+  "@tourDiscoverSwitchDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourDiscoverFiltersTitle": "Filters",
+  "@tourDiscoverFiltersTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourDiscoverFiltersDesc": "Choose distance, languages and interests.",
+  "@tourDiscoverFiltersDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourDiscoverSearchTitle": "Search",
+  "@tourDiscoverSearchTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourDiscoverSearchDesc": "Find someone by name or nickname.",
+  "@tourDiscoverSearchDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourDiscoverSavedTitle": "Saved searches",
+  "@tourDiscoverSavedTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourDiscoverSavedDesc": "Save these filters and reopen them in one tap.",
+  "@tourDiscoverSavedDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourDiscoverWorldMapTitle": "World map",
+  "@tourDiscoverWorldMapTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourDiscoverWorldMapDesc": "See your network on a map of the world.",
+  "@tourDiscoverWorldMapDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourWorldMapFiltersTitle": "Choose who you see",
+  "@tourWorldMapFiltersTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourWorldMapFiltersDesc": "Following, Followers, Chats, Businesses - mix them as you like.",
+  "@tourWorldMapFiltersDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourWorldMapPinsTitle": "Tap a pin",
+  "@tourWorldMapPinsTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourWorldMapPinsDesc": "A pin opens the person's profile or the business storefront.",
+  "@tourWorldMapPinsDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourWorldMapZoomTitle": "Zoom out",
+  "@tourWorldMapZoomTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourWorldMapZoomDesc": "Pinch out to see whole countries, tap one for its events.",
+  "@tourWorldMapZoomDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourEventPhasesTitle": "Price phases",
+  "@tourEventPhasesTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourEventPhasesDesc": "Early bird, then Regular - prices go up as phases sell out.",
+  "@tourEventPhasesDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourEventBuyTitle": "Buy tickets",
+  "@tourEventBuyTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourEventBuyDesc": "Up to {max} tickets per person. Find them later in My Space > My tickets.",
+  "@tourEventBuyDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2).",
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "tourEventOrganizerTitle": "Message the organizer",
+  "@tourEventOrganizerTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourEventOrganizerDesc": "Questions before you buy? Ask here.",
+  "@tourEventOrganizerDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourBcOverviewTitle": "Overview",
+  "@tourBcOverviewTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourBcOverviewDesc": "\"Action needed\" lists what to do next.",
+  "@tourBcOverviewDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourBcMySpaceTitle": "My Space",
+  "@tourBcMySpaceTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourBcMySpaceDesc": "Your events, experiences, calendar and ticket scanner.",
+  "@tourBcMySpaceDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourBcSalesTitle": "Sales",
+  "@tourBcSalesTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourBcSalesDesc": "Get paid, payouts and your invoice details.",
+  "@tourBcSalesDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourBcMarketingTitle": "Marketing",
+  "@tourBcMarketingTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourBcMarketingDesc": "Promote your storefront and events.",
+  "@tourBcMarketingDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourBcCustomersTitle": "Customers",
+  "@tourBcCustomersTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourBcCustomersDesc": "Followers and people who saved or booked with you.",
+  "@tourBcCustomersDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourBcSettingsTitle": "Settings",
+  "@tourBcSettingsTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourBcSettingsDesc": "Complete the checklist to unlock everything.",
+  "@tourBcSettingsDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourStorefrontLogoTitle": "Business picture",
+  "@tourStorefrontLogoTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourStorefrontLogoDesc": "Your business's own picture - not your personal photo.",
+  "@tourStorefrontLogoDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourStorefrontNameTitle": "Business name",
+  "@tourStorefrontNameTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourStorefrontNameDesc": "Shown in Discover and on your storefront.",
+  "@tourStorefrontNameDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourStorefrontFeaturedTitle": "Featured image",
+  "@tourStorefrontFeaturedTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourStorefrontFeaturedDesc": "The big cover at the top of your storefront.",
+  "@tourStorefrontFeaturedDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourStorefrontCategoryTitle": "Category",
+  "@tourStorefrontCategoryTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourStorefrontCategoryDesc": "Pick the type of business, then the category.",
+  "@tourStorefrontCategoryDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourStorefrontAddressTitle": "Address on the map",
+  "@tourStorefrontAddressTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourStorefrontAddressDesc": "People nearby find you by this address.",
+  "@tourStorefrontAddressDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourFollowersOwnTitle": "Followers and following",
+  "@tourFollowersOwnTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourFollowersOwnDesc": "Tap a number to see who. Stores you follow stay private.",
+  "@tourFollowersOwnDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourFollowersPublicTitle": "Their network",
+  "@tourFollowersPublicTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourFollowersPublicDesc": "Followers and following are public - tap to see who.",
+  "@tourFollowersPublicDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourChatAutoTranslateTitle": "Auto-translate",
+  "@tourChatAutoTranslateTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourChatAutoTranslateDesc": "Messages are translated live. Set your languages here.",
+  "@tourChatAutoTranslateDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourChatVoiceTitle": "Voice messages",
+  "@tourChatVoiceTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourChatVoiceDesc": "Hold to record, release to send.",
+  "@tourChatVoiceDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourChatTripMapTitle": "Trip map",
+  "@tourChatTripMapTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourChatTripMapDesc": "Places mentioned in this chat, together on one map.",
+  "@tourChatTripMapDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourChatSafetyTitle": "Report or block",
+  "@tourChatSafetyTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourChatSafetyDesc": "Something wrong? Report or block from this menu.",
+  "@tourChatSafetyDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourCommunityTabsTitle": "Community sections",
+  "@tourCommunityTabsTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourCommunityTabsDesc": "Chat, Tips, Announcements, Events and Experiences.",
+  "@tourCommunityTabsDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourCommunityRulesTitle": "Rules",
+  "@tourCommunityRulesTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourCommunityRulesDesc": "Read the group's rules and resources first.",
+  "@tourCommunityRulesDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourCommunityJoinTitle": "Join",
+  "@tourCommunityJoinTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourCommunityJoinDesc": "Join now, or request to join a private group.",
+  "@tourCommunityJoinDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourExpBookTitle": "Book a slot",
+  "@tourExpBookTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourExpBookDesc": "Pick a date and book. Your booking QR appears in My bookings.",
+  "@tourExpBookDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourExpDatesTitle": "Available dates",
+  "@tourExpDatesTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourExpDatesDesc": "How many dates are open to book right now.",
+  "@tourExpDatesDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourExpCreateTitle": "Host an experience",
+  "@tourExpCreateTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourExpCreateDesc": "Create one, then add dates from its menu.",
+  "@tourExpCreateDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourExpRequestsTitle": "Booking requests",
+  "@tourExpRequestsTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourExpRequestsDesc": "Confirm or decline the bookings for your experiences.",
+  "@tourExpRequestsDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourExpMyBookingsTitle": "My bookings",
+  "@tourExpMyBookingsTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourExpMyBookingsDesc": "Your bookings and their check-in QR codes.",
+  "@tourExpMyBookingsDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourExpCalendarTitle": "Availability calendar",
+  "@tourExpCalendarTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourExpCalendarDesc": "Tap a day to add a date; tap a date to edit it.",
+  "@tourExpCalendarDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourShopTabsTitle": "Coins and plans",
+  "@tourShopTabsTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourShopTabsDesc": "Membership shows the plans and any launch offer.",
+  "@tourShopTabsDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourShopCoinsTitle": "What coins are for",
+  "@tourShopCoinsTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourShopCoinsDesc": "Send gifts, boost your profile or events, unlock extras.",
+  "@tourShopCoinsDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourShopSendCoinsTitle": "Send coins",
+  "@tourShopSendCoinsTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourShopSendCoinsDesc": "Gift coins to someone in your network.",
+  "@tourShopSendCoinsDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourShopRestoreTitle": "Restore purchases",
+  "@tourShopRestoreTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourShopRestoreDesc": "New phone? Restore your subscription here.",
+  "@tourShopRestoreDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourPrivacyGlobeTitle": "Map visibility",
+  "@tourPrivacyGlobeTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourPrivacyGlobeDesc": "Exact (~100 m), approximate, country only, or hidden.",
+  "@tourPrivacyGlobeDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourPrivacyTravelerTitle": "Traveler mode",
+  "@tourPrivacyTravelerTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourPrivacyTravelerDesc": "Show up in the city you are visiting.",
+  "@tourPrivacyTravelerDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourPrivacyIncognitoTitle": "Incognito",
+  "@tourPrivacyIncognitoTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourPrivacyIncognitoDesc": "Browse without appearing in Discover.",
+  "@tourPrivacyIncognitoDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourGetPaidConnectTitle": "Connect a payment account",
+  "@tourGetPaidConnectTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourGetPaidConnectDesc": "Stripe or Mercado Pago - ticket money goes straight to you.",
+  "@tourGetPaidConnectDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourGetPaidFeesTitle": "What you receive",
+  "@tourGetPaidFeesTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourGetPaidFeesDesc": "The fee per ticket - the event editor shows what you receive.",
+  "@tourGetPaidFeesDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourMySpaceScannerTitle": "Ticket scanner",
+  "@tourMySpaceScannerTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourMySpaceScannerDesc": "Scan guests' QR codes at the door.",
+  "@tourMySpaceScannerDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourMySpaceTicketsTitle": "My tickets",
+  "@tourMySpaceTicketsTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourMySpaceTicketsDesc": "Tickets you bought, ready to show at the door.",
+  "@tourMySpaceTicketsDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourMySpaceCalendarTitle": "Your calendar",
+  "@tourMySpaceCalendarTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourMySpaceCalendarDesc": "Filter by I host or I'm going.",
+  "@tourMySpaceCalendarDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourPromoteStorefrontTitle": "Promote your storefront",
+  "@tourPromoteStorefrontTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourPromoteStorefrontDesc": "Show up first to people nearby for a while.",
+  "@tourPromoteStorefrontDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourPromoteEventsTitle": "Boost an event",
+  "@tourPromoteEventsTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourPromoteEventsDesc": "Feature an event at the top of the lists.",
+  "@tourPromoteEventsDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourSafetyMenuTitle": "Report or block",
+  "@tourSafetyMenuTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourSafetyMenuDesc": "Reports go to our safety team and stay confidential.",
+  "@tourSafetyMenuDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourSafetyAppealTitle": "Appeal",
+  "@tourSafetyAppealTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourSafetyAppealDesc": "Disagree? Appeal before the deadline - a person reviews it.",
+  "@tourSafetyAppealDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourVerifyPhoneTitle": "Why your phone",
+  "@tourVerifyPhoneTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourVerifyPhoneDesc": "A verified phone keeps fake accounts out. It stays private.",
+  "@tourVerifyPhoneDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourVerifyIdTitle": "Optional ID",
+  "@tourVerifyIdTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourVerifyIdDesc": "Add an ID document to earn the Verified badge.",
+  "@tourVerifyIdDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourInviteShareTitle": "Invite friends",
+  "@tourInviteShareTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourInviteShareDesc": "Share your link - you get {coins} coins for each friend who joins.",
+  "@tourInviteShareDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2).",
+    "placeholders": {
+      "coins": {
+        "type": "int"
+      }
+    }
+  },
+  "tourInviteRulesTitle": "How it works",
+  "@tourInviteRulesTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourInviteRulesDesc": "Your friend gets 1 week of Base membership.",
+  "@tourInviteRulesDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourInviteProgressTitle": "Milestones",
+  "@tourInviteProgressTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourInviteProgressDesc": "At {first}, {second} and {third} friends: Silver, Gold, then Platinum for a month.",
+  "@tourInviteProgressDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2).",
+    "placeholders": {
+      "first": {
+        "type": "int"
+      },
+      "second": {
+        "type": "int"
+      },
+      "third": {
+        "type": "int"
+      }
+    }
+  },
+  "tourAttractionTipsTitle": "Cultural tips",
+  "@tourAttractionTipsTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourAttractionTipsDesc": "Good to know before you visit this country.",
+  "@tourAttractionTipsDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourAttractionShareTitle": "Share this place",
+  "@tourAttractionShareTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourAttractionShareDesc": "Send it to a chat - it joins that chat's trip map.",
+  "@tourAttractionShareDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourAttractionMapsTitle": "Get there",
+  "@tourAttractionMapsTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourAttractionMapsDesc": "Open directions in your maps app.",
+  "@tourAttractionMapsDesc": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "guideToursTitle": "Tours",
+  "@guideToursTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "guideToursSubtitle": "Replay any page guide",
+  "@guideToursSubtitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "guideToursShowAgain": "Show me again",
+  "@guideToursShowAgain": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "guideToursOpenPageHint": "Open \"{page}\" and the tour starts again.",
+  "@guideToursOpenPageHint": {
+    "description": "In-app tutorial / onboarding text (tours v2).",
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "tourNameMain": "Getting started",
+  "@tourNameMain": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameDiscover": "Discover",
+  "@tourNameDiscover": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameWorldMap": "World map",
+  "@tourNameWorldMap": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameExplore": "Explore",
+  "@tourNameExplore": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameSwipe": "Swipe mode",
+  "@tourNameSwipe": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameProfileDetail": "Viewing a profile",
+  "@tourNameProfileDetail": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameFollowersPublic": "Followers of others",
+  "@tourNameFollowersPublic": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameSafetyCenter": "Report and block",
+  "@tourNameSafetyCenter": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameChat": "Chat basics",
+  "@tourNameChat": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameChatExtras": "Chat extras",
+  "@tourNameChatExtras": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameStory": "Stories",
+  "@tourNameStory": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameCommunities": "Communities",
+  "@tourNameCommunities": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameCommunityDetail": "Inside a community",
+  "@tourNameCommunityDetail": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameEvents": "Events",
+  "@tourNameEvents": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameEventTickets": "Event tickets",
+  "@tourNameEventTickets": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameExperienceGuest": "Booking an experience",
+  "@tourNameExperienceGuest": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameExperienceHost": "Hosting experiences",
+  "@tourNameExperienceHost": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameExperienceDates": "Experience dates",
+  "@tourNameExperienceDates": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameAttractions": "Attractions",
+  "@tourNameAttractions": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameProfile": "Your profile",
+  "@tourNameProfile": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameFollowersOwn": "Your followers",
+  "@tourNameFollowersOwn": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNamePrivacyLocation": "Privacy and location",
+  "@tourNamePrivacyLocation": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameVerification": "Verification",
+  "@tourNameVerification": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameNotifications": "Notifications",
+  "@tourNameNotifications": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameCoinShop": "Coins and membership",
+  "@tourNameCoinShop": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameInviteFriends": "Invite friends",
+  "@tourNameInviteFriends": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameSafetyAppeal": "Appealing a decision",
+  "@tourNameSafetyAppeal": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameBusinessCenter": "Business Center",
+  "@tourNameBusinessCenter": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameStorefrontEditor": "Storefront editor",
+  "@tourNameStorefrontEditor": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameMySpace": "My Space",
+  "@tourNameMySpace": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNameGetPaid": "Get paid",
+  "@tourNameGetPaid": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "tourNamePromote": "Promote",
+  "@tourNamePromote": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "whatsNewTitle": "What's new",
+  "@whatsNewTitle": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "whatsNewGotIt": "Got it",
+  "@whatsNewGotIt": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "whatsNew5043WorldMap": "A world map of your network, with filters for Following, Followers, Chats and Businesses.",
+  "@whatsNew5043WorldMap": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "whatsNew5043Businesses": "Businesses now appear by their address and with their own picture.",
+  "@whatsNew5043Businesses": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "whatsNew5043Followers": "Followers and following are now public - tap them on any profile.",
+  "@whatsNew5043Followers": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "welcomeSlide1Title": "Meet people and places worldwide",
+  "@welcomeSlide1Title": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "welcomeSlide1Body": "Locals, travelers and businesses near you and far away.",
+  "@welcomeSlide1Body": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "welcomeSlide2Title": "Chat in any language",
+  "@welcomeSlide2Title": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "welcomeSlide2Body": "Messages are translated live, so nothing gets lost.",
+  "@welcomeSlide2Body": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "welcomeSlide3Title": "Events, experiences and communities near you",
+  "@welcomeSlide3Title": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "welcomeSlide3Body": "Join what's happening or host your own.",
+  "@welcomeSlide3Body": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "welcomeSlide4Title": "Safe by design",
+  "@welcomeSlide4Title": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "welcomeSlide4Body": "Verified accounts, and report and block in one tap.",
+  "@welcomeSlide4Body": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "welcomeGetStarted": "Get started",
+  "@welcomeGetStarted": {
+    "description": "In-app tutorial / onboarding text (tours v2)."
+  },
+  "welcomeSlideOf": "Slide {index} of {total}",
+  "@welcomeSlideOf": {
+    "description": "In-app tutorial / onboarding text (tours v2).",
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
   }
 }

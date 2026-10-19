@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 
 import '../../../../generated/app_localizations.dart';
 import '../../../experience_bookings/domain/entities/booking.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
 import '../../data/my_space_repository.dart';
 import 'space_widgets.dart';
 
@@ -92,15 +95,25 @@ class _BookingDashboardCardsState extends State<BookingDashboardCards> {
     return Padding(
       padding: widget.padding,
       child: SpacePair(
-        first: SpaceDashboardCard(
+        first: TourAnchor(
+          tourId: TourController.experienceHostTourId,
+          showcaseKey: TourKeys.expMyBookings,
+          title: l.tourExpMyBookingsTitle,
+          description: l.tourExpMyBookingsDesc,
+          child: SpaceDashboardCard(
           inkKey: const ValueKey('my-bookings'),
           icon: Icons.confirmation_number_outlined,
           title: l.bkMyBookings,
           loading: c == null,
           subtitle: c == null ? null : l.bkCardUpcoming(c.guestUpcoming),
           onTap: () => _open(BookingRole.guest),
-        ),
-        second: SpaceDashboardCard(
+        )),
+        second: TourAnchor(
+          tourId: TourController.experienceHostTourId,
+          showcaseKey: TourKeys.expHostRequests,
+          title: l.tourExpRequestsTitle,
+          description: l.tourExpRequestsDesc,
+          child: SpaceDashboardCard(
           inkKey: const ValueKey('host-bookings'),
           icon: Icons.inbox_outlined,
           title: l.bkHostBookings,
@@ -113,7 +126,7 @@ class _BookingDashboardCardsState extends State<BookingDashboardCards> {
                   ? l.bkCardToConfirm(toConfirm)
                   : l.bkCardUpcoming(c.hostUpcoming),
           onTap: () => _open(BookingRole.host, toConfirm: toConfirm > 0),
-        ),
+        )),
       ),
     );
   }

@@ -57,6 +57,7 @@ import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
 import '../../../app_tour/presentation/widgets/tour_showcase.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
 import '../../../discovery/domain/entities/match.dart';
 import '../../../discovery/presentation/screens/match_detail_screen.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
@@ -1922,7 +1923,17 @@ class _ChatScreenState extends State<ChatScreen> {
       child: BlocProvider.value(
         value: _chatBloc,
         child: ShowCaseWidget(
-          builder: (showcaseContext) => Scaffold(
+          builder: (showcaseContext) => PageTourHost(
+            tourId: TourController.chatExtrasTourId,
+            userId: widget.currentUserId,
+            ownShowcase: false,
+            keys: () => [
+              TourKeys.chatAutoTranslate,
+              TourKeys.chatVoice,
+              TourKeys.chatTripMap,
+              TourKeys.chatMenuSafety,
+            ],
+            child: Scaffold(
           backgroundColor: AppColors.backgroundDark,
           appBar: _buildAppBar(),
         body: Column(
@@ -2249,7 +2260,7 @@ class _ChatScreenState extends State<ChatScreen> {
               _buildReplyLockedBar(context),
           ],
         ),
-        ),
+        )),
         ),
       ),
     );
@@ -2423,10 +2434,17 @@ class _ChatScreenState extends State<ChatScreen> {
           description: AppLocalizations.of(context)!.tourChatLanguageDesc,
           gesture: TourGesture.tap,
           targetShapeBorder: const CircleBorder(),
-          child: IconButton(
-            icon: const Icon(Icons.translate, color: AppColors.textSecondary),
-            tooltip: AppLocalizations.of(context)!.chatLanguages,
-            onPressed: _showToolsMenu,
+          child: TourAnchor(
+            tourId: TourController.chatExtrasTourId,
+            showcaseKey: TourKeys.chatAutoTranslate,
+            title: AppLocalizations.of(context)!.tourChatAutoTranslateTitle,
+            description: AppLocalizations.of(context)!.tourChatAutoTranslateDesc,
+            targetShapeBorder: const CircleBorder(),
+            child: IconButton(
+              icon: const Icon(Icons.translate, color: AppColors.textSecondary),
+              tooltip: AppLocalizations.of(context)!.chatLanguages,
+              onPressed: _showToolsMenu,
+            ),
           ),
         ),
         // Chat options menu (admin: delete, block, report)
@@ -2436,9 +2454,16 @@ class _ChatScreenState extends State<ChatScreen> {
           description: AppLocalizations.of(context)!.tourChatSettingsDesc,
           gesture: TourGesture.tap,
           targetShapeBorder: const CircleBorder(),
-          child: IconButton(
-            icon: const Icon(Icons.more_vert, color: AppColors.textSecondary),
-            onPressed: () => _showChatOptionsMenu(context),
+          child: TourAnchor(
+            tourId: TourController.chatExtrasTourId,
+            showcaseKey: TourKeys.chatMenuSafety,
+            title: AppLocalizations.of(context)!.tourChatSafetyTitle,
+            description: AppLocalizations.of(context)!.tourChatSafetyDesc,
+            targetShapeBorder: const CircleBorder(),
+            child: IconButton(
+              icon: const Icon(Icons.more_vert, color: AppColors.textSecondary),
+              onPressed: () => _showChatOptionsMenu(context),
+            ),
           ),
         ),
       ],
@@ -3892,7 +3917,14 @@ class _ChatScreenState extends State<ChatScreen> {
                     onPressed: () => _openIdeas(sentences: true),
                   ),
                   if (_showCulturalTips)
-                    _placesBuilder((places, _) => ChatPlacesButton(places: places, onRemove: _removePlace)),
+                    _placesBuilder((places, _) => TourAnchor(
+                          tourId: TourController.chatExtrasTourId,
+                          showcaseKey: TourKeys.chatTripMap,
+                          title: AppLocalizations.of(context)!.tourChatTripMapTitle,
+                          description: AppLocalizations.of(context)!.tourChatTripMapDesc,
+                          targetShapeBorder: const CircleBorder(),
+                          child: ChatPlacesButton(places: places, onRemove: _removePlace),
+                        )),
                 ],
               ),
             ),
@@ -3956,14 +3988,21 @@ class _ChatScreenState extends State<ChatScreen> {
                     builder: (context, state) {
                       final isSending = state is ChatSending;
 
-                      return VoiceRecordSendButton(
+                      return TourAnchor(
+                        tourId: TourController.chatExtrasTourId,
+                        showcaseKey: TourKeys.chatVoice,
+                        title: AppLocalizations.of(context)!.tourChatVoiceTitle,
+                        description: AppLocalizations.of(context)!.tourChatVoiceDesc,
+                        gesture: TourGesture.longPress,
+                        targetShapeBorder: const CircleBorder(),
+                        child: VoiceRecordSendButton(
                         controller: _messageController,
                         isSending: isSending,
                         buttonColor: AppColors.richGold,
                         iconColor: AppColors.deepBlack,
                         onSendText: () => _sendMessage(this.context),
                         onSendVoice: _sendVoiceMessage,
-                      );
+                      ));
                     },
                   ),
                 ],

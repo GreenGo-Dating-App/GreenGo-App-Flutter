@@ -26733,4 +26733,591 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get globeFilterBusinesses => 'Attività';
+
+  @override
+  String get tourDiscoverSwitchTitle => 'Persone o attività';
+
+  @override
+  String get tourDiscoverSwitchDesc =>
+      'Passa subito da persone ad attività locali.';
+
+  @override
+  String get tourDiscoverFiltersTitle => 'Filtri';
+
+  @override
+  String get tourDiscoverFiltersDesc => 'Scegli distanza, lingue e interessi.';
+
+  @override
+  String get tourDiscoverSearchTitle => 'Cerca';
+
+  @override
+  String get tourDiscoverSearchDesc => 'Trova qualcuno per nome o nickname.';
+
+  @override
+  String get tourDiscoverSavedTitle => 'Ricerche salvate';
+
+  @override
+  String get tourDiscoverSavedDesc =>
+      'Salva questi filtri e riaprili con un tocco.';
+
+  @override
+  String get tourDiscoverWorldMapTitle => 'Mappa del mondo';
+
+  @override
+  String get tourDiscoverWorldMapDesc =>
+      'Guarda la tua rete sulla mappa del mondo.';
+
+  @override
+  String get tourWorldMapFiltersTitle => 'Scegli chi vedere';
+
+  @override
+  String get tourWorldMapFiltersDesc =>
+      'Seguiti, Follower, Chat, Attività: combinali come vuoi.';
+
+  @override
+  String get tourWorldMapPinsTitle => 'Tocca un segnaposto';
+
+  @override
+  String get tourWorldMapPinsDesc =>
+      'Un segnaposto apre il profilo o la vetrina dell\'attività.';
+
+  @override
+  String get tourWorldMapZoomTitle => 'Allontana lo zoom';
+
+  @override
+  String get tourWorldMapZoomDesc =>
+      'Pizzica per vedere interi Paesi, toccane uno per i suoi eventi.';
+
+  @override
+  String get tourEventPhasesTitle => 'Fasi di prezzo';
+
+  @override
+  String get tourEventPhasesDesc =>
+      'Prima early bird, poi standard: i prezzi salgono quando una fase si esaurisce.';
+
+  @override
+  String get tourEventBuyTitle => 'Acquista biglietti';
+
+  @override
+  String tourEventBuyDesc(int max) {
+    return 'Fino a $max biglietti a persona. Li trovi poi in Il mio spazio > I miei biglietti.';
+  }
+
+  @override
+  String get tourEventOrganizerTitle => 'Scrivi all\'organizzatore';
+
+  @override
+  String get tourEventOrganizerDesc =>
+      'Domande prima di acquistare? Chiedi qui.';
+
+  @override
+  String get tourBcOverviewTitle => 'Panoramica';
+
+  @override
+  String get tourBcOverviewDesc =>
+      '\"Azione richiesta\" elenca cosa fare dopo.';
+
+  @override
+  String get tourBcMySpaceTitle => 'Il mio spazio';
+
+  @override
+  String get tourBcMySpaceDesc =>
+      'I tuoi eventi, esperienze, calendario e scanner dei biglietti.';
+
+  @override
+  String get tourBcSalesTitle => 'Vendite';
+
+  @override
+  String get tourBcSalesDesc =>
+      'Incassi, pagamenti e i tuoi dati di fatturazione.';
+
+  @override
+  String get tourBcMarketingTitle => 'Marketing';
+
+  @override
+  String get tourBcMarketingDesc => 'Promuovi la tua vetrina e i tuoi eventi.';
+
+  @override
+  String get tourBcCustomersTitle => 'Clienti';
+
+  @override
+  String get tourBcCustomersDesc =>
+      'Follower e persone che ti hanno salvato o prenotato.';
+
+  @override
+  String get tourBcSettingsTitle => 'Impostazioni';
+
+  @override
+  String get tourBcSettingsDesc => 'Completa la checklist per sbloccare tutto.';
+
+  @override
+  String get tourStorefrontLogoTitle => 'Foto dell\'attività';
+
+  @override
+  String get tourStorefrontLogoDesc =>
+      'La foto della tua attività, non la tua foto personale.';
+
+  @override
+  String get tourStorefrontNameTitle => 'Nome dell\'attività';
+
+  @override
+  String get tourStorefrontNameDesc =>
+      'Mostrato in Scopri e nella tua vetrina.';
+
+  @override
+  String get tourStorefrontFeaturedTitle => 'Immagine in evidenza';
+
+  @override
+  String get tourStorefrontFeaturedDesc =>
+      'La copertina grande in cima alla tua vetrina.';
+
+  @override
+  String get tourStorefrontCategoryTitle => 'Categoria';
+
+  @override
+  String get tourStorefrontCategoryDesc =>
+      'Scegli il tipo di attività, poi la categoria.';
+
+  @override
+  String get tourStorefrontAddressTitle => 'Indirizzo sulla mappa';
+
+  @override
+  String get tourStorefrontAddressDesc =>
+      'Le persone vicine ti trovano con questo indirizzo.';
+
+  @override
+  String get tourFollowersOwnTitle => 'Follower e seguiti';
+
+  @override
+  String get tourFollowersOwnDesc =>
+      'Tocca un numero per vedere chi. I negozi seguiti restano privati.';
+
+  @override
+  String get tourFollowersPublicTitle => 'La sua rete';
+
+  @override
+  String get tourFollowersPublicDesc =>
+      'Follower e seguiti sono pubblici: tocca per vedere chi.';
+
+  @override
+  String get tourChatAutoTranslateTitle => 'Traduzione automatica';
+
+  @override
+  String get tourChatAutoTranslateDesc =>
+      'I messaggi sono tradotti in tempo reale. Scegli qui le lingue.';
+
+  @override
+  String get tourChatVoiceTitle => 'Messaggi vocali';
+
+  @override
+  String get tourChatVoiceDesc =>
+      'Tieni premuto per registrare, rilascia per inviare.';
+
+  @override
+  String get tourChatTripMapTitle => 'Mappa del viaggio';
+
+  @override
+  String get tourChatTripMapDesc =>
+      'I luoghi citati in questa chat, insieme su una mappa.';
+
+  @override
+  String get tourChatSafetyTitle => 'Segnala o blocca';
+
+  @override
+  String get tourChatSafetyDesc =>
+      'Qualcosa non va? Segnala o blocca da questo menu.';
+
+  @override
+  String get tourCommunityTabsTitle => 'Sezioni della community';
+
+  @override
+  String get tourCommunityTabsDesc =>
+      'Chat, Consigli, Annunci, Eventi ed Esperienze.';
+
+  @override
+  String get tourCommunityRulesTitle => 'Regole';
+
+  @override
+  String get tourCommunityRulesDesc =>
+      'Leggi prima regole e risorse del gruppo.';
+
+  @override
+  String get tourCommunityJoinTitle => 'Unisciti';
+
+  @override
+  String get tourCommunityJoinDesc =>
+      'Unisciti ora o chiedi di entrare in un gruppo privato.';
+
+  @override
+  String get tourExpBookTitle => 'Prenota un orario';
+
+  @override
+  String get tourExpBookDesc =>
+      'Scegli una data e prenota. Il QR della prenotazione è in Le mie prenotazioni.';
+
+  @override
+  String get tourExpDatesTitle => 'Date disponibili';
+
+  @override
+  String get tourExpDatesDesc =>
+      'Quante date puoi prenotare in questo momento.';
+
+  @override
+  String get tourExpCreateTitle => 'Offri un\'esperienza';
+
+  @override
+  String get tourExpCreateDesc =>
+      'Creane una, poi aggiungi le date dal suo menu.';
+
+  @override
+  String get tourExpRequestsTitle => 'Richieste di prenotazione';
+
+  @override
+  String get tourExpRequestsDesc =>
+      'Conferma o rifiuta le prenotazioni delle tue esperienze.';
+
+  @override
+  String get tourExpMyBookingsTitle => 'Le mie prenotazioni';
+
+  @override
+  String get tourExpMyBookingsDesc =>
+      'Le tue prenotazioni e i loro QR per il check-in.';
+
+  @override
+  String get tourExpCalendarTitle => 'Calendario disponibilità';
+
+  @override
+  String get tourExpCalendarDesc =>
+      'Tocca un giorno per aggiungere una data, una data per modificarla.';
+
+  @override
+  String get tourShopTabsTitle => 'Monete e piani';
+
+  @override
+  String get tourShopTabsDesc =>
+      'In Abbonamento trovi i piani e l\'eventuale offerta di lancio.';
+
+  @override
+  String get tourShopCoinsTitle => 'A cosa servono le monete';
+
+  @override
+  String get tourShopCoinsDesc =>
+      'Invia regali, metti in risalto profilo o eventi, sblocca extra.';
+
+  @override
+  String get tourShopSendCoinsTitle => 'Invia monete';
+
+  @override
+  String get tourShopSendCoinsDesc =>
+      'Regala monete a qualcuno della tua rete.';
+
+  @override
+  String get tourShopRestoreTitle => 'Ripristina acquisti';
+
+  @override
+  String get tourShopRestoreDesc =>
+      'Telefono nuovo? Ripristina qui il tuo abbonamento.';
+
+  @override
+  String get tourPrivacyGlobeTitle => 'Visibilità sulla mappa';
+
+  @override
+  String get tourPrivacyGlobeDesc =>
+      'Esatta (~100 m), approssimativa, solo Paese o nascosta.';
+
+  @override
+  String get tourPrivacyTravelerTitle => 'Modalità viaggiatore';
+
+  @override
+  String get tourPrivacyTravelerDesc =>
+      'Compari nella città che stai visitando.';
+
+  @override
+  String get tourPrivacyIncognitoTitle => 'Incognito';
+
+  @override
+  String get tourPrivacyIncognitoDesc => 'Esplora senza comparire in Scopri.';
+
+  @override
+  String get tourGetPaidConnectTitle => 'Collega un conto di incasso';
+
+  @override
+  String get tourGetPaidConnectDesc =>
+      'Stripe o Mercado Pago: l\'incasso dei biglietti arriva direttamente a te.';
+
+  @override
+  String get tourGetPaidFeesTitle => 'Quanto ricevi';
+
+  @override
+  String get tourGetPaidFeesDesc =>
+      'La commissione per biglietto: l\'editor dell\'evento mostra quanto ricevi.';
+
+  @override
+  String get tourMySpaceScannerTitle => 'Scanner dei biglietti';
+
+  @override
+  String get tourMySpaceScannerDesc =>
+      'Scansiona i QR degli ospiti all\'ingresso.';
+
+  @override
+  String get tourMySpaceTicketsTitle => 'I miei biglietti';
+
+  @override
+  String get tourMySpaceTicketsDesc =>
+      'I biglietti acquistati, pronti da mostrare all\'ingresso.';
+
+  @override
+  String get tourMySpaceCalendarTitle => 'Il tuo calendario';
+
+  @override
+  String get tourMySpaceCalendarDesc => 'Filtra per Organizzo o Partecipo.';
+
+  @override
+  String get tourPromoteStorefrontTitle => 'Promuovi la tua vetrina';
+
+  @override
+  String get tourPromoteStorefrontDesc =>
+      'Compari per primo alle persone vicine per un periodo.';
+
+  @override
+  String get tourPromoteEventsTitle => 'Metti in risalto un evento';
+
+  @override
+  String get tourPromoteEventsDesc => 'Porta un evento in cima agli elenchi.';
+
+  @override
+  String get tourSafetyMenuTitle => 'Segnala o blocca';
+
+  @override
+  String get tourSafetyMenuDesc =>
+      'Le segnalazioni arrivano al nostro team sicurezza e restano riservate.';
+
+  @override
+  String get tourSafetyAppealTitle => 'Ricorso';
+
+  @override
+  String get tourSafetyAppealDesc =>
+      'Non sei d\'accordo? Fai ricorso entro la scadenza: lo esamina una persona.';
+
+  @override
+  String get tourVerifyPhoneTitle => 'Perché il telefono';
+
+  @override
+  String get tourVerifyPhoneDesc =>
+      'Un telefono verificato tiene lontani i profili falsi. Resta privato.';
+
+  @override
+  String get tourVerifyIdTitle => 'Documento facoltativo';
+
+  @override
+  String get tourVerifyIdDesc =>
+      'Aggiungi un documento per ottenere il badge Verificato.';
+
+  @override
+  String get tourInviteShareTitle => 'Invita amici';
+
+  @override
+  String tourInviteShareDesc(int coins) {
+    return 'Condividi il link: ricevi $coins monete per ogni amico che si iscrive.';
+  }
+
+  @override
+  String get tourInviteRulesTitle => 'Come funziona';
+
+  @override
+  String get tourInviteRulesDesc =>
+      'Il tuo amico riceve 1 settimana di abbonamento Base.';
+
+  @override
+  String get tourInviteProgressTitle => 'Traguardi';
+
+  @override
+  String tourInviteProgressDesc(int first, int second, int third) {
+    return 'A $first, $second e $third amici: un mese di Silver, Gold e poi Platinum.';
+  }
+
+  @override
+  String get tourAttractionTipsTitle => 'Consigli culturali';
+
+  @override
+  String get tourAttractionTipsDesc =>
+      'Da sapere prima di visitare questo Paese.';
+
+  @override
+  String get tourAttractionShareTitle => 'Condividi questo luogo';
+
+  @override
+  String get tourAttractionShareDesc =>
+      'Invialo in una chat: finisce nella sua mappa del viaggio.';
+
+  @override
+  String get tourAttractionMapsTitle => 'Come arrivare';
+
+  @override
+  String get tourAttractionMapsDesc =>
+      'Apri il percorso nella tua app di mappe.';
+
+  @override
+  String get guideToursTitle => 'Tour guidati';
+
+  @override
+  String get guideToursSubtitle => 'Rivedi qualsiasi guida';
+
+  @override
+  String get guideToursShowAgain => 'Mostra di nuovo';
+
+  @override
+  String guideToursOpenPageHint(String page) {
+    return 'Apri \"$page\" e il tour ripartirà.';
+  }
+
+  @override
+  String get tourNameMain => 'Primi passi';
+
+  @override
+  String get tourNameDiscover => 'Scopri';
+
+  @override
+  String get tourNameWorldMap => 'Mappa del mondo';
+
+  @override
+  String get tourNameExplore => 'Esplora';
+
+  @override
+  String get tourNameSwipe => 'Modalità scorrimento';
+
+  @override
+  String get tourNameProfileDetail => 'Vedere un profilo';
+
+  @override
+  String get tourNameFollowersPublic => 'Follower degli altri';
+
+  @override
+  String get tourNameSafetyCenter => 'Segnala e blocca';
+
+  @override
+  String get tourNameChat => 'Chat: le basi';
+
+  @override
+  String get tourNameChatExtras => 'Extra della chat';
+
+  @override
+  String get tourNameStory => 'Storie';
+
+  @override
+  String get tourNameCommunities => 'Community';
+
+  @override
+  String get tourNameCommunityDetail => 'Dentro una community';
+
+  @override
+  String get tourNameEvents => 'Eventi';
+
+  @override
+  String get tourNameEventTickets => 'Biglietti degli eventi';
+
+  @override
+  String get tourNameExperienceGuest => 'Prenotare un\'esperienza';
+
+  @override
+  String get tourNameExperienceHost => 'Offrire esperienze';
+
+  @override
+  String get tourNameExperienceDates => 'Date delle esperienze';
+
+  @override
+  String get tourNameAttractions => 'Attrazioni';
+
+  @override
+  String get tourNameProfile => 'Il tuo profilo';
+
+  @override
+  String get tourNameFollowersOwn => 'I tuoi follower';
+
+  @override
+  String get tourNamePrivacyLocation => 'Privacy e posizione';
+
+  @override
+  String get tourNameVerification => 'Verifica';
+
+  @override
+  String get tourNameNotifications => 'Notifiche';
+
+  @override
+  String get tourNameCoinShop => 'Monete e abbonamento';
+
+  @override
+  String get tourNameInviteFriends => 'Invita amici';
+
+  @override
+  String get tourNameSafetyAppeal => 'Fare ricorso';
+
+  @override
+  String get tourNameBusinessCenter => 'Centro attività';
+
+  @override
+  String get tourNameStorefrontEditor => 'Editor della vetrina';
+
+  @override
+  String get tourNameMySpace => 'Il mio spazio';
+
+  @override
+  String get tourNameGetPaid => 'Ricevi pagamenti';
+
+  @override
+  String get tourNamePromote => 'Promuovi';
+
+  @override
+  String get whatsNewTitle => 'Novità';
+
+  @override
+  String get whatsNewGotIt => 'Ho capito';
+
+  @override
+  String get whatsNew5043WorldMap =>
+      'Una mappa del mondo della tua rete, con filtri per Seguiti, Follower, Chat e Attività.';
+
+  @override
+  String get whatsNew5043Businesses =>
+      'Le attività ora compaiono al loro indirizzo e con la propria foto.';
+
+  @override
+  String get whatsNew5043Followers =>
+      'Follower e seguiti ora sono pubblici: toccali su qualsiasi profilo.';
+
+  @override
+  String get welcomeSlide1Title =>
+      'Incontra persone e luoghi in tutto il mondo';
+
+  @override
+  String get welcomeSlide1Body =>
+      'Persone del posto, viaggiatori e attività, vicino e lontano.';
+
+  @override
+  String get welcomeSlide2Title => 'Chatta in qualsiasi lingua';
+
+  @override
+  String get welcomeSlide2Body =>
+      'I messaggi sono tradotti in tempo reale, senza perdere nulla.';
+
+  @override
+  String get welcomeSlide3Title => 'Eventi, esperienze e community vicino a te';
+
+  @override
+  String get welcomeSlide3Body => 'Partecipa o organizza qualcosa tu.';
+
+  @override
+  String get welcomeSlide4Title => 'Sicuro per progettazione';
+
+  @override
+  String get welcomeSlide4Body =>
+      'Account verificati, segnala e blocca con un tocco.';
+
+  @override
+  String get welcomeGetStarted => 'Inizia';
+
+  @override
+  String welcomeSlideOf(int index, int total) {
+    return 'Schermata $index di $total';
+  }
 }

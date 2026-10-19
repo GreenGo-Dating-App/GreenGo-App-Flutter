@@ -6,6 +6,9 @@ import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/widgets/gg_calendar.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
@@ -224,7 +227,16 @@ class _MySpaceViewState extends State<_MySpaceView> {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context)!;
-    return Scaffold(
+    return PageTourHost(
+      tourId: TourController.mySpaceTourId,
+      userId: widget.currentUserId,
+      enableAutoScroll: true,
+      keys: () => [
+        TourKeys.mySpaceScanner,
+        TourKeys.mySpaceTickets,
+        TourKeys.mySpaceCalendar,
+      ],
+      child: Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: widget.embedded ? null : AppBar(
         backgroundColor: AppColors.backgroundDark,
@@ -256,28 +268,44 @@ class _MySpaceViewState extends State<_MySpaceView> {
                       const SizedBox(height: 16),
                       SpacePair(
                         breakpoint: 340,
-                        first: _PrimaryTile(
+                        first: TourAnchor(
+                          tourId: TourController.mySpaceTourId,
+                          showcaseKey: TourKeys.mySpaceScanner,
+                          title: l.tourMySpaceScannerTitle,
+                          description: l.tourMySpaceScannerDesc,
+                          child: _PrimaryTile(
                           key: const ValueKey('ms-scan'),
                           primary: true,
                           icon: Icons.qr_code_scanner,
                           title: l.msScanTickets,
                           hint: l.msScanTicketsHint,
                           onTap: _openScanner,
-                        ),
-                        second: _PrimaryTile(
+                        )),
+                        second: TourAnchor(
+                          tourId: TourController.mySpaceTourId,
+                          showcaseKey: TourKeys.mySpaceTickets,
+                          title: l.tourMySpaceTicketsTitle,
+                          description: l.tourMySpaceTicketsDesc,
+                          child: _PrimaryTile(
                           key: const ValueKey('ms-tickets'),
                           icon: Icons.confirmation_number_outlined,
                           title: l.qrHubTabMyTickets,
                           hint: l.msMyTicketsHint,
                           onTap: _openTickets,
-                        ),
+                        )),
                       ),
                       const SizedBox(height: 16),
                       _todoCard(l, s),
                       const SizedBox(height: 20),
                       _segments(l, s.section),
                       const SizedBox(height: 4),
-                      _calendarCard(s.section),
+                      TourAnchor(
+                        tourId: TourController.mySpaceTourId,
+                        showcaseKey: TourKeys.mySpaceCalendar,
+                        title: l.tourMySpaceCalendarTitle,
+                        description: l.tourMySpaceCalendarDesc,
+                        child: _calendarCard(s.section),
+                      ),
                       if (s.section == MySpaceSection.events)
                         ..._eventsSection(l, s)
                       else
@@ -290,7 +318,7 @@ class _MySpaceViewState extends State<_MySpaceView> {
           );
         },
       ),
-    );
+    ));
   }
 
   Widget _header(AppLocalizations l) {

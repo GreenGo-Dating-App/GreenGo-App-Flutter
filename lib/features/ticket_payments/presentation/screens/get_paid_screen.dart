@@ -10,6 +10,9 @@ import '../../domain/ticket_payments.dart';
 import '../ticket_l10n.dart';
 import '../widgets/ticket_fee_widgets.dart';
 import 'payments_to_confirm_screen.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
 
 /// Business > "Get paid": connect Mercado Pago / Stripe. Buyers pay inside
 /// the app and their tickets are confirmed automatically; the money goes
@@ -121,7 +124,12 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context)!;
-    return Scaffold(
+    return PageTourHost(
+      tourId: TourController.getPaidTourId,
+      userId: widget.uid,
+      enableAutoScroll: true,
+      keys: () => [TourKeys.getPaidProviders, TourKeys.getPaidFees],
+      child: Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
@@ -173,17 +181,34 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
               Text(l.tpAutoSectionHint,
                   style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5, height: 1.35)),
               const SizedBox(height: 12),
-              _providerCard(l, TicketProvider.mercadoPago, a.mercadoPago,
-                  recommendedBr: true, currency: a.mercadoPagoCurrency),
-              const SizedBox(height: 12),
-              _providerCard(l, TicketProvider.stripe, a.stripe),
+              TourAnchor(
+                tourId: TourController.getPaidTourId,
+                showcaseKey: TourKeys.getPaidProviders,
+                title: l.tourGetPaidConnectTitle,
+                description: l.tourGetPaidConnectDesc,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    _providerCard(l, TicketProvider.mercadoPago, a.mercadoPago,
+                        recommendedBr: true, currency: a.mercadoPagoCurrency),
+                    const SizedBox(height: 12),
+                    _providerCard(l, TicketProvider.stripe, a.stripe),
+                  ],
+                ),
+              ),
               const SizedBox(height: 20),
-              const TicketFeeScheduleCard(key: ValueKey('get-paid-fees')),
+              TourAnchor(
+                tourId: TourController.getPaidTourId,
+                showcaseKey: TourKeys.getPaidFees,
+                title: l.tourGetPaidFeesTitle,
+                description: l.tourGetPaidFeesDesc,
+                child: const TicketFeeScheduleCard(key: ValueKey('get-paid-fees')),
+              ),
             ],
           );
         },
       ),
-    );
+    ));
   }
 
   Widget _providerCard(AppLocalizations l, TicketProvider p, PayoutStatus s,

@@ -41,6 +41,9 @@ import '../bloc/coin_state.dart';
 import '../../../../core/services/effective_tier.dart';
 import '../../../../core/services/tier_entitlements.dart';
 import '../../../membership/domain/entities/membership.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../../core/services/analytics_consent_service.dart';
 
 /// Coin Shop Screen
@@ -1015,7 +1018,18 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           });
         }
       },
-      child: Scaffold(
+      child: PageTourHost(
+        tourId: TourController.coinShopTourId,
+        userId: widget.userId,
+        enableAutoScroll: true,
+        keys: () => [
+          TourKeys.shopTabs,
+          TourKeys.shopCoinsFor,
+          TourKeys.shopSendCoins,
+          // Web (Stripe) has no store to restore from.
+          if (!kIsWeb) TourKeys.shopRestore,
+        ],
+        child: Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
@@ -1048,7 +1062,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           _safeBuild(_buildMembershipTab, AppLocalizations.of(context)!.shopTabMembership),
         ],
       ),
-      ),
+      )),
     );
   }
 
@@ -1069,7 +1083,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         color: Colors.white.withValues(alpha: 0.05),
         borderRadius: BorderRadius.circular(25),
       ),
-      child: TabBar(
+      child: TourAnchor(
+        tourId: TourController.coinShopTourId,
+        showcaseKey: TourKeys.shopTabs,
+        title: AppLocalizations.of(context)!.tourShopTabsTitle,
+        description: AppLocalizations.of(context)!.tourShopTabsDesc,
+        child: TabBar(
         controller: _tabController,
         labelColor: Colors.white,
         unselectedLabelColor: Colors.white60,
@@ -1108,7 +1127,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             ),
           ),
         ],
-      ),
+      )),
     );
   }
 
@@ -1434,10 +1453,15 @@ class _CoinShopScreenState extends State<CoinShopScreen>
               // Restore. No free trials on any store (owner 2026-10-17): the
               // only intro offer is the 2026 launch price on each card.
               // Web (Stripe) has no store to restore from.
-              SubscriptionLegalFooter(
+              TourAnchor(
+                tourId: TourController.coinShopTourId,
+                showcaseKey: TourKeys.shopRestore,
+                title: AppLocalizations.of(context)!.tourShopRestoreTitle,
+                description: AppLocalizations.of(context)!.tourShopRestoreDesc,
+                child: SubscriptionLegalFooter(
                 onRestore: kIsWeb ? null : _restorePurchases,
                 isRestoring: _isRestoring,
-              ),
+              )),
               // Web (Stripe): price / interval / next renewal, the billing
               // portal and "Withdraw from contract" (P2-9; L-11, H-23).
               if (kIsWeb) const WebBillingPanel(),
@@ -2343,14 +2367,19 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 8),
-              Text(
+              TourAnchor(
+                tourId: TourController.coinShopTourId,
+                showcaseKey: TourKeys.shopCoinsFor,
+                title: AppLocalizations.of(context)!.tourShopCoinsTitle,
+                description: AppLocalizations.of(context)!.tourShopCoinsDesc,
+                child: Text(
                 AppLocalizations.of(context)!.shopUnlockPremium,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 14,
                   color: Colors.grey,
                 ),
-              ),
+              )),
             ],
           ),
         ),
@@ -2369,7 +2398,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 return _buildPackageCard(package, isPopular);
               }),
               const SizedBox(height: 24),
-              _buildSendCoinsSection(),
+              TourAnchor(
+                tourId: TourController.coinShopTourId,
+                showcaseKey: TourKeys.shopSendCoins,
+                title: AppLocalizations.of(context)!.tourShopSendCoinsTitle,
+                description: AppLocalizations.of(context)!.tourShopSendCoinsDesc,
+                child: _buildSendCoinsSection(),
+              ),
               // Web (Stripe): "Withdraw from contract" for coin purchases
               // made without the immediate-delivery waiver (P2-9).
               if (kIsWeb) const WebBillingPanel(showSubscriptions: false),

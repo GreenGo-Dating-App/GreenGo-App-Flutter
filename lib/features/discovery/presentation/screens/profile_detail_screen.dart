@@ -26,6 +26,7 @@ import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
 import '../../../app_tour/presentation/widgets/tour_showcase.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../business/presentation/widgets/business_contact_button.dart';
 import '../../../../core/services/deep_link_service.dart';
@@ -486,11 +487,24 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
           if (!_isSelfView)
             Padding(
               padding: const EdgeInsets.only(right: 8),
-              child: SafetyActionsMenu(
-                currentUserId: widget.currentUserId,
-                reportedUserId: widget.profile.userId,
-                reportedUserName: widget.profile.displayName,
-                isReportedUserAdmin: widget.profile.isAdmin,
+              child: PageTourHost(
+                tourId: TourController.safetyCenterTourId,
+                userId: widget.currentUserId,
+                ownShowcase: false,
+                keys: () => [TourKeys.safetyMenu],
+                child: TourAnchor(
+                  tourId: TourController.safetyCenterTourId,
+                  showcaseKey: TourKeys.safetyMenu,
+                  title: l10n.tourSafetyMenuTitle,
+                  description: l10n.tourSafetyMenuDesc,
+                  targetShapeBorder: const CircleBorder(),
+                  child: SafetyActionsMenu(
+                    currentUserId: widget.currentUserId,
+                    reportedUserId: widget.profile.userId,
+                    reportedUserName: widget.profile.displayName,
+                    isReportedUserAdmin: widget.profile.isAdmin,
+                  ),
+                ),
               ),
             ),
         ],
@@ -697,10 +711,22 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                             currentUserId: widget.currentUserId,
                           ),
                         ] else if (widget.currentUserId.isNotEmpty)
-                          PublicFollowStatsLine(
-                            userId: widget.profile.userId,
-                            currentUserId: widget.currentUserId,
-                            controller: _followController,
+                          PageTourHost(
+                            tourId: TourController.followersPublicTourId,
+                            userId: widget.currentUserId,
+                            ownShowcase: false,
+                            keys: () => [TourKeys.publicFollowLine],
+                            child: TourAnchor(
+                              tourId: TourController.followersPublicTourId,
+                              showcaseKey: TourKeys.publicFollowLine,
+                              title: l10n.tourFollowersPublicTitle,
+                              description: l10n.tourFollowersPublicDesc,
+                              child: PublicFollowStatsLine(
+                                userId: widget.profile.userId,
+                                currentUserId: widget.currentUserId,
+                                controller: _followController,
+                              ),
+                            ),
                           ),
 
                         const SizedBox(height: 24),

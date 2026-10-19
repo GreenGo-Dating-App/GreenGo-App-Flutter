@@ -8,6 +8,9 @@ import '../../../../core/services/tier_entitlements.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/menu_row.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../finance_documents/data/billing_profile_repository.dart';
 import '../../../finance_documents/presentation/bloc/billing_profile_cubit.dart';
 import '../../../finance_documents/presentation/widgets/billing_status.dart';
@@ -121,6 +124,28 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
     if (mounted) setState(_load);
   }
 
+  /// Business Center page-tour step for tab [index] (the Storefront tab has
+  /// its own editor tour, so it has no step here).
+  Widget _tourTab(AppLocalizations l, int index, Widget tab) {
+    final step = switch (index) {
+      0 => (TourKeys.bcOverview, l.tourBcOverviewTitle, l.tourBcOverviewDesc),
+      _kTabMySpace => (TourKeys.bcMySpace, l.tourBcMySpaceTitle, l.tourBcMySpaceDesc),
+      2 => (TourKeys.bcSales, l.tourBcSalesTitle, l.tourBcSalesDesc),
+      3 => (TourKeys.bcMarketing, l.tourBcMarketingTitle, l.tourBcMarketingDesc),
+      4 => (TourKeys.bcCustomers, l.tourBcCustomersTitle, l.tourBcCustomersDesc),
+      _kTabSettings => (TourKeys.bcSettings, l.tourBcSettingsTitle, l.tourBcSettingsDesc),
+      _ => null,
+    };
+    if (step == null) return tab;
+    return TourAnchor(
+      tourId: TourController.businessCenterTourId,
+      showcaseKey: step.$1,
+      title: step.$2,
+      description: step.$3,
+      child: tab,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     if (!TierEntitlements.isBusinessActive(p.effectiveTier, p.isBusiness)) {
@@ -142,7 +167,20 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
       (l.bcTabStorefront, Icons.storefront_outlined, _storefront(l)),
       (l.bcTabSettings, Icons.settings_outlined, _settings(l)),
     ];
-    final body = DefaultTabController(
+    final body = PageTourHost(
+      tourId: TourController.businessCenterTourId,
+      userId: p.userId,
+      enabled: p.isBusiness,
+      enableAutoScroll: true,
+      keys: () => [
+        TourKeys.bcOverview,
+        TourKeys.bcMySpace,
+        TourKeys.bcSales,
+        TourKeys.bcMarketing,
+        TourKeys.bcCustomers,
+        TourKeys.bcSettings,
+      ],
+      child: DefaultTabController(
       length: tabs.length,
       child: Scaffold(
         backgroundColor: AppColors.backgroundDark,
@@ -174,12 +212,15 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
             indicatorColor: AppColors.richGold,
             labelColor: AppColors.richGold,
             unselectedLabelColor: AppColors.textSecondary,
-            tabs: [for (final t in tabs) Tab(icon: Icon(t.$2, size: 20), text: t.$1)],
+            tabs: [
+              for (var i = 0; i < tabs.length; i++)
+                _tourTab(l, i, Tab(icon: Icon(tabs[i].$2, size: 20), text: tabs[i].$1)),
+            ],
           ),
         ),
         body: TabBarView(children: [for (final t in tabs) t.$3]),
       ),
-    );
+    ));
     final scoped = p.isBusiness ? BillingStatusScope(repository: widget.billingRepository, child: body) : body;
     ProfileBloc? bloc;
     try {

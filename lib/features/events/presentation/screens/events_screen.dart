@@ -42,6 +42,7 @@ import '../../../../core/services/tier_gate.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
 import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../app_tour/presentation/widgets/tour_trigger.dart';
 import '../../../attractions/presentation/widgets/attractions_filter_sheet.dart';
@@ -2452,7 +2453,21 @@ class EventDetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    final tourL10n = AppLocalizations.of(context)!;
+    const tour = TourController.eventTicketsTourId;
+    // First paid event a (non-organizer) user opens: price phases, the buy
+    // button (up to kMaxTicketsPerBuyer) and the organizer chat.
+    return PageTourHost(
+      tourId: tour,
+      userId: currentUserId,
+      enabled: !event.isFree && !event.isOwner(currentUserId),
+      enableAutoScroll: true,
+      keys: () => [
+        TourKeys.eventPricePhases,
+        TourKeys.eventBuyTickets,
+        TourKeys.eventMessageOrganizer,
+      ],
+      child: Scaffold(
       backgroundColor: AppColors.backgroundDark,
       body: CustomScrollView(
         slivers: [
@@ -2637,15 +2652,21 @@ class EventDetailsScreen extends StatelessWidget {
                   // Buyer <-> organizer chat (hidden for the organizers).
                   if (!event.isOwner(currentUserId)) ...[
                     const SizedBox(height: 12),
-                    ListingChatButton(
-                      listing: ListingChatRef(
-                        type: ConversationListingContext.event,
-                        id: event.id,
-                        title: event.title,
-                        startAt: event.startDate,
-                        organizerId: event.organizerId,
+                    TourAnchor(
+                      tourId: tour,
+                      showcaseKey: TourKeys.eventMessageOrganizer,
+                      title: tourL10n.tourEventOrganizerTitle,
+                      description: tourL10n.tourEventOrganizerDesc,
+                      child: ListingChatButton(
+                        listing: ListingChatRef(
+                          type: ConversationListingContext.event,
+                          id: event.id,
+                          title: event.title,
+                          startAt: event.startDate,
+                          organizerId: event.organizerId,
+                        ),
+                        currentUserId: currentUserId,
                       ),
-                      currentUserId: currentUserId,
                     ),
                   ],
                   const SizedBox(height: 16),
@@ -2696,10 +2717,16 @@ class EventDetailsScreen extends StatelessWidget {
                   // price", the next phase, sold-out phases struck through.
                   if (!event.isFree && event.hasPricePhases) ...[
                     const SizedBox(height: 12),
-                    EventPricePhasesSection(
-                      eventId: event.id,
-                      phases: event.pricePhases,
-                      currency: event.currencyCode ?? event.currency,
+                    TourAnchor(
+                      tourId: tour,
+                      showcaseKey: TourKeys.eventPricePhases,
+                      title: tourL10n.tourEventPhasesTitle,
+                      description: tourL10n.tourEventPhasesDesc,
+                      child: EventPricePhasesSection(
+                        eventId: event.id,
+                        phases: event.pricePhases,
+                        currency: event.currencyCode ?? event.currency,
+                      ),
                     ),
                   ],
                   if (event.isPrivate) ...[
@@ -3120,7 +3147,13 @@ class EventDetailsScreen extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        ElevatedButton(
+                        TourAnchor(
+                          tourId: tour,
+                          showcaseKey: TourKeys.eventBuyTickets,
+                          title: tourL10n.tourEventBuyTitle,
+                          description: tourL10n
+                              .tourEventBuyDesc(kMaxTicketsPerBuyer),
+                          child: ElevatedButton(
                           key: const ValueKey('event-buy-ticket'),
                           onPressed: organizer
                               ? () => Navigator.of(context).push(GetPaidScreen.route(currentUserId))
@@ -3151,6 +3184,7 @@ class EventDetailsScreen extends StatelessWidget {
                                         : l10n.tpNotOnSaleYet)),
                             style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                           ),
+                        ),
                         ),
                         // Lock hint for users without Base (button stays usable:
                         // it opens the Base-membership upsell).
@@ -3192,6 +3226,7 @@ class EventDetailsScreen extends StatelessWidget {
           ),
         ),
       ),
+    ),
     );
   }
 

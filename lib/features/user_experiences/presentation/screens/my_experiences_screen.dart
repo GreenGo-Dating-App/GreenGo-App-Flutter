@@ -10,6 +10,9 @@ import '../../../experience_bookings/domain/entities/booking.dart';
 import '../../../experience_bookings/presentation/screens/bookings_list_screen.dart';
 import '../../../experience_bookings/presentation/screens/experience_slots_screen.dart';
 import '../../../my_space/presentation/widgets/booking_dashboard_cards.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
 import '../../domain/entities/user_experience.dart';
 import '../../domain/repositories/user_experiences_repository.dart';
 import '../bloc/experience_feed_bloc.dart';
@@ -273,22 +276,36 @@ class _MyExperiencesViewState extends State<_MyExperiencesView> {
       Expanded(child: _body(l)),
     ]);
     if (widget.embedded) return body;
-    return Scaffold(
+    return PageTourHost(
+      tourId: TourController.experienceHostTourId,
+      userId: widget.currentUserId,
+      keys: () => [
+        TourKeys.expCreate,
+        TourKeys.expHostRequests,
+        TourKeys.expMyBookings,
+      ],
+      child: Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         title: Text(l.uexpMine,
             style: const TextStyle(color: AppColors.textPrimary)),
       ),
-      floatingActionButton: FloatingActionButton.extended(
+      floatingActionButton: TourAnchor(
+        tourId: TourController.experienceHostTourId,
+        showcaseKey: TourKeys.expCreate,
+        title: l.tourExpCreateTitle,
+        description: l.tourExpCreateDesc,
+        targetShapeBorder: const StadiumBorder(),
+        child: FloatingActionButton.extended(
         backgroundColor: AppColors.richGold,
         foregroundColor: AppColors.deepBlack,
         onPressed: _create,
         icon: const Icon(Icons.add),
         label: Text(l.uexpCreate),
-      ),
+      )),
       body: body,
-    );
+    ));
   }
 
   Widget _body(AppLocalizations l) {

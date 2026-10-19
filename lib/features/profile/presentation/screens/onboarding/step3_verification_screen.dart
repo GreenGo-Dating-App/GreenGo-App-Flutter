@@ -6,6 +6,10 @@ import 'package:image_picker/image_picker.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/app_dimensions.dart';
 import '../../../../../generated/app_localizations.dart';
+import '../../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../../app_tour/presentation/tour_environment.dart';
+import '../../../../app_tour/presentation/tour_keys.dart';
+import '../../../../app_tour/presentation/tour_controller.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
@@ -120,7 +124,12 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
 
         final isUploading = state.isUploading;
 
-        return LuxuryOnboardingLayout(
+        return PageTourHost(
+          tourId: TourController.verificationTourId,
+          userId: TourEnvironment.currentUid(),
+          enableAutoScroll: true,
+          keys: () => [TourKeys.verifyPhone, TourKeys.verifyId],
+          child: LuxuryOnboardingLayout(
           title: l10n.verificationTitle,
           subtitle: l10n.verificationDescription,
           showBackButton: true,
@@ -151,18 +160,28 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
                   subtitle: l10n.phoneVerifyRequiredBody,
                 ),
                 const SizedBox(height: 12),
-                PhoneVerificationPanel(
+                TourAnchor(
+                  tourId: TourController.verificationTourId,
+                  showcaseKey: TourKeys.verifyPhone,
+                  title: l10n.tourVerifyPhoneTitle,
+                  description: l10n.tourVerifyPhoneDesc,
+                  child: PhoneVerificationPanel(
                   key: const ValueKey('onboarding-phone-panel'),
                   onVerified: _onPhoneVerified,
-                ),
+                )),
                 const SizedBox(height: 28),
 
                 // 2. ID document - optional (Verified badge request).
-                _SectionTitle(
+                TourAnchor(
+                  tourId: TourController.verificationTourId,
+                  showcaseKey: TourKeys.verifyId,
+                  title: l10n.tourVerifyIdTitle,
+                  description: l10n.tourVerifyIdDesc,
+                  child: _SectionTitle(
                   icon: Icons.badge_outlined,
                   title: l10n.phoneVerifyOnboardingOptionalId,
                   subtitle: l10n.phoneVerifyOnboardingOptionalIdBody,
-                ),
+                )),
                 const SizedBox(height: 12),
                 _buildPhotoVerification(state, isUploading),
 
@@ -170,7 +189,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
               ],
             ),
           ),
-        );
+        ));
       },
     );
   }

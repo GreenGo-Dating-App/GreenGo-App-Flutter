@@ -19,6 +19,9 @@ import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/business_name.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
 
 /// Storefront editor — lets a business account owner curate the public
 /// storefront that visitors see in [BusinessStorefrontScreen].
@@ -356,8 +359,21 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     final locale = Localizations.localeOf(context).toLanguageTag();
+    const tour = TourController.storefrontEditorTourId;
 
-    return Scaffold(
+    return PageTourHost(
+      tourId: tour,
+      userId: widget.profile.userId,
+      enableAutoScroll: true,
+      keys: () => [
+        TourKeys.sfLogo,
+        TourKeys.sfName,
+        TourKeys.sfFeatured,
+        // Screen order: category select boxes sit above the address.
+        TourKeys.sfCategory,
+        TourKeys.sfAddress,
+      ],
+      child: Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -416,6 +432,9 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
           }
         },
         child: ListView(
+          // Keeps the lower sections (category, address) built so the
+          // first-time page tour can scroll to them.
+          cacheExtent: 4000,
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           padding: const EdgeInsets.all(AppDimensions.paddingL),
           children: [
@@ -424,7 +443,13 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             _sectionHeader(
                 '${l10n.storefrontLogoTitle} *', l10n.storefrontLogoSubtitle),
             const SizedBox(height: 12),
-            _logoPicker(l10n),
+            TourAnchor(
+              tourId: tour,
+              showcaseKey: TourKeys.sfLogo,
+              title: l10n.tourStorefrontLogoTitle,
+              description: l10n.tourStorefrontLogoDesc,
+              child: _logoPicker(l10n),
+            ),
             if (_logoRequiredError &&
                 !StorefrontEditorScreen.hasRequiredLogo(_businessLogoUrl)) ...[
               const SizedBox(height: 8),
@@ -451,7 +476,12 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             _sectionHeader('${l10n.businessProfileNameLabel} *',
                 l10n.businessProfileNameHint),
             const SizedBox(height: 12),
-            _glassField(
+            TourAnchor(
+              tourId: tour,
+              showcaseKey: TourKeys.sfName,
+              title: l10n.tourStorefrontNameTitle,
+              description: l10n.tourStorefrontNameDesc,
+              child: _glassField(
               key: const ValueKey('storefront-business-name'),
               controller: _businessNameController,
               hint: l10n.businessProfileNameLabel,
@@ -463,13 +493,20 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
                 }
               },
             ),
+            ),
             const SizedBox(height: 28),
 
             // Featured / cover (hero) image (optional)
             _sectionHeader(l10n.storefrontFeaturedImage,
                 l10n.storefrontFeaturedImageSubtitle),
             const SizedBox(height: 12),
-            _featuredImagePicker(l10n),
+            TourAnchor(
+              tourId: tour,
+              showcaseKey: TourKeys.sfFeatured,
+              title: l10n.tourStorefrontFeaturedTitle,
+              description: l10n.tourStorefrontFeaturedDesc,
+              child: _featuredImagePicker(l10n),
+            ),
             const SizedBox(height: 28),
 
             // Gallery (optional)
@@ -499,13 +536,25 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             // Category — two select boxes: type of business, then category.
             _sectionHeader(l10n.categoryName, null),
             const SizedBox(height: 8),
-            _buildCategoryGroups(),
+            TourAnchor(
+              tourId: tour,
+              showcaseKey: TourKeys.sfCategory,
+              title: l10n.tourStorefrontCategoryTitle,
+              description: l10n.tourStorefrontCategoryDesc,
+              child: _buildCategoryGroups(),
+            ),
             const SizedBox(height: 28),
 
             // Public business address: search + map, like events.
             _sectionHeader(l10n.storefrontAddressTitle, l10n.storefrontAddressSubtitle),
             const SizedBox(height: 8),
-            _businessAddressTile(l10n),
+            TourAnchor(
+              tourId: tour,
+              showcaseKey: TourKeys.sfAddress,
+              title: l10n.tourStorefrontAddressTitle,
+              description: l10n.tourStorefrontAddressDesc,
+              child: _businessAddressTile(l10n),
+            ),
             const SizedBox(height: 28),
 
             // Location & Languages (business accounts edit these here).
@@ -597,6 +646,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
           ],
         ),
       ),
+    ),
     );
   }
 

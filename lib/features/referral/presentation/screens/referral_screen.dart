@@ -7,6 +7,9 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/deep_link_service.dart';
 import '../../../../core/widgets/glass_container.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
 import '../../data/services/referral_service.dart';
 import '../widgets/referral_progress_card.dart';
 
@@ -115,7 +118,16 @@ class _ReferralScreenState extends State<ReferralScreen> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
 
-    return Scaffold(
+    return PageTourHost(
+      tourId: TourController.inviteFriendsTourId,
+      userId: _userId,
+      enableAutoScroll: true,
+      keys: () => [
+        TourKeys.inviteShare,
+        TourKeys.inviteRules,
+        TourKeys.inviteProgress,
+      ],
+      child: Scaffold(
       backgroundColor: AppColors.deepBlack,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -135,15 +147,31 @@ class _ReferralScreenState extends State<ReferralScreen> {
                 const SizedBox(height: 20),
                 _buildCodeCard(l10n),
                 const SizedBox(height: 16),
-                _buildProgress(l10n),
+                TourAnchor(
+                  tourId: TourController.inviteFriendsTourId,
+                  showcaseKey: TourKeys.inviteProgress,
+                  title: l10n.tourInviteProgressTitle,
+                  description: l10n.tourInviteProgressDesc(
+                    ReferralService.milestones[0].count,
+                    ReferralService.milestones[1].count,
+                    ReferralService.milestones[2].count,
+                  ),
+                  child: _buildProgress(l10n),
+                ),
                 const SizedBox(height: 16),
-                _buildHowItWorks(l10n),
+                TourAnchor(
+                  tourId: TourController.inviteFriendsTourId,
+                  showcaseKey: TourKeys.inviteRules,
+                  title: l10n.tourInviteRulesTitle,
+                  description: l10n.tourInviteRulesDesc,
+                  child: _buildHowItWorks(l10n),
+                ),
               ],
             ),
           ),
         ),
       ),
-    );
+    ));
   }
 
   Widget _buildHeader(AppLocalizations l10n) {
@@ -244,7 +272,13 @@ class _ReferralScreenState extends State<ReferralScreen> {
             ),
           ),
           const SizedBox(height: 16),
-          Builder(
+          TourAnchor(
+            tourId: TourController.inviteFriendsTourId,
+            showcaseKey: TourKeys.inviteShare,
+            title: l10n.tourInviteShareTitle,
+            description: l10n.tourInviteShareDesc(
+                ReferralService.referrerCoinReward),
+            child: Builder(
             builder: (buttonContext) => ElevatedButton.icon(
               onPressed: _code == null ? null : () => _shareLink(buttonContext),
               style: ElevatedButton.styleFrom(
@@ -260,7 +294,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                 l10n.referralShareCta,
                 style: const TextStyle(fontWeight: FontWeight.w600),
               ),
-            ),
+            )),
           ),
         ],
       ),

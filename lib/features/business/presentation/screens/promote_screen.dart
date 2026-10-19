@@ -16,6 +16,9 @@ import '../../../events/domain/entities/event.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../data/services/promotion_service.dart';
 import '../widgets/promote_widgets.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
 
 /// Promote screen for business/venue accounts.
 ///
@@ -336,7 +339,11 @@ class _PromoteScreenState extends State<PromoteScreen> {
     final l10n = AppLocalizations.of(context)!;
     final active = _businessPromotedUntil != null;
 
-    return Scaffold(
+    return PageTourHost(
+      tourId: TourController.promoteTourId,
+      userId: _uid,
+      keys: () => [TourKeys.promoteStorefront, TourKeys.promoteEvents],
+      child: Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -358,7 +365,12 @@ class _PromoteScreenState extends State<PromoteScreen> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                PromoteOptionCard(
+                TourAnchor(
+                  tourId: TourController.promoteTourId,
+                  showcaseKey: TourKeys.promoteStorefront,
+                  title: l10n.tourPromoteStorefrontTitle,
+                  description: l10n.tourPromoteStorefrontDesc,
+                  child: PromoteOptionCard(
                   icon: Icons.storefront,
                   title: l10n.promoteBusinessOption,
                   description: l10n.promoteBusinessDesc,
@@ -370,16 +382,21 @@ class _PromoteScreenState extends State<PromoteScreen> {
                               _formatDate(_businessPromotedUntil!))
                           : l10n.promoteNotActive,
                   onTap: _promoteBusiness,
-                ),
+                )),
                 const SizedBox(height: 14),
-                PromoteOptionCard(
+                TourAnchor(
+                  tourId: TourController.promoteTourId,
+                  showcaseKey: TourKeys.promoteEvents,
+                  title: l10n.tourPromoteEventsTitle,
+                  description: l10n.tourPromoteEventsDesc,
+                  child: PromoteOptionCard(
                   icon: Icons.campaign,
                   title: l10n.promoteEventsOption,
                   description: l10n.promoteEventsDesc,
                   onTap: _promoteEvents,
-                ),
+                )),
               ],
             ),
-    );
+    ));
   }
 }

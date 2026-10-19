@@ -19,6 +19,10 @@ import '../bloc/slots_bloc.dart';
 import '../booking_l10n.dart';
 import '../widgets/booking_widgets.dart';
 import '../widgets/experience_dates_calendar.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
 import 'bookings_list_screen.dart';
 
 /// Host: "Dates & availability" — a calendar (month / week / day) of the
@@ -349,14 +353,24 @@ class _SlotsViewState extends State<_SlotsView> {
               label: Text(l.bkAddDate),
             ),
             body: !_asList
-                ? ExperienceDatesCalendar(
+                ? PageTourHost(
+                    tourId: TourController.experienceDatesTourId,
+                    userId: widget.currentUserId,
+                    keys: () => [TourKeys.expCalendar],
+                    child: TourAnchor(
+                      tourId: TourController.experienceDatesTourId,
+                      showcaseKey: TourKeys.expCalendar,
+                      title: l.tourExpCalendarTitle,
+                      description: l.tourExpCalendarDesc,
+                      gesture: TourGesture.tap,
+                      child: ExperienceDatesCalendar(
                     key: _calendar,
                     experience: e,
                     currentUserId: widget.currentUserId,
                     slots: s.slots,
                     onAddSlot: (at) => _edit(at: at),
                     onSlotAction: (slot, a) => _slotAction(slot, a, e),
-                  )
+                  )))
                 : RefreshIndicator(
                     color: AppColors.richGold,
                     onRefresh: () async => _bloc.add(const SlotsRefreshed()),

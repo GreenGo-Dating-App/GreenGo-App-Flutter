@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../app_tour/presentation/widgets/tours_replay_section.dart';
 
 /// App Guide screen that explains all functionalities of GreenGo.
 /// Accessible from the question mark icon on the Network page.
@@ -10,6 +11,9 @@ class AppGuideScreen extends StatelessWidget {
 
   /// Pop result that asks the caller to restart the gesture tutorial.
   static const String replayTourResult = 'replay_tour';
+
+  /// Pop result that asks the caller to replay only the main tour.
+  static const String replayMainTourResult = 'replay_main_tour';
 
   @override
   Widget build(BuildContext context) {
@@ -202,10 +206,17 @@ class AppGuideScreen extends StatelessWidget {
       ),
       body: ListView.builder(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
-        itemCount: sections.length + 1,
+        itemCount: sections.length + 2,
         itemBuilder: (context, index) {
           if (index == 0) return _buildReplayTourCard(context, l10n);
-          final section = sections[index - 1];
+          // Every tour, each with "Show me again".
+          if (index == 1) {
+            return ToursReplaySection(
+              onReplayMain: () =>
+                  Navigator.of(context).pop(replayMainTourResult),
+            );
+          }
+          final section = sections[index - 2];
           return _buildSectionCard(context, section);
         },
       ),

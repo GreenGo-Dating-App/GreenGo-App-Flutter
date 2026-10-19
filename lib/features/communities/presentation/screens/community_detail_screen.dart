@@ -44,6 +44,9 @@ import '../widgets/sponsored_badge.dart';
 import '../widgets/sponsored_promo_card.dart';
 import '../widgets/sponsorship_editor_sheet.dart';
 import '../widgets/sponsorship_gate.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
 
 /// Community Detail Screen
 ///
@@ -194,7 +197,15 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return PageTourHost(
+      tourId: TourController.communityDetailTourId,
+      userId: _currentUserId,
+      keys: () => [
+        TourKeys.communityTabs,
+        TourKeys.communityRules,
+        TourKeys.communityJoin,
+      ],
+      child: Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: _buildAppBar(),
       body: BlocConsumer<CommunitiesBloc, CommunitiesState>(
@@ -322,11 +333,16 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
 
                 // Pinned Rules & Resources header (owner/admin can edit).
                 if (_community.hasRulesOrResources || _isModerator)
-                  CommunityRulesHeader(
+                  TourAnchor(
+                    tourId: TourController.communityDetailTourId,
+                    showcaseKey: TourKeys.communityRules,
+                    title: AppLocalizations.of(context)!.tourCommunityRulesTitle,
+                    description: AppLocalizations.of(context)!.tourCommunityRulesDesc,
+                    child: CommunityRulesHeader(
                     community: _community,
                     canEdit: _isModerator,
                     onEdit: _editRules,
-                  ),
+                  )),
 
                 // Chat · Tips · Announcements · Events · Experiences
                 Expanded(
@@ -363,7 +379,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
           );
         },
       ),
-    );
+    ));
   }
 
   PreferredSizeWidget _buildAppBar() {
@@ -408,7 +424,16 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
         ],
       ),
       // Full-width tabs (long translations scale down on one line).
-      bottom: CommunityDetailTabBar(controller: _tabController),
+      bottom: PreferredSize(
+        preferredSize: const Size.fromHeight(kTextTabBarHeight),
+        child: TourAnchor(
+          tourId: TourController.communityDetailTourId,
+          showcaseKey: TourKeys.communityTabs,
+          title: AppLocalizations.of(context)!.tourCommunityTabsTitle,
+          description: AppLocalizations.of(context)!.tourCommunityTabsDesc,
+          child: CommunityDetailTabBar(controller: _tabController),
+        ),
+      ),
       actions: [
         // Share outside the app (WhatsApp, Telegram...) - the link unfurls
         // into a card with this community's name, description and photo.
@@ -1213,7 +1238,12 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
       child: SafeArea(
         child: SizedBox(
           width: double.infinity,
-          child: ElevatedButton(
+          child: TourAnchor(
+            tourId: TourController.communityDetailTourId,
+            showcaseKey: TourKeys.communityJoin,
+            title: AppLocalizations.of(context)!.tourCommunityJoinTitle,
+            description: AppLocalizations.of(context)!.tourCommunityJoinDesc,
+            child: ElevatedButton(
             onPressed: _joinCommunity,
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.richGold,
@@ -1232,7 +1262,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                 fontWeight: FontWeight.w600,
               ),
             ),
-          ),
+          )),
         ),
       ),
     );

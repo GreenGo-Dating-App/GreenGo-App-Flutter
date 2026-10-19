@@ -34,6 +34,8 @@ import '../../../../generated/app_localizations.dart';
 import '../../../app_guide/presentation/screens/app_guide_screen.dart';
 // App Tour imports
 import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../app_tour/presentation/whats_new.dart';
+import '../../../app_tour/presentation/tour_environment.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
 import '../../../app_tour/presentation/widgets/tour_showcase.dart';
@@ -179,6 +181,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   // App tour state
   BuildContext? _showcaseContext;
   bool _tourPending = false; // true from init until the tour starts or aborts
+  Timer? _whatsNewTimer; // "What's new" card, a few seconds after start
   VoidCallback? _pendingPostTourDialog; // dialog deferred until tour ends
 
   // Hourly usage counters for discovery
@@ -312,6 +315,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         _tourPending = false;
         _flushPendingPostTourDialog();
       }
+      _scheduleWhatsNew(existingUser: !show);
     });
 
     // Start live Firestore listeners for badge counts
@@ -403,6 +407,22 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         onEnded: _onTourEnded,
       );
       if (!started) _flushPendingPostTourDialog();
+    });
+  }
+
+  /// Once per app version: the "What's new" card for users who already knew
+  /// the app (their main tour was done before this session). New users only
+  /// get their version recorded - they see the welcome carousel and tour.
+  void _scheduleWhatsNew({required bool existingUser}) {
+    if (!TourEnvironment.enabled || !mounted) return;
+    _whatsNewTimer?.cancel();
+    _whatsNewTimer = Timer(const Duration(seconds: 3), () async {
+      if (!mounted) return;
+      if (!existingUser || TourController.instance.isMainTourActive) {
+        await WhatsNew.recordSeen();
+        return;
+      }
+      await WhatsNew.maybeShow(context, isExistingUser: true);
     });
   }
 
@@ -1361,6 +1381,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   @override
   void dispose() {
+    _whatsNewTimer?.cancel();
     DeepLinkService.instance.detachHome(this);
     _navAnim.dispose();
     _entitlementSub?.cancel();
@@ -2199,8 +2220,14 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     final result = await Navigator.of(context).push(
       MaterialPageRoute(builder: (_) => const AppGuideScreen()),
     );
-    if (result == AppGuideScreen.replayTourResult && mounted) {
-      await TourController.resetAllTours(widget.userId);
+    final mainOnly = result == AppGuideScreen.replayMainTourResult;
+    if ((result == AppGuideScreen.replayTourResult || mainOnly) && mounted) {
+      if (mainOnly) {
+        await TourController.instance
+            .resetTour(TourController.mainTourId, widget.userId);
+      } else {
+        await TourController.resetAllTours(widget.userId);
+      }
       if (!mounted) return;
       setState(() => _currentIndex = 0);
       WidgetsBinding.instance.addPostFrameCallback((_) {

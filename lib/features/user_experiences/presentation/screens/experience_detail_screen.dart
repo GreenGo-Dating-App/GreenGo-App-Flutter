@@ -41,6 +41,9 @@ import '../../../trader/presentation/widgets/seller_trader_info.dart';
 import '../../../chat/domain/entities/conversation_listing_context.dart';
 import '../../../chat/presentation/listing_chat.dart';
 import '../../../chat/presentation/widgets/listing_chat_widgets.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
 
 /// What the detail screen reports back to the list that opened it.
 class ExperienceDetailResult {
@@ -389,7 +392,14 @@ class _DetailViewState extends State<_DetailView> {
           onPopInvokedWithResult: (didPop, _) {
             if (!didPop) _pop(ExperienceDetailResult(updated: _edited));
           },
-          child: Scaffold(
+          child: PageTourHost(
+            tourId: TourController.experienceGuestTourId,
+            userId: widget.currentUserId,
+            enabled: e.hostId != widget.currentUserId,
+            ready: _slots != null,
+            enableAutoScroll: true,
+            keys: () => [TourKeys.expBook, TourKeys.expDates],
+            child: Scaffold(
             backgroundColor: AppColors.backgroundDark,
             body: CustomScrollView(
               slivers: [
@@ -445,7 +455,7 @@ class _DetailViewState extends State<_DetailView> {
                 ),
               ],
             ),
-          ),
+          )),
         );
       },
     );
@@ -733,7 +743,12 @@ class _DetailViewState extends State<_DetailView> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          ExperiencePriceBar(
+          TourAnchor(
+            tourId: TourController.experienceGuestTourId,
+            showcaseKey: TourKeys.expBook,
+            title: l.tourExpBookTitle,
+            description: l.tourExpBookDesc,
+            child: ExperiencePriceBar(
             priceText: ExperienceL10n.price(l, e),
             // Cash only: "Book" (payment at the meeting); with a link:
             // "Pay / Book".
@@ -748,13 +763,18 @@ class _DetailViewState extends State<_DetailView> {
                     ? Icons.copy_rounded
                     : Icons.open_in_new),
             onPay: () => _book(e),
-          ),
+          )),
           // Lock hint for users without Base (the button stays usable and
           // opens the Base-membership upsell).
           if (canBook) BaseMembershipRequiredHint(userId: widget.currentUserId),
           if (_slots != null && (!isHost || _hasSlots)) ...[
             const SizedBox(height: 8),
-            Row(children: [
+            TourAnchor(
+              tourId: TourController.experienceGuestTourId,
+              showcaseKey: TourKeys.expDates,
+              title: l.tourExpDatesTitle,
+              description: l.tourExpDatesDesc,
+              child: Row(children: [
               const Icon(Icons.calendar_month_outlined,
                   size: 15, color: AppColors.richGold),
               const SizedBox(width: 6),
@@ -769,7 +789,7 @@ class _DetailViewState extends State<_DetailView> {
                       color: AppColors.textSecondary, fontSize: 12),
                 ),
               ),
-            ]),
+            ])),
           ],
           if (e.isBookable) ...[
             const SizedBox(height: 10),

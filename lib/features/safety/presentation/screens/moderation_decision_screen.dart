@@ -4,6 +4,10 @@ import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../app_tour/presentation/tour_environment.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
 
 /// Notification `data.action` of a moderation decision (DSA art. 17).
 const String kModerationDecisionAction = 'moderation_decision';
@@ -430,7 +434,12 @@ class _ModerationDecisionScreenState extends State<ModerationDecisionScreen> {
                   style: const TextStyle(color: AppColors.textSecondary),
                 ),
               ),
-            ElevatedButton.icon(
+            TourAnchor(
+              tourId: TourController.safetyAppealTourId,
+              showcaseKey: TourKeys.safetyAppeal,
+              title: l10n.tourSafetyAppealTitle,
+              description: l10n.tourSafetyAppealDesc,
+              child: ElevatedButton.icon(
               key: const Key('appealButton'),
               onPressed: _openAppealDialog,
               icon: const Icon(Icons.gavel_outlined),
@@ -440,12 +449,16 @@ class _ModerationDecisionScreenState extends State<ModerationDecisionScreen> {
                 foregroundColor: AppColors.deepBlack,
                 padding: const EdgeInsets.symmetric(vertical: 14),
               ),
-            ),
+            )),
           ];
         }
     }
 
-    return Scaffold(
+    return PageTourHost(
+      tourId: TourController.safetyAppealTourId,
+      userId: TourEnvironment.currentUid(),
+      keys: () => [TourKeys.safetyAppeal],
+      child: Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
@@ -488,7 +501,7 @@ class _ModerationDecisionScreenState extends State<ModerationDecisionScreen> {
           ),
         ),
       ),
-    );
+    ));
   }
 
   Widget _note(String text) => Text(text,

@@ -29,6 +29,7 @@ import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
 import '../../../app_tour/presentation/widgets/tour_showcase.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
 import '../../../app_tour/presentation/widgets/tour_trigger.dart';
 import '../../../admin/data/datasources/verification_admin_remote_data_source.dart';
 import '../../../admin/data/repositories/verification_admin_repository_impl.dart';
@@ -351,9 +352,23 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Own Followers | Following | Stores bar (tappable ->
                   // lists). Private: only the account itself sees it.
-                  OwnFollowStatsBar(
+                  PageTourHost(
+                    tourId: TourController.followersOwnTourId,
                     userId: activeProfile.userId,
-                    currentUserId: activeProfile.userId,
+                    ownShowcase: false,
+                    keys: () => [TourKeys.ownFollowStats],
+                    child: TourAnchor(
+                      tourId: TourController.followersOwnTourId,
+                      showcaseKey: TourKeys.ownFollowStats,
+                      title: AppLocalizations.of(context)!
+                          .tourFollowersOwnTitle,
+                      description:
+                          AppLocalizations.of(context)!.tourFollowersOwnDesc,
+                      child: OwnFollowStatsBar(
+                        userId: activeProfile.userId,
+                        currentUserId: activeProfile.userId,
+                      ),
+                    ),
                   ),
 
                   const SizedBox(height: 16),
@@ -555,24 +570,60 @@ class EditProfileScreen extends StatelessWidget {
                     title: AppLocalizations.of(context)!.profilePremiumFeatures,
                     icon: Icons.workspace_premium,
                     children: [
+                      // Privacy & location page tour: starts the first time
+                      // this section is opened (the host waits while the
+                      // accordion keeps it off-stage).
+                      PageTourHost(
+                        tourId: TourController.privacyLocationTourId,
+                        userId: activeProfile.userId,
+                        ownShowcase: false,
+                        keys: () => [
+                          TourKeys.privacyGlobe,
+                          TourKeys.privacyTraveler,
+                          TourKeys.privacyIncognito,
+                        ],
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
                       // Incognito Mode Toggle
-                      _IncognitoToggleCard(
-                        profile: activeProfile,
-                        onToggle: (enabled) => _toggleIncognito(context, activeProfile, enabled),
+                      TourAnchor(
+                        tourId: TourController.privacyLocationTourId,
+                        showcaseKey: TourKeys.privacyIncognito,
+                        title: AppLocalizations.of(context)!.tourPrivacyIncognitoTitle,
+                        description: AppLocalizations.of(context)!.tourPrivacyIncognitoDesc,
+                        child: _IncognitoToggleCard(
+                          profile: activeProfile,
+                          onToggle: (enabled) => _toggleIncognito(context, activeProfile, enabled),
+                        ),
                       ),
                       const SizedBox(height: 16),
                       // Globe Discoverability (3-tier)
-                      _GlobeDiscoverabilityCard(
-                        profile: activeProfile,
-                        onChanged: (level) =>
-                            _changeGlobeDiscoverability(context, activeProfile, level),
+                      TourAnchor(
+                        tourId: TourController.privacyLocationTourId,
+                        showcaseKey: TourKeys.privacyGlobe,
+                        title: AppLocalizations.of(context)!.tourPrivacyGlobeTitle,
+                        description: AppLocalizations.of(context)!.tourPrivacyGlobeDesc,
+                        child: _GlobeDiscoverabilityCard(
+                          profile: activeProfile,
+                          onChanged: (level) =>
+                              _changeGlobeDiscoverability(context, activeProfile, level),
+                        ),
                       ),
                       const SizedBox(height: 16),
                       // Traveler Mode Toggle
-                      _TravelerToggleCard(
-                        profile: activeProfile,
-                        onActivate: () => _activateTraveler(context, activeProfile),
-                        onDeactivate: () => _deactivateTraveler(context, activeProfile),
+                      TourAnchor(
+                        tourId: TourController.privacyLocationTourId,
+                        showcaseKey: TourKeys.privacyTraveler,
+                        title: AppLocalizations.of(context)!.tourPrivacyTravelerTitle,
+                        description: AppLocalizations.of(context)!.tourPrivacyTravelerDesc,
+                        child: _TravelerToggleCard(
+                          profile: activeProfile,
+                          onActivate: () => _activateTraveler(context, activeProfile),
+                          onDeactivate: () => _deactivateTraveler(context, activeProfile),
+                        ),
+                      ),
+                          ],
+                        ),
                       ),
                       const SizedBox(height: 16),
                       // Boost Profile

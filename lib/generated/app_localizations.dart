@@ -45236,6 +45236,1044 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Businesses'**
   String get globeFilterBusinesses;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'People or businesses'**
+  String get tourDiscoverSwitchTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Switch between people and local businesses - instantly.'**
+  String get tourDiscoverSwitchDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Filters'**
+  String get tourDiscoverFiltersTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Choose distance, languages and interests.'**
+  String get tourDiscoverFiltersDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get tourDiscoverSearchTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Find someone by name or nickname.'**
+  String get tourDiscoverSearchDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Saved searches'**
+  String get tourDiscoverSavedTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Save these filters and reopen them in one tap.'**
+  String get tourDiscoverSavedDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'World map'**
+  String get tourDiscoverWorldMapTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'See your network on a map of the world.'**
+  String get tourDiscoverWorldMapDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Choose who you see'**
+  String get tourWorldMapFiltersTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Following, Followers, Chats, Businesses - mix them as you like.'**
+  String get tourWorldMapFiltersDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a pin'**
+  String get tourWorldMapPinsTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'A pin opens the person\'s profile or the business storefront.'**
+  String get tourWorldMapPinsDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Zoom out'**
+  String get tourWorldMapZoomTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Pinch out to see whole countries, tap one for its events.'**
+  String get tourWorldMapZoomDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Price phases'**
+  String get tourEventPhasesTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Early bird, then Regular - prices go up as phases sell out.'**
+  String get tourEventPhasesDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Buy tickets'**
+  String get tourEventBuyTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Up to {max} tickets per person. Find them later in My Space > My tickets.'**
+  String tourEventBuyDesc(int max);
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Message the organizer'**
+  String get tourEventOrganizerTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Questions before you buy? Ask here.'**
+  String get tourEventOrganizerDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Overview'**
+  String get tourBcOverviewTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'\"Action needed\" lists what to do next.'**
+  String get tourBcOverviewDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'My Space'**
+  String get tourBcMySpaceTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Your events, experiences, calendar and ticket scanner.'**
+  String get tourBcMySpaceDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Sales'**
+  String get tourBcSalesTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Get paid, payouts and your invoice details.'**
+  String get tourBcSalesDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Marketing'**
+  String get tourBcMarketingTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Promote your storefront and events.'**
+  String get tourBcMarketingDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Customers'**
+  String get tourBcCustomersTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Followers and people who saved or booked with you.'**
+  String get tourBcCustomersDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get tourBcSettingsTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Complete the checklist to unlock everything.'**
+  String get tourBcSettingsDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Business picture'**
+  String get tourStorefrontLogoTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Your business\'s own picture - not your personal photo.'**
+  String get tourStorefrontLogoDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Business name'**
+  String get tourStorefrontNameTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Shown in Discover and on your storefront.'**
+  String get tourStorefrontNameDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Featured image'**
+  String get tourStorefrontFeaturedTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'The big cover at the top of your storefront.'**
+  String get tourStorefrontFeaturedDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Category'**
+  String get tourStorefrontCategoryTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Pick the type of business, then the category.'**
+  String get tourStorefrontCategoryDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Address on the map'**
+  String get tourStorefrontAddressTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'People nearby find you by this address.'**
+  String get tourStorefrontAddressDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Followers and following'**
+  String get tourFollowersOwnTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a number to see who. Stores you follow stay private.'**
+  String get tourFollowersOwnDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Their network'**
+  String get tourFollowersPublicTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Followers and following are public - tap to see who.'**
+  String get tourFollowersPublicDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Auto-translate'**
+  String get tourChatAutoTranslateTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Messages are translated live. Set your languages here.'**
+  String get tourChatAutoTranslateDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Voice messages'**
+  String get tourChatVoiceTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Hold to record, release to send.'**
+  String get tourChatVoiceDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Trip map'**
+  String get tourChatTripMapTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Places mentioned in this chat, together on one map.'**
+  String get tourChatTripMapDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Report or block'**
+  String get tourChatSafetyTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Something wrong? Report or block from this menu.'**
+  String get tourChatSafetyDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Community sections'**
+  String get tourCommunityTabsTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Chat, Tips, Announcements, Events and Experiences.'**
+  String get tourCommunityTabsDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Rules'**
+  String get tourCommunityRulesTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Read the group\'s rules and resources first.'**
+  String get tourCommunityRulesDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Join'**
+  String get tourCommunityJoinTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Join now, or request to join a private group.'**
+  String get tourCommunityJoinDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Book a slot'**
+  String get tourExpBookTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a date and book. Your booking QR appears in My bookings.'**
+  String get tourExpBookDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Available dates'**
+  String get tourExpDatesTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'How many dates are open to book right now.'**
+  String get tourExpDatesDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Host an experience'**
+  String get tourExpCreateTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Create one, then add dates from its menu.'**
+  String get tourExpCreateDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Booking requests'**
+  String get tourExpRequestsTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm or decline the bookings for your experiences.'**
+  String get tourExpRequestsDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'My bookings'**
+  String get tourExpMyBookingsTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Your bookings and their check-in QR codes.'**
+  String get tourExpMyBookingsDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Availability calendar'**
+  String get tourExpCalendarTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a day to add a date; tap a date to edit it.'**
+  String get tourExpCalendarDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Coins and plans'**
+  String get tourShopTabsTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Membership shows the plans and any launch offer.'**
+  String get tourShopTabsDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'What coins are for'**
+  String get tourShopCoinsTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Send gifts, boost your profile or events, unlock extras.'**
+  String get tourShopCoinsDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Send coins'**
+  String get tourShopSendCoinsTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Gift coins to someone in your network.'**
+  String get tourShopSendCoinsDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Restore purchases'**
+  String get tourShopRestoreTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'New phone? Restore your subscription here.'**
+  String get tourShopRestoreDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Map visibility'**
+  String get tourPrivacyGlobeTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Exact (~100 m), approximate, country only, or hidden.'**
+  String get tourPrivacyGlobeDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Traveler mode'**
+  String get tourPrivacyTravelerTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Show up in the city you are visiting.'**
+  String get tourPrivacyTravelerDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Incognito'**
+  String get tourPrivacyIncognitoTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Browse without appearing in Discover.'**
+  String get tourPrivacyIncognitoDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Connect a payment account'**
+  String get tourGetPaidConnectTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Stripe or Mercado Pago - ticket money goes straight to you.'**
+  String get tourGetPaidConnectDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'What you receive'**
+  String get tourGetPaidFeesTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'The fee per ticket - the event editor shows what you receive.'**
+  String get tourGetPaidFeesDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket scanner'**
+  String get tourMySpaceScannerTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Scan guests\' QR codes at the door.'**
+  String get tourMySpaceScannerDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'My tickets'**
+  String get tourMySpaceTicketsTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Tickets you bought, ready to show at the door.'**
+  String get tourMySpaceTicketsDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Your calendar'**
+  String get tourMySpaceCalendarTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Filter by I host or I\'m going.'**
+  String get tourMySpaceCalendarDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Promote your storefront'**
+  String get tourPromoteStorefrontTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Show up first to people nearby for a while.'**
+  String get tourPromoteStorefrontDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Boost an event'**
+  String get tourPromoteEventsTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Feature an event at the top of the lists.'**
+  String get tourPromoteEventsDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Report or block'**
+  String get tourSafetyMenuTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Reports go to our safety team and stay confidential.'**
+  String get tourSafetyMenuDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Appeal'**
+  String get tourSafetyAppealTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Disagree? Appeal before the deadline - a person reviews it.'**
+  String get tourSafetyAppealDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Why your phone'**
+  String get tourVerifyPhoneTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'A verified phone keeps fake accounts out. It stays private.'**
+  String get tourVerifyPhoneDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Optional ID'**
+  String get tourVerifyIdTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Add an ID document to earn the Verified badge.'**
+  String get tourVerifyIdDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Invite friends'**
+  String get tourInviteShareTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Share your link - you get {coins} coins for each friend who joins.'**
+  String tourInviteShareDesc(int coins);
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'How it works'**
+  String get tourInviteRulesTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Your friend gets 1 week of Base membership.'**
+  String get tourInviteRulesDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Milestones'**
+  String get tourInviteProgressTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'At {first}, {second} and {third} friends: Silver, Gold, then Platinum for a month.'**
+  String tourInviteProgressDesc(int first, int second, int third);
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Cultural tips'**
+  String get tourAttractionTipsTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Good to know before you visit this country.'**
+  String get tourAttractionTipsDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Share this place'**
+  String get tourAttractionShareTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Send it to a chat - it joins that chat\'s trip map.'**
+  String get tourAttractionShareDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Get there'**
+  String get tourAttractionMapsTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Open directions in your maps app.'**
+  String get tourAttractionMapsDesc;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Tours'**
+  String get guideToursTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Replay any page guide'**
+  String get guideToursSubtitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Show me again'**
+  String get guideToursShowAgain;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Open \"{page}\" and the tour starts again.'**
+  String guideToursOpenPageHint(String page);
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Getting started'**
+  String get tourNameMain;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Discover'**
+  String get tourNameDiscover;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'World map'**
+  String get tourNameWorldMap;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Explore'**
+  String get tourNameExplore;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Swipe mode'**
+  String get tourNameSwipe;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Viewing a profile'**
+  String get tourNameProfileDetail;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Followers of others'**
+  String get tourNameFollowersPublic;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Report and block'**
+  String get tourNameSafetyCenter;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Chat basics'**
+  String get tourNameChat;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Chat extras'**
+  String get tourNameChatExtras;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Stories'**
+  String get tourNameStory;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Communities'**
+  String get tourNameCommunities;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Inside a community'**
+  String get tourNameCommunityDetail;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Events'**
+  String get tourNameEvents;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Event tickets'**
+  String get tourNameEventTickets;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Booking an experience'**
+  String get tourNameExperienceGuest;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Hosting experiences'**
+  String get tourNameExperienceHost;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Experience dates'**
+  String get tourNameExperienceDates;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Attractions'**
+  String get tourNameAttractions;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Your profile'**
+  String get tourNameProfile;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Your followers'**
+  String get tourNameFollowersOwn;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy and location'**
+  String get tourNamePrivacyLocation;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Verification'**
+  String get tourNameVerification;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications'**
+  String get tourNameNotifications;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Coins and membership'**
+  String get tourNameCoinShop;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Invite friends'**
+  String get tourNameInviteFriends;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Appealing a decision'**
+  String get tourNameSafetyAppeal;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Business Center'**
+  String get tourNameBusinessCenter;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Storefront editor'**
+  String get tourNameStorefrontEditor;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'My Space'**
+  String get tourNameMySpace;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Get paid'**
+  String get tourNameGetPaid;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Promote'**
+  String get tourNamePromote;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'What\'s new'**
+  String get whatsNewTitle;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Got it'**
+  String get whatsNewGotIt;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'A world map of your network, with filters for Following, Followers, Chats and Businesses.'**
+  String get whatsNew5043WorldMap;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Businesses now appear by their address and with their own picture.'**
+  String get whatsNew5043Businesses;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Followers and following are now public - tap them on any profile.'**
+  String get whatsNew5043Followers;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Meet people and places worldwide'**
+  String get welcomeSlide1Title;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Locals, travelers and businesses near you and far away.'**
+  String get welcomeSlide1Body;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Chat in any language'**
+  String get welcomeSlide2Title;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Messages are translated live, so nothing gets lost.'**
+  String get welcomeSlide2Body;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Events, experiences and communities near you'**
+  String get welcomeSlide3Title;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Join what\'s happening or host your own.'**
+  String get welcomeSlide3Body;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Safe by design'**
+  String get welcomeSlide4Title;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Verified accounts, and report and block in one tap.'**
+  String get welcomeSlide4Body;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Get started'**
+  String get welcomeGetStarted;
+
+  /// In-app tutorial / onboarding text (tours v2).
+  ///
+  /// In en, this message translates to:
+  /// **'Slide {index} of {total}'**
+  String welcomeSlideOf(int index, int total);
 }
 
 class _AppLocalizationsDelegate

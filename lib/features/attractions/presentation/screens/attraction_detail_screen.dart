@@ -18,6 +18,10 @@ import '../../data/services/attraction_stats_service.dart';
 import '../../domain/attraction_rating.dart';
 import '../../domain/category_labels.dart';
 import '../../domain/entities/attraction.dart';
+import '../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../app_tour/presentation/tour_environment.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../chat/presentation/widgets/keyword_actions.dart' show CountryTipsSheet;
 import '../../../user_experiences/presentation/widgets/experience_widgets.dart'
     show StarRatingDisplay, StarRatingInput;
@@ -477,7 +481,16 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
             ? '${a.currency ?? ''} ${a.ticketPrice!.toStringAsFixed(0)}'
             : null);
 
-    return Scaffold(
+    return PageTourHost(
+      tourId: TourController.attractionsTourId,
+      userId: TourEnvironment.currentUid(),
+      enableAutoScroll: true,
+      keys: () => [
+        TourKeys.attractionTips,
+        TourKeys.attractionShare,
+        TourKeys.attractionMaps,
+      ],
+      child: Scaffold(
       backgroundColor: AppColors.deepBlack,
       body: CustomScrollView(slivers: [
         SliverAppBar(
@@ -487,15 +500,27 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
           actions: [
             // Cultural tips of the attraction's country: the same sheet as the
             // "<country>: cultural tips" chip in chats.
-            IconButton(
+            TourAnchor(
+              tourId: TourController.attractionsTourId,
+              showcaseKey: TourKeys.attractionTips,
+              title: l10n.tourAttractionTipsTitle,
+              description: l10n.tourAttractionTipsDesc,
+              targetShapeBorder: const CircleBorder(),
+              child: IconButton(
               key: const ValueKey('attractionTipsButton'),
               tooltip: l10n.chatTipsFor(localizedCountryName(l10n, a.countryIso2)),
               icon: const Icon(Icons.lightbulb_outline, color: AppColors.richGold, size: 20),
               onPressed: () => CountryTipsSheet.show(context, a.countryIso2),
-            ),
+            )),
             // Share the attraction's link (/a/{id}): unfurls into a preview
             // card (photo when its licence allows, name, place, category).
-            Builder(
+            TourAnchor(
+              tourId: TourController.attractionsTourId,
+              showcaseKey: TourKeys.attractionShare,
+              title: l10n.tourAttractionShareTitle,
+              description: l10n.tourAttractionShareDesc,
+              targetShapeBorder: const CircleBorder(),
+              child: Builder(
               builder: (buttonContext) => IconButton(
                 key: const ValueKey('attractionShareButton'),
                 tooltip: l10n.attrShare,
@@ -505,7 +530,7 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
                     shareAttractionLink(buttonContext, a.id,
                         name: a.nameFor(Localizations.localeOf(buttonContext))),
               ),
-            ),
+            )),
           ],
           flexibleSpace: FlexibleSpaceBar(
             background: Stack(fit: StackFit.expand, children: [
@@ -736,7 +761,12 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
               padding: const EdgeInsets.fromLTRB(16, 18, 16, 40),
               child: SizedBox(
                 width: double.infinity,
-                child: ElevatedButton.icon(
+                child: TourAnchor(
+                  tourId: TourController.attractionsTourId,
+                  showcaseKey: TourKeys.attractionMaps,
+                  title: l10n.tourAttractionMapsTitle,
+                  description: l10n.tourAttractionMapsDesc,
+                  child: ElevatedButton.icon(
                   onPressed: () => _openMaps(a),
                   icon: const Icon(Icons.map, size: 18),
                   label: Text(l10n.attrOpenInMaps),
@@ -745,13 +775,13 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
                     foregroundColor: AppColors.deepBlack,
                     padding: const EdgeInsets.symmetric(vertical: 14),
                   ),
-                ),
+                )),
               ),
             ),
           ]),
         ),
       ]),
-    );
+    ));
   }
 
   /// GreenGo users' rating (stars + "4.6 · 23 ratings" / "No ratings yet")
