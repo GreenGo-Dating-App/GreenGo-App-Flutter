@@ -2286,6 +2286,9 @@ class _ChatScreenState extends State<ChatScreen> {
   /// first personal photo (may be null).
   String? get _headerPhoto {
     if (_showBusinessIdentity) {
+      // Business profile picture first (owner 2026-10-19), then the cover.
+      final logo = widget.otherUserProfile.businessLogoOrNull;
+      if (logo != null) return logo;
       final cover = widget.otherUserProfile.coverImageUrl;
       if (cover != null && cover.isNotEmpty) return cover;
     }

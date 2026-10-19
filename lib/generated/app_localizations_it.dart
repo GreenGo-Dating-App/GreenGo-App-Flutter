@@ -6365,7 +6365,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return 'Abbonamento $tierName attivo fino al $formattedDate$coinsText';
   }
 
@@ -12654,6 +12657,23 @@ class AppLocalizationsIt extends AppLocalizations {
   String get storefrontAddFeaturedImage => 'Aggiungi immagine in evidenza';
 
   @override
+  String get storefrontLogoTitle => 'Foto profilo dell\'attività';
+
+  @override
+  String get storefrontLogoSubtitle =>
+      'La foto della tua attività: mostrata in Scopri, nelle chat e sulla tua vetrina. Separata dalle tue foto personali.';
+
+  @override
+  String get storefrontLogoAdd => 'Aggiungi foto';
+
+  @override
+  String get storefrontLogoChange => 'Cambia foto';
+
+  @override
+  String get storefrontLogoRequiredError =>
+      'Aggiungi una foto profilo dell\'attività. È la foto della tua attività in Scopri e nelle chat.';
+
+  @override
   String get preferenceBusinessOnly => 'Solo account business';
 
   @override
@@ -16225,13 +16245,21 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price ogni $interval. Si rinnova automaticamente il $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price ogni $interval. Annullato; accesso fino al $date.';
   }
 
@@ -19814,7 +19842,9 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-      String name, String rewards) {
+    String name,
+    String rewards,
+  ) {
     return 'Ricompense di $name riscattate! $rewards';
   }
 
@@ -20278,7 +20308,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-      String location, int hours, int minutes) {
+    String location,
+    int hours,
+    int minutes,
+  ) {
     return '$location - ${hours}h ${minutes}m rimanenti';
   }
 
@@ -22246,7 +22279,11 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date) {
+    String reason,
+    String message,
+    String user,
+    String date,
+  ) {
     return 'Motivo: $reason\nMessaggio segnalato: «$message»\nUtente segnalato: $user\nSegnalato il: $date';
   }
 
@@ -22598,50 +22635,41 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Prima connessione',
-        'social_butterfly': 'Farfalla sociale',
-        'popular': 'Popolare',
-        'video_enthusiast': 'Appassionato di video',
-        'daily_streak_7': 'Serie di 7 giorni',
-        'daily_streak_30': 'Serie di 30 giorni',
-        'other': 'Nuovo traguardo',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Prima connessione',
+      'social_butterfly': 'Farfalla sociale',
+      'popular': 'Popolare',
+      'video_enthusiast': 'Appassionato di video',
+      'daily_streak_7': 'Serie di 7 giorni',
+      'daily_streak_30': 'Serie di 30 giorni',
+      'other': 'Nuovo traguardo',
+    });
     return 'Traguardo sbloccato: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Crea il tuo primo contatto',
-        'social_butterfly': 'Invia 100 messaggi',
-        'popular': 'Crea 50 contatti',
-        'video_enthusiast': 'Completa 10 videochiamate',
-        'daily_streak_7': 'Accedi per 7 giorni di fila',
-        'daily_streak_30': 'Accedi per 30 giorni di fila',
-        'other': 'Continua così!',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Crea il tuo primo contatto',
+      'social_butterfly': 'Invia 100 messaggi',
+      'popular': 'Crea 50 contatti',
+      'video_enthusiast': 'Completa 10 videochiamate',
+      'daily_streak_7': 'Accedi per 7 giorni di fila',
+      'daily_streak_30': 'Accedi per 30 giorni di fila',
+      'other': 'Continua così!',
+    });
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(
-      challenge,
-      {
-        'send_5_messages': 'Attacca bottone',
-        'get_3_matches': 'Connettore',
-        'complete_profile': 'Profilo perfetto',
-        'video_call_1': 'Faccia a faccia',
-        'other': 'Sfida del giorno',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(challenge, {
+      'send_5_messages': 'Attacca bottone',
+      'get_3_matches': 'Connettore',
+      'complete_profile': 'Profilo perfetto',
+      'video_call_1': 'Faccia a faccia',
+      'other': 'Sfida del giorno',
+    });
     return 'Sfida completata: $_temp0!';
   }
 
@@ -26672,11 +26700,11 @@ class AppLocalizationsIt extends AppLocalizations {
   String get discoverySegmentBusinesses => 'Attività';
 
   @override
-  String get bcCheckStorefrontPhoto => 'Immagine in evidenza';
+  String get bcCheckStorefrontPhoto => 'Foto profilo dell\'attività';
 
   @override
   String get bcTodoStorefrontPhoto =>
-      'Aggiungi un\'immagine in evidenza: è la foto della tua attività in Scopri';
+      'Aggiungi una foto profilo dell\'attività: è la foto della tua attività in Scopri';
 
   @override
   String get storefrontChatButton => 'Chat';
@@ -26688,10 +26716,6 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get businessProfileNameRequiredError =>
       'Inserisci il nome del profilo della tua attività.';
-
-  @override
-  String get storefrontFeaturedRequiredError =>
-      'Aggiungi un\'immagine in evidenza. È la foto della tua attività in Scopri e la parte alta della tua vetrina.';
 
   @override
   String get profileLocationSearchOrPick =>

@@ -93,6 +93,7 @@ class Profile extends Equatable {
     this.storefrontBio,
     this.storefrontLinks = const [],
     this.coverImageUrl,
+    this.businessLogoUrl,
     this.isBanned = false,
     this.isIdVerified = false,
     this.publicAge,
@@ -249,6 +250,20 @@ class Profile extends Equatable {
   // and the gallery. Optional & null by default so existing docs stay
   // backward-compatible. A legacy empty string is treated as "no cover".
   final String? coverImageUrl;
+
+  // Owner 2026-10-19: the BUSINESS's own profile picture (logo / storefront
+  // photo), deliberately separate from the owner's personal [photoUrls].
+  // Required for business accounts (storefront editor + Business Center
+  // checklist). Shown on Discover business tiles, the storefront header and
+  // business chat avatars. An empty string means "none" (removal sentinel that
+  // survives copyWith's null-coalescing).
+  final String? businessLogoUrl;
+
+  /// The business picture to show for this profile, or null when none is set.
+  String? get businessLogoOrNull {
+    final v = (businessLogoUrl ?? '').trim();
+    return v.isEmpty ? null : v;
+  }
 
   // Moderation flag — set by admins elsewhere (Cloud Function / admin tools).
   // The app only READS it (e.g. to hide or gate a banned account). Default false.
@@ -412,6 +427,7 @@ class Profile extends Equatable {
         storefrontBio,
         storefrontLinks,
         coverImageUrl,
+        businessLogoUrl,
         isBanned,
         isIdVerified,
         publicAge,
@@ -499,6 +515,7 @@ class Profile extends Equatable {
     String? storefrontBio,
     List<String>? storefrontLinks,
     String? coverImageUrl,
+    String? businessLogoUrl,
     bool? isBanned,
     bool? isIdVerified,
     String? verificationPhotoPath,
@@ -582,6 +599,7 @@ class Profile extends Equatable {
       storefrontBio: storefrontBio ?? this.storefrontBio,
       storefrontLinks: storefrontLinks ?? this.storefrontLinks,
       coverImageUrl: coverImageUrl ?? this.coverImageUrl,
+      businessLogoUrl: businessLogoUrl ?? this.businessLogoUrl,
       isBanned: isBanned ?? this.isBanned,
       isIdVerified: isIdVerified ?? this.isIdVerified,
       // A new birth date makes the server's age stale: derive it locally.

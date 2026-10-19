@@ -607,10 +607,11 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
   /// The BUSINESS face of a profile — hero/cover image as the avatar, the
   /// business name as the title, and a tap that opens the storefront.
   Widget _businessRow(Profile profile) {
-    final hero = (profile.coverImageUrl != null &&
-            profile.coverImageUrl!.isNotEmpty)
-        ? profile.coverImageUrl!
-        : (profile.photoUrls.isNotEmpty ? profile.photoUrls.first : null);
+    // Business profile picture first (owner 2026-10-19), then the cover.
+    final hero = profile.businessLogoOrNull ??
+        ((profile.coverImageUrl != null && profile.coverImageUrl!.isNotEmpty)
+            ? profile.coverImageUrl!
+            : (profile.photoUrls.isNotEmpty ? profile.photoUrls.first : null));
     final city = profile.location.city.trim();
     final subtitle = <String>[
       if ((profile.businessCategory ?? '').trim().isNotEmpty)

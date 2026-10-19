@@ -4252,14 +4252,11 @@ class _BusinessCard extends StatelessWidget {
   static const double cardWidth = 220;
   static const double cardHeight = 200;
 
-  /// Prefer the storefront cover image; fall back to the first profile photo
-  /// so the card always leads with the most representative storefront visual.
-  static String? imageUrlOf(Profile business) {
-    final cover = business.coverImageUrl?.trim();
-    return (cover != null && cover.isNotEmpty)
-        ? cover
-        : (business.photoUrls.isNotEmpty ? business.photoUrls.first : null);
-  }
+  /// Same choice as the Discover business tile (owner 2026-10-19): business
+  /// profile picture, then the storefront cover, then the first gallery
+  /// image, then the first personal photo.
+  static String? imageUrlOf(Profile business) =>
+      NetworkGridCard.mainPhotoUrl(business, isBusiness: true);
   static const double _imageHeight = 108;
 
   @override

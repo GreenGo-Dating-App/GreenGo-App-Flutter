@@ -10,6 +10,7 @@ import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/blocked_users_service.dart';
+import '../../../../core/services/own_profile_store.dart';
 import '../../../../core/services/interaction_log_service.dart';
 import '../../../../core/services/tier_entitlements.dart';
 import '../../../../core/theme/app_glass.dart';
@@ -18,6 +19,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
+import '../../../business/domain/business_distance.dart';
 import '../../../business/domain/business_name.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
@@ -35,6 +37,7 @@ import '../../../matching/domain/entities/match_score.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/data/datasources/people_tags_service.dart';
 import '../../../profile/data/models/profile_model.dart';
+import '../../../profile/domain/entities/location.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/presentation/widgets/people_tags_editor.dart';
 import '../../../saved_searches/data/saved_searches_service.dart';
@@ -100,6 +103,27 @@ class NetworkDiscoveryScreen extends StatefulWidget {
 bool discoveryTileIsBusiness(Profile profile,
         {required bool isSelf, required bool businessMode}) =>
     profile.isBusiness && (!isSelf || businessMode);
+
+/// Businesses-mode order (owner 2026-10-19): every business is measured from
+/// its PUBLIC storefront address to the viewer ([BusinessDistance]; no address
+/// = the pool's owner-location distance) and ordered nearest-first; then at
+/// most 5 promoted storefronts (the closest ones) float to the top, the rest
+/// keep the nearest-first order. Also returns the ids whose distance came
+/// from the address (shown with 100 m resolution).
+({List<MatchCandidate> candidates, Set<String> addressBasedIds})
+    orderBusinessTiles(List<MatchCandidate> businesses, Location? viewer) {
+  final r = BusinessDistance.nearestFirst(businesses, viewer);
+  final promoted = <MatchCandidate>[];
+  final rest = <MatchCandidate>[];
+  for (final c in r.candidates) {
+    (c.profile.isBusinessPromoted && promoted.length < 5 ? promoted : rest)
+        .add(c);
+  }
+  return (
+    candidates: [...promoted, ...rest],
+    addressBasedIds: r.addressBasedIds,
+  );
+}
 
 /// The name a Discover tile is searched / tagged under: the business name for
 /// business tiles, the personal display name otherwise.
@@ -201,6 +225,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       _searching = true;
     }
     _init();
+    OwnProfileStore.instance.profile.addListener(_onOwnProfileChanged);
     _scrollController.addListener(_onScroll);
     _tagsSub = _tagsService.watchAll(widget.userId).listen((tags) {
       if (!mounted) return;
@@ -227,6 +252,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
 
   @override
   void dispose() {
+    OwnProfileStore.instance.profile.removeListener(_onOwnProfileChanged);
     _tagsSub?.cancel();
     _blockedSub?.cancel();
     _searchDebounce?.cancel();
@@ -276,8 +302,40 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   /// The instant AppBar toggle overrides the persisted/one-shot default.
   bool get _effectiveShowBusinesses => _businessModeOverride ?? _businessOnly;
 
+  // Businesses-mode memo: the business pool measured from the storefront
+  // addresses and ordered nearest-first (orderBusinessTiles), recomputed only
+  // when the pool or the viewer's location changes (not on every build).
+  List<MatchCandidate>? _bizMemoSource;
+  Location? _bizMemoViewer;
+  List<MatchCandidate> _bizOrdered = const [];
+  Set<String> _addressDistanceIds = const {};
+
+  /// The viewer's own location (exact, private; traveler-aware) from the
+  /// app-wide own-profile store; null until it is known.
+  Location? get _viewerLocation =>
+      OwnProfileStore.instance.peek(widget.userId)?.effectiveLocation;
+
+  void _onOwnProfileChanged() {
+    if (!mounted || !_effectiveShowBusinesses) return;
+    if (_viewerLocation != _bizMemoViewer) setState(() {});
+  }
+
+  List<MatchCandidate> _businessPool(List<MatchCandidate> all) {
+    final viewer = _viewerLocation;
+    if (!identical(all, _bizMemoSource) || viewer != _bizMemoViewer) {
+      final r = orderBusinessTiles(
+          all.where((c) => c.profile.isBusiness).toList(), viewer);
+      _bizMemoSource = all;
+      _bizMemoViewer = viewer;
+      _bizOrdered = r.candidates;
+      _addressDistanceIds = r.addressBasedIds;
+    }
+    return _bizOrdered;
+  }
+
   List<MatchCandidate> _visibleList() {
-    final all = _candidates ?? const <MatchCandidate>[];
+    final all0 = _candidates ?? const <MatchCandidate>[];
+    final all = _effectiveShowBusinesses ? _businessPool(all0) : all0;
     final q = _query.trim().toLowerCase();
     final networkIds = _networkIds;
     final showBusinesses = _effectiveShowBusinesses;
@@ -298,23 +356,8 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       }
       return true;
     }).toList();
-    // In business mode, promoted storefronts float to the top. Partition (not
-    // sort) so the existing distance order is preserved within each group — the
-    // pool is already closest-first, so promoted stay closest-first too.
-    if (showBusinesses) {
-      final promoted = <MatchCandidate>[];
-      final rest = <MatchCandidate>[];
-      for (final c in list) {
-        (c.profile.isBusinessPromoted ? promoted : rest).add(c);
-      }
-      // At most 5 promoted float to the very top (the closest, since the pool is
-      // distance-ordered); any beyond 5 fall back into normal distance order.
-      if (promoted.length > 5) {
-        rest.insertAll(0, promoted.sublist(5));
-        return [...promoted.sublist(0, 5), ...rest];
-      }
-      return [...promoted, ...rest];
-    }
+    // Business mode: already ordered by [orderBusinessTiles] (address-based
+    // nearest-first, at most 5 promoted on top); filtering keeps that order.
     return list;
   }
 
@@ -1433,6 +1476,8 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       candidate: candidate,
       isSelf: isSelf,
       isBusiness: isBusiness,
+      distanceFromBusinessAddress:
+          isBusiness && _addressDistanceIds.contains(profile.userId),
       // "Profile first": photo AND name taps open the profile (business tiles:
       // the storefront). The chat is started from the profile's app bar.
       onOpenProfile: () {
