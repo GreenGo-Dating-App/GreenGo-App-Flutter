@@ -11,6 +11,8 @@ import '../bloc/bookings_list_bloc.dart';
 import '../bookings_first_page_cache.dart';
 import '../widgets/booking_widgets.dart';
 import 'booking_detail_screen.dart';
+import '../../../../features/main/presentation/screens/main_navigation_screen.dart';
+import '../../../../core/widgets/helpful_empty_state.dart';
 
 /// "My bookings" (guest) or "Bookings received" (host — all experiences, or
 /// one [experienceId]): Upcoming / Past tabs, 20 per page, infinite scroll.
@@ -116,6 +118,7 @@ class BookingsListScreen extends StatelessWidget {
               child: _BookingsTab(
                 currentUserId: currentUserId,
                 upcoming: upcoming,
+                isHost: role == BookingRole.host,
                 toConfirm: status == BookingStatus.requested,
                 repository: repo,
               ),
@@ -132,8 +135,12 @@ class _BookingsTab extends StatefulWidget {
     required this.upcoming,
     required this.repository,
     this.toConfirm = false,
+    this.isHost = false,
   });
   final String currentUserId;
+
+  /// Host view (bookings of my experiences) vs guest view (my bookings).
+  final bool isHost;
   final bool upcoming;
   final BookingsRepository repository;
 
@@ -284,24 +291,35 @@ class _BookingsTabState extends State<_BookingsTab>
             child: ListView(
               physics: const AlwaysScrollableScrollPhysics(),
               children: [
-                const SizedBox(height: 120),
-                Icon(
-                    widget.toConfirm
-                        ? Icons.mark_email_read_outlined
-                        : widget.upcoming
-                            ? Icons.event_available_outlined
-                            : Icons.history,
-                    size: 64,
-                    color: AppColors.textTertiary),
-                const SizedBox(height: 12),
-                Text(
-                  s.status == BookingsListStatus.failure
-                      ? l.somethingWentWrong
+                const SizedBox(height: 80),
+                HelpfulEmptyState(
+                  key: const Key('bookings_helpful_empty'),
+                  icon: widget.toConfirm
+                      ? Icons.mark_email_read_outlined
+                      : widget.upcoming
+                          ? Icons.event_available_outlined
+                          : Icons.history,
+                  title: s.status == BookingsListStatus.failure
+                      ? null
                       : widget.toConfirm
                           ? l.bkNoneToConfirm
                           : (widget.upcoming ? l.bkNoUpcoming : l.bkNoPast),
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(color: AppColors.textSecondary),
+                  message: s.status == BookingsListStatus.failure
+                      ? l.somethingWentWrong
+                      : (widget.toConfirm || widget.isHost)
+                          ? l.xplEmptyBookingsHost
+                          : l.xplEmptyBookings,
+                  actions: [
+                    if (s.status != BookingsListStatus.failure &&
+                        !widget.toConfirm &&
+                        !widget.isHost)
+                      HelpfulEmptyAction(
+                        label: l.xplBrowseExperiences,
+                        icon: Icons.travel_explore,
+                        onPressed: () =>
+                            MainNavigationScreenState.openEventsTab(context),
+                      ),
+                  ],
                 ),
               ],
             ),

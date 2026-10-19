@@ -16,6 +16,7 @@ import '../../../events/domain/entities/event.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../data/services/promotion_service.dart';
 import '../widgets/promote_widgets.dart';
+import '../../../../core/widgets/collapsible_how_it_works.dart';
 
 /// Promote screen for business/venue accounts.
 ///
@@ -350,6 +351,11 @@ class _PromoteScreenState extends State<PromoteScreen> {
       body: ListView(
               padding: const EdgeInsets.all(16),
               children: [
+                CollapsibleHowItWorks(
+                  id: 'promote',
+                  margin: const EdgeInsets.only(bottom: 12),
+                  steps: [l10n.xplHowPromote1, l10n.xplHowPromote2, l10n.xplHowPromote3],
+                ),
                 Text(
                   l10n.promoteSubtitle,
                   style: const TextStyle(

@@ -388,7 +388,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: IconButton(
+        leading: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
           onPressed: () => SafeNavigation.pop(context, userId: widget.currentUserId),
           icon: Container(
             padding: const EdgeInsets.all(8),

@@ -24,6 +24,7 @@ import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import 'business_verification_request_screen.dart';
 import '../widgets/business_contact_phone_section.dart';
+import '../../../../core/widgets/locked_reason_sheet.dart';
 
 /// Business / venue account screen.
 ///
@@ -288,32 +289,20 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
       return;
     }
 
-    final confirmed = await showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: Text(l10n.becomeBusinessConfirmTitle,
-            style: const TextStyle(color: AppColors.textPrimary)),
-        content: Text(l10n.becomeBusinessConfirmMessage,
-            style: const TextStyle(color: AppColors.textSecondary, height: 1.4)),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(ctx).pop(false),
-            child: Text(l10n.cancel),
-          ),
-          ElevatedButton(
-            key: const ValueKey('become-business-confirm'),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: AppColors.richGold,
-              foregroundColor: AppColors.deepBlack,
-            ),
-            onPressed: () => Navigator.of(ctx).pop(true),
-            child: Text(l10n.becomeBusinessConfirmAction),
-          ),
-        ],
-      ),
+    final confirmed = await ConsequenceConfirmSheet.show(
+      context,
+      title: l10n.becomeBusinessConfirmTitle,
+      message: l10n.becomeBusinessConfirmMessage,
+      consequences: [
+        l10n.xplBusinessPage,
+        l10n.xplBusinessSell,
+        l10n.xplBusinessListings,
+      ],
+      confirmLabel: l10n.becomeBusinessConfirmAction,
+      confirmKey: const ValueKey('become-business-confirm'),
+      icon: Icons.storefront,
     );
-    if (confirmed != true || !mounted) return;
+    if (!confirmed || !mounted) return;
 
     setState(() => _isSaving = true);
     try {
@@ -383,7 +372,7 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          leading: IconButton(
+          leading: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
             icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
             onPressed: () => SafeNavigation.pop(context),
           ),

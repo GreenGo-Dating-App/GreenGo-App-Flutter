@@ -48,14 +48,14 @@ class _CountrySearchDelegate extends SearchDelegate<String?> {
 
   @override
   List<Widget> buildActions(BuildContext context) => [
-        IconButton(
+        IconButton(tooltip: AppLocalizations.of(context)!.userFollowSearchClear,
           icon: const Icon(Icons.clear, color: AppColors.textSecondary),
           onPressed: () => query = '',
         ),
       ];
 
   @override
-  Widget buildLeading(BuildContext context) => IconButton(
+  Widget buildLeading(BuildContext context) => IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
         icon: const Icon(Icons.arrow_back, color: AppColors.textSecondary),
         onPressed: () => close(context, null),
       );

@@ -242,7 +242,7 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
               const SizedBox(height: 16),
               Row(
                 children: [
-                  IconButton(
+                  IconButton(tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
                     icon: const Icon(Icons.close, color: AppColors.textSecondary),
                     onPressed: () => Navigator.of(context).pop(),
                   ),

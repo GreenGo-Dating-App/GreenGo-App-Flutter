@@ -175,7 +175,7 @@ class _EditGroupTagsDialogState extends State<_EditGroupTagsDialog> {
                   atLimit ? l10n.groupTagsLimitReached : l10n.groupAddTagHint,
               isDense: true,
               counterText: '',
-              suffixIcon: IconButton(
+              suffixIcon: IconButton(tooltip: AppLocalizations.of(context)!.xplTipAddTag,
                 icon: const Icon(Icons.add),
                 onPressed: atLimit ? null : _add,
               ),

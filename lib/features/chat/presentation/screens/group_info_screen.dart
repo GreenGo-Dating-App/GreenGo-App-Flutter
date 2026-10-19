@@ -625,7 +625,7 @@ class _AddMembersSheetState extends State<_AddMembersSheet> {
                 ),
               ),
               const SizedBox(width: 8),
-              IconButton.filled(
+              IconButton.filled(tooltip: AppLocalizations.of(context)!.exploreSearchTooltip,
                 onPressed: _searching ? null : _search,
                 icon: _searching
                     ? const SizedBox(

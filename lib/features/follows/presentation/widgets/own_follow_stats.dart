@@ -7,6 +7,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/theme/app_glass.dart';
 import '../../../../core/utils/compact_count.dart';
 import '../../../../core/widgets/glass_container.dart';
+import '../../../../core/widgets/info_button.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../business/data/services/follow_service.dart';
 import '../screens/follow_list_screen.dart';
@@ -141,6 +142,12 @@ class _OwnFollowStatsBarState extends State<OwnFollowStatsBar>
               onTap: () => Navigator.of(context).push(
                 FollowedStoresScreen.route(userId: widget.userId),
               ),
+            ),
+            InfoButton(
+              key: const Key('own_follow_stats_info'),
+              title: l10n.xplInfoFollowTitle,
+              message: l10n.xplInfoFollowBody,
+              bullets: [l10n.xplInfoFollowPublic, l10n.xplInfoFollowStores],
             ),
           ],
         ),

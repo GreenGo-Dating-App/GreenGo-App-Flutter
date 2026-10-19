@@ -210,7 +210,7 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
             backgroundColor: AppColors.backgroundDark,
             pinned: true,
             expandedHeight: 220,
-            leading: IconButton(
+            leading: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
               icon: Container(
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(

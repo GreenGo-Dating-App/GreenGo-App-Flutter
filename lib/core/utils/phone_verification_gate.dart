@@ -4,6 +4,7 @@ import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../services/own_profile_store.dart';
 import '../services/phone_verification_service.dart';
+import '../widgets/info_button.dart';
 import '../widgets/phone_verification_panel.dart';
 
 /// Server refusal code when the caller has no verified phone
@@ -103,6 +104,12 @@ class PhoneVerificationSheet extends StatelessWidget {
                           fontSize: 18,
                           fontWeight: FontWeight.bold),
                     ),
+                  ),
+                  InfoButton(
+                    key: const Key('phone_verify_why'),
+                    title: l10n.xplLockedPhoneTitle,
+                    message: l10n.xplLockedPhoneBody,
+                    bullets: [l10n.xplLockedPhonePrivate],
                   ),
                   IconButton(
                     tooltip: l10n.phoneVerifyDismiss,

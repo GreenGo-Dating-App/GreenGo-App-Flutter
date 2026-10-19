@@ -282,10 +282,11 @@ void main() {
       await t.ensureVisible(save);
       await t.tap(save);
       await t.pump();
+      await t.pump(const Duration(milliseconds: 500));
       expect(find.byKey(const Key('storefront_logo_required_error')), findsOneWidget);
-      // Inline error + snackbar.
+      // Inline error + the "why" sheet (business picture required).
       expect(find.text(l.storefrontLogoRequiredError), findsNWidgets(2));
-      expect(find.byType(SnackBar), findsOneWidget);
+      expect(find.text(l.xplLockedStorefrontTitle), findsOneWidget);
       verifyNever(() => bloc.add(any()));
     });
   });

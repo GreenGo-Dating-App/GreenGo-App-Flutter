@@ -86,6 +86,7 @@ import '../../../../core/security/viewer_watermark.dart';
 import '../../data/services/chat_screenshot_notice.dart';
 import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
 import '../../../safety/presentation/widgets/report_reasons.dart';
+import '../../../../core/widgets/locked_reason_sheet.dart';
 
 /// Chat Screen
 ///
@@ -129,16 +130,20 @@ class _ChatScreenState extends State<ChatScreen> {
     if (!TranslationService.dailyLimitReached.value || _translationLimitShown || !mounted) return;
     _translationLimitShown = true;
     final l10n = AppLocalizations.of(context)!;
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-      content: Text(l10n.translationDailyLimitReached),
-      duration: const Duration(seconds: 6),
-      action: SnackBarAction(
-        label: l10n.translationDailyLimitCta,
-        onPressed: () => Navigator.of(context).push(MaterialPageRoute<void>(
+    LockedReasonSheet.show(
+      context,
+      title: l10n.xplLockedTranslateTitle,
+      reason: l10n.translationDailyLimitReached,
+      bullets: [l10n.xplLockedTranslateOriginal],
+      icon: Icons.translate,
+      actionLabel: l10n.translationDailyLimitCta,
+      onAction: () {
+        if (!mounted) return;
+        Navigator.of(context).push(MaterialPageRoute<void>(
           builder: (_) => MembershipScreen(currentUserId: widget.currentUserId),
-        )),
-      ),
-    ));
+        ));
+      },
+    );
   }
 
   /// What this chat is about (buyer <-> organizer chat), or null.
@@ -1775,7 +1780,7 @@ class _ChatScreenState extends State<ChatScreen> {
               appBar: AppBar(
                 backgroundColor: Colors.transparent,
                 elevation: 0,
-                leading: IconButton(
+                leading: IconButton(tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
                   icon: const Icon(Icons.close, color: Colors.white),
                   onPressed: () {
                     if (Navigator.of(context).canPop()) {
@@ -2300,7 +2305,7 @@ class _ChatScreenState extends State<ChatScreen> {
     return AppBar(
       backgroundColor: AppColors.backgroundCard,
       elevation: 1,
-      leading: IconButton(
+      leading: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
         icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
         onPressed: () => SafeNavigation.pop(context, userId: widget.currentUserId),
       ),
@@ -2436,7 +2441,7 @@ class _ChatScreenState extends State<ChatScreen> {
           description: AppLocalizations.of(context)!.tourChatSettingsDesc,
           gesture: TourGesture.tap,
           targetShapeBorder: const CircleBorder(),
-          child: IconButton(
+          child: IconButton(tooltip: AppLocalizations.of(context)!.chatOptions,
             icon: const Icon(Icons.more_vert, color: AppColors.textSecondary),
             onPressed: () => _showChatOptionsMenu(context),
           ),
@@ -3687,7 +3692,7 @@ class _ChatScreenState extends State<ChatScreen> {
               ],
             ),
           ),
-          IconButton(
+          IconButton(tooltip: AppLocalizations.of(context)!.xplTipCancelReply,
             icon: const Icon(Icons.close, color: AppColors.textTertiary, size: 20),
             onPressed: _clearReplyMessage,
             padding: EdgeInsets.zero,

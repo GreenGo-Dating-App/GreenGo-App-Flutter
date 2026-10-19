@@ -54,6 +54,10 @@ enum UserErrorKind {
   /// user's plan / needs an active business account (audit 2026-10-11).
   tierRequired,
   businessRequired,
+
+  /// New accounts (created on/after 16 Oct 2026) without a verified phone
+  /// (server code `phone_verification_required`).
+  phoneVerificationRequired,
 }
 
 /// Server coin refusal reason code -> kind.
@@ -66,6 +70,9 @@ const Map<String, UserErrorKind> _coinReasonKinds = {
 };
 
 UserErrorKind? _coinKindForText(String text) {
+  if (text.contains('phone_verification_required')) {
+    return UserErrorKind.phoneVerificationRequired;
+  }
   for (final e in _coinReasonKinds.entries) {
     if (text.contains(e.key)) return e.value;
   }
@@ -90,6 +97,10 @@ UserErrorKind classifyUserError(Object? error) {
     final reason = details is Map ? details['reason'] : null;
     if (reason is String && _coinReasonKinds.containsKey(reason)) {
       return _coinReasonKinds[reason]!;
+    }
+    final code = details is Map ? details['code'] : null;
+    if (code == 'phone_verification_required') {
+      return UserErrorKind.phoneVerificationRequired;
     }
     return _coinKindForText(error.message ?? '') ??
         _kindForCode(error.code) ??
@@ -278,6 +289,8 @@ String userErrorMessageForKind(AppLocalizations l10n, UserErrorKind kind) {
       return l10n.userErrorTierRequired;
     case UserErrorKind.businessRequired:
       return l10n.userErrorBusinessRequired;
+    case UserErrorKind.phoneVerificationRequired:
+      return l10n.xplErrPhoneRequired;
     case UserErrorKind.generic:
       return l10n.userErrorGeneric;
   }

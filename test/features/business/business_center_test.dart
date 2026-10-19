@@ -119,6 +119,9 @@ void main() {
     await t.pumpWidget(_app(BusinessCenterScreen(
         profile: _business(), repository: _Repo(), billingRepository: _Billing(true))));
     await t.pumpAndSettle();
+    // The "How it works" card sits above it: scroll it into view.
+    await t.dragUntilVisible(find.byKey(const ValueKey('bc-todo-none')),
+        find.byKey(const ValueKey('bc-overview')), const Offset(0, -200));
     expect(find.byKey(const ValueKey('bc-todo-none')), findsOneWidget);
   });
 

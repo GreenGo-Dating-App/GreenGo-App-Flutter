@@ -3,11 +3,13 @@ import 'package:flutter/services.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/widgets/info_button.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/ticket_payments_service.dart';
 import '../../domain/price_phases.dart';
 import '../../domain/ticket_fees.dart';
 import '../../domain/ticket_payments.dart';
+import '../../domain/ticket_rules.dart';
 import '../ticket_l10n.dart';
 
 /// Event editor: "Price phases (early bird…)". Owns the list while editing and
@@ -162,8 +164,21 @@ class _PricePhasesEditorState extends State<PricePhasesEditor> {
       key: const ValueKey('price-phases-editor'),
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(l.ppSectionTitle,
-            style: const TextStyle(color: AppColors.textSecondary, fontSize: 14, fontWeight: FontWeight.w600)),
+        Row(children: [
+          Flexible(
+            child: Text(l.ppSectionTitle,
+                style: const TextStyle(color: AppColors.textSecondary, fontSize: 14, fontWeight: FontWeight.w600)),
+          ),
+          InfoButton(
+            title: l.xplInfoPhasesTitle,
+            message: l.xplInfoPhasesOrganizerBody,
+            bullets: [
+              l.xplInfoPhasesOrder,
+              l.xplInfoPhasesLocked,
+              l.xplInfoPhasesMax(PricePhaseName.values.length),
+            ],
+          ),
+        ]),
         const SizedBox(height: 4),
         Text(l.ppSectionHint, style: const TextStyle(color: AppColors.textTertiary, fontSize: 12, height: 1.3)),
         if (anySold) ...[
@@ -330,7 +345,14 @@ class PricePhasesBuyerView extends StatelessWidget {
         Row(children: [
           const Icon(Icons.local_offer_outlined, color: AppColors.richGold, size: 20),
           const SizedBox(width: 8),
-          Text(l.ppBuyerTitle, style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w600)),
+          Flexible(
+            child: Text(l.ppBuyerTitle, style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w600)),
+          ),
+          InfoButton(
+            title: l.xplInfoPhasesTitle,
+            message: l.xplInfoPhasesBuyerBody,
+            bullets: [l.xplInfoPhasesBuyerLimit(kMaxTicketsPerBuyer)],
+          ),
         ]),
         const SizedBox(height: 8),
         for (var i = 0; i < phases.length; i++)

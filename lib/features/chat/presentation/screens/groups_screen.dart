@@ -105,7 +105,7 @@ class _GroupsScreenState extends State<GroupsScreen> {
                   prefixIcon:
                       const Icon(Icons.search, color: AppColors.textTertiary),
                   suffixIcon: _query.isNotEmpty
-                      ? IconButton(
+                      ? IconButton(tooltip: AppLocalizations.of(context)!.userFollowSearchClear,
                           icon: const Icon(Icons.clear,
                               color: AppColors.textTertiary),
                           onPressed: () {

@@ -27,6 +27,7 @@ import '../bloc/communities_state.dart';
 import '../widgets/community_card.dart';
 import 'community_detail_screen.dart';
 import 'create_community_screen.dart';
+import '../../../../core/widgets/helpful_empty_state.dart';
 
 const int _kJoinedTab = 0;
 const int _kDiscoverTab = 1;
@@ -470,6 +471,8 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
         subtitle: AppLocalizations.of(context)!.communitiesJoinPrompt,
         actionLabel: AppLocalizations.of(context)!.communitiesDiscoverCommunities,
         onAction: () => _tabController.animateTo(_kDiscoverTab),
+        secondaryLabel: AppLocalizations.of(context)!.xplCreateCommunity,
+        onSecondary: _navigateToCreateCommunity,
       );
     }
 
@@ -621,7 +624,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
           ),
           prefixIcon: const Icon(Icons.search, color: AppColors.textTertiary),
           suffixIcon: _joinedSearchQuery.isNotEmpty
-              ? IconButton(
+              ? IconButton(tooltip: AppLocalizations.of(context)!.userFollowSearchClear,
                   icon: const Icon(Icons.clear, color: AppColors.textTertiary),
                   onPressed: () {
                     _joinedSearchController.clear();
@@ -768,7 +771,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
           ),
           prefixIcon: const Icon(Icons.search, color: AppColors.textTertiary),
           suffixIcon: _managedSearchQuery.isNotEmpty
-              ? IconButton(
+              ? IconButton(tooltip: AppLocalizations.of(context)!.userFollowSearchClear,
                   icon: const Icon(Icons.clear, color: AppColors.textTertiary),
                   onPressed: () {
                     _managedSearchController.clear();
@@ -858,7 +861,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
                   color: AppColors.textTertiary,
                 ),
                 suffixIcon: _searchQuery.isNotEmpty
-                    ? IconButton(
+                    ? IconButton(tooltip: AppLocalizations.of(context)!.userFollowSearchClear,
                         icon: const Icon(Icons.clear,
                             color: AppColors.textTertiary),
                         onPressed: () {
@@ -1119,64 +1122,22 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     required String subtitle,
     String? actionLabel,
     VoidCallback? onAction,
+    String? secondaryLabel,
+    VoidCallback? onSecondary,
   }) {
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.all(AppDimensions.paddingXL),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(
-              icon,
-              size: 64,
-              color: AppColors.textTertiary.withValues(alpha: 0.5),
-            ),
-            const SizedBox(height: AppDimensions.paddingM),
-            Text(
-              title,
-              style: const TextStyle(
-                color: AppColors.textPrimary,
-                fontSize: 18,
-                fontWeight: FontWeight.w600,
-              ),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 8),
-            Text(
-              subtitle,
-              style: const TextStyle(
-                color: AppColors.textTertiary,
-                fontSize: 14,
-              ),
-              textAlign: TextAlign.center,
-            ),
-            if (actionLabel != null && onAction != null) ...[
-              const SizedBox(height: AppDimensions.paddingL),
-              ElevatedButton(
-                onPressed: onAction,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.richGold,
-                  foregroundColor: AppColors.deepBlack,
-                  shape: RoundedRectangleBorder(
-                    borderRadius:
-                        BorderRadius.circular(AppDimensions.radiusFull),
-                  ),
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: AppDimensions.paddingL,
-                    vertical: AppDimensions.paddingM,
-                  ),
-                ),
-                child: Text(
-                  actionLabel,
-                  style: const TextStyle(fontWeight: FontWeight.w600),
-                ),
-              ),
-            ],
-          ],
-        ),
-      ),
+    return HelpfulEmptyState(
+      icon: icon,
+      title: title,
+      message: subtitle,
+      actions: [
+        if (actionLabel != null && onAction != null)
+          HelpfulEmptyAction(label: actionLabel, onPressed: onAction),
+        if (secondaryLabel != null && onSecondary != null)
+          HelpfulEmptyAction(label: secondaryLabel, onPressed: onSecondary),
+      ],
     );
   }
+
 
   Future<void> _navigateToCommunityDetail(Community community) async {
     // Interaction logging (fire-and-forget, never throws): a community tap feeds

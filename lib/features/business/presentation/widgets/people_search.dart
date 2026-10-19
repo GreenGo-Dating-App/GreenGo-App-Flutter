@@ -168,7 +168,7 @@ class _PeopleSearchBarState extends State<PeopleSearchBar> {
                 prefixIcon: const Icon(Icons.search, color: AppColors.textTertiary),
                 suffixIcon: _text.text.isEmpty
                     ? null
-                    : IconButton(
+                    : IconButton(tooltip: AppLocalizations.of(context)!.userFollowSearchClear,
                         icon: const Icon(Icons.close, color: AppColors.textTertiary, size: 18),
                         onPressed: () {
                           _text.clear();

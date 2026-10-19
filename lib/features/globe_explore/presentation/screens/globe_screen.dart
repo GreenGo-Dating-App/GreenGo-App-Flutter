@@ -27,6 +27,8 @@ import '../widgets/globe_country_search.dart';
 import '../widgets/globe_filter_chips.dart';
 import '../widgets/globe_map_view.dart';
 import '../widgets/globe_markers.dart';
+import '../../../../features/explore/presentation/screens/network_discovery_screen.dart';
+import '../../../../core/widgets/helpful_empty_state.dart';
 
 /// "My World Map": where the user's network is, on the app's shared map:
 /// the people they follow, their followers, the people they chatted with
@@ -207,6 +209,42 @@ class _GlobeScreenState extends State<GlobeScreen> {
                   ),
                 ),
               ),
+              // No pins at all (every filter on): explain what fills the
+              // map and how to get people on it.
+              if (data.matchedUsers.isEmpty &&
+                  filters.length == kAllGlobeFilters.length)
+                Positioned(
+                  left: 24,
+                  right: 24,
+                  bottom: 70,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: AppColors.backgroundCard.withValues(alpha: 0.94),
+                      borderRadius: BorderRadius.circular(18),
+                      border: Border.all(
+                        color: AppColors.richGold.withValues(alpha: 0.35),
+                      ),
+                    ),
+                    child: HelpfulEmptyState(
+                      key: const Key('globe_helpful_empty'),
+                      compact: true,
+                      icon: Icons.public,
+                      message: l10n.xplEmptyGlobe,
+                      actions: [
+                        HelpfulEmptyAction(
+                          label: l10n.xplFindPeople,
+                          icon: Icons.travel_explore,
+                          onPressed: () => Navigator.of(context).push(
+                            MaterialPageRoute<void>(
+                              builder: (_) =>
+                                  NetworkDiscoveryScreen(userId: userId),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
             ],
           );
         },

@@ -183,7 +183,7 @@ class _RulesEditorSheetState extends State<RulesEditorSheet> {
                               _fieldDecoration(l10n.communitiesResourceUrlHint),
                         ),
                       ),
-                      IconButton(
+                      IconButton(tooltip: AppLocalizations.of(context)!.xplTipRemove,
                         icon: const Icon(Icons.remove_circle_outline,
                             color: AppColors.errorRed),
                         onPressed: () => _removeLinkRow(i),

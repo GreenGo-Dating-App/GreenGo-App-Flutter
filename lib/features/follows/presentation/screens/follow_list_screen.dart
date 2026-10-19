@@ -11,7 +11,9 @@ import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/utils/compact_count.dart';
 import '../../../../core/utils/country_flag_helper.dart';
+import '../../../../core/services/deep_link_service.dart';
 import '../../../../core/utils/follow_name_normalizer.dart';
+import '../../../../core/widgets/helpful_empty_state.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../business/data/services/follow_service.dart';
@@ -498,7 +500,25 @@ class _FollowListTabState extends State<FollowListTab>
     }).toList();
 
     Widget? message;
-    if (visible.isEmpty && !p.hasMore && !p.loading) {
+    if (visible.isEmpty && !p.hasMore && !p.loading && !p.error &&
+        !_searching && widget.userId == widget.currentUserId) {
+      // Own empty list: say what to do next (share the profile).
+      message = HelpfulEmptyState(
+        key: const Key('follow_list_helpful_empty'),
+        compact: true,
+        icon: Icons.people_outline,
+        message: widget.followersTab
+            ? l10n.xplEmptyFollowersOwn
+            : l10n.xplEmptyFollowingOwn,
+        actions: [
+          HelpfulEmptyAction(
+            label: l10n.xplShareMyProfile,
+            icon: Icons.ios_share,
+            onPressed: () => shareProfileLink(context, widget.userId),
+          ),
+        ],
+      );
+    } else if (visible.isEmpty && !p.hasMore && !p.loading) {
       message = Padding(
         padding: const EdgeInsets.fromLTRB(24, 56, 24, 24),
         child: Column(

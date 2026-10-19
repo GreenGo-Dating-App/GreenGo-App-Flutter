@@ -250,7 +250,7 @@ class _TravelerLocationPickerScreenState
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: IconButton(
+        leading: IconButton(tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
           icon: const Icon(Icons.close, color: AppColors.textPrimary),
           onPressed: () => SafeNavigation.pop(context),
         ),
@@ -293,7 +293,7 @@ class _TravelerLocationPickerScreenState
                         ),
                       )
                     : _searchController.text.isNotEmpty
-                        ? IconButton(
+                        ? IconButton(tooltip: AppLocalizations.of(context)!.userFollowSearchClear,
                             icon: const Icon(Icons.clear,
                                 color: AppColors.textTertiary),
                             onPressed: () {
@@ -599,7 +599,7 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: IconButton(
+        leading: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: () => Navigator.of(context).pop(),
         ),

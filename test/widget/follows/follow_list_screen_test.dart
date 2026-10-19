@@ -4,6 +4,7 @@ import 'package:greengo_chat/core/services/user_directory_service.dart';
 import 'package:greengo_chat/features/follows/presentation/screens/follow_list_screen.dart';
 import 'package:greengo_chat/features/follows/presentation/widgets/user_follow_button.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
+import 'package:greengo_chat/generated/app_localizations_en.dart';
 
 import 'follow_test_support.dart';
 
@@ -246,13 +247,15 @@ void main() {
     await tester.pump(const Duration(minutes: 10));
   });
 
-  testWidgets('empty list: one short line with a muted icon', (tester) async {
+  testWidgets('own empty list: says what to do next (share my profile)',
+      (tester) async {
     await w.counts('me');
     await tester.pumpWidget(
         _app(const FollowListScreen(userId: 'me', currentUserId: 'me')));
     await tester.pumpAndSettle();
-    expect(find.byKey(const Key('follow_list_message')), findsOneWidget);
-    expect(find.text('No followers yet'), findsOneWidget);
+    expect(find.byKey(const Key('follow_list_helpful_empty')), findsOneWidget);
+    expect(find.text(AppLocalizationsEn().xplEmptyFollowersOwn), findsOneWidget);
+    expect(find.text(AppLocalizationsEn().xplShareMyProfile), findsOneWidget);
     expect(find.byIcon(Icons.people_outline), findsOneWidget);
   });
 

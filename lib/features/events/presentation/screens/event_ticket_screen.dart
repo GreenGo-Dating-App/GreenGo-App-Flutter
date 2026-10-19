@@ -616,7 +616,7 @@ class _EventTicketScreenState extends State<EventTicketScreen> {
               ],
             ),
           ),
-          IconButton(
+          IconButton(tooltip: AppLocalizations.of(context)!.xplTipDecrease,
             onPressed: (_savingGuests || _guestCount <= 0)
                 ? null
                 : () => _setGuestCount(_guestCount - 1),
@@ -631,7 +631,7 @@ class _EventTicketScreenState extends State<EventTicketScreen> {
               fontWeight: FontWeight.bold,
             ),
           ),
-          IconButton(
+          IconButton(tooltip: AppLocalizations.of(context)!.xplTipIncrease,
             onPressed: (_savingGuests || _guestCount >= max)
                 ? null
                 : () => _setGuestCount(_guestCount + 1),

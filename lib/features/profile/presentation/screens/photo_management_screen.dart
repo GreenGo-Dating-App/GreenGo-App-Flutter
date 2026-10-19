@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 
+import '../../../../core/widgets/info_button.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/photo_validation_service.dart';
@@ -13,6 +14,7 @@ import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../../core/widgets/locked_reason_sheet.dart';
 
 class PhotoManagementScreen extends StatefulWidget {
 
@@ -141,34 +143,18 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
   }
 
   void _showPhotoRejectedDialog(String message) {
-    final l10n = AppLocalizations.of(context);
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: Row(
-          children: [
-            const Icon(Icons.warning_amber_rounded, color: AppColors.warningAmber),
-            const SizedBox(width: 8),
-            Flexible(
-              child: Text(
-                l10n?.photoNotAccepted ?? 'Photo Not Accepted',
-                style: const TextStyle(color: AppColors.textPrimary),
-              ),
-            ),
-          ],
-        ),
-        content: Text(
-          message,
-          style: const TextStyle(color: AppColors.textSecondary),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: Text(l10n?.ok ?? 'OK', style: const TextStyle(color: AppColors.richGold)),
-          ),
-        ],
-      ),
+    final l10n = AppLocalizations.of(context)!;
+    // Face rule: say why the main photo needs a face (personal accounts).
+    final faceRule = message == l10n.photoMainNoFace ||
+        message == l10n.photoMainNotForward;
+    LockedReasonSheet.show(
+      context,
+      title: l10n.photoNotAccepted,
+      reason: message,
+      bullets: faceRule
+          ? [l10n.xplInfoPicturesPersonal, l10n.xplLockedFaceTip]
+          : const <String>[],
+      icon: Icons.warning_amber_rounded,
     );
   }
 
@@ -231,13 +217,12 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
     final l10n = AppLocalizations.of(context);
     final targetList = toPrivate ? _privatePhotoUrls : _photoUrls;
     if (targetList.length >= 6) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(toPrivate
-              ? (l10n?.photoMaxPrivate ?? 'Maximum 6 private photos')
-              : (l10n?.photoMaxPublic ?? 'Maximum 6 public photos')),
-          backgroundColor: AppColors.warningAmber,
-        ),
+      LockedReasonSheet.show(
+        context,
+        title: l10n!.xplLockedPhotosFullTitle,
+        reason: toPrivate ? l10n.photoMaxPrivate : l10n.photoMaxPublic,
+        bullets: [l10n.xplLockedPhotosFullHint],
+        icon: Icons.photo_library_outlined,
       );
       return;
     }
@@ -303,7 +288,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          leading: IconButton(
+          leading: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
             icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
             onPressed: () => SafeNavigation.pop(context),
           ),
@@ -311,6 +296,21 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
             l10n?.photoManagePhotos ?? 'Manage Photos',
             style: const TextStyle(color: AppColors.textPrimary),
           ),
+          actions: [
+            InfoButton(
+              key: const Key('photos_info_button'),
+              size: 22,
+              color: AppColors.textPrimary,
+              title: AppLocalizations.of(context)!.xplInfoPhotosTitle,
+              message: AppLocalizations.of(context)!.xplInfoPhotosBody,
+              bullets: [
+                AppLocalizations.of(context)!.xplInfoPhotosPublic,
+                AppLocalizations.of(context)!.xplInfoPhotosPrivate,
+                AppLocalizations.of(context)!.xplInfoPicturesPersonal,
+              ],
+            ),
+            const SizedBox(width: 4),
+          ],
           bottom: TabBar(
             controller: _tabController,
             indicatorColor: AppColors.richGold,
@@ -494,7 +494,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
                 ),
               ),
               if (photos.length < 6)
-                IconButton(
+                IconButton(tooltip: AppLocalizations.of(context)!.addPhoto,
                   icon: const Icon(Icons.add_photo_alternate, color: AppColors.richGold),
                   onPressed: () => _addPhoto(isPrivate: isPrivate),
                 ),
