@@ -910,23 +910,24 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
                   _runNicknameLookup(nickname);
                 },
               )
-            // No title on the Discover page (removed per request). The
-            // "Business accounts → See all" one-shot still labels its grid.
-            : (widget.businessOnly
-                ? Text(
-                    l10n.exploreBusinessAccounts,
-                    style: const TextStyle(
-                      color: AppColors.textPrimary,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  )
-                : const SizedBox.shrink()),
+            // Title = the mode being shown (owner, 2026-10-19): "People" or
+            // "Businesses", following the People | Businesses switch.
+            : Text(
+                _effectiveShowBusinesses
+                    ? l10n.discoverySegmentBusinesses
+                    : l10n.discoverySegmentPeople,
+                key: const ValueKey('discover-mode-title'),
+                style: const TextStyle(
+                  color: AppColors.textPrimary,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
         actions: [
           // People | Businesses mini switch next to search (owner, 2026-10-19):
           // both icons always visible, the active one gold. Instant, no reload.
           if (!_searching)
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10),
+              padding: const EdgeInsets.symmetric(vertical: 8),
               child: _PeopleBusinessSwitch(
                 showBusinesses: _effectiveShowBusinesses,
                 peopleLabel: l10n.discoverySegmentPeople,
@@ -1552,18 +1553,18 @@ class _PeopleBusinessSwitch extends StatelessWidget {
           label: label,
           child: InkWell(
             key: ValueKey(businesses ? 'discover-seg-businesses' : 'discover-seg-people'),
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(18),
             onTap: () => onChanged(businesses),
             child: AnimatedContainer(
               duration: const Duration(milliseconds: 160),
-              width: 34,
-              height: 30,
+              width: 42,
+              height: 36,
               decoration: BoxDecoration(
                 color: active ? AppColors.richGold : Colors.transparent,
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(18),
               ),
               alignment: Alignment.center,
-              child: Icon(icon, size: 18, color: active ? AppColors.deepBlack : AppColors.textSecondary),
+              child: Icon(icon, size: 24, color: active ? AppColors.deepBlack : AppColors.textSecondary),
             ),
           ),
         ),
@@ -1574,7 +1575,7 @@ class _PeopleBusinessSwitch extends StatelessWidget {
       padding: const EdgeInsets.all(2),
       decoration: BoxDecoration(
         color: AppColors.backgroundCard,
-        borderRadius: BorderRadius.circular(18),
+        borderRadius: BorderRadius.circular(20),
         border: Border.all(color: AppColors.divider),
       ),
       child: Row(mainAxisSize: MainAxisSize.min, children: [
