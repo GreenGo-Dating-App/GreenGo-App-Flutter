@@ -102,7 +102,7 @@ class _CommunityRulesHeaderState extends State<CommunityRulesHeader> {
                     ),
                   ),
                   if (widget.canEdit)
-                    IconButton(
+                    IconButton(tooltip: AppLocalizations.of(context)!.edit,
                       visualDensity: VisualDensity.compact,
                       icon: const Icon(Icons.edit_outlined,
                           color: AppColors.textTertiary, size: 18),

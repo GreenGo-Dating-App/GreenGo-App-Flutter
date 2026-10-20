@@ -45,6 +45,7 @@ import '../../../app_tour/presentation/widgets/page_tour_host.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../../core/services/analytics_consent_service.dart';
+import '../../../../core/widgets/collapsible_how_it_works.dart';
 
 /// Coin Shop Screen
 /// Point 157: Coin purchase interface with packages and membership
@@ -2302,8 +2303,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     List<CoinPackage> packages,
     List<CoinPromotion> promotions,
   ) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
+        CollapsibleHowItWorks(
+          id: 'coin_shop',
+          steps: [l10n.xplHowCoins1, l10n.xplHowCoins2, l10n.xplHowCoins3],
+        ),
         // Header with coin icon
         Container(
           padding: const EdgeInsets.all(24),

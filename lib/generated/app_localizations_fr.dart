@@ -15693,7 +15693,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get userErrorPermissionDenied =>
-      'Vous n\'avez pas l\'autorisation de faire cela.';
+      'Vous ne pouvez pas faire cela avec votre compte pour le moment. Vérifiez que vous êtes connecté ; si cela continue, contactez le support depuis Aide et Support.';
 
   @override
   String get userErrorNotFound => 'Ce contenu n\'est plus disponible.';
@@ -26340,7 +26340,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get tpErrPricePhasesInvalid =>
-      'La vente est suspendue le temps que l\'organisateur corrige les paliers de prix.';
+      'La vente de billets est en pause le temps que l’organisateur corrige les phases de prix. Réessayez plus tard ou écrivez à l’organisateur.';
 
   @override
   String promoStoreFirstYear(String percent, String launch, String regular) {
@@ -26771,11 +26771,11 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get tpErrAttendeeNamesRequired =>
-      'L’organisateur a besoin du prénom et du nom de chaque détenteur de billet.';
+      'L’organisateur a besoin du prénom et du nom de chaque titulaire de billet. Remplissez tous les noms, puis réessayez.';
 
   @override
   String tpErrTicketLimit(int count) {
-    return 'Vous pouvez acheter jusqu’à $count billets pour cet événement';
+    return 'Vous pouvez acheter jusqu’à $count billets pour cet événement. Les billets que vous avez déjà et les commandes non payées comptent aussi.';
   }
 
   @override
@@ -27437,5 +27437,614 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String welcomeSlideOf(int index, int total) {
     return 'Diapositive $index sur $total';
+  }
+
+  @override
+  String get xplGotIt => 'J\'ai compris';
+
+  @override
+  String xplMoreInfoAbout(String title) {
+    return 'Plus d\'infos : $title';
+  }
+
+  @override
+  String get xplHowItWorks => 'Comment ça marche';
+
+  @override
+  String get xplShowDetails => 'Afficher les détails';
+
+  @override
+  String get xplHideDetails => 'Masquer les détails';
+
+  @override
+  String get xplSeePlans => 'Voir les formules';
+
+  @override
+  String get xplLockedPlanTitle => 'Non inclus dans votre formule';
+
+  @override
+  String xplLockedUnlockedBy(String plan) {
+    return 'Disponible à partir de la formule $plan.';
+  }
+
+  @override
+  String get xplLockedPhoneTitle => 'Pourquoi vérifier mon téléphone ?';
+
+  @override
+  String get xplLockedPhoneBody =>
+      'Les comptes créés à partir du 16 octobre 2026 vérifient un numéro de mobile pour tenir à l\'écart les faux comptes et le spam. Il est nécessaire pour participer ou réserver, acheter des billets, créer des événements et des annonces, publier dans les communautés et utiliser les outils professionnels.';
+
+  @override
+  String get xplLockedPhonePrivate =>
+      'Votre numéro n\'est jamais montré aux autres, et un numéro ne peut servir qu\'à un seul compte.';
+
+  @override
+  String get xplTipCreateEvent => 'Créer un événement';
+
+  @override
+  String get xplTipDecrease => 'Diminuer';
+
+  @override
+  String get xplTipIncrease => 'Augmenter';
+
+  @override
+  String get xplTipAddTag => 'Ajouter une étiquette';
+
+  @override
+  String get xplTipRemove => 'Retirer';
+
+  @override
+  String get xplTipAttach => 'Joindre une photo';
+
+  @override
+  String get xplTipShowHidePassword => 'Afficher ou masquer le mot de passe';
+
+  @override
+  String get xplTipPlayPause => 'Lire ou mettre en pause';
+
+  @override
+  String get xplTipCancelReply => 'Annuler la réponse';
+
+  @override
+  String get xplInfoDiscoverBody =>
+      'Choisissez où les autres voient votre repère sur la carte. Vos coordonnées réelles ne sont jamais affichées.';
+
+  @override
+  String get xplInfoDiscoverExact =>
+      'Exacte : votre repère apparaît à environ 100 m de l’endroit où vous êtes, et les autres voient votre distance.';
+
+  @override
+  String get xplInfoDiscoverApprox =>
+      'Approximative (par défaut) : votre repère est placé dans votre secteur, à quelques kilomètres de l’endroit où vous êtes vraiment.';
+
+  @override
+  String get xplInfoDiscoverCountry =>
+      'Pays : votre repère est placé à un endroit aléatoire de votre pays.';
+
+  @override
+  String get xplInfoDiscoverHidden =>
+      'Masqué : vous n’apparaissez pas du tout sur la carte, même pas pour vos abonnés ou les personnes avec qui vous discutez.';
+
+  @override
+  String get xplInfoDiscoverBusiness =>
+      'Les comptes professionnels apparaissent à leur adresse publique. Le mode fantôme et le mode incognito vous retirent aussi de la carte.';
+
+  @override
+  String get xplInfoGhostTitle => 'Mode fantôme et incognito';
+
+  @override
+  String get xplInfoGhostBody =>
+      'Les deux masquent votre profil dans Découvrir, dans les suggestions de personnes et sur la carte : vous pouvez regarder sans être trouvé.';
+
+  @override
+  String get xplInfoGhostGhost =>
+      'Mode fantôme : gratuit et illimité avec Gold et Platinum. Il vous masque aussi dans la recherche par pseudo et reste actif jusqu’à ce que vous le désactiviez.';
+
+  @override
+  String xplInfoGhostIncognito(int count) {
+    return 'Incognito : $count pièces pour 24 heures, avec toute formule. Il se désactive tout seul à la fin du délai.';
+  }
+
+  @override
+  String get xplInfoGhostStill =>
+      'Vos discussions existantes continuent de fonctionner normalement.';
+
+  @override
+  String get xplInfoFollowTitle => 'Abonnés, Abonnements et Boutiques';
+
+  @override
+  String get xplInfoFollowBody => 'Touchez un nombre pour ouvrir la liste.';
+
+  @override
+  String get xplInfoFollowPublic =>
+      'Vos abonnés et les comptes que vous suivez sont publics : les membres connectés voient ces listes sur votre profil.';
+
+  @override
+  String get xplInfoFollowStores =>
+      'Le nombre de Boutiques (entreprises que vous suivez) n’est visible que par vous.';
+
+  @override
+  String get xplInfoPhotosTitle => 'Photos publiques et privées';
+
+  @override
+  String get xplInfoPhotosBody =>
+      'Vous pouvez avoir jusqu’à 6 photos publiques et 6 privées.';
+
+  @override
+  String get xplInfoPhotosPublic =>
+      'Photos publiques : toute personne qui ouvre votre profil peut les voir.';
+
+  @override
+  String get xplInfoPhotosPrivate =>
+      'Photos privées : seules les personnes à qui vous donnez accès, une par une depuis une discussion, peuvent les voir. Vous pouvez retirer l’accès à tout moment. Les règles de la communauté s’appliquent aussi ici.';
+
+  @override
+  String get xplInfoPicturesTitle =>
+      'Photo personnelle et image professionnelle';
+
+  @override
+  String get xplInfoPicturesBody =>
+      'Votre image professionnelle et vos photos personnelles sont séparées.';
+
+  @override
+  String get xplInfoPicturesPersonal =>
+      'Comptes personnels : votre photo principale (la première photo publique) doit montrer clairement votre visage.';
+
+  @override
+  String get xplInfoPicturesBusiness =>
+      'Image professionnelle : affichée dans Découvrir, dans les discussions et sur votre vitrine. Un logo ou une photo de votre lieu convient ; pas besoin de visage.';
+
+  @override
+  String get xplInfoPhasesTitle => 'Phases de prix';
+
+  @override
+  String get xplInfoPhasesOrganizerBody =>
+      'Vendez les premiers billets moins cher, puis augmentez le prix au fil des ventes.';
+
+  @override
+  String get xplInfoPhasesOrder =>
+      'Les phases se vendent dans l’ordre : quand l’une est épuisée, la suivante commence. Chaque phase doit coûter plus cher que la précédente.';
+
+  @override
+  String get xplInfoPhasesLocked =>
+      'Dès qu’une phase a des ventes, son prix ne peut plus être modifié.';
+
+  @override
+  String xplInfoPhasesMax(int count) {
+    return 'Vous pouvez ajouter jusqu’à $count phases, une par nom prédéfini.';
+  }
+
+  @override
+  String get xplInfoPhasesBuyerBody =>
+      'Le prix dépend de la phase en vente actuellement. Quand elle est épuisée, le prix suivant, plus élevé, s’applique. Vous payez le prix affiché au paiement, rien de plus.';
+
+  @override
+  String xplInfoPhasesBuyerLimit(int count) {
+    return 'Vous pouvez acheter jusqu’à $count billets par événement au total.';
+  }
+
+  @override
+  String get xplInfoFeeTitle => 'Frais de service GreenGo';
+
+  @override
+  String get xplInfoFeeBody =>
+      'Les frais sont payés par vous, le vendeur : les acheteurs paient uniquement le prix du billet que vous fixez.';
+
+  @override
+  String get xplInfoFeeTiers =>
+      'Par billet payant, selon votre formule : Silver 3 US\$ + 10 % (max. 30 US\$), Gold 2 US\$ + 10 % (max. 28 US\$), Platinum 1 US\$ + 10 % (max. 25 US\$). Sans formule payante, le tarif Silver s’applique.';
+
+  @override
+  String get xplInfoFeeTrial =>
+      'Votre première annonce payante : 1 US\$ forfaitaire par billet.';
+
+  @override
+  String get xplInfoFeeFree =>
+      'Les billets gratuits n’ont pas de frais, et les frais ne dépassent jamais le prix du billet. Un remboursement total vous rend les frais.';
+
+  @override
+  String get xplInfoFeeProvider =>
+      'Stripe ou Mercado Pago prélèvent aussi leurs propres frais de traitement sur votre compte ; ce ne sont pas des frais GreenGo.';
+
+  @override
+  String get xplInfoReceiveTitle => 'Ce que vous recevez par billet';
+
+  @override
+  String get xplInfoReceiveBody =>
+      'Vous recevez le prix du billet moins les frais de service GreenGo et les frais de traitement du prestataire de paiement. Ces derniers sont une estimation : ils dépendent de la carte, du pays et du moyen de paiement.';
+
+  @override
+  String get xplInfoPromoTitle => 'Offre de lancement 2026';
+
+  @override
+  String xplInfoPromoBody(int percent) {
+    return '$percent % de réduction sur la première période de tout abonnement souscrit jusqu’au 31 mars 2027.';
+  }
+
+  @override
+  String xplInfoPromoPeriods(int months) {
+    return 'Première période = les $months premiers mois d’une formule mensuelle, ou la première année d’une formule annuelle.';
+  }
+
+  @override
+  String get xplInfoPromoRenew =>
+      'Ensuite, la formule se renouvelle au prix normal, sauf si vous résiliez.';
+
+  @override
+  String get xplInfoPromoNoTrial =>
+      'Il n’y a pas d’essai gratuit. Dans l’App Store, l’offre n’apparaît que si Apple indique que votre identifiant Apple y a droit.';
+
+  @override
+  String get xplExactConfirmTitle => 'Afficher votre position exacte ?';
+
+  @override
+  String get xplExactConfirm1 =>
+      'Les autres membres verront votre repère à environ 100 m de l’endroit où vous êtes, ainsi que votre distance.';
+
+  @override
+  String get xplExactConfirm2 =>
+      'Activez-le seulement si cela vous convient que l’on sache à peu près où vous êtes, par exemple votre rue.';
+
+  @override
+  String get xplExactConfirm3 =>
+      'Vous pouvez revenir à Approximative, Pays ou Masqué à tout moment.';
+
+  @override
+  String get xplExactConfirmAction => 'Utiliser la position exacte';
+
+  @override
+  String get xplLeaveCommunityStop =>
+      'Vous ne verrez plus sa discussion, ses conseils et ses annonces, et ne recevrez plus ses notifications.';
+
+  @override
+  String get xplLeaveCommunityPosts =>
+      'Les messages que vous avez déjà publiés restent dans la communauté.';
+
+  @override
+  String get xplLeaveCommunityRejoin => 'Vous pourrez la rejoindre plus tard.';
+
+  @override
+  String get xplLeaveCommunityRejoinPrivate =>
+      'Cette communauté est privée : pour revenir, vous devrez à nouveau demander à la rejoindre.';
+
+  @override
+  String get xplDeleteEventRemoved =>
+      'L’événement, sa liste de participants et sa discussion sont supprimés pour tout le monde.';
+
+  @override
+  String get xplDeleteEventNoRefund =>
+      'La suppression ne rembourse PERSONNE. Vous êtes le vendeur : si vous avez vendu des billets, remboursez les acheteurs depuis votre compte Stripe ou Mercado Pago, selon votre politique de remboursement.';
+
+  @override
+  String get xplDeleteEventFee =>
+      'Si un billet est remboursé en totalité, GreenGo vous rend ses frais de service ; pour un remboursement partiel, GreenGo les conserve.';
+
+  @override
+  String get xplBusinessPage =>
+      'Votre profil devient une page professionnelle publique avec un nom et une image d’entreprise.';
+
+  @override
+  String get xplBusinessSell =>
+      'Vous pouvez vendre des billets et des réservations via votre propre compte Stripe ou Mercado Pago. GreenGo vous facture, à vous le vendeur, des frais de service par billet payant.';
+
+  @override
+  String get xplBusinessListings =>
+      'Le nombre d’annonces actives en même temps dépend de votre formule : Silver 5, Gold 10, Platinum illimité.';
+
+  @override
+  String get xplShareMyProfile => 'Partager mon profil';
+
+  @override
+  String get xplEmptyFollowersOwn =>
+      'Personne ne vous suit encore. Partagez votre profil pour qu’on vous trouve et vous suive.';
+
+  @override
+  String get xplEmptyFollowingOwn =>
+      'Vous ne suivez encore personne. Suivez des personnes et des entreprises depuis leur profil pour les retrouver ici.';
+
+  @override
+  String get xplEmptyEvents =>
+      'Il n’y a pas encore d’événements ici. Créez-en un et invitez du monde, ou revenez bientôt.';
+
+  @override
+  String get xplEmptyEventsFiltered =>
+      'Aucun événement ne correspond à vos filtres. Affichez tous les événements ou créez le vôtre.';
+
+  @override
+  String get xplWidenFilters => 'Afficher tous les événements';
+
+  @override
+  String get xplEmptyChats =>
+      'Lancez une conversation depuis le profil de quelqu’un. Trouvez des personnes qui partagent vos langues et vos centres d’intérêt.';
+
+  @override
+  String get xplFindPeople => 'Trouver des personnes';
+
+  @override
+  String get xplEmptyTickets =>
+      'Les billets que vous achetez pour des événements apparaîtront ici.';
+
+  @override
+  String get xplBrowseEvents => 'Parcourir les événements';
+
+  @override
+  String get xplEmptyBookings =>
+      'Les expériences que vous réservez apparaîtront ici. Vous trouverez des expériences dans l’onglet Événements.';
+
+  @override
+  String get xplBrowseExperiences => 'Parcourir les expériences';
+
+  @override
+  String get xplEmptyBookingsHost =>
+      'Les réservations de vos expériences apparaîtront ici dès que des participants réserveront.';
+
+  @override
+  String get xplCreateCommunity => 'Créer une communauté';
+
+  @override
+  String get xplEmptyGlobe =>
+      'Votre carte montre les personnes que vous suivez, vos abonnés et vos discussions. Suivez des personnes ou lancez une discussion pour les voir ici.';
+
+  @override
+  String get xplEmptyBcCustomers =>
+      'Pas encore de nouveaux abonnés ni de messages ce mois-ci. Complétez votre vitrine et mettez-la en avant pour que les clients vous trouvent.';
+
+  @override
+  String get xplEmptyBcSales =>
+      'Pas encore de ventes ce mois-ci. Connectez Stripe ou Mercado Pago dans Être payé, puis publiez un événement ou une expérience payants.';
+
+  @override
+  String get xplLockedTranslateTitle =>
+      'Limite quotidienne de traduction atteinte';
+
+  @override
+  String get xplLockedTranslateOriginal =>
+      'D’ici là, les messages s’affichent dans leur langue d’origine.';
+
+  @override
+  String get xplLockedPhotosFullTitle => 'Album plein';
+
+  @override
+  String get xplLockedPhotosFullHint =>
+      'Supprimez une photo, ou déplacez-en une vers l’autre album, pour faire de la place.';
+
+  @override
+  String get xplLockedGroupsUnlimited =>
+      'Les formules Silver, Gold et Platinum n’ont pas de limite de groupes.';
+
+  @override
+  String get xplLockedFaceTip =>
+      'Utilisez une photo nette et bien éclairée de vous, face à l’objectif. Vos autres photos peuvent montrer tout ce qui respecte les règles de la communauté.';
+
+  @override
+  String get xplLockedStorefrontTitle => 'Vitrine incomplète';
+
+  @override
+  String get xplErrSellerBilling =>
+      'La vente de billets est en pause : l’organisateur doit encore ajouter ses informations de facturation. Réessayez plus tard ou écrivez à l’organisateur.';
+
+  @override
+  String get xplErrPhoneRequired =>
+      'Vérifiez d’abord votre numéro de mobile : les nouveaux comptes ont besoin d’un téléphone vérifié pour participer, réserver, acheter des billets ou créer des annonces.';
+
+  @override
+  String get xplHowBc1 =>
+      'Complétez votre vitrine : image professionnelle, nom, adresse et coordonnées.';
+
+  @override
+  String get xplHowBc2 =>
+      'Connectez Stripe ou Mercado Pago dans Être payé. Les acheteurs vous paient directement ; GreenGo ne détient jamais l’argent des billets.';
+
+  @override
+  String get xplHowBc3 =>
+      'Publiez des événements et des expériences. Le nombre d’annonces actives en même temps dépend de votre formule.';
+
+  @override
+  String get xplHowBc4 =>
+      'Suivez ici vos ventes, vos clients et vos réservations. GreenGo vous facture ses frais de service.';
+
+  @override
+  String get xplHowPaid1 =>
+      'Connectez votre propre compte Stripe ou Mercado Pago. Les acheteurs y paient directement ; GreenGo ne détient jamais l’argent des billets.';
+
+  @override
+  String get xplHowPaid2 =>
+      'Les acheteurs paient uniquement le prix que vous fixez. Les frais de service GreenGo par billet dépendent de votre formule et sont payés par vous, le vendeur.';
+
+  @override
+  String get xplHowPaid3 =>
+      'Ajoutez vos informations de facturation : sans elles, les ventes payantes sont en pause.';
+
+  @override
+  String get xplHowPaid4 =>
+      'Vous fixez votre politique de remboursement et remboursez vous-même les acheteurs. Un remboursement total vous rend les frais GreenGo.';
+
+  @override
+  String get xplHowPromote1 =>
+      'Choisissez quoi mettre en avant : votre vitrine en haut d’Explorer, ou l’un de vos prochains événements dans la découverte.';
+
+  @override
+  String get xplHowPromote2 =>
+      'Choisissez une durée. Le prix en pièces s’affiche avant de confirmer.';
+
+  @override
+  String get xplHowPromote3 =>
+      'La mise en avant commence dès que vous confirmez et se termine d’elle-même à la date indiquée.';
+
+  @override
+  String get xplHowReferralShare =>
+      'Partagez votre code ou lien d’invitation personnel avec vos amis.';
+
+  @override
+  String get xplHowCoins1 =>
+      'Utilisez des pièces pour des extras comme le mode incognito, les mises en avant et la lecture des messages à voix haute.';
+
+  @override
+  String get xplHowCoins2 =>
+      'Offrez des pièces : de 10 à 1 000 pièces par cadeau. Les pièces achetées peuvent être offertes 72 heures après l’achat.';
+
+  @override
+  String get xplHowCoins3 =>
+      'Les pièces n’expirent jamais et ne peuvent pas être échangées contre de l’argent.';
+
+  @override
+  String get xplGuideFeaturesTitle => 'Guide des fonctionnalités';
+
+  @override
+  String get xplFaqTitle => 'Questions fréquentes';
+
+  @override
+  String get xplFaqSearchHint => 'Rechercher une question';
+
+  @override
+  String get xplFaqNoResults =>
+      'Aucune question ne correspond à votre recherche. Essayez d’autres mots ou contactez le support depuis Aide et Support.';
+
+  @override
+  String get xplFaqTranslationQ => 'Comment fonctionne la traduction ?';
+
+  @override
+  String get xplFaqTranslationA =>
+      'Les messages du chat sont traduits automatiquement dès que vous acceptez les fonctions d’IA. La traduction du chat utilise le service Cloud Translation de Google. La quantité de texte traduisible par jour dépend de votre formule ; une fois la limite atteinte, les messages s’affichent dans leur langue d’origine. Le contenu public (événements, communautés, annonces) est traduit avec le service de traduction de Google via un stockage partagé, sans données personnelles. Le texte traduit porte la mention « Traduit » et peut contenir des erreurs : en cas de doute, vérifiez auprès de l’autre personne.';
+
+  @override
+  String get xplFaqTicketsQ =>
+      'Comment fonctionnent les billets et les remboursements ?';
+
+  @override
+  String get xplFaqTicketsA =>
+      'Les billets payants s’achètent via le paiement intégré à l’app et sont payés directement sur le compte Stripe ou Mercado Pago de l’organisateur ; GreenGo ne détient jamais l’argent des billets. Vous payez le prix affiché, rien de plus. L’organisateur est le vendeur et fixe la politique d’annulation et de remboursement : demandez-lui le remboursement (par exemple dans la discussion de l’événement). L’annulation ou la suppression d’un événement ne rembourse pas automatiquement les billets.';
+
+  @override
+  String get xplFaqCancelSubQ => 'Comment résilier mon abonnement ?';
+
+  @override
+  String get xplFaqCancelSubA =>
+      'Allez dans Profil > Paramètres du Compte > Gérer l’abonnement. Une formule achetée sur le web ouvre le portail de paiement, où vous pouvez résilier. Une formule achetée sur Google Play ou l’App Store se résilie dans ce store ; le bouton vous y emmène. Supprimer votre compte résilie une formule web, mais PAS un abonnement de store.';
+
+  @override
+  String get xplFaqLocationQ => 'Qui peut voir ma position ?';
+
+  @override
+  String get xplFaqLocationA =>
+      'Par défaut, votre repère sur la carte est Approximatif : placé dans votre secteur, à quelques kilomètres de l’endroit où vous êtes vraiment. Dans votre profil, sous Visibilité sur le globe, vous pouvez choisir Exacte (environ 100 m), Pays ou Masqué. Vos coordonnées réelles ne sont jamais affichées. Le mode fantôme et le mode incognito vous retirent aussi de la carte.';
+
+  @override
+  String get xplFaqFollowersQ => 'Qui voit mes abonnés et mes abonnements ?';
+
+  @override
+  String get xplFaqFollowersA =>
+      'Vos listes d’abonnés et d’abonnements sont publiques pour les membres connectés. Le nombre de boutiques que vous suivez n’est visible que par vous. Les personnes que vous bloquez ne peuvent pas ouvrir votre profil.';
+
+  @override
+  String get xplFaqModerationQ =>
+      'Comment fonctionne la modération ? Puis-je faire appel ?';
+
+  @override
+  String get xplFaqModerationA =>
+      'Les contenus signalés sont examinés au regard des Conditions et des règles de la communauté. Si nous agissons sur votre contenu ou votre compte, vous recevez la décision et sa raison. Vous pouvez faire appel de chaque décision une fois, dans un délai d’environ 6 mois, dans l’app ou via le lien de l’e-mail (cela fonctionne même si votre compte est suspendu) ; une autre personne examine l’appel. Si vous avez signalé quelque chose et que nous n’avons pas agi, vous pouvez aussi faire appel.';
+
+  @override
+  String get xplFaqReportQ => 'Comment signaler ou bloquer quelqu’un ?';
+
+  @override
+  String get xplFaqReportA =>
+      'Ouvrez le profil de la personne, une discussion ou un message et choisissez Signaler ou Bloquer. Les signalements sont envoyés à notre équipe sécurité. Une fois bloquée, la personne ne peut plus vous contacter ni ouvrir votre profil. Vous pouvez aussi écrire à safety@greengochat.com. En cas d’urgence, contactez d’abord les services d’urgence locaux.';
+
+  @override
+  String get xplFaqDeleteQ => 'Comment supprimer mon compte ?';
+
+  @override
+  String get xplFaqDeleteA =>
+      'Allez dans Profil > Supprimer le Compte et confirmez avec votre mot de passe, ou supprimez-le sur le web à greengochat.com/delete-account. La suppression est immédiate et irréversible : les pièces restantes sont perdues et une formule web est résiliée, mais un abonnement Google Play ou App Store doit être résilié dans le store. Certaines données sont conservées lorsque la loi l’exige (paiements et factures, signalements de sécurité) ; voir la Politique de confidentialité.';
+
+  @override
+  String get xplFaqPhoneQ => 'Pourquoi dois-je vérifier mon téléphone ?';
+
+  @override
+  String get xplFaqPhoneA =>
+      'Les comptes créés à partir du 16 octobre 2026 vérifient un numéro de mobile à l’inscription. Cela tient à l’écart les faux comptes et le spam, et c’est nécessaire pour participer ou réserver, acheter des billets, créer des événements et des annonces, publier dans les communautés et utiliser les outils professionnels. Votre numéro n’est jamais montré aux autres. Les comptes créés avant cette date ne sont pas concernés.';
+
+  @override
+  String get xplFaqIdQ =>
+      'La vérification d’identité est-elle obligatoire ? Que conservez-vous ?';
+
+  @override
+  String get xplFaqIdA =>
+      'Non, la vérification d’identité est facultative ; elle vous donne un badge Vérifié. La photo de votre document est supprimée après l’examen, ou au bout de 7 jours si elle n’est pas examinée. Les informations vérifiées sont conservées chiffrées jusqu’à 6 mois après la fermeture de votre compte.';
+
+  @override
+  String get xplFaqCoinsQ => 'Comment fonctionnent les pièces ?';
+
+  @override
+  String get xplFaqCoinsA =>
+      'Les pièces paient des extras comme le mode incognito, les mises en avant et la lecture des messages à voix haute. Elles n’expirent jamais et ne peuvent être ni échangées contre de l’argent ni retirées. Vous pouvez offrir de 10 à 1 000 pièces à la fois, jusqu’à 10 cadeaux et 5 000 pièces par jour ; les pièces achetées peuvent être offertes 72 heures après l’achat.';
+
+  @override
+  String get xplFaqPromoQ => 'Qu’est-ce que l’offre de lancement ?';
+
+  @override
+  String xplFaqPromoA(int percent, int months) {
+    return 'Toute formule d’abonnement souscrite jusqu’au 31 mars 2027 bénéficie de $percent % de réduction sur sa première période : les $months premiers mois d’une formule mensuelle, ou la première année d’une formule annuelle. Ensuite, elle se renouvelle au prix normal, sauf résiliation. Il n’y a pas d’essai gratuit.';
+  }
+
+  @override
+  String get xplFaqBusinessQ => 'Qu’est-ce qu’un compte professionnel ?';
+
+  @override
+  String get xplFaqBusinessA =>
+      'Un compte professionnel transforme votre profil en page professionnelle publique, avec sa propre image et sa vitrine, et vous permet de vendre des billets et des réservations. Il faut une formule Silver, Gold ou Platinum et un téléphone vérifié. Le passage est définitif ; si votre formule expire, les outils professionnels sont en pause jusqu’au renouvellement. Annonces actives en même temps : Silver 5, Gold 10, Platinum illimité.';
+
+  @override
+  String get xplFaqFeesQ => 'Quels frais paient les vendeurs ?';
+
+  @override
+  String get xplFaqFeesA =>
+      'Les frais de service GreenGo sont payés par le vendeur ; les acheteurs paient uniquement le prix du billet. Par billet payant : Silver 3 US\$ + 10 % (max. 30 US\$), Gold 2 US\$ + 10 % (max. 28 US\$), Platinum 1 US\$ + 10 % (max. 25 US\$). Votre première annonce payante est à 1 US\$ forfaitaire par billet. Les billets gratuits n’ont pas de frais, et les frais ne dépassent jamais le prix du billet. Stripe ou Mercado Pago facturent leurs propres frais de traitement.';
+
+  @override
+  String get xplFaqPhasesQ =>
+      'Que sont les phases de prix ? Combien de billets puis-je acheter ?';
+
+  @override
+  String xplFaqPhasesA(int count) {
+    return 'Les organisateurs peuvent vendre les premiers billets moins cher par phases (early bird, prévente, normal...). Les phases se vendent dans l’ordre et chacune coûte plus cher que la précédente : quand l’une est épuisée, le prix suivant s’applique. Chaque personne peut acheter jusqu’à $count billets par événement au total, et l’organisateur peut fixer une limite plus basse.';
+  }
+
+  @override
+  String get xplFaqNamesQ =>
+      'Pourquoi dois-je indiquer le nom des participants ?';
+
+  @override
+  String get xplFaqNamesA =>
+      'Si l’organisateur demande le nom des participants, vous devez indiquer le prénom et le nom de chaque titulaire de billet. Les noms ne sont partagés qu’avec l’organisateur et figurent sur les billets.';
+
+  @override
+  String get xplFaqGuestQ => 'Peut-on réserver sans compte GreenGo ?';
+
+  @override
+  String get xplFaqGuestA =>
+      'Oui, si l’organisateur accepte les invités : via le lien partagé, ils peuvent obtenir des billets ou demander une expérience avec seulement leur nom et leur e-mail, et les billets arrivent par e-mail. C’est désactivé par défaut et indisponible pour les événements soumis à approbation ou avec des limites d’âge ou de genre.';
+
+  @override
+  String get xplFaqExportQ => 'Puis-je télécharger mes données ?';
+
+  @override
+  String get xplFaqExportA =>
+      'Oui. Allez dans Confidentialité et données > Exporter Mes Données. Par sécurité, il peut vous être demandé de vous reconnecter. Vous recevez un fichier ZIP via un lien de téléchargement (aussi envoyé par e-mail) valable 24 heures ; vous pouvez demander un export par jour.';
+
+  @override
+  String get xplFaqSupportQ => 'Comment contacter le support ou une personne ?';
+
+  @override
+  String get xplFaqSupportA =>
+      'Ouvrez Aide et Support dans votre profil et lancez le chat d’assistance. Il commence par un assistant IA ; touchez « Parler à une personne » à tout moment pour joindre un humain. Les membres Gold et Platinum bénéficient d’un support prioritaire. Vous pouvez aussi écrire à support@greengochat.com.';
+
+  @override
+  String get xplFaqGhostQ => 'Que sont le mode fantôme et le mode incognito ?';
+
+  @override
+  String xplFaqGhostA(int count) {
+    return 'Les deux masquent votre profil dans Découvrir, dans les suggestions de personnes et sur la carte. Le mode fantôme est gratuit et illimité avec Gold et Platinum, et vous masque aussi dans la recherche par pseudo. Le mode incognito coûte $count pièces pour 24 heures, avec toute formule. Activez-les depuis votre profil.';
   }
 }

@@ -1,3 +1,5 @@
+import '../../../../core/widgets/helpful_empty_state.dart';
+import '../../../../core/widgets/locked_reason_sheet.dart';
 import '../../../../core/widgets/listing_wizard.dart';
 import '../widgets/event_location_map.dart';
 import '../../../ticket_payments/presentation/ticket_l10n.dart';
@@ -460,7 +462,7 @@ class _EventsScreenState extends State<EventsScreen>
               description: l10n.tourEventsCreateDesc,
               gesture: TourGesture.tap,
               targetShapeBorder: const CircleBorder(),
-              child: IconButton(
+              child: IconButton(tooltip: AppLocalizations.of(context)!.xplTipCreateEvent,
                 icon: const Icon(Icons.add, color: AppColors.richGold),
                 onPressed: () => _showCreateChooser(context),
               ),
@@ -1198,46 +1200,33 @@ class _EventsScreenState extends State<EventsScreen>
     );
   }
 
-  /// Empty state of the event lists, with the "Create event" button.
+  /// Empty state of the event lists: create an event, or widen the filters
+  /// when a category / feed filter is narrowing the list.
   Widget _buildNoEventsState() {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Icon(
-            Icons.event_busy,
-            size: 80,
-            color: AppColors.textTertiary,
+    final l10n = AppLocalizations.of(context)!;
+    final narrowed =
+        _selectedCategory != null || _eventsFilter != _FeedFilter.all;
+    return HelpfulEmptyState(
+      key: const Key('events_helpful_empty'),
+      icon: Icons.event_busy,
+      title: l10n.eventsNoEventsFound,
+      message: narrowed ? l10n.xplEmptyEventsFiltered : l10n.xplEmptyEvents,
+      actions: [
+        HelpfulEmptyAction(
+          label: l10n.eventsCreateEvent,
+          icon: Icons.add,
+          onPressed: () => _showCreateEventDialog(context),
+        ),
+        if (narrowed)
+          HelpfulEmptyAction(
+            label: l10n.xplWidenFilters,
+            icon: Icons.filter_alt_off_outlined,
+            onPressed: () {
+              setState(() => _selectedCategory = null);
+              _setEventsFilter(_FeedFilter.all);
+            },
           ),
-          const SizedBox(height: 16),
-          Text(
-            AppLocalizations.of(context)!.eventsNoEventsFound,
-            style: const TextStyle(
-              color: AppColors.textPrimary,
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            AppLocalizations.of(context)!.eventsCheckBackLater,
-            style: const TextStyle(
-              color: AppColors.textSecondary,
-              fontSize: 14,
-            ),
-          ),
-          const SizedBox(height: 24),
-          ElevatedButton.icon(
-            onPressed: () => _showCreateEventDialog(context),
-            icon: const Icon(Icons.add),
-            label: Text(AppLocalizations.of(context)!.eventsCreateEvent),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: AppColors.richGold,
-              foregroundColor: AppColors.deepBlack,
-            ),
-          ),
-        ],
-      ),
+      ],
     );
   }
 
@@ -4213,7 +4202,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             Positioned(
               top: 40,
               right: 16,
-              child: IconButton(
+              child: IconButton(tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
                 icon: const Icon(Icons.close, color: Colors.white, size: 28),
                 onPressed: () => Navigator.of(ctx).pop(),
               ),
@@ -4439,7 +4428,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                     style: const TextStyle(color: AppColors.textPrimary),
                     overflow: TextOverflow.ellipsis,
                   ),
-                  trailing: IconButton(
+                  trailing: IconButton(tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
                     icon: const Icon(Icons.close,
                         color: AppColors.textSecondary),
                     onPressed: () =>
@@ -5129,7 +5118,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
           child: Text(label,
               style: const TextStyle(color: AppColors.textPrimary)),
         ),
-        IconButton(
+        IconButton(tooltip: AppLocalizations.of(context)!.xplTipDecrease,
           onPressed: value <= min ? null : () => onChanged(value - 1),
           icon: const Icon(Icons.remove_circle_outline),
           color: AppColors.richGold,
@@ -5139,7 +5128,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 color: AppColors.textPrimary,
                 fontSize: 16,
                 fontWeight: FontWeight.bold)),
-        IconButton(
+        IconButton(tooltip: AppLocalizations.of(context)!.xplTipIncrease,
           onPressed: value >= max ? null : () => onChanged(value + 1),
           icon: const Icon(Icons.add_circle_outline),
           color: AppColors.richGold,
@@ -5347,28 +5336,23 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
 
   Future<void> _confirmDelete() async {
     final l10n = AppLocalizations.of(context)!;
-    final confirmed = await showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: Text(l10n.eventsDeleteEvent,
-            style: const TextStyle(color: AppColors.textPrimary)),
-        content: Text(l10n.eventsDeleteConfirmBody,
-            style: const TextStyle(color: AppColors.textSecondary)),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(ctx, false),
-            child: Text(l10n.groupCancel),
-          ),
-          TextButton(
-            onPressed: () => Navigator.pop(ctx, true),
-            child: Text(l10n.eventsDeleteEvent,
-                style: const TextStyle(color: AppColors.errorRed)),
-          ),
-        ],
-      ),
+    // Deleting never refunds anyone (no server refund on event deletion):
+    // a paid event's organizer is told so before confirming.
+    final paid = widget.existing?.isPaidEvent ?? false;
+    final confirmed = await ConsequenceConfirmSheet.show(
+      context,
+      title: l10n.eventsDeleteEvent,
+      message: l10n.eventsDeleteConfirmBody,
+      consequences: [
+        l10n.xplDeleteEventRemoved,
+        if (paid) l10n.xplDeleteEventNoRefund,
+        if (paid) l10n.xplDeleteEventFee,
+      ],
+      confirmLabel: l10n.eventsDeleteEvent,
+      destructive: true,
+      icon: Icons.delete_outline,
     );
-    if (confirmed == true) widget.onEventDeleted?.call();
+    if (confirmed) widget.onEventDeleted?.call();
   }
 
   Future<void> _submit(

@@ -1270,7 +1270,7 @@ class _MessageBubbleState extends State<MessageBubble> {
           appBar: AppBar(
             backgroundColor: Colors.transparent,
             elevation: 0,
-            leading: IconButton(
+            leading: IconButton(tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
               icon: const Icon(Icons.close, color: Colors.white),
               onPressed: () => Navigator.of(context).pop(),
             ),
@@ -1344,7 +1344,7 @@ class _FullScreenVideoPlayerState extends State<_FullScreenVideoPlayer> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: IconButton(
+        leading: IconButton(tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
           icon: const Icon(Icons.close, color: Colors.white),
           onPressed: () => Navigator.pop(context),
         ),

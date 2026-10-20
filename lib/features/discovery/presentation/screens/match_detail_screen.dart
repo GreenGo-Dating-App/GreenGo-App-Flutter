@@ -226,7 +226,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
       child: Row(
         children: [
-          IconButton(
+          IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
             onPressed: () => Navigator.of(context).pop(),
             icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           ),

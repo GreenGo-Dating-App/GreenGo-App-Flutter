@@ -13,6 +13,7 @@ import 'payments_to_confirm_screen.dart';
 import '../../../app_tour/presentation/widgets/page_tour_host.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../../core/widgets/collapsible_how_it_works.dart';
 
 /// Business > "Get paid": connect Mercado Pago / Stripe. Buyers pay inside
 /// the app and their tickets are confirmed automatically; the money goes
@@ -150,6 +151,11 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
           return ListView(
             padding: const EdgeInsets.all(16),
             children: [
+              CollapsibleHowItWorks(
+                id: 'get_paid',
+                margin: const EdgeInsets.only(bottom: 12),
+                steps: [l.xplHowPaid1, l.xplHowPaid2, l.xplHowPaid3, l.xplHowPaid4],
+              ),
               Container(
                 key: const ValueKey('get-paid-intro'),
                 padding: const EdgeInsets.all(14),

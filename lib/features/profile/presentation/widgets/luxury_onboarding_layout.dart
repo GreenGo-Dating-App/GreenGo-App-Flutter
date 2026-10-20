@@ -508,7 +508,7 @@ class _LuxuryOnboardingLayoutState extends State<LuxuryOnboardingLayout>
                           ),
                         ],
                       ),
-                      child: IconButton(
+                      child: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
                         icon: const Icon(Icons.arrow_back, color: Colors.white),
                         onPressed: widget.onBack ?? () => Navigator.of(context).pop(),
                       ),

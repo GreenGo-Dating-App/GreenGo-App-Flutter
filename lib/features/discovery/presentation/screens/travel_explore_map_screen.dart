@@ -192,7 +192,7 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
           ],
         ),
         actions: [
-          IconButton(
+          IconButton(tooltip: AppLocalizations.of(context)!.refresh,
             icon: const Icon(Icons.refresh, color: AppColors.textSecondary),
             onPressed: _loadTravelers,
           ),

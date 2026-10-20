@@ -10,6 +10,7 @@ import '../../../../core/services/user_directory_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/usecases/create_group.dart';
 import 'group_chat_screen.dart';
+import '../../../../core/widgets/locked_reason_sheet.dart';
 
 /// A selectable contact for group creation. Supplied by the caller (e.g. the
 /// conversations screen) from data it has already loaded, keeping this screen
@@ -296,28 +297,20 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
     if (!mounted) return;
     if (!check.allowed) {
       setState(() => _creating = false);
-      await showDialog<void>(
-        context: context,
-        builder: (ctx) => AlertDialog(
-          title: Text(l10n.tierLimitTitle),
-          content: Text(l10n.tierLimitGroupsBody(check.max ?? 0)),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(ctx),
-              child: Text(l10n.tourGotIt),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pop(ctx);
-                TierGate().openMembershipUpgrade(
-                  context,
-                  currentUserId: widget.currentUserId,
-                );
-              },
-              child: Text(l10n.upgrade),
-            ),
-          ],
-        ),
+      await LockedReasonSheet.show(
+        context,
+        title: l10n.tierLimitTitle,
+        reason: l10n.tierLimitGroupsBody(check.max ?? 0),
+        bullets: [l10n.xplLockedGroupsUnlimited],
+        icon: Icons.groups_outlined,
+        actionLabel: l10n.upgrade,
+        onAction: () {
+          if (!mounted) return;
+          TierGate().openMembershipUpgrade(
+            context,
+            currentUserId: widget.currentUserId,
+          );
+        },
       );
       return;
     }
@@ -407,7 +400,7 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
                         height: 24,
                         child: CircularProgressIndicator(strokeWidth: 2),
                       )
-                    : IconButton.filled(
+                    : IconButton.filled(tooltip: AppLocalizations.of(context)!.searchByNicknameTooltip,
                         icon: const Icon(Icons.person_add_alt),
                         onPressed: _searchNickname,
                       ),

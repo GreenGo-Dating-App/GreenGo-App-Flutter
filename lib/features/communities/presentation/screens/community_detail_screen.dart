@@ -47,6 +47,7 @@ import '../widgets/sponsorship_gate.dart';
 import '../../../app_tour/presentation/widgets/page_tour_host.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../../core/widgets/locked_reason_sheet.dart';
 
 /// Community Detail Screen
 ///
@@ -386,7 +387,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
     return AppBar(
       backgroundColor: AppColors.backgroundDark,
       elevation: 0,
-      leading: IconButton(
+      leading: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
         icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
         onPressed: () => Navigator.of(context).pop(),
       ),
@@ -444,7 +445,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
               shareCommunityLink(context, _community.id, name: _community.name),
         ),
         // Members list button
-        IconButton(
+        IconButton(tooltip: AppLocalizations.of(context)!.communitiesMembersTitle,
           icon:
               const Icon(Icons.people_outline, color: AppColors.textSecondary),
           onPressed: _showMembersSheet,
@@ -1441,49 +1442,33 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
     );
   }
 
-  void _confirmLeave() {
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: Text(
-          AppLocalizations.of(this.context)!.communitiesLeaveTitle,
-          style: const TextStyle(color: AppColors.textPrimary),
-        ),
-        content: Text(
-          AppLocalizations.of(this.context)!
-              .communitiesLeaveConfirm(widget.community.name),
-          style: const TextStyle(color: AppColors.textSecondary),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: Text(
-              AppLocalizations.of(this.context)!.communitiesCancelLabel,
-              style: const TextStyle(color: AppColors.textTertiary),
-            ),
-          ),
-          TextButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-              final userId = _currentUserId;
-              if (userId != null) {
-                this.context.read<CommunitiesBloc>().add(
-                      LeaveCommunity(
-                        communityId: widget.community.id,
-                        userId: userId,
-                      ),
-                    );
-              }
-            },
-            child: Text(
-              AppLocalizations.of(this.context)!.communitiesLeaveLabel,
-              style: const TextStyle(color: AppColors.errorRed),
-            ),
-          ),
-        ],
-      ),
+  Future<void> _confirmLeave() async {
+    final l10n = AppLocalizations.of(context)!;
+    final confirmed = await ConsequenceConfirmSheet.show(
+      context,
+      title: l10n.communitiesLeaveTitle,
+      message: l10n.communitiesLeaveConfirm(widget.community.name),
+      consequences: [
+        l10n.xplLeaveCommunityStop,
+        l10n.xplLeaveCommunityPosts,
+        widget.community.isPublic
+            ? l10n.xplLeaveCommunityRejoin
+            : l10n.xplLeaveCommunityRejoinPrivate,
+      ],
+      confirmLabel: l10n.communitiesLeaveLabel,
+      destructive: true,
+      icon: Icons.logout,
     );
+    if (!confirmed || !mounted) return;
+    final userId = _currentUserId;
+    if (userId != null) {
+      context.read<CommunitiesBloc>().add(
+            LeaveCommunity(
+              communityId: widget.community.id,
+              userId: userId,
+            ),
+          );
+    }
   }
 
   /// Owner-only: permanently delete the community. Gated behind the owner's

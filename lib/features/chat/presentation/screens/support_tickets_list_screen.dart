@@ -137,7 +137,7 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
           l10n.chatMySupportTickets,
           style: const TextStyle(color: AppColors.textPrimary),
         ),
-        leading: IconButton(
+        leading: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
           icon: const Icon(Icons.arrow_back, color: AppColors.richGold),
           onPressed: () => SafeNavigation.pop(context, userId: widget.currentUserId),
         ),

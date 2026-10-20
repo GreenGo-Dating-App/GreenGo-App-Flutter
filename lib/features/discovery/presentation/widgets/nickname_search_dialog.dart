@@ -657,7 +657,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
                     ),
                   ),
                 ),
-                IconButton(
+                IconButton(tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
                   onPressed: () => Navigator.of(context).pop(),
                   icon: const Icon(Icons.close, color: AppColors.textTertiary),
                   padding: EdgeInsets.zero,
@@ -707,7 +707,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
                         ),
                       )
                     : _searchController.text.isNotEmpty
-                        ? IconButton(
+                        ? IconButton(tooltip: AppLocalizations.of(context)!.userFollowSearchClear,
                             icon: const Icon(Icons.clear, color: AppColors.textTertiary),
                             onPressed: () {
                               _searchController.clear();

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/widgets/info_button.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/ticket_payments_service.dart';
 import '../../domain/ticket_fees.dart';
@@ -94,6 +95,16 @@ class TicketFeeScheduleCard extends StatelessWidget {
             child: Text(l.tpServiceFee,
                 style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w700)),
           ),
+          InfoButton(
+            title: l.xplInfoFeeTitle,
+            message: l.xplInfoFeeBody,
+            bullets: [
+              l.xplInfoFeeTiers,
+              l.xplInfoFeeTrial,
+              l.xplInfoFeeFree,
+              l.xplInfoFeeProvider,
+            ],
+          ),
         ]),
         const SizedBox(height: 6),
         Text(l.tpFeeHostNote, style: line),
@@ -184,8 +195,17 @@ class _TicketFeeHostPreviewState extends State<TicketFeeHostPreview> {
         border: Border.all(color: AppColors.divider),
       ),
       child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-        Text(l.tpPayoutTitle,
-            style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w700, fontSize: 13)),
+        Row(children: [
+          Expanded(
+            child: Text(l.tpPayoutTitle,
+                style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w700, fontSize: 13)),
+          ),
+          InfoButton(
+            title: l.xplInfoReceiveTitle,
+            message: l.xplInfoReceiveBody,
+            bullets: [l.xplInfoFeeTiers, l.xplInfoFeeProvider],
+          ),
+        ]),
         const SizedBox(height: 6),
         row(l.tpPayoutBuyerPays, formatTicketAmount(est.price, iso), 'payout-price'),
         row(rule == TicketFeeRule.trial ? l.tpPayoutGreenGoFeeTrial : l.tpServiceFee,

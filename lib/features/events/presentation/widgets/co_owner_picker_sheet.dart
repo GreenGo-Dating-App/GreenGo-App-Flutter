@@ -265,7 +265,7 @@ class _CoOwnerPickerSheetState extends State<_CoOwnerPickerSheet> {
                           fontSize: 18,
                           fontWeight: FontWeight.bold)),
                 ),
-                IconButton(
+                IconButton(tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
                   icon: const Icon(Icons.close, color: AppColors.textSecondary),
                   onPressed: () => Navigator.of(context).pop(),
                 ),

@@ -3,10 +3,11 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../app_tour/presentation/widgets/tours_replay_section.dart';
+import '../faq_entries.dart';
 
-/// App Guide screen that explains all functionalities of GreenGo.
-/// Accessible from the question mark icon on the Network page.
-class AppGuideScreen extends StatelessWidget {
+/// App Guide screen that explains all functionalities of GreenGo, with a
+/// searchable FAQ. Accessible from the question mark icon on the Network page.
+class AppGuideScreen extends StatefulWidget {
   const AppGuideScreen({super.key});
 
   /// Pop result that asks the caller to restart the gesture tutorial.
@@ -14,6 +15,20 @@ class AppGuideScreen extends StatelessWidget {
 
   /// Pop result that asks the caller to replay only the main tour.
   static const String replayMainTourResult = 'replay_main_tour';
+
+  @override
+  State<AppGuideScreen> createState() => _AppGuideScreenState();
+}
+
+class _AppGuideScreenState extends State<AppGuideScreen> {
+  final _searchCtrl = TextEditingController();
+  String _query = '';
+
+  @override
+  void dispose() {
+    _searchCtrl.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -200,25 +215,148 @@ class AppGuideScreen extends StatelessWidget {
           ),
         ),
         leading: IconButton(
+          tooltip: MaterialLocalizations.of(context).backButtonTooltip,
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
-      body: ListView.builder(
+      body: ListView(
+        key: const Key('app_guide_list'),
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
-        itemCount: sections.length + 2,
-        itemBuilder: (context, index) {
-          if (index == 0) return _buildReplayTourCard(context, l10n);
+        children: [
+          if (_query.isEmpty) _buildReplayTourCard(context, l10n),
           // Every tour, each with "Show me again".
-          if (index == 1) {
-            return ToursReplaySection(
+          if (_query.isEmpty)
+            ToursReplaySection(
               onReplayMain: () =>
-                  Navigator.of(context).pop(replayMainTourResult),
-            );
-          }
-          final section = sections[index - 2];
-          return _buildSectionCard(context, section);
-        },
+                  Navigator.of(context).pop(AppGuideScreen.replayMainTourResult),
+            ),
+          ..._buildFaq(context, l10n),
+          // The guide sections stay out of the way while searching the FAQ.
+          if (_query.isEmpty) ...[
+            Padding(
+              padding: const EdgeInsets.only(top: 8, bottom: 12),
+              child: Text(
+                l10n.xplGuideFeaturesTitle,
+                style: const TextStyle(
+                  color: AppColors.textPrimary,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+            for (final section in sections) _buildSectionCard(context, section),
+          ],
+        ],
+      ),
+    );
+  }
+
+  /// FAQ: title, search field and the (filtered) questions.
+  List<Widget> _buildFaq(BuildContext context, AppLocalizations l10n) {
+    final entries = filterFaq(buildFaqEntries(l10n), _query);
+    return [
+      Padding(
+        padding: const EdgeInsets.only(top: 4, bottom: 10),
+        child: Text(
+          l10n.xplFaqTitle,
+          style: const TextStyle(
+            color: AppColors.textPrimary,
+            fontSize: 18,
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+      ),
+      TextField(
+        key: const Key('faq_search'),
+        controller: _searchCtrl,
+        onChanged: (v) => setState(() => _query = v.trim()),
+        style: const TextStyle(color: AppColors.textPrimary),
+        decoration: InputDecoration(
+          isDense: true,
+          hintText: l10n.xplFaqSearchHint,
+          hintStyle: const TextStyle(color: AppColors.textTertiary),
+          prefixIcon: const Icon(Icons.search, color: AppColors.textTertiary),
+          suffixIcon: _query.isEmpty
+              ? null
+              : IconButton(
+                  tooltip: l10n.userFollowSearchClear,
+                  icon: const Icon(Icons.clear, color: AppColors.textTertiary),
+                  onPressed: () {
+                    _searchCtrl.clear();
+                    setState(() => _query = '');
+                  },
+                ),
+          filled: true,
+          fillColor: AppColors.backgroundCard,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(14),
+            borderSide: const BorderSide(color: AppColors.divider),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(14),
+            borderSide: const BorderSide(color: AppColors.divider),
+          ),
+        ),
+      ),
+      const SizedBox(height: 12),
+      if (entries.isEmpty)
+        Padding(
+          key: const Key('faq_no_results'),
+          padding: const EdgeInsets.symmetric(vertical: 16),
+          child: Text(
+            l10n.xplFaqNoResults,
+            textAlign: TextAlign.center,
+            style: const TextStyle(color: AppColors.textSecondary),
+          ),
+        ),
+      for (final e in entries) _buildFaqCard(context, e),
+      const SizedBox(height: 8),
+    ];
+  }
+
+  Widget _buildFaqCard(BuildContext context, FaqEntry e) {
+    return Container(
+      key: Key('faq_${e.id}'),
+      margin: const EdgeInsets.only(bottom: 10),
+      decoration: BoxDecoration(
+        color: AppColors.backgroundCard,
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: AppColors.divider),
+      ),
+      // Own Material so the tile's ink is not hidden by the card colour.
+      child: Material(
+        type: MaterialType.transparency,
+        child: Theme(
+          data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+          child: ExpansionTile(
+            // A search opens the matching answers right away.
+            initiallyExpanded: _query.isNotEmpty,
+            key: PageStorageKey<String>('faq_${e.id}_${_query.isNotEmpty}'),
+            title: Text(
+              e.question,
+              style: const TextStyle(
+                color: AppColors.textPrimary,
+                fontSize: 15,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            iconColor: AppColors.textSecondary,
+            collapsedIconColor: AppColors.textTertiary,
+            childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 14),
+            expandedCrossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                e.answer,
+                style: const TextStyle(
+                  color: AppColors.textSecondary,
+                  fontSize: 14,
+                  height: 1.45,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
@@ -232,32 +370,36 @@ class AppGuideScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: AppColors.richGold),
       ),
-      child: ListTile(
-        onTap: () => Navigator.of(context).pop(replayTourResult),
-        leading: Container(
-          width: 44,
-          height: 44,
-          decoration: BoxDecoration(
-            color: AppColors.richGold.withValues(alpha: 0.15),
-            borderRadius: BorderRadius.circular(12),
+      child: Material(
+        type: MaterialType.transparency,
+        child: ListTile(
+          onTap: () =>
+              Navigator.of(context).pop(AppGuideScreen.replayTourResult),
+          leading: Container(
+            width: 44,
+            height: 44,
+            decoration: BoxDecoration(
+              color: AppColors.richGold.withValues(alpha: 0.15),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: const Icon(
+              Icons.play_circle_outline,
+              color: AppColors.richGold,
+              size: 24,
+            ),
           ),
-          child: const Icon(
-            Icons.play_circle_outline,
+          title: Text(
+            l10n.guideReplayTour,
+            style: const TextStyle(
+              color: AppColors.richGold,
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          trailing: const Icon(
+            Icons.chevron_right,
             color: AppColors.richGold,
-            size: 24,
           ),
-        ),
-        title: Text(
-          l10n.guideReplayTour,
-          style: const TextStyle(
-            color: AppColors.richGold,
-            fontSize: 16,
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-        trailing: const Icon(
-          Icons.chevron_right,
-          color: AppColors.richGold,
         ),
       ),
     );
@@ -271,62 +413,66 @@ class AppGuideScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: AppColors.divider),
       ),
-      child: Theme(
-        data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
-        child: ExpansionTile(
-          leading: Container(
-            width: 44,
-            height: 44,
-            decoration: BoxDecoration(
-              color: AppColors.richGold.withValues(alpha: 0.15),
-              borderRadius: BorderRadius.circular(12),
+      // Own Material so the tile's ink is not hidden by the card colour.
+      child: Material(
+        type: MaterialType.transparency,
+        child: Theme(
+          data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+          child: ExpansionTile(
+            leading: Container(
+              width: 44,
+              height: 44,
+              decoration: BoxDecoration(
+                color: AppColors.richGold.withValues(alpha: 0.15),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Icon(
+                section.icon,
+                color: AppColors.richGold,
+                size: 24,
+              ),
             ),
-            child: Icon(
-              section.icon,
-              color: AppColors.richGold,
-              size: 24,
+            title: Text(
+              section.title,
+              style: const TextStyle(
+                color: AppColors.textPrimary,
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
             ),
-          ),
-          title: Text(
-            section.title,
-            style: const TextStyle(
-              color: AppColors.textPrimary,
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-          iconColor: AppColors.textSecondary,
-          collapsedIconColor: AppColors.textTertiary,
-          childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-          children: section.items.map((item) {
-            return Padding(
-              padding: const EdgeInsets.only(top: 8),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    width: 6,
-                    height: 6,
-                    margin: const EdgeInsets.only(top: 7, right: 12, left: 4),
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: AppColors.richGold.withValues(alpha: 0.6),
-                    ),
-                  ),
-                  Expanded(
-                    child: Text(
-                      item,
-                      style: const TextStyle(
-                        color: AppColors.textSecondary,
-                        fontSize: 14,
-                        height: 1.4,
+            iconColor: AppColors.textSecondary,
+            collapsedIconColor: AppColors.textTertiary,
+            childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+            children: section.items.map((item) {
+              return Padding(
+                padding: const EdgeInsets.only(top: 8),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      width: 6,
+                      height: 6,
+                      margin: const EdgeInsets.only(top: 7, right: 12, left: 4),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: AppColors.richGold.withValues(alpha: 0.6),
                       ),
                     ),
-                  ),
-                ],
-              ),
-            );
-          }).toList(),
+                    Expanded(
+                      child: Text(
+                        item,
+                        style: const TextStyle(
+                          color: AppColors.textSecondary,
+                          fontSize: 14,
+                          height: 1.4,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            }).toList(),
+          ),
         ),
       ),
     );
@@ -334,7 +480,6 @@ class AppGuideScreen extends StatelessWidget {
 }
 
 class _GuideSection {
-
   const _GuideSection({
     required this.icon,
     required this.title,

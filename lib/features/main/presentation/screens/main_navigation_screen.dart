@@ -215,6 +215,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   @override
   void initState() {
     super.initState();
+    current = this;
 
     // Collapsible bottom-nav animation (1.0 = fully shown, 0.0 = hidden).
     _navAnim = AnimationController(
@@ -1382,6 +1383,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   @override
   void dispose() {
     _whatsNewTimer?.cancel();
+    if (identical(current, this)) current = null;
     DeepLinkService.instance.detachHome(this);
     _navAnim.dispose();
     _entitlementSub?.cancel();
@@ -1432,6 +1434,23 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   /// exact same page as tapping Community in the bottom menu). Resets that tab's
   /// nested navigator to its root first so it opens on the tab's main page.
   /// Reachable via `context.findAncestorStateOfType<MainNavigationScreenState>()`.
+  /// The mounted shell, for screens pushed on the ROOT navigator (outside the
+  /// shell's subtree) that need to switch tab, e.g. an empty state's
+  /// "Browse events" button. See [openEventsTab].
+  static MainNavigationScreenState? current;
+
+  /// Index of the Events tab in the current flavor.
+  static int get eventsTabIndex => FlavorConfig.exploreFirst ? 1 : 3;
+
+  /// Closes the pushed pages and shows the Events tab.
+  static void openEventsTab(BuildContext context) {
+    final shell = context.findAncestorStateOfType<MainNavigationScreenState>() ??
+        current;
+    Navigator.of(context).popUntil((r) => r.isFirst);
+    Navigator.of(context, rootNavigator: true).popUntil((r) => r.isFirst);
+    shell?.switchTab(eventsTabIndex);
+  }
+
   void switchTab(int index) {
     _tabNavKeys[index]?.currentState?.popUntil((r) => r.isFirst);
     _onTabTapped(index);

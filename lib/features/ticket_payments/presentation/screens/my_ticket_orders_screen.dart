@@ -7,6 +7,8 @@ import '../../data/ticket_payments_service.dart';
 import '../../domain/ticket_payments.dart';
 import '../ticket_l10n.dart';
 import 'ticket_order_screen.dart';
+import '../../../../core/widgets/helpful_empty_state.dart';
+import '../../../../features/main/presentation/screens/main_navigation_screen.dart';
 
 /// Buyer: "My purchases" — every ticket order, newest first (one indexed,
 /// bounded query). Open orders can be resumed (pay / "I've paid"); paid ones
@@ -42,8 +44,19 @@ class _MyTicketOrdersScreenState extends State<MyTicketOrdersScreen> {
           }
           final list = snap.data ?? const <TicketOrder>[];
           if (list.isEmpty) {
-            return Center(
-                child: Text(l.tpNoPurchases, style: const TextStyle(color: AppColors.textSecondary)));
+            return HelpfulEmptyState(
+              key: const Key('tickets_helpful_empty'),
+              icon: Icons.confirmation_number_outlined,
+              title: l.tpNoPurchases,
+              message: l.xplEmptyTickets,
+              actions: [
+                HelpfulEmptyAction(
+                  label: l.xplBrowseEvents,
+                  icon: Icons.event,
+                  onPressed: () => MainNavigationScreenState.openEventsTab(context),
+                ),
+              ],
+            );
           }
           return RefreshIndicator(
             color: AppColors.richGold,

@@ -122,9 +122,9 @@ void main() {
       expect(tester.widget<Text>(find.byKey(const ValueKey('buy-qty-single-value'))).data, '3');
     });
 
-    test('server refusal -> "You can buy up to 4 tickets for this event"', () {
+    test('server refusal -> "You can buy up to 4 tickets for this event" + next step', () {
       expect(TicketL10n.error(l, const TicketPaymentException('ticket_limit_reached', null, {'limit': 4, 'kind': 'event'})),
-          'You can buy up to 4 tickets for this event');
+          startsWith('You can buy up to 4 tickets for this event.'));
       expect(TicketL10n.error(l, const TicketPaymentException('ticket_limit_reached', null, {'limit': 2, 'kind': 'experience'})),
           l.tpErrLimit);
       expect(TicketL10n.error(l, const TicketPaymentException('attendee_names_required')), l.tpErrAttendeeNamesRequired);

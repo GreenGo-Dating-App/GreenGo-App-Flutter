@@ -27333,7 +27333,7 @@ abstract class AppLocalizations {
   /// Error popup: permission denied
   ///
   /// In en, this message translates to:
-  /// **'You don\'t have permission to do that.'**
+  /// **'You can’t do this with your account right now. Make sure you are signed in; if it keeps happening, contact support from Help & Support.'**
   String get userErrorPermissionDenied;
 
   /// Error popup: content not found / deleted
@@ -44406,7 +44406,7 @@ abstract class AppLocalizations {
   /// Ticket price phases (events)
   ///
   /// In en, this message translates to:
-  /// **'Ticket sales are paused while the organizer fixes the price phases.'**
+  /// **'Ticket sales are paused while the organizer fixes the price phases. Try again later or message the organizer.'**
   String get tpErrPricePhasesInvalid;
 
   /// Store apps (iOS/Android): yearly plan launch offer line
@@ -45114,13 +45114,13 @@ abstract class AppLocalizations {
   /// Ticket payments
   ///
   /// In en, this message translates to:
-  /// **'The organizer needs the first and last name of every ticket holder.'**
+  /// **'The organizer needs the first and last name of every ticket holder. Fill in all the names, then try again.'**
   String get tpErrAttendeeNamesRequired;
 
   /// Ticket payments
   ///
   /// In en, this message translates to:
-  /// **'You can buy up to {count} tickets for this event'**
+  /// **'You can buy up to {count} tickets for this event. Tickets you already have and unpaid orders count too.'**
   String tpErrTicketLimit(int count);
 
   /// Ticket payments
@@ -46274,6 +46274,984 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Slide {index} of {total}'**
   String welcomeSlideOf(int index, int total);
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Got it'**
+  String get xplGotIt;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'More info: {title}'**
+  String xplMoreInfoAbout(String title);
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'How it works'**
+  String get xplHowItWorks;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Show details'**
+  String get xplShowDetails;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Hide details'**
+  String get xplHideDetails;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'See plans'**
+  String get xplSeePlans;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Not included in your plan'**
+  String get xplLockedPlanTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Available from the {plan} plan.'**
+  String xplLockedUnlockedBy(String plan);
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Why verify my phone?'**
+  String get xplLockedPhoneTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Accounts created from 16 October 2026 verify one mobile number to keep fake and spam accounts out. You need it to join or book, buy tickets, create events and listings, post in communities and use business tools.'**
+  String get xplLockedPhoneBody;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Your number is never shown to other people, and a number can be used by one account only.'**
+  String get xplLockedPhonePrivate;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Create event'**
+  String get xplTipCreateEvent;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Decrease'**
+  String get xplTipDecrease;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Increase'**
+  String get xplTipIncrease;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Add tag'**
+  String get xplTipAddTag;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get xplTipRemove;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Attach a photo'**
+  String get xplTipAttach;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Show or hide password'**
+  String get xplTipShowHidePassword;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Play or pause'**
+  String get xplTipPlayPause;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel reply'**
+  String get xplTipCancelReply;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Choose where other people see your pin on the map. Your real coordinates are never shown.'**
+  String get xplInfoDiscoverBody;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Exact: your pin is shown within about 100 m of where you are, and others see your distance.'**
+  String get xplInfoDiscoverExact;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Approximate (default): your pin is placed in your area, a few kilometres from where you really are.'**
+  String get xplInfoDiscoverApprox;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Country: your pin is placed at a random point in your country.'**
+  String get xplInfoDiscoverCountry;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden: you are not shown on the map at all, not even to your followers or the people you chat with.'**
+  String get xplInfoDiscoverHidden;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Business accounts are shown at their public business address. Ghost mode and Incognito also take you off the map.'**
+  String get xplInfoDiscoverBusiness;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Ghost mode and Incognito'**
+  String get xplInfoGhostTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Both hide your profile from Discover, people suggestions and the map, so you can look around without being found.'**
+  String get xplInfoGhostBody;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Ghost mode: free and unlimited with Gold and Platinum. It also hides you from nickname search and stays on until you turn it off.'**
+  String get xplInfoGhostGhost;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Incognito: {count} coins for 24 hours, on any plan. It turns off by itself when the time is up.'**
+  String xplInfoGhostIncognito(int count);
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Your existing chats keep working as usual.'**
+  String get xplInfoGhostStill;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Followers, Following and Stores'**
+  String get xplInfoFollowTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a number to open its list.'**
+  String get xplInfoFollowBody;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Your followers and the accounts you follow are public: signed-in members can see these lists on your profile.'**
+  String get xplInfoFollowPublic;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'The Stores number (businesses you follow) is shown only to you.'**
+  String get xplInfoFollowStores;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Public and private photos'**
+  String get xplInfoPhotosTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'You can have up to 6 public and 6 private photos.'**
+  String get xplInfoPhotosBody;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Public photos: everyone who opens your profile can see them.'**
+  String get xplInfoPhotosPublic;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Private photos: only people you give access to, one by one from a chat, can see them. You can take access back at any time. The community rules apply here too.'**
+  String get xplInfoPhotosPrivate;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Personal photo and business picture'**
+  String get xplInfoPicturesTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Your business picture and your personal photos are separate.'**
+  String get xplInfoPicturesBody;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Personal accounts: your main (first) public photo must clearly show your face.'**
+  String get xplInfoPicturesPersonal;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Business picture: shown in Discover, in chats and on your storefront. A logo or a photo of your place is fine; it doesn’t need a face.'**
+  String get xplInfoPicturesBusiness;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Price phases'**
+  String get xplInfoPhasesTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Sell the first tickets for less, then raise the price as they sell.'**
+  String get xplInfoPhasesOrganizerBody;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Phases sell in order: when one sells out, the next starts. Each phase must cost more than the previous one.'**
+  String get xplInfoPhasesOrder;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Once a phase has sales, its price can’t be changed.'**
+  String get xplInfoPhasesLocked;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'You can add up to {count} phases, one per preset name.'**
+  String xplInfoPhasesMax(int count);
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'The price depends on the phase on sale now. When the current phase sells out, the next, higher price starts. You pay the price shown at checkout and nothing more.'**
+  String get xplInfoPhasesBuyerBody;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'You can buy up to {count} tickets per event in total.'**
+  String xplInfoPhasesBuyerLimit(int count);
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo service fee'**
+  String get xplInfoFeeTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'The fee is paid by you, the seller: buyers pay only the ticket price you set.'**
+  String get xplInfoFeeBody;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Per paid ticket, by your plan: Silver US\$3 + 10% (max US\$30), Gold US\$2 + 10% (max US\$28), Platinum US\$1 + 10% (max US\$25). Without a paid plan the Silver rate applies.'**
+  String get xplInfoFeeTiers;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Your first paid listing: a flat US\$1 per ticket.'**
+  String get xplInfoFeeTrial;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Free tickets have no fee, and the fee is never higher than the ticket price. A full refund returns the fee to you.'**
+  String get xplInfoFeeFree;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Stripe or Mercado Pago also take their own processing fee from your account; it is not a GreenGo fee.'**
+  String get xplInfoFeeProvider;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'What you receive per ticket'**
+  String get xplInfoReceiveTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'You receive the ticket price minus GreenGo’s service fee and the payment provider’s processing fee. The provider fee is an estimate: it depends on the card, country and payment method.'**
+  String get xplInfoReceiveBody;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'2026 launch offer'**
+  String get xplInfoPromoTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'{percent}% off the first period of any membership bought until 31 March 2027.'**
+  String xplInfoPromoBody(int percent);
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'First period = the first {months} months of a monthly plan, or the first year of a yearly plan.'**
+  String xplInfoPromoPeriods(int months);
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'After that, the plan renews at the regular price unless you cancel.'**
+  String get xplInfoPromoRenew;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'There is no free trial. In the App Store the offer appears only if Apple says your Apple ID is eligible.'**
+  String get xplInfoPromoNoTrial;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Show your exact location?'**
+  String get xplExactConfirmTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Other members will see your pin within about 100 m of where you are, and your distance from them.'**
+  String get xplExactConfirm1;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Turn it on only if you are comfortable with people knowing roughly where you are, for example your street.'**
+  String get xplExactConfirm2;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'You can switch back to Approximate, Country or Hidden at any time.'**
+  String get xplExactConfirm3;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Use exact location'**
+  String get xplExactConfirmAction;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'You will stop seeing its chat, tips and announcements, and stop getting its notifications.'**
+  String get xplLeaveCommunityStop;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Messages you already posted stay in the community.'**
+  String get xplLeaveCommunityPosts;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'You can join again later.'**
+  String get xplLeaveCommunityRejoin;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'This community is private: to come back you will need to request to join again.'**
+  String get xplLeaveCommunityRejoinPrivate;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'The event, its attendee list and its chat are deleted for everyone.'**
+  String get xplDeleteEventRemoved;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Deleting does NOT refund anyone. You are the seller: if you sold tickets, refund the buyers from your Stripe or Mercado Pago account, following your refund policy.'**
+  String get xplDeleteEventNoRefund;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'If a ticket is refunded in full, GreenGo returns its service fee to you; for a partial refund GreenGo keeps it.'**
+  String get xplDeleteEventFee;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Your profile becomes a public business page with a business name and picture.'**
+  String get xplBusinessPage;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'You can sell tickets and bookings through your own Stripe or Mercado Pago account. GreenGo charges you, the seller, a service fee per paid ticket.'**
+  String get xplBusinessSell;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'How many listings can be active at a time depends on your plan: Silver 5, Gold 10, Platinum unlimited.'**
+  String get xplBusinessListings;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Share my profile'**
+  String get xplShareMyProfile;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Nobody follows you yet. Share your profile so people can find you and follow you.'**
+  String get xplEmptyFollowersOwn;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'You don’t follow anyone yet. Follow people and businesses from their profiles to keep up with them here.'**
+  String get xplEmptyFollowingOwn;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'There are no events here yet. Create one and invite people, or check back soon.'**
+  String get xplEmptyEvents;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'No events match your filters. Show all events or create your own.'**
+  String get xplEmptyEventsFiltered;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Show all events'**
+  String get xplWidenFilters;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Start a conversation from someone’s profile. Find people who share your languages and interests.'**
+  String get xplEmptyChats;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Find people'**
+  String get xplFindPeople;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Tickets you buy for events will appear here.'**
+  String get xplEmptyTickets;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Browse events'**
+  String get xplBrowseEvents;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Experiences you book will appear here. You can find experiences in the Events tab.'**
+  String get xplEmptyBookings;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Browse experiences'**
+  String get xplBrowseExperiences;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Bookings of your experiences will appear here as guests book them.'**
+  String get xplEmptyBookingsHost;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Create a community'**
+  String get xplCreateCommunity;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Your map shows the people you follow, your followers and your chats. Follow people or start a chat to see them here.'**
+  String get xplEmptyGlobe;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'No new followers or messages this month yet. Complete your storefront and promote it so customers can find you.'**
+  String get xplEmptyBcCustomers;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'No sales this month yet. Connect Stripe or Mercado Pago in Get paid, then publish a paid event or experience.'**
+  String get xplEmptyBcSales;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Daily translation limit reached'**
+  String get xplLockedTranslateTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Until then, messages are shown in their original language.'**
+  String get xplLockedTranslateOriginal;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Album full'**
+  String get xplLockedPhotosFullTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Delete a photo, or move one to the other album, to make room.'**
+  String get xplLockedPhotosFullHint;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Silver, Gold and Platinum plans have no group limit.'**
+  String get xplLockedGroupsUnlimited;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Use a clear, well-lit photo of yourself facing the camera. Your other photos can show anything that follows the community rules.'**
+  String get xplLockedFaceTip;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Storefront not complete'**
+  String get xplLockedStorefrontTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket sales are paused: the organizer still needs to add their invoice details. Try again later or message the organizer.'**
+  String get xplErrSellerBilling;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your mobile number first: new accounts need a verified phone to join, book, buy tickets or create listings.'**
+  String get xplErrPhoneRequired;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Complete your storefront: business picture, name, address and contact details.'**
+  String get xplHowBc1;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Connect Stripe or Mercado Pago in Get paid. Buyers pay you directly; GreenGo never holds ticket money.'**
+  String get xplHowBc2;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Publish events and experiences. How many can be active at a time depends on your plan.'**
+  String get xplHowBc3;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Follow sales, customers and bookings here. GreenGo invoices you for its service fee.'**
+  String get xplHowBc4;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Connect your own Stripe or Mercado Pago account. Buyers pay into it directly; GreenGo never holds ticket money.'**
+  String get xplHowPaid1;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Buyers pay only the price you set. GreenGo’s service fee per ticket depends on your plan and is paid by you, the seller.'**
+  String get xplHowPaid2;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Add your invoice details: without them, paid sales are paused.'**
+  String get xplHowPaid3;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'You set your refund policy and refund buyers yourself. A full refund returns GreenGo’s fee to you.'**
+  String get xplHowPaid4;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Choose what to promote: your storefront at the top of Explore, or one of your upcoming events in discovery.'**
+  String get xplHowPromote1;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a duration. The price in coins is shown before you confirm.'**
+  String get xplHowPromote2;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'The promotion starts as soon as you confirm and ends by itself on the date shown.'**
+  String get xplHowPromote3;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Share your personal invite code or link with friends.'**
+  String get xplHowReferralShare;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Use coins for extras such as Incognito, promotions and reading messages aloud.'**
+  String get xplHowCoins1;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Send coins as gifts: 10 to 1,000 coins per gift. Coins you bought can be gifted 72 hours after purchase.'**
+  String get xplHowCoins2;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Coins never expire and can’t be exchanged for money.'**
+  String get xplHowCoins3;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Features guide'**
+  String get xplGuideFeaturesTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Frequently asked questions'**
+  String get xplFaqTitle;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Search questions'**
+  String get xplFaqSearchHint;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'No questions match your search. Try other words, or contact support from Help & Support.'**
+  String get xplFaqNoResults;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'How does translation work?'**
+  String get xplFaqTranslationQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Chat messages are translated automatically once you agree to the AI features. Chat translation uses Google’s Cloud Translation service. How much chat text you can translate each day depends on your plan; after the limit, messages show in their original language. Public content such as events, communities and listings is translated with Google’s translation service through a shared store, without personal data. Translated text is labelled \"Translated\" and can be wrong: if in doubt, check with the other person.'**
+  String get xplFaqTranslationA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'How do tickets and refunds work?'**
+  String get xplFaqTicketsQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Paid tickets are bought in the in-app checkout and paid straight into the organizer’s own Stripe or Mercado Pago account; GreenGo never holds ticket money. You pay the price shown and nothing more. The organizer is the seller and sets the cancellation and refund policy, so ask the organizer for a refund (for example in the event chat). Cancelling or deleting an event does not refund tickets automatically.'**
+  String get xplFaqTicketsA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'How do I cancel my subscription?'**
+  String get xplFaqCancelSubQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Go to Profile > Account Settings > Manage subscription. A plan bought on the web opens the payment portal, where you can cancel. A plan bought in Google Play or the App Store must be cancelled in that store; the button takes you there. Deleting your account cancels a web plan, but NOT a store subscription.'**
+  String get xplFaqCancelSubA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Who can see my location?'**
+  String get xplFaqLocationQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'By default your pin on the map is Approximate: placed in your area, a few kilometres from where you really are. In your profile, under Globe Discoverability, you can choose Exact (within about 100 m), Country or Hidden. Your real coordinates are never shown. Ghost mode and Incognito also take you off the map.'**
+  String get xplFaqLocationA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Who can see my followers and who I follow?'**
+  String get xplFaqFollowersQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Your Followers and Following lists are public to signed-in members. The number of stores you follow is shown only to you. People you block can’t open your profile.'**
+  String get xplFaqFollowersA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'How does moderation work? Can I appeal?'**
+  String get xplFaqModerationQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Reported content is reviewed against the Terms and the community rules. If we act on your content or account, you receive the decision and the reason. You can appeal each decision once, within about 6 months, in the app or through the link in the email (it works even if your account is suspended); a different person reviews the appeal. If you reported something and we did not act, you can appeal that decision too.'**
+  String get xplFaqModerationA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'How do I report or block someone?'**
+  String get xplFaqReportQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Open the person’s profile, a chat or a message and choose Report or Block. Reports go to our safety team. Once you block someone, they can no longer contact you or open your profile. You can also write to safety@greengochat.com. In an emergency, contact your local emergency services first.'**
+  String get xplFaqReportA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'How do I delete my account?'**
+  String get xplFaqDeleteQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Go to Profile > Delete Account and confirm with your password, or delete it on the web at greengochat.com/delete-account. Deletion happens right away and can’t be undone: remaining coins are lost and a web plan is cancelled, but a Google Play or App Store subscription must be cancelled in the store. Some records are kept where the law requires it (payments and invoices, safety reports); see the Privacy Policy.'**
+  String get xplFaqDeleteA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Why do I have to verify my phone?'**
+  String get xplFaqPhoneQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Accounts created from 16 October 2026 verify one mobile number when signing up. It keeps fake and spam accounts out, and it is needed to join or book, buy tickets, create events and listings, post in communities and use business tools. Your number is never shown to others. Accounts created before that date are not asked to verify.'**
+  String get xplFaqPhoneA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Is ID verification required? What do you keep?'**
+  String get xplFaqIdQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'No, ID verification is optional; it gives you a Verified badge. The photo of your document is deleted after the review, or after 7 days if it isn’t reviewed. The details we checked are kept encrypted until 6 months after your account is closed.'**
+  String get xplFaqIdA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'How do coins work?'**
+  String get xplFaqCoinsQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Coins pay for extras such as Incognito, promotions and reading messages aloud. They never expire and can’t be exchanged for money or cashed out. You can gift 10 to 1,000 coins at a time, up to 10 gifts and 5,000 coins a day; coins you bought can be gifted 72 hours after purchase.'**
+  String get xplFaqCoinsA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'What is the launch offer?'**
+  String get xplFaqPromoQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Every membership plan bought until 31 March 2027 is {percent}% off for its first period: the first {months} months of a monthly plan, or the first year of a yearly plan. After that it renews at the regular price unless you cancel. There is no free trial.'**
+  String xplFaqPromoA(int percent, int months);
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'What is a business account?'**
+  String get xplFaqBusinessQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'A business account turns your profile into a public business page with its own picture and storefront, and lets you sell tickets and bookings. It needs a Silver, Gold or Platinum plan and a verified phone. The switch is permanent; if your plan lapses, the business tools pause until you renew. Active listings at a time: Silver 5, Gold 10, Platinum unlimited.'**
+  String get xplFaqBusinessA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'What fees do sellers pay?'**
+  String get xplFaqFeesQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo’s service fee is paid by the seller; buyers pay only the ticket price. Per paid ticket: Silver US\$3 + 10% (max US\$30), Gold US\$2 + 10% (max US\$28), Platinum US\$1 + 10% (max US\$25). Your first paid listing has a flat US\$1 per ticket. Free tickets have no fee, and the fee is never higher than the ticket price. Stripe or Mercado Pago charge their own processing fees.'**
+  String get xplFaqFeesA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'What are price phases? How many tickets can I buy?'**
+  String get xplFaqPhasesQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Organizers can sell the first tickets for less in phases (early bird, presale, regular...). Phases sell in order and each costs more than the previous one: when one sells out, the next price starts. Each person can buy up to {count} tickets per event in total, and the organizer can set a lower limit.'**
+  String xplFaqPhasesA(int count);
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Why do I have to enter attendee names?'**
+  String get xplFaqNamesQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'If the organizer asks for attendee names, you must give the first name and surname of each ticket holder. The names are shared only with the organizer and shown on the tickets.'**
+  String get xplFaqNamesA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Can someone book without a GreenGo account?'**
+  String get xplFaqGuestQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Yes, if the organizer allows guests: through the shared link, guests can get tickets or request an experience with just their name and email, and tickets arrive by email. It is off by default and not available for events that need approval or have age or gender limits.'**
+  String get xplFaqGuestA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Can I download my data?'**
+  String get xplFaqExportQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Yes. Go to Privacy & data > Export My Data. For security you may be asked to sign in again. You get a ZIP file through a download link (also sent by email) that works for 24 hours; you can request one export a day.'**
+  String get xplFaqExportA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'How do I contact support or a person?'**
+  String get xplFaqSupportQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Open Help & Support in your profile and start the support chat. It begins with an AI assistant; tap \"Talk to a person\" at any time to reach a human. Gold and Platinum members get priority support. You can also email support@greengochat.com.'**
+  String get xplFaqSupportA;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'What are Ghost mode and Incognito?'**
+  String get xplFaqGhostQ;
+
+  /// In-app explanations (info sheets, empty states, FAQ)
+  ///
+  /// In en, this message translates to:
+  /// **'Both hide your profile from Discover, people suggestions and the map. Ghost mode is free and unlimited with Gold and Platinum, and also hides you from nickname search. Incognito costs {count} coins for 24 hours on any plan. Turn them on in your profile.'**
+  String xplFaqGhostA(int count);
 }
 
 class _AppLocalizationsDelegate

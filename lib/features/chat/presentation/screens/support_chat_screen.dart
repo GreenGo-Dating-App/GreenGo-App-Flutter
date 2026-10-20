@@ -609,7 +609,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       appBar: AppBar(
         backgroundColor: AppColors.deepBlack,
         elevation: 0,
-        leading: IconButton(
+        leading: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
           icon: const Icon(Icons.arrow_back, color: AppColors.richGold),
           onPressed: () => SafeNavigation.pop(context, userId: widget.currentUserId),
         ),
@@ -655,7 +655,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
           ],
         ),
         actions: [
-          IconButton(
+          IconButton(tooltip: AppLocalizations.of(context)!.chatSupportTicketInfo,
             icon: const Icon(Icons.info_outline, color: AppColors.richGold),
             onPressed: () => _showTicketInfo(context),
           ),
@@ -1104,7 +1104,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
           appBar: AppBar(
             backgroundColor: Colors.transparent,
             elevation: 0,
-            leading: IconButton(
+            leading: IconButton(tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
               icon: const Icon(Icons.close, color: Colors.white),
               onPressed: () => Navigator.of(context).pop(),
             ),
@@ -1248,7 +1248,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                       color: AppColors.backgroundDark,
                       shape: BoxShape.circle,
                     ),
-                    child: IconButton(
+                    child: IconButton(tooltip: AppLocalizations.of(context)!.xplTipAttach,
                       icon: const Icon(Icons.attach_file, color: AppColors.textSecondary),
                       onPressed: _isSending ? null : _showImagePickerOptions,
                     ),
@@ -1286,7 +1286,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                       color: AppColors.richGold,
                       shape: BoxShape.circle,
                     ),
-                    child: IconButton(
+                    child: IconButton(tooltip: AppLocalizations.of(context)!.chatSend,
                       icon: (_isSending || _isUploadingImage)
                           ? const SizedBox(
                               width: 20,

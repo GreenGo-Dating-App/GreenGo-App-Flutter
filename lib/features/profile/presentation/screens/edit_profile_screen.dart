@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/utils/phone_verification_gate.dart';
 import '../../../../core/widgets/add_phone_banner.dart';
+import '../../../../core/widgets/info_button.dart';
+import '../../../../core/widgets/locked_reason_sheet.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -144,7 +146,7 @@ class EditProfileScreen extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          leading: IconButton(
+          leading: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
             icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
             onPressed: () => SafeNavigation.pop(context, userId: userId),
           ),
@@ -1620,7 +1622,7 @@ class EditProfileScreen extends StatelessWidget {
                     labelText: AppLocalizations.of(context)!.password,
                     labelStyle: const TextStyle(color: AppColors.textSecondary),
                     errorText: errorText,
-                    suffixIcon: IconButton(
+                    suffixIcon: IconButton(tooltip: AppLocalizations.of(context)!.xplTipShowHidePassword,
                       icon: Icon(
                         obscurePassword ? Icons.visibility_off : Icons.visibility,
                         color: AppColors.textSecondary,
@@ -2762,12 +2764,27 @@ class _IncognitoToggleCard extends StatelessWidget {
           Icons.visibility_off,
           color: isActive ? AppColors.richGold : AppColors.textTertiary,
         ),
-        title: Text(
-          isGhostEligible ? AppLocalizations.of(context)!.profileGhostMode : AppLocalizations.of(context)!.profileIncognitoMode,
-          style: const TextStyle(
-            color: AppColors.textPrimary,
-            fontWeight: FontWeight.w600,
-          ),
+        title: Row(
+          children: [
+            Flexible(
+              child: Text(
+                isGhostEligible ? AppLocalizations.of(context)!.profileGhostMode : AppLocalizations.of(context)!.profileIncognitoMode,
+                style: const TextStyle(
+                  color: AppColors.textPrimary,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+            InfoButton(
+              title: AppLocalizations.of(context)!.xplInfoGhostTitle,
+              message: AppLocalizations.of(context)!.xplInfoGhostBody,
+              bullets: [
+                AppLocalizations.of(context)!.xplInfoGhostGhost,
+                AppLocalizations.of(context)!.xplInfoGhostIncognito(CoinFeaturePrices.incognito),
+                AppLocalizations.of(context)!.xplInfoGhostStill,
+              ],
+            ),
+          ],
         ),
         subtitle: Text(
           subtitle,
@@ -3087,7 +3104,23 @@ class _GlobeDiscoverabilityCardState
     _current = widget.profile.globeDiscoverability;
   }
 
-  void _select(GlobeDiscoverability level) {
+  Future<void> _select(GlobeDiscoverability level) async {
+    if (level == GlobeDiscoverability.exact &&
+        _current != GlobeDiscoverability.exact) {
+      final l10n = AppLocalizations.of(context)!;
+      final ok = await ConsequenceConfirmSheet.show(
+        context,
+        title: l10n.xplExactConfirmTitle,
+        consequences: [
+          l10n.xplExactConfirm1,
+          l10n.xplExactConfirm2,
+          l10n.xplExactConfirm3,
+        ],
+        confirmLabel: l10n.xplExactConfirmAction,
+        icon: Icons.my_location,
+      );
+      if (!ok || !mounted) return;
+    }
     setState(() => _current = level);
     widget.onChanged(level);
   }
@@ -3118,13 +3151,26 @@ class _GlobeDiscoverabilityCardState
                 size: 22,
               ),
               const SizedBox(width: 10),
-              Text(
-                AppLocalizations.of(context)!.discoverabilityTitle,
-                style: const TextStyle(
-                  color: AppColors.textPrimary,
-                  fontWeight: FontWeight.w600,
-                  fontSize: 16,
+              Flexible(
+                child: Text(
+                  AppLocalizations.of(context)!.discoverabilityTitle,
+                  style: const TextStyle(
+                    color: AppColors.textPrimary,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16,
+                  ),
                 ),
+              ),
+              InfoButton(
+                title: AppLocalizations.of(context)!.discoverabilityTitle,
+                message: AppLocalizations.of(context)!.xplInfoDiscoverBody,
+                bullets: [
+                  AppLocalizations.of(context)!.xplInfoDiscoverExact,
+                  AppLocalizations.of(context)!.xplInfoDiscoverApprox,
+                  AppLocalizations.of(context)!.xplInfoDiscoverCountry,
+                  AppLocalizations.of(context)!.xplInfoDiscoverHidden,
+                  AppLocalizations.of(context)!.xplInfoDiscoverBusiness,
+                ],
               ),
             ],
           ),

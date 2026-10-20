@@ -339,7 +339,7 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          leading: IconButton(
+          leading: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
             icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
             onPressed: () => SafeNavigation.pop(context),
           ),
@@ -575,7 +575,7 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
               mainAxisSize: MainAxisSize.min,
               children: [
                 // Play/Pause Button
-                IconButton(
+                IconButton(tooltip: AppLocalizations.of(context)!.xplTipPlayPause,
                   onPressed: _isPlaying ? _pausePlayback : _playRecording,
                   icon: Icon(
                     _isPlaying ? Icons.pause_circle : Icons.play_circle,
@@ -625,7 +625,7 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
                   ),
 
                 // Delete Button
-                IconButton(
+                IconButton(tooltip: AppLocalizations.of(context)!.delete,
                   onPressed: _deleteRecording,
                   icon: const Icon(
                     Icons.delete_outline,

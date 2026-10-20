@@ -421,7 +421,7 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
           prefixIcon: const Icon(Icons.search, color: AppColors.textSecondary),
           suffixIcon: _query.isEmpty
               ? null
-              : IconButton(
+              : IconButton(tooltip: AppLocalizations.of(context)!.userFollowSearchClear,
                   icon: const Icon(Icons.close, color: AppColors.textSecondary),
                   onPressed: () {
                     _controller.clear();

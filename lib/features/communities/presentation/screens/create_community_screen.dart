@@ -109,7 +109,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        leading: IconButton(
+        leading: IconButton(tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
           icon: const Icon(Icons.close, color: AppColors.textPrimary),
           onPressed: () => Navigator.of(context).pop(),
         ),
@@ -356,7 +356,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                   ),
                 ),
                 const SizedBox(width: 8),
-                IconButton(
+                IconButton(tooltip: AppLocalizations.of(context)!.xplTipAddTag,
                   onPressed: () => _addTag(_tagController.text),
                   icon: const Icon(Icons.add_circle,
                       color: AppColors.richGold),
@@ -701,7 +701,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                         child: CircleAvatar(
                           radius: 16,
                           backgroundColor: Colors.black54,
-                          child: IconButton(
+                          child: IconButton(tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
                             padding: EdgeInsets.zero,
                             iconSize: 18,
                             icon: const Icon(Icons.close, color: Colors.white),

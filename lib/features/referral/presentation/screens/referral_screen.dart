@@ -12,6 +12,7 @@ import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../data/services/referral_service.dart';
 import '../widgets/referral_progress_card.dart';
+import '../../../../core/widgets/collapsible_how_it_works.dart';
 
 // on first run, instead of requiring manual entry below.
 
@@ -143,6 +144,14 @@ class _ReferralScreenState extends State<ReferralScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
+                TourAnchor(
+                  tourId: TourController.inviteFriendsTourId,
+                  showcaseKey: TourKeys.inviteRules,
+                  title: l10n.tourInviteRulesTitle,
+                  description: l10n.tourInviteRulesDesc,
+                  child: _buildHowItWorks(l10n),
+                ),
+                const SizedBox(height: 16),
                 _buildHeader(l10n),
                 const SizedBox(height: 20),
                 _buildCodeCard(l10n),
@@ -157,14 +166,6 @@ class _ReferralScreenState extends State<ReferralScreen> {
                     ReferralService.milestones[2].count,
                   ),
                   child: _buildProgress(l10n),
-                ),
-                const SizedBox(height: 16),
-                TourAnchor(
-                  tourId: TourController.inviteFriendsTourId,
-                  showcaseKey: TourKeys.inviteRules,
-                  title: l10n.tourInviteRulesTitle,
-                  description: l10n.tourInviteRulesDesc,
-                  child: _buildHowItWorks(l10n),
                 ),
               ],
             ),
@@ -381,69 +382,24 @@ class _ReferralScreenState extends State<ReferralScreen> {
     );
   }
 
+  /// Collapsible "How it works" card at the top (remembered per device).
+  /// Numbers come from the server-mirrored constants in ReferralService.
   Widget _buildHowItWorks(AppLocalizations l10n) {
-    return GlassContainer(
-      padding: const EdgeInsets.all(20),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              const Icon(Icons.info_outline,
-                  color: AppColors.richGold, size: 18),
-              const SizedBox(width: 8),
-              // Short heading; Expanded so a long translation wraps instead
-              // of overflowing the row.
-              Expanded(
-                child: Text(
-                  l10n.referralHowItWorksTitle,
-                  style: const TextStyle(
-                    color: AppColors.textPrimary,
-                    fontSize: 15,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 12),
-          // Full rules, always wrapped (no maxLines / ellipsis). Numbers come
-          // from the server-mirrored constants in ReferralService.
-          _ruleLine(Icons.card_membership, l10n.referralRuleFriendGets),
-          _ruleLine(
-            Icons.monetization_on,
-            l10n.referralRuleYouGet(
-              ReferralService.referrerCoinReward,
-              ReferralService.referrerMonthlyCap,
-            ),
-          ),
-          _ruleLine(Icons.emoji_events, l10n.referralRuleAlwaysCounts),
-        ],
-      ),
+    return CollapsibleHowItWorks(
+      id: 'referral',
+      title: l10n.referralHowItWorksTitle,
+      margin: EdgeInsets.zero,
+      steps: [
+        l10n.xplHowReferralShare,
+        l10n.referralRuleFriendGets,
+        l10n.referralRuleYouGet(
+          ReferralService.referrerCoinReward,
+          ReferralService.referrerMonthlyCap,
+        ),
+        l10n.referralRuleAlwaysCounts,
+      ],
     );
   }
 
-  Widget _ruleLine(IconData icon, String text) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 4),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Icon(icon, color: AppColors.richGold, size: 16),
-          const SizedBox(width: 8),
-          Expanded(
-            child: Text(
-              text,
-              softWrap: true,
-              style: const TextStyle(
-                color: AppColors.textSecondary,
-                fontSize: 13,
-                height: 1.5,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
+
 }

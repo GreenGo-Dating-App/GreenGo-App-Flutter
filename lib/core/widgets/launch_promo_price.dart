@@ -4,6 +4,7 @@ import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../constants/launch_promo.dart';
 import '../constants/product_catalog.dart';
+import 'info_button.dart';
 
 /// The 2026 launch price block of a membership card: a "2026 launch price"
 /// badge, the launch price, then ONE offer line, the same on every platform
@@ -66,20 +67,38 @@ class LaunchPromoPrice extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-          decoration: BoxDecoration(
-            color: AppColors.richGold,
-            borderRadius: BorderRadius.circular(8),
-          ),
-          child: Text(
-            l10n.promoLaunchBadge,
-            style: const TextStyle(
-              fontSize: 11,
-              fontWeight: FontWeight.bold,
-              color: Colors.black,
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+              decoration: BoxDecoration(
+                color: AppColors.richGold,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Text(
+                l10n.promoLaunchBadge,
+                style: const TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
             ),
-          ),
+            InfoButton(
+              key: const ValueKey('launch-promo-info'),
+              size: 16,
+              title: l10n.xplInfoPromoTitle,
+              message: l10n.xplInfoPromoBody(LaunchPromo.percentOff),
+              bullets: [
+                l10n.xplInfoPromoPeriods(
+                  LaunchPromo.monthlyPeriods,
+                ),
+                l10n.xplInfoPromoRenew,
+                l10n.xplInfoPromoNoTrial,
+              ],
+            ),
+          ],
         ),
         const SizedBox(height: 6),
         if (big != null)

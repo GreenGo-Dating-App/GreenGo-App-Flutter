@@ -144,7 +144,7 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: IconButton(
+        leading: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: _isUploading ? null : () => SafeNavigation.pop(context, userId: widget.userId),
         ),

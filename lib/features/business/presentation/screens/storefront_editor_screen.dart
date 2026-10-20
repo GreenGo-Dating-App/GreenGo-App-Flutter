@@ -4,6 +4,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 
 import '../../../../core/services/place_search_service.dart';
+import '../../../../core/widgets/info_button.dart';
 import '../../../../core/widgets/location_picker.dart';
 import '../../../profile/domain/entities/business_address.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -22,6 +23,7 @@ import '../../domain/business_name.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../../core/widgets/locked_reason_sheet.dart';
 
 /// Storefront editor — lets a business account owner curate the public
 /// storefront that visitors see in [BusinessStorefrontScreen].
@@ -319,13 +321,14 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
         _businessNameError = !nameOk;
         _logoRequiredError = !logoOk;
       });
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(!logoOk
-              ? l10n.storefrontLogoRequiredError
-              : l10n.businessProfileNameRequiredError),
-          backgroundColor: AppColors.errorRed,
-        ),
+      LockedReasonSheet.show(
+        context,
+        title: l10n.xplLockedStorefrontTitle,
+        reason: !logoOk
+            ? l10n.storefrontLogoRequiredError
+            : l10n.businessProfileNameRequiredError,
+        bullets: [if (!logoOk) l10n.xplInfoPicturesBusiness],
+        icon: Icons.storefront,
       );
       return;
     }
@@ -378,7 +381,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: IconButton(
+        leading: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: () => SafeNavigation.pop(context),
         ),
@@ -440,8 +443,23 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
           children: [
             // Business profile picture (required, owner 2026-10-19) - the
             // business's own picture, next to its name at the top.
-            _sectionHeader(
-                '${l10n.storefrontLogoTitle} *', l10n.storefrontLogoSubtitle),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: _sectionHeader('${l10n.storefrontLogoTitle} *',
+                      l10n.storefrontLogoSubtitle),
+                ),
+                InfoButton(
+                  title: l10n.xplInfoPicturesTitle,
+                  message: l10n.xplInfoPicturesBody,
+                  bullets: [
+                    l10n.xplInfoPicturesPersonal,
+                    l10n.xplInfoPicturesBusiness,
+                  ],
+                ),
+              ],
+            ),
             const SizedBox(height: 12),
             TourAnchor(
               tourId: tour,
@@ -590,7 +608,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
                             keyboardType: TextInputType.url,
                           ),
                         ),
-                        IconButton(
+                        IconButton(tooltip: AppLocalizations.of(context)!.xplTipRemove,
                           icon: const Icon(Icons.remove_circle_outline,
                               color: AppColors.textTertiary),
                           onPressed: () => _removeLinkField(e.key),

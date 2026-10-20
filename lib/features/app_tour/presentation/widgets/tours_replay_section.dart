@@ -48,9 +48,10 @@ List<TourEntry> tourEntries() => [
       TourEntry(TourController.exploreTourId, Icons.explore_outlined,
           (l) => l.tourNameExplore),
       if (FlavorConfig.enableSwipeDiscovery)
-        TourEntry(TourController.swipeTourId, Icons.swipe, (l) => l.tourNameSwipe),
-      TourEntry(TourController.profileDetailTourId, Icons.photo_library_outlined,
-          (l) => l.tourNameProfileDetail),
+        TourEntry(
+            TourController.swipeTourId, Icons.swipe, (l) => l.tourNameSwipe),
+      TourEntry(TourController.profileDetailTourId,
+          Icons.photo_library_outlined, (l) => l.tourNameProfileDetail),
       TourEntry(TourController.followersPublicTourId, Icons.people_outline,
           (l) => l.tourNameFollowersPublic),
       TourEntry(TourController.safetyCenterTourId, Icons.shield_outlined,
@@ -65,13 +66,14 @@ List<TourEntry> tourEntries() => [
           (l) => l.tourNameCommunities),
       TourEntry(TourController.communityDetailTourId, Icons.forum_outlined,
           (l) => l.tourNameCommunityDetail),
-      TourEntry(TourController.eventsTourId, Icons.event, (l) => l.tourNameEvents),
+      TourEntry(
+          TourController.eventsTourId, Icons.event, (l) => l.tourNameEvents),
       TourEntry(TourController.eventTicketsTourId,
           Icons.confirmation_number_outlined, (l) => l.tourNameEventTickets),
       TourEntry(TourController.experienceGuestTourId, Icons.event_available,
           (l) => l.tourNameExperienceGuest),
-      TourEntry(TourController.experienceHostTourId, Icons.add_business_outlined,
-          (l) => l.tourNameExperienceHost,
+      TourEntry(TourController.experienceHostTourId,
+          Icons.add_business_outlined, (l) => l.tourNameExperienceHost,
           open: (uid) => MyExperiencesScreen.route(uid)),
       TourEntry(TourController.experienceDatesTourId,
           Icons.calendar_month_outlined, (l) => l.tourNameExperienceDates),
@@ -81,8 +83,8 @@ List<TourEntry> tourEntries() => [
           (l) => l.tourNameProfile),
       TourEntry(TourController.followersOwnTourId, Icons.people_alt_outlined,
           (l) => l.tourNameFollowersOwn),
-      TourEntry(TourController.privacyLocationTourId, Icons.location_on_outlined,
-          (l) => l.tourNamePrivacyLocation),
+      TourEntry(TourController.privacyLocationTourId,
+          Icons.location_on_outlined, (l) => l.tourNamePrivacyLocation),
       TourEntry(TourController.verificationTourId, Icons.verified_outlined,
           (l) => l.tourNameVerification),
       TourEntry(TourController.notificationsTourId,
@@ -95,10 +97,10 @@ List<TourEntry> tourEntries() => [
               builder: (_) => ReferralScreen(userId: uid))),
       TourEntry(TourController.safetyAppealTourId, Icons.gavel_outlined,
           (l) => l.tourNameSafetyAppeal),
-      TourEntry(TourController.businessCenterTourId, Icons.business_center_outlined,
-          (l) => l.tourNameBusinessCenter),
-      TourEntry(TourController.storefrontEditorTourId, Icons.storefront_outlined,
-          (l) => l.tourNameStorefrontEditor),
+      TourEntry(TourController.businessCenterTourId,
+          Icons.business_center_outlined, (l) => l.tourNameBusinessCenter),
+      TourEntry(TourController.storefrontEditorTourId,
+          Icons.storefront_outlined, (l) => l.tourNameStorefrontEditor),
       TourEntry(TourController.mySpaceTourId, Icons.space_dashboard_outlined,
           (l) => l.tourNameMySpace,
           open: (uid) => MySpaceScreen.route(currentUserId: uid)),
@@ -148,55 +150,61 @@ class ToursReplaySection extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: AppColors.richGold.withValues(alpha: 0.5)),
       ),
-      child: Theme(
-        data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
-        child: ExpansionTile(
-          key: const ValueKey('guide-tours'),
-          leading: Container(
-            width: 44,
-            height: 44,
-            decoration: BoxDecoration(
-              color: AppColors.richGold.withValues(alpha: 0.15),
-              borderRadius: BorderRadius.circular(12),
+      // Own transparent Material so the tiles' ink splashes paint above the
+      // card's background (ListTile assertion otherwise).
+      child: Material(
+        type: MaterialType.transparency,
+        child: Theme(
+          data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+          child: ExpansionTile(
+            key: const ValueKey('guide-tours'),
+            leading: Container(
+              width: 44,
+              height: 44,
+              decoration: BoxDecoration(
+                color: AppColors.richGold.withValues(alpha: 0.15),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: const Icon(Icons.tour_outlined,
+                  color: AppColors.richGold, size: 24),
             ),
-            child: const Icon(Icons.tour_outlined,
-                color: AppColors.richGold, size: 24),
-          ),
-          title: Text(
-            l10n.guideToursTitle,
-            style: const TextStyle(
-              color: AppColors.textPrimary,
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
+            title: Text(
+              l10n.guideToursTitle,
+              style: const TextStyle(
+                color: AppColors.textPrimary,
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
             ),
-          ),
-          subtitle: Text(
-            l10n.guideToursSubtitle,
-            style: const TextStyle(color: AppColors.textTertiary, fontSize: 12.5),
-          ),
-          iconColor: AppColors.textSecondary,
-          collapsedIconColor: AppColors.textTertiary,
-          childrenPadding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
-          children: [
-            for (final e in tourEntries())
-              ListTile(
-                key: ValueKey('guide-tour-${e.id}'),
-                dense: true,
-                leading: Icon(e.icon, color: AppColors.richGold, size: 20),
-                title: Text(
-                  e.name(l10n),
-                  style: const TextStyle(
-                      color: AppColors.textSecondary, fontSize: 14),
-                ),
-                trailing: TextButton(
-                  onPressed: () => _replay(context, e),
-                  child: Text(
-                    l10n.guideToursShowAgain,
-                    style: const TextStyle(color: AppColors.richGold),
+            subtitle: Text(
+              l10n.guideToursSubtitle,
+              style: const TextStyle(
+                  color: AppColors.textTertiary, fontSize: 12.5),
+            ),
+            iconColor: AppColors.textSecondary,
+            collapsedIconColor: AppColors.textTertiary,
+            childrenPadding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
+            children: [
+              for (final e in tourEntries())
+                ListTile(
+                  key: ValueKey('guide-tour-${e.id}'),
+                  dense: true,
+                  leading: Icon(e.icon, color: AppColors.richGold, size: 20),
+                  title: Text(
+                    e.name(l10n),
+                    style: const TextStyle(
+                        color: AppColors.textSecondary, fontSize: 14),
+                  ),
+                  trailing: TextButton(
+                    onPressed: () => _replay(context, e),
+                    child: Text(
+                      l10n.guideToursShowAgain,
+                      style: const TextStyle(color: AppColors.richGold),
+                    ),
                   ),
                 ),
-              ),
-          ],
+            ],
+          ),
         ),
       ),
     );

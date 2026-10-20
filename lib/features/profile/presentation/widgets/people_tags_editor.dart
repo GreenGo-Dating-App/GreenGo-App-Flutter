@@ -345,7 +345,7 @@ class _EditPeopleTagsDialogState extends State<_EditPeopleTagsDialog> {
                       : l10n.groupAddTagHint,
                   isDense: true,
                   counterText: '',
-                  suffixIcon: IconButton(
+                  suffixIcon: IconButton(tooltip: AppLocalizations.of(context)!.xplTipAddTag,
                     icon: const Icon(Icons.add),
                     onPressed: atLimit ? null : _create,
                   ),

@@ -28,6 +28,8 @@ import '../../../trader/presentation/screens/trader_declaration_screen.dart';
 import '../../../my_space/data/my_space_repository.dart';
 import '../../../my_space/presentation/screens/my_space_screen.dart';
 import 'business_hub_screen.dart';
+import '../../../../core/widgets/collapsible_how_it_works.dart';
+import '../../../../core/widgets/helpful_empty_state.dart';
 
 /// Business Center (owner request 2026-10-14): one CRM-style place to run a
 /// business, opened from the Explore header and from Profile > Business.
@@ -187,7 +189,7 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          leading: IconButton(
+          leading: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
             icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
             onPressed: () => SafeNavigation.pop(context),
           ),
@@ -252,6 +254,16 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
           key: const ValueKey('bc-overview'),
           padding: const EdgeInsets.all(AppDimensions.paddingL),
           children: [
+            CollapsibleHowItWorks(
+              id: 'business_center_overview',
+              margin: const EdgeInsets.only(bottom: 16),
+              steps: [
+                l.xplHowBc1,
+                l.xplHowBc2,
+                l.xplHowBc3,
+                l.xplHowBc4,
+              ],
+            ),
             Text(l.bcThisMonth, style: _h),
             const SizedBox(height: 10),
             FutureBuilder<BusinessMonthStats>(
@@ -412,12 +424,13 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
 
   // ───────────────────────────────────────────── other tabs
 
-  Widget _tab(String key, String intro, List<Widget> tiles) => ListView(
+  Widget _tab(String key, String intro, List<Widget> tiles, {Widget? header}) => ListView(
         key: ValueKey(key),
         padding: const EdgeInsets.all(AppDimensions.paddingL),
         children: [
           Text(intro, style: const TextStyle(color: AppColors.textSecondary, fontSize: 14, height: 1.4)),
           const SizedBox(height: 16),
+          if (header != null) header,
           for (final t in tiles) ...[t, const SizedBox(height: MenuRow.gap)],
         ],
       );
@@ -425,7 +438,43 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
   Widget _tile(String key, String title, String subtitle, IconData icon, VoidCallback onTap) =>
       EditSectionCard(key: ValueKey(key), title: title, subtitle: subtitle, icon: icon, onTap: onTap);
 
-  Widget _customers(AppLocalizations l) => _tab('bc-customers', l.bcCustomersIntro, [
+  /// "Nothing yet" card for the Customers / Sales tabs, shown only once this
+  /// month's stats say there is nothing to see (never while loading).
+  Widget _emptyHint({
+    required String key,
+    required bool Function(BusinessMonthStats s) isEmpty,
+    required IconData icon,
+    required String message,
+    required List<HelpfulEmptyAction> actions,
+  }) =>
+      FutureBuilder<BusinessMonthStats>(
+        future: _stats,
+        builder: (context, snap) {
+          final s = snap.data;
+          if (s == null || !isEmpty(s)) return const SizedBox.shrink();
+          return Container(
+            key: ValueKey(key),
+            margin: const EdgeInsets.only(bottom: 16),
+            decoration: BoxDecoration(
+              color: AppColors.backgroundCard,
+              borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+              border: Border.all(color: AppColors.divider),
+            ),
+            child: HelpfulEmptyState(compact: true, icon: icon, message: message, actions: actions),
+          );
+        },
+      );
+
+  Widget _customers(AppLocalizations l) => _tab('bc-customers', l.bcCustomersIntro, header: _emptyHint(
+        key: 'bc-customers-empty',
+        isEmpty: (s) => s.followers == 0 && s.newLeads == 0,
+        icon: Icons.people_outline,
+        message: l.xplEmptyBcCustomers,
+        actions: [
+          HelpfulEmptyAction(label: l.editStorefront, onPressed: () => BusinessTools.openStorefrontEditor(context, p)),
+          HelpfulEmptyAction(label: l.promoteTitle, onPressed: () => BusinessTools.openPromote(context, p)),
+        ],
+      ), [
         _tile('bc-leads', l.businessLeadsTitle, l.businessContact, Icons.inbox_outlined,
             () => _go(() => BusinessTools.openLeads(context, p))),
         _tile('bc-followers', l.businessHubFollowers, l.businessHubFollowersSubtitle, Icons.people_alt_outlined,
@@ -434,7 +483,15 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
             () => _go(() => BusinessTools.openBookingRequests(context, p))),
       ]);
 
-  Widget _sales(AppLocalizations l) => _tab('bc-sales', l.bcSalesIntro, [
+  Widget _sales(AppLocalizations l) => _tab('bc-sales', l.bcSalesIntro, header: _emptyHint(
+        key: 'bc-sales-empty',
+        isEmpty: (s) => s.sales == 0 && s.ticketsSold == 0,
+        icon: Icons.point_of_sale,
+        message: l.xplEmptyBcSales,
+        actions: [
+          HelpfulEmptyAction(label: l.tpGetPaidTitle, onPressed: () => _go(() => BusinessTools.openGetPaid(context, p))),
+        ],
+      ), [
         _tile('bc-get-paid', l.tpGetPaidTitle, l.tpGetPaidSubtitle, Icons.account_balance_wallet_outlined,
             () => _go(() => BusinessTools.openGetPaid(context, p))),
         _tile('bc-payments-confirm', l.bcPaymentsToConfirmTitle, l.bcPaymentsToConfirmSubtitle,

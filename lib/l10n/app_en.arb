@@ -7500,7 +7500,7 @@
   "@userErrorTimeout": {
     "description": "Error popup: request timed out"
   },
-  "userErrorPermissionDenied": "You don't have permission to do that.",
+  "userErrorPermissionDenied": "You can’t do this with your account right now. Make sure you are signed in; if it keeps happening, contact support from Help & Support.",
   "@userErrorPermissionDenied": {
     "description": "Error popup: permission denied"
   },
@@ -15306,7 +15306,7 @@
       }
     }
   },
-  "tpErrPricePhasesInvalid": "Ticket sales are paused while the organizer fixes the price phases.",
+  "tpErrPricePhasesInvalid": "Ticket sales are paused while the organizer fixes the price phases. Try again later or message the organizer.",
   "@tpErrPricePhasesInvalid": {
     "description": "Ticket price phases (events)"
   },
@@ -15882,11 +15882,11 @@
   "@tpAttendeeNamesRequired": {
     "description": "Ticket payments"
   },
-  "tpErrAttendeeNamesRequired": "The organizer needs the first and last name of every ticket holder.",
+  "tpErrAttendeeNamesRequired": "The organizer needs the first and last name of every ticket holder. Fill in all the names, then try again.",
   "@tpErrAttendeeNamesRequired": {
     "description": "Ticket payments"
   },
-  "tpErrTicketLimit": "You can buy up to {count} tickets for this event",
+  "tpErrTicketLimit": "You can buy up to {count} tickets for this event. Tickets you already have and unpaid orders count too.",
   "@tpErrTicketLimit": {
     "description": "Ticket payments",
     "placeholders": {
@@ -16713,6 +16713,711 @@
         "type": "int"
       },
       "total": {
+        "type": "int"
+      }
+    }
+  },
+  "xplGotIt": "Got it",
+  "@xplGotIt": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplMoreInfoAbout": "More info: {title}",
+  "@xplMoreInfoAbout": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "xplHowItWorks": "How it works",
+  "@xplHowItWorks": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplShowDetails": "Show details",
+  "@xplShowDetails": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHideDetails": "Hide details",
+  "@xplHideDetails": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplSeePlans": "See plans",
+  "@xplSeePlans": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplLockedPlanTitle": "Not included in your plan",
+  "@xplLockedPlanTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplLockedUnlockedBy": "Available from the {plan} plan.",
+  "@xplLockedUnlockedBy": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)",
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
+  "xplLockedPhoneTitle": "Why verify my phone?",
+  "@xplLockedPhoneTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplLockedPhoneBody": "Accounts created from 16 October 2026 verify one mobile number to keep fake and spam accounts out. You need it to join or book, buy tickets, create events and listings, post in communities and use business tools.",
+  "@xplLockedPhoneBody": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplLockedPhonePrivate": "Your number is never shown to other people, and a number can be used by one account only.",
+  "@xplLockedPhonePrivate": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplTipCreateEvent": "Create event",
+  "@xplTipCreateEvent": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplTipDecrease": "Decrease",
+  "@xplTipDecrease": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplTipIncrease": "Increase",
+  "@xplTipIncrease": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplTipAddTag": "Add tag",
+  "@xplTipAddTag": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplTipRemove": "Remove",
+  "@xplTipRemove": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplTipAttach": "Attach a photo",
+  "@xplTipAttach": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplTipShowHidePassword": "Show or hide password",
+  "@xplTipShowHidePassword": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplTipPlayPause": "Play or pause",
+  "@xplTipPlayPause": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplTipCancelReply": "Cancel reply",
+  "@xplTipCancelReply": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoDiscoverBody": "Choose where other people see your pin on the map. Your real coordinates are never shown.",
+  "@xplInfoDiscoverBody": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoDiscoverExact": "Exact: your pin is shown within about 100 m of where you are, and others see your distance.",
+  "@xplInfoDiscoverExact": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoDiscoverApprox": "Approximate (default): your pin is placed in your area, a few kilometres from where you really are.",
+  "@xplInfoDiscoverApprox": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoDiscoverCountry": "Country: your pin is placed at a random point in your country.",
+  "@xplInfoDiscoverCountry": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoDiscoverHidden": "Hidden: you are not shown on the map at all, not even to your followers or the people you chat with.",
+  "@xplInfoDiscoverHidden": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoDiscoverBusiness": "Business accounts are shown at their public business address. Ghost mode and Incognito also take you off the map.",
+  "@xplInfoDiscoverBusiness": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoGhostTitle": "Ghost mode and Incognito",
+  "@xplInfoGhostTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoGhostBody": "Both hide your profile from Discover, people suggestions and the map, so you can look around without being found.",
+  "@xplInfoGhostBody": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoGhostGhost": "Ghost mode: free and unlimited with Gold and Platinum. It also hides you from nickname search and stays on until you turn it off.",
+  "@xplInfoGhostGhost": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoGhostIncognito": "Incognito: {count} coins for 24 hours, on any plan. It turns off by itself when the time is up.",
+  "@xplInfoGhostIncognito": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "xplInfoGhostStill": "Your existing chats keep working as usual.",
+  "@xplInfoGhostStill": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoFollowTitle": "Followers, Following and Stores",
+  "@xplInfoFollowTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoFollowBody": "Tap a number to open its list.",
+  "@xplInfoFollowBody": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoFollowPublic": "Your followers and the accounts you follow are public: signed-in members can see these lists on your profile.",
+  "@xplInfoFollowPublic": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoFollowStores": "The Stores number (businesses you follow) is shown only to you.",
+  "@xplInfoFollowStores": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPhotosTitle": "Public and private photos",
+  "@xplInfoPhotosTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPhotosBody": "You can have up to 6 public and 6 private photos.",
+  "@xplInfoPhotosBody": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPhotosPublic": "Public photos: everyone who opens your profile can see them.",
+  "@xplInfoPhotosPublic": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPhotosPrivate": "Private photos: only people you give access to, one by one from a chat, can see them. You can take access back at any time. The community rules apply here too.",
+  "@xplInfoPhotosPrivate": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPicturesTitle": "Personal photo and business picture",
+  "@xplInfoPicturesTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPicturesBody": "Your business picture and your personal photos are separate.",
+  "@xplInfoPicturesBody": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPicturesPersonal": "Personal accounts: your main (first) public photo must clearly show your face.",
+  "@xplInfoPicturesPersonal": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPicturesBusiness": "Business picture: shown in Discover, in chats and on your storefront. A logo or a photo of your place is fine; it doesn’t need a face.",
+  "@xplInfoPicturesBusiness": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPhasesTitle": "Price phases",
+  "@xplInfoPhasesTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPhasesOrganizerBody": "Sell the first tickets for less, then raise the price as they sell.",
+  "@xplInfoPhasesOrganizerBody": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPhasesOrder": "Phases sell in order: when one sells out, the next starts. Each phase must cost more than the previous one.",
+  "@xplInfoPhasesOrder": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPhasesLocked": "Once a phase has sales, its price can’t be changed.",
+  "@xplInfoPhasesLocked": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPhasesMax": "You can add up to {count} phases, one per preset name.",
+  "@xplInfoPhasesMax": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "xplInfoPhasesBuyerBody": "The price depends on the phase on sale now. When the current phase sells out, the next, higher price starts. You pay the price shown at checkout and nothing more.",
+  "@xplInfoPhasesBuyerBody": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPhasesBuyerLimit": "You can buy up to {count} tickets per event in total.",
+  "@xplInfoPhasesBuyerLimit": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "xplInfoFeeTitle": "GreenGo service fee",
+  "@xplInfoFeeTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoFeeBody": "The fee is paid by you, the seller: buyers pay only the ticket price you set.",
+  "@xplInfoFeeBody": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoFeeTiers": "Per paid ticket, by your plan: Silver US$3 + 10% (max US$30), Gold US$2 + 10% (max US$28), Platinum US$1 + 10% (max US$25). Without a paid plan the Silver rate applies.",
+  "@xplInfoFeeTiers": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoFeeTrial": "Your first paid listing: a flat US$1 per ticket.",
+  "@xplInfoFeeTrial": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoFeeFree": "Free tickets have no fee, and the fee is never higher than the ticket price. A full refund returns the fee to you.",
+  "@xplInfoFeeFree": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoFeeProvider": "Stripe or Mercado Pago also take their own processing fee from your account; it is not a GreenGo fee.",
+  "@xplInfoFeeProvider": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoReceiveTitle": "What you receive per ticket",
+  "@xplInfoReceiveTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoReceiveBody": "You receive the ticket price minus GreenGo’s service fee and the payment provider’s processing fee. The provider fee is an estimate: it depends on the card, country and payment method.",
+  "@xplInfoReceiveBody": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPromoTitle": "2026 launch offer",
+  "@xplInfoPromoTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPromoBody": "{percent}% off the first period of any membership bought until 31 March 2027.",
+  "@xplInfoPromoBody": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "xplInfoPromoPeriods": "First period = the first {months} months of a monthly plan, or the first year of a yearly plan.",
+  "@xplInfoPromoPeriods": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)",
+    "placeholders": {
+      "months": {
+        "type": "int"
+      }
+    }
+  },
+  "xplInfoPromoRenew": "After that, the plan renews at the regular price unless you cancel.",
+  "@xplInfoPromoRenew": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplInfoPromoNoTrial": "There is no free trial. In the App Store the offer appears only if Apple says your Apple ID is eligible.",
+  "@xplInfoPromoNoTrial": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplExactConfirmTitle": "Show your exact location?",
+  "@xplExactConfirmTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplExactConfirm1": "Other members will see your pin within about 100 m of where you are, and your distance from them.",
+  "@xplExactConfirm1": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplExactConfirm2": "Turn it on only if you are comfortable with people knowing roughly where you are, for example your street.",
+  "@xplExactConfirm2": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplExactConfirm3": "You can switch back to Approximate, Country or Hidden at any time.",
+  "@xplExactConfirm3": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplExactConfirmAction": "Use exact location",
+  "@xplExactConfirmAction": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplLeaveCommunityStop": "You will stop seeing its chat, tips and announcements, and stop getting its notifications.",
+  "@xplLeaveCommunityStop": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplLeaveCommunityPosts": "Messages you already posted stay in the community.",
+  "@xplLeaveCommunityPosts": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplLeaveCommunityRejoin": "You can join again later.",
+  "@xplLeaveCommunityRejoin": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplLeaveCommunityRejoinPrivate": "This community is private: to come back you will need to request to join again.",
+  "@xplLeaveCommunityRejoinPrivate": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplDeleteEventRemoved": "The event, its attendee list and its chat are deleted for everyone.",
+  "@xplDeleteEventRemoved": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplDeleteEventNoRefund": "Deleting does NOT refund anyone. You are the seller: if you sold tickets, refund the buyers from your Stripe or Mercado Pago account, following your refund policy.",
+  "@xplDeleteEventNoRefund": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplDeleteEventFee": "If a ticket is refunded in full, GreenGo returns its service fee to you; for a partial refund GreenGo keeps it.",
+  "@xplDeleteEventFee": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplBusinessPage": "Your profile becomes a public business page with a business name and picture.",
+  "@xplBusinessPage": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplBusinessSell": "You can sell tickets and bookings through your own Stripe or Mercado Pago account. GreenGo charges you, the seller, a service fee per paid ticket.",
+  "@xplBusinessSell": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplBusinessListings": "How many listings can be active at a time depends on your plan: Silver 5, Gold 10, Platinum unlimited.",
+  "@xplBusinessListings": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplShareMyProfile": "Share my profile",
+  "@xplShareMyProfile": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplEmptyFollowersOwn": "Nobody follows you yet. Share your profile so people can find you and follow you.",
+  "@xplEmptyFollowersOwn": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplEmptyFollowingOwn": "You don’t follow anyone yet. Follow people and businesses from their profiles to keep up with them here.",
+  "@xplEmptyFollowingOwn": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplEmptyEvents": "There are no events here yet. Create one and invite people, or check back soon.",
+  "@xplEmptyEvents": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplEmptyEventsFiltered": "No events match your filters. Show all events or create your own.",
+  "@xplEmptyEventsFiltered": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplWidenFilters": "Show all events",
+  "@xplWidenFilters": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplEmptyChats": "Start a conversation from someone’s profile. Find people who share your languages and interests.",
+  "@xplEmptyChats": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFindPeople": "Find people",
+  "@xplFindPeople": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplEmptyTickets": "Tickets you buy for events will appear here.",
+  "@xplEmptyTickets": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplBrowseEvents": "Browse events",
+  "@xplBrowseEvents": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplEmptyBookings": "Experiences you book will appear here. You can find experiences in the Events tab.",
+  "@xplEmptyBookings": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplBrowseExperiences": "Browse experiences",
+  "@xplBrowseExperiences": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplEmptyBookingsHost": "Bookings of your experiences will appear here as guests book them.",
+  "@xplEmptyBookingsHost": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplCreateCommunity": "Create a community",
+  "@xplCreateCommunity": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplEmptyGlobe": "Your map shows the people you follow, your followers and your chats. Follow people or start a chat to see them here.",
+  "@xplEmptyGlobe": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplEmptyBcCustomers": "No new followers or messages this month yet. Complete your storefront and promote it so customers can find you.",
+  "@xplEmptyBcCustomers": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplEmptyBcSales": "No sales this month yet. Connect Stripe or Mercado Pago in Get paid, then publish a paid event or experience.",
+  "@xplEmptyBcSales": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplLockedTranslateTitle": "Daily translation limit reached",
+  "@xplLockedTranslateTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplLockedTranslateOriginal": "Until then, messages are shown in their original language.",
+  "@xplLockedTranslateOriginal": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplLockedPhotosFullTitle": "Album full",
+  "@xplLockedPhotosFullTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplLockedPhotosFullHint": "Delete a photo, or move one to the other album, to make room.",
+  "@xplLockedPhotosFullHint": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplLockedGroupsUnlimited": "Silver, Gold and Platinum plans have no group limit.",
+  "@xplLockedGroupsUnlimited": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplLockedFaceTip": "Use a clear, well-lit photo of yourself facing the camera. Your other photos can show anything that follows the community rules.",
+  "@xplLockedFaceTip": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplLockedStorefrontTitle": "Storefront not complete",
+  "@xplLockedStorefrontTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplErrSellerBilling": "Ticket sales are paused: the organizer still needs to add their invoice details. Try again later or message the organizer.",
+  "@xplErrSellerBilling": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplErrPhoneRequired": "Verify your mobile number first: new accounts need a verified phone to join, book, buy tickets or create listings.",
+  "@xplErrPhoneRequired": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHowBc1": "Complete your storefront: business picture, name, address and contact details.",
+  "@xplHowBc1": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHowBc2": "Connect Stripe or Mercado Pago in Get paid. Buyers pay you directly; GreenGo never holds ticket money.",
+  "@xplHowBc2": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHowBc3": "Publish events and experiences. How many can be active at a time depends on your plan.",
+  "@xplHowBc3": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHowBc4": "Follow sales, customers and bookings here. GreenGo invoices you for its service fee.",
+  "@xplHowBc4": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHowPaid1": "Connect your own Stripe or Mercado Pago account. Buyers pay into it directly; GreenGo never holds ticket money.",
+  "@xplHowPaid1": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHowPaid2": "Buyers pay only the price you set. GreenGo’s service fee per ticket depends on your plan and is paid by you, the seller.",
+  "@xplHowPaid2": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHowPaid3": "Add your invoice details: without them, paid sales are paused.",
+  "@xplHowPaid3": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHowPaid4": "You set your refund policy and refund buyers yourself. A full refund returns GreenGo’s fee to you.",
+  "@xplHowPaid4": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHowPromote1": "Choose what to promote: your storefront at the top of Explore, or one of your upcoming events in discovery.",
+  "@xplHowPromote1": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHowPromote2": "Pick a duration. The price in coins is shown before you confirm.",
+  "@xplHowPromote2": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHowPromote3": "The promotion starts as soon as you confirm and ends by itself on the date shown.",
+  "@xplHowPromote3": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHowReferralShare": "Share your personal invite code or link with friends.",
+  "@xplHowReferralShare": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHowCoins1": "Use coins for extras such as Incognito, promotions and reading messages aloud.",
+  "@xplHowCoins1": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHowCoins2": "Send coins as gifts: 10 to 1,000 coins per gift. Coins you bought can be gifted 72 hours after purchase.",
+  "@xplHowCoins2": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplHowCoins3": "Coins never expire and can’t be exchanged for money.",
+  "@xplHowCoins3": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplGuideFeaturesTitle": "Features guide",
+  "@xplGuideFeaturesTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqTitle": "Frequently asked questions",
+  "@xplFaqTitle": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqSearchHint": "Search questions",
+  "@xplFaqSearchHint": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqNoResults": "No questions match your search. Try other words, or contact support from Help & Support.",
+  "@xplFaqNoResults": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqTranslationQ": "How does translation work?",
+  "@xplFaqTranslationQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqTranslationA": "Chat messages are translated automatically once you agree to the AI features. Chat translation uses Google’s Cloud Translation service. How much chat text you can translate each day depends on your plan; after the limit, messages show in their original language. Public content such as events, communities and listings is translated with Google’s translation service through a shared store, without personal data. Translated text is labelled \"Translated\" and can be wrong: if in doubt, check with the other person.",
+  "@xplFaqTranslationA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqTicketsQ": "How do tickets and refunds work?",
+  "@xplFaqTicketsQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqTicketsA": "Paid tickets are bought in the in-app checkout and paid straight into the organizer’s own Stripe or Mercado Pago account; GreenGo never holds ticket money. You pay the price shown and nothing more. The organizer is the seller and sets the cancellation and refund policy, so ask the organizer for a refund (for example in the event chat). Cancelling or deleting an event does not refund tickets automatically.",
+  "@xplFaqTicketsA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqCancelSubQ": "How do I cancel my subscription?",
+  "@xplFaqCancelSubQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqCancelSubA": "Go to Profile > Account Settings > Manage subscription. A plan bought on the web opens the payment portal, where you can cancel. A plan bought in Google Play or the App Store must be cancelled in that store; the button takes you there. Deleting your account cancels a web plan, but NOT a store subscription.",
+  "@xplFaqCancelSubA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqLocationQ": "Who can see my location?",
+  "@xplFaqLocationQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqLocationA": "By default your pin on the map is Approximate: placed in your area, a few kilometres from where you really are. In your profile, under Globe Discoverability, you can choose Exact (within about 100 m), Country or Hidden. Your real coordinates are never shown. Ghost mode and Incognito also take you off the map.",
+  "@xplFaqLocationA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqFollowersQ": "Who can see my followers and who I follow?",
+  "@xplFaqFollowersQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqFollowersA": "Your Followers and Following lists are public to signed-in members. The number of stores you follow is shown only to you. People you block can’t open your profile.",
+  "@xplFaqFollowersA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqModerationQ": "How does moderation work? Can I appeal?",
+  "@xplFaqModerationQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqModerationA": "Reported content is reviewed against the Terms and the community rules. If we act on your content or account, you receive the decision and the reason. You can appeal each decision once, within about 6 months, in the app or through the link in the email (it works even if your account is suspended); a different person reviews the appeal. If you reported something and we did not act, you can appeal that decision too.",
+  "@xplFaqModerationA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqReportQ": "How do I report or block someone?",
+  "@xplFaqReportQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqReportA": "Open the person’s profile, a chat or a message and choose Report or Block. Reports go to our safety team. Once you block someone, they can no longer contact you or open your profile. You can also write to safety@greengochat.com. In an emergency, contact your local emergency services first.",
+  "@xplFaqReportA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqDeleteQ": "How do I delete my account?",
+  "@xplFaqDeleteQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqDeleteA": "Go to Profile > Delete Account and confirm with your password, or delete it on the web at greengochat.com/delete-account. Deletion happens right away and can’t be undone: remaining coins are lost and a web plan is cancelled, but a Google Play or App Store subscription must be cancelled in the store. Some records are kept where the law requires it (payments and invoices, safety reports); see the Privacy Policy.",
+  "@xplFaqDeleteA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqPhoneQ": "Why do I have to verify my phone?",
+  "@xplFaqPhoneQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqPhoneA": "Accounts created from 16 October 2026 verify one mobile number when signing up. It keeps fake and spam accounts out, and it is needed to join or book, buy tickets, create events and listings, post in communities and use business tools. Your number is never shown to others. Accounts created before that date are not asked to verify.",
+  "@xplFaqPhoneA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqIdQ": "Is ID verification required? What do you keep?",
+  "@xplFaqIdQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqIdA": "No, ID verification is optional; it gives you a Verified badge. The photo of your document is deleted after the review, or after 7 days if it isn’t reviewed. The details we checked are kept encrypted until 6 months after your account is closed.",
+  "@xplFaqIdA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqCoinsQ": "How do coins work?",
+  "@xplFaqCoinsQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqCoinsA": "Coins pay for extras such as Incognito, promotions and reading messages aloud. They never expire and can’t be exchanged for money or cashed out. You can gift 10 to 1,000 coins at a time, up to 10 gifts and 5,000 coins a day; coins you bought can be gifted 72 hours after purchase.",
+  "@xplFaqCoinsA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqPromoQ": "What is the launch offer?",
+  "@xplFaqPromoQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqPromoA": "Every membership plan bought until 31 March 2027 is {percent}% off for its first period: the first {months} months of a monthly plan, or the first year of a yearly plan. After that it renews at the regular price unless you cancel. There is no free trial.",
+  "@xplFaqPromoA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      },
+      "months": {
+        "type": "int"
+      }
+    }
+  },
+  "xplFaqBusinessQ": "What is a business account?",
+  "@xplFaqBusinessQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqBusinessA": "A business account turns your profile into a public business page with its own picture and storefront, and lets you sell tickets and bookings. It needs a Silver, Gold or Platinum plan and a verified phone. The switch is permanent; if your plan lapses, the business tools pause until you renew. Active listings at a time: Silver 5, Gold 10, Platinum unlimited.",
+  "@xplFaqBusinessA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqFeesQ": "What fees do sellers pay?",
+  "@xplFaqFeesQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqFeesA": "GreenGo’s service fee is paid by the seller; buyers pay only the ticket price. Per paid ticket: Silver US$3 + 10% (max US$30), Gold US$2 + 10% (max US$28), Platinum US$1 + 10% (max US$25). Your first paid listing has a flat US$1 per ticket. Free tickets have no fee, and the fee is never higher than the ticket price. Stripe or Mercado Pago charge their own processing fees.",
+  "@xplFaqFeesA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqPhasesQ": "What are price phases? How many tickets can I buy?",
+  "@xplFaqPhasesQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqPhasesA": "Organizers can sell the first tickets for less in phases (early bird, presale, regular...). Phases sell in order and each costs more than the previous one: when one sells out, the next price starts. Each person can buy up to {count} tickets per event in total, and the organizer can set a lower limit.",
+  "@xplFaqPhasesA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "xplFaqNamesQ": "Why do I have to enter attendee names?",
+  "@xplFaqNamesQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqNamesA": "If the organizer asks for attendee names, you must give the first name and surname of each ticket holder. The names are shared only with the organizer and shown on the tickets.",
+  "@xplFaqNamesA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqGuestQ": "Can someone book without a GreenGo account?",
+  "@xplFaqGuestQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqGuestA": "Yes, if the organizer allows guests: through the shared link, guests can get tickets or request an experience with just their name and email, and tickets arrive by email. It is off by default and not available for events that need approval or have age or gender limits.",
+  "@xplFaqGuestA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqExportQ": "Can I download my data?",
+  "@xplFaqExportQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqExportA": "Yes. Go to Privacy & data > Export My Data. For security you may be asked to sign in again. You get a ZIP file through a download link (also sent by email) that works for 24 hours; you can request one export a day.",
+  "@xplFaqExportA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqSupportQ": "How do I contact support or a person?",
+  "@xplFaqSupportQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqSupportA": "Open Help & Support in your profile and start the support chat. It begins with an AI assistant; tap \"Talk to a person\" at any time to reach a human. Gold and Platinum members get priority support. You can also email support@greengochat.com.",
+  "@xplFaqSupportA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqGhostQ": "What are Ghost mode and Incognito?",
+  "@xplFaqGhostQ": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)"
+  },
+  "xplFaqGhostA": "Both hide your profile from Discover, people suggestions and the map. Ghost mode is free and unlimited with Gold and Platinum, and also hides you from nickname search. Incognito costs {count} coins for 24 hours on any plan. Turn them on in your profile.",
+  "@xplFaqGhostA": {
+    "description": "In-app explanations (info sheets, empty states, FAQ)",
+    "placeholders": {
+      "count": {
         "type": "int"
       }
     }

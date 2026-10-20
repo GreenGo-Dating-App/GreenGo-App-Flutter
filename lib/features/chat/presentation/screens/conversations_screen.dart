@@ -25,6 +25,8 @@ import '../bloc/groups_bloc.dart';
 import '../bloc/groups_event.dart';
 import '../bloc/groups_state.dart';
 import 'groups_screen.dart';
+import '../../../../features/explore/presentation/screens/network_discovery_screen.dart';
+import '../../../../core/widgets/helpful_empty_state.dart';
 
 /// Conversations Screen
 ///
@@ -252,7 +254,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
             color: AppColors.textTertiary,
           ),
           suffixIcon: _searchQuery.isNotEmpty
-              ? IconButton(
+              ? IconButton(tooltip: AppLocalizations.of(context)!.userFollowSearchClear,
                   icon: const Icon(Icons.clear, color: AppColors.textTertiary),
                   onPressed: () {
                     _searchController.clear();
@@ -440,7 +442,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
             ? AppBar(
                 backgroundColor: Colors.transparent,
                 elevation: 0,
-                leading: IconButton(
+                leading: IconButton(tooltip: MaterialLocalizations.of(context).backButtonTooltip,
                   icon: const Icon(Icons.arrow_back,
                       color: AppColors.textPrimary),
                   onPressed: () => Navigator.of(context).maybePop(),
@@ -571,41 +573,25 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                         }
 
                         if (state is ConversationsEmpty) {
-                          return Center(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                const Icon(
-                                  Icons.chat_bubble_outline,
-                                  size: 80,
-                                  color: AppColors.textTertiary,
-                                ),
-                                const SizedBox(height: 24),
-                                Text(
-                                  AppLocalizations.of(context)!
-                                      .chatNoMessagesYet,
-                                  style: const TextStyle(
-                                    color: AppColors.textPrimary,
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                const SizedBox(height: 12),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 40),
-                                  child: Text(
-                                    AppLocalizations.of(context)!
-                                        .chatStartSwipingToChat,
-                                    style: const TextStyle(
-                                      color: AppColors.textSecondary,
-                                      fontSize: 16,
+                          final l10n = AppLocalizations.of(context)!;
+                          return HelpfulEmptyState(
+                            key: const Key('chats_helpful_empty'),
+                            icon: Icons.chat_bubble_outline,
+                            title: l10n.chatNoMessagesYet,
+                            message: l10n.xplEmptyChats,
+                            actions: [
+                              HelpfulEmptyAction(
+                                label: l10n.xplFindPeople,
+                                icon: Icons.travel_explore,
+                                onPressed: () => Navigator.of(context).push(
+                                  MaterialPageRoute<void>(
+                                    builder: (_) => NetworkDiscoveryScreen(
+                                      userId: widget.userId,
                                     ),
-                                    textAlign: TextAlign.center,
                                   ),
                                 ),
-                              ],
-                            ),
+                              ),
+                            ],
                           );
                         }
 
