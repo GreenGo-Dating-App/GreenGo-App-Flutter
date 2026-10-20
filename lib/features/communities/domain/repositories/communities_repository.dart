@@ -63,6 +63,15 @@ abstract class CommunitiesRepository {
     int? limit,
   });
 
+  /// One older page (newest first) of messages sent before [before]; only
+  /// tips when [tipsOnly].
+  Future<Either<Failure, List<CommunityMessage>>> getOlderCommunityMessages(
+    String communityId, {
+    required DateTime before,
+    int? limit,
+    bool tipsOnly = false,
+  });
+
   /// Send a message to a community
   Future<Either<Failure, CommunityMessage>> sendMessage({
     required String communityId,

@@ -183,6 +183,28 @@ class CommunityMessagesUpdated extends CommunitiesEvent {
   final List<CommunityMessage> messages;
 }
 
+/// Endless scroll in the Chat tab: load the next older page (50).
+class LoadOlderCommunityMessages extends CommunitiesEvent {
+  const LoadOlderCommunityMessages({required this.communityId});
+  final String communityId;
+}
+
+/// Endless scroll in the Tips tab: load the next older tips page (50).
+class LoadOlderCommunityTips extends CommunitiesEvent {
+  const LoadOlderCommunityTips({required this.communityId});
+  final String communityId;
+}
+
+/// A message was removed from this device (older pages are not live).
+class CommunityMessageRemoved extends CommunitiesEvent {
+  const CommunityMessageRemoved({
+    required this.communityId,
+    required this.messageId,
+  });
+  final String communityId;
+  final String messageId;
+}
+
 /// Request to join a PRIVATE community (creates a pending request).
 class RequestToJoinCommunity extends CommunitiesEvent {
   const RequestToJoinCommunity({

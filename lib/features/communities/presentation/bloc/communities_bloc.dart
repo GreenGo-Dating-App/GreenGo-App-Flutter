@@ -14,6 +14,7 @@ import '../../domain/entities/community_message.dart';
 import '../../domain/repositories/communities_repository.dart';
 import 'communities_event.dart';
 import 'communities_state.dart';
+import 'community_message_feed.dart';
 
 /// Communities BLoC
 ///
@@ -41,6 +42,9 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     on<SendCommunityMessage>(_onSendMessage);
     on<SubscribeToCommunityMessages>(_onSubscribeToMessages);
     on<CommunityMessagesUpdated>(_onMessagesUpdated);
+    on<LoadOlderCommunityMessages>(_onLoadOlderMessages);
+    on<LoadOlderCommunityTips>(_onLoadOlderTips);
+    on<CommunityMessageRemoved>(_onMessageRemoved);
     on<RequestToJoinCommunity>(_onRequestToJoin);
     on<LoadJoinRequests>(_onLoadJoinRequests);
     on<ApproveJoinRequest>(_onApproveJoinRequest);
@@ -85,6 +89,10 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
   /// messages here and re-apply them the moment CommunityDetailLoaded is built.
   String? _subscribedCommunityId;
   List<CommunityMessage> _latestMessages = const [];
+
+  /// The subscribed community's messages: the live newest page plus the
+  /// older pages loaded on scroll (see [CommunityMessageFeed]).
+  CommunityMessageFeed _feed = CommunityMessageFeed();
 
   // Last-result keys (see LastResultCache): per tab, per signed-in user.
   static const String _kDiscoverKey = 'communities_discover_v1';
@@ -504,11 +512,14 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         prev is CommunityDetailLoaded && prev.community.id == event.communityId
             ? prev
             : null;
+    final subscribed = _subscribedCommunityId == event.communityId;
     emit(CommunityDetailLoaded(
       community: community,
       messages:
           same != null && same.messages.isNotEmpty ? same.messages : cached,
       pendingRequests: same?.pendingRequests ?? const [],
+      hasMoreMessages: subscribed && _feed.hasMoreMessages,
+      hasMoreTips: subscribed && _feed.hasMoreTips,
     ));
 
     final uid = event.userId ?? _detailUserId;
@@ -740,6 +751,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     // Reset the cache for the new community so stale messages can't bleed over.
     _subscribedCommunityId = event.communityId;
     _latestMessages = const [];
+    _feed = CommunityMessageFeed(pageSize: kMessagePageSize);
 
     _messagesSubscription =
         _repository.getCommunityMessages(event.communityId).listen(
@@ -764,12 +776,116 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     Emitter<CommunitiesState> emit,
   ) {
     // Always cache — even if the detail state isn't ready yet — so the messages
-    // survive to be applied when CommunityDetailLoaded is emitted.
-    _latestMessages = event.messages;
-    final currentState = state;
-    if (currentState is CommunityDetailLoaded) {
-      emit(currentState.copyWith(messages: event.messages));
+    // survive to be applied when CommunityDetailLoaded is emitted. The live
+    // page is merged with the older pages already loaded.
+    _feed.applyLive(event.messages);
+    _latestMessages = _feed.all;
+    _emitFeed(emit);
+  }
+
+  void _emitFeed(Emitter<CommunitiesState> emit,
+      {bool? loadingOlderMessages, bool? loadingOlderTips}) {
+    final s = state;
+    if (s is! CommunityDetailLoaded ||
+        s.community.id != _subscribedCommunityId) {
+      return;
     }
+    emit(s.copyWith(
+      messages: _latestMessages,
+      hasMoreMessages: _feed.hasMoreMessages,
+      hasMoreTips: _feed.hasMoreTips,
+      isLoadingOlderMessages: loadingOlderMessages,
+      isLoadingOlderTips: loadingOlderTips,
+    ));
+  }
+
+  /// Endless scroll (Chat): the next 50 older messages, keyset-paged before
+  /// the oldest one loaded. Bounded: one page per call.
+  Future<void> _onLoadOlderMessages(
+    LoadOlderCommunityMessages event,
+    Emitter<CommunitiesState> emit,
+  ) async {
+    final s = state;
+    if (s is! CommunityDetailLoaded ||
+        event.communityId != _subscribedCommunityId ||
+        s.isLoadingOlderMessages ||
+        !_feed.hasMoreMessages) {
+      return;
+    }
+    final before = _feed.messagesCursor;
+    if (before == null) return; // the live page has not arrived yet
+    final feed = _feed;
+    emit(s.copyWith(isLoadingOlderMessages: true));
+    final result = await _repository.getOlderCommunityMessages(
+      event.communityId,
+      before: before,
+      limit: feed.pageSize,
+    );
+    if (!identical(feed, _feed)) return; // switched community meanwhile
+    result.fold(
+      (failure) => debugPrint('Older messages failed: ${failure.message}'),
+      feed.addOlderPage,
+    );
+    _latestMessages = _feed.all;
+    _emitFeed(emit, loadingOlderMessages: false);
+  }
+
+  /// Endless scroll (Tips): the next 50 older tips. Falls back to an older
+  /// mixed page (which carries the tips too) while the tips index is not
+  /// deployed.
+  Future<void> _onLoadOlderTips(
+    LoadOlderCommunityTips event,
+    Emitter<CommunitiesState> emit,
+  ) async {
+    final s = state;
+    if (s is! CommunityDetailLoaded ||
+        event.communityId != _subscribedCommunityId ||
+        s.isLoadingOlderTips ||
+        !_feed.hasMoreTips) {
+      return;
+    }
+    final before = _feed.tipsCursor;
+    if (before == null) return;
+    final feed = _feed;
+    emit(s.copyWith(isLoadingOlderTips: true));
+    final tips = await _repository.getOlderCommunityMessages(
+      event.communityId,
+      before: before,
+      limit: feed.pageSize,
+      tipsOnly: true,
+    );
+    if (!identical(feed, _feed)) return;
+    final ok = tips.fold((_) => false, (page) {
+      feed.addTipsPage(page);
+      return true;
+    });
+    if (!ok) {
+      final mixedBefore = feed.messagesCursor;
+      if (mixedBefore != null) {
+        final page = await _repository.getOlderCommunityMessages(
+          event.communityId,
+          before: mixedBefore,
+          limit: feed.pageSize,
+        );
+        if (!identical(feed, _feed)) return;
+        page.fold(
+          (failure) => debugPrint('Older tips failed: ${failure.message}'),
+          feed.addOlderPage,
+        );
+      }
+    }
+    _latestMessages = _feed.all;
+    _emitFeed(emit, loadingOlderTips: false);
+  }
+
+  void _onMessageRemoved(
+    CommunityMessageRemoved event,
+    Emitter<CommunitiesState> emit,
+  ) {
+    if (event.communityId != _subscribedCommunityId) return;
+    _feed.remove(event.messageId);
+    _latestMessages = _feed.all;
+    _emitFeed(emit);
   }
 
   Future<void> _onRequestToJoin(

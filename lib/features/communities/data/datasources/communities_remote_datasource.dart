@@ -11,6 +11,13 @@ import '../models/community_member_model.dart';
 import '../models/community_message_model.dart';
 import '../models/community_model.dart';
 
+/// Community chat / tips page size: the live listener covers the newest
+/// page, older pages load on scroll (owner notes 2026-10-20).
+const int kMessagePageSize = 50;
+
+/// The stored `type` values of tip posts (Tips tab).
+const List<String> kTipTypes = ['language_tip', 'cultural_fact', 'city_tip'];
+
 /// Communities Remote Data Source
 ///
 /// Handles Firestore operations for the communities feature
@@ -93,10 +100,20 @@ abstract class CommunitiesRemoteDataSource {
     required String userId,
   });
 
-  /// Stream of messages for a community (real-time)
+  /// Stream of the NEWEST messages of a community (real-time), newest first,
+  /// at most [limit] (default [kMessagePageSize]).
   Stream<List<CommunityMessageModel>> getCommunityMessages(
     String communityId, {
     int? limit,
+  });
+
+  /// One older page (newest first) of messages sent strictly before
+  /// [before]: every type, or only tips when [tipsOnly]. At most [limit].
+  Future<List<CommunityMessageModel>> getOlderCommunityMessages(
+    String communityId, {
+    required DateTime before,
+    int limit = kMessagePageSize,
+    bool tipsOnly = false,
   });
 
   /// Send a message to a community
@@ -704,13 +721,11 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
     int? limit,
   }) {
     try {
-      var query = _messagesRef(communityId).orderBy('sentAt', descending: true);
-
-      if (limit != null) {
-        query = query.limit(limit);
-      } else {
-        query = query.limit(100);
-      }
+      // Only the newest page is live; older pages are read on scroll
+      // (getOlderCommunityMessages).
+      final query = _messagesRef(communityId)
+          .orderBy('sentAt', descending: true)
+          .limit(limit ?? kMessagePageSize);
 
       return query.snapshots().map((snapshot) {
         return snapshot.docs
@@ -724,6 +739,28 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
       debugPrint('Error streaming community messages: $e');
       rethrow;
     }
+  }
+
+  @override
+  Future<List<CommunityMessageModel>> getOlderCommunityMessages(
+    String communityId, {
+    required DateTime before,
+    int limit = kMessagePageSize,
+    bool tipsOnly = false,
+  }) async {
+    Query query = _messagesRef(communityId);
+    // Tips only: index communities/{id}/messages (type ASC, sentAt DESC).
+    if (tipsOnly) query = query.where('type', whereIn: kTipTypes);
+    // Keyset page: strictly older than the oldest message loaded.
+    final snap = await query
+        .where('sentAt', isLessThan: Timestamp.fromDate(before))
+        .orderBy('sentAt', descending: true)
+        .limit(limit)
+        .get();
+    return snap.docs
+        .map((doc) =>
+            CommunityMessageModel.fromFirestore(doc, communityId: communityId))
+        .toList();
   }
 
   @override

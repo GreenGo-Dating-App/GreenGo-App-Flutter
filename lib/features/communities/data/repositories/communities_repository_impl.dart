@@ -171,6 +171,26 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
   }
 
   @override
+  Future<Either<Failure, List<CommunityMessage>>> getOlderCommunityMessages(
+    String communityId, {
+    required DateTime before,
+    int? limit,
+    bool tipsOnly = false,
+  }) async {
+    try {
+      final page = await remoteDataSource.getOlderCommunityMessages(
+        communityId,
+        before: before,
+        limit: limit ?? kMessagePageSize,
+        tipsOnly: tipsOnly,
+      );
+      return Right(page.map((m) => m.toEntity()).toList());
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
   Future<Either<Failure, CommunityMessage>> sendMessage({
     required String communityId,
     required CommunityMessage message,

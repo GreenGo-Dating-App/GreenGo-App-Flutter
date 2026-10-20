@@ -95,8 +95,20 @@ class CommunityDetailLoaded extends CommunitiesState {
     this.membersLoaded = false,
     this.isLoadingMembers = false,
     this.hasMoreMembers = false,
+    this.hasMoreMessages = false,
+    this.hasMoreTips = false,
+    this.isLoadingOlderMessages = false,
+    this.isLoadingOlderTips = false,
   });
   final Community community;
+
+  /// Older chat messages may exist before the loaded ones (endless scroll).
+  final bool hasMoreMessages;
+
+  /// Older tips may exist before the loaded ones (endless scroll).
+  final bool hasMoreTips;
+  final bool isLoadingOlderMessages;
+  final bool isLoadingOlderTips;
 
   /// The roster pages loaded so far (lazy — empty until the Members sheet
   /// asks for them, see [membersLoaded]).
@@ -135,6 +147,10 @@ class CommunityDetailLoaded extends CommunitiesState {
     bool? membersLoaded,
     bool? isLoadingMembers,
     bool? hasMoreMembers,
+    bool? hasMoreMessages,
+    bool? hasMoreTips,
+    bool? isLoadingOlderMessages,
+    bool? isLoadingOlderTips,
   }) {
     return CommunityDetailLoaded(
       community: community ?? this.community,
@@ -148,6 +164,11 @@ class CommunityDetailLoaded extends CommunitiesState {
       membershipLoaded: membershipLoaded ?? this.membershipLoaded,
       membersLoaded: membersLoaded ?? this.membersLoaded,
       isLoadingMembers: isLoadingMembers ?? this.isLoadingMembers,
+      hasMoreMessages: hasMoreMessages ?? this.hasMoreMessages,
+      hasMoreTips: hasMoreTips ?? this.hasMoreTips,
+      isLoadingOlderMessages:
+          isLoadingOlderMessages ?? this.isLoadingOlderMessages,
+      isLoadingOlderTips: isLoadingOlderTips ?? this.isLoadingOlderTips,
       hasMoreMembers: hasMoreMembers ?? this.hasMoreMembers,
     );
   }

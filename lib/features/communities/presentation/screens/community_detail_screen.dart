@@ -585,7 +585,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
     return Column(
       children: [
         Expanded(
-          child: chat.isEmpty ? _buildEmptyChat() : _buildMessagesList(chat),
+          child: chat.isEmpty && !state.hasMoreMessages
+              ? _buildEmptyChat()
+              : _buildMessagesList(chat, hasMore: state.hasMoreMessages),
         ),
         // Until the user's member doc resolves, show neither bar (avoids a
         // Join-bar flash for existing members).
@@ -621,7 +623,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
         _buildTipSearch(),
         _buildTipFilterBar(),
         Expanded(
-          child: tips.isEmpty
+          child: tips.isEmpty && !state.hasMoreTips
               ? _buildTabEmpty(
                   Icons.lightbulb_outline,
                   AppLocalizations.of(context)!.communitiesTipsEmpty,
@@ -629,15 +631,22 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
               : ListView.builder(
                   padding: const EdgeInsets.symmetric(
                       vertical: AppDimensions.paddingS),
-                  itemCount: tips.length,
-                  itemBuilder: (context, index) => CommunityMessageBubble(
-                    message: tips[index],
-                    isCurrentUser: tips[index].senderId == _currentUserId,
-                    showSenderInfo: true,
-                    currentUserLanguage: _viewerLanguageOf(context),
-                    onReport: _reportActionFor(tips[index]),
-                    onRemove: _removeActionFor(tips[index]),
-                  ),
+                  // + the endless-scroll footer while older tips may exist.
+                  itemCount: tips.length + (state.hasMoreTips ? 1 : 0),
+                  itemBuilder: (context, index) {
+                    if (index == tips.length) {
+                      return _loadOlderFooter(() => LoadOlderCommunityTips(
+                          communityId: _community.id));
+                    }
+                    return CommunityMessageBubble(
+                      message: tips[index],
+                      isCurrentUser: tips[index].senderId == _currentUserId,
+                      showSenderInfo: true,
+                      currentUserLanguage: _viewerLanguageOf(context),
+                      onReport: _reportActionFor(tips[index]),
+                      onRemove: _removeActionFor(tips[index]),
+                    );
+                  },
                 ),
         ),
         // Only admins/owners or admin-designated tip-writers can add tips.
@@ -872,14 +881,43 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
   String _viewerLanguageOf(BuildContext context) =>
       Localizations.localeOf(context).languageCode;
 
-  Widget _buildMessagesList(List<CommunityMessage> messages) {
-    // Messages come in reverse order (newest first) from Firestore
+  /// Endless-scroll footer: a small spinner that asks the bloc for the next
+  /// older page (50) when it is built, i.e. scrolled into view. The bloc
+  /// ignores the request while a page is already loading.
+  Widget _loadOlderFooter(CommunitiesEvent Function() request) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) context.read<CommunitiesBloc>().add(request());
+    });
+    return const Padding(
+      key: ValueKey('community-load-older'),
+      padding: EdgeInsets.all(AppDimensions.paddingM),
+      child: Center(
+        child: SizedBox(
+          width: 22,
+          height: 22,
+          child: CircularProgressIndicator(
+            strokeWidth: 2,
+            color: AppColors.richGold,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildMessagesList(List<CommunityMessage> messages,
+      {bool hasMore = false}) {
+    // Messages come in reverse order (newest first) from Firestore; the list
+    // is reversed, so the endless-scroll footer (older pages) sits on top.
     return ListView.builder(
       controller: _scrollController,
       reverse: true,
       padding: const EdgeInsets.symmetric(vertical: AppDimensions.paddingS),
-      itemCount: messages.length,
+      itemCount: messages.length + (hasMore ? 1 : 0),
       itemBuilder: (context, index) {
+        if (index == messages.length) {
+          return _loadOlderFooter(
+              () => LoadOlderCommunityMessages(communityId: _community.id));
+        }
         final message = messages[index];
         final isCurrentUser = message.senderId == _currentUserId;
 
@@ -955,6 +993,11 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
           messageId: message.id,
         );
     if (!mounted) return;
+    if (result.isRight()) {
+      // Older pages are not live: drop the post locally too.
+      context.read<CommunitiesBloc>().add(CommunityMessageRemoved(
+          communityId: _community.id, messageId: message.id));
+    }
     result.fold(
       (failure) => showUserError(context, failure.message),
       (_) => messenger.showSnackBar(
