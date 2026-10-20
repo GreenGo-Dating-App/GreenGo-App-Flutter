@@ -927,3 +927,11 @@ export {
   getMyBillingProfile,
   saveMyBillingProfile,
 } from './finance';
+
+// World map ("My world") snapshots (owner decision 2026-10-20): pins built on
+// the server, refreshed hourly in batches, one doc read on open.
+export {
+  getWorldMapSnapshot,
+  rebuildWorldMapSnapshots,
+  rebuildWorldMapSnapshotsBatch,
+} from './globe/worldMapSnapshotFunctions';

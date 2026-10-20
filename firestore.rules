@@ -1166,6 +1166,21 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // WORLD MAP SNAPSHOTS (owner decision 2026-10-20): the pins of the user's
+    // network map, built hourly by the server (functions globe/worldMapSnapshot).
+    // The owner may GET their own snapshot and its chunks; nobody lists, nobody
+    // but the Admin SDK writes. Another user's snapshot is never readable.
+    // ============================================================================
+    match /world_map_snapshots/{userId} {
+      allow get: if isOwner(userId);
+      allow list, write: if false;
+      match /chunks/{chunkId} {
+        allow get: if isOwner(userId);
+        allow list, write: if false;
+      }
+    }
+
+    // ============================================================================
     // ENTITLEMENT USAGE (audit 2026-10-11): server-owned counters behind the
     // membership caps (functions entitlements/usage.ts, spendCoins). The owner
     // reads them to show "x of y used"; only the Admin SDK writes.

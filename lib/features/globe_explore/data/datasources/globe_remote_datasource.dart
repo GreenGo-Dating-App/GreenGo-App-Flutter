@@ -6,6 +6,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../domain/entities/globe_user.dart';
 import '../models/globe_user_model.dart';
 import '../network_pin_assembler.dart';
+import '../world_map_snapshot.dart';
 import '../../../profile/data/private_profile.dart';
 
 abstract class GlobeRemoteDataSource {
@@ -15,7 +16,14 @@ abstract class GlobeRemoteDataSource {
   Future<GlobeData> getGlobeData({required String userId});
 }
 
-/// The network ("world") map's reads. Per open, all bounded and in ONE
+/// The network ("world") map's reads.
+///
+/// With a [WorldMapSnapshotSource] (the app) the network pins come from the
+/// server-built hourly snapshot: one doc read per open (owner decision
+/// 2026-10-20). The client assembly below is the FALLBACK, used only when
+/// the snapshot can not be fetched (and by the tests of the shared rules).
+///
+/// Client assembly: per open, all bounded and in ONE
 /// parallel round trip, then the profiles in parallel `whereIn` batches:
 ///
 ///  * own profile (1 doc, shared with [getCurrentUserPin]);
@@ -31,9 +39,16 @@ abstract class GlobeRemoteDataSource {
 ///    from a short session cache on a reopen / refresh.
 class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
 
-  GlobeRemoteDataSourceImpl({required this.firestore, DateTime Function()? now})
-      : _now = now ?? DateTime.now;
+  GlobeRemoteDataSourceImpl({
+    required this.firestore,
+    this.snapshotSource,
+    DateTime Function()? now,
+  }) : _now = now ?? DateTime.now;
   final FirebaseFirestore firestore;
+
+  /// Server snapshot of the network pins; null = always assemble on the
+  /// device.
+  final WorldMapSnapshotSource? snapshotSource;
   final DateTime Function() _now;
 
   static const int _whereInChunk = 30;
@@ -81,6 +96,29 @@ class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
 
   @override
   Future<GlobeData> getGlobeData({required String userId}) async {
+    final source = snapshotSource;
+    if (source != null) {
+      try {
+        final results = await Future.wait<Object>([
+          getCurrentUserPin(userId: userId),
+          source.load(userId),
+        ]);
+        return GlobeData(
+          currentUser: results[0] as GlobeUser,
+          matchedUsers: results[1] as List<GlobeUser>,
+          discoveryUsers: const [],
+        );
+      } catch (_) {
+        // Fall through: assemble on the device (own-pin failures rethrow
+        // from there as before).
+      }
+    }
+    return _assembleOnDevice(userId);
+  }
+
+  /// The pre-snapshot path: reads the relations and profiles and applies
+  /// [assembleNetworkPins] here.
+  Future<GlobeData> _assembleOnDevice(String userId) async {
     if (_cacheOwner != userId) {
       _profiles.clear();
       _cacheOwner = userId;
