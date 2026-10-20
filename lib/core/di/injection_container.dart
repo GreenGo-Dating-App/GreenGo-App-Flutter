@@ -127,6 +127,7 @@ import '../../features/gamification/presentation/bloc/gamification_bloc.dart';
 // Globe Explore
 import '../../features/globe_explore/data/datasources/globe_remote_datasource.dart';
 import '../../features/globe_explore/data/repositories/globe_repository_impl.dart';
+import '../../features/globe_explore/data/world_map_snapshot.dart';
 import '../../features/globe_explore/domain/repositories/globe_repository.dart';
 import '../../features/globe_explore/domain/usecases/get_globe_data.dart';
 import '../../features/globe_explore/presentation/bloc/globe_bloc.dart';
@@ -828,7 +829,11 @@ Future<void> init() async {
   //! Features - Globe Explore
   // Data sources
   sl.registerLazySingleton<GlobeRemoteDataSource>(
-    () => GlobeRemoteDataSourceImpl(firestore: sl()),
+    () => GlobeRemoteDataSourceImpl(
+      firestore: sl(),
+      // Hourly server-built pins (one doc read); device assembly = fallback.
+      snapshotSource: WorldMapSnapshotSource(firestore: sl()),
+    ),
   );
 
   // Repository

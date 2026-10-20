@@ -1,0 +1,1383 @@
+{
+  "_doc": "Shared by functions/__tests__/unit/worldMapSnapshot.test.ts (server, src/globe/worldMapSnapshot.ts) and test/unit/globe/world_map_snapshot_test.dart (client assembler + snapshot parsing). Timestamps are {\"_ts\": epochMillis}. A pin matches when |lat - expected.lat| <= tol and |lng - expected.lng| <= tol.",
+  "userId": "me",
+  "following": [
+    {
+      "id": "p_exact",
+      "isStore": false
+    },
+    {
+      "id": "p_exact_noprecise",
+      "isStore": false
+    },
+    {
+      "id": "p_approx",
+      "isStore": false
+    },
+    {
+      "id": "p_default",
+      "isStore": false
+    },
+    {
+      "id": "p_country",
+      "isStore": false
+    },
+    {
+      "id": "p_unknown_disc",
+      "isStore": false
+    },
+    {
+      "id": "p_stale_precise",
+      "isStore": false
+    },
+    {
+      "id": "p_legacy_noapprox",
+      "isStore": false
+    },
+    {
+      "id": "p_hidden",
+      "isStore": false
+    },
+    {
+      "id": "p_inactive",
+      "isStore": false
+    },
+    {
+      "id": "p_incog",
+      "isStore": false
+    },
+    {
+      "id": "p_incog_noexp",
+      "isStore": false
+    },
+    {
+      "id": "p_incog_expired",
+      "isStore": false
+    },
+    {
+      "id": "p_ghost",
+      "isStore": false
+    },
+    {
+      "id": "p_noloc",
+      "isStore": false
+    },
+    {
+      "id": "p_unknown_country",
+      "isStore": false
+    },
+    {
+      "id": "p_blocked",
+      "isStore": false
+    },
+    {
+      "id": "p_traveler",
+      "isStore": false
+    },
+    {
+      "id": "p_traveler_country",
+      "isStore": false
+    },
+    {
+      "id": "p_traveler_expired",
+      "isStore": false
+    },
+    {
+      "id": "p_multi",
+      "isStore": false
+    },
+    {
+      "id": "p_noprofile",
+      "isStore": false
+    },
+    {
+      "id": "b_biz",
+      "isStore": false
+    },
+    {
+      "id": "b_store_flag",
+      "isStore": true
+    },
+    {
+      "id": "b_cover",
+      "isStore": false
+    },
+    {
+      "id": "b_noaddr",
+      "isStore": false
+    },
+    {
+      "id": "b_banned",
+      "isStore": false
+    },
+    {
+      "id": "b_inactive",
+      "isStore": false
+    }
+  ],
+  "followers": [
+    "p_multi",
+    "p_blocked_me",
+    "me",
+    "p_online"
+  ],
+  "chats": [
+    "p_multi",
+    "b_biz",
+    "p_online",
+    "me"
+  ],
+  "blocked": [
+    "p_blocked",
+    "p_blocked_me"
+  ],
+  "profiles": {
+    "p_exact": {
+      "displayName": "p_exact",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_exact.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "globeDiscoverability": "exact",
+      "preciseLocation": {
+        "lat": 41.9012,
+        "lng": 12.4991
+      }
+    },
+    "p_exact_noprecise": {
+      "displayName": "p_exact_noprecise",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_exact_noprecise.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "globeDiscoverability": "exact"
+    },
+    "p_approx": {
+      "displayName": "p_approx",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_approx.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "globeDiscoverability": "approximate"
+    },
+    "p_default": {
+      "displayName": "p_default",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_default.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      }
+    },
+    "p_country": {
+      "displayName": "p_country",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_country.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "globeDiscoverability": "country"
+    },
+    "p_unknown_disc": {
+      "displayName": "p_unknown_disc",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_unknown_disc.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "globeDiscoverability": "whatever"
+    },
+    "p_stale_precise": {
+      "displayName": "p_stale_precise",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_stale_precise.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "globeDiscoverability": "approximate",
+      "preciseLocation": {
+        "lat": 41.95123,
+        "lng": 12.40001
+      }
+    },
+    "p_legacy_noapprox": {
+      "displayName": "p_legacy_noapprox",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_legacy_noapprox.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "globeDiscoverability": "approximate"
+    },
+    "p_hidden": {
+      "displayName": "p_hidden",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_hidden.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "globeDiscoverability": "hidden"
+    },
+    "p_inactive": {
+      "displayName": "p_inactive",
+      "accountStatus": "suspended",
+      "photoUrls": [
+        "https://img.example/p_inactive.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      }
+    },
+    "p_incog": {
+      "displayName": "p_incog",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_incog.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "isIncognito": true,
+      "incognitoExpiry": {
+        "_ts": 4102444800000
+      }
+    },
+    "p_incog_noexp": {
+      "displayName": "p_incog_noexp",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_incog_noexp.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "isIncognito": true
+    },
+    "p_incog_expired": {
+      "displayName": "p_incog_expired",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_incog_expired.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "isIncognito": true,
+      "incognitoExpiry": {
+        "_ts": 946684800000
+      }
+    },
+    "p_ghost": {
+      "displayName": "p_ghost",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_ghost.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "isGhostMode": true
+    },
+    "p_noloc": {
+      "displayName": "p_noloc",
+      "accountStatus": "active",
+      "globeDiscoverability": "country"
+    },
+    "p_unknown_country": {
+      "displayName": "p_unknown_country",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_unknown_country.jpg"
+      ],
+      "location": {
+        "latitude": 1,
+        "longitude": 2,
+        "city": "X",
+        "country": "Unknown"
+      }
+    },
+    "p_blocked": {
+      "displayName": "p_blocked",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_blocked.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      }
+    },
+    "p_blocked_me": {
+      "displayName": "p_blocked_me",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_blocked_me.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      }
+    },
+    "p_traveler": {
+      "displayName": "p_traveler",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_traveler.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "isTraveler": true,
+      "travelerExpiry": {
+        "_ts": 4102444800000
+      },
+      "travelerLocation": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "city": "Paris",
+        "country": "France"
+      }
+    },
+    "p_traveler_country": {
+      "displayName": "p_traveler_country",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_traveler_country.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "globeDiscoverability": "country",
+      "isTraveler": true,
+      "travelerExpiry": {
+        "_ts": 4102444800000
+      },
+      "travelerLocation": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "city": "Paris",
+        "country": "France"
+      }
+    },
+    "p_traveler_expired": {
+      "displayName": "p_traveler_expired",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_traveler_expired.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "isTraveler": true,
+      "travelerExpiry": {
+        "_ts": 946684800000
+      },
+      "travelerLocation": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "city": "Paris",
+        "country": "France"
+      }
+    },
+    "p_online": {
+      "displayName": "p_online",
+      "accountStatus": "active",
+      "photoUrls": [],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "isOnline": true
+    },
+    "p_multi": {
+      "displayName": "p_multi",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/p_multi.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      }
+    },
+    "me": {
+      "displayName": "me",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/me.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      }
+    },
+    "b_biz": {
+      "displayName": "Owner",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/Owner.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "isBusiness": true,
+      "businessName": "Cafe Roma",
+      "businessLogoUrl": "https://img.example/logo.png",
+      "coverImageUrl": "https://img.example/cover.png",
+      "businessAddress": {
+        "address": "Via Roma 1",
+        "latitude": 45.4642,
+        "longitude": 9.19,
+        "city": "Milan",
+        "country": "Italy"
+      }
+    },
+    "b_store_flag": {
+      "displayName": "Owner2",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/Owner2.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "businessName": "  Shop  ",
+      "galleryImages": [
+        "",
+        "https://img.example/g1.png"
+      ],
+      "businessAddress": {
+        "address": "Via Roma 1",
+        "latitude": 45.4642,
+        "longitude": 9.19,
+        "city": "Milan",
+        "country": "Italy"
+      }
+    },
+    "b_cover": {
+      "displayName": "Owner3",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/Owner3.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "isBusiness": true,
+      "coverImageUrl": " https://img.example/cover3.png ",
+      "businessAddress": {
+        "address": "Via Roma 1",
+        "latitude": 45.4642,
+        "longitude": 9.19,
+        "city": "",
+        "country": ""
+      }
+    },
+    "b_noaddr": {
+      "displayName": "b_noaddr",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/b_noaddr.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "isBusiness": true,
+      "businessName": "NoAddr",
+      "globeDiscoverability": "country"
+    },
+    "b_banned": {
+      "displayName": "b_banned",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/b_banned.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "isBusiness": true,
+      "isBanned": true,
+      "businessName": "Banned",
+      "globeDiscoverability": "country",
+      "businessAddress": {
+        "address": "Via Roma 1",
+        "latitude": 45.4642,
+        "longitude": 9.19,
+        "city": "Milan",
+        "country": "Italy"
+      }
+    },
+    "b_inactive": {
+      "displayName": "b_inactive",
+      "accountStatus": "deleted",
+      "photoUrls": [
+        "https://img.example/b_inactive.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "isBusiness": true,
+      "businessAddress": {
+        "address": "Via Roma 1",
+        "latitude": 45.4642,
+        "longitude": 9.19,
+        "city": "Milan",
+        "country": "Italy"
+      }
+    }
+  },
+  "expected": {
+    "p_exact": {
+      "kind": "person",
+      "badges": [
+        "following"
+      ],
+      "lat": 41.9012,
+      "lng": 12.4991,
+      "tol": 0.000001,
+      "name": "p_exact",
+      "photo": "https://img.example/p_exact.jpg",
+      "country": "Italy",
+      "city": "Rome",
+      "disc": "exact",
+      "isOnline": false,
+      "traveler": null
+    },
+    "p_exact_noprecise": {
+      "kind": "person",
+      "badges": [
+        "following"
+      ],
+      "lat": 41.901,
+      "lng": 12.499,
+      "tol": 0.005,
+      "name": "p_exact_noprecise",
+      "photo": "https://img.example/p_exact_noprecise.jpg",
+      "country": "Italy",
+      "city": "Rome",
+      "disc": "exact",
+      "isOnline": false,
+      "traveler": null
+    },
+    "p_approx": {
+      "kind": "person",
+      "badges": [
+        "following"
+      ],
+      "lat": 42.075,
+      "lng": 12.375,
+      "tol": 0.1,
+      "name": "p_approx",
+      "photo": "https://img.example/p_approx.jpg",
+      "country": "Italy",
+      "city": "Rome",
+      "disc": "approximate",
+      "isOnline": false,
+      "traveler": null
+    },
+    "p_default": {
+      "kind": "person",
+      "badges": [
+        "following"
+      ],
+      "lat": 42.075,
+      "lng": 12.375,
+      "tol": 0.1,
+      "name": "p_default",
+      "photo": "https://img.example/p_default.jpg",
+      "country": "Italy",
+      "city": "Rome",
+      "disc": "approximate",
+      "isOnline": false,
+      "traveler": null
+    },
+    "p_country": {
+      "kind": "person",
+      "badges": [
+        "following"
+      ],
+      "lat": 41.87,
+      "lng": 12.56,
+      "tol": 1.5,
+      "name": "p_country",
+      "photo": "https://img.example/p_country.jpg",
+      "country": "Italy",
+      "city": "Rome",
+      "disc": "country",
+      "isOnline": false,
+      "traveler": null
+    },
+    "p_unknown_disc": {
+      "kind": "person",
+      "badges": [
+        "following"
+      ],
+      "lat": 41.87,
+      "lng": 12.56,
+      "tol": 1.5,
+      "name": "p_unknown_disc",
+      "photo": "https://img.example/p_unknown_disc.jpg",
+      "country": "Italy",
+      "city": "Rome",
+      "disc": "country",
+      "isOnline": false,
+      "traveler": null
+    },
+    "p_stale_precise": {
+      "kind": "person",
+      "badges": [
+        "following"
+      ],
+      "lat": 42.075,
+      "lng": 12.375,
+      "tol": 0.1,
+      "name": "p_stale_precise",
+      "photo": "https://img.example/p_stale_precise.jpg",
+      "country": "Italy",
+      "city": "Rome",
+      "disc": "approximate",
+      "isOnline": false,
+      "traveler": null
+    },
+    "p_legacy_noapprox": {
+      "kind": "person",
+      "badges": [
+        "following"
+      ],
+      "lat": 42.075,
+      "lng": 12.375,
+      "tol": 0.1,
+      "name": "p_legacy_noapprox",
+      "photo": "https://img.example/p_legacy_noapprox.jpg",
+      "country": "Italy",
+      "city": "Rome",
+      "disc": "approximate",
+      "isOnline": false,
+      "traveler": null
+    },
+    "p_incog_expired": {
+      "kind": "person",
+      "badges": [
+        "following"
+      ],
+      "lat": 42.075,
+      "lng": 12.375,
+      "tol": 0.1,
+      "name": "p_incog_expired",
+      "photo": "https://img.example/p_incog_expired.jpg",
+      "country": "Italy",
+      "city": "Rome",
+      "disc": "approximate",
+      "isOnline": false,
+      "traveler": null
+    },
+    "p_traveler": {
+      "kind": "person",
+      "badges": [
+        "following"
+      ],
+      "lat": 42.075,
+      "lng": 12.375,
+      "tol": 0.1,
+      "name": "p_traveler",
+      "photo": "https://img.example/p_traveler.jpg",
+      "country": "France",
+      "city": "Rome",
+      "disc": "approximate",
+      "isOnline": false,
+      "traveler": {
+        "country": "France",
+        "homeLat": 41.87,
+        "homeLng": 12.56
+      }
+    },
+    "p_traveler_country": {
+      "kind": "person",
+      "badges": [
+        "following"
+      ],
+      "lat": 46.23,
+      "lng": 2.21,
+      "tol": 1.5,
+      "name": "p_traveler_country",
+      "photo": "https://img.example/p_traveler_country.jpg",
+      "country": "France",
+      "city": "Rome",
+      "disc": "country",
+      "isOnline": false,
+      "traveler": {
+        "country": "France",
+        "homeLat": 41.87,
+        "homeLng": 12.56
+      }
+    },
+    "p_traveler_expired": {
+      "kind": "person",
+      "badges": [
+        "following"
+      ],
+      "lat": 42.075,
+      "lng": 12.375,
+      "tol": 0.1,
+      "name": "p_traveler_expired",
+      "photo": "https://img.example/p_traveler_expired.jpg",
+      "country": "Italy",
+      "city": "Rome",
+      "disc": "approximate",
+      "isOnline": false,
+      "traveler": null
+    },
+    "p_online": {
+      "kind": "person",
+      "badges": [
+        "follower",
+        "chat"
+      ],
+      "lat": 42.075,
+      "lng": 12.375,
+      "tol": 0.1,
+      "name": "p_online",
+      "photo": null,
+      "country": "Italy",
+      "city": "Rome",
+      "disc": "approximate",
+      "isOnline": true,
+      "traveler": null
+    },
+    "p_multi": {
+      "kind": "person",
+      "badges": [
+        "following",
+        "follower",
+        "chat"
+      ],
+      "lat": 42.075,
+      "lng": 12.375,
+      "tol": 0.1,
+      "name": "p_multi",
+      "photo": "https://img.example/p_multi.jpg",
+      "country": "Italy",
+      "city": "Rome",
+      "disc": "approximate",
+      "isOnline": false,
+      "traveler": null
+    },
+    "b_biz": {
+      "kind": "business",
+      "badges": [
+        "following",
+        "chat"
+      ],
+      "lat": 45.4642,
+      "lng": 9.19,
+      "tol": 1e-9,
+      "name": "Cafe Roma",
+      "photo": "https://img.example/logo.png",
+      "country": "Italy",
+      "city": "Milan",
+      "isOnline": false,
+      "traveler": null
+    },
+    "b_store_flag": {
+      "kind": "business",
+      "badges": [
+        "following"
+      ],
+      "lat": 45.4642,
+      "lng": 9.19,
+      "tol": 1e-9,
+      "name": "Shop",
+      "photo": "https://img.example/g1.png",
+      "country": "Italy",
+      "city": "Milan",
+      "isOnline": false,
+      "traveler": null
+    },
+    "b_cover": {
+      "kind": "business",
+      "badges": [
+        "following"
+      ],
+      "lat": 45.4642,
+      "lng": 9.19,
+      "tol": 1e-9,
+      "name": "Owner3",
+      "photo": "https://img.example/cover3.png",
+      "country": "Unknown",
+      "city": "Unknown",
+      "isOnline": false,
+      "traveler": null
+    },
+    "b_noaddr": {
+      "kind": "person",
+      "badges": [
+        "following"
+      ],
+      "lat": 41.87,
+      "lng": 12.56,
+      "tol": 1.5,
+      "name": "b_noaddr",
+      "photo": "https://img.example/b_noaddr.jpg",
+      "country": "Italy",
+      "city": "Rome",
+      "disc": "country",
+      "isOnline": false,
+      "traveler": null
+    },
+    "b_banned": {
+      "kind": "person",
+      "badges": [
+        "following"
+      ],
+      "lat": 41.87,
+      "lng": 12.56,
+      "tol": 1.5,
+      "name": "b_banned",
+      "photo": "https://img.example/b_banned.jpg",
+      "country": "Italy",
+      "city": "Rome",
+      "disc": "country",
+      "isOnline": false,
+      "traveler": null
+    }
+  },
+  "excluded": [
+    "p_hidden",
+    "p_inactive",
+    "p_incog",
+    "p_incog_noexp",
+    "p_ghost",
+    "p_noloc",
+    "p_unknown_country",
+    "p_blocked",
+    "p_blocked_me",
+    "p_noprofile",
+    "me",
+    "b_inactive"
+  ],
+  "chatPartnerCases": [
+    {
+      "name": "plain chat, me as userId1",
+      "conv": {
+        "userId1": "me",
+        "userId2": "other",
+        "lastMessage": {
+          "content": "hi"
+        }
+      },
+      "expected": "other"
+    },
+    {
+      "name": "me as userId2",
+      "conv": {
+        "userId1": "other",
+        "userId2": "me",
+        "lastMessage": {
+          "content": "hi"
+        }
+      },
+      "expected": "other"
+    },
+    {
+      "name": "no message yet",
+      "conv": {
+        "userId1": "me",
+        "userId2": "other",
+        "lastMessage": null
+      },
+      "expected": null
+    },
+    {
+      "name": "support thread",
+      "conv": {
+        "userId1": "me",
+        "userId2": "other",
+        "lastMessage": {
+          "content": "hi"
+        },
+        "conversationType": "support"
+      },
+      "expected": null
+    },
+    {
+      "name": "group thread",
+      "conv": {
+        "userId1": "me",
+        "userId2": "other",
+        "lastMessage": {
+          "content": "hi"
+        },
+        "conversationType": "group"
+      },
+      "expected": null
+    },
+    {
+      "name": "deleted for everyone",
+      "conv": {
+        "userId1": "me",
+        "userId2": "other",
+        "lastMessage": {
+          "content": "hi"
+        },
+        "isDeleted": true
+      },
+      "expected": null
+    },
+    {
+      "name": "deleted for me",
+      "conv": {
+        "userId1": "me",
+        "userId2": "other",
+        "lastMessage": {
+          "content": "hi"
+        },
+        "deletedFor": {
+          "me": true
+        }
+      },
+      "expected": null
+    },
+    {
+      "name": "deleted for the other only",
+      "conv": {
+        "userId1": "me",
+        "userId2": "other",
+        "lastMessage": {
+          "content": "hi"
+        },
+        "deletedFor": {
+          "other": true
+        }
+      },
+      "expected": "other"
+    },
+    {
+      "name": "not visible to me",
+      "conv": {
+        "userId1": "me",
+        "userId2": "other",
+        "lastMessage": {
+          "content": "hi"
+        },
+        "visibleTo": [
+          "other"
+        ]
+      },
+      "expected": null
+    },
+    {
+      "name": "visible to me",
+      "conv": {
+        "userId1": "me",
+        "userId2": "other",
+        "lastMessage": {
+          "content": "hi"
+        },
+        "visibleTo": [
+          "me",
+          "other"
+        ]
+      },
+      "expected": "other"
+    },
+    {
+      "name": "not a member",
+      "conv": {
+        "userId1": "a",
+        "userId2": "b",
+        "lastMessage": {
+          "content": "hi"
+        }
+      },
+      "expected": null
+    },
+    {
+      "name": "self chat",
+      "conv": {
+        "userId1": "me",
+        "userId2": "me",
+        "lastMessage": {
+          "content": "hi"
+        }
+      },
+      "expected": null
+    }
+  ],
+  "parseCases": [
+    {
+      "pin": {
+        "id": "a",
+        "kind": "person",
+        "lat": 42.1,
+        "lng": 12.3,
+        "name": "Ana",
+        "photo": "https://img.example/a.jpg",
+        "badges": [
+          "following",
+          "chat"
+        ],
+        "country": "Italy",
+        "city": "Rome",
+        "disc": "approximate",
+        "isOnlineAtBuild": true
+      },
+      "expected": {
+        "ok": true,
+        "isBusiness": false,
+        "relations": [
+          "following",
+          "chat"
+        ],
+        "online": true,
+        "traveler": null
+      }
+    },
+    {
+      "pin": {
+        "id": "b",
+        "kind": "business",
+        "lat": 45.4642,
+        "lng": 9.19,
+        "name": "Cafe",
+        "photo": null,
+        "badges": [
+          "following"
+        ],
+        "country": "Italy",
+        "city": "Milan",
+        "isOnlineAtBuild": false
+      },
+      "expected": {
+        "ok": true,
+        "isBusiness": true,
+        "relations": [
+          "following"
+        ],
+        "online": false,
+        "traveler": null
+      }
+    },
+    {
+      "pin": {
+        "id": "t",
+        "kind": "person",
+        "lat": 48.9,
+        "lng": 2.4,
+        "name": "Tom",
+        "photo": null,
+        "badges": [
+          "follower"
+        ],
+        "country": "France",
+        "city": "Rome",
+        "disc": "country",
+        "isOnlineAtBuild": false,
+        "traveler": {
+          "country": "France",
+          "homeLat": 41.87,
+          "homeLng": 12.56
+        }
+      },
+      "expected": {
+        "ok": true,
+        "isBusiness": false,
+        "relations": [
+          "follower"
+        ],
+        "online": false,
+        "traveler": {
+          "country": "France",
+          "homeLat": 41.87,
+          "homeLng": 12.56
+        }
+      }
+    },
+    {
+      "pin": {
+        "id": "x",
+        "kind": "person",
+        "lat": "nope",
+        "lng": 2,
+        "name": "Bad",
+        "badges": [
+          "following"
+        ]
+      },
+      "expected": {
+        "ok": false
+      }
+    },
+    {
+      "pin": {
+        "id": "",
+        "kind": "person",
+        "lat": 1,
+        "lng": 2,
+        "name": "NoId",
+        "badges": [
+          "following"
+        ]
+      },
+      "expected": {
+        "ok": false
+      }
+    },
+    {
+      "pin": {
+        "id": "y",
+        "kind": "person",
+        "lat": 95,
+        "lng": 2,
+        "name": "OutOfRange",
+        "badges": [
+          "following"
+        ]
+      },
+      "expected": {
+        "ok": false
+      }
+    },
+    {
+      "pin": {
+        "id": "z",
+        "kind": "person",
+        "lat": 1,
+        "lng": 2,
+        "name": "NoBadge",
+        "badges": []
+      },
+      "expected": {
+        "ok": false
+      }
+    },
+    {
+      "pin": {
+        "id": "u",
+        "kind": "person",
+        "lat": 1,
+        "lng": 2,
+        "name": "Unknown badge",
+        "badges": [
+          "enemy",
+          "chat"
+        ]
+      },
+      "expected": {
+        "ok": true,
+        "isBusiness": false,
+        "relations": [
+          "chat"
+        ],
+        "online": false,
+        "traveler": null
+      }
+    }
+  ]
+}
