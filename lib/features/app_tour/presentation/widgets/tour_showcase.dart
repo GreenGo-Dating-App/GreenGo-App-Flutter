@@ -21,6 +21,8 @@ class TourShowcase extends StatelessWidget {
     this.targetShapeBorder,
     this.targetPadding = EdgeInsets.zero,
     this.tooltipPosition,
+    this.enableAutoScroll,
+    this.scrollAlignment = 0.5,
     super.key,
   });
 
@@ -34,9 +36,20 @@ class TourShowcase extends StatelessWidget {
   final EdgeInsets targetPadding;
   final TooltipPosition? tooltipPosition;
 
+  /// Scrolls the target into view before its step shows (null = the
+  /// ShowCaseWidget's setting). A step whose target sits below the fold
+  /// otherwise anchors its bubble off screen.
+  final bool? enableAutoScroll;
+
+  /// Where the target lands in its scroll view when [enableAutoScroll]
+  /// (0 = top, 1 = bottom): near the top leaves room for the bubble below.
+  final double scrollAlignment;
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
+    final bubbleWidth =
+        GestureTooltip.widthFor(MediaQuery.sizeOf(context).width);
     final controller = TourController.instance;
 
     void skip() {
@@ -49,8 +62,10 @@ class TourShowcase extends StatelessWidget {
 
     return Showcase.withWidget(
       key: showcaseKey,
-      width: GestureTooltip.width,
+      width: bubbleWidth,
       height: GestureTooltip.height,
+      enableAutoScroll: enableAutoScroll,
+      scrollAlignment: scrollAlignment,
       targetBorderRadius: targetBorderRadius,
       targetShapeBorder: targetShapeBorder ??
           const RoundedRectangleBorder(
@@ -69,6 +84,7 @@ class TourShowcase extends StatelessWidget {
         onSkip: skip,
         nextLabel: l10n?.tourNext ?? 'Next',
         skipLabel: l10n?.tourSkip ?? 'Skip',
+        maxWidth: bubbleWidth,
       ),
       child: child,
     );

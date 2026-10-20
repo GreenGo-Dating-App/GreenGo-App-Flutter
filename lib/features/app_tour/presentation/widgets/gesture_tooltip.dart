@@ -21,8 +21,13 @@ class GestureTooltip extends StatelessWidget {
     required this.onNext,
     this.nextLabel = 'Next',
     this.skipLabel = 'Skip',
+    this.maxWidth = width,
     super.key,
   });
+
+  /// The bubble's width: [width], narrowed on small screens (see
+  /// [widthFor]) so it never runs past the screen edge.
+  final double maxWidth;
 
   final GlobalKey showcaseKey;
   final String title;
@@ -36,6 +41,10 @@ class GestureTooltip extends StatelessWidget {
   static const double width = 300;
   static const double height = 220;
 
+  /// The bubble width that fits [screenWidth] with a 16 px margin each side.
+  static double widthFor(double screenWidth) =>
+      (screenWidth - 32).clamp(200.0, width);
+
   @override
   Widget build(BuildContext context) {
     final (stepIndex, stepCount) =
@@ -43,7 +52,7 @@ class GestureTooltip extends StatelessWidget {
     return Material(
       color: Colors.transparent,
       child: Container(
-        width: width,
+        width: maxWidth,
         padding: const EdgeInsets.fromLTRB(16, 14, 16, 10),
         decoration: BoxDecoration(
           color: AppColors.charcoal,

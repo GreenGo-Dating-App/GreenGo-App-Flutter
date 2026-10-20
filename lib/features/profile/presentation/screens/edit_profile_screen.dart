@@ -593,6 +593,10 @@ class EditProfileScreen extends StatelessWidget {
                         showcaseKey: TourKeys.privacyIncognito,
                         title: AppLocalizations.of(context)!.tourPrivacyIncognitoTitle,
                         description: AppLocalizations.of(context)!.tourPrivacyIncognitoDesc,
+                        // Scroll each step into view near the top so the
+                        // bubble fits below it (it ran off small screens).
+                        enableAutoScroll: true,
+                        scrollAlignment: _kPrivacyTourScrollAlignment,
                         child: _IncognitoToggleCard(
                           profile: activeProfile,
                           onToggle: (enabled) => _toggleIncognito(context, activeProfile, enabled),
@@ -605,6 +609,9 @@ class EditProfileScreen extends StatelessWidget {
                         showcaseKey: TourKeys.privacyGlobe,
                         title: AppLocalizations.of(context)!.tourPrivacyGlobeTitle,
                         description: AppLocalizations.of(context)!.tourPrivacyGlobeDesc,
+                        enableAutoScroll: true,
+                        // The tallest card: its top at the top of the view.
+                        scrollAlignment: 0,
                         child: _GlobeDiscoverabilityCard(
                           profile: activeProfile,
                           onChanged: (level) =>
@@ -618,6 +625,8 @@ class EditProfileScreen extends StatelessWidget {
                         showcaseKey: TourKeys.privacyTraveler,
                         title: AppLocalizations.of(context)!.tourPrivacyTravelerTitle,
                         description: AppLocalizations.of(context)!.tourPrivacyTravelerDesc,
+                        enableAutoScroll: true,
+                        scrollAlignment: _kPrivacyTourScrollAlignment,
                         child: _TravelerToggleCard(
                           profile: activeProfile,
                           onActivate: () => _activateTraveler(context, activeProfile),
@@ -2376,6 +2385,11 @@ class EditProfileScreen extends StatelessWidget {
 }
 
 /// Traveler toggle card widget
+/// Privacy & location tour: where a step's card lands when it is scrolled
+/// into view (0 = top of the list). Near the top, so the 220 px bubble fits
+/// below it even on a 320x640 screen.
+const double _kPrivacyTourScrollAlignment = 0.1;
+
 class _TravelerToggleCard extends StatelessWidget {
 
   const _TravelerToggleCard({

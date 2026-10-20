@@ -238,6 +238,8 @@ class TourAnchor extends StatelessWidget {
     this.targetShapeBorder,
     this.targetPadding = EdgeInsets.zero,
     this.tooltipPosition,
+    this.enableAutoScroll,
+    this.scrollAlignment = 0.5,
     super.key,
   });
 
@@ -251,6 +253,10 @@ class TourAnchor extends StatelessWidget {
   final EdgeInsets targetPadding;
   final TooltipPosition? tooltipPosition;
 
+  /// See [TourShowcase.enableAutoScroll] / [TourShowcase.scrollAlignment].
+  final bool? enableAutoScroll;
+  final double scrollAlignment;
+
   @override
   Widget build(BuildContext context) {
     if (!PageTourScope.isArmed(context, tourId)) return child;
@@ -262,6 +268,8 @@ class TourAnchor extends StatelessWidget {
       targetShapeBorder: targetShapeBorder,
       targetPadding: targetPadding,
       tooltipPosition: tooltipPosition,
+      enableAutoScroll: enableAutoScroll,
+      scrollAlignment: scrollAlignment,
       child: child,
     );
   }
