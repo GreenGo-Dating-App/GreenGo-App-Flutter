@@ -99,6 +99,9 @@ class GeoRingScanner<T> {
   bool get lastRingComplete => _lastComplete;
   bool _lastComplete = false;
 
+  /// Distinct documents read so far (what Firestore bills for).
+  int get docsRead => _fetched.length;
+
   /// Number of parallel read rounds issued so far (for callers' latency caps).
   int get rounds => _rounds;
 

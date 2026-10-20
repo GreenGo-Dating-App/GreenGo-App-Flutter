@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -344,6 +345,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   void _onOwnProfileChanged() {
     if (!mounted || !_effectiveShowBusinesses) return;
     if (_viewerLocation != _bizMemoViewer) setState(() {});
+    // A no-op unless the viewer really moved (> 1 km, see _doStartBizGeo).
     unawaited(_startBizGeo());
   }
 
@@ -401,32 +403,56 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     final center = BusinessGeoPager.searchCenter(_viewerLocation);
     if (center == null) return; // unknown location: people-pool fallback
     final radius = _distanceFilterKm;
+    // Same search when the centre moved less than 1 km: GPS jitter and
+    // unrelated own-profile updates used to restart the whole ring scan.
     if (!force &&
         _bizPager != null &&
-        center == _bizPagerCenter &&
+        !BusinessGeoPager.centerMoved(center, _bizPagerCenter) &&
         radius == _bizPagerRadius) {
       return;
     }
-    final generation = ++_bizGeneration;
-    final Set<String> blocked;
-    try {
-      blocked =
-          await di.sl<BlockedUsersService>().getBlockedUserIds(widget.userId);
-    } catch (_) {
-      // Never risk showing a blocked person: use the people pool instead.
-      if (mounted && generation == _bizGeneration) {
-        setState(() => _bizGeoFailed = true);
-      }
+    ++_bizGeneration;
+    final blockedService = di.sl<BlockedUsersService>();
+
+    // Re-opened within the session: repaint what was already loaded (zero
+    // reads) and keep paging from where the last visit stopped.
+    final kept = force
+        ? null
+        : BusinessGeoSessionCache.lookup(
+            viewerId: widget.userId, center: center, radiusKm: radius);
+    if (force) BusinessGeoSessionCache.clear();
+    if (kept != null) {
+      final hidden = blockedService.lastKnownBlockedIds(widget.userId);
+      kept.pager.addBlockedIds(hidden);
+      setState(() {
+        _bizPager = kept.pager;
+        _bizPagerCenter = center;
+        _bizPagerRadius = radius;
+        _bizGeoCandidates = [
+          for (final p in kept.loaded)
+            if (!hidden.contains(p.userId)) _candidateFor(p),
+        ];
+        _bizGeoFailed = false;
+        _bizLoading = false;
+        _visibleCount = _pageSize;
+      });
       return;
     }
-    if (!mounted || generation != _bizGeneration) return;
+
+    // The block list is fetched IN PARALLEL with the first ring (it used to
+    // be awaited first: one more serial round trip on a cold open). The scan
+    // starts with the last known set; the fresh one is applied before
+    // anything is painted (see _bizLoadMore).
+    _bizBlockedReady = blockedService
+        .getBlockedUserIds(widget.userId)
+        .then<Set<String>?>((ids) => ids, onError: (_) => null);
     setState(() {
       _bizPager = BusinessGeoPager.forViewer(
         firestore: FirebaseFirestore.instance,
         viewerId: widget.userId,
         viewer: _viewerLocation,
         radiusKm: radius,
-        blockedIds: blocked,
+        blockedIds: blockedService.lastKnownBlockedIds(widget.userId),
       );
       _bizPagerCenter = center;
       _bizPagerRadius = radius;
@@ -438,6 +464,10 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     await _bizLoadMore();
   }
 
+  // The fresh block list for the running search (a null result = it could
+  // not be read: never risk showing a blocked person, use the pool instead).
+  Future<Set<String>?>? _bizBlockedReady;
+
   /// Appends the next page of nearby businesses (endless scroll).
   Future<void> _bizLoadMore() async {
     final pager = _bizPager;
@@ -445,9 +475,32 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     final generation = _bizGeneration;
     _bizLoading = true;
     try {
-      final page = await pager.nextPage();
+      final first = _bizGeoCandidates == null;
+      // First page: paint as soon as the first ring returns ANY business
+      // (it used to wait until 20 were found, up to 12 ring scans in a
+      // sparse area); the footer spinner pages the rest in right away.
+      final pageF = pager.nextPage(minResults: first ? 1 : null);
+      final blockedF = _bizBlockedReady;
+      final results = await Future.wait<Object?>([
+        pageF,
+        if (blockedF != null) blockedF,
+      ]);
       if (!mounted || generation != _bizGeneration) return;
-      final have = _bizGeoCandidates ?? const <MatchCandidate>[];
+      var page = results[0] as List<Profile>;
+      if (blockedF != null) {
+        final blocked = results[1] as Set<String>?;
+        if (blocked == null) {
+          setState(() => _bizGeoFailed = true);
+          return;
+        }
+        _bizBlockedReady = null;
+        pager.addBlockedIds(blocked);
+        page = page.where((p) => !blocked.contains(p.userId)).toList();
+      }
+      final hidden = pager.blockedIds;
+      final have = (_bizGeoCandidates ?? const <MatchCandidate>[])
+          .where((c) => !hidden.contains(c.profile.userId))
+          .toList();
       final ids = {for (final c in have) c.profile.userId};
       setState(() {
         _bizGeoCandidates = [
@@ -456,6 +509,13 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
             if (ids.add(p.userId)) _candidateFor(p),
         ];
       });
+      BusinessGeoSessionCache.save(
+          pager, [for (final c in _bizGeoCandidates!) c.profile]);
+      if (kDebugMode) {
+        debugPrint('[BizGeo] page ${page.length} (total '
+            '${_bizGeoCandidates!.length}) reads=${pager.docsRead} '
+            'rounds=${pager.readRounds}');
+      }
     } catch (_) {
       if (mounted && generation == _bizGeneration) {
         setState(() => _bizGeoFailed = true);
@@ -536,6 +596,27 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     if (!mounted) return;
     unawaited(_loadSelf());
     unawaited(_startBizGeo());
+    // Businesses mode needs the viewer's location: ask the own-profile store
+    // for it NOW (one shared read, usually a cache hit) instead of waiting
+    // for another screen to publish it, meanwhile showing the people-pool
+    // fallback and then restarting.
+    if (_effectiveShowBusinesses &&
+        BusinessGeoPager.searchCenter(_viewerLocation) == null) {
+      try {
+        await OwnProfileStore.instance
+            .current(widget.userId)
+            .timeout(const Duration(seconds: 4));
+      } catch (_) {
+        // Unknown location: the people-pool fallback below.
+      }
+      if (!mounted) return;
+      unawaited(_startBizGeo());
+    }
+    // The people pool (up to 500 profiles) is not read at all while
+    // Businesses mode is served by the geo search: it is loaded on demand
+    // (switch to People, geo fallback; see _ensurePool).
+    if (_bizGeoMode) return;
+    _poolRequested = true;
     // The cached grid is only a faithful preview of the DEFAULT grid: a seeded
     // (saved-search / interest) grid, a network-filtered one or the business
     // view (businesses sit deep in the pool, past the saved ids) would flash
@@ -713,7 +794,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
         _visibleCount = _pageSize;
       });
       unawaited(_startBizGeo(force: true));
-      await _load();
+      await _reloadPool();
     } catch (_) {
       // Keep the cached filters.
     }
@@ -729,7 +810,29 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   // (e.g. the filters were re-validated mid-flight) is discarded.
   int _loadGeneration = 0;
 
+  // Whether the people pool was requested (see _ensurePool).
+  bool _poolRequested = false;
+
+  /// Loads the people pool once when the grid needs it (People mode, or the
+  /// Businesses fallback) after it was skipped while the geo search served
+  /// Businesses mode.
+  void _ensurePool() {
+    if (_poolRequested || _candidates != null) return;
+    unawaited(_load());
+  }
+
+  /// Reloads the people pool after a filter change: now when it is on
+  /// screen, else lazily the next time it is needed.
+  Future<void> _reloadPool() async {
+    if (_bizGeoMode) {
+      _poolRequested = false;
+      return;
+    }
+    await _load();
+  }
+
   Future<void> _load({bool forceRefresh = false}) async {
+    _poolRequested = true;
     final generation = ++_loadGeneration;
     try {
       // The distance-ordered discovery pool, with the "My Network" set in
@@ -984,7 +1087,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     });
 
     unawaited(_startBizGeo(force: true));
-    await _load();
+    await _reloadPool();
   }
 
   // ── Saved searches ─────────────────────────────────────────────────────────
@@ -1258,7 +1361,8 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
                 color: AppColors.richGold,
                 backgroundColor: AppColors.backgroundCard,
                 onRefresh: () => Future.wait([
-                  _load(forceRefresh: true),
+                  // The people pool is only re-read when it is on screen.
+                  if (!_bizGeoMode) _load(forceRefresh: true),
                   // Also retries a geo search that failed (e.g. index
                   // still building) in Businesses mode.
                   if (_effectiveShowBusinesses) _startBizGeo(force: true),
@@ -1367,6 +1471,13 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     if (bizGeo && _bizPager == null) {
       WidgetsBinding.instance
           .addPostFrameCallback((_) => unawaited(_startBizGeo()));
+    }
+    // The people pool is needed (People mode, or the Businesses fallback)
+    // but was skipped while the geo search served Businesses mode.
+    if (!bizGeo && candidates == null && !_poolRequested) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _ensurePool();
+      });
     }
 
     // Loading — a grid of skeleton tiles.

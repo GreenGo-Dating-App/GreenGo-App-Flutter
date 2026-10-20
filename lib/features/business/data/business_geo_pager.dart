@@ -32,11 +32,12 @@ class BusinessGeoPager {
     required this.lat,
     required this.lng,
     this.radiusKm,
-    this.blockedIds = const <String>{},
+    Set<String> blockedIds = const <String>{},
     this.pageSize = defaultPageSize,
     DateTime Function()? clock,
     GetOptions options = const GetOptions(),
-  }) : _clock = clock ?? DateTime.now {
+  })  : _blocked = {...blockedIds},
+        _clock = clock ?? DateTime.now {
     final radiusM = radiusKm == null ? null : radiusKm! * 1000.0;
     _scanner = GeoRingScanner<Profile>(
       base: firestore
@@ -106,7 +107,11 @@ class BusinessGeoPager {
   final double lat;
   final double lng;
   final int? radiusKm;
-  final Set<String> blockedIds;
+  final Set<String> _blocked;
+
+  /// The ids hidden from this search (blocked both ways). Grows through
+  /// [addBlockedIds]; never shrinks during a search.
+  Set<String> get blockedIds => Set.unmodifiable(_blocked);
   final int pageSize;
   final DateTime Function() _clock;
 
@@ -132,7 +137,7 @@ class BusinessGeoPager {
       if (!DiscoveryVisibility.isVisible(
         p,
         viewerId: viewerId,
-        blockedIds: blockedIds,
+        blockedIds: _blocked,
         allowSupport: true,
         now: _clock(),
       )) {
@@ -149,17 +154,42 @@ class BusinessGeoPager {
     return _haversineKm(lat, lng, a.latitude, a.longitude);
   }
 
+  /// Documents read from Firestore so far by this search (each billed once).
+  int get docsRead => _scanner.docsRead;
+
+  /// Sequential read rounds issued so far (each one network round trip; the
+  /// range queries inside a round run in parallel).
+  int get readRounds => _scanner.rounds;
+
+  /// Hides more ids from now on (e.g. the fresh block list arrived after the
+  /// search started with the last known one): drops buffered matches too.
+  /// Callers filter what they already showed.
+  void addBlockedIds(Iterable<String> ids) {
+    _blocked.addAll(ids);
+    _buffer.removeWhere((p) => _blocked.contains(p.userId));
+  }
+
   /// The next page, nearest first (empty when nothing more exists).
-  Future<List<Profile>> nextPage() async {
+  ///
+  /// [minResults] (default [pageSize]) lets the FIRST page return as soon as
+  /// a ring produced that many businesses instead of scanning on until a
+  /// whole page is full: the grid paints the nearest storefronts after one
+  /// ring and the endless-scroll footer fetches the rest. The page never
+  /// holds more than [pageSize].
+  Future<List<Profile>> nextPage({int? minResults}) async {
+    final want = math.min(pageSize, math.max(1, minResults ?? pageSize));
     final radius = radiusKm?.toDouble();
     for (var i = 0;
-        i < _maxScansPerPage && _buffer.length < pageSize && !_done;
+        i < _maxScansPerPage && _buffer.length < want && !_done;
         i++) {
       final ring = await _scanner.next();
       for (final p in ring) {
         // Rings arrive in distance order; anything past the filter is dropped
         // (a later best-effort ring may still hold closer ones, see below).
-        if (radius == null || _km(p) <= radius) _buffer.add(p);
+        if ((radius == null || _km(p) <= radius) &&
+            !_blocked.contains(p.userId)) {
+          _buffer.add(p);
+        }
       }
       if (!_scanner.hasMore) {
         _done = true;
@@ -177,6 +207,22 @@ class BusinessGeoPager {
     return page;
   }
 
+  /// Whether the viewer moved far enough from [a] to [b] for a new search to
+  /// be worth its reads. GPS jitter (and the own-profile document being
+  /// re-published for unrelated fields) used to restart the whole scan, and
+  /// with it the first-page wait, on every few metres of movement.
+  static bool centerMoved(
+    ({double lat, double lng})? a,
+    ({double lat, double lng})? b, {
+    double thresholdKm = kRestartDistanceKm,
+  }) {
+    if (a == null || b == null) return a != b;
+    return _haversineKm(a.lat, a.lng, b.lat, b.lng) > thresholdKm;
+  }
+
+  /// Movement that restarts the search (see [centerMoved]).
+  static const double kRestartDistanceKm = 1.0;
+
   static double _haversineKm(
       double lat1, double lng1, double lat2, double lng2) {
     const r = 6371.0;
@@ -190,4 +236,58 @@ class BusinessGeoPager {
             math.sin(dLng / 2);
     return r * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a));
   }
+}
+
+
+/// One Discover-Businesses search kept for the app session, so re-opening the
+/// screen (or switching People -> Businesses again) repaints the businesses
+/// already loaded with ZERO reads and continues paging from where the
+/// previous visit stopped, instead of scanning the rings again.
+///
+/// A single entry per app session (the last search); reused only for the same
+/// viewer and distance filter, a centre within
+/// [BusinessGeoPager.kRestartDistanceKm] and younger than [ttl].
+class BusinessGeoSessionCache {
+  BusinessGeoSessionCache._();
+
+  static const Duration ttl = Duration(minutes: 10);
+
+  static BusinessGeoSessionEntry? _entry;
+
+  /// The kept search for this viewer / centre / filter, or null.
+  static BusinessGeoSessionEntry? lookup({
+    required String viewerId,
+    required ({double lat, double lng}) center,
+    required int? radiusKm,
+    DateTime? now,
+  }) {
+    final e = _entry;
+    if (e == null) return null;
+    final t = now ?? DateTime.now();
+    if (e.pager.viewerId != viewerId ||
+        e.pager.radiusKm != radiusKm ||
+        t.difference(e.savedAt) > ttl ||
+        BusinessGeoPager.centerMoved(
+            (lat: e.pager.lat, lng: e.pager.lng), center)) {
+      return null;
+    }
+    return e;
+  }
+
+  /// Remembers [pager] and everything it returned so far.
+  static void save(BusinessGeoPager pager, List<Profile> loaded,
+      {DateTime? now}) {
+    _entry = BusinessGeoSessionEntry._(
+        pager, List.unmodifiable(loaded), now ?? DateTime.now());
+  }
+
+  /// Forgets the kept search (sign-out, pull-to-refresh).
+  static void clear() => _entry = null;
+}
+
+class BusinessGeoSessionEntry {
+  BusinessGeoSessionEntry._(this.pager, this.loaded, this.savedAt);
+  final BusinessGeoPager pager;
+  final List<Profile> loaded;
+  final DateTime savedAt;
 }

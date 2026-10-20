@@ -6,6 +6,7 @@ import 'package:flutter/foundation.dart';
 import '../../../../core/cache/last_result_cache.dart';
 import '../../../../core/config/flavor_config.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../business/data/business_geo_pager.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
 import '../../domain/entities/match_preferences.dart';
 import '../../presentation/widgets/network_grid_card.dart';
@@ -38,6 +39,7 @@ class DiscoveryPrefetch {
   /// stacks/memos. Call on sign-out.
   static void reset() {
     _started.clear();
+    BusinessGeoSessionCache.clear();
     try {
       di.sl<DiscoveryRemoteDataSource>().clearAllDiscoveryCaches();
     } catch (_) {
