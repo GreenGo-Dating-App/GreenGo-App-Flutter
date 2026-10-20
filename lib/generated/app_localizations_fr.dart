@@ -26885,27 +26885,6 @@ class AppLocalizationsFr extends AppLocalizations {
       'Vois ton réseau sur une carte du monde.';
 
   @override
-  String get tourWorldMapFiltersTitle => 'Choisis qui tu vois';
-
-  @override
-  String get tourWorldMapFiltersDesc =>
-      'Abonnements, Abonnés, Discussions, Entreprises : combine-les librement.';
-
-  @override
-  String get tourWorldMapPinsTitle => 'Touche une épingle';
-
-  @override
-  String get tourWorldMapPinsDesc =>
-      'Une épingle ouvre le profil ou la vitrine de l\'entreprise.';
-
-  @override
-  String get tourWorldMapZoomTitle => 'Dézoome';
-
-  @override
-  String get tourWorldMapZoomDesc =>
-      'Pince pour voir des pays entiers, touche-en un pour ses événements.';
-
-  @override
   String get tourEventPhasesTitle => 'Phases de prix';
 
   @override
@@ -27293,9 +27272,6 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get tourNameDiscover => 'Découvrir';
-
-  @override
-  String get tourNameWorldMap => 'Carte du monde';
 
   @override
   String get tourNameExplore => 'Explorer';
@@ -27782,10 +27758,6 @@ class AppLocalizationsFr extends AppLocalizations {
   String get xplCreateCommunity => 'Créer une communauté';
 
   @override
-  String get xplEmptyGlobe =>
-      'Votre carte montre les personnes que vous suivez, vos abonnés et vos discussions. Suivez des personnes ou lancez une discussion pour les voir ici.';
-
-  @override
   String get xplEmptyBcCustomers =>
       'Pas encore de nouveaux abonnés ni de messages ce mois-ci. Complétez votre vitrine et mettez-la en avant pour que les clients vous trouvent.';
 
@@ -28047,4 +28019,43 @@ class AppLocalizationsFr extends AppLocalizations {
   String xplFaqGhostA(int count) {
     return 'Les deux masquent votre profil dans Découvrir, dans les suggestions de personnes et sur la carte. Le mode fantôme est gratuit et illimité avec Gold et Platinum, et vous masque aussi dans la recherche par pseudo. Le mode incognito coûte $count pièces pour 24 heures, avec toute formule. Activez-les depuis votre profil.';
   }
+
+  @override
+  String get chatShareLocationConfirmMessage =>
+      'Veux-tu vraiment partager ta position exacte ?';
+
+  @override
+  String get chatShareLocationConfirmShare => 'Partager';
+
+  @override
+  String get tourExploreCoinsTitle => 'Tes pièces';
+
+  @override
+  String get tourExploreCoinsDesc =>
+      'Ton solde de pièces pour les traductions, les cadeaux et les extras. Touche pour ouvrir la boutique de pièces.';
+
+  @override
+  String get tourExploreMembershipTitle => 'Ton abonnement';
+
+  @override
+  String get tourExploreMembershipDesc =>
+      'Ton offre actuelle et ce qu’elle débloque. Touche pour voir les offres et passer à la suivante.';
+
+  @override
+  String get tourExploreCountriesTitle => 'Tes pays';
+
+  @override
+  String get tourExploreCountriesDesc =>
+      'Les pays où tu es allé. Touche pour ouvrir ta carte du monde.';
+
+  @override
+  String get tourExploreCountriesDescNoMap =>
+      'Les pays où tu es allé, comptés à partir de ta position réelle.';
+
+  @override
+  String get tourExploreFollowersTitle => 'Tes abonnés';
+
+  @override
+  String get tourExploreFollowersDesc =>
+      'Le nombre de personnes qui te suivent. Toi seul vois ce chiffre. Touche pour voir qui elles sont.';
 }

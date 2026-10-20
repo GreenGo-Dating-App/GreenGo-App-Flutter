@@ -66,6 +66,26 @@ class TourKeys {
   static final GlobalKey exploreSearch =
       GlobalKey(debugLabel: 'tour_explore_search');
   static final GlobalKey exploreQr = GlobalKey(debugLabel: 'tour_explore_qr');
+  // The 4 stats tiles at the top (owner notes 2026-10-20), first in the tour.
+  static final GlobalKey exploreStatCoins =
+      GlobalKey(debugLabel: 'tour_explore_stat_coins');
+  static final GlobalKey exploreStatMembership =
+      GlobalKey(debugLabel: 'tour_explore_stat_membership');
+  static final GlobalKey exploreStatCountries =
+      GlobalKey(debugLabel: 'tour_explore_stat_countries');
+  static final GlobalKey exploreStatFollowers =
+      GlobalKey(debugLabel: 'tour_explore_stat_followers');
+
+  /// The Explore tour, in display order: the 4 stats tiles, then the header
+  /// actions (search, My Space).
+  static List<GlobalKey> get exploreTour => [
+        exploreStatCoins,
+        exploreStatMembership,
+        exploreStatCountries,
+        exploreStatFollowers,
+        exploreSearch,
+        exploreQr,
+      ];
 
   // ── Tier 2: Notifications screen mini-tour ──
   static final GlobalKey notifHub =
@@ -84,14 +104,6 @@ class TourKeys {
       GlobalKey(debugLabel: 'tour_discover_saved');
   static final GlobalKey discoverWorldMap =
       GlobalKey(debugLabel: 'tour_discover_world_map');
-
-  // ── Tier 2 (v2): World map ──
-  static final GlobalKey worldMapFilters =
-      GlobalKey(debugLabel: 'tour_world_map_filters');
-  static final GlobalKey worldMapPins =
-      GlobalKey(debugLabel: 'tour_world_map_pins');
-  static final GlobalKey worldMapZoom =
-      GlobalKey(debugLabel: 'tour_world_map_zoom');
 
   // ── Tier 2 (v2): paid event detail ──
   static final GlobalKey eventPricePhases =

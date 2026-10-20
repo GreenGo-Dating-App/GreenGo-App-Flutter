@@ -74,6 +74,7 @@ import '../bloc/chat_event.dart';
 import '../bloc/chat_state.dart';
 import '../widgets/forward_message_sheet.dart';
 import '../widgets/message_bubble.dart';
+import '../widgets/share_location_confirm.dart';
 import '../../../../core/widgets/voice_record_send_button.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/services/ai_consent_service.dart';
@@ -932,7 +933,9 @@ class _ChatScreenState extends State<ChatScreen> {
   Future<void> _sendLocation(BuildContext context) async {
     final picked = await Navigator.of(context)
         .push<PickedPlace>(_locationPickerRoute());
-    if (picked == null || !mounted) return;
+    if (picked == null || !mounted || !context.mounted) return;
+    // Confirm before anything is sent (owner notes 2026-10-20).
+    if (!await confirmShareLocation(context) || !mounted) return;
     _addSend(ChatMessageSent(
       content: '${picked.lat},${picked.lng}',
       type: MessageType.location,

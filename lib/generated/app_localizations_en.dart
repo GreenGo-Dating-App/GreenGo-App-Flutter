@@ -26481,27 +26481,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'See your network on a map of the world.';
 
   @override
-  String get tourWorldMapFiltersTitle => 'Choose who you see';
-
-  @override
-  String get tourWorldMapFiltersDesc =>
-      'Following, Followers, Chats, Businesses - mix them as you like.';
-
-  @override
-  String get tourWorldMapPinsTitle => 'Tap a pin';
-
-  @override
-  String get tourWorldMapPinsDesc =>
-      'A pin opens the person\'s profile or the business storefront.';
-
-  @override
-  String get tourWorldMapZoomTitle => 'Zoom out';
-
-  @override
-  String get tourWorldMapZoomDesc =>
-      'Pinch out to see whole countries, tap one for its events.';
-
-  @override
   String get tourEventPhasesTitle => 'Price phases';
 
   @override
@@ -26882,9 +26861,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tourNameDiscover => 'Discover';
-
-  @override
-  String get tourNameWorldMap => 'World map';
 
   @override
   String get tourNameExplore => 'Explore';
@@ -27367,10 +27343,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get xplCreateCommunity => 'Create a community';
 
   @override
-  String get xplEmptyGlobe =>
-      'Your map shows the people you follow, your followers and your chats. Follow people or start a chat to see them here.';
-
-  @override
   String get xplEmptyBcCustomers =>
       'No new followers or messages this month yet. Complete your storefront and promote it so customers can find you.';
 
@@ -27627,4 +27599,43 @@ class AppLocalizationsEn extends AppLocalizations {
   String xplFaqGhostA(int count) {
     return 'Both hide your profile from Discover, people suggestions and the map. Ghost mode is free and unlimited with Gold and Platinum, and also hides you from nickname search. Incognito costs $count coins for 24 hours on any plan. Turn them on in your profile.';
   }
+
+  @override
+  String get chatShareLocationConfirmMessage =>
+      'Are you sure you want to share your exact location?';
+
+  @override
+  String get chatShareLocationConfirmShare => 'Share';
+
+  @override
+  String get tourExploreCoinsTitle => 'Your coins';
+
+  @override
+  String get tourExploreCoinsDesc =>
+      'Your coin balance, used for translations, gifts and extras. Tap to open the coin shop.';
+
+  @override
+  String get tourExploreMembershipTitle => 'Your membership';
+
+  @override
+  String get tourExploreMembershipDesc =>
+      'Your current plan and what it unlocks. Tap to see the plans and upgrade.';
+
+  @override
+  String get tourExploreCountriesTitle => 'Your countries';
+
+  @override
+  String get tourExploreCountriesDesc =>
+      'The countries you have been to. Tap to open your world map.';
+
+  @override
+  String get tourExploreCountriesDescNoMap =>
+      'The countries you have been to, counted from your real location.';
+
+  @override
+  String get tourExploreFollowersTitle => 'Your followers';
+
+  @override
+  String get tourExploreFollowersDesc =>
+      'How many people follow you. Only you see this number. Tap to see who they are.';
 }

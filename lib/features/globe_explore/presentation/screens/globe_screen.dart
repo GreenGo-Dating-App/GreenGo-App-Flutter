@@ -12,10 +12,6 @@ import '../../../../core/utils/user_error.dart';
 import '../../../../core/widgets/interactive_location_map.dart'
     show LocationMapColors;
 import '../../../../generated/app_localizations.dart';
-import '../../../app_tour/presentation/tour_controller.dart';
-import '../../../app_tour/presentation/tour_keys.dart';
-import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
-import '../../../app_tour/presentation/widgets/page_tour_host.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/domain/repositories/events_repository.dart';
@@ -31,8 +27,6 @@ import '../widgets/globe_country_search.dart';
 import '../widgets/globe_filter_chips.dart';
 import '../widgets/globe_map_view.dart';
 import '../widgets/globe_markers.dart';
-import '../../../../features/explore/presentation/screens/network_discovery_screen.dart';
-import '../../../../core/widgets/helpful_empty_state.dart';
 
 /// "My World Map": where the user's network is, on the app's shared map:
 /// the people they follow, their followers, the people they chatted with
@@ -79,19 +73,9 @@ class _GlobeScreenState extends State<GlobeScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    const tour = TourController.worldMapTourId;
-    return PageTourHost(
-      tourId: tour,
-      userId: userId,
-      keys: () => [
-        TourKeys.worldMapFilters,
-        TourKeys.worldMapPins,
-        TourKeys.worldMapZoom,
-      ],
-      // Starts once the map has data (the anchors live in the loaded body).
-      ready: context.select<GlobeBloc, bool>((b) => _dataOf(b.state) != null),
-      startDelay: const Duration(milliseconds: 1200),
-      child: Scaffold(
+    // No tour, hint or empty-state text on the map (owner notes 2026-10-20):
+    // the map, its filter chips and legend only.
+    return Scaffold(
       backgroundColor: LocationMapColors.surface,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
@@ -168,47 +152,15 @@ class _GlobeScreenState extends State<GlobeScreen> {
                   onClusterTapped: (users) => _showClusterSheet(context, users),
                 ),
               ),
-              // Page-tour anchors over the map (no hit testing): the centre
-              // ("tap a pin") and the whole map area ("zoom out").
-              Positioned.fill(
-                child: IgnorePointer(
-                  child: TourAnchor(
-                    tourId: tour,
-                    showcaseKey: TourKeys.worldMapZoom,
-                    title: l10n.tourWorldMapZoomTitle,
-                    description: l10n.tourWorldMapZoomDesc,
-                    gesture: TourGesture.none,
-                    child: const SizedBox.expand(),
-                  ),
-                ),
-              ),
-              Center(
-                child: IgnorePointer(
-                  child: TourAnchor(
-                    tourId: tour,
-                    showcaseKey: TourKeys.worldMapPins,
-                    title: l10n.tourWorldMapPinsTitle,
-                    description: l10n.tourWorldMapPinsDesc,
-                    targetShapeBorder: const CircleBorder(),
-                    child: const SizedBox(width: 140, height: 140),
-                  ),
-                ),
-              ),
               Positioned(
                 top: 8,
                 left: 8,
                 // Leaves room for the zoom controls on the right.
                 right: 60,
-                child: TourAnchor(
-                  tourId: tour,
-                  showcaseKey: TourKeys.worldMapFilters,
-                  title: l10n.tourWorldMapFiltersTitle,
-                  description: l10n.tourWorldMapFiltersDesc,
-                  child: GlobeFilterChips(
-                    selected: filters,
-                    onToggle: (f) =>
-                        context.read<GlobeBloc>().add(GlobeFilterToggled(f)),
-                  ),
+                child: GlobeFilterChips(
+                  selected: filters,
+                  onToggle: (f) =>
+                      context.read<GlobeBloc>().add(GlobeFilterToggled(f)),
                 ),
               ),
               Positioned(
@@ -257,47 +209,10 @@ class _GlobeScreenState extends State<GlobeScreen> {
                   ),
                 ),
               ),
-              // No pins at all (every filter on): explain what fills the
-              // map and how to get people on it.
-              if (data.matchedUsers.isEmpty &&
-                  filters.length == kAllGlobeFilters.length)
-                Positioned(
-                  left: 24,
-                  right: 24,
-                  bottom: 70,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: AppColors.backgroundCard.withValues(alpha: 0.94),
-                      borderRadius: BorderRadius.circular(18),
-                      border: Border.all(
-                        color: AppColors.richGold.withValues(alpha: 0.35),
-                      ),
-                    ),
-                    child: HelpfulEmptyState(
-                      key: const Key('globe_helpful_empty'),
-                      compact: true,
-                      icon: Icons.public,
-                      message: l10n.xplEmptyGlobe,
-                      actions: [
-                        HelpfulEmptyAction(
-                          label: l10n.xplFindPeople,
-                          icon: Icons.travel_explore,
-                          onPressed: () => Navigator.of(context).push(
-                            MaterialPageRoute<void>(
-                              builder: (_) =>
-                                  NetworkDiscoveryScreen(userId: userId),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
             ],
           );
         },
       ),
-    ),
     );
   }
 

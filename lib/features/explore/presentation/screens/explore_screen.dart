@@ -2126,12 +2126,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
     return ShowCaseWidget(
       builder: (showcaseContext) => TourTrigger(
-        // First-time Explore tour: the search and QR header actions.
+        // First-time Explore tour: the 4 stats tiles at the top (coins,
+        // membership, countries, followers), then the search and QR header
+        // actions.
         onVisible: (tourContext) => TourController.instance.maybeStartMiniTour(
           tourContext,
           tourId: TourController.exploreTourId,
           userId: widget.userId,
-          keys: [TourKeys.exploreSearch, TourKeys.exploreQr],
+          keys: TourKeys.exploreTour,
         ),
         child: Scaffold(
       backgroundColor: AppColors.backgroundDark,
@@ -2528,6 +2530,17 @@ class _ExploreScreenState extends State<ExploreScreen> {
           height: 30,
           color: AppGlass.border,
         );
+    // One Explore-tour step per tile: what it shows + tap to open.
+    Widget statStep(
+            GlobalKey key, String title, String description, Widget child) =>
+        TourShowcase(
+          showcaseKey: key,
+          title: title,
+          description: description,
+          gesture: TourGesture.tap,
+          targetBorderRadius: BorderRadius.circular(AppGlass.radiusCard),
+          child: child,
+        );
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 6),
       decoration: BoxDecoration(
@@ -2538,64 +2551,87 @@ class _ExploreScreenState extends State<ExploreScreen> {
       child: Row(
         children: [
           Expanded(
-            child: InkWell(
-              onTap: _openCoinShop,
-              borderRadius: BorderRadius.circular(AppGlass.radiusCard),
-              child: _StatTile(
-                icon: Icons.monetization_on_outlined,
-                value: _coinsStat,
-                label: l10n.statCoins,
-                animate: animate,
-              ),
-            ),
-          ),
-          divider(),
-          Expanded(
-            child: InkWell(
-              onTap: _openMembership,
-              borderRadius: BorderRadius.circular(AppGlass.radiusCard),
-              child: _StatTile(
-                icon: Icons.workspace_premium_outlined,
-                value: _tierStat == null
-                    ? null
-                    : _tierShortLabel(l10n, _tierStat!),
-                label: l10n.statTier,
-                animate: animate,
-              ),
-            ),
-          ),
-          divider(),
-          Expanded(
-            child: InkWell(
-              // Opens the network world map (FlavorConfig.enableWorldMap
-              // withdraws only the tap, never the stat).
-              onTap: FlavorConfig.enableWorldMap ? _openWorldMap : null,
-              borderRadius: BorderRadius.circular(AppGlass.radiusCard),
-              child: _StatTile(
-                icon: Icons.public,
-                value: _countriesStat,
-                label: l10n.statCountries,
-                animate: animate,
-              ),
-            ),
-          ),
-          divider(),
-          Expanded(
-            child: InkWell(
-              key: const Key('explore_stat_followers'),
-              onTap: () => openOwnFollowList(context, widget.userId, 0),
-              borderRadius: BorderRadius.circular(AppGlass.radiusCard),
-              // The signed-in user's OWN followers (owner-only counter).
-              child: OwnFollowersCount(
-                uid: widget.userId,
-                builder: (context, followers) => _StatTile(
-                  icon: Icons.people_alt_outlined,
-                  value: followers == null
-                      ? null
-                      : formatCompactCount(followers,
-                          locale: Localizations.localeOf(context).toString()),
-                  label: l10n.userFollowTabFollowers,
+            child: statStep(
+              TourKeys.exploreStatCoins,
+              l10n.tourExploreCoinsTitle,
+              l10n.tourExploreCoinsDesc,
+              InkWell(
+                onTap: _openCoinShop,
+                borderRadius: BorderRadius.circular(AppGlass.radiusCard),
+                child: _StatTile(
+                  icon: Icons.monetization_on_outlined,
+                  value: _coinsStat,
+                  label: l10n.statCoins,
                   animate: animate,
+                ),
+              ),
+            ),
+          ),
+          divider(),
+          Expanded(
+            child: statStep(
+              TourKeys.exploreStatMembership,
+              l10n.tourExploreMembershipTitle,
+              l10n.tourExploreMembershipDesc,
+              InkWell(
+                onTap: _openMembership,
+                borderRadius: BorderRadius.circular(AppGlass.radiusCard),
+                child: _StatTile(
+                  icon: Icons.workspace_premium_outlined,
+                  value: _tierStat == null
+                      ? null
+                      : _tierShortLabel(l10n, _tierStat!),
+                  label: l10n.statTier,
+                  animate: animate,
+                ),
+              ),
+            ),
+          ),
+          divider(),
+          Expanded(
+            child: statStep(
+              TourKeys.exploreStatCountries,
+              l10n.tourExploreCountriesTitle,
+              FlavorConfig.enableWorldMap
+                  ? l10n.tourExploreCountriesDesc
+                  : l10n.tourExploreCountriesDescNoMap,
+              InkWell(
+                // Opens the network world map (FlavorConfig.enableWorldMap
+                // withdraws only the tap, never the stat).
+                onTap: FlavorConfig.enableWorldMap ? _openWorldMap : null,
+                borderRadius: BorderRadius.circular(AppGlass.radiusCard),
+                child: _StatTile(
+                  icon: Icons.public,
+                  value: _countriesStat,
+                  label: l10n.statCountries,
+                  animate: animate,
+                ),
+              ),
+            ),
+          ),
+          divider(),
+          Expanded(
+            child: statStep(
+              TourKeys.exploreStatFollowers,
+              l10n.tourExploreFollowersTitle,
+              l10n.tourExploreFollowersDesc,
+              InkWell(
+                key: const Key('explore_stat_followers'),
+                onTap: () => openOwnFollowList(context, widget.userId, 0),
+                borderRadius: BorderRadius.circular(AppGlass.radiusCard),
+                // The signed-in user's OWN followers (owner-only counter).
+                child: OwnFollowersCount(
+                  uid: widget.userId,
+                  builder: (context, followers) => _StatTile(
+                    icon: Icons.people_alt_outlined,
+                    value: followers == null
+                        ? null
+                        : formatCompactCount(followers,
+                            locale:
+                                Localizations.localeOf(context).toString()),
+                    label: l10n.userFollowTabFollowers,
+                    animate: animate,
+                  ),
                 ),
               ),
             ),

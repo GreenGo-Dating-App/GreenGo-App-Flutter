@@ -26708,27 +26708,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get tourDiscoverWorldMapDesc => 'Veja a sua rede num mapa do mundo.';
 
   @override
-  String get tourWorldMapFiltersTitle => 'Escolha quem vê';
-
-  @override
-  String get tourWorldMapFiltersDesc =>
-      'A seguir, Seguidores, Conversas, Negócios: combine como quiser.';
-
-  @override
-  String get tourWorldMapPinsTitle => 'Toque num marcador';
-
-  @override
-  String get tourWorldMapPinsDesc =>
-      'Um marcador abre o perfil da pessoa ou a montra do negócio.';
-
-  @override
-  String get tourWorldMapZoomTitle => 'Afaste o zoom';
-
-  @override
-  String get tourWorldMapZoomDesc =>
-      'Junte os dedos para ver países inteiros; toque num para ver os eventos.';
-
-  @override
   String get tourEventPhasesTitle => 'Fases de preço';
 
   @override
@@ -27109,9 +27088,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get tourNameDiscover => 'Descobrir';
-
-  @override
-  String get tourNameWorldMap => 'Mapa-múndi';
 
   @override
   String get tourNameExplore => 'Explorar';
@@ -27596,10 +27572,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get xplCreateCommunity => 'Criar uma comunidade';
 
   @override
-  String get xplEmptyGlobe =>
-      'O teu mapa mostra quem segues, os teus seguidores e as tuas conversas. Segue pessoas ou começa uma conversa para as veres aqui.';
-
-  @override
   String get xplEmptyBcCustomers =>
       'Ainda sem novos seguidores nem mensagens este mês. Completa a tua montra e promove-a para que os clientes te encontrem.';
 
@@ -27858,6 +27830,45 @@ class AppLocalizationsPt extends AppLocalizations {
   String xplFaqGhostA(int count) {
     return 'Ambos escondem o teu perfil em Descobrir, nas sugestões de pessoas e no mapa. O modo fantasma é grátis e ilimitado com Gold e Platinum e também te esconde da pesquisa por alcunha. O modo incógnito custa $count moedas por 24 horas, em qualquer plano. Ativa-os no teu perfil.';
   }
+
+  @override
+  String get chatShareLocationConfirmMessage =>
+      'Tens a certeza de que queres partilhar a tua localização exata?';
+
+  @override
+  String get chatShareLocationConfirmShare => 'Partilhar';
+
+  @override
+  String get tourExploreCoinsTitle => 'As tuas moedas';
+
+  @override
+  String get tourExploreCoinsDesc =>
+      'O teu saldo de moedas para traduções, presentes e extras. Toca para abrir a loja de moedas.';
+
+  @override
+  String get tourExploreMembershipTitle => 'A tua subscrição';
+
+  @override
+  String get tourExploreMembershipDesc =>
+      'O teu plano atual e o que desbloqueia. Toca para ver os planos e fazer upgrade.';
+
+  @override
+  String get tourExploreCountriesTitle => 'Os teus países';
+
+  @override
+  String get tourExploreCountriesDesc =>
+      'Os países onde já estiveste. Toca para abrir o teu mapa-múndi.';
+
+  @override
+  String get tourExploreCountriesDescNoMap =>
+      'Os países onde já estiveste, contados a partir da tua localização real.';
+
+  @override
+  String get tourExploreFollowersTitle => 'Os teus seguidores';
+
+  @override
+  String get tourExploreFollowersDesc =>
+      'Quantas pessoas te seguem. Só tu vês este número. Toca para ver quem são.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -54569,27 +54580,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get tourDiscoverWorldMapDesc => 'Veja sua rede em um mapa do mundo.';
 
   @override
-  String get tourWorldMapFiltersTitle => 'Escolha quem você vê';
-
-  @override
-  String get tourWorldMapFiltersDesc =>
-      'Seguindo, Seguidores, Conversas, Negócios: combine como quiser.';
-
-  @override
-  String get tourWorldMapPinsTitle => 'Toque em um pin';
-
-  @override
-  String get tourWorldMapPinsDesc =>
-      'Um pin abre o perfil da pessoa ou a vitrine do negócio.';
-
-  @override
-  String get tourWorldMapZoomTitle => 'Afaste o zoom';
-
-  @override
-  String get tourWorldMapZoomDesc =>
-      'Faça pinça para ver países inteiros; toque em um para ver os eventos.';
-
-  @override
   String get tourEventPhasesTitle => 'Fases de preço';
 
   @override
@@ -54970,9 +54960,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get tourNameDiscover => 'Descobrir';
-
-  @override
-  String get tourNameWorldMap => 'Mapa-múndi';
 
   @override
   String get tourNameExplore => 'Explorar';
@@ -55457,10 +55444,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get xplCreateCommunity => 'Criar uma comunidade';
 
   @override
-  String get xplEmptyGlobe =>
-      'Seu mapa mostra quem você segue, seus seguidores e suas conversas. Siga pessoas ou comece uma conversa para vê-las aqui.';
-
-  @override
   String get xplEmptyBcCustomers =>
       'Ainda sem novos seguidores ou mensagens este mês. Complete sua vitrine e promova-a para que os clientes encontrem você.';
 
@@ -55719,4 +55702,43 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String xplFaqGhostA(int count) {
     return 'Os dois escondem seu perfil em Descobrir, nas sugestões de pessoas e no mapa. O modo fantasma é grátis e ilimitado com Gold e Platinum e também esconde você da busca por apelido. O modo incógnito custa $count moedas por 24 horas, em qualquer plano. Ative pelo seu perfil.';
   }
+
+  @override
+  String get chatShareLocationConfirmMessage =>
+      'Tem certeza de que quer compartilhar sua localização exata?';
+
+  @override
+  String get chatShareLocationConfirmShare => 'Compartilhar';
+
+  @override
+  String get tourExploreCoinsTitle => 'Suas moedas';
+
+  @override
+  String get tourExploreCoinsDesc =>
+      'Seu saldo de moedas para traduções, presentes e extras. Toque para abrir a loja de moedas.';
+
+  @override
+  String get tourExploreMembershipTitle => 'Sua assinatura';
+
+  @override
+  String get tourExploreMembershipDesc =>
+      'Seu plano atual e o que ele libera. Toque para ver os planos e fazer upgrade.';
+
+  @override
+  String get tourExploreCountriesTitle => 'Seus países';
+
+  @override
+  String get tourExploreCountriesDesc =>
+      'Os países onde você já esteve. Toque para abrir seu mapa-múndi.';
+
+  @override
+  String get tourExploreCountriesDescNoMap =>
+      'Os países onde você já esteve, contados pela sua localização real.';
+
+  @override
+  String get tourExploreFollowersTitle => 'Seus seguidores';
+
+  @override
+  String get tourExploreFollowersDesc =>
+      'Quantas pessoas seguem você. Só você vê este número. Toque para ver quem são.';
 }

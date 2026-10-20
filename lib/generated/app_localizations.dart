@@ -45300,42 +45300,6 @@ abstract class AppLocalizations {
   /// In-app tutorial / onboarding text (tours v2).
   ///
   /// In en, this message translates to:
-  /// **'Choose who you see'**
-  String get tourWorldMapFiltersTitle;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'Following, Followers, Chats, Businesses - mix them as you like.'**
-  String get tourWorldMapFiltersDesc;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'Tap a pin'**
-  String get tourWorldMapPinsTitle;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'A pin opens the person\'s profile or the business storefront.'**
-  String get tourWorldMapPinsDesc;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'Zoom out'**
-  String get tourWorldMapZoomTitle;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'Pinch out to see whole countries, tap one for its events.'**
-  String get tourWorldMapZoomDesc;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
   /// **'Price phases'**
   String get tourEventPhasesTitle;
 
@@ -46004,12 +45968,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Discover'**
   String get tourNameDiscover;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'World map'**
-  String get tourNameWorldMap;
 
   /// In-app tutorial / onboarding text (tours v2).
   ///
@@ -46830,12 +46788,6 @@ abstract class AppLocalizations {
   /// In-app explanations (info sheets, empty states, FAQ)
   ///
   /// In en, this message translates to:
-  /// **'Your map shows the people you follow, your followers and your chats. Follow people or start a chat to see them here.'**
-  String get xplEmptyGlobe;
-
-  /// In-app explanations (info sheets, empty states, FAQ)
-  ///
-  /// In en, this message translates to:
   /// **'No new followers or messages this month yet. Complete your storefront and promote it so customers can find you.'**
   String get xplEmptyBcCustomers;
 
@@ -47252,6 +47204,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Both hide your profile from Discover, people suggestions and the map. Ghost mode is free and unlimited with Gold and Platinum, and also hides you from nickname search. Incognito costs {count} coins for 24 hours on any plan. Turn them on in your profile.'**
   String xplFaqGhostA(int count);
+
+  /// Chat: confirmation before sending a location
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to share your exact location?'**
+  String get chatShareLocationConfirmMessage;
+
+  /// Chat: confirm button of the share-location dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Share'**
+  String get chatShareLocationConfirmShare;
+
+  /// Explore page tour: stats tiles
+  ///
+  /// In en, this message translates to:
+  /// **'Your coins'**
+  String get tourExploreCoinsTitle;
+
+  /// Explore page tour: stats tiles
+  ///
+  /// In en, this message translates to:
+  /// **'Your coin balance, used for translations, gifts and extras. Tap to open the coin shop.'**
+  String get tourExploreCoinsDesc;
+
+  /// Explore page tour: stats tiles
+  ///
+  /// In en, this message translates to:
+  /// **'Your membership'**
+  String get tourExploreMembershipTitle;
+
+  /// Explore page tour: stats tiles
+  ///
+  /// In en, this message translates to:
+  /// **'Your current plan and what it unlocks. Tap to see the plans and upgrade.'**
+  String get tourExploreMembershipDesc;
+
+  /// Explore page tour: stats tiles
+  ///
+  /// In en, this message translates to:
+  /// **'Your countries'**
+  String get tourExploreCountriesTitle;
+
+  /// Explore page tour: stats tiles
+  ///
+  /// In en, this message translates to:
+  /// **'The countries you have been to. Tap to open your world map.'**
+  String get tourExploreCountriesDesc;
+
+  /// Explore page tour: stats tiles
+  ///
+  /// In en, this message translates to:
+  /// **'The countries you have been to, counted from your real location.'**
+  String get tourExploreCountriesDescNoMap;
+
+  /// Explore page tour: stats tiles
+  ///
+  /// In en, this message translates to:
+  /// **'Your followers'**
+  String get tourExploreFollowersTitle;
+
+  /// Explore page tour: stats tiles
+  ///
+  /// In en, this message translates to:
+  /// **'How many people follow you. Only you see this number. Tap to see who they are.'**
+  String get tourExploreFollowersDesc;
 }
 
 class _AppLocalizationsDelegate

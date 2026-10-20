@@ -1,14 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/di/injection_container.dart' as di;
 import '../../../../generated/app_localizations.dart';
 import '../../../explore/presentation/screens/network_discovery_screen.dart';
-import '../../../globe_explore/presentation/bloc/globe_bloc.dart';
-import '../../../globe_explore/presentation/screens/globe_screen.dart';
 import '../../../my_space/presentation/screens/my_space_screen.dart';
 import '../../../referral/presentation/screens/referral_screen.dart';
 import '../../../ticket_payments/presentation/screens/get_paid_screen.dart';
@@ -37,14 +33,6 @@ List<TourEntry> tourEntries() => [
           (l) => l.tourNameDiscover,
           open: (uid) => MaterialPageRoute<void>(
               builder: (_) => NetworkDiscoveryScreen(userId: uid))),
-      if (FlavorConfig.enableWorldMap)
-        TourEntry(TourController.worldMapTourId, Icons.public,
-            (l) => l.tourNameWorldMap,
-            open: (uid) => MaterialPageRoute<void>(
-                builder: (_) => BlocProvider(
-                      create: (_) => di.sl<GlobeBloc>(),
-                      child: GlobeScreen(userId: uid),
-                    ))),
       TourEntry(TourController.exploreTourId, Icons.explore_outlined,
           (l) => l.tourNameExplore),
       if (FlavorConfig.enableSwipeDiscovery)

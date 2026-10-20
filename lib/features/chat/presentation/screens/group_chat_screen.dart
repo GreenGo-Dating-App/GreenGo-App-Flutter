@@ -46,6 +46,7 @@ import '../../../attractions/domain/entities/attraction.dart';
 import '../bloc/group_chat_event.dart';
 import '../bloc/group_chat_state.dart';
 import '../widgets/resolved_users_builder.dart';
+import '../widgets/share_location_confirm.dart';
 import 'group_info_screen.dart';
 import '../widgets/deleted_message_bubble.dart';
 import '../widgets/location_message_map.dart';
@@ -745,7 +746,9 @@ class _GroupChatViewState extends State<_GroupChatView> {
     final bloc = context.read<GroupChatBloc>();
     final picked = await Navigator.of(context)
         .push<PickedPlace>(_locationPickerRoute());
-    if (picked == null) return;
+    if (picked == null || !context.mounted) return;
+    // Confirm before anything is sent (owner notes 2026-10-20).
+    if (!await confirmShareLocation(context)) return;
     bloc.add(GroupChatMessageSent(
       content: '${picked.lat},${picked.lng}',
       type: MessageType.location,

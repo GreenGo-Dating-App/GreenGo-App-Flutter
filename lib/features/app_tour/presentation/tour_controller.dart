@@ -31,7 +31,6 @@ class TourController {
   // Tier-2 page tours, v2 (owner 2026-10-19). Each runs once per user and
   // device the first time its page is opened (see PageTourHost).
   static const String discoverTourId = 'discover';
-  static const String worldMapTourId = 'world_map';
   static const String eventTicketsTourId = 'event_tickets';
   static const String businessCenterTourId = 'business_center';
   static const String storefrontEditorTourId = 'storefront_editor';
@@ -69,7 +68,6 @@ class TourController {
     notificationsTourId,
     exploreTourId,
     discoverTourId,
-    worldMapTourId,
     eventTicketsTourId,
     businessCenterTourId,
     storefrontEditorTourId,

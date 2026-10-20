@@ -17,7 +17,6 @@ void main() {
     expect(ids.first, TourController.mainTourId);
     for (final id in [
       TourController.discoverTourId,
-      TourController.worldMapTourId,
       TourController.eventTicketsTourId,
       TourController.businessCenterTourId,
       TourController.storefrontEditorTourId,

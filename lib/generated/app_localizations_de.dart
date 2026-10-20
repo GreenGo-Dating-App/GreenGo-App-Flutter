@@ -26796,27 +26796,6 @@ class AppLocalizationsDe extends AppLocalizations {
       'Sieh dein Netzwerk auf einer Weltkarte.';
 
   @override
-  String get tourWorldMapFiltersTitle => 'Wähle, wen du siehst';
-
-  @override
-  String get tourWorldMapFiltersDesc =>
-      'Folge ich, Follower, Chats, Unternehmen - kombiniere sie frei.';
-
-  @override
-  String get tourWorldMapPinsTitle => 'Tippe auf eine Markierung';
-
-  @override
-  String get tourWorldMapPinsDesc =>
-      'Eine Markierung öffnet das Profil oder das Schaufenster des Unternehmens.';
-
-  @override
-  String get tourWorldMapZoomTitle => 'Herauszoomen';
-
-  @override
-  String get tourWorldMapZoomDesc =>
-      'Zieh die Finger zusammen, um Länder zu sehen; tippe eines für seine Events an.';
-
-  @override
   String get tourEventPhasesTitle => 'Preisphasen';
 
   @override
@@ -27204,9 +27183,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tourNameDiscover => 'Entdecken';
-
-  @override
-  String get tourNameWorldMap => 'Weltkarte';
 
   @override
   String get tourNameExplore => 'Erkunden';
@@ -27692,10 +27668,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get xplCreateCommunity => 'Community erstellen';
 
   @override
-  String get xplEmptyGlobe =>
-      'Deine Karte zeigt die Personen, denen du folgst, deine Follower und deine Chats. Folge Leuten oder starte einen Chat, um sie hier zu sehen.';
-
-  @override
   String get xplEmptyBcCustomers =>
       'Diesen Monat noch keine neuen Follower oder Nachrichten. Vervollständige dein Schaufenster und bewirb es, damit Kunden dich finden.';
 
@@ -27955,4 +27927,43 @@ class AppLocalizationsDe extends AppLocalizations {
   String xplFaqGhostA(int count) {
     return 'Beide verbergen dein Profil in Entdecken, bei Personenvorschlägen und auf der Karte. Der Geistmodus ist mit Gold und Platinum kostenlos und unbegrenzt und verbirgt dich auch in der Nickname-Suche. Inkognito kostet $count Münzen für 24 Stunden, mit jedem Tarif. Du schaltest sie in deinem Profil ein.';
   }
+
+  @override
+  String get chatShareLocationConfirmMessage =>
+      'Möchtest du deinen genauen Standort wirklich teilen?';
+
+  @override
+  String get chatShareLocationConfirmShare => 'Teilen';
+
+  @override
+  String get tourExploreCoinsTitle => 'Deine Coins';
+
+  @override
+  String get tourExploreCoinsDesc =>
+      'Dein Coin-Guthaben für Übersetzungen, Geschenke und Extras. Tippe, um den Coin-Shop zu öffnen.';
+
+  @override
+  String get tourExploreMembershipTitle => 'Deine Mitgliedschaft';
+
+  @override
+  String get tourExploreMembershipDesc =>
+      'Dein aktueller Plan und was er freischaltet. Tippe, um die Pläne zu sehen und upzugraden.';
+
+  @override
+  String get tourExploreCountriesTitle => 'Deine Länder';
+
+  @override
+  String get tourExploreCountriesDesc =>
+      'Die Länder, in denen du warst. Tippe, um deine Weltkarte zu öffnen.';
+
+  @override
+  String get tourExploreCountriesDescNoMap =>
+      'Die Länder, in denen du warst, gezählt über deinen echten Standort.';
+
+  @override
+  String get tourExploreFollowersTitle => 'Deine Follower';
+
+  @override
+  String get tourExploreFollowersDesc =>
+      'Wie viele Personen dir folgen. Nur du siehst diese Zahl. Tippe, um zu sehen, wer sie sind.';
 }
