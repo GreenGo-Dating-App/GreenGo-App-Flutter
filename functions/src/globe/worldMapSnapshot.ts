@@ -55,10 +55,11 @@ export const CHATS_CAP = 300;
 export const BLOCKS_CAP = 1000;
 export const MAX_PINS = 1000;
 
-/** A snapshot older than this is rebuilt when its owner opens the map. */
-export const SNAPSHOT_TTL_MS = 60 * 60 * 1000;
+/** A snapshot older than this is rebuilt when its owner opens the map
+ *  (owner, 2026-10-21: every 6 hours, not hourly - cost). */
+export const SNAPSHOT_TTL_MS = 6 * 60 * 60 * 1000;
 /** Due time of the next scheduled rebuild after a build. */
-export const REFRESH_EVERY_MS = 55 * 60 * 1000;
+export const REFRESH_EVERY_MS = (6 * 60 - 5) * 60 * 1000;
 /** Backoff after a failed scheduled build. */
 export const FAILED_RETRY_MS = 60 * 60 * 1000;
 /** Hourly rebuilds only for users who opened the map within this window. */

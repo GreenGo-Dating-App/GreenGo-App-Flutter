@@ -197,7 +197,7 @@ describe('storage: inline vs chunks', () => {
     expect(small.main.pins).toHaveLength(5);
     expect(small.main.chunkCount).toBe(0);
     expect(small.deleteChunks).toEqual([0, 1, 2]);
-    expect(toMillis(small.main.refreshAfter)! - toMillis(small.main.builtAt)!).toBe(55 * 60 * 1000);
+    expect(toMillis(small.main.refreshAfter)! - toMillis(small.main.builtAt)!).toBe((6 * 60 - 5) * 60 * 1000);
   });
 });
 
