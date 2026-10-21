@@ -1,12 +1,13 @@
 ALLGEMEINE GESCHÄFTSBEDINGUNGEN VON GREENGO
 
-Version: 5.3.2
-Gültig ab: 17. Oktober 2026 für Konten, die ab dem 16. Oktober 2026 erstellt
+Version: 5.3.3
+Gültig ab: 21. Oktober 2026 für Konten, die ab dem 16. Oktober 2026 erstellt
   werden; 16. November 2026 für Konten, die vor dem 16. Oktober 2026 erstellt
   wurden
-Angekündigt am: 17. Oktober 2026
-Vorherige Version: 5.2.1 (16. Oktober 2026), die für vor dem 16. Oktober 2026
-  erstellte Konten bis zum 15. November 2026 weiter gilt
+Angekündigt am: 21. Oktober 2026
+Vorherige Version: 5.3.2 (17. Oktober 2026) für Konten, die ab dem
+  16. Oktober 2026 erstellt werden; 5.2.1 (16. Oktober 2026), die für vor dem
+  16. Oktober 2026 erstellte Konten bis zum 15. November 2026 weiter gilt
 
 ================================================================================
 1. ÜBER DIESE BEDINGUNGEN
@@ -535,6 +536,17 @@ f) Preisphasen: Der Veranstalter eines kostenpflichtigen Events kann dessen
    Ändert sich die Phase, während du bezahlst, zeigen wir dir den neuen
    Preis, bevor du bestätigst. Zusammen dürfen die Preisphasen nicht mehr
    Tickets umfassen als die Kapazität des Events.
+g) Sagt der Veranstalter ein kostenpflichtiges Event vor dessen Ende ab oder
+   löscht er es, erhält jeder Käufer, mit oder ohne Konto, automatisch eine
+   vollständige Erstattung des Ticketpreises auf das ursprüngliche
+   Zahlungsmittel, über das eigene Stripe- oder Mercado-Pago-Konto des
+   Veranstalters. GreenGo erstattet dem Veranstalter seine Servicegebühr
+   (Abschnitt 11.6 f). Die eigenen Bearbeitungsgebühren der
+   Zahlungsanbieter werden von GreenGo nicht erstattet. Schlägt eine
+   automatische Erstattung fehl, muss der Veranstalter dem Käufer den Betrag
+   direkt erstatten und einen Nachweis der Erstattung in der App hochladen;
+   GreenGo prüft den Nachweis und informiert den Käufer. GreenGo zahlt keine
+   Erstattungen aus eigenen Mitteln.
 
 11.3 Der Check-in bei Events erfolgt über einen QR-Code in der App. Bei
 kostenpflichtigen Events wird der QR-Code erst ausgestellt, nachdem deine
@@ -658,11 +670,17 @@ f) Diese Bedingungen gelten für Buchungen von Besuchern, soweit sie
   Das Geld geht auf das Konto des Gastgebers: Die Zahlung läuft nicht über
   GreenGo, und GreenGo verwahrt keine Zahlungen für Erlebnisse. GreenGo
   erhält nur seine Servicegebühr, die der Gastgeber zahlt (Abschnitt 11.6).
-- Erstattungen: Wenn der Gastgeber einen gebuchten Termin entfernt oder eine
-  Buchung storniert, veranlasst GreenGo über das eigene Stripe- oder
-  Mercado-Pago-Konto des Gastgebers eine vollständige Erstattung an den Gast.
-  In allen anderen Fällen richten sich Erstattungen nach der
-  Stornierungsrichtlinie des Gastgebers und werden vom Gastgeber gezahlt.
+- Erstattungen: Wenn der Gastgeber eine Buchung oder einen ganzen Termin
+  storniert, einen gebuchten Termin entfernt oder das Erlebnis löscht, erhält
+  der Gast automatisch eine vollständige Erstattung des gezahlten Preises auf
+  das ursprüngliche Zahlungsmittel, über das eigene Stripe- oder
+  Mercado-Pago-Konto des Gastgebers. GreenGo erstattet dem Gastgeber seine
+  Servicegebühr; die eigenen Bearbeitungsgebühren der Zahlungsanbieter werden
+  von GreenGo nicht erstattet. Schlägt eine automatische Erstattung fehl,
+  muss der Gastgeber dem Gast den Betrag direkt erstatten und einen Nachweis
+  der Erstattung in der App hochladen; GreenGo prüft den Nachweis. In allen
+  anderen Fällen richten sich Erstattungen nach der Stornierungsrichtlinie
+  des Gastgebers und werden vom Gastgeber gezahlt.
 - Nur Gastgeber mit einem aktiven Business-Konto (Abschnitt 13) können
   kostenpflichtige Erlebnisse veröffentlichen. Wie viele Erlebnisse ein
   Gastgeber gleichzeitig haben kann, hängt von seinem Tarif ab
@@ -714,16 +732,17 @@ a) Lies vor der Buchung das Angebot und die Stornierungsrichtlinie.
 b) Bezahle nur über den Bezahlvorgang in der App. Bezahle einen Gastgeber nie
    außerhalb von GreenGo, zum Beispiel per Zahlungslink, Banküberweisung oder
    bar.
-c) Wenn der Gastgeber deinen gebuchten Termin entfernt oder deine Buchung
-   storniert, veranlasst GreenGo über das eigene Stripe- oder
-   Mercado-Pago-Konto des Gastgebers eine vollständige Erstattung an dich.
-   Andernfalls richten sich Erstattungen nach der Stornierungsrichtlinie des
-   Gastgebers und werden vom Gastgeber gezahlt. Wenn etwas schiefgeht, kannst
-   du innerhalb des angezeigten Zeitraums in der App eine Streitigkeit
-   eröffnen. GreenGo prüft sie und kann eine vom Gastgeber geschuldete
-   Erstattung erfassen oder Maßnahmen gegen das Konto des Gastgebers
-   ergreifen. GreenGo selbst zahlt keine Erstattungen für Erlebnisse aus
-   eigenen Mitteln.
+c) Wenn der Gastgeber deine Buchung oder deinen Termin storniert, deinen
+   gebuchten Termin entfernt oder das Erlebnis löscht, erhältst du
+   automatisch eine vollständige Erstattung auf dein ursprüngliches
+   Zahlungsmittel, über das eigene Stripe- oder Mercado-Pago-Konto des
+   Gastgebers (Abschnitt 12.2). Andernfalls richten sich Erstattungen nach
+   der Stornierungsrichtlinie des Gastgebers und werden vom Gastgeber
+   gezahlt. Wenn etwas schiefgeht, kannst du innerhalb des angezeigten
+   Zeitraums in der App eine Streitigkeit eröffnen. GreenGo prüft sie und
+   kann eine vom Gastgeber geschuldete Erstattung erfassen oder Maßnahmen
+   gegen das Konto des Gastgebers ergreifen. GreenGo selbst zahlt keine
+   Erstattungen für Erlebnisse aus eigenen Mitteln.
 d) Um ein Erlebnis als Mitglied zu buchen, brauchst du kein Ausweisdokument
    (Abschnitt 4.4).
 
@@ -1164,6 +1183,14 @@ https://greengochat.com/child-safety veröffentlicht.
 - in der App unter Profil > Konto Löschen;
 - im Web unter https://greengochat.com/delete-account.
 
+Du kannst dein Konto nicht löschen, solange du als Veranstalter oder
+Gastgeber bevorstehende oder laufende Events oder Erlebnisse mit bezahlten
+Tickets oder Buchungen hast, die nicht erstattet wurden, oder Erstattungen,
+die nicht abgeschlossen sind (zum Beispiel eine fehlgeschlagene Erstattung,
+deren Nachweis GreenGo noch nicht akzeptiert hat). Sage sie zuerst ab: Die
+Käufer werden automatisch erstattet (Abschnitte 11.2 g und 12.2). Die App
+zeigt dir, was noch offen ist.
+
 Wenn du dein Konto löschst:
 - wird eine im Web gekaufte Mitgliedschaft automatisch gekündigt;
 - wird eine in der iOS- oder Android-App gekaufte Mitgliedschaft nicht
@@ -1405,6 +1432,26 @@ Urheberrecht (DMCA): copyright@greengochat.com
 ================================================================================
 VERSIONSVERLAUF
 ================================================================================
+
+5.3.3 - gültig ab 21. Oktober 2026 für Konten, die ab dem 16. Oktober 2026
+erstellt werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte
+Konten (angekündigt am 21. Oktober 2026)
+- Abschnitt 11.2 g: Sagt der Veranstalter ein kostenpflichtiges Event ab oder
+  löscht er es, erhält jeder Käufer, mit oder ohne Konto, automatisch eine
+  vollständige Erstattung des Ticketpreises auf das ursprüngliche
+  Zahlungsmittel; GreenGo erstattet dem Veranstalter seine Servicegebühr;
+  Bearbeitungsgebühren der Zahlungsanbieter werden von GreenGo nicht
+  erstattet; schlägt eine automatische Erstattung fehl, erstattet der
+  Veranstalter dem Käufer direkt und lädt einen Nachweis hoch, den GreenGo
+  prüft.
+- Abschnitte 12.2 und 12.5 c: automatische vollständige Erstattung an den
+  Gast, wenn der Gastgeber eine Buchung oder einen Termin storniert, einen
+  gebuchten Termin entfernt oder das Erlebnis löscht; dieselben Regeln für
+  Gebühren und fehlgeschlagene Erstattungen.
+- Abschnitt 20.1: Ein Konto kann nicht gelöscht werden, solange es
+  bevorstehende oder laufende Events oder Erlebnisse mit bezahlten Tickets
+  oder Buchungen hat, die nicht erstattet wurden, oder Erstattungen, die nicht
+  abgeschlossen sind.
 
 5.3.2 - gültig ab 17. Oktober 2026 für Konten, die ab dem 16. Oktober 2026
 erstellt werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte

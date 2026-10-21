@@ -25998,6 +25998,10 @@ class AppLocalizationsDe extends AppLocalizations {
       'Preisphasen für Event-Tickets (zum Beispiel Early Bird) und das Einführungsangebot 2026: 50 % Rabatt auf den ersten Zeitraum einer neuen Mitgliedschaft';
 
   @override
+  String get legalUpdate533BulletRefunds =>
+      'Automatische volle Erstattung, wenn ein Veranstalter ein kostenpflichtiges Event absagt oder ein Gastgeber eine Buchung storniert; Konten mit noch nicht erstatteten Verkäufen können nicht gelöscht werden';
+
+  @override
   String get legalUpdateCloseAccount => 'Ich stimme nicht zu – Konto schließen';
 
   @override

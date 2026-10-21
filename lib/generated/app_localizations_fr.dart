@@ -26087,6 +26087,10 @@ class AppLocalizationsFr extends AppLocalizations {
       'Des phases de prix pour les billets d’événements (par exemple early bird) et l’offre de lancement 2026 : 50 % de réduction sur la première période d’un nouvel Abonnement';
 
   @override
+  String get legalUpdate533BulletRefunds =>
+      'Remboursement intégral automatique quand un organisateur annule un événement payant ou qu’un hôte annule une réservation ; un compte avec des ventes payées pas encore remboursées ne peut pas être supprimé';
+
+  @override
   String get legalUpdateCloseAccount => 'Je n’accepte pas – fermer mon compte';
 
   @override

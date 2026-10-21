@@ -10,13 +10,13 @@ import { NOTICE_COPY, TERMS_NOTICES } from '../../src/legal/termsNoticeCopy';
 import { normalizeTrader, publicTraderView } from '../../src/legal/traderDeclaration';
 import { SUPPORTED_LOCALES } from '../../src/shared/i18n/locales';
 
-const n531 = TERMS_NOTICES['5.3.2'];
+const n531 = TERMS_NOTICES['5.3.3'];
 const arb = (l: string) => JSON.parse(fs.readFileSync(path.join(__dirname, '../../../lib/l10n', `app_${l}.arb`), 'utf8'));
 
 describe('terms change notice email', () => {
-  test('5.3.2 (replaced 5.3.1, which replaced 5.3.0): 30 days after 16 October 2026, the public upcoming URL, existing accounts only', () => {
-    expect(Object.keys(TERMS_NOTICES)).toEqual(['5.3.2']);
-    expect(n531.version).toBe('5.3.2');
+  test('5.3.3 (replaced 5.3.2, 5.3.1 and 5.3.0): 30 days after 16 October 2026, the public upcoming URL, existing accounts only', () => {
+    expect(Object.keys(TERMS_NOTICES)).toEqual(['5.3.3']);
+    expect(n531.version).toBe('5.3.3');
     expect(n531.effectiveDate).toBe('2026-11-16');
     // Owner decision of 16 Oct 2026: accounts created from that day are on 5.3.x already.
     expect(n531.accountsCreatedBefore).toBe('2026-10-16');
@@ -30,6 +30,7 @@ describe('terms change notice email', () => {
       ...['Referral', 'CoinGifts', 'Menus', 'Moderation', 'Traders'].map((k) => `legalUpdate530Bullet${k}`),
       'legalUpdate531BulletFeeCaps',
       'legalUpdate532BulletPhases',
+      'legalUpdate533BulletRefunds',
     ];
     for (const l of SUPPORTED_LOCALES) {
       const a = arb(l);
@@ -40,7 +41,7 @@ describe('terms change notice email', () => {
   test.each(SUPPORTED_LOCALES.map((l) => [l]))('%s: subject, date, bullets, link, rights, escaped', (l) => {
     const m = buildNoticeEmail(n531, l, 'ana@example.com');
     expect(m.to).toEqual(['ana@example.com']);
-    expect(m.subject).toContain('5.3.2');
+    expect(m.subject).toContain('5.3.3');
     expect(m.subject).toContain(formatNoticeDate(n531, l));
     expect(m.html).toContain(`href="${n531.url}"`);
     expect(m.text).toContain(n531.url);

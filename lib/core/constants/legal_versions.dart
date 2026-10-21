@@ -7,7 +7,7 @@
 library;
 
 /// Terms and Conditions version shown in-app and recorded at acceptance.
-const String kTermsVersion = '5.3.2';
+const String kTermsVersion = '5.3.3';
 
 /// Privacy Policy version shown in-app and recorded at acceptance.
 const String kPrivacyPolicyVersion = '5.3.1';
@@ -52,7 +52,12 @@ final DateTime kLegalEffectiveDate = DateTime(2026, 10, 17);
 /// (AI helpers, no store trials + 2026 launch offer, pre-sale plans, Pix,
 /// legacy link orders, ticket price phases 11.2 f / 11.6 b, repeat-offender
 /// periods 18.6). Sign-up records 5.3.2; [kTermsReacceptFrom] is NOT raised.
-final DateTime kTermsEffectiveDate = DateTime(2026, 10, 17);
+/// 5.3.3 (21 Oct 2026 for accounts created from 16 Oct 2026; older accounts
+/// still move from 5.2.1 on 16 Nov 2026): automatic full refunds when a
+/// seller cancels a paid Event or an Experience booking (11.2 g, 12.2,
+/// 12.5 c), no account deletion while paid sales are not refunded (20.1).
+/// Sign-up records 5.3.3; [kTermsReacceptFrom] is NOT raised.
+final DateTime kTermsEffectiveDate = DateTime(2026, 10, 21);
 
 /// Oldest accepted version that does NOT trigger the "we've updated our
 /// Terms" sheet. Raise it only for a MATERIAL change (5.1.0: new Terms 16.9
@@ -79,13 +84,16 @@ const String kPrivacyReacceptFrom = '5.1.0';
 /// 16 Nov 2026. A user who dismissed the 5.3.0 notice sees the 5.3.1 one.
 /// 5.3.2 (17 Oct 2026): replaces 5.3.1 in the notice (clarifications + ticket
 /// price phases); older accounts move from 5.2.1 to 5.3.2 on 16 Nov 2026.
+/// 5.3.3 (21 Oct 2026): replaces 5.3.2 in the notice (automatic refunds when
+/// a seller cancels, deletion rule 20.1); older accounts move from 5.2.1 to
+/// 5.3.3 on 16 Nov 2026. A user who dismissed the 5.3.2 notice sees 5.3.3.
 ///
 /// When the version takes effect for everyone: raise [kTermsReacceptFrom] if
 /// the change is material (the "we've updated our Terms" sheet then asks
 /// everyone again and shows that version's bullets,
 /// [legalUpdateBulletsVersion]), and clear or replace these constants. Set
 /// [kUpcomingTermsVersion] to null when nothing is announced.
-const String? kUpcomingTermsVersion = '5.3.2';
+const String? kUpcomingTermsVersion = '5.3.3';
 
 /// Date from which [kUpcomingTermsVersion] applies to accounts created before
 /// [kUpcomingTermsAccountsCreatedBefore] (16 October 2026 + 30 days).

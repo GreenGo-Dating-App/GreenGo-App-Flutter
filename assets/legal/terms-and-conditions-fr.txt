@@ -1,12 +1,13 @@
 CONDITIONS GÉNÉRALES DE GREENGO
 
-Version : 5.3.2
-Date d'entrée en vigueur : 17 octobre 2026 pour les comptes créés à partir du
+Version : 5.3.3
+Date d'entrée en vigueur : 21 octobre 2026 pour les comptes créés à partir du
   16 octobre 2026 ; 16 novembre 2026 pour les comptes créés avant le
   16 octobre 2026
-Annoncée le : 17 octobre 2026
-Version précédente : 5.2.1 (16 octobre 2026), qui continue de s'appliquer aux
-  comptes créés avant le 16 octobre 2026 jusqu'au 15 novembre 2026
+Annoncée le : 21 octobre 2026
+Version précédente : 5.3.2 (17 octobre 2026) pour les comptes créés à partir
+  du 16 octobre 2026 ; 5.2.1 (16 octobre 2026), qui continue de s'appliquer
+  aux comptes créés avant le 16 octobre 2026 jusqu'au 15 novembre 2026
 
 ================================================================================
 1. À PROPOS DES PRÉSENTES CONDITIONS
@@ -558,6 +559,17 @@ f) Phases de prix : l'organisateur d'un Événement payant peut vendre ses
    Si la phase change pendant que vous payez, nous vous montrons le nouveau
    prix avant que vous ne confirmiez. Ensemble, les phases de prix ne
    peuvent pas contenir plus de billets que la capacité de l'Événement.
+g) Si l'organisateur annule ou supprime un Événement payant avant sa fin,
+   chaque acheteur, avec ou sans compte, obtient automatiquement le
+   remboursement intégral du prix du billet sur son moyen de paiement
+   d'origine, via le propre compte Stripe ou Mercado Pago de l'organisateur.
+   GreenGo restitue ses frais de service à l'organisateur (section 11.6 f).
+   Les frais de traitement propres aux prestataires de paiement ne sont pas
+   remboursés par GreenGo. Si un remboursement automatique échoue,
+   l'organisateur doit rembourser l'acheteur directement et téléverser une
+   preuve du remboursement dans l'application ; GreenGo examine la preuve et
+   en informe l'acheteur. GreenGo ne verse pas de remboursements sur ses
+   propres fonds.
 
 11.3 L'enregistrement à un Événement se fait au moyen d'un code QR dans
 l'application. Pour les Événements payants, le code QR n'est émis qu'après la
@@ -683,11 +695,16 @@ f) Les présentes Conditions s'appliquent aux réservations des visiteurs dans
   versé sur le compte de l'Hôte : le paiement ne transite pas par GreenGo, et
   GreenGo ne détient pas les paiements relatifs aux Expériences. GreenGo
   perçoit uniquement ses frais de service, payés par l'Hôte (section 11.6).
-- Remboursements : si l'Hôte supprime un créneau réservé ou annule une
-  réservation, GreenGo lance un remboursement intégral à l'Invité via le
-  propre compte Stripe ou Mercado Pago de l'Hôte. Dans tous les autres cas,
-  les remboursements suivent la politique d'annulation de l'Hôte et sont
-  payés par l'Hôte.
+- Remboursements : si l'Hôte annule une réservation ou tout un créneau,
+  supprime un créneau réservé ou supprime l'Expérience, l'Invité obtient
+  automatiquement le remboursement intégral du prix payé sur son moyen de
+  paiement d'origine, via le propre compte Stripe ou Mercado Pago de l'Hôte.
+  GreenGo restitue ses frais de service à l'Hôte ; les frais de traitement
+  propres aux prestataires de paiement ne sont pas remboursés par GreenGo. Si
+  un remboursement automatique échoue, l'Hôte doit rembourser l'Invité
+  directement et téléverser une preuve du remboursement dans l'application ;
+  GreenGo examine la preuve. Dans tous les autres cas, les remboursements
+  suivent la politique d'annulation de l'Hôte et sont payés par l'Hôte.
 - Seuls les Hôtes disposant d'un Compte professionnel actif (section 13)
   peuvent publier des Expériences payantes. Le nombre d'Expériences qu'un
   Hôte peut avoir en même temps dépend de sa formule (section 11.7).
@@ -740,12 +757,13 @@ a) Lisez l'annonce et la politique d'annulation avant de réserver.
 b) Payez uniquement via le paiement intégré à l'application. Ne payez jamais
    un Hôte en dehors de GreenGo, par exemple par un lien de paiement, un
    virement bancaire ou en espèces.
-c) Si l'Hôte supprime votre créneau réservé ou annule votre réservation,
-   GreenGo lance un remboursement intégral en votre faveur via le propre
-   compte Stripe ou Mercado Pago de l'Hôte. Dans les autres cas, les
-   remboursements suivent la politique d'annulation de l'Hôte et sont payés
-   par l'Hôte. En cas de problème, vous pouvez ouvrir un litige dans
-   l'application dans le délai indiqué. GreenGo l'examinera et pourra
+c) Si l'Hôte annule votre réservation ou votre créneau, supprime votre
+   créneau réservé ou supprime l'Expérience, vous obtenez automatiquement un
+   remboursement intégral sur votre moyen de paiement d'origine, via le
+   propre compte Stripe ou Mercado Pago de l'Hôte (section 12.2). Dans les
+   autres cas, les remboursements suivent la politique d'annulation de l'Hôte
+   et sont payés par l'Hôte. En cas de problème, vous pouvez ouvrir un litige
+   dans l'application dans le délai indiqué. GreenGo l'examinera et pourra
    enregistrer un remboursement dû par l'Hôte, ou prendre des mesures à
    l'encontre du compte de l'Hôte. GreenGo ne verse pas lui-même de
    remboursements pour les Expériences sur ses propres fonds.
@@ -1198,6 +1216,14 @@ moment :
 - dans l'application, sous Profil > Supprimer le Compte ;
 - sur le web, à l'adresse https://greengochat.com/delete-account.
 
+Vous ne pouvez pas supprimer votre compte tant que, en tant qu'organisateur ou
+Hôte, vous avez des Événements ou des Expériences à venir ou en cours avec des
+billets ou des réservations payés qui n'ont pas été remboursés, ou des
+remboursements qui ne sont pas terminés (par exemple un remboursement échoué
+dont GreenGo n'a pas encore accepté la preuve). Annulez-les d'abord : les
+acheteurs sont remboursés automatiquement (sections 11.2 g et 12.2).
+L'application vous indique ce qui reste en suspens.
+
 Lorsque vous supprimez votre compte :
 - un Abonnement acheté sur le web est résilié automatiquement ;
 - un Abonnement acheté dans l'application iOS ou Android ne l'est pas :
@@ -1443,6 +1469,25 @@ Droits d'auteur (DMCA) : copyright@greengochat.com
 ================================================================================
 HISTORIQUE DES VERSIONS
 ================================================================================
+
+5.3.3 - en vigueur le 21 octobre 2026 pour les comptes créés à partir du
+16 octobre 2026 ; le 16 novembre 2026 pour les comptes créés avant le
+16 octobre 2026 (annoncée le 21 octobre 2026)
+- Section 11.2 g : si l'organisateur annule ou supprime un Événement payant,
+  chaque acheteur, avec ou sans compte, obtient automatiquement le
+  remboursement intégral du prix du billet sur son moyen de paiement
+  d'origine ; GreenGo restitue ses frais de service à l'organisateur ; les
+  frais de traitement des prestataires de paiement ne sont pas remboursés par
+  GreenGo ; si un remboursement automatique échoue, l'organisateur rembourse
+  l'acheteur directement et téléverse une preuve, que GreenGo examine.
+- Sections 12.2 et 12.5 c : remboursement intégral automatique à l'Invité
+  lorsque l'Hôte annule une réservation ou un créneau, supprime un créneau
+  réservé ou supprime l'Expérience ; les mêmes règles pour les frais et les
+  remboursements échoués.
+- Section 20.1 : un compte ne peut pas être supprimé tant qu'il a des
+  Événements ou des Expériences à venir ou en cours avec des billets ou des
+  réservations payés qui n'ont pas été remboursés, ou des remboursements qui
+  ne sont pas terminés.
 
 5.3.2 - en vigueur le 17 octobre 2026 pour les comptes créés à partir du
 16 octobre 2026 ; le 16 novembre 2026 pour les comptes créés avant le

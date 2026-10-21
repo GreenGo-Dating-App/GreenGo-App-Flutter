@@ -25694,6 +25694,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'Ticket price phases for events (for example early bird), and the 2026 launch offer: 50% off the first period of a new Membership';
 
   @override
+  String get legalUpdate533BulletRefunds =>
+      'Automatic full refunds when an organiser cancels a paid event or a host cancels a booking; accounts with paid sales not yet refunded cannot be deleted';
+
+  @override
   String get legalUpdateCloseAccount => 'I don\'t accept – close my account';
 
   @override

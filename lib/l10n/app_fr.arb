@@ -7615,6 +7615,7 @@
   "legalUpdate530BulletTraders": "Les professionnels qui vendent des Expériences à des personnes dans l’UE doivent fournir leurs informations de professionnel",
   "legalUpdate531BulletFeeCaps": "Plafond plus élevé des frais de service de GreenGo par billet pour les vendeurs : Silver 30 $ US, Gold 28 $ US, Platinum 25 $ US",
   "legalUpdate532BulletPhases": "Des phases de prix pour les billets d’événements (par exemple early bird) et l’offre de lancement 2026 : 50 % de réduction sur la première période d’un nouvel Abonnement",
+  "legalUpdate533BulletRefunds": "Remboursement intégral automatique quand un organisateur annule un événement payant ou qu’un hôte annule une réservation ; un compte avec des ventes payées pas encore remboursées ne peut pas être supprimé",
   "legalUpdateCloseAccount": "Je n’accepte pas – fermer mon compte",
   "legalUpdateCloseAccountTitle": "Fermer votre compte",
   "legalUpdateCloseAccountBody": "Si vous n’acceptez pas les nouvelles Conditions, vous pouvez mettre fin gratuitement à votre contrat avec GreenGo en supprimant votre compte. Si vous avez payé un Abonnement d’avance, nous vous remboursons la partie non utilisée : écrivez à {email}.\n\nEnsuite, ouvrez votre Profil et touchez « Supprimer le Compte » en bas.",
