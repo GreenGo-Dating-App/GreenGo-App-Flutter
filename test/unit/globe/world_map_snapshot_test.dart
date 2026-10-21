@@ -257,10 +257,10 @@ void main() {
       ]);
     });
 
-    test('older than 1 h or missing: the callable builds it', () async {
+    test('older than 6 h or missing: the callable builds it', () async {
       final s = source();
       expect((await s.load('me')).map((u) => u.userId), ['fromServer']);
-      await storeDoc({}, age: const Duration(minutes: 61));
+      await storeDoc({}, age: const Duration(hours: 6, minutes: 1));
       expect((await s.load('me')).map((u) => u.userId), ['fromServer']);
       expect(calls, [{}, {}]);
     });

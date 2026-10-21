@@ -142,7 +142,7 @@ class WorldMapSnapshotSource {
   final DateTime Function() _now;
 
   /// Older than this -> rebuilt through the callable.
-  static const Duration ttl = Duration(hours: 1);
+  static const Duration ttl = Duration(hours: 6); // = server SNAPSHOT_TTL_MS (6 h)
 
   /// The "opened the map" marker that keeps the hourly batch going is
   /// refreshed (in the background) when older than this.
