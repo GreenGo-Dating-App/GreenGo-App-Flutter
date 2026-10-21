@@ -113,12 +113,15 @@ abstract class CommunitiesRemoteDataSource {
   });
 
   /// One older page (newest first) of messages sent strictly before
-  /// [before]: every type, or only tips when [tipsOnly]. At most [limit].
+  /// [before]: every type, or only tips when [tipsOnly] (only the tips of
+  /// [tipType] when given — the Tips filter chips page on the server, not
+  /// client-side over one page). At most [limit].
   Future<List<CommunityMessageModel>> getOlderCommunityMessages(
     String communityId, {
     required DateTime before,
     int limit = kMessagePageSize,
     bool tipsOnly = false,
+    String? tipType,
   });
 
   /// Send a message to a community
@@ -770,10 +773,17 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
     required DateTime before,
     int limit = kMessagePageSize,
     bool tipsOnly = false,
+    String? tipType,
   }) async {
     Query query = _messagesRef(communityId);
-    // Tips only: index communities/{id}/messages (type ASC, sentAt DESC).
-    if (tipsOnly) query = query.where('type', whereIn: kTipTypes);
+    // Tips only: index communities/{id}/messages (type ASC, sentAt DESC),
+    // which also serves one selected tip type.
+    if (tipsOnly || tipType != null) {
+      query = query.where('type',
+          whereIn: tipType != null && kTipTypes.contains(tipType)
+              ? [tipType]
+              : kTipTypes);
+    }
     // Keyset page: strictly older than the oldest message loaded.
     final snap = await query
         .where('sentAt', isLessThan: Timestamp.fromDate(before))

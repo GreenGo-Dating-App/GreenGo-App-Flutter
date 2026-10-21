@@ -5,6 +5,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/utils/chat_l10n.dart';
+import '../../data/services/community_tip_translator.dart';
 import '../../domain/entities/community_message.dart';
 import '../../../chat/presentation/widgets/deleted_message_bubble.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
@@ -12,9 +13,11 @@ import '../../../../core/widgets/ai_consent_sheet.dart';
 /// Community Message Bubble Widget
 ///
 /// Displays a message in the community group chat with sender info and special
-/// styling for language tips, cultural facts, and city tips. Supports on-demand
-/// translation into the viewer's language (like 1:1/group chat) and long-press
-/// to report.
+/// styling for language tips, cultural facts, and city tips. Tips written by
+/// someone else are shown in the viewer's language AUTOMATICALLY (translated
+/// once for everyone on the server, then cached on the device — see
+/// [CommunityTipTranslator]) with a "Show original" toggle; chat messages keep
+/// on-demand translation (like 1:1/group chat). Long-press to report.
 class CommunityMessageBubble extends StatefulWidget {
   const CommunityMessageBubble({
     required this.message,
@@ -24,6 +27,7 @@ class CommunityMessageBubble extends StatefulWidget {
     this.currentUserLanguage = 'en',
     this.onReport,
     this.onRemove,
+    this.tipTranslator,
   });
 
   final CommunityMessage message;
@@ -41,6 +45,9 @@ class CommunityMessageBubble extends StatefulWidget {
   /// (Remove post + Report) instead of reporting directly.
   final VoidCallback? onRemove;
 
+  /// Tip auto-translation; defaults to [CommunityTipTranslator.instance].
+  final CommunityTipTranslator? tipTranslator;
+
   @override
   State<CommunityMessageBubble> createState() => _CommunityMessageBubbleState();
 }
@@ -51,13 +58,78 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
   bool _showingTranslation = false;
   bool _failed = false;
 
+  // Tips: automatic translation into the viewer's language.
+  TipTranslation? _tipTr;
+  bool _tipLoading = false;
+  bool _tipShowOriginal = false;
+
   CommunityMessage get message => widget.message;
   bool get isCurrentUser => widget.isCurrentUser;
   bool get showSenderInfo => widget.showSenderInfo;
 
-  String get _displayContent => _showingTranslation && _translated != null
-      ? _translated!
-      : message.content;
+  CommunityTipTranslator get _tipTranslator =>
+      widget.tipTranslator ?? CommunityTipTranslator.instance;
+
+  /// Tips by someone else are translated automatically.
+  bool get _autoTranslates => message.isTip && !isCurrentUser;
+
+  /// A tip translation that differs from the original is available.
+  bool get _hasTipTranslation => _tipTr != null && !_tipTr!.sameLanguage;
+
+  String get _displayContent {
+    if (_hasTipTranslation) {
+      return _tipShowOriginal ? message.content : _tipTr!.text;
+    }
+    return _showingTranslation && _translated != null
+        ? _translated!
+        : message.content;
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _startTipTranslation();
+  }
+
+  @override
+  void didUpdateWidget(covariant CommunityMessageBubble oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.message.id != message.id ||
+        oldWidget.message.content != message.content ||
+        oldWidget.currentUserLanguage != widget.currentUserLanguage) {
+      _tipTr = null;
+      _tipLoading = false;
+      _tipShowOriginal = false;
+      _translated = null;
+      _showingTranslation = false;
+      _startTipTranslation();
+    }
+  }
+
+  void _startTipTranslation() {
+    if (!_autoTranslates) return;
+    final target = widget.currentUserLanguage;
+    final known = _tipTranslator.peek(message, target);
+    if (known != null) {
+      _tipTr = known;
+      return;
+    }
+    _tipLoading = true;
+    final forId = message.id;
+    final forContent = message.content;
+    _tipTranslator.translate(message, target).then((r) {
+      if (!mounted ||
+          message.id != forId ||
+          message.content != forContent ||
+          widget.currentUserLanguage != target) {
+        return;
+      }
+      setState(() {
+        _tipLoading = false;
+        _tipTr = r;
+      });
+    });
+  }
 
   Future<void> _toggleTranslate() async {
     if (_translated != null) {
@@ -89,6 +161,38 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
 
   Widget _translateAction({required Color color}) {
     final l10n = AppLocalizations.of(context)!;
+    if (_autoTranslates) {
+      // Already in the viewer's language: nothing to toggle.
+      if (_tipTr != null && _tipTr!.sameLanguage) return const SizedBox.shrink();
+      if (_tipLoading) {
+        return Padding(
+          padding: const EdgeInsets.only(top: 4),
+          child: Text(
+            l10n.communitiesTranslating,
+            style: TextStyle(
+                color: color, fontSize: 11, fontWeight: FontWeight.w600),
+          ),
+        );
+      }
+      if (_hasTipTranslation) {
+        return GestureDetector(
+          key: const ValueKey('community-tip-translation-toggle'),
+          onTap: () => setState(() => _tipShowOriginal = !_tipShowOriginal),
+          child: Padding(
+            padding: const EdgeInsets.only(top: 4),
+            child: Text(
+              _tipShowOriginal
+                  ? l10n.communitiesTranslate
+                  : l10n.communitiesShowOriginal,
+              style: TextStyle(
+                  color: color, fontSize: 11, fontWeight: FontWeight.w600),
+            ),
+          ),
+        );
+      }
+      // Not translated right now (offline / rate-limited): fall back to the
+      // on-demand device translation below.
+    }
     return GestureDetector(
       onTap: _translating ? null : _toggleTranslate,
       child: Padding(

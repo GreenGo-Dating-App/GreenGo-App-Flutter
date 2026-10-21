@@ -191,8 +191,12 @@ class LoadOlderCommunityMessages extends CommunitiesEvent {
 
 /// Endless scroll in the Tips tab: load the next older tips page (50).
 class LoadOlderCommunityTips extends CommunitiesEvent {
-  const LoadOlderCommunityTips({required this.communityId});
+  const LoadOlderCommunityTips({required this.communityId, this.tipType});
   final String communityId;
+
+  /// The stored type of the selected Tips filter chip ('city_tip', ...);
+  /// null = all tip types.
+  final String? tipType;
 }
 
 /// A message was removed from this device (older pages are not live).

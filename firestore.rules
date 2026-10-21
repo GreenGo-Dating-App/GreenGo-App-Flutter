@@ -2300,7 +2300,7 @@ service cloud.firestore {
     // yesterday, to absorb clock skew at midnight); never updated, deleted or
     // read by clients.
     // Shared translations of PUBLIC content, written only by the
-    // translateTexts function. Readable by id (the id is a hash of language +
+    // translateTexts / translateCommunityTips functions. Readable by id (the id is a hash of language +
     // text, so you must already know the text); never listable.
     match /translations/{id} {
       allow get: if isSignedIn();

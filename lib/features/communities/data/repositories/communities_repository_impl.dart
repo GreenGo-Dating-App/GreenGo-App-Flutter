@@ -176,6 +176,7 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
     required DateTime before,
     int? limit,
     bool tipsOnly = false,
+    String? tipType,
   }) async {
     try {
       final page = await remoteDataSource.getOlderCommunityMessages(
@@ -183,6 +184,7 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
         before: before,
         limit: limit ?? kMessagePageSize,
         tipsOnly: tipsOnly,
+        tipType: tipType,
       );
       return Right(page.map((m) => m.toEntity()).toList());
     } catch (e) {

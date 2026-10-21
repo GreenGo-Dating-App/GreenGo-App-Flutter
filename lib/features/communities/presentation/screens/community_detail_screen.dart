@@ -662,12 +662,16 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
               m.senderName.toLowerCase().contains(q))
           .toList();
     }
+    // A selected chip pages ITS type on the server (not a client-side filter
+    // of the loaded pages), so a rare type is never buried.
+    final tipType = _tipFilter?.value;
+    final hasMore = state.hasMoreTipsOf(tipType);
     return Column(
       children: [
         _buildTipSearch(),
         _buildTipFilterBar(),
         Expanded(
-          child: tips.isEmpty && !state.hasMoreTips
+          child: tips.isEmpty && !hasMore
               ? _buildTabEmpty(
                   Icons.lightbulb_outline,
                   AppLocalizations.of(context)!.communitiesTipsEmpty,
@@ -676,11 +680,11 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                   padding: const EdgeInsets.symmetric(
                       vertical: AppDimensions.paddingS),
                   // + the endless-scroll footer while older tips may exist.
-                  itemCount: tips.length + (state.hasMoreTips ? 1 : 0),
+                  itemCount: tips.length + (hasMore ? 1 : 0),
                   itemBuilder: (context, index) {
                     if (index == tips.length) {
                       return _loadOlderFooter(() => LoadOlderCommunityTips(
-                          communityId: _community.id));
+                          communityId: _community.id, tipType: tipType));
                     }
                     return CommunityMessageBubble(
                       message: tips[index],

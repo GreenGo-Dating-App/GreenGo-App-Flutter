@@ -11,7 +11,10 @@ import '../../domain/entities/community_message.dart';
 ///  * older chat pages are keyset pages of [pageSize] (all types) before
 ///    [messagesCursor] ([addOlderPage]);
 ///  * older tips pages are keyset pages of [pageSize] tips only before
-///    [tipsCursor] ([addTipsPage]), so a busy chat never buries the tips.
+///    [tipsCursor] ([addTipsPage]), so a busy chat never buries the tips;
+///  * with a Tips filter chip selected (owner request 2026-10-21), pages of
+///    ONE tip type before [tipsCursorOf] ([addTipsPageOf]), so a rare type is
+///    found on the server instead of scrolling through every tip page.
 ///
 /// A message that drops out of the live window (newer ones arrived) is kept
 /// as an older one, never lost; one that disappears from INSIDE the window
@@ -27,6 +30,9 @@ class CommunityMessageFeed {
   bool _liveSeen = false;
   final Map<String, CommunityMessage> _older = {};
   final Map<String, CommunityMessage> _olderTips = {};
+  // Per stored tip type ('city_tip', ...): pages of that type only.
+  final Map<String, Map<String, CommunityMessage>> _olderTipsByType = {};
+  final Set<String> _typeAtStart = {};
   bool _messagesAtStart = false;
   bool _tipsAtStart = false;
 
@@ -35,6 +41,16 @@ class CommunityMessageFeed {
 
   /// Whether older tips may exist before [tipsCursor].
   bool get hasMoreTips => !_tipsAtStart && !_messagesAtStart;
+
+  /// Whether older tips of the stored [type] may exist before
+  /// [tipsCursorOf].
+  bool hasMoreTipsOf(String type) => hasMoreTips && !_typeAtStart.contains(type);
+
+  /// [hasMoreTipsOf] for every type that has had a typed page.
+  Map<String, bool> get hasMoreTipsByType => {
+        for (final t in {..._olderTipsByType.keys, ..._typeAtStart})
+          t: hasMoreTipsOf(t),
+      };
 
   /// Applies a live snapshot: the newest messages, newest first, at most
   /// [pageSize].
@@ -76,10 +92,24 @@ class CommunityMessageFeed {
     if (page.length < pageSize) _tipsAtStart = true;
   }
 
+  /// Adds an older page of ONE tip [type] (newest first) read before
+  /// [tipsCursorOf]; a short page means the first tip of that type was
+  /// reached.
+  void addTipsPageOf(String type, List<CommunityMessage> page) {
+    final byId = _olderTipsByType.putIfAbsent(type, () => {});
+    for (final m in page) {
+      if (m.isTip && m.type.value == type) byId[m.id] = m;
+    }
+    if (page.length < pageSize) _typeAtStart.add(type);
+  }
+
   /// Drops a message removed on this device (older pages are not live).
   void remove(String messageId) {
     _older.remove(messageId);
     _olderTips.remove(messageId);
+    for (final byId in _olderTipsByType.values) {
+      byId.remove(messageId);
+    }
     _live = List.unmodifiable(_live.where((m) => m.id != messageId));
   }
 
@@ -103,9 +133,22 @@ class CommunityMessageFeed {
     return m.isBefore(t) ? m : t;
   }
 
+  /// Every tip of the stored [type] is loaded down to here (the chat and
+  /// all-tips pages hold them too): the next page of that type starts after
+  /// it. Each kind of page is contiguous from the newest, so the deepest one
+  /// wins.
+  DateTime? tipsCursorOf(String type) {
+    final t = tipsCursor;
+    final own = _oldest(_olderTipsByType[type]?.values ?? const []);
+    if (t == null) return own;
+    if (own == null) return t;
+    return t.isBefore(own) ? t : own;
+  }
+
   /// All loaded messages, deduplicated, newest first.
   List<CommunityMessage> get all {
     final byId = <String, CommunityMessage>{
+      for (final byType in _olderTipsByType.values) ...byType,
       ..._olderTips,
       ..._older,
       for (final m in _live) m.id: m,
