@@ -5201,6 +5201,24 @@ abstract class AppLocalizations {
   /// **'City Tip'**
   String get communitiesCityTipLabel;
 
+  /// No description provided for @communitiesOtherTipLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get communitiesOtherTipLabel;
+
+  /// No description provided for @communitiesOtherTipUpper.
+  ///
+  /// In en, this message translates to:
+  /// **'OTHER'**
+  String get communitiesOtherTipUpper;
+
+  /// No description provided for @communitiesShareOtherTip.
+  ///
+  /// In en, this message translates to:
+  /// **'Share a tip...'**
+  String get communitiesShareOtherTip;
+
   /// No description provided for @communitiesCityTipUpper.
   ///
   /// In en, this message translates to:

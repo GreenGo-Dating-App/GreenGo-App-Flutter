@@ -16,7 +16,12 @@ import '../models/community_model.dart';
 const int kMessagePageSize = 50;
 
 /// The stored `type` values of tip posts (Tips tab).
-const List<String> kTipTypes = ['language_tip', 'cultural_fact', 'city_tip'];
+const List<String> kTipTypes = [
+  'language_tip',
+  'cultural_fact',
+  'city_tip',
+  'other_tip',
+];
 
 /// Communities Remote Data Source
 ///

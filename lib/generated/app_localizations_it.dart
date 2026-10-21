@@ -2913,6 +2913,15 @@ class AppLocalizationsIt extends AppLocalizations {
   String get communitiesCityTipLabel => 'Consiglio Citta';
 
   @override
+  String get communitiesOtherTipLabel => 'Altro';
+
+  @override
+  String get communitiesOtherTipUpper => 'ALTRO';
+
+  @override
+  String get communitiesShareOtherTip => 'Condividi un consiglio...';
+
+  @override
   String get communitiesCityTipUpper => 'CONSIGLIO CITTA';
 
   @override

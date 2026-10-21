@@ -857,6 +857,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
           chip(l10n.communitiesCulturalFactLabel,
               CommunityMessageType.culturalFact),
           chip(l10n.communitiesCityTipLabel, CommunityMessageType.cityTip),
+          chip(l10n.communitiesOtherTipLabel, CommunityMessageType.otherTip),
         ],
       ),
     );
@@ -1262,6 +1263,12 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                 type: CommunityMessageType.cityTip,
               ),
             ],
+            const SizedBox(width: 6),
+            _buildTypeChip(
+              label: AppLocalizations.of(context)!.communitiesOtherTipLabel,
+              icon: Icons.push_pin_outlined,
+              type: CommunityMessageType.otherTip,
+            ),
           ],
         ),
       ),
@@ -1367,6 +1374,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
         return l10n.communitiesShareCulturalFact;
       case CommunityMessageType.cityTip:
         return l10n.communitiesShareCityTip;
+      case CommunityMessageType.otherTip:
+        return l10n.communitiesShareOtherTip;
       default:
         return l10n.communitiesTypeAMessage;
     }

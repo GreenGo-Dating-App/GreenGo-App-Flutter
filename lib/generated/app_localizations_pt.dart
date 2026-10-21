@@ -2903,6 +2903,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get communitiesCityTipLabel => 'Dica da Cidade';
 
   @override
+  String get communitiesOtherTipLabel => 'Outros';
+
+  @override
+  String get communitiesOtherTipUpper => 'OUTROS';
+
+  @override
+  String get communitiesShareOtherTip => 'Partilhe uma dica...';
+
+  @override
   String get communitiesCityTipUpper => 'DICA DA CIDADE';
 
   @override
@@ -31064,6 +31073,15 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get communitiesCityTipLabel => 'Dica da Cidade';
+
+  @override
+  String get communitiesOtherTipLabel => 'Outros';
+
+  @override
+  String get communitiesOtherTipUpper => 'OUTROS';
+
+  @override
+  String get communitiesShareOtherTip => 'Compartilhe uma dica...';
 
   @override
   String get communitiesCityTipUpper => 'DICA DA CIDADE';

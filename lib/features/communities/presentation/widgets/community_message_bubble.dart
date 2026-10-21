@@ -420,6 +420,14 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
           borderColor: AppColors.successGreen.withValues(alpha: 0.3),
           label: l10n.communitiesCityTipUpper,
         );
+      case CommunityMessageType.otherTip:
+        return _SpecialMessageConfig(
+          icon: Icons.push_pin_outlined,
+          iconColor: AppColors.infoBlue,
+          backgroundColor: AppColors.infoBlue.withValues(alpha: 0.08),
+          borderColor: AppColors.infoBlue.withValues(alpha: 0.3),
+          label: l10n.communitiesOtherTipUpper,
+        );
       default:
         return _SpecialMessageConfig(
           icon: Icons.info_outline,
