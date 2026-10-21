@@ -22,6 +22,7 @@ import '../../domain/usecases/report_user.dart';
 import '../widgets/group_tags_editor.dart';
 import '../widgets/resolved_users_builder.dart';
 import '../../../../core/widgets/verified_badge.dart';
+import '../../../../core/widgets/cover_image_size_hint.dart';
 
 /// Group Info Screen — members list, roles, and leave action.
 ///
@@ -352,7 +353,10 @@ class GroupInfoScreen extends StatelessWidget {
   Future<void> _changeGroupPhoto(BuildContext context) async {
     final l10n = AppLocalizations.of(context)!;
     final messenger = ScaffoldMessenger.of(context);
-    final choice = await pickImageWithLibrary(context, imageQuality: 80);
+    // Group photo = circle avatar: square recommendation in the sheet.
+    final choice = await pickImageWithLibrary(context,
+        imageQuality: 80,
+        hint: const CoverImageSizeHint(spec: CoverImageSpec.square));
     if (choice == null) return;
     // My pictures: an approved picture needs no upload and no new check.
     final libraryUrl = choice.url;
