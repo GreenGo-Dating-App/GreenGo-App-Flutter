@@ -283,6 +283,9 @@ export const ACCOUNT_DATA_INVENTORY: InventoryEntry[] = [
   // Safety takedowns: the requester's status mirror and strike records.
   ...q('safety_request_status', 'requesterUid'),
   ...q('user_strikes', 'userId'),
+  // Pending community ownership offers made by / to the user
+  // (communities/transfer.ts); an accepted one already moved ownership.
+  ...q('community_transfers', 'fromUserId', 'toUserId'),
   { kind: 'query', collection: 'met_in_person', field: 'users', arrayContains: true, recursive: true },
   { kind: 'query', collection: 'user_experiences', field: 'hostId', recursive: true },
   { kind: 'supportChats' },
@@ -365,6 +368,7 @@ export const KNOWN_RESIDUALS = [
   'daily_viewers/{day}_{uid} (suffix id, not range-queryable)',
   'translations.voters[] / translation_candidates votes (TTL-expired)',
   'communities created by the user (createdByUserId) and events organised by the user (organizerId): left for their members',
+  'community_audit ownership-transfer records (fromUserId / toUserId / byUserId): audit trail of who owned a community',
   'Storage objects outside uid-keyed prefixes that carry only customMetadata.userId',
   'admin_users/{uid} (admin roles are removed by an admin, not by self-deletion)',
   'ticket purchases as BUYER: kept for bookkeeping with the buyer id replaced by the retention pseudonym (follow-up task tickets); refund_proofs/{orderId}/ images uploaded by the SELLER (manual refund proof) are the SELLER accounting records and stay',

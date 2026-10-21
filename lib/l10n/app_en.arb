@@ -17794,5 +17794,185 @@
   "pullLocationAllow": "Allow",
   "@pullLocationAllow": {
     "description": "Explore pull-to-refresh location update snackbar"
+  },
+  "communityTransferMenu": "Transfer ownership",
+  "@communityTransferMenu": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferPickTitle": "Choose the new owner",
+  "@communityTransferPickTitle": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferPickHint": "Only current members can receive this community. They must accept within 7 days.",
+  "@communityTransferPickHint": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferSearchHint": "Search members",
+  "@communityTransferSearchHint": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferNoMembers": "No other member can receive this community yet.",
+  "@communityTransferNoMembers": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferLoadMore": "Load more members",
+  "@communityTransferLoadMore": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferConfirmTitle": "Transfer to {name}?",
+  "@communityTransferConfirmTitle": {
+    "description": "Community ownership transfer",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "communityTransferWarning": "You will lose owner rights. This can't be undone unless the new owner transfers it back. You stay in the community as an admin.",
+  "@communityTransferWarning": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferSponsorshipWarning": "Your business sponsorship and the pinned promo of this community will end.",
+  "@communityTransferSponsorshipWarning": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferConfirmButton": "Confirm with password",
+  "@communityTransferConfirmButton": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferSent": "Offer sent to {name}. They have 7 days to accept.",
+  "@communityTransferSent": {
+    "description": "Community ownership transfer",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "communityTransferPendingBanner": "Ownership offer sent to {name}. Waiting for an answer.",
+  "@communityTransferPendingBanner": {
+    "description": "Community ownership transfer",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "communityTransferCancel": "Cancel offer",
+  "@communityTransferCancel": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferCancelled": "Ownership offer cancelled.",
+  "@communityTransferCancelled": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferInviteTitle": "{name} wants to make you the owner of this community",
+  "@communityTransferInviteTitle": {
+    "description": "Community ownership transfer",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "communityTransferInviteBody": "As owner you can edit the community info and cover, manage admins and delete the community.",
+  "@communityTransferInviteBody": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferAccept": "Accept",
+  "@communityTransferAccept": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferDecline": "Decline",
+  "@communityTransferDecline": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferAccepted": "You are now the owner of this community.",
+  "@communityTransferAccepted": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferDeclined": "Offer declined.",
+  "@communityTransferDeclined": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferErrorRecentLogin": "Please confirm it's you again, then try once more.",
+  "@communityTransferErrorRecentLogin": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferErrorNotMember": "That person is no longer a member of this community.",
+  "@communityTransferErrorNotMember": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferErrorUnavailable": "That person can't receive this community.",
+  "@communityTransferErrorUnavailable": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferErrorPending": "There is already a pending offer for this community.",
+  "@communityTransferErrorPending": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferErrorLimit": "The new owner has reached the number of communities their plan allows.",
+  "@communityTransferErrorLimit": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferErrorGone": "This offer is no longer available.",
+  "@communityTransferErrorGone": {
+    "description": "Community ownership transfer"
+  },
+  "communityTransferErrorGeneric": "The transfer could not be completed. Please try again.",
+  "@communityTransferErrorGeneric": {
+    "description": "Community ownership transfer"
+  },
+  "srvCommunityTransferOfferTitle": "wants to make you the owner of a community",
+  "@srvCommunityTransferOfferTitle": {
+    "description": "Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one"
+  },
+  "srvCommunityTransferOfferBody": "Open {community} to accept or decline. The offer expires in 7 days.",
+  "@srvCommunityTransferOfferBody": {
+    "description": "Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one",
+    "placeholders": {
+      "community": {
+        "type": "String"
+      }
+    }
+  },
+  "srvCommunityTransferAcceptedTitle": "accepted ownership of your community",
+  "@srvCommunityTransferAcceptedTitle": {
+    "description": "Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one"
+  },
+  "srvCommunityTransferAcceptedBody": "{community} now has a new owner. You stay on as an admin.",
+  "@srvCommunityTransferAcceptedBody": {
+    "description": "Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one",
+    "placeholders": {
+      "community": {
+        "type": "String"
+      }
+    }
+  },
+  "srvCommunityTransferDeclinedTitle": "declined ownership of your community",
+  "@srvCommunityTransferDeclinedTitle": {
+    "description": "Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one"
+  },
+  "srvCommunityTransferDeclinedBody": "You are still the owner of {community}.",
+  "@srvCommunityTransferDeclinedBody": {
+    "description": "Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one",
+    "placeholders": {
+      "community": {
+        "type": "String"
+      }
+    }
+  },
+  "srvCommunityTransferExpiredTitle": "Community transfer offer expired",
+  "@srvCommunityTransferExpiredTitle": {
+    "description": "Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one"
+  },
+  "srvCommunityTransferExpiredBody": "Nobody answered your offer for {community}. You are still the owner.",
+  "@srvCommunityTransferExpiredBody": {
+    "description": "Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one",
+    "placeholders": {
+      "community": {
+        "type": "String"
+      }
+    }
   }
 }

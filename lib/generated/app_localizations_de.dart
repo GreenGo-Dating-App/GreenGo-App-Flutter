@@ -28261,4 +28261,142 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get pullLocationAllow => 'Erlauben';
+
+  @override
+  String get communityTransferMenu => 'Eigentümerschaft übertragen';
+
+  @override
+  String get communityTransferPickTitle => 'Neuen Eigentümer wählen';
+
+  @override
+  String get communityTransferPickHint =>
+      'Nur aktuelle Mitglieder können diese Community übernehmen. Sie müssen innerhalb von 7 Tagen annehmen.';
+
+  @override
+  String get communityTransferSearchHint => 'Mitglieder suchen';
+
+  @override
+  String get communityTransferNoMembers =>
+      'Noch kann kein anderes Mitglied diese Community übernehmen.';
+
+  @override
+  String get communityTransferLoadMore => 'Weitere Mitglieder laden';
+
+  @override
+  String communityTransferConfirmTitle(String name) {
+    return 'An $name übertragen?';
+  }
+
+  @override
+  String get communityTransferWarning =>
+      'Du verlierst deine Eigentümerrechte. Das lässt sich nur rückgängig machen, wenn der neue Eigentümer die Community an dich zurücküberträgt. Du bleibst als Admin in der Community.';
+
+  @override
+  String get communityTransferSponsorshipWarning =>
+      'Das Sponsoring deines Unternehmens und die angeheftete Promo dieser Community enden.';
+
+  @override
+  String get communityTransferConfirmButton => 'Mit Passwort bestätigen';
+
+  @override
+  String communityTransferSent(String name) {
+    return 'Angebot an $name gesendet. Die Person hat 7 Tage Zeit, es anzunehmen.';
+  }
+
+  @override
+  String communityTransferPendingBanner(String name) {
+    return 'Eigentümer-Angebot an $name gesendet. Warte auf Antwort.';
+  }
+
+  @override
+  String get communityTransferCancel => 'Angebot zurückziehen';
+
+  @override
+  String get communityTransferCancelled => 'Eigentümer-Angebot zurückgezogen.';
+
+  @override
+  String communityTransferInviteTitle(String name) {
+    return '$name möchte dich zum Eigentümer dieser Community machen';
+  }
+
+  @override
+  String get communityTransferInviteBody =>
+      'Als Eigentümer kannst du Infos und Titelbild bearbeiten, Admins verwalten und die Community löschen.';
+
+  @override
+  String get communityTransferAccept => 'Annehmen';
+
+  @override
+  String get communityTransferDecline => 'Ablehnen';
+
+  @override
+  String get communityTransferAccepted =>
+      'Du bist jetzt Eigentümer dieser Community.';
+
+  @override
+  String get communityTransferDeclined => 'Angebot abgelehnt.';
+
+  @override
+  String get communityTransferErrorRecentLogin =>
+      'Bitte bestätige noch einmal, dass du es bist, und versuche es erneut.';
+
+  @override
+  String get communityTransferErrorNotMember =>
+      'Diese Person ist kein Mitglied dieser Community mehr.';
+
+  @override
+  String get communityTransferErrorUnavailable =>
+      'Diese Person kann diese Community nicht übernehmen.';
+
+  @override
+  String get communityTransferErrorPending =>
+      'Für diese Community gibt es bereits ein offenes Angebot.';
+
+  @override
+  String get communityTransferErrorLimit =>
+      'Der neue Eigentümer hat die Anzahl an Communities erreicht, die sein Tarif erlaubt.';
+
+  @override
+  String get communityTransferErrorGone =>
+      'Dieses Angebot ist nicht mehr verfügbar.';
+
+  @override
+  String get communityTransferErrorGeneric =>
+      'Die Übertragung konnte nicht abgeschlossen werden. Bitte versuche es erneut.';
+
+  @override
+  String get srvCommunityTransferOfferTitle =>
+      'möchte dich zum Eigentümer einer Community machen';
+
+  @override
+  String srvCommunityTransferOfferBody(String community) {
+    return 'Öffne $community, um anzunehmen oder abzulehnen. Das Angebot läuft in 7 Tagen ab.';
+  }
+
+  @override
+  String get srvCommunityTransferAcceptedTitle =>
+      'hat die Eigentümerschaft deiner Community angenommen';
+
+  @override
+  String srvCommunityTransferAcceptedBody(String community) {
+    return '$community hat einen neuen Eigentümer. Du bleibst Admin.';
+  }
+
+  @override
+  String get srvCommunityTransferDeclinedTitle =>
+      'hat die Eigentümerschaft deiner Community abgelehnt';
+
+  @override
+  String srvCommunityTransferDeclinedBody(String community) {
+    return 'Du bist weiterhin Eigentümer von $community.';
+  }
+
+  @override
+  String get srvCommunityTransferExpiredTitle =>
+      'Übertragungsangebot abgelaufen';
+
+  @override
+  String srvCommunityTransferExpiredBody(String community) {
+    return 'Niemand hat auf dein Angebot für $community geantwortet. Du bleibst Eigentümer.';
+  }
 }

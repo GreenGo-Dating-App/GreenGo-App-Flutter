@@ -142,6 +142,16 @@ export {
 // Communities — searchKeywords for server-side community search (onCreate fill).
 export { onCommunityCreatedSearchKeywords } from './communities/searchKeywords';
 
+// Communities — ownership transfer (owner offers with a fresh sign-in, the
+// member accepts / declines; 7-day expiry). Server-only: rules keep
+// createdByUserId immutable from clients.
+export {
+  requestCommunityTransfer,
+  respondCommunityTransfer,
+  cancelCommunityTransfer,
+  expireCommunityTransfers,
+} from './communities/transferFunctions';
+
 // H3: debug/seed HTTP endpoints (backfillCommunityCreatorMembers, seedMockData,
 // removeMockData, diagLiveEvents, diagCommunityEvents) REMOVED — they were
 // guarded only by a committed static token (unauthenticated data-delete/spam).

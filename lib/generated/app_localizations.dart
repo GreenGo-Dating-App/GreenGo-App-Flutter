@@ -47690,6 +47690,216 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Allow'**
   String get pullLocationAllow;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Transfer ownership'**
+  String get communityTransferMenu;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the new owner'**
+  String get communityTransferPickTitle;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Only current members can receive this community. They must accept within 7 days.'**
+  String get communityTransferPickHint;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Search members'**
+  String get communityTransferSearchHint;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'No other member can receive this community yet.'**
+  String get communityTransferNoMembers;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Load more members'**
+  String get communityTransferLoadMore;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Transfer to {name}?'**
+  String communityTransferConfirmTitle(String name);
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'You will lose owner rights. This can\'t be undone unless the new owner transfers it back. You stay in the community as an admin.'**
+  String get communityTransferWarning;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Your business sponsorship and the pinned promo of this community will end.'**
+  String get communityTransferSponsorshipWarning;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm with password'**
+  String get communityTransferConfirmButton;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Offer sent to {name}. They have 7 days to accept.'**
+  String communityTransferSent(String name);
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Ownership offer sent to {name}. Waiting for an answer.'**
+  String communityTransferPendingBanner(String name);
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel offer'**
+  String get communityTransferCancel;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Ownership offer cancelled.'**
+  String get communityTransferCancelled;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'{name} wants to make you the owner of this community'**
+  String communityTransferInviteTitle(String name);
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'As owner you can edit the community info and cover, manage admins and delete the community.'**
+  String get communityTransferInviteBody;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Accept'**
+  String get communityTransferAccept;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Decline'**
+  String get communityTransferDecline;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'You are now the owner of this community.'**
+  String get communityTransferAccepted;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Offer declined.'**
+  String get communityTransferDeclined;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'Please confirm it\'s you again, then try once more.'**
+  String get communityTransferErrorRecentLogin;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'That person is no longer a member of this community.'**
+  String get communityTransferErrorNotMember;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'That person can\'t receive this community.'**
+  String get communityTransferErrorUnavailable;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'There is already a pending offer for this community.'**
+  String get communityTransferErrorPending;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'The new owner has reached the number of communities their plan allows.'**
+  String get communityTransferErrorLimit;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'This offer is no longer available.'**
+  String get communityTransferErrorGone;
+
+  /// Community ownership transfer
+  ///
+  /// In en, this message translates to:
+  /// **'The transfer could not be completed. Please try again.'**
+  String get communityTransferErrorGeneric;
+
+  /// Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one
+  ///
+  /// In en, this message translates to:
+  /// **'wants to make you the owner of a community'**
+  String get srvCommunityTransferOfferTitle;
+
+  /// Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one
+  ///
+  /// In en, this message translates to:
+  /// **'Open {community} to accept or decline. The offer expires in 7 days.'**
+  String srvCommunityTransferOfferBody(String community);
+
+  /// Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one
+  ///
+  /// In en, this message translates to:
+  /// **'accepted ownership of your community'**
+  String get srvCommunityTransferAcceptedTitle;
+
+  /// Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one
+  ///
+  /// In en, this message translates to:
+  /// **'{community} now has a new owner. You stay on as an admin.'**
+  String srvCommunityTransferAcceptedBody(String community);
+
+  /// Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one
+  ///
+  /// In en, this message translates to:
+  /// **'declined ownership of your community'**
+  String get srvCommunityTransferDeclinedTitle;
+
+  /// Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one
+  ///
+  /// In en, this message translates to:
+  /// **'You are still the owner of {community}.'**
+  String srvCommunityTransferDeclinedBody(String community);
+
+  /// Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one
+  ///
+  /// In en, this message translates to:
+  /// **'Community transfer offer expired'**
+  String get srvCommunityTransferExpiredTitle;
+
+  /// Server notification (community ownership transfer); the push title is prefixed with the actor name when there is one
+  ///
+  /// In en, this message translates to:
+  /// **'Nobody answered your offer for {community}. You are still the owner.'**
+  String srvCommunityTransferExpiredBody(String community);
 }
 
 class _AppLocalizationsDelegate

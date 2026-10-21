@@ -2227,6 +2227,32 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // COMMUNITY OWNERSHIP TRANSFER (functions/src/communities/transfer.ts)
+    // ============================================================================
+    // community_transfers/{communityId}: the ONE pending offer of a community.
+    // Written only by the callables (Admin SDK): createdByUserId stays
+    // immutable from clients, so ownership changes only server-side. The owner
+    // (fromUserId) reads it by id - a missing doc is readable (nothing to
+    // leak) so the owner can watch for it - and the target (toUserId) finds it
+    // with a toUserId query.
+    match /community_transfers/{communityId} {
+      allow get: if isSignedIn() && (resource == null
+        || resource.data.get('fromUserId', '') == request.auth.uid
+        || resource.data.get('toUserId', '') == request.auth.uid
+        || isAdmin());
+      allow list: if isSignedIn() && (
+        resource.data.get('toUserId', '') == request.auth.uid
+        || resource.data.get('fromUserId', '') == request.auth.uid
+        || isAdmin());
+      allow write: if false;
+    }
+    // Server-written audit trail of ownership transfers (platform admins).
+    match /community_audit/{auditId} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
+
+    // ============================================================================
     // BUSINESS (B2B) COLLECTIONS — followers, leads, verification requests
     // ============================================================================
     // Followers of an account. A user manages ONLY their own follower doc

@@ -676,6 +676,22 @@ String? serverText(
       return l10n.srvChallengeRewardsBody(_int(p['xp']), _int(p['coins']));
     case 'srvCoinsReceivedBody':
       return l10n.srvCoinsReceivedBody(_str(p['name']), _int(p['amount']));
+    case 'srvCommunityTransferAcceptedBody':
+      return l10n.srvCommunityTransferAcceptedBody(_str(p['community']));
+    case 'srvCommunityTransferAcceptedTitle':
+      return l10n.srvCommunityTransferAcceptedTitle;
+    case 'srvCommunityTransferDeclinedBody':
+      return l10n.srvCommunityTransferDeclinedBody(_str(p['community']));
+    case 'srvCommunityTransferDeclinedTitle':
+      return l10n.srvCommunityTransferDeclinedTitle;
+    case 'srvCommunityTransferExpiredBody':
+      return l10n.srvCommunityTransferExpiredBody(_str(p['community']));
+    case 'srvCommunityTransferExpiredTitle':
+      return l10n.srvCommunityTransferExpiredTitle;
+    case 'srvCommunityTransferOfferBody':
+      return l10n.srvCommunityTransferOfferBody(_str(p['community']));
+    case 'srvCommunityTransferOfferTitle':
+      return l10n.srvCommunityTransferOfferTitle;
     case 'srvCopyrightRemovedBody':
       return l10n.srvCopyrightRemovedBody;
     case 'srvCopyrightRemovedTitle':

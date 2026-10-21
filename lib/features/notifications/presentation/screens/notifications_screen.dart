@@ -7,6 +7,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../communities/presentation/widgets/community_transfer.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
@@ -690,6 +691,15 @@ class _NotificationTile extends StatelessWidget {
   /// actor to open (system / no-actor notifications).
   final VoidCallback? onOpenActor;
 
+  /// The community of a `community_transfer_offer` notification (shows the
+  /// Accept / Decline buttons), else null.
+  String? get _transferCommunityId {
+    final d = notification.data;
+    if (d == null || d['action'] != 'community_transfer_offer') return null;
+    final id = d['communityId'];
+    return id is String && id.isNotEmpty ? id : null;
+  }
+
   @override
   Widget build(BuildContext context) {
     final unread = !notification.isRead;
@@ -731,6 +741,11 @@ class _NotificationTile extends StatelessWidget {
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),
+                    // Community ownership offer: answer right here.
+                    if (_transferCommunityId != null)
+                      CommunityTransferNotificationActions(
+                        communityId: _transferCommunityId!,
+                      ),
                     const SizedBox(height: 6),
                     Text(
                       notificationTimeAgo(

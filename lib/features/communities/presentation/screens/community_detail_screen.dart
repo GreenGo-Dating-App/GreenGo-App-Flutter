@@ -36,6 +36,7 @@ import '../../domain/repositories/communities_repository.dart';
 import '../../../safety/presentation/widgets/content_report_flow.dart';
 import '../widgets/community_message_bubble.dart';
 import '../widgets/community_rules_header.dart';
+import '../widgets/community_transfer.dart';
 import '../widgets/join_requests_sheet.dart';
 import '../widgets/member_moderation_sheet.dart';
 import '../widgets/rules_editor_sheet.dart';
@@ -344,6 +345,16 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                     currentUserId: _currentUserId ?? '',
                   ),
 
+                // Pending ownership offer: Accept / Decline for its target,
+                // pending + Cancel for the owner (nothing for anyone else).
+                if (_currentUserId != null)
+                  CommunityTransferBanner(
+                    communityId: _community.id,
+                    currentUserId: _currentUserId!,
+                    isCreator: _canEditInfo,
+                    onResolved: _loadCommunityDetail,
+                  ),
+
                 // Pinned Rules & Resources header (owner/admin can edit).
                 if (_community.hasRulesOrResources || _isModerator)
                   TourAnchor(
@@ -480,6 +491,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
               case 'sponsor':
                 _editSponsorship();
                 break;
+              case 'transfer':
+                _openTransfer();
+                break;
               case 'leave':
                 _confirmLeave();
                 break;
@@ -553,6 +567,25 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                       child: Text(
                         AppLocalizations.of(context)!
                             .communitiesEditSponsorship,
+                        style: const TextStyle(color: AppColors.textPrimary)),
+                    ),
+                  ],
+                ),
+              ),
+            // Creator only: offer the community to another member
+            // (password-confirmed; the member must accept).
+            if (_canEditInfo)
+              PopupMenuItem(
+                key: const ValueKey('community-menu-transfer'),
+                value: 'transfer',
+                child: Row(
+                  children: [
+                    const Icon(Icons.swap_horiz,
+                        color: AppColors.richGold, size: 20),
+                    const SizedBox(width: 12),
+                    Flexible(
+                      child: Text(
+                        AppLocalizations.of(context)!.communityTransferMenu,
                         style: const TextStyle(color: AppColors.textPrimary)),
                     ),
                   ],
@@ -1705,6 +1738,20 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
         ),
       ),
     );
+  }
+
+  /// Creator only: pick the new owner among the members and send the offer
+  /// (CommunityTransferScreen re-authenticates before calling the server).
+  Future<void> _openTransfer() async {
+    final uid = _currentUserId;
+    if (uid == null || !_canEditInfo) return;
+    await Navigator.of(context).push<bool>(MaterialPageRoute(
+      builder: (_) => CommunityTransferScreen(
+        community: _community,
+        currentUserId: uid,
+        blockedIds: _blockedIds,
+      ),
+    ));
   }
 
   Future<void> _editSponsorship() async {
