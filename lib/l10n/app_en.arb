@@ -16645,54 +16645,6 @@
   "@whatsNew5043Followers": {
     "description": "In-app tutorial / onboarding text (tours v2)."
   },
-  "welcomeSlide1Title": "Meet people and places worldwide",
-  "@welcomeSlide1Title": {
-    "description": "In-app tutorial / onboarding text (tours v2)."
-  },
-  "welcomeSlide1Body": "Locals, travelers and businesses near you and far away.",
-  "@welcomeSlide1Body": {
-    "description": "In-app tutorial / onboarding text (tours v2)."
-  },
-  "welcomeSlide2Title": "Chat in any language",
-  "@welcomeSlide2Title": {
-    "description": "In-app tutorial / onboarding text (tours v2)."
-  },
-  "welcomeSlide2Body": "Messages are translated live, so nothing gets lost.",
-  "@welcomeSlide2Body": {
-    "description": "In-app tutorial / onboarding text (tours v2)."
-  },
-  "welcomeSlide3Title": "Events, experiences and communities near you",
-  "@welcomeSlide3Title": {
-    "description": "In-app tutorial / onboarding text (tours v2)."
-  },
-  "welcomeSlide3Body": "Join what's happening or host your own.",
-  "@welcomeSlide3Body": {
-    "description": "In-app tutorial / onboarding text (tours v2)."
-  },
-  "welcomeSlide4Title": "Safe by design",
-  "@welcomeSlide4Title": {
-    "description": "In-app tutorial / onboarding text (tours v2)."
-  },
-  "welcomeSlide4Body": "Verified accounts, and report and block in one tap.",
-  "@welcomeSlide4Body": {
-    "description": "In-app tutorial / onboarding text (tours v2)."
-  },
-  "welcomeGetStarted": "Get started",
-  "@welcomeGetStarted": {
-    "description": "In-app tutorial / onboarding text (tours v2)."
-  },
-  "welcomeSlideOf": "Slide {index} of {total}",
-  "@welcomeSlideOf": {
-    "description": "In-app tutorial / onboarding text (tours v2).",
-    "placeholders": {
-      "index": {
-        "type": "int"
-      },
-      "total": {
-        "type": "int"
-      }
-    }
-  },
   "xplGotIt": "Got it",
   "@xplGotIt": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"

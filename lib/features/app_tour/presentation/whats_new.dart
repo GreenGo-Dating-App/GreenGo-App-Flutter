@@ -55,7 +55,7 @@ class WhatsNew {
   /// The edition to show, or null.
   ///
   /// * Fresh install ([lastSeen] null and not [isExistingUser]): nothing —
-  ///   those users get the welcome carousel and the main tour instead.
+  ///   those users get the main tour instead.
   /// * Otherwise the newest edition newer than [lastSeen] (any, when an
   ///   existing user has never stored one) and not newer than
   ///   [currentVersion].

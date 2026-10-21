@@ -26972,42 +26972,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'Followers and following are now public - tap them on any profile.';
 
   @override
-  String get welcomeSlide1Title => 'Meet people and places worldwide';
-
-  @override
-  String get welcomeSlide1Body =>
-      'Locals, travelers and businesses near you and far away.';
-
-  @override
-  String get welcomeSlide2Title => 'Chat in any language';
-
-  @override
-  String get welcomeSlide2Body =>
-      'Messages are translated live, so nothing gets lost.';
-
-  @override
-  String get welcomeSlide3Title =>
-      'Events, experiences and communities near you';
-
-  @override
-  String get welcomeSlide3Body => 'Join what\'s happening or host your own.';
-
-  @override
-  String get welcomeSlide4Title => 'Safe by design';
-
-  @override
-  String get welcomeSlide4Body =>
-      'Verified accounts, and report and block in one tap.';
-
-  @override
-  String get welcomeGetStarted => 'Get started';
-
-  @override
-  String welcomeSlideOf(int index, int total) {
-    return 'Slide $index of $total';
-  }
-
-  @override
   String get xplGotIt => 'Got it';
 
   @override

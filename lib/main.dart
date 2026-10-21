@@ -103,7 +103,6 @@ import 'features/video_profiles/presentation/screens/video_profile_screen.dart';
 import 'core/services/analytics_consent_service.dart';
 import 'firebase_options.dart';
 import 'generated/app_localizations.dart';
-import 'features/app_tour/presentation/screens/welcome_carousel_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -1690,8 +1689,7 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
           // Show splash while we wait — no side effects in build
           return const SplashScreen();
         } else {
-          // Fresh install: the welcome carousel once, then login/sign-up.
-          return const WelcomeGate(child: LoginScreen());
+          return const LoginScreen();
         }
       },
     );

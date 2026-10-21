@@ -27267,42 +27267,6 @@ class AppLocalizationsIt extends AppLocalizations {
       'Follower e seguiti ora sono pubblici: toccali su qualsiasi profilo.';
 
   @override
-  String get welcomeSlide1Title =>
-      'Incontra persone e luoghi in tutto il mondo';
-
-  @override
-  String get welcomeSlide1Body =>
-      'Persone del posto, viaggiatori e attività, vicino e lontano.';
-
-  @override
-  String get welcomeSlide2Title => 'Chatta in qualsiasi lingua';
-
-  @override
-  String get welcomeSlide2Body =>
-      'I messaggi sono tradotti in tempo reale, senza perdere nulla.';
-
-  @override
-  String get welcomeSlide3Title => 'Eventi, esperienze e community vicino a te';
-
-  @override
-  String get welcomeSlide3Body => 'Partecipa o organizza qualcosa tu.';
-
-  @override
-  String get welcomeSlide4Title => 'Sicuro per progettazione';
-
-  @override
-  String get welcomeSlide4Body =>
-      'Account verificati, segnala e blocca con un tocco.';
-
-  @override
-  String get welcomeGetStarted => 'Inizia';
-
-  @override
-  String welcomeSlideOf(int index, int total) {
-    return 'Schermata $index di $total';
-  }
-
-  @override
   String get xplGotIt => 'Ho capito';
 
   @override

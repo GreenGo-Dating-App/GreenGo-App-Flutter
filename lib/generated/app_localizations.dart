@@ -46179,66 +46179,6 @@ abstract class AppLocalizations {
   /// **'Followers and following are now public - tap them on any profile.'**
   String get whatsNew5043Followers;
 
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'Meet people and places worldwide'**
-  String get welcomeSlide1Title;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'Locals, travelers and businesses near you and far away.'**
-  String get welcomeSlide1Body;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'Chat in any language'**
-  String get welcomeSlide2Title;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'Messages are translated live, so nothing gets lost.'**
-  String get welcomeSlide2Body;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'Events, experiences and communities near you'**
-  String get welcomeSlide3Title;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'Join what\'s happening or host your own.'**
-  String get welcomeSlide3Body;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'Safe by design'**
-  String get welcomeSlide4Title;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'Verified accounts, and report and block in one tap.'**
-  String get welcomeSlide4Body;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'Get started'**
-  String get welcomeGetStarted;
-
-  /// In-app tutorial / onboarding text (tours v2).
-  ///
-  /// In en, this message translates to:
-  /// **'Slide {index} of {total}'**
-  String welcomeSlideOf(int index, int total);
-
   /// In-app explanations (info sheets, empty states, FAQ)
   ///
   /// In en, this message translates to:

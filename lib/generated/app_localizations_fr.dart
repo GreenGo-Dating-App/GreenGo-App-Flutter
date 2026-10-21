@@ -27383,43 +27383,6 @@ class AppLocalizationsFr extends AppLocalizations {
       'Abonnés et abonnements sont désormais publics : touche-les sur n\'importe quel profil.';
 
   @override
-  String get welcomeSlide1Title =>
-      'Rencontre des personnes et des lieux du monde entier';
-
-  @override
-  String get welcomeSlide1Body =>
-      'Habitants, voyageurs et entreprises, près de chez toi et au loin.';
-
-  @override
-  String get welcomeSlide2Title => 'Discute dans toutes les langues';
-
-  @override
-  String get welcomeSlide2Body =>
-      'Les messages sont traduits en direct, rien ne se perd.';
-
-  @override
-  String get welcomeSlide3Title =>
-      'Événements, expériences et communautés près de toi';
-
-  @override
-  String get welcomeSlide3Body => 'Participe ou organise le tien.';
-
-  @override
-  String get welcomeSlide4Title => 'Sûr dès la conception';
-
-  @override
-  String get welcomeSlide4Body =>
-      'Comptes vérifiés, signaler et bloquer en un geste.';
-
-  @override
-  String get welcomeGetStarted => 'Commencer';
-
-  @override
-  String welcomeSlideOf(int index, int total) {
-    return 'Diapositive $index sur $total';
-  }
-
-  @override
   String get xplGotIt => 'J\'ai compris';
 
   @override

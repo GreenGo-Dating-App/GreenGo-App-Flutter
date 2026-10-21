@@ -14,6 +14,7 @@ import '../utils/community_l10n.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
+import '../../domain/community_id.dart';
 import '../../domain/entities/community.dart';
 import '../bloc/communities_bloc.dart';
 import '../bloc/communities_event.dart';
@@ -56,6 +57,19 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
   // Hero/cover image (optional). Picked locally, uploaded to Storage on create.
   XFile? _coverImage;
   bool _uploadingCover = false;
+  // The URL of [_coverImage] once uploaded, so a retry never uploads it twice.
+  XFile? _uploadedCoverFor;
+  String? _uploadedCoverUrl;
+
+  /// The new community's doc id, generated ONCE for this form: every tap on
+  /// Create (or retry) writes the SAME `communities/{id}`, so a double submit
+  /// can never produce two communities (owner bug 2026-10-21).
+  final String _communityId = newCommunityId();
+
+  /// True from the first Create tap until the bloc answers (success navigates
+  /// away; an error re-enables the buttons). Both Create buttons are disabled
+  /// meanwhile.
+  bool _submitting = false;
 
   // Sponsorship (Platinum-business feature).
   bool _isSponsored = false;
@@ -123,11 +137,12 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
         ),
         actions: [
           TextButton(
-            onPressed: _showPreview ? _createCommunity : null,
+            key: const Key('createCommunityAppBarAction'),
+            onPressed: _showPreview && !_submitting ? _createCommunity : null,
             child: Text(
               AppLocalizations.of(context)!.communitiesCreateAction,
               style: TextStyle(
-                color: _showPreview
+                color: _showPreview && !_submitting
                     ? AppColors.richGold
                     : AppColors.textTertiary,
                 fontWeight: FontWeight.w600,
@@ -163,6 +178,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
               ),
             );
           } else if (state is CommunitiesError) {
+            if (_submitting) setState(() => _submitting = false);
             showUserError(context, state.message);
           }
         },
@@ -642,7 +658,8 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
               Expanded(
                 flex: 2,
                 child: ElevatedButton(
-                  onPressed: _createCommunity,
+                  key: const Key('createCommunitySubmitButton'),
+                  onPressed: _submitting ? null : _createCommunity,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: AppColors.richGold,
                     foregroundColor: AppColors.deepBlack,
@@ -652,13 +669,23 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                           BorderRadius.circular(AppDimensions.radiusFull),
                     ),
                   ),
-                  child: Text(
-                    AppLocalizations.of(context)!.communitiesCreateCommunityAction,
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
+                  child: _submitting
+                      ? const SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: CircularProgressIndicator(
+                            strokeWidth: 2,
+                            color: AppColors.deepBlack,
+                          ),
+                        )
+                      : Text(
+                          AppLocalizations.of(context)!
+                              .communitiesCreateCommunityAction,
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
                 ),
               ),
             ],
@@ -778,7 +805,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
 
   Community _buildCommunityFromForm({String? imageUrl}) {
     return Community(
-      id: '',
+      id: _communityId,
       name: _nameController.text.trim(),
       description: _descriptionController.text.trim(),
       type: _selectedType,
@@ -814,18 +841,30 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
   }
 
   Future<void> _createCommunity() async {
+    // Re-entrancy guard: a second tap while the first create is still in
+    // flight (cover upload + Firestore writes can take several seconds) used
+    // to create a SECOND identical community.
+    if (_submitting || _uploadingCover) return;
     final userId = FirebaseAuth.instance.currentUser?.uid;
     if (userId == null) return;
-    if (_uploadingCover) return;
+    setState(() => _submitting = true);
 
     // Upload the cover image (if any) BEFORE creating the community so its URL
-    // is stored on the doc.
+    // is stored on the doc. Reused on a retry so it is uploaded only once.
     String? imageUrl;
     if (_coverImage != null) {
-      setState(() => _uploadingCover = true);
-      imageUrl = await _uploadCoverImage(userId);
-      if (!mounted) return;
-      setState(() => _uploadingCover = false);
+      if (_uploadedCoverFor == _coverImage && _uploadedCoverUrl != null) {
+        imageUrl = _uploadedCoverUrl;
+      } else {
+        setState(() => _uploadingCover = true);
+        imageUrl = await _uploadCoverImage(userId);
+        if (!mounted) return;
+        setState(() => _uploadingCover = false);
+        if (imageUrl != null) {
+          _uploadedCoverFor = _coverImage;
+          _uploadedCoverUrl = imageUrl;
+        }
+      }
     }
 
     final community = _buildCommunityFromForm(imageUrl: imageUrl);

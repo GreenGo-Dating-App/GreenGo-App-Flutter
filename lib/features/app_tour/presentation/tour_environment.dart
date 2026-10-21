@@ -3,8 +3,7 @@ import 'dart:io' show Platform;
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 
-/// Whether the one-time onboarding UI (page tours, welcome carousel,
-/// "What's new") may run.
+/// Whether the one-time onboarding UI (page tours, "What's new") may run.
 ///
 /// Off under `flutter test` so the existing screen tests are not covered by a
 /// tour overlay; the tour tests switch it on with [debugOverride].

@@ -535,8 +535,26 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
   @override
   Future<CommunityModel> createCommunity(CommunityModel community) async {
     try {
-      final docRef = await _communitiesRef
-          .add(_withSearchKeywords(community.toFirestore(), community));
+      // IDEMPOTENT create (owner bug 2026-10-21: one tap-again produced TWO
+      // identical community docs 12 s apart). The client generates the id ONCE
+      // per create form (see newCommunityId), so a second tap / retry targets
+      // the SAME doc: the transaction writes it only when it does not exist yet,
+      // otherwise the existing doc is returned untouched. An empty id (legacy
+      // callers) still gets a fresh auto-id.
+      final docRef = community.id.isEmpty
+          ? _communitiesRef.doc()
+          : _communitiesRef.doc(community.id);
+      await _firestore.runTransaction((txn) async {
+        final existing = await txn.get(docRef);
+        if (existing.exists) {
+          final data = existing.data() as Map<String, dynamic>?;
+          if (data?['createdByUserId'] != community.createdByUserId) {
+            throw StateError('Community id ${docRef.id} is already taken');
+          }
+          return; // already created by this user: a retry, not a new community
+        }
+        txn.set(docRef, _withSearchKeywords(community.toFirestore(), community));
+      });
 
       // Add the CREATOR as the OWNER member. Without a member doc the creator
       // is invisible to membership-based reads ("My Communities" uses a

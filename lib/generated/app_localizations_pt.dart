@@ -27199,42 +27199,6 @@ class AppLocalizationsPt extends AppLocalizations {
       'Seguidores e a seguir são agora públicos: toque neles em qualquer perfil.';
 
   @override
-  String get welcomeSlide1Title => 'Conheça pessoas e lugares de todo o mundo';
-
-  @override
-  String get welcomeSlide1Body =>
-      'Locais, viajantes e negócios, perto e longe.';
-
-  @override
-  String get welcomeSlide2Title => 'Converse em qualquer idioma';
-
-  @override
-  String get welcomeSlide2Body =>
-      'As mensagens são traduzidas em direto, nada se perde.';
-
-  @override
-  String get welcomeSlide3Title =>
-      'Eventos, experiências e comunidades perto de si';
-
-  @override
-  String get welcomeSlide3Body => 'Participe ou organize o seu.';
-
-  @override
-  String get welcomeSlide4Title => 'Seguro desde a conceção';
-
-  @override
-  String get welcomeSlide4Body =>
-      'Contas verificadas e denunciar ou bloquear com um toque.';
-
-  @override
-  String get welcomeGetStarted => 'Começar';
-
-  @override
-  String welcomeSlideOf(int index, int total) {
-    return 'Diapositivo $index de $total';
-  }
-
-  @override
   String get xplGotIt => 'Entendi';
 
   @override
@@ -55264,42 +55228,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get whatsNew5043Followers =>
       'Seguidores e seguindo agora são públicos: toque neles em qualquer perfil.';
-
-  @override
-  String get welcomeSlide1Title => 'Conheça pessoas e lugares do mundo todo';
-
-  @override
-  String get welcomeSlide1Body =>
-      'Moradores, viajantes e negócios, perto e longe.';
-
-  @override
-  String get welcomeSlide2Title => 'Converse em qualquer idioma';
-
-  @override
-  String get welcomeSlide2Body =>
-      'As mensagens são traduzidas na hora, nada se perde.';
-
-  @override
-  String get welcomeSlide3Title =>
-      'Eventos, experiências e comunidades perto de você';
-
-  @override
-  String get welcomeSlide3Body => 'Participe ou organize o seu.';
-
-  @override
-  String get welcomeSlide4Title => 'Seguro desde a concepção';
-
-  @override
-  String get welcomeSlide4Body =>
-      'Contas verificadas e denunciar ou bloquear com um toque.';
-
-  @override
-  String get welcomeGetStarted => 'Começar';
-
-  @override
-  String welcomeSlideOf(int index, int total) {
-    return 'Tela $index de $total';
-  }
 
   @override
   String get xplGotIt => 'Entendi';

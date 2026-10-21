@@ -16,6 +16,18 @@ import 'communities_event.dart';
 import 'communities_state.dart';
 import 'community_message_feed.dart';
 
+/// [items] with later repeats of the same community id dropped (first one
+/// wins, order kept). Every list the Communities tabs render goes through it,
+/// so one community can never show up twice.
+@visibleForTesting
+List<Community> dedupeCommunitiesById(Iterable<Community> items) {
+  final seen = <String>{};
+  return [
+    for (final c in items)
+      if (seen.add(c.id)) c,
+  ];
+}
+
 /// Communities BLoC
 ///
 /// Manages state for the communities feature including
@@ -60,6 +72,10 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
   static const int _communitiesPageSize = 50;
 
   final math.Random _rng = math.Random();
+
+  /// Ids of communities whose create is in flight — a duplicate
+  /// [CreateCommunity] for the same client-generated id is dropped.
+  final Set<String> _creatingIds = <String>{};
 
   /// A shuffled COPY of [items] (never mutates the source list).
   List<Community> _shuffled(List<Community> items) {
@@ -259,6 +275,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     required bool hasMore,
     required DateTime? cursor,
   }) {
+    display = dedupeCommunitiesById(display);
     final languageCircles =
         display.where((c) => c.type == CommunityType.languageCircle).toList();
     final cur = state;
@@ -380,6 +397,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
       (userCommunities) {
         // Keep recommendations free of communities the user is already in, even
         // if recommended loaded first (order-independent exclusion).
+        userCommunities = dedupeCommunitiesById(userCommunities);
         final joinedIds = userCommunities.map((c) => c.id).toSet();
         final rec =
             base.recommended.where((c) => !joinedIds.contains(c.id)).toList();
@@ -419,6 +437,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         }
       },
       (managed) {
+        managed = dedupeCommunitiesById(managed);
         final s = state;
         if (s is CommunitiesLoaded) {
           emit(s.copyWith(managedCommunities: managed, managedLoaded: true));
@@ -588,6 +607,22 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
   }
 
   Future<void> _onCreateCommunity(
+    CreateCommunity event,
+    Emitter<CommunitiesState> emit,
+  ) async {
+    // A second CreateCommunity for the same client-generated id while the
+    // first is still running is a double submit — drop it (the datasource is
+    // idempotent on the id too, this just avoids the redundant round-trips).
+    final id = event.community.id;
+    if (id.isNotEmpty && !_creatingIds.add(id)) return;
+    try {
+      await _createCommunity(event, emit);
+    } finally {
+      _creatingIds.remove(id);
+    }
+  }
+
+  Future<void> _createCommunity(
     CreateCommunity event,
     Emitter<CommunitiesState> emit,
   ) async {
