@@ -23,7 +23,7 @@
  * All three run the single routine in accountDeletion.ts.
  */
 
-import { onRequest, onCall, Request } from 'firebase-functions/v2/https';
+import { onRequest, onCall, Request, HttpsError } from 'firebase-functions/v2/https';
 import type { Response } from 'express';
 import * as admin from 'firebase-admin';
 import * as crypto from 'crypto';
@@ -32,6 +32,7 @@ import { AppError, handleError } from '../shared/utils';
 import { monitored } from '../shared/monitoring';
 import { maskEmail, sendResendEmail } from '../shared/resendEmail';
 import { deleteAccountCompletely } from './accountDeletion';
+import { DELETION_BLOCKED, DeletionBlocker, DeletionBlockedError, computeDeletionBlockers } from './deletionBlockers';
 
 const db = () => admin.firestore();
 
@@ -198,7 +199,19 @@ export async function handleRequestAccountDeletion(req: Request, res: Response):
         await finish(429, { success: false, error: 'Too many requests. Please try again later.' });
         return;
       }
-      await deleteAccountCompletely(decoded.uid, { source: 'web_id_token' });
+      try {
+        await deleteAccountCompletely(decoded.uid, { source: 'web_id_token' });
+      } catch (e) {
+        if (e instanceof DeletionBlockedError) {
+          await finish(409, {
+            success: false, code: DELETION_BLOCKED, blockers: e.blockers,
+            error: 'Your account cannot be deleted yet: you sell tickets or bookings that are paid and not refunded. '
+              + 'Cancel those listings in the app (buyers are refunded automatically), then try again.',
+          });
+          return;
+        }
+        throw e;
+      }
       await finish(200, { success: true, status: 'deleted', message: 'Your account has been deleted.' });
       return;
     }
@@ -273,6 +286,25 @@ button{background:#c0392b;color:#fff;border:0;border-radius:12px;padding:14px 28
 a{color:#D4AF37}</style></head><body><div class="c"><h1>${title}</h1>${body}</div></body></html>`;
 }
 
+function esc(s: unknown): string {
+  return String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]!));
+}
+
+/** Deletion refused: what still has paid, unrefunded orders (escaped). */
+export function blockedPage(blockers: DeletionBlocker[]): string {
+  const items = blockers.slice(0, 50).map((b) =>
+    `<li>${b.kind === 'event' ? 'Event' : 'Experience'}: <b>${esc(b.title || b.listingId)}</b> - `
+    + `${b.paidOrders} paid order(s) not refunded${b.failedRefunds ? `, ${b.failedRefunds} refund(s) failed` : ''}</li>`).join('');
+  return page(
+    'Your account cannot be deleted yet',
+    '<p>You sell tickets or bookings that are paid and not refunded yet. Open the GreenGo app, go to '
+      + 'Profile &gt; Delete account and use "Cancel &amp; refund" on each item (buyers are refunded automatically), '
+      + 'or wait until these listings have taken place. Then open this link again.</p>'
+      + `<ul>${items}</ul>`
+      + '<p>Questions: <a href="mailto:privacy@greengochat.com">privacy@greengochat.com</a></p>',
+  );
+}
+
 const INVALID_PAGE = page(
   'Link not valid',
   '<p>This deletion link is invalid, has expired, or has already been used.</p>' +
@@ -302,6 +334,11 @@ export async function handleConfirmAccountDeletion(req: Request, res: Response):
       const st = await lookupToken(token);
       if (!st.ok) {
         res.status(410).type('html').send(INVALID_PAGE);
+        return;
+      }
+      const blockers = await computeDeletionBlockers(st.uid);
+      if (blockers.length) {
+        res.status(409).type('html').send(blockedPage(blockers));
         return;
       }
       const safe = encodeURIComponent(String(token));
@@ -345,6 +382,12 @@ export async function handleConfirmAccountDeletion(req: Request, res: Response):
     try {
       await deleteAccountCompletely(uid, { source: 'web_email_link' });
     } catch (e: any) {
+      if (e instanceof DeletionBlockedError) {
+        // Nothing deleted: give the link back so it works once the listings are settled.
+        await ref.update({ used: false, blockedAt: admin.firestore.Timestamp.now() }).catch(() => undefined);
+        res.status(409).type('html').send(blockedPage(e.blockers));
+        return;
+      }
       // Account left intact (Auth is deleted last). Release the token so the
       // user can retry within its lifetime.
       console.error(`confirmAccountDeletion: deletion failed for ${uid}`, e?.message || e);
@@ -390,13 +433,36 @@ export const deleteMyAccount = onCall(
           { reason: 'REQUIRES_RECENT_LOGIN', maxAgeSeconds: RECENT_AUTH_SECONDS },
         );
       }
-      await deleteAccountCompletely(uid, { source: 'app_callable' });
+      // GA4 app instance id of this device (the app does not set a GA4 user
+      // id): lets the follow-up file a GA4 User Deletion request.
+      const aid = request.data?.analyticsAppInstanceId;
+      const analyticsAppInstanceId = typeof aid === 'string' && /^[A-Za-z0-9_-]{8,128}$/.test(aid) ? aid : null;
+      await deleteAccountCompletely(uid, { source: 'app_callable', analyticsAppInstanceId });
       return { success: true };
     } catch (e) {
+      if (e instanceof DeletionBlockedError) {
+        throw new HttpsError('failed-precondition', 'Account deletion is blocked by paid, unrefunded orders.', {
+          code: DELETION_BLOCKED, reason: DELETION_BLOCKED, blockers: e.blockers,
+        });
+      }
       if (e instanceof AppError) throw handleError(e);
       throw handleError(
         new AppError('DELETION_FAILED', 'Account deletion did not complete; your account was not deleted. Please try again.', 500),
       );
     }
+  }),
+);
+
+// ---------------------------------------------------------------------------
+// getDeletionBlockers (callable, app): what must be cancelled / refunded first
+// ---------------------------------------------------------------------------
+
+export const getDeletionBlockers = onCall(
+  { memory: '512MiB', timeoutSeconds: 60 },
+  monitored('getDeletionBlockers', async (request: any) => {
+    const uid = request.auth?.uid;
+    if (!uid) throw new HttpsError('unauthenticated', 'unauthenticated', { code: 'unauthenticated' });
+    const blockers = await computeDeletionBlockers(uid);
+    return { blocked: blockers.length > 0, code: blockers.length ? DELETION_BLOCKED : null, blockers };
   }),
 );

@@ -17433,5 +17433,249 @@
   "tourExploreFollowersDesc": "How many people follow you. Only you see this number. Tap to see who they are.",
   "@tourExploreFollowersDesc": {
     "description": "Explore page tour: stats tiles"
+  },
+  "srvRefundStartedTitle": "Refund started",
+  "@srvRefundStartedTitle": {
+    "description": "Push title: an automatic full refund was started"
+  },
+  "srvRefundStartedBody": "{title} was cancelled by the seller. Your full payment is being refunded to your original payment method; it can take 5 to 10 days to appear.",
+  "@srvRefundStartedBody": {
+    "description": "Push/email body: seller cancelled, full refund started",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "srvRefundOwedBody": "{title} was cancelled. You paid the seller directly, so the seller must pay you back in full.",
+  "@srvRefundOwedBody": {
+    "description": "Push/email body: legacy order paid outside GreenGo, the seller must pay back",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "srvRefundOwedOrganizerBody": "{title}: you cancelled, so refund this buyer in full. They paid you outside GreenGo.",
+  "@srvRefundOwedOrganizerBody": {
+    "description": "Push body to the seller: legacy order, refund the buyer yourself",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "srvRefundFailedTitle": "Your refund is delayed",
+  "@srvRefundFailedTitle": {
+    "description": "Push title to the buyer: the automatic refund failed"
+  },
+  "srvRefundFailedBody": "We could not refund your payment for {title} automatically. GreenGo support will contact you to sort it out.",
+  "@srvRefundFailedBody": {
+    "description": "Push/email body to the buyer: automatic refund failed, support will contact",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "srvRefundFailedSellerTitle": "Refund failed: action needed",
+  "@srvRefundFailedSellerTitle": {
+    "description": "Push title to the seller: automatic refund failed"
+  },
+  "srvRefundFailedSellerBody": "The automatic refund for {title} failed. Refund the buyer from your Stripe or Mercado Pago account, then upload the proof in GreenGo.",
+  "@srvRefundFailedSellerBody": {
+    "description": "Push body to the seller: refund manually and upload proof",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "srvRefundSummaryTitle": "Refunds for your cancelled event",
+  "@srvRefundSummaryTitle": {
+    "description": "Push title to the organiser after all refunds of a cancelled event"
+  },
+  "srvRefundSummaryBody": "{title}: {refunded} refunded automatically, {failed} need your action.",
+  "@srvRefundSummaryBody": {
+    "description": "Push body: refund summary for a cancelled event",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "refunded": {
+        "type": "int"
+      },
+      "failed": {
+        "type": "int"
+      }
+    }
+  },
+  "srvManualRefundApprovedTitle": "Refund proof accepted",
+  "@srvManualRefundApprovedTitle": {
+    "description": "Push title: manual refund proof accepted"
+  },
+  "srvManualRefundApprovedBody": "Your proof for {title} was accepted. The order is now marked as refunded.",
+  "@srvManualRefundApprovedBody": {
+    "description": "Push body: manual refund proof accepted",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "srvManualRefundRejectedTitle": "Refund proof not accepted",
+  "@srvManualRefundRejectedTitle": {
+    "description": "Push title: manual refund proof rejected"
+  },
+  "srvManualRefundRejectedBody": "Your proof for {title} was not accepted: {reason}. Refund the buyer and upload a new proof.",
+  "@srvManualRefundRejectedBody": {
+    "description": "Push body: manual refund proof rejected with the admin reason",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "srvRefundManualBuyerBody": "The seller refunded your payment for {title}. GreenGo checked the proof.",
+  "@srvRefundManualBuyerBody": {
+    "description": "Push body to the buyer: the seller refunded manually (admin verified)",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "emailRefundStartedSubject": "Refund started: {title}",
+  "@emailRefundStartedSubject": {
+    "description": "Email subject: refund started",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "emailRefundDelayedSubject": "Your refund for {title}",
+  "@emailRefundDelayedSubject": {
+    "description": "Email subject: refund delayed",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "eventsCancelEventAction": "Cancel event",
+  "@eventsCancelEventAction": {
+    "description": "Button / sheet title: cancel an event that has paid tickets"
+  },
+  "xplCancelEventSold": "Tickets were sold, so the event can’t be deleted: it is cancelled instead and stays visible as cancelled.",
+  "@xplCancelEventSold": {
+    "description": "Consequence: tickets sold, the event is cancelled instead of deleted"
+  },
+  "xplCancelEventRefunds": "Every buyer is refunded the full ticket price automatically, from your Stripe or Mercado Pago account.",
+  "@xplCancelEventRefunds": {
+    "description": "Consequence: buyers refunded automatically"
+  },
+  "xplCancelEventFinal": "A cancelled event can’t be reopened.",
+  "@xplCancelEventFinal": {
+    "description": "Consequence: a cancelled event cannot be reopened"
+  },
+  "xplDeleteEventNoSales": "No tickets were sold, so nobody needs a refund.",
+  "@xplDeleteEventNoSales": {
+    "description": "Consequence: paid event without sales, nobody to refund"
+  },
+  "eventsCancelledRefundsStarted": "Event cancelled. Buyers are being refunded automatically.",
+  "@eventsCancelledRefundsStarted": {
+    "description": "Snackbar after cancelling a paid event"
+  },
+  "eventsCancelFailed": "The event could not be cancelled. Try again.",
+  "@eventsCancelFailed": {
+    "description": "Error: cancelling the event failed"
+  },
+  "deletionBlockedTitle": "Before you delete your account",
+  "@deletionBlockedTitle": {
+    "description": "Sheet title: account deletion blocked by paid sales"
+  },
+  "deletionBlockedBody": "You sell tickets or bookings that are paid and not refunded yet. Cancel these listings (buyers are refunded automatically) or wait until they have taken place. Then you can delete your account.",
+  "@deletionBlockedBody": {
+    "description": "Sheet body: why deletion is blocked"
+  },
+  "deletionBlockedPaidCount": "{count, plural, =1{1 paid order not refunded} other{{count} paid orders not refunded}}",
+  "@deletionBlockedPaidCount": {
+    "description": "Blocker row: paid orders not refunded",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deletionBlockedInProgress": "{count, plural, =1{1 refund in progress} other{{count} refunds in progress}}",
+  "@deletionBlockedInProgress": {
+    "description": "Blocker row: refunds running",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deletionBlockedFailedCount": "{count, plural, =1{1 refund failed: refund it yourself and upload the proof} other{{count} refunds failed: refund them yourself and upload the proof}}",
+  "@deletionBlockedFailedCount": {
+    "description": "Blocker row: refunds that failed",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deletionBlockedReviewCount": "{count, plural, =1{1 refund proof under review} other{{count} refund proofs under review}}",
+  "@deletionBlockedReviewCount": {
+    "description": "Blocker row: manual refund proofs under review",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deletionBlockedCancelRefund": "Cancel & refund",
+  "@deletionBlockedCancelRefund": {
+    "description": "Button: cancel the listing and refund the buyers"
+  },
+  "deletionBlockedUploadProof": "Upload refund proof",
+  "@deletionBlockedUploadProof": {
+    "description": "Button: upload proof of a manual refund"
+  },
+  "deletionBlockedConfirmEvent": "Cancel this event? Every buyer is refunded the full price automatically. This can’t be undone.",
+  "@deletionBlockedConfirmEvent": {
+    "description": "Confirm dialog: cancel an event from the deletion sheet"
+  },
+  "deletionBlockedConfirmExperience": "Cancel every paid booking of this experience? Each guest is refunded the full price automatically. This can’t be undone.",
+  "@deletionBlockedConfirmExperience": {
+    "description": "Confirm dialog: cancel the paid bookings of an experience"
+  },
+  "deletionBlockedProofSent": "Proof sent. GreenGo will review it.",
+  "@deletionBlockedProofSent": {
+    "description": "Snackbar: refund proof uploaded"
+  },
+  "deletionBlockedProofTooBig": "Choose an image or a PDF up to 10 MB.",
+  "@deletionBlockedProofTooBig": {
+    "description": "Error: proof file too large or wrong type"
+  },
+  "deletionBlockedCheckFailed": "We couldn’t check your listings. Try again.",
+  "@deletionBlockedCheckFailed": {
+    "description": "Error: checking the blockers failed"
+  },
+  "deletionBlockedActionFailed": "That didn’t work. Try again.",
+  "@deletionBlockedActionFailed": {
+    "description": "Error: cancel / upload from the deletion sheet failed"
+  },
+  "deletionBlockedEvent": "Event",
+  "@deletionBlockedEvent": {
+    "description": "Label: the item is an event"
+  },
+  "deletionBlockedExperience": "Experience",
+  "@deletionBlockedExperience": {
+    "description": "Label: the item is an experience"
   }
 }

@@ -168,6 +168,7 @@ class Event extends Equatable {
     this.guestBookingAllowed = false,
     this.pricePhases = const [],
     this.requireAttendeeNames = false,
+    this.paidOrderCount = 0,
   });
   final String id;
   final String organizerId;
@@ -298,6 +299,15 @@ class Event extends Equatable {
   /// EVERY ticket at checkout (server-enforced, `attendee_names_required`).
   /// Names are shown to the buyer and the organizer only.
   final bool requireAttendeeNames;
+
+  /// Paid orders not refunded (server-maintained, read-only for clients:
+  /// firestore.rules). While > 0 the event cannot be deleted: "delete"
+  /// becomes "cancel event" and every buyer is refunded automatically
+  /// (functions/src/ticket_payments/refunds.ts).
+  final int paidOrderCount;
+
+  /// Tickets sold and not refunded: delete turns into cancel + refunds.
+  bool get hasPaidSales => paidOrderCount > 0;
 
   /// Paid event (mirrors firestore.rules isPaidEventData / the server's
   /// isPaidEvent): a price, or a ticket provider set.
@@ -474,6 +484,7 @@ class Event extends Equatable {
         guestBookingAllowed,
         pricePhases,
         requireAttendeeNames,
+        paidOrderCount,
       ];
 
   Event copyWith({
@@ -535,6 +546,7 @@ class Event extends Equatable {
     bool? guestBookingAllowed,
     List<PricePhase>? pricePhases,
     bool? requireAttendeeNames,
+    int? paidOrderCount,
     bool clearTicketing = false,
     bool clearCommunityId = false,
     // Drops latitude/longitude/city/country (a manually typed location that
@@ -610,6 +622,7 @@ class Event extends Equatable {
       requireAttendeeNames: clearTicketing
           ? false
           : (requireAttendeeNames ?? this.requireAttendeeNames),
+      paidOrderCount: paidOrderCount ?? this.paidOrderCount,
     );
   }
 }

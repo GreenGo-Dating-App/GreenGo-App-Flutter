@@ -896,6 +896,7 @@ describe('event ticket types', () => {
 describe('experiences: recurring availability, per-day prices, host removes booked times', () => {
   const svcMod = () => require('../../src/experience_bookings/service');
   const availMod = () => require('../../src/experience_bookings/functions');
+  const refundsMod = () => require('../../src/ticket_payments/refunds');
   const DAYMS = 86400000;
   // A Wednesday 10 days ahead, 10:00 in São Paulo (13:00 UTC).
   function nextWeekday(): { date: string; start: number } {
@@ -983,6 +984,11 @@ describe('experiences: recurring availability, per-day prices, host removes book
     const done = await call(availMod().updateExperienceAvailability, { experienceId: 'r1', ...closed, confirm: true }, ORG);
     expect(done).toMatchObject({ needsConfirm: false, cancelledBookings: 1 });
     expect((await db.doc('bookings/rb1').get()).data()).toMatchObject({ status: 'cancelled_by_host', refundDue: { percent: 100 } });
+    // 2026-10-21: the cancellation enqueues ticket_refunds/{orderId}; the
+    // processTicketRefund trigger (not running here) does the provider call.
+    expect((await db.doc('ticket_refunds/ordR1').get()).data()).toMatchObject({ status: 'pending', reason: 'host_removed_time' });
+    expect(refunds).toHaveLength(0);
+    expect(await refundsMod().processRefund('ordR1')).toBe('refunded');
     expect(refunds).toHaveLength(1);
     expect(refunds[0].p).toMatchObject({ payment_intent: 'pi_rec' });
     expect(refunds[0].o).toMatchObject({ stripeAccount: 'acct_org', idempotencyKey: 'gg_refund_ordR1' });
@@ -1010,6 +1016,8 @@ describe('experiences: recurring availability, per-day prices, host removes book
     await connectMp();
     const closed = { overrides: { dayOverrides: { [date]: { closed: true } } }, confirm: true };
     await call(availMod().updateExperienceAvailability, { experienceId: 'r1', ...closed }, ORG);
+    expect(await refundsMod().processRefund('ordL')).toBe('refund_owed');
+    expect(await refundsMod().processRefund('ordM')).toBe('refunded');
     expect((await db.doc('ticket_orders/ordL').get()).data()!.refund.status).toBe('refund_owed');
     expect((await db.doc('ticket_orders/ordM').get()).data()!.refund.status).toBe('requested');
     const mp = mpCalls.find((c) => c.url.endsWith('/v1/payments/555/refunds'))!;

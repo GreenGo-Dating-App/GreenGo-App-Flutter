@@ -8,11 +8,14 @@
  */
 import { onCall, onRequest, HttpsError, CallableRequest } from 'firebase-functions/v2/https';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
+import { onDocumentCreated, onDocumentUpdated, onDocumentWritten } from 'firebase-functions/v2/firestore';
 import { defineSecret } from 'firebase-functions/params';
 import * as accounts from './accounts';
 import * as orders from './orders';
 import { assertPhoneVerified } from '../shared/participation';
 import { handleMercadoPagoWebhook, handleStripeConnectWebhook } from './webhooks';
+import * as refunds from './refunds';
+import { requireAdmin, SUPER_ADMIN_ONLY } from '../shared/adminAuth';
 
 const STRIPE_SECRET_KEY = defineSecret('STRIPE_SECRET_KEY');
 const CALL = { memory: '512MiB' as const, timeoutSeconds: 60 };
@@ -113,3 +116,70 @@ export const refreshMercadoPagoTokens = onSchedule(
   { schedule: 'every 24 hours', memory: '512MiB', timeoutSeconds: 300 },
   async () => { await accounts.refreshDueMpTokens(); },
 );
+
+// ─────────────────────────────────────────────────────────── seller-cancelled refunds (refunds.ts)
+
+/**
+ * Organiser cancelled (status -> 'cancelled') or hard-deleted a PAID event that
+ * has not ended: enqueue a full refund of every paid order and close the open
+ * ones. Early exit for every other write (free events, viewCount bumps...):
+ * one cheap invocation, no reads. Enqueue only (no provider call here).
+ */
+export const refundTicketsOnEventCancelled = onDocumentWritten(
+  { document: 'events/{eventId}', memory: '512MiB', timeoutSeconds: 540, secrets: [STRIPE_SECRET_KEY] },
+  async (event) => {
+    const before = event.data?.before?.data();
+    const after = event.data?.after?.data();
+    const action = refunds.eventRefundAction(before, after, Date.now());
+    if (!action) return;
+    const r = await refunds.enqueueEventRefunds(event.params.eventId, (after ?? before)!, action);
+    console.log(`[refunds] event ${event.params.eventId} ${action}: ${r.paid} paid order(s), ${r.closedOpen} open closed`);
+  },
+);
+
+/** Backstop for every host-initiated booking cancellation (idempotent enqueue). */
+export const refundOnHostCancelledBooking = onDocumentUpdated(
+  { document: 'bookings/{bookingId}', memory: '512MiB', timeoutSeconds: 60, secrets: [STRIPE_SECRET_KEY] },
+  async (event) => {
+    const before = event.data?.before?.data();
+    const after = event.data?.after?.data();
+    if (!refunds.bookingNeedsRefund(before, after)) return;
+    const reason = String(after?.cancellation?.reason || '');
+    await refunds.enqueueBookingRefund(event.params.bookingId, after!,
+      reason === 'host_removed_time' || reason === 'experience_deleted' ? reason : 'host_cancelled');
+  },
+);
+
+/** One outbox row -> one provider refund. Bounded concurrency (Stripe / MP rate limits). */
+export const processTicketRefund = onDocumentCreated(
+  { document: `${refunds.REFUNDS}/{orderId}`, memory: '512MiB', timeoutSeconds: 120, maxInstances: 10, secrets: [STRIPE_SECRET_KEY] },
+  async (event) => { await refunds.processRefund(event.params.orderId); },
+);
+
+/** Retries with backoff, stale leases, rows the trigger missed. */
+export const sweepTicketRefunds = onSchedule(
+  { schedule: 'every 10 minutes', memory: '512MiB', timeoutSeconds: 540, secrets: [STRIPE_SECRET_KEY] },
+  async () => {
+    const n = await refunds.sweepDueRefunds();
+    if (n) console.log(`[refunds] sweep processed ${n} row(s)`);
+  },
+);
+
+/** Seller: proof of a manual refund for a refund_failed order. */
+export const submitManualRefundProof = callable(CALL, (uid, data) => refunds.submitManualRefundProof(uid, data));
+
+/**
+ * Admin: approve / reject a manual-refund proof (docs/payments/refunds.md).
+ * superAdmin only (a money decision), with the fresh admin 2FA that
+ * shared/adminAuth requires for superAdmin-only actions when enforced.
+ */
+export const adminReviewManualRefund = onCall(CALL, async (req: CallableRequest<any>) => {
+  const who = await requireAdmin(req.auth as any, SUPER_ADMIN_ONLY);
+  try {
+    return await refunds.reviewManualRefund(who.uid, req.data ?? {});
+  } catch (e) {
+    if (e instanceof HttpsError) throw e;
+    console.error('[refunds] review failed:', (e as Error)?.message);
+    throw new HttpsError('internal', 'tickets_internal_error', { code: 'internal' });
+  }
+});

@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/services/photo_validation_service.dart';
@@ -16,6 +17,7 @@ import '../../domain/usecases/upload_photo.dart';
 import '../../domain/usecases/verify_photo.dart';
 import 'profile_event.dart';
 import 'profile_state.dart';
+import '../../data/deletion_blockers_service.dart' show kDeletionBlockedCode;
 import '../../../../core/error/failures.dart';
 
 class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
@@ -340,7 +342,11 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
       }
     } on FirebaseFunctionsException catch (e) {
       debugPrint('[DeleteAccount] deleteMyAccount failed: ${e.code}');
-      emit(ProfileDeleteFailed(reason: deleteFailureFor(e.code, e.details)));
+      final reason = deleteFailureFor(e.code, e.details);
+      emit(ProfileDeleteFailed(
+        reason: reason,
+        blockers: reason == ProfileDeleteFailure.blockedPaidOrders ? e.details : null,
+      ));
     } catch (e) {
       debugPrint('[DeleteAccount] deleteMyAccount failed: $e');
       emit(const ProfileDeleteFailed(reason: ProfileDeleteFailure.failed));
@@ -348,12 +354,31 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
   }
 
   static Future<Map<String, dynamic>> _callDeleteMyAccount() async {
+    // The app sets no GA4 user id: the device's app instance id is the only
+    // handle the server can pass to the GA4 User Deletion API (privacy policy
+    // 15.2 f, deletionFollowups.ts). Best effort; never blocks deletion.
+    String? appInstanceId;
+    if (!kIsWeb) {
+      try {
+        appInstanceId = await FirebaseAnalytics.instance.appInstanceId;
+      } catch (_) {}
+    }
     final res = await FirebaseFunctions.instance
         .httpsCallable('deleteMyAccount',
             // The server cascade may take minutes for large accounts.
             options: HttpsCallableOptions(timeout: const Duration(seconds: 540)))
-        .call<Map<String, dynamic>>(<String, dynamic>{});
-    return Map<String, dynamic>.from(res.data);
+        .call<Map<String, dynamic>>(<String, dynamic>{
+      if (appInstanceId != null && appInstanceId.isNotEmpty)
+        'analyticsAppInstanceId': appInstanceId,
+    });
+    final data = Map<String, dynamic>.from(res.data);
+    if (data['success'] == true && !kIsWeb) {
+      // Local analytics data of the deleted account goes too.
+      try {
+        await FirebaseAnalytics.instance.resetAnalyticsData();
+      } catch (_) {}
+    }
+    return data;
   }
 
   /// Maps a `deleteMyAccount` error to what the UI does next.
@@ -362,6 +387,9 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     final detailCode = details is Map ? details['code'] ?? details['reason'] : null;
     if (detailCode == 'REQUIRES_RECENT_LOGIN') {
       return ProfileDeleteFailure.requiresRecentLogin;
+    }
+    if (detailCode == kDeletionBlockedCode) {
+      return ProfileDeleteFailure.blockedPaidOrders;
     }
     if (code == 'unavailable' || code == 'deadline-exceeded') {
       return ProfileDeleteFailure.network;

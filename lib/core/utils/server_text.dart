@@ -254,6 +254,10 @@ String? serverText(
       return l10n.emailParticipantsPrivacy;
     case 'emailParticipantsSubject':
       return l10n.emailParticipantsSubject(_str(p['title']));
+    case 'emailRefundDelayedSubject':
+      return l10n.emailRefundDelayedSubject(_str(p['title']));
+    case 'emailRefundStartedSubject':
+      return l10n.emailRefundStartedSubject(_str(p['title']));
     case 'emailTicketCodeLabel':
       return l10n.emailTicketCodeLabel;
     case 'emailTicketFooter':
@@ -744,6 +748,14 @@ String? serverText(
       return l10n.srvMainPhotoFaceNeededBody;
     case 'srvMainPhotoFaceTitle':
       return l10n.srvMainPhotoFaceTitle;
+    case 'srvManualRefundApprovedBody':
+      return l10n.srvManualRefundApprovedBody(_str(p['title']));
+    case 'srvManualRefundApprovedTitle':
+      return l10n.srvManualRefundApprovedTitle;
+    case 'srvManualRefundRejectedBody':
+      return l10n.srvManualRefundRejectedBody(_str(p['title']), _str(p['reason']));
+    case 'srvManualRefundRejectedTitle':
+      return l10n.srvManualRefundRejectedTitle;
     case 'srvMembershipExpiredBody':
       return l10n.srvMembershipExpiredBody;
     case 'srvMembershipExpiredTitle':
@@ -806,6 +818,28 @@ String? serverText(
       return l10n.srvReferralWelcomeBody;
     case 'srvReferralWelcomeTitle':
       return l10n.srvReferralWelcomeTitle;
+    case 'srvRefundFailedBody':
+      return l10n.srvRefundFailedBody(_str(p['title']));
+    case 'srvRefundFailedSellerBody':
+      return l10n.srvRefundFailedSellerBody(_str(p['title']));
+    case 'srvRefundFailedSellerTitle':
+      return l10n.srvRefundFailedSellerTitle;
+    case 'srvRefundFailedTitle':
+      return l10n.srvRefundFailedTitle;
+    case 'srvRefundManualBuyerBody':
+      return l10n.srvRefundManualBuyerBody(_str(p['title']));
+    case 'srvRefundOwedBody':
+      return l10n.srvRefundOwedBody(_str(p['title']));
+    case 'srvRefundOwedOrganizerBody':
+      return l10n.srvRefundOwedOrganizerBody(_str(p['title']));
+    case 'srvRefundStartedBody':
+      return l10n.srvRefundStartedBody(_str(p['title']));
+    case 'srvRefundStartedTitle':
+      return l10n.srvRefundStartedTitle;
+    case 'srvRefundSummaryBody':
+      return l10n.srvRefundSummaryBody(_str(p['title']), _int(p['refunded']), _int(p['failed']));
+    case 'srvRefundSummaryTitle':
+      return l10n.srvRefundSummaryTitle;
     case 'srvRepliedToYourReview':
       return l10n.srvRepliedToYourReview;
     case 'srvReportReviewedActionTaken':

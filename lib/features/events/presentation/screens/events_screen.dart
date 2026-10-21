@@ -534,6 +534,14 @@ class _EventsScreenState extends State<EventsScreen>
                   backgroundColor: AppColors.successGreen,
                 ),
               );
+            } else if (state is EventCancelledWithRefunds) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(AppLocalizations.of(context)!
+                      .eventsCancelledRefundsStarted),
+                  backgroundColor: AppColors.successGreen,
+                ),
+              );
             } else if (state is EventsError) {
               showUserError(context, state.message);
             }
@@ -5336,22 +5344,48 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
 
   Future<void> _confirmDelete() async {
     final l10n = AppLocalizations.of(context)!;
-    // Deleting never refunds anyone (no server refund on event deletion):
-    // a paid event's organizer is told so before confirming.
-    final paid = widget.existing?.isPaidEvent ?? false;
-    final confirmed = await ConsequenceConfirmSheet.show(
-      context,
-      title: l10n.eventsDeleteEvent,
-      message: l10n.eventsDeleteConfirmBody,
-      consequences: [
-        l10n.xplDeleteEventRemoved,
-        if (paid) l10n.xplDeleteEventNoRefund,
-        if (paid) l10n.xplDeleteEventFee,
-      ],
-      confirmLabel: l10n.eventsDeleteEvent,
-      destructive: true,
-      icon: Icons.delete_outline,
-    );
+    final existing = widget.existing;
+    final paid = existing?.isPaidEvent ?? false;
+    // Sold tickets (paid orders not refunded, server-maintained): the event
+    // can't be deleted - it is CANCELLED and the server refunds every buyer in
+    // full automatically (Terms 11.6 f: the fee goes back to the seller). The
+    // count is re-read from the server; the loaded copy may be stale.
+    var sold = existing?.hasPaidSales ?? false;
+    if (paid && existing != null) {
+      try {
+        sold = await sl<EventsRemoteDataSource>().paidOrderCount(existing.id) > 0;
+      } catch (_) {
+        // Offline: keep the loaded value (the data source re-checks anyway).
+      }
+      if (!mounted) return;
+    }
+    final confirmed = sold
+        ? await ConsequenceConfirmSheet.show(
+            context,
+            title: l10n.eventsCancelEventAction,
+            message: l10n.deletionBlockedConfirmEvent,
+            consequences: [
+              l10n.xplCancelEventSold,
+              l10n.xplCancelEventRefunds,
+              l10n.xplDeleteEventFee,
+              l10n.xplCancelEventFinal,
+            ],
+            confirmLabel: l10n.eventsCancelEventAction,
+            destructive: true,
+            icon: Icons.event_busy_outlined,
+          )
+        : await ConsequenceConfirmSheet.show(
+            context,
+            title: l10n.eventsDeleteEvent,
+            message: l10n.eventsDeleteConfirmBody,
+            consequences: [
+              l10n.xplDeleteEventRemoved,
+              if (paid) l10n.xplDeleteEventNoSales,
+            ],
+            confirmLabel: l10n.eventsDeleteEvent,
+            destructive: true,
+            icon: Icons.delete_outline,
+          );
     if (confirmed) widget.onEventDeleted?.call();
   }
 

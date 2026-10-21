@@ -26,7 +26,7 @@ import { registrationIdApprovedByAdmin } from '../shared/registrationIdReview';
 import { emitNotification, resolveActor, Actor } from '../notifications/notifyHelpers';
 import { LText, lt, rawText } from '../shared/i18n';
 import { recordMeeting } from '../checkin/meetings';
-import { requestOrderRefund } from '../ticket_payments/orders';
+import { enqueueBookingRefund } from '../ticket_payments/refunds';
 import { guestRecordFields } from '../shared/guestIdentity';
 import { SLOT_COUNTERS, counterId as slotCounterId, generateSlots, rulesError, AvailabilityRules } from './availability';
 import {
@@ -868,6 +868,11 @@ export async function cancelBooking(uid: string, data: any): Promise<Record<stri
       actor,
     });
     await flaggedHostFollowUp(r, r.before.hostId);
+    // Terms 12.2 / 12.5 c: the HOST cancelled -> GreenGo starts a full refund
+    // through the host's own Stripe / MP account (guest cancellations keep
+    // the policy's refundDue, paid by the host). Backstop: the bookings
+    // trigger re-enqueues (idempotent, one outbox row per order).
+    if (by === 'host') await enqueueBookingRefund(bookingId, r.after, 'host_cancelled');
   }
   return bookingView(bookingId, r.after);
 }
@@ -1075,7 +1080,7 @@ export async function cancelBookingsAtRemovedTimes(hostId: string, experienceId:
       if (r.noop) continue;
       n++;
       const orderId = r.after.payment?.orderId;
-      if (orderId) await requestOrderRefund(String(orderId), 'host_removed_time').catch(() => undefined);
+      if (orderId) await enqueueBookingRefund(d.id, r.after, 'host_removed_time');
       await safeNotify({
         recipientId: r.after.guestId, type: 'booking_cancelled', title: lt('srvBookingCancelledByHost'),
         body: lt('srvBookingCancelledByHostBody', { title: title(r.after) }),
@@ -1379,6 +1384,7 @@ export async function cancelSlot(uid: string, data: any): Promise<Record<string,
     data: notifData(id, b), actor,
   })));
   await flaggedHostFollowUp(res, uid);
+  for (const { id, b } of res.cancelled) await enqueueBookingRefund(id, b, 'slot_cancelled');
   return { experienceId, slotId, cancelledBookings: res.cancelled.length, more: res.more };
 }
 
@@ -1433,6 +1439,7 @@ export async function onExperienceDeleted(experienceId: string, hostId: string |
     recipientId: b.guestId, type: 'booking_cancelled', title: lt('srvBookingCancelled'),
     body: lt('srvBookingNoLongerAvailable', { title: title(b) }), data: notifData(id, b),
   })));
+  for (const { id, b } of toNotify) await enqueueBookingRefund(id, b, 'experience_deleted');
   const expRef = db.collection(EXPERIENCES).doc(experienceId);
   for (const sub of [SLOTS, REVIEW_ELIGIBILITY, PENDING_REVIEWS]) {
     try {

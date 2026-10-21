@@ -58,6 +58,7 @@ class EventModel extends Event {
     super.guestBookingAllowed,
     super.requireAttendeeNames,
     super.pricePhases,
+    super.paidOrderCount,
   });
 
   /// Create from Event entity
@@ -120,6 +121,7 @@ class EventModel extends Event {
       guestBookingAllowed: event.guestBookingAllowed,
       requireAttendeeNames: event.requireAttendeeNames,
       pricePhases: event.pricePhases,
+      paidOrderCount: event.paidOrderCount,
     );
   }
 
@@ -204,6 +206,8 @@ class EventModel extends Event {
       guestBookingAllowed: json['guestsAllowed'] == true,
       requireAttendeeNames: json['requireAttendeeNames'] == true,
       pricePhases: PricePhase.listFrom(json['pricePhases']),
+      // Server-only (never written back by toJson: the rules refuse it).
+      paidOrderCount: (json['paidOrderCount'] as num?)?.toInt() ?? 0,
       recurrence: json['recurrence'] is Map
           ? EventRecurrence.fromMap(
               Map<String, dynamic>.from(json['recurrence'] as Map))

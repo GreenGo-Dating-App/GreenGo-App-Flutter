@@ -462,6 +462,8 @@ export {
   requestAccountDeletion,
   confirmAccountDeletion,
   deleteMyAccount,
+  // Deletion refused while the user sells paid, unrefunded orders (2026-10-21).
+  getDeletionBlockers,
 } from './auth/accountDeletionEndpoints';
 
 // Account deletion follow-up: cancels the user's web (Stripe) subscriptions
@@ -857,6 +859,13 @@ export {
   expireTicketOrders,
   remindTicketConfirmations,
   refreshMercadoPagoTokens,
+  // Seller-cancelled refunds (ticket_payments/refunds.ts, 2026-10-21).
+  refundTicketsOnEventCancelled,
+  refundOnHostCancelledBooking,
+  processTicketRefund,
+  sweepTicketRefunds,
+  submitManualRefundProof,
+  adminReviewManualRefund,
 } from './ticket_payments';
 
 // P3-5 security-event alerts (email to SECURITY_ALERT_EMAILS)

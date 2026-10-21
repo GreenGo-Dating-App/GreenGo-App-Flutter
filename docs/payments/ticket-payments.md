@@ -184,6 +184,19 @@ Branch `feat/ticket-payments` · 2026-10-08 · nothing deployed.
 >   functions that bundle the changed modules; see the branch report. No new
 >   indexes.
 
+> **Update 2026-10-21 (branch `fix/refunds-deletion-gaps`): seller-cancelled
+> refunds are automatic.** Cancelling a paid event (or hard-deleting one that
+> has not ended), and every HOST cancellation of a paid booking (booking,
+> slot, removed time, deleted experience), refunds every paid order in full
+> through the seller's own Stripe (connected account,
+> `refund_application_fee: true`) / Mercado Pago account, via the outbox
+> `ticket_refunds/{orderId}` (one per order, retried, admin alert +
+> manual-proof review on failure). Events with paid, unrefunded orders can't
+> be deleted (`paidOrderCount`, rules); accounts that still sell such orders
+> can't be deleted. Details and the admin contract: `docs/payments/refunds.md`.
+> Supersedes the "Refunds are done by the organizer in their dashboard" row
+> below for seller cancellations (other refunds still are).
+
 GreenGo sells tickets for paid events and paid experiences **without touching
 the ticket money**: every payment goes straight to the organizer; GreenGo's
 service fee (above) is collected on top. The QR ticket exists **only after the
@@ -458,6 +471,7 @@ prices, the Manage times / recurring picker / wizard widgets.
 ## Not done yet
 
 * Provider-side refunds started by the organizer from inside GreenGo for
-  other reasons than removed times (the owner chose dashboard refunds).
+  other reasons than a seller cancellation (the owner chose dashboard
+  refunds; seller cancellations refund automatically since 2026-10-21).
 * A grace window before start for the experience door is the existing
   check-in window (3 h early); it is not separately configurable per listing.

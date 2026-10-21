@@ -26,6 +26,8 @@ import '../../../../core/widgets/membership_badge.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/widgets/settings_accordion.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../data/deletion_blockers_service.dart';
+import '../widgets/deletion_blockers_sheet.dart';
 import '../../../../core/utils/country_names_l10n.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
@@ -247,6 +249,7 @@ class EditProfileScreen extends StatelessWidget {
                       l10n.profileDeleteReauthRequired,
                     ProfileDeleteFailure.network => l10n.profileDeleteNetworkError,
                     ProfileDeleteFailure.failed => l10n.profileDeleteFailed,
+                    ProfileDeleteFailure.blockedPaidOrders => l10n.deletionBlockedTitle,
                   }),
                   backgroundColor: AppColors.errorRed,
                 ),
@@ -255,6 +258,13 @@ class EditProfileScreen extends StatelessWidget {
               final uid = userId ?? FirebaseAuth.instance.currentUser?.uid;
               if (state.reason == ProfileDeleteFailure.requiresRecentLogin && uid != null) {
                 _showPasswordConfirmDialog(context, uid);
+              }
+              // Paid, unrefunded sales appeared since the pre-check: list them.
+              if (state.reason == ProfileDeleteFailure.blockedPaidOrders) {
+                final blockers = parseDeletionBlockers(state.blockers);
+                if (blockers.isNotEmpty) {
+                  DeletionBlockersSheet.show(context, blockers: blockers);
+                }
               }
             }
           },
@@ -1547,12 +1557,34 @@ class EditProfileScreen extends StatelessWidget {
     }
   }
 
-  void _showDeleteAccountDialog(BuildContext screenContext, Profile currentProfile) {
+  Future<void> _showDeleteAccountDialog(BuildContext screenContext, Profile currentProfile) async {
     // Prevent admin account deletion
     if (currentProfile.isAdmin) {
       showUserErrorMessage(screenContext,
           AppLocalizations.of(screenContext)!.adminAccountsCannotBeDeleted);
       return;
+    }
+
+    // Owner rule 2026-10-21: no deletion while the user sells paid tickets /
+    // bookings that are not refunded. List them first ("Cancel & refund",
+    // "Upload refund proof"); continue only once nothing blocks. The server
+    // refuses the same (deletion_blocked_paid_orders).
+    final service = DeletionBlockersService();
+    List<DeletionBlocker> blockers;
+    try {
+      blockers = await service.fetch();
+    } catch (_) {
+      if (screenContext.mounted) {
+        showUserErrorMessage(screenContext,
+            AppLocalizations.of(screenContext)!.deletionBlockedCheckFailed);
+      }
+      return;
+    }
+    if (!screenContext.mounted) return;
+    if (blockers.isNotEmpty) {
+      final clear = await DeletionBlockersSheet.show(screenContext,
+          blockers: blockers, service: service);
+      if (!clear || !screenContext.mounted) return;
     }
 
     // Step 1: Confirm intent

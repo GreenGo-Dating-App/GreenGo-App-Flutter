@@ -64,11 +64,16 @@
  *   person no longer sees the deleted user's words.) A conversation's
  *   `lastMessage` preview written by the deleted user is cleared the same way.
  *
- * NOT DONE HERE (enqueued in `deletion_followups/{uid}` for a later worker):
- *   - Stripe: ./deletionFollowups.ts cancels the user's web subscriptions
- *     immediately (Terms 7.3). The Stripe customer is kept (its invoices are
- *     bookkeeping records).
- *   - GA4 / Crashlytics user-data deletion: still TODO (P2-7).
+ * NOT DONE HERE (enqueued in `deletion_followups/{uid}` for a later worker,
+ * ./deletionFollowups.ts):
+ *   - Stripe: cancels the user's web subscriptions immediately (Terms 7.3),
+ *     then deletes the Stripe customer object(s) (privacy policy 15.2 f;
+ *     Stripe keeps the invoices / charges itself).
+ *   - Analytics: per-user analytics docs, BigQuery greengo_analytics rows
+ *     (deleted, financial tables pseudonymised), GA4 User Deletion API for
+ *     the app instance id the app sends (when GA4_USER_DELETION=on).
+ *     Crashlytics has no per-user deletion API (the app sets no Crashlytics
+ *     user id; reports expire after 90 days).
  */
 
 import * as admin from 'firebase-admin';
@@ -79,6 +84,7 @@ import { retainIdentityRecordOnAccountDeletion } from '../safety/identityRecords
 import { enqueueFollowGraphCleanup, removeFollowGraphRound } from '../social/followCleanup';
 import { preserveForAccountDeletion, LEGAL_HOLD_KEEP_COLLECTIONS } from '../safety/takedowns/legalHold';
 import { attendeeSeats } from '../ticket_payments/ticketRules';
+import { assertNoDeletionBlockers } from './deletionBlockers';
 
 const db = () => admin.firestore();
 const TS = () => admin.firestore.Timestamp.now();
@@ -656,7 +662,12 @@ async function removeSupportChats(uid: string, report: DeletionReport) {
 }
 
 /** Removes everything in the inventory except profiles/{uid} and users/{uid}. */
-async function runInventory(uid: string, report: DeletionReport, legalHold = false) {
+export interface DeletionExtras {
+  /** The app's GA4 app instance id (deleteMyAccount), for the GA4 User Deletion API. */
+  analyticsAppInstanceId?: string | null;
+}
+
+async function runInventory(uid: string, report: DeletionReport, legalHold = false, extra: DeletionExtras = {}) {
   const step = async (label: string, fn: () => Promise<void>) => {
     try {
       await fn();
@@ -817,14 +828,17 @@ async function runInventory(uid: string, report: DeletionReport, legalHold = fal
     await db().collection(DELETION_FOLLOWUPS).doc(uid).set(
       {
         // Stripe: ./deletionFollowups.ts cancels the user's web
-        // subscriptions (processDeletionFollowup trigger + retry schedule).
-        // TODO(P2-7): GA4 / Crashlytics user deletion is still unprocessed.
+        // subscriptions and deletes the Stripe customer(s); analytics:
+        // Firestore analytics docs + BigQuery rows + GA4 app instance
+        // (processDeletionFollowup trigger + retry schedule).
         ...(stripeCustomerId ? { stripeCustomerId } : {}),
         ...(stripeTestCustomerId ? { stripeTestCustomerId } : {}),
         stripe: !!(stripeCustomerId || stripeTestCustomerId),
         // (Re)processing is idempotent: cancelled subscriptions stay cancelled.
         stripeStatus: 'pending',
         analytics: true,
+        analyticsStatus: 'pending',
+        ...(extra.analyticsAppInstanceId ? { ga4AppInstanceIds: [extra.analyticsAppInstanceId] } : {}),
         crashlytics: true,
         status: 'pending',
         createdAt: TS(),
@@ -846,7 +860,7 @@ export type DeletionSource = 'app_callable' | 'web_email_link' | 'web_id_token' 
  * Deletes (or retains/anonymises, per the policy above) all data of [uid].
  * Returns the report; never throws. Does NOT touch the Auth user.
  */
-export async function deleteAccountData(uid: string, source: DeletionSource): Promise<DeletionReport> {
+export async function deleteAccountData(uid: string, source: DeletionSource, extra: DeletionExtras = {}): Promise<DeletionReport> {
   const report: DeletionReport = { documents: 0, anonymised: 0, files: 0, retained: 0, failures: [] };
   if (!uid || typeof uid !== 'string' || uid.includes('/')) {
     report.failures.push('invalid_uid');
@@ -879,7 +893,7 @@ export async function deleteAccountData(uid: string, source: DeletionSource): Pr
   } catch (e: any) {
     console.error(`accountDeletion: phone index retire failed for ${uid}`, e?.message || e);
   }
-  await runInventory(uid, report, legalHold);
+  await runInventory(uid, report, legalHold, extra);
   // The records themselves are never deleted; a failed stamp only loses the
   // retainUntil date, so it must not block the deletion.
   try {
@@ -965,12 +979,15 @@ export class AccountDeletionIncompleteError extends Error {
  */
 export async function deleteAccountCompletely(
   uid: string,
-  opts: { source: Exclude<DeletionSource, 'auth_trigger'> },
+  opts: { source: Exclude<DeletionSource, 'auth_trigger'>; analyticsAppInstanceId?: string | null },
 ): Promise<DeletionReport> {
+  // Owner rule 2026-10-21: never while the user sells paid, unrefunded
+  // tickets / bookings (throws DeletionBlockedError, nothing is touched).
+  await assertNoDeletionBlockers(uid);
   const jobRef = db().collection(DELETION_JOBS).doc(uid);
   await jobRef.set({ status: 'running', source: opts.source, startedAt: TS(), failures: [] }, { merge: true });
 
-  const report = await deleteAccountData(uid, opts.source);
+  const report = await deleteAccountData(uid, opts.source, { analyticsAppInstanceId: opts.analyticsAppInstanceId });
   if (report.failures.length > 0) {
     await jobRef.set({ status: 'failed', failures: report.failures, failedAt: TS() }, { merge: true });
     console.error(`accountDeletion: INCOMPLETE for ${uid}`, report.failures);

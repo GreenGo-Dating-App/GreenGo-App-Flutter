@@ -105,6 +105,13 @@ class EventDeleted extends EventsState {
   final String eventId;
 }
 
+/// "Delete" of an event with paid, unrefunded tickets: the event was
+/// CANCELLED instead and the server refunds every buyer automatically.
+class EventCancelledWithRefunds extends EventsState {
+  const EventCancelledWithRefunds({required this.eventId});
+  final String eventId;
+}
+
 /// Single event loaded
 class EventDetailLoaded extends EventsState {
 

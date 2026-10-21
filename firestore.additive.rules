@@ -2549,6 +2549,18 @@ service cloud.firestore {
       // 'draft' with hiddenByDowngrade + preDowngradeStatus. Those fields are
       // server-owned, and while the flag is set the status is frozen (no
       // re-publishing around the allowance; upgrading restores it).
+      // Seller-cancelled refunds (functions/src/ticket_payments/refunds.ts,
+      // 2026-10-21). Server-only: `paidOrderCount` (paid orders not refunded,
+      // kept by markOrderPaid / markOrderReversed) and `ticketRefundsAt` (the
+      // refunds of a cancelled event were started). A client never sets or
+      // changes them, and once the refunds started the event stays
+      // 'cancelled' (no re-opening an event whose buyers were refunded).
+      function refundFieldsOk() {
+        return !request.resource.data.diff(resource.data).affectedKeys()
+            .hasAny(['paidOrderCount', 'ticketRefundsAt'])
+          && (resource.data.get('ticketRefundsAt', null) == null
+              || request.resource.data.get('status', null) == 'cancelled');
+      }
       function downgradeFieldsUnchanged() {
         return !request.resource.data.diff(resource.data).affectedKeys()
             .hasAny(['hiddenByDowngrade', 'preDowngradeStatus', 'hiddenByDowngradeAt'])
@@ -2561,7 +2573,8 @@ service cloud.firestore {
         && phoneOk()
         && eventTextOk()
         && !request.resource.data.keys()
-              .hasAny(['hiddenByDowngrade', 'preDowngradeStatus', 'hiddenByDowngradeAt'])
+              .hasAny(['hiddenByDowngrade', 'preDowngradeStatus', 'hiddenByDowngradeAt',
+                       'paidOrderCount', 'ticketRefundsAt'])
         && validCoOrganizers(request.resource.data)
         && validTicketing(request.resource.data)
         && pricePhasesOk()
@@ -2579,8 +2592,12 @@ service cloud.firestore {
         // better); an account with no plan can only browse and use its
         // free chats. Editing / deleting existing events is not affected.
         && baseAccess(request.auth.uid);
-      // Delete stays CREATOR-only (co-owners cannot delete).
-      allow delete: if isOrganizer();
+      // Delete stays CREATOR-only (co-owners cannot delete), and never while
+      // the event has paid orders that are not refunded (paidOrderCount,
+      // server-maintained): the app cancels such an event instead and every
+      // buyer is refunded automatically (refundTicketsOnEventCancelled).
+      allow delete: if isOrganizer()
+        && resource.data.get('paidOrderCount', 0) == 0;
       // Organizer has full update rights. Additionally ANY signed-in user may
       // update ONLY the denormalized RSVP counters (`attendeeCount` and the
       // per-tier `tierGoingCounts` map) — this powers the join / waitlist /
@@ -2590,6 +2607,7 @@ service cloud.firestore {
       allow update: if (isOrganizer() && validCoOrganizers(request.resource.data)
                         && eventTextOk()
                         && downgradeFieldsUnchanged()
+                        && refundFieldsOk()
                         && validTicketing(request.resource.data)
                         && pricePhasesOk()
                         && guestBookingOk(request.resource.data)
@@ -2606,6 +2624,7 @@ service cloud.firestore {
       allow update: if isCoOrganizer()
         && eventTextOk()
         && downgradeFieldsUnchanged()
+        && refundFieldsOk()
         && pricePhasesOk()
         && guestBookingOk(request.resource.data)
         && plusOnesOk()

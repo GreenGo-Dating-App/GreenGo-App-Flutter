@@ -297,6 +297,30 @@ service firebase.storage {
     // while the order waits for payment / confirmation; the buyer and the
     // listing ORGANIZER (and staff) can read it. Moderated as a private image
     // (moderateUploadedImage). Never overwritten, never client-deleted.
+    // refund_proofs/{orderId}/{file} (functions/src/ticket_payments/refunds.ts,
+    // 2026-10-21): when the automatic refund of a paid order FAILED, the
+    // SELLER (the order's organizer) uploads proof of a manual refund (image
+    // or PDF <= 10 MB), then calls submitManualRefundProof; an admin reviews
+    // it (adminReviewManualRefund). Only while the order's refund is
+    // 'refund_failed' (server mirror on ticket_orders), each object written
+    // once. Read: that seller + staff. Never client-deleted.
+    match /refund_proofs/{orderId}/{fileName} {
+      function proofOrder() {
+        return firestore.get(/databases/(default)/documents/ticket_orders/$(orderId)).data;
+      }
+      allow get: if isStaff()
+        || (signedIn() && proofOrder().organizerId == request.auth.uid);
+      allow create: if signedIn()
+        && proofOrder().organizerId == request.auth.uid
+        && proofOrder().get('refund', {}).get('status', '') == 'refund_failed'
+        && request.resource.size <= mb(10)
+        && (request.resource.contentType.lower().matches('image/(jpeg|jpg|pjpeg|png|webp|heic|heif)')
+            || request.resource.contentType.lower() == 'application/pdf')
+        && uploaderStampOk()
+        && isNewObject();
+      allow update, delete: if false;
+    }
+
     match /ticket_receipts/{orderId}/{fileName} {
       function ticketOrder() {
         return firestore.get(/databases/(default)/documents/ticket_orders/$(orderId)).data;

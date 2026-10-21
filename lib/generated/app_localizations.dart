@@ -67,7 +67,7 @@ import 'app_localizations_pt.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -90,11 +90,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR')
+    Locale('pt', 'BR'),
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -11374,7 +11374,10 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText);
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  );
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -28301,14 +28304,22 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Renews automatically on {date}.'**
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date);
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
 
   /// Web (Stripe) subscription cancelled at period end
   ///
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Cancelled; access ends on {date}.'**
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date);
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
 
   /// No description provided for @billingIntervalMonth.
   ///
@@ -38311,7 +38322,11 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reason: {reason}\nReported message: \"{message}\"\nReported user: {user}\nReported at: {date}'**
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date);
+    String reason,
+    String message,
+    String user,
+    String date,
+  );
 
   /// No description provided for @supportChatWithGreenGoSubject.
   ///
@@ -47270,6 +47285,246 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'How many people follow you. Only you see this number. Tap to see who they are.'**
   String get tourExploreFollowersDesc;
+
+  /// Push title: an automatic full refund was started
+  ///
+  /// In en, this message translates to:
+  /// **'Refund started'**
+  String get srvRefundStartedTitle;
+
+  /// Push/email body: seller cancelled, full refund started
+  ///
+  /// In en, this message translates to:
+  /// **'{title} was cancelled by the seller. Your full payment is being refunded to your original payment method; it can take 5 to 10 days to appear.'**
+  String srvRefundStartedBody(String title);
+
+  /// Push/email body: legacy order paid outside GreenGo, the seller must pay back
+  ///
+  /// In en, this message translates to:
+  /// **'{title} was cancelled. You paid the seller directly, so the seller must pay you back in full.'**
+  String srvRefundOwedBody(String title);
+
+  /// Push body to the seller: legacy order, refund the buyer yourself
+  ///
+  /// In en, this message translates to:
+  /// **'{title}: you cancelled, so refund this buyer in full. They paid you outside GreenGo.'**
+  String srvRefundOwedOrganizerBody(String title);
+
+  /// Push title to the buyer: the automatic refund failed
+  ///
+  /// In en, this message translates to:
+  /// **'Your refund is delayed'**
+  String get srvRefundFailedTitle;
+
+  /// Push/email body to the buyer: automatic refund failed, support will contact
+  ///
+  /// In en, this message translates to:
+  /// **'We could not refund your payment for {title} automatically. GreenGo support will contact you to sort it out.'**
+  String srvRefundFailedBody(String title);
+
+  /// Push title to the seller: automatic refund failed
+  ///
+  /// In en, this message translates to:
+  /// **'Refund failed: action needed'**
+  String get srvRefundFailedSellerTitle;
+
+  /// Push body to the seller: refund manually and upload proof
+  ///
+  /// In en, this message translates to:
+  /// **'The automatic refund for {title} failed. Refund the buyer from your Stripe or Mercado Pago account, then upload the proof in GreenGo.'**
+  String srvRefundFailedSellerBody(String title);
+
+  /// Push title to the organiser after all refunds of a cancelled event
+  ///
+  /// In en, this message translates to:
+  /// **'Refunds for your cancelled event'**
+  String get srvRefundSummaryTitle;
+
+  /// Push body: refund summary for a cancelled event
+  ///
+  /// In en, this message translates to:
+  /// **'{title}: {refunded} refunded automatically, {failed} need your action.'**
+  String srvRefundSummaryBody(String title, int refunded, int failed);
+
+  /// Push title: manual refund proof accepted
+  ///
+  /// In en, this message translates to:
+  /// **'Refund proof accepted'**
+  String get srvManualRefundApprovedTitle;
+
+  /// Push body: manual refund proof accepted
+  ///
+  /// In en, this message translates to:
+  /// **'Your proof for {title} was accepted. The order is now marked as refunded.'**
+  String srvManualRefundApprovedBody(String title);
+
+  /// Push title: manual refund proof rejected
+  ///
+  /// In en, this message translates to:
+  /// **'Refund proof not accepted'**
+  String get srvManualRefundRejectedTitle;
+
+  /// Push body: manual refund proof rejected with the admin reason
+  ///
+  /// In en, this message translates to:
+  /// **'Your proof for {title} was not accepted: {reason}. Refund the buyer and upload a new proof.'**
+  String srvManualRefundRejectedBody(String title, String reason);
+
+  /// Push body to the buyer: the seller refunded manually (admin verified)
+  ///
+  /// In en, this message translates to:
+  /// **'The seller refunded your payment for {title}. GreenGo checked the proof.'**
+  String srvRefundManualBuyerBody(String title);
+
+  /// Email subject: refund started
+  ///
+  /// In en, this message translates to:
+  /// **'Refund started: {title}'**
+  String emailRefundStartedSubject(String title);
+
+  /// Email subject: refund delayed
+  ///
+  /// In en, this message translates to:
+  /// **'Your refund for {title}'**
+  String emailRefundDelayedSubject(String title);
+
+  /// Button / sheet title: cancel an event that has paid tickets
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel event'**
+  String get eventsCancelEventAction;
+
+  /// Consequence: tickets sold, the event is cancelled instead of deleted
+  ///
+  /// In en, this message translates to:
+  /// **'Tickets were sold, so the event can’t be deleted: it is cancelled instead and stays visible as cancelled.'**
+  String get xplCancelEventSold;
+
+  /// Consequence: buyers refunded automatically
+  ///
+  /// In en, this message translates to:
+  /// **'Every buyer is refunded the full ticket price automatically, from your Stripe or Mercado Pago account.'**
+  String get xplCancelEventRefunds;
+
+  /// Consequence: a cancelled event cannot be reopened
+  ///
+  /// In en, this message translates to:
+  /// **'A cancelled event can’t be reopened.'**
+  String get xplCancelEventFinal;
+
+  /// Consequence: paid event without sales, nobody to refund
+  ///
+  /// In en, this message translates to:
+  /// **'No tickets were sold, so nobody needs a refund.'**
+  String get xplDeleteEventNoSales;
+
+  /// Snackbar after cancelling a paid event
+  ///
+  /// In en, this message translates to:
+  /// **'Event cancelled. Buyers are being refunded automatically.'**
+  String get eventsCancelledRefundsStarted;
+
+  /// Error: cancelling the event failed
+  ///
+  /// In en, this message translates to:
+  /// **'The event could not be cancelled. Try again.'**
+  String get eventsCancelFailed;
+
+  /// Sheet title: account deletion blocked by paid sales
+  ///
+  /// In en, this message translates to:
+  /// **'Before you delete your account'**
+  String get deletionBlockedTitle;
+
+  /// Sheet body: why deletion is blocked
+  ///
+  /// In en, this message translates to:
+  /// **'You sell tickets or bookings that are paid and not refunded yet. Cancel these listings (buyers are refunded automatically) or wait until they have taken place. Then you can delete your account.'**
+  String get deletionBlockedBody;
+
+  /// Blocker row: paid orders not refunded
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 paid order not refunded} other{{count} paid orders not refunded}}'**
+  String deletionBlockedPaidCount(int count);
+
+  /// Blocker row: refunds running
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 refund in progress} other{{count} refunds in progress}}'**
+  String deletionBlockedInProgress(int count);
+
+  /// Blocker row: refunds that failed
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 refund failed: refund it yourself and upload the proof} other{{count} refunds failed: refund them yourself and upload the proof}}'**
+  String deletionBlockedFailedCount(int count);
+
+  /// Blocker row: manual refund proofs under review
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 refund proof under review} other{{count} refund proofs under review}}'**
+  String deletionBlockedReviewCount(int count);
+
+  /// Button: cancel the listing and refund the buyers
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel & refund'**
+  String get deletionBlockedCancelRefund;
+
+  /// Button: upload proof of a manual refund
+  ///
+  /// In en, this message translates to:
+  /// **'Upload refund proof'**
+  String get deletionBlockedUploadProof;
+
+  /// Confirm dialog: cancel an event from the deletion sheet
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel this event? Every buyer is refunded the full price automatically. This can’t be undone.'**
+  String get deletionBlockedConfirmEvent;
+
+  /// Confirm dialog: cancel the paid bookings of an experience
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel every paid booking of this experience? Each guest is refunded the full price automatically. This can’t be undone.'**
+  String get deletionBlockedConfirmExperience;
+
+  /// Snackbar: refund proof uploaded
+  ///
+  /// In en, this message translates to:
+  /// **'Proof sent. GreenGo will review it.'**
+  String get deletionBlockedProofSent;
+
+  /// Error: proof file too large or wrong type
+  ///
+  /// In en, this message translates to:
+  /// **'Choose an image or a PDF up to 10 MB.'**
+  String get deletionBlockedProofTooBig;
+
+  /// Error: checking the blockers failed
+  ///
+  /// In en, this message translates to:
+  /// **'We couldn’t check your listings. Try again.'**
+  String get deletionBlockedCheckFailed;
+
+  /// Error: cancel / upload from the deletion sheet failed
+  ///
+  /// In en, this message translates to:
+  /// **'That didn’t work. Try again.'**
+  String get deletionBlockedActionFailed;
+
+  /// Label: the item is an event
+  ///
+  /// In en, this message translates to:
+  /// **'Event'**
+  String get deletionBlockedEvent;
+
+  /// Label: the item is an experience
+  ///
+  /// In en, this message translates to:
+  /// **'Experience'**
+  String get deletionBlockedExperience;
 }
 
 class _AppLocalizationsDelegate
@@ -47283,13 +47538,13 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-        'de',
-        'en',
-        'es',
-        'fr',
-        'it',
-        'pt'
-      ].contains(locale.languageCode);
+    'de',
+    'en',
+    'es',
+    'fr',
+    'it',
+    'pt',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -47325,8 +47580,9 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-      'an issue with the localizations generation tool. Please file an issue '
-      'on GitHub with a reproducible sample app and the gen-l10n configuration '
-      'that was used.');
+    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+    'an issue with the localizations generation tool. Please file an issue '
+    'on GitHub with a reproducible sample app and the gen-l10n configuration '
+    'that was used.',
+  );
 }

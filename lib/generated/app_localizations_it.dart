@@ -6365,7 +6365,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return 'Abbonamento $tierName attivo fino al $formattedDate$coinsText';
   }
 
@@ -16243,13 +16246,21 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price ogni $interval. Si rinnova automaticamente il $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price ogni $interval. Annullato; accesso fino al $date.';
   }
 
@@ -19832,7 +19843,9 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-      String name, String rewards) {
+    String name,
+    String rewards,
+  ) {
     return 'Ricompense di $name riscattate! $rewards';
   }
 
@@ -20296,7 +20309,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-      String location, int hours, int minutes) {
+    String location,
+    int hours,
+    int minutes,
+  ) {
     return '$location - ${hours}h ${minutes}m rimanenti';
   }
 
@@ -22264,7 +22280,11 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date) {
+    String reason,
+    String message,
+    String user,
+    String date,
+  ) {
     return 'Motivo: $reason\nMessaggio segnalato: «$message»\nUtente segnalato: $user\nSegnalato il: $date';
   }
 
@@ -22616,50 +22636,41 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Prima connessione',
-        'social_butterfly': 'Farfalla sociale',
-        'popular': 'Popolare',
-        'video_enthusiast': 'Appassionato di video',
-        'daily_streak_7': 'Serie di 7 giorni',
-        'daily_streak_30': 'Serie di 30 giorni',
-        'other': 'Nuovo traguardo',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Prima connessione',
+      'social_butterfly': 'Farfalla sociale',
+      'popular': 'Popolare',
+      'video_enthusiast': 'Appassionato di video',
+      'daily_streak_7': 'Serie di 7 giorni',
+      'daily_streak_30': 'Serie di 30 giorni',
+      'other': 'Nuovo traguardo',
+    });
     return 'Traguardo sbloccato: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Crea il tuo primo contatto',
-        'social_butterfly': 'Invia 100 messaggi',
-        'popular': 'Crea 50 contatti',
-        'video_enthusiast': 'Completa 10 videochiamate',
-        'daily_streak_7': 'Accedi per 7 giorni di fila',
-        'daily_streak_30': 'Accedi per 30 giorni di fila',
-        'other': 'Continua così!',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Crea il tuo primo contatto',
+      'social_butterfly': 'Invia 100 messaggi',
+      'popular': 'Crea 50 contatti',
+      'video_enthusiast': 'Completa 10 videochiamate',
+      'daily_streak_7': 'Accedi per 7 giorni di fila',
+      'daily_streak_30': 'Accedi per 30 giorni di fila',
+      'other': 'Continua così!',
+    });
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(
-      challenge,
-      {
-        'send_5_messages': 'Attacca bottone',
-        'get_3_matches': 'Connettore',
-        'complete_profile': 'Profilo perfetto',
-        'video_call_1': 'Faccia a faccia',
-        'other': 'Sfida del giorno',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(challenge, {
+      'send_5_messages': 'Attacca bottone',
+      'get_3_matches': 'Connettore',
+      'complete_profile': 'Profilo perfetto',
+      'video_call_1': 'Faccia a faccia',
+      'other': 'Sfida del giorno',
+    });
     return 'Sfida completata: $_temp0!';
   }
 
@@ -27939,4 +27950,190 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get tourExploreFollowersDesc =>
       'Quante persone ti seguono. Solo tu vedi questo numero. Tocca per vedere chi sono.';
+
+  @override
+  String get srvRefundStartedTitle => 'Rimborso avviato';
+
+  @override
+  String srvRefundStartedBody(String title) {
+    return '$title è stato annullato dal venditore. L’importo completo ti viene rimborsato sul metodo di pagamento originale; possono servire da 5 a 10 giorni.';
+  }
+
+  @override
+  String srvRefundOwedBody(String title) {
+    return '$title è stato annullato. Hai pagato direttamente il venditore, quindi deve rimborsarti l’intero importo.';
+  }
+
+  @override
+  String srvRefundOwedOrganizerBody(String title) {
+    return '$title: hai annullato, quindi rimborsa l’intero importo a questo acquirente. Ti ha pagato fuori da GreenGo.';
+  }
+
+  @override
+  String get srvRefundFailedTitle => 'Il tuo rimborso è in ritardo';
+
+  @override
+  String srvRefundFailedBody(String title) {
+    return 'Non siamo riusciti a rimborsare automaticamente il tuo pagamento per $title. Il supporto GreenGo ti contatterà per risolvere.';
+  }
+
+  @override
+  String get srvRefundFailedSellerTitle =>
+      'Rimborso non riuscito: azione richiesta';
+
+  @override
+  String srvRefundFailedSellerBody(String title) {
+    return 'Il rimborso automatico per $title non è riuscito. Rimborsa l’acquirente dal tuo conto Stripe o Mercado Pago, poi carica la prova su GreenGo.';
+  }
+
+  @override
+  String get srvRefundSummaryTitle => 'Rimborsi del tuo evento annullato';
+
+  @override
+  String srvRefundSummaryBody(String title, int refunded, int failed) {
+    return '$title: $refunded rimborsati automaticamente, $failed richiedono la tua azione.';
+  }
+
+  @override
+  String get srvManualRefundApprovedTitle => 'Prova di rimborso accettata';
+
+  @override
+  String srvManualRefundApprovedBody(String title) {
+    return 'La tua prova per $title è stata accettata. L’ordine ora risulta rimborsato.';
+  }
+
+  @override
+  String get srvManualRefundRejectedTitle => 'Prova di rimborso non accettata';
+
+  @override
+  String srvManualRefundRejectedBody(String title, String reason) {
+    return 'La tua prova per $title non è stata accettata: $reason. Rimborsa l’acquirente e carica una nuova prova.';
+  }
+
+  @override
+  String srvRefundManualBuyerBody(String title) {
+    return 'Il venditore ha rimborsato il tuo pagamento per $title. GreenGo ha verificato la prova.';
+  }
+
+  @override
+  String emailRefundStartedSubject(String title) {
+    return 'Rimborso avviato: $title';
+  }
+
+  @override
+  String emailRefundDelayedSubject(String title) {
+    return 'Il tuo rimborso per $title';
+  }
+
+  @override
+  String get eventsCancelEventAction => 'Annulla evento';
+
+  @override
+  String get xplCancelEventSold =>
+      'Sono stati venduti biglietti, quindi l’evento non può essere eliminato: viene annullato e resta visibile come annullato.';
+
+  @override
+  String get xplCancelEventRefunds =>
+      'Ogni acquirente riceve automaticamente il rimborso dell’intero prezzo del biglietto, dal tuo conto Stripe o Mercado Pago.';
+
+  @override
+  String get xplCancelEventFinal =>
+      'Un evento annullato non può essere riaperto.';
+
+  @override
+  String get xplDeleteEventNoSales =>
+      'Non sono stati venduti biglietti, quindi nessuno ha bisogno di un rimborso.';
+
+  @override
+  String get eventsCancelledRefundsStarted =>
+      'Evento annullato. Gli acquirenti vengono rimborsati automaticamente.';
+
+  @override
+  String get eventsCancelFailed => 'Impossibile annullare l’evento. Riprova.';
+
+  @override
+  String get deletionBlockedTitle => 'Prima di eliminare il tuo account';
+
+  @override
+  String get deletionBlockedBody =>
+      'Vendi biglietti o prenotazioni pagati e non ancora rimborsati. Annulla questi annunci (gli acquirenti vengono rimborsati automaticamente) o aspetta che si siano svolti. Poi potrai eliminare il tuo account.';
+
+  @override
+  String deletionBlockedPaidCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ordini pagati non rimborsati',
+      one: '1 ordine pagato non rimborsato',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String deletionBlockedInProgress(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count rimborsi in corso',
+      one: '1 rimborso in corso',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String deletionBlockedFailedCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count rimborsi non riusciti: rimborsa tu e carica le prove',
+      one: '1 rimborso non riuscito: rimborsa tu e carica la prova',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String deletionBlockedReviewCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count prove di rimborso in verifica',
+      one: '1 prova di rimborso in verifica',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get deletionBlockedCancelRefund => 'Annulla e rimborsa';
+
+  @override
+  String get deletionBlockedUploadProof => 'Carica prova di rimborso';
+
+  @override
+  String get deletionBlockedConfirmEvent =>
+      'Annullare questo evento? Ogni acquirente viene rimborsato automaticamente dell’intero prezzo. Non si può annullare.';
+
+  @override
+  String get deletionBlockedConfirmExperience =>
+      'Annullare tutte le prenotazioni pagate di questa esperienza? Ogni ospite viene rimborsato automaticamente dell’intero prezzo. Non si può annullare.';
+
+  @override
+  String get deletionBlockedProofSent =>
+      'Prova inviata. GreenGo la verificherà.';
+
+  @override
+  String get deletionBlockedProofTooBig =>
+      'Scegli un’immagine o un PDF fino a 10 MB.';
+
+  @override
+  String get deletionBlockedCheckFailed =>
+      'Non siamo riusciti a controllare i tuoi annunci. Riprova.';
+
+  @override
+  String get deletionBlockedActionFailed => 'Non ha funzionato. Riprova.';
+
+  @override
+  String get deletionBlockedEvent => 'Evento';
+
+  @override
+  String get deletionBlockedExperience => 'Esperienza';
 }

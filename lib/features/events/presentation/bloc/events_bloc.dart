@@ -203,6 +203,35 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     // the list IMMEDIATELY (no full-screen EventsLoading, which blanked all the
     // tabs and — because EventDeleted isn't EventsLoaded — left them empty until
     // a manual reload). Persist in the BACKGROUND. Mirrors _onUpdateEvent.
+    //
+    // An event with paid, unrefunded tickets is never deleted: the data
+    // source cancels it (the server refunds every buyer), so it stays in the
+    // lists as cancelled.
+    final sold = [..._allEvents, ..._userEvents, ..._nearbyEvents]
+        .where((e) => e.id == event.eventId && e.hasPaidSales)
+        .isNotEmpty;
+    if (sold) {
+      Event cancel(Event e) => e.id == event.eventId
+          ? e.copyWith(status: EventStatus.cancelled)
+          : e;
+      _allEvents = _allEvents.map(cancel).toList();
+      _userEvents = _userEvents.map(cancel).toList();
+      _nearbyEvents = _nearbyEvents.map(cancel).toList();
+      emit(EventCancelledWithRefunds(eventId: event.eventId));
+      emit(EventsLoaded(
+        events: _allEvents,
+        selectedCategory: _selectedCategory,
+        attendeesMap: _attendeesMap,
+        userEvents: _userEvents,
+        nearbyEvents: _nearbyEvents,
+      ));
+      final result = await repository.deleteEvent(event.eventId);
+      result.fold(
+        (failure) => debugPrint('Failed to cancel event: ${failure.message}'),
+        (_) {},
+      );
+      return;
+    }
     _allEvents.removeWhere((e) => e.id == event.eventId);
     _userEvents.removeWhere((e) => e.id == event.eventId);
     _nearbyEvents.removeWhere((e) => e.id == event.eventId);

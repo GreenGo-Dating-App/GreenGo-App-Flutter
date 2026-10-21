@@ -83,16 +83,23 @@ enum ProfileDeleteFailure {
   /// No connection / timeout.
   network,
 
+  /// The user still sells paid, unrefunded tickets / bookings
+  /// (`deletion_blocked_paid_orders`): show the blockers sheet.
+  blockedPaidOrders,
+
   /// Anything else.
   failed,
 }
 
 class ProfileDeleteFailed extends ProfileState {
-  const ProfileDeleteFailed({required this.reason});
+  const ProfileDeleteFailed({required this.reason, this.blockers});
   final ProfileDeleteFailure reason;
 
+  /// `blockers` of a [ProfileDeleteFailure.blockedPaidOrders] refusal (raw).
+  final Object? blockers;
+
   @override
-  List<Object?> get props => [reason];
+  List<Object?> get props => [reason, blockers];
 }
 
 class ProfileCompletionLoaded extends ProfileState {

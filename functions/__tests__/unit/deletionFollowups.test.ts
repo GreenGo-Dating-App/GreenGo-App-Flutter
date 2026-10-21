@@ -13,12 +13,37 @@ const NOW = new Date(Date.UTC(2026, 9, 16, 12, 0, 0));
 interface FakeStripe extends f.StripeLike {
   cancelCalls: string[];
   failCancel: boolean;
+  deletedCustomers: string[];
+  customerRecords: Record<string, any>;
 }
 
 function fakeStripe(subs: any[]): FakeStripe {
   const s: FakeStripe = {
     cancelCalls: [],
     failCancel: false,
+    deletedCustomers: [],
+    customerRecords: {
+      cus_1: { id: 'cus_1', metadata: { userId: 'u1' } },
+      cus_9: { id: 'cus_9', metadata: { userId: 'u1' } },
+      cus_8: { id: 'cus_8', metadata: { userId: 'u1' } }, // no subscription at all
+      cus_2: { id: 'cus_2', metadata: { userId: 'u2' } },
+    },
+    customers: {
+      del: async (id: string) => {
+        if (!s.customerRecords[id] || s.customerRecords[id].deleted) {
+          const e: any = new Error(`No such customer: '${id}'`);
+          e.code = 'resource_missing';
+          throw e;
+        }
+        s.customerRecords[id].deleted = true;
+        s.deletedCustomers.push(id);
+        return { id, deleted: true };
+      },
+      search: async (p: any) => {
+        const m = /metadata\['userId'\]:'([^']+)'/.exec(p.query);
+        return { data: Object.values(s.customerRecords).filter((c: any) => !c.deleted && c.metadata?.userId === m?.[1]) };
+      },
+    },
     subscriptions: {
       list: async (p: any) => ({ data: subs.filter((x) => x.customer === p.customer), has_more: false }),
       search: async (p: any) => {
@@ -99,6 +124,30 @@ describe('processStripeFollowup', () => {
     expect(d.stripeStatus).toBe('done');
     expect(d.stripeAttempts).toBe(1);
     expect(d.stripeCancelled.sort()).toEqual(['sub_active', 'sub_orphan', 'sub_trial']);
+    // Privacy policy 15.2 f: the customer records are deleted too (mapped,
+    // the orphan subscription's customer, and one found by metadata only).
+    expect(live.deletedCustomers.sort()).toEqual(['cus_1', 'cus_8', 'cus_9']);
+    expect(d.stripeCustomersDeleted.sort()).toEqual(['cus_1', 'cus_8', 'cus_9']);
+    expect(live.customerRecords.cus_2.deleted).toBeUndefined();
+  });
+
+  test('an already-deleted customer counts as done', async () => {
+    live.customerRecords.cus_1.deleted = true;
+    db.seed('deletion_followups', 'u1', { stripeCustomerId: 'cus_1', stripeStatus: 'pending' });
+    expect(await f.processStripeFollowup('u1', deps)).toBe('done');
+    expect(db.get('deletion_followups', 'u1')!.stripeCustomersAlreadyDeleted).toEqual(['cus_1']);
+  });
+
+  test('a customer delete failure is retried (subscriptions stay cancelled)', async () => {
+    const del = live.customers!.del;
+    live.customers!.del = async () => { throw new Error('stripe down'); };
+    db.seed('deletion_followups', 'u1', { stripeCustomerId: 'cus_1', stripeStatus: 'pending' });
+    expect(await f.processStripeFollowup('u1', deps)).toBe('retry');
+    live.customers!.del = del;
+    now = new Date(now.getTime() + 60 * 60 * 1000);
+    expect(await f.retryDueFollowups(deps)).toBe(1);
+    expect(db.get('deletion_followups', 'u1')!.stripeStatus).toBe('done');
+    expect(live.deletedCustomers).toContain('cus_1');
   });
 
   test('idempotent: re-running after a reset cancels nothing new', async () => {
@@ -108,6 +157,7 @@ describe('processStripeFollowup', () => {
     db.write('deletion_followups', 'u1', { stripeStatus: 'pending' }, true); // second deletion run
     expect(await f.processStripeFollowup('u1', deps)).toBe('done');
     expect(live.cancelCalls).toHaveLength(3);
+    expect(live.deletedCustomers.sort()).toEqual(['cus_1', 'cus_8', 'cus_9']); // never twice
   });
 
   test('a failure is retried with backoff, then alerts the admins', async () => {
@@ -156,7 +206,7 @@ describe('processStripeFollowup', () => {
     expect(db.get('deletion_followups', 'u3')!.stripeSkipped).toEqual(['test:no_key']);
   });
 
-  test('a held lease blocks a concurrent run', async () => {
+  test('a held lease blocks a concurrent run (customers untouched)', async () => {
     db.seed('deletion_followups', 'u1', {
       stripeCustomerId: 'cus_1',
       stripeStatus: 'processing',
@@ -164,5 +214,80 @@ describe('processStripeFollowup', () => {
     });
     expect(await f.processStripeFollowup('u1', deps)).toBe('skipped');
     expect(live.cancelCalls).toHaveLength(0);
+  });
+});
+
+describe('processAnalyticsFollowup', () => {
+  let bqCalls: Array<{ query: string; params?: Record<string, unknown> }>;
+  let bqFail: (q: string) => Error | null;
+  let ga4: string[];
+  let adeps: f.FollowupDeps;
+  beforeEach(() => {
+    bqCalls = [];
+    bqFail = () => null;
+    ga4 = [];
+    adeps = {
+      ...deps,
+      bigquery: () => ({
+        query: async (o: any) => { const e = bqFail(o.query); if (e) throw e; bqCalls.push(o); return [[]]; },
+      }),
+      ga4DeleteAppInstance: async (id: string) => { ga4.push(id); },
+    };
+    for (const [col, field] of f.ANALYTICS_BY_FIELD) {
+      db.seed(col, `${col}_mine`, { [field]: 'u1', x: 1 });
+      db.seed(col, `${col}_other`, { [field]: 'u2', x: 1 });
+    }
+    db.seed('user_stats', 'u1', { a: 1 });
+    db.seed('user_stats', 'u2', { a: 1 });
+  });
+
+  test('deletes per-user analytics docs, BigQuery rows (financial ones pseudonymised), files GA4 deletion', async () => {
+    db.seed('deletion_followups', 'u1', { analytics: true, analyticsStatus: 'pending', ga4AppInstanceIds: ['abcdef0123456789'] });
+    expect(await f.processAnalyticsFollowup('u1', adeps)).toBe('done');
+    for (const [col] of f.ANALYTICS_BY_FIELD) {
+      expect(db.get(col, `${col}_mine`)).toBeUndefined();
+      expect(db.get(col, `${col}_other`)).toBeDefined();
+    }
+    expect(db.get('user_stats', 'u1')).toBeUndefined();
+    expect(db.get('user_stats', 'u2')).toBeDefined();
+    const del = bqCalls.filter((c) => c.query.startsWith('DELETE'));
+    const upd = bqCalls.filter((c) => c.query.startsWith('UPDATE'));
+    expect(del.map((c) => c.query)).toEqual(f.BQ_DELETE_TABLES.map((t) => 'DELETE FROM `greengo_analytics.' + t + '` WHERE user_id = @uid'));
+    expect(del.every((c) => c.params?.uid === 'u1')).toBe(true);
+    expect(upd).toHaveLength(f.BQ_PSEUDONYMISE_TABLES.length);
+    expect(upd.every((c) => c.params?.uid === 'u1' && typeof c.params?.pseudonym === 'string' && c.params.pseudonym !== 'u1')).toBe(true);
+    expect(ga4).toEqual(['abcdef0123456789']);
+    const d = db.get('deletion_followups', 'u1')!;
+    expect(d.analyticsStatus).toBe('done');
+    expect(d.ga4AppInstanceIds).toBeUndefined();
+    expect(d.crashlytics).toBe('not_linked');
+  });
+
+  test('rows in the BigQuery streaming buffer -> retried later; a missing table is skipped', async () => {
+    db.seed('deletion_followups', 'u1', { analyticsStatus: 'pending' });
+    bqFail = (q) => (q.includes('user_events') ? new Error('UPDATE or DELETE statement over table would affect rows in the streaming buffer')
+      : (q.includes('tax_records') ? new Error('Not found: Table greengo:greengo_analytics.tax_records') : null));
+    expect(await f.processAnalyticsFollowup('u1', adeps)).toBe('retry');
+    expect(db.get('deletion_followups', 'u1')!.analyticsLastError).toBe('bigquery_streaming_buffer');
+    bqFail = (q) => (q.includes('tax_records') ? new Error('Not found: Table x') : null);
+    now = new Date(now.getTime() + 60 * 60 * 1000);
+    expect(await f.retryDueFollowups(adeps)).toBe(1);
+    const d = db.get('deletion_followups', 'u1')!;
+    expect(d.analyticsStatus).toBe('done');
+    expect(d.analyticsBigQuery.tax_records).toBe('no_table');
+    expect(d.analyticsBigQuery.user_events).toBe('done');
+    expect(d.analyticsGa4).toEqual({ _: 'no_app_instance_id' });
+  });
+
+  test('GA4 not enabled is recorded, not silently passed', async () => {
+    db.seed('deletion_followups', 'u1', { analyticsStatus: 'pending', ga4AppInstanceIds: ['abcdef0123456789'] });
+    expect(await f.processAnalyticsFollowup('u1', { ...adeps, ga4DeleteAppInstance: null })).toBe('done');
+    expect(db.get('deletion_followups', 'u1')!.analyticsGa4).toEqual({ _: 'not_enabled' });
+  });
+
+  test('old follow-up docs (no analyticsStatus) only run the Stripe task', () => {
+    expect(f.isTaskDue({ stripeStatus: 'done' }, 'analytics', NOW)).toBe(false);
+    expect(f.isTaskDue({}, 'stripe', NOW)).toBe(true);
+    expect(f.isTaskDue({ analyticsStatus: 'pending' }, 'analytics', NOW)).toBe(true);
   });
 });

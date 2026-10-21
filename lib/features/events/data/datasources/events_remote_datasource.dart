@@ -95,6 +95,9 @@ abstract class EventsRemoteDataSource {
 
   Future<void> deleteEvent(String eventId);
 
+  /// Paid orders of the event that are not refunded (server-maintained).
+  Future<int> paidOrderCount(String eventId);
+
   Future<void> rsvpEvent(
     String eventId,
     String userId,
@@ -563,8 +566,31 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
   }
 
   @override
+  Future<int> paidOrderCount(String eventId) async {
+    final snap = await _eventsCollection.doc(eventId).get();
+    return (snap.data()?['paidOrderCount'] as num?)?.toInt() ?? 0;
+  }
+
+  /// Deletes the event - unless it has paid orders that are not refunded
+  /// (server-maintained `paidOrderCount`): such an event can never be deleted
+  /// (firestore.rules) and is CANCELLED instead; the server then refunds every
+  /// buyer in full (functions/src/ticket_payments/refunds.ts). Checked before
+  /// anything is deleted, so the attendee list of a sold event stays intact.
+  @override
   Future<void> deleteEvent(String eventId) async {
     try {
+      final ref = _eventsCollection.doc(eventId);
+      final current = await ref.get();
+      final paid = (current.data()?['paidOrderCount'] as num?)?.toInt() ?? 0;
+      if (paid > 0) {
+        await ref.update({
+          'status': EventStatus.cancelled.name,
+          'updatedAt': Timestamp.fromDate(DateTime.now()),
+        });
+        _invalidateAfterWrite();
+        debugPrint('Event cancelled (paid sales, buyers refunded): $eventId');
+        return;
+      }
       // Delete attendees sub-collection first
       final attendeesSnapshot = await _eventsCollection
           .doc(eventId)

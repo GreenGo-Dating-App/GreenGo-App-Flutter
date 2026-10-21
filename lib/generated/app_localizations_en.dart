@@ -6291,7 +6291,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return '$tierName membership active until $formattedDate$coinsText';
   }
 
@@ -16071,13 +16074,21 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price per $interval. Renews automatically on $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price per $interval. Cancelled; access ends on $date.';
   }
 
@@ -19627,7 +19638,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-      String name, String rewards) {
+    String name,
+    String rewards,
+  ) {
     return '$name rewards claimed! $rewards';
   }
 
@@ -20090,7 +20103,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-      String location, int hours, int minutes) {
+    String location,
+    int hours,
+    int minutes,
+  ) {
     return '$location - ${hours}h ${minutes}m remaining';
   }
 
@@ -22024,7 +22040,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date) {
+    String reason,
+    String message,
+    String user,
+    String date,
+  ) {
     return 'Reason: $reason\nReported message: \"$message\"\nReported user: $user\nReported at: $date';
   }
 
@@ -22369,50 +22389,41 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'First Connection',
-        'social_butterfly': 'Social Butterfly',
-        'popular': 'Popular',
-        'video_enthusiast': 'Video Enthusiast',
-        'daily_streak_7': '7-Day Streak',
-        'daily_streak_30': '30-Day Streak',
-        'other': 'New achievement',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'First Connection',
+      'social_butterfly': 'Social Butterfly',
+      'popular': 'Popular',
+      'video_enthusiast': 'Video Enthusiast',
+      'daily_streak_7': '7-Day Streak',
+      'daily_streak_30': '30-Day Streak',
+      'other': 'New achievement',
+    });
     return 'Achievement Unlocked: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Make your first connection',
-        'social_butterfly': 'Send 100 messages',
-        'popular': 'Make 50 connections',
-        'video_enthusiast': 'Complete 10 video calls',
-        'daily_streak_7': 'Log in 7 days in a row',
-        'daily_streak_30': 'Log in 30 days in a row',
-        'other': 'Keep it up!',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Make your first connection',
+      'social_butterfly': 'Send 100 messages',
+      'popular': 'Make 50 connections',
+      'video_enthusiast': 'Complete 10 video calls',
+      'daily_streak_7': 'Log in 7 days in a row',
+      'daily_streak_30': 'Log in 30 days in a row',
+      'other': 'Keep it up!',
+    });
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(
-      challenge,
-      {
-        'send_5_messages': 'Conversation Starter',
-        'get_3_matches': 'Connector',
-        'complete_profile': 'Profile Perfectionist',
-        'video_call_1': 'Face to Face',
-        'other': 'Daily challenge',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(challenge, {
+      'send_5_messages': 'Conversation Starter',
+      'get_3_matches': 'Connector',
+      'complete_profile': 'Profile Perfectionist',
+      'video_call_1': 'Face to Face',
+      'other': 'Daily challenge',
+    });
     return 'Challenge Completed: $_temp0!';
   }
 
@@ -27638,4 +27649,188 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get tourExploreFollowersDesc =>
       'How many people follow you. Only you see this number. Tap to see who they are.';
+
+  @override
+  String get srvRefundStartedTitle => 'Refund started';
+
+  @override
+  String srvRefundStartedBody(String title) {
+    return '$title was cancelled by the seller. Your full payment is being refunded to your original payment method; it can take 5 to 10 days to appear.';
+  }
+
+  @override
+  String srvRefundOwedBody(String title) {
+    return '$title was cancelled. You paid the seller directly, so the seller must pay you back in full.';
+  }
+
+  @override
+  String srvRefundOwedOrganizerBody(String title) {
+    return '$title: you cancelled, so refund this buyer in full. They paid you outside GreenGo.';
+  }
+
+  @override
+  String get srvRefundFailedTitle => 'Your refund is delayed';
+
+  @override
+  String srvRefundFailedBody(String title) {
+    return 'We could not refund your payment for $title automatically. GreenGo support will contact you to sort it out.';
+  }
+
+  @override
+  String get srvRefundFailedSellerTitle => 'Refund failed: action needed';
+
+  @override
+  String srvRefundFailedSellerBody(String title) {
+    return 'The automatic refund for $title failed. Refund the buyer from your Stripe or Mercado Pago account, then upload the proof in GreenGo.';
+  }
+
+  @override
+  String get srvRefundSummaryTitle => 'Refunds for your cancelled event';
+
+  @override
+  String srvRefundSummaryBody(String title, int refunded, int failed) {
+    return '$title: $refunded refunded automatically, $failed need your action.';
+  }
+
+  @override
+  String get srvManualRefundApprovedTitle => 'Refund proof accepted';
+
+  @override
+  String srvManualRefundApprovedBody(String title) {
+    return 'Your proof for $title was accepted. The order is now marked as refunded.';
+  }
+
+  @override
+  String get srvManualRefundRejectedTitle => 'Refund proof not accepted';
+
+  @override
+  String srvManualRefundRejectedBody(String title, String reason) {
+    return 'Your proof for $title was not accepted: $reason. Refund the buyer and upload a new proof.';
+  }
+
+  @override
+  String srvRefundManualBuyerBody(String title) {
+    return 'The seller refunded your payment for $title. GreenGo checked the proof.';
+  }
+
+  @override
+  String emailRefundStartedSubject(String title) {
+    return 'Refund started: $title';
+  }
+
+  @override
+  String emailRefundDelayedSubject(String title) {
+    return 'Your refund for $title';
+  }
+
+  @override
+  String get eventsCancelEventAction => 'Cancel event';
+
+  @override
+  String get xplCancelEventSold =>
+      'Tickets were sold, so the event can’t be deleted: it is cancelled instead and stays visible as cancelled.';
+
+  @override
+  String get xplCancelEventRefunds =>
+      'Every buyer is refunded the full ticket price automatically, from your Stripe or Mercado Pago account.';
+
+  @override
+  String get xplCancelEventFinal => 'A cancelled event can’t be reopened.';
+
+  @override
+  String get xplDeleteEventNoSales =>
+      'No tickets were sold, so nobody needs a refund.';
+
+  @override
+  String get eventsCancelledRefundsStarted =>
+      'Event cancelled. Buyers are being refunded automatically.';
+
+  @override
+  String get eventsCancelFailed =>
+      'The event could not be cancelled. Try again.';
+
+  @override
+  String get deletionBlockedTitle => 'Before you delete your account';
+
+  @override
+  String get deletionBlockedBody =>
+      'You sell tickets or bookings that are paid and not refunded yet. Cancel these listings (buyers are refunded automatically) or wait until they have taken place. Then you can delete your account.';
+
+  @override
+  String deletionBlockedPaidCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count paid orders not refunded',
+      one: '1 paid order not refunded',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String deletionBlockedInProgress(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count refunds in progress',
+      one: '1 refund in progress',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String deletionBlockedFailedCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count refunds failed: refund them yourself and upload the proof',
+      one: '1 refund failed: refund it yourself and upload the proof',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String deletionBlockedReviewCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count refund proofs under review',
+      one: '1 refund proof under review',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get deletionBlockedCancelRefund => 'Cancel & refund';
+
+  @override
+  String get deletionBlockedUploadProof => 'Upload refund proof';
+
+  @override
+  String get deletionBlockedConfirmEvent =>
+      'Cancel this event? Every buyer is refunded the full price automatically. This can’t be undone.';
+
+  @override
+  String get deletionBlockedConfirmExperience =>
+      'Cancel every paid booking of this experience? Each guest is refunded the full price automatically. This can’t be undone.';
+
+  @override
+  String get deletionBlockedProofSent => 'Proof sent. GreenGo will review it.';
+
+  @override
+  String get deletionBlockedProofTooBig =>
+      'Choose an image or a PDF up to 10 MB.';
+
+  @override
+  String get deletionBlockedCheckFailed =>
+      'We couldn’t check your listings. Try again.';
+
+  @override
+  String get deletionBlockedActionFailed => 'That didn’t work. Try again.';
+
+  @override
+  String get deletionBlockedEvent => 'Event';
+
+  @override
+  String get deletionBlockedExperience => 'Experience';
 }

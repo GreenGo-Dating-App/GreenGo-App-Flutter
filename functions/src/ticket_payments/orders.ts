@@ -80,6 +80,8 @@ import { assertCanParticipate } from '../shared/participation';
 import { GuestBuyer, guestDisplayName, guestRecordFields } from '../shared/guestIdentity';
 import { BILLING, billingMissing } from '../finance/billing';
 import { AttendeeName, attendeeFullName, eventTicketLimit, parseAttendeeNames, requiresAttendeeNames } from './ticketRules';
+// Lazy cycle (refunds.ts imports this module): used at call time only.
+import { refundIfListingCancelled } from './refunds';
 
 const db = () => admin.firestore();
 const ts = (ms: number) => admin.firestore.Timestamp.fromMillis(ms);
@@ -937,7 +939,13 @@ export async function markOrderPaid(orderId: string, ev: PaidEvidence): Promise<
         paidAt: ts(t),
       }, { merge: true });
       // Paid events count SEATS (server-maintained; clients cannot write it).
-      tx.update(evRef, { attendeeCount: going + q });
+      // paidOrderCount (server-only, rules): paid orders not refunded. While
+      // > 0 the organiser cannot hard-delete the event (firestore.rules) and
+      // the app turns "delete" into "cancel event" (refunds.ts refunds all).
+      tx.update(evRef, {
+        attendeeCount: going + q,
+        ...(Number(o.totalAmount) > 0 ? { paidOrderCount: Math.max(0, Number(e.paidOrderCount) || 0) + 1 } : {}),
+      });
       // Ticket holder names: organizer + buyer only (never the public roster).
       if (names && namesSnap) {
         const prior = (Array.isArray(namesSnap.data()?.names) ? namesSnap.data()!.names : [])
@@ -1026,7 +1034,12 @@ export async function markOrderPaid(orderId: string, ev: PaidEvidence): Promise<
       mismatchAt: ts(now()), mismatch: { provider: ev.provider, amount: ev.amount, currency: ev.currency },
     }, { merge: true }).catch(() => undefined);
   }
-  if (result.r === 'paid') await notifyPaid(orderId, result.o!, ev.source === 'organizer');
+  if (result.r === 'paid') {
+    await notifyPaid(orderId, result.o!, ev.source === 'organizer');
+    // Paid after the organiser cancelled the listing: refund it straight away.
+    await refundIfListingCancelled(orderId, result.o!)
+      .catch((e) => console.error(`[tickets] late-payment refund check ${orderId} failed:`, (e as Error)?.message));
+  }
   return result.r;
 }
 
@@ -1165,7 +1178,12 @@ export async function remindDueConfirmations(limit = 300): Promise<number> {
 // ─────────────────────────────────────────────────────────── refunds / disputes
 
 /** Full refund or dispute: every ticket of the order invalid, QR rejected at the door, seats + allowance freed. */
-export async function markOrderReversed(orderId: string, to: 'refunded' | 'disputed', ref: Record<string, unknown> = {}): Promise<boolean> {
+export async function markOrderReversed(
+  orderId: string,
+  to: 'refunded' | 'disputed',
+  ref: Record<string, unknown> = {},
+  opts: { silent?: boolean } = {},
+): Promise<boolean> {
   const oref = db().collection(COL.orders).doc(orderId);
   const changed = await db().runTransaction(async (tx) => {
     const snap = await tx.get(oref);
@@ -1198,7 +1216,13 @@ export async function markOrderReversed(orderId: string, to: 'refunded' | 'dispu
         }
       }
       const going = Math.max(0, Math.floor(Number(evSnap.data()?.attendeeCount) || 0));
-      if (evSnap.exists) tx.update(evRef, { attendeeCount: Math.max(0, going - q) });
+      if (evSnap.exists) {
+        tx.update(evRef, {
+          attendeeCount: Math.max(0, going - q),
+          ...(Number(o.totalAmount) > 0
+            ? { paidOrderCount: Math.max(0, (Number(evSnap.data()?.paidOrderCount) || 0) - 1) } : {}),
+        });
+      }
       if (namesSnap?.exists) {
         const left = (Array.isArray(namesSnap.data()?.names) ? namesSnap.data()!.names : [])
           .filter((x: any) => !ids.includes(x?.ticketId));
@@ -1239,7 +1263,7 @@ export async function markOrderReversed(orderId: string, to: 'refunded' | 'dispu
     for (const s of tSnaps) if (s.exists) tx.update(s.ref, { status: to, invalidatedAt: ts(t) });
     return true;
   });
-  if (changed) {
+  if (changed && !opts.silent) {
     const o = (await oref.get()).data() || {};
     await emitNotification({
       recipientId: o.buyerId, type: 'ticket_refunded',

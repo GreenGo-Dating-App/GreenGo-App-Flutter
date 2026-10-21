@@ -509,9 +509,14 @@ class _EventRow extends StatelessWidget {
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          isSeries
-              ? l10n.businessEventsCancelSeriesMessage
-              : l10n.businessEventsCancelMessage,
+          [
+            if (isSeries)
+              l10n.businessEventsCancelSeriesMessage
+            else
+              l10n.businessEventsCancelMessage,
+            // Sold tickets: cancelled (not deleted), buyers refunded in full.
+            if (event.hasPaidSales) l10n.xplCancelEventRefunds,
+          ].join('\n\n'),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
