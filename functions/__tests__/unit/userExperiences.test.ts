@@ -220,6 +220,16 @@ describe('payload validation', () => {
     expect(r.data.searchKeywords).toEqual(expect.arrayContaining(['street', 'food', 'paulo']));
   });
 
+  it('keeps the main photo position (focal point + zoom), clamped, default centre', () => {
+    const d = validateExperiencePayload(good).data;
+    expect([d.coverFocalX, d.coverFocalY, d.coverZoom]).toEqual([0, 0, 1]);
+    const r = validateExperiencePayload({ ...good, coverFocalX: -0.4, coverFocalY: 0.75, coverZoom: 1.5 });
+    expect(r.ok).toBe(true);
+    expect([r.data.coverFocalX, r.data.coverFocalY, r.data.coverZoom]).toEqual([-0.4, 0.75, 1.5]);
+    const c = validateExperiencePayload({ ...good, coverFocalX: 9, coverFocalY: 'x', coverZoom: 0.2 }).data;
+    expect([c.coverFocalX, c.coverFocalY, c.coverZoom]).toEqual([1, 0, 1]);
+  });
+
   it('flags each invalid field', () => {
     const r = validateExperiencePayload({
       ...good,

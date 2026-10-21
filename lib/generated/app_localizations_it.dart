@@ -28366,4 +28366,59 @@ class AppLocalizationsIt extends AppLocalizations {
   String srvCommunityTransferExpiredBody(String community) {
     return 'Nessuno ha risposto alla tua offerta per $community. Resti il proprietario.';
   }
+
+  @override
+  String coverImageHintBanner(
+      String width, String height, String ratio, String maxMb) {
+    return 'Consigliato: $width × $height px ($ratio), JPG o PNG, max $maxMb MB. Tieni il soggetto principale al centro: i bordi possono essere tagliati nelle schede più piccole.';
+  }
+
+  @override
+  String coverImageHintSquare(String width, String height, String maxMb) {
+    return 'Consigliato: $width × $height px (quadrata, 1:1), JPG o PNG, max $maxMb MB. Viene mostrata in un cerchio: tienila centrata con un po\' di margine.';
+  }
+
+  @override
+  String coverImageWarnSmall(String width, String height, String minWidth) {
+    return 'Questa immagine è piccola ($width × $height px) e potrebbe apparire sfocata. Per un risultato nitido usa almeno $minWidth px di larghezza. Puoi comunque usarla.';
+  }
+
+  @override
+  String coverImageWarnShape(String ratio) {
+    return 'La forma di questa immagine è molto diversa da $ratio, quindi alcune parti verranno tagliate.';
+  }
+
+  @override
+  String get coverImageWarnPreview => 'Ecco come apparirà:';
+
+  @override
+  String get coverPositionTitle => 'Posiziona l\'immagine';
+
+  @override
+  String get coverPositionDone => 'Fatto';
+
+  @override
+  String get coverPositionHelp =>
+      'Trascina l\'immagine per scegliere cosa si vede nella cornice. Usa due dita o il cursore per lo zoom. Tutto ciò che è fuori dalla cornice viene nascosto.';
+
+  @override
+  String get coverPositionReset => 'Centra';
+
+  @override
+  String get coverPositionAdjust => 'Regola posizione';
+
+  @override
+  String get coverFrameExplore => 'Esplora';
+
+  @override
+  String get coverFrameHeader => 'Intestazione della pagina';
+
+  @override
+  String get coverFrameCard => 'Scheda negli elenchi';
+
+  @override
+  String get coverFrameList => 'Riga dell\'elenco';
+
+  @override
+  String get coverFrameAvatar => 'Immagine del profilo';
 }

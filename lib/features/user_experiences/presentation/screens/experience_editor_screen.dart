@@ -40,6 +40,10 @@ import '../../../ticket_payments/domain/ticket_payments.dart';
 import '../../../ticket_payments/presentation/widgets/ticket_payment_selector.dart';
 import '../../../../core/services/paid_listing_access.dart';
 import '../../../business/presentation/widgets/paid_business_note.dart';
+import '../../../../core/media/cover_focus.dart';
+import '../../../../core/widgets/cover_frames.dart';
+import '../../../../core/widgets/cover_image_size_hint.dart';
+import '../../../../core/widgets/cover_positioner.dart';
 
 /// Languages a host can offer (same names profiles store).
 // i18n-ignore: stored values; displayed via ExperienceL10n.language
@@ -187,6 +191,10 @@ class _EditorFormState extends State<_EditorForm> {
   final ImagePicker _picker = ImagePicker();
   XFile? _mainPhoto;
   String? _existingMainUrl;
+  // Where the main photo sits in every frame (positioning step); centre by
+  // default. My pictures size for the small-image warning.
+  CoverFocus _mainFocus = CoverFocus.center;
+  Size? _mainLibrarySize;
   final List<XFile> _newPhotos = [];
   final List<String> _existingPhotos = [];
 
@@ -225,6 +233,7 @@ class _EditorFormState extends State<_EditorForm> {
       _description.text = e.description;
       _category = e.category;
       _existingMainUrl = e.mainPhotoUrl.isEmpty ? null : e.mainPhotoUrl;
+      _mainFocus = e.coverFocus;
       _existingPhotos.addAll(e.photoUrls);
       _included
         ..clear()
@@ -390,18 +399,47 @@ class _EditorFormState extends State<_EditorForm> {
   // ───────────────────────────────────────────── photos
 
   Future<void> _pickMain() async {
-    final picked =
-        await pickImageWithLibrary(context, picker: _picker, imageQuality: 80);
+    final picked = await pickImageWithLibrary(context,
+        picker: _picker,
+        imageQuality: 80,
+        hint: const CoverImageSizeHint());
     if (picked == null || !mounted) return;
     setState(() {
+      _mainFocus = CoverFocus.center; // a new picture starts centred
       if (picked.isLibrary) {
         // My pictures: reuse the approved URL (no upload).
         _mainPhoto = null;
         _existingMainUrl = picked.url;
+        _mainLibrarySize = picked.librarySize;
       } else {
         _mainPhoto = picked.file;
+        _mainLibrarySize = null;
       }
     });
+    await _positionMain();
+  }
+
+  ImageProvider? get _mainProvider => _mainPhoto != null
+      ? WebMedia.imageProviderFor(_mainPhoto!)
+      : ((_existingMainUrl ?? '').isNotEmpty
+          ? NetworkImage(_existingMainUrl!)
+          : null);
+
+  /// Positioning step: drag / zoom the main photo in the real frame with a
+  /// live preview of the Explore card, the list card and the page header.
+  Future<void> _positionMain() async {
+    final provider = _mainProvider;
+    if (provider == null) return;
+    final focus = await showCoverPositioner(
+      context,
+      image: provider,
+      initial: _mainFocus,
+      frames: CoverFrames.experience(AppLocalizations.of(context)!),
+      title: _title.text.trim(),
+      file: _mainPhoto,
+      knownSize: _mainPhoto == null ? _mainLibrarySize : null,
+    );
+    if (focus != null && mounted) setState(() => _mainFocus = focus);
   }
 
   Future<void> _pickExtra() async {
@@ -591,6 +629,7 @@ class _EditorFormState extends State<_EditorForm> {
         description: _description.text.trim(),
         category: _category,
         mainPhotoUrl: mainUrl,
+        coverFocus: mainUrl.isEmpty ? CoverFocus.center : _mainFocus,
         photoUrls: photos,
         included: ExperienceValidator.cleanItems(
             _included.map((c) => c.text).toList()),
@@ -1796,6 +1835,8 @@ class _EditorFormState extends State<_EditorForm> {
               onRemove: () => setState(() {
                 _mainPhoto = null;
                 _existingMainUrl = null;
+                _mainLibrarySize = null;
+                _mainFocus = CoverFocus.center;
               }),
             ),
             for (final u in _existingPhotos)
@@ -1813,6 +1854,13 @@ class _EditorFormState extends State<_EditorForm> {
             if (_photoCount < ExperienceLimits.maxPhotos) slot(onTap: _pickExtra),
           ],
         ),
+      ),
+      CoverPhotoGuide(
+        hasImage: _mainProvider != null,
+        onAdjust: _positionMain,
+        adjustKey: const Key('experience_main_photo_adjust'),
+        file: _mainPhoto,
+        knownSize: _mainLibrarySize,
       ),
       if (_err([
             ExperienceFieldError.mainPhotoRequired,

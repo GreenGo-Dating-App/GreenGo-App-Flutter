@@ -47900,6 +47900,97 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Nobody answered your offer for {community}. You are still the owner.'**
   String srvCommunityTransferExpiredBody(String community);
+
+  /// Recommended size hint under a 16:9 cover / banner / main photo picker
+  ///
+  /// In en, this message translates to:
+  /// **'Recommended: {width} × {height} px ({ratio}), JPG or PNG, max {maxMb} MB. Keep the main subject centred: edges may be cropped on smaller cards.'**
+  String coverImageHintBanner(
+      String width, String height, String ratio, String maxMb);
+
+  /// Recommended size hint for a square logo / group photo shown in a circle
+  ///
+  /// In en, this message translates to:
+  /// **'Recommended: {width} × {height} px (square, 1:1), JPG or PNG, max {maxMb} MB. It is shown in a circle: keep it centred with some margin.'**
+  String coverImageHintSquare(String width, String height, String maxMb);
+
+  /// Non-blocking warning after picking a cover image that is too small
+  ///
+  /// In en, this message translates to:
+  /// **'This image is small ({width} × {height} px) and may look blurry. For a sharp result use at least {minWidth} px wide. You can still use it.'**
+  String coverImageWarnSmall(String width, String height, String minWidth);
+
+  /// Non-blocking warning after picking a cover image with a very different aspect ratio
+  ///
+  /// In en, this message translates to:
+  /// **'This image\'s shape is very different from {ratio}, so parts of it will be cropped.'**
+  String coverImageWarnShape(String ratio);
+
+  /// Label above the crop preview in the cover image warning
+  ///
+  /// In en, this message translates to:
+  /// **'How it will look:'**
+  String get coverImageWarnPreview;
+
+  /// Cover positioning step (focal point editor) / live preview frame label
+  ///
+  /// In en, this message translates to:
+  /// **'Position your picture'**
+  String get coverPositionTitle;
+
+  /// Cover positioning step (focal point editor) / live preview frame label
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get coverPositionDone;
+
+  /// Cover positioning step (focal point editor) / live preview frame label
+  ///
+  /// In en, this message translates to:
+  /// **'Drag the picture to choose what shows in the frame. Pinch or use the slider to zoom. Everything outside the frame is hidden.'**
+  String get coverPositionHelp;
+
+  /// Cover positioning step (focal point editor) / live preview frame label
+  ///
+  /// In en, this message translates to:
+  /// **'Centre'**
+  String get coverPositionReset;
+
+  /// Cover positioning step (focal point editor) / live preview frame label
+  ///
+  /// In en, this message translates to:
+  /// **'Adjust position'**
+  String get coverPositionAdjust;
+
+  /// Cover positioning step (focal point editor) / live preview frame label
+  ///
+  /// In en, this message translates to:
+  /// **'Explore'**
+  String get coverFrameExplore;
+
+  /// Cover positioning step (focal point editor) / live preview frame label
+  ///
+  /// In en, this message translates to:
+  /// **'Page header'**
+  String get coverFrameHeader;
+
+  /// Cover positioning step (focal point editor) / live preview frame label
+  ///
+  /// In en, this message translates to:
+  /// **'Card in lists'**
+  String get coverFrameCard;
+
+  /// Cover positioning step (focal point editor) / live preview frame label
+  ///
+  /// In en, this message translates to:
+  /// **'List row'**
+  String get coverFrameList;
+
+  /// Cover positioning step (focal point editor) / live preview frame label
+  ///
+  /// In en, this message translates to:
+  /// **'Profile picture'**
+  String get coverFrameAvatar;
 }
 
 class _AppLocalizationsDelegate

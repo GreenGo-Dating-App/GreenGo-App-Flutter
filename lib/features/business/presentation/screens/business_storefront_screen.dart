@@ -33,6 +33,8 @@ import '../widgets/opening_hours_section.dart';
 import '../widgets/business_rating.dart';
 import '../../../safety/presentation/widgets/safety_actions_menu.dart';
 import '../../../../core/services/deep_link_service.dart';
+import '../../../../core/media/cover_focus.dart';
+import '../../../../core/widgets/focal_cover_image.dart';
 
 /// Public Business Storefront.
 ///
@@ -595,13 +597,27 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
         fit: StackFit.expand,
         children: [
           if (coverUrl != null)
-            CachedNetworkImage(
-              imageUrl: coverUrl,
-              fit: BoxFit.cover,
-              placeholder: (_, __) =>
-                  Container(color: AppColors.backgroundCard),
-              errorWidget: (_, __, ___) => _coverFallback(),
-            )
+            Builder(builder: (context) {
+              // The user's position applies to the curated cover only (the
+              // gallery / photo fallbacks are centred).
+              final focus = coverUrl == widget.business.coverImageUrl?.trim()
+                  ? widget.business.coverFocus
+                  : CoverFocus.center;
+              return FocalCoverImage.wrap(
+                focus,
+                CachedNetworkImage(
+                  key: const Key('storefront_hero_image'),
+                  imageUrl: coverUrl,
+                  fit: BoxFit.cover,
+                  alignment: focus.alignment,
+                  width: double.infinity,
+                  height: double.infinity,
+                  placeholder: (_, __) =>
+                      Container(color: AppColors.backgroundCard),
+                  errorWidget: (_, __, ___) => _coverFallback(),
+                ),
+              );
+            })
           else
             _coverFallback(),
           // Scrim for control/legibility over the image.

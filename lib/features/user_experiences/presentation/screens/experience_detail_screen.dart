@@ -44,6 +44,7 @@ import '../../../chat/presentation/widgets/listing_chat_widgets.dart';
 import '../../../app_tour/presentation/widgets/page_tour_host.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../../core/media/cover_focus.dart';
 
 /// What the detail screen reports back to the list that opened it.
 class ExperienceDetailResult {
@@ -579,6 +580,10 @@ class _DetailViewState extends State<_DetailView> {
               child: ExperienceImage(
                 url: photos.isEmpty ? '' : photos[i],
                 category: e.category,
+                // The host's position applies to the main photo (first).
+                focus: photos.isNotEmpty && photos[i] == e.mainPhotoUrl
+                    ? e.coverFocus
+                    : const CoverFocus(),
               ),
             ),
           ),

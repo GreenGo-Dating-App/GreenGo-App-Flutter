@@ -29,6 +29,7 @@ import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/widgets/verified_badge.dart';
+import '../../../../core/widgets/focal_cover_image.dart';
 
 /// Universal Search — look up other PEOPLE (→ open a chat instantly) and
 /// community EVENTS (→ open that event's page), from the Explore header.
@@ -519,13 +520,25 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
         ),
         child: Row(
           children: [
-            CircleAvatar(
-              radius: 22,
-              backgroundColor: AppColors.richGold,
-              foregroundColor: AppColors.deepBlack,
-              backgroundImage: hasPhoto ? CachedNetworkImageProvider(photo) : null,
-              child: hasPhoto ? null : const Icon(Icons.groups),
-            ),
+            hasPhoto
+                ? ClipOval(
+                    child: SizedBox(
+                      width: 44,
+                      height: 44,
+                      child: FocalCoverImage(
+                        image: CachedNetworkImageProvider(photo),
+                        focus: community.coverFocus,
+                        errorBuilder: (_, __, ___) =>
+                            Container(color: AppColors.richGold),
+                      ),
+                    ),
+                  )
+                : const CircleAvatar(
+                    radius: 22,
+                    backgroundColor: AppColors.richGold,
+                    foregroundColor: AppColors.deepBlack,
+                    child: Icon(Icons.groups),
+                  ),
             const SizedBox(width: 12),
             Expanded(
               child: Column(

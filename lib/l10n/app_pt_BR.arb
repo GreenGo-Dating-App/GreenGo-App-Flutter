@@ -8840,5 +8840,20 @@
   "srvCommunityTransferDeclinedTitle": "recusou a propriedade da sua comunidade",
   "srvCommunityTransferDeclinedBody": "Você continua sendo o proprietário de {community}.",
   "srvCommunityTransferExpiredTitle": "A oferta de transferência expirou",
-  "srvCommunityTransferExpiredBody": "Ninguém respondeu à sua oferta para {community}. Você continua sendo o proprietário."
+  "srvCommunityTransferExpiredBody": "Ninguém respondeu à sua oferta para {community}. Você continua sendo o proprietário.",
+  "coverImageHintBanner": "Recomendado: {width} × {height} px ({ratio}), JPG ou PNG, máx. {maxMb} MB. Mantenha o assunto principal centralizado: as bordas podem ser cortadas nos cards menores.",
+  "coverImageHintSquare": "Recomendado: {width} × {height} px (quadrada, 1:1), JPG ou PNG, máx. {maxMb} MB. Ela aparece em um círculo: mantenha centralizada e com um pouco de margem.",
+  "coverImageWarnSmall": "Esta imagem é pequena ({width} × {height} px) e pode ficar borrada. Para um resultado nítido, use pelo menos {minWidth} px de largura. Você ainda pode usá-la.",
+  "coverImageWarnShape": "O formato desta imagem é muito diferente de {ratio}, então partes dela serão cortadas.",
+  "coverImageWarnPreview": "Assim vai ficar:",
+  "coverPositionTitle": "Posicionar a imagem",
+  "coverPositionDone": "Concluído",
+  "coverPositionHelp": "Arraste a imagem para escolher o que aparece na moldura. Use dois dedos ou o controle deslizante para dar zoom. Tudo o que ficar fora da moldura é ocultado.",
+  "coverPositionReset": "Centralizar",
+  "coverPositionAdjust": "Ajustar posição",
+  "coverFrameExplore": "Explorar",
+  "coverFrameHeader": "Cabeçalho da página",
+  "coverFrameCard": "Card nas listas",
+  "coverFrameList": "Linha da lista",
+  "coverFrameAvatar": "Foto de perfil"
 }

@@ -28061,4 +28061,59 @@ class AppLocalizationsEn extends AppLocalizations {
   String srvCommunityTransferExpiredBody(String community) {
     return 'Nobody answered your offer for $community. You are still the owner.';
   }
+
+  @override
+  String coverImageHintBanner(
+      String width, String height, String ratio, String maxMb) {
+    return 'Recommended: $width × $height px ($ratio), JPG or PNG, max $maxMb MB. Keep the main subject centred: edges may be cropped on smaller cards.';
+  }
+
+  @override
+  String coverImageHintSquare(String width, String height, String maxMb) {
+    return 'Recommended: $width × $height px (square, 1:1), JPG or PNG, max $maxMb MB. It is shown in a circle: keep it centred with some margin.';
+  }
+
+  @override
+  String coverImageWarnSmall(String width, String height, String minWidth) {
+    return 'This image is small ($width × $height px) and may look blurry. For a sharp result use at least $minWidth px wide. You can still use it.';
+  }
+
+  @override
+  String coverImageWarnShape(String ratio) {
+    return 'This image\'s shape is very different from $ratio, so parts of it will be cropped.';
+  }
+
+  @override
+  String get coverImageWarnPreview => 'How it will look:';
+
+  @override
+  String get coverPositionTitle => 'Position your picture';
+
+  @override
+  String get coverPositionDone => 'Done';
+
+  @override
+  String get coverPositionHelp =>
+      'Drag the picture to choose what shows in the frame. Pinch or use the slider to zoom. Everything outside the frame is hidden.';
+
+  @override
+  String get coverPositionReset => 'Centre';
+
+  @override
+  String get coverPositionAdjust => 'Adjust position';
+
+  @override
+  String get coverFrameExplore => 'Explore';
+
+  @override
+  String get coverFrameHeader => 'Page header';
+
+  @override
+  String get coverFrameCard => 'Card in lists';
+
+  @override
+  String get coverFrameList => 'List row';
+
+  @override
+  String get coverFrameAvatar => 'Profile picture';
 }

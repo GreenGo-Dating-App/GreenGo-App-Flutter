@@ -103,6 +103,8 @@ import 'universal_search_screen.dart';
 import '../../../../core/config/flavor_config.dart';
 import '../../../../core/services/effective_tier.dart';
 import '../../../profile/data/private_profile.dart';
+import '../../../../core/media/cover_focus.dart';
+import '../../../../core/widgets/focal_cover_image.dart';
 
 /// Explore Screen — the Apple-safe home tab (tab 0) for the iOS flavor.
 ///
@@ -3592,6 +3594,7 @@ class _FeaturedCard extends StatelessWidget {
                 if (imageUrl != null && imageUrl.isNotEmpty)
                   _FadeInImage(
                     url: imageUrl,
+                    focus: happening.focus,
                     height: cardHeight,
                     animate: animate,
                   )
@@ -3810,6 +3813,7 @@ class _LuxuryEventCardState extends State<_LuxuryEventCard>
                     if (imageUrl != null && imageUrl.isNotEmpty)
                       _FadeInImage(
                         url: imageUrl,
+                        focus: happening.focus,
                         height: _LuxuryEventCard.cardHeight,
                         animate: widget.animate,
                       )
@@ -4035,6 +4039,7 @@ class _HappeningCard extends StatelessWidget {
                   child: (imageUrl != null && imageUrl.isNotEmpty)
                       ? _FadeInImage(
                           url: imageUrl,
+                          focus: happening.focus,
                           height: _imageHeight,
                           animate: animate,
                         )
@@ -4174,6 +4179,7 @@ class _CommunityCard extends StatelessWidget {
                           url: imageUrl,
                           height: _imageHeight,
                           animate: animate,
+                          focus: community.coverFocus,
                         )
                       : Container(
                           alignment: Alignment.center,
@@ -4616,22 +4622,27 @@ class _FadeInImage extends StatelessWidget {
     required this.url,
     required this.height,
     required this.animate,
+    this.focus = CoverFocus.center,
   });
 
   final String url;
   final double height;
   final bool animate;
 
+  /// The user's cover position (community / event covers); centre otherwise.
+  final CoverFocus focus;
+
   /// Memory + disk decode width (px) of every Explore card image.
   static const int decodeWidth = 800;
 
   @override
   Widget build(BuildContext context) {
-    return CachedNetworkImage(
+    return FocalCoverImage.wrap(focus, CachedNetworkImage(
       imageUrl: url,
       height: height,
       width: double.infinity,
       fit: BoxFit.cover,
+      alignment: focus.alignment,
       memCacheWidth: decodeWidth,
       maxWidthDiskCache: decodeWidth,
       fadeInDuration:
@@ -4646,7 +4657,7 @@ class _FadeInImage extends StatelessWidget {
           size: 28,
         ),
       ),
-    );
+    ));
   }
 }
 
@@ -4775,6 +4786,10 @@ class _Happening {
       community?.imageUrl ??
       external?.imageUrl ??
       attraction?.imageUrl('card', bucket: attractionBucket ?? '');
+
+  /// The organiser's main-photo position (community events); centre for
+  /// external events and attractions.
+  CoverFocus get focus => community?.coverFocus ?? CoverFocus.center;
 
   /// Ratings/prices/source labels only exist for external experiences.
   /// Provider rating, only when backed by a review count (never a bare number).

@@ -108,6 +108,11 @@ import '../../../copyright/data/copyright_service.dart';
 import '../../../copyright/presentation/screens/copyright_notice_form_screen.dart';
 import '../../../user_experiences/domain/contact_info.dart';
 import '../../../../core/utils/grid_columns.dart';
+import '../../../../core/media/cover_focus.dart';
+import '../../../../core/widgets/cover_frames.dart';
+import '../../../../core/widgets/cover_image_size_hint.dart';
+import '../../../../core/widgets/cover_positioner.dart';
+import '../../../../core/widgets/focal_cover_image.dart';
 
 /// Coin cost for an organizer to feature ("Feature this event") their event in
 /// the Explore featured carousel for 7 days. Pure revenue, zero run-cost.
@@ -2061,15 +2066,22 @@ class EventCard extends StatelessWidget {
                     width: double.infinity,
                     color: AppColors.backgroundDark,
                     child: event.imageUrl != null && event.imageUrl!.isNotEmpty
-                        ? CachedNetworkImage(
-                            imageUrl: event.imageUrl!,
-                            fit: BoxFit.cover,
-                            memCacheWidth:
-                                eventCoverMemCacheWidth(context, grid: false),
-                            errorWidget: (_, __, ___) => const Icon(
-                              Icons.event,
-                              size: 60,
-                              color: AppColors.textTertiary,
+                        ? FocalCoverImage.wrap(
+                            event.coverFocus,
+                            CachedNetworkImage(
+                              key: const Key('event_card_image'),
+                              imageUrl: event.imageUrl!,
+                              fit: BoxFit.cover,
+                              alignment: event.coverFocus.alignment,
+                              width: double.infinity,
+                              height: 150,
+                              memCacheWidth:
+                                  eventCoverMemCacheWidth(context, grid: false),
+                              errorWidget: (_, __, ___) => const Icon(
+                                Icons.event,
+                                size: 60,
+                                color: AppColors.textTertiary,
+                              ),
                             ),
                           )
                         : const Icon(
@@ -2475,18 +2487,25 @@ class EventDetailsScreen extends StatelessWidget {
             backgroundColor: AppColors.backgroundDark,
             flexibleSpace: FlexibleSpaceBar(
               background: event.imageUrl != null
-                  ? CachedNetworkImage(
-                      imageUrl: event.imageUrl!,
-                      fit: BoxFit.cover,
-                      memCacheWidth: (MediaQuery.of(context).size.width *
-                              MediaQuery.of(context).devicePixelRatio)
-                          .round(),
-                      errorWidget: (_, __, ___) => Container(
-                        color: AppColors.backgroundCard,
-                        child: const Icon(
-                          Icons.event,
-                          size: 80,
-                          color: AppColors.textTertiary,
+                  ? FocalCoverImage.wrap(
+                      event.coverFocus,
+                      CachedNetworkImage(
+                        key: const Key('event_header_image'),
+                        imageUrl: event.imageUrl!,
+                        fit: BoxFit.cover,
+                        alignment: event.coverFocus.alignment,
+                        width: double.infinity,
+                        height: double.infinity,
+                        memCacheWidth: (MediaQuery.of(context).size.width *
+                                MediaQuery.of(context).devicePixelRatio)
+                            .round(),
+                        errorWidget: (_, __, ___) => Container(
+                          color: AppColors.backgroundCard,
+                          child: const Icon(
+                            Icons.event,
+                            size: 80,
+                            color: AppColors.textTertiary,
+                          ),
                         ),
                       ),
                     )
@@ -3740,6 +3759,10 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   final List<XFile> _extraPhotos = [];
   // Already-uploaded images kept when editing (URLs, shown alongside new files).
   String? _existingMainUrl;
+  // Where the main photo sits in every frame (positioning step); centre by
+  // default. My pictures size for the small-image warning.
+  CoverFocus _mainFocus = CoverFocus.center;
+  Size? _mainLibrarySize;
   final List<String> _existingPhotoUrls = [];
   final ImagePicker _picker = ImagePicker();
   bool _uploading = false;
@@ -4046,6 +4069,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     if (e.languagePairs != null) _languagePairsController.text = e.languagePairs!;
     // Show already-uploaded images in the edit form.
     _existingMainUrl = e.imageUrl;
+    _mainFocus = e.coverFocus;
     _existingPhotoUrls.addAll(e.photoUrls);
     // Prefill recurrence + schedule so editing preserves them.
     if (e.recurrence != null) {
@@ -4071,18 +4095,47 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   }
 
   Future<void> _pickMainPhoto() async {
-    final picked =
-        await pickImageWithLibrary(context, picker: _picker, imageQuality: 80);
+    final picked = await pickImageWithLibrary(context,
+        picker: _picker,
+        imageQuality: 80,
+        hint: const CoverImageSizeHint());
     if (picked == null || !mounted) return;
     setState(() {
+      _mainFocus = CoverFocus.center; // a new picture starts centred
       if (picked.isLibrary) {
         // My pictures: reuse the approved URL (no upload).
         _mainPhoto = null;
         _existingMainUrl = picked.url;
+        _mainLibrarySize = picked.librarySize;
       } else {
         _mainPhoto = picked.file;
+        _mainLibrarySize = null;
       }
     });
+    await _positionMainPhoto();
+  }
+
+  ImageProvider? get _mainProvider => _mainPhoto != null
+      ? WebMedia.imageProviderFor(_mainPhoto!)
+      : ((_existingMainUrl ?? '').isNotEmpty
+          ? NetworkImage(_existingMainUrl!)
+          : null);
+
+  /// Positioning step: drag / zoom the main photo in the real frame with a
+  /// live preview of the Explore cards, the events list card and the header.
+  Future<void> _positionMainPhoto() async {
+    final provider = _mainProvider;
+    if (provider == null) return;
+    final focus = await showCoverPositioner(
+      context,
+      image: provider,
+      initial: _mainFocus,
+      frames: CoverFrames.event(AppLocalizations.of(context)!),
+      title: _titleController.text.trim(),
+      file: _mainPhoto,
+      knownSize: _mainPhoto == null ? _mainLibrarySize : null,
+    );
+    if (focus != null && mounted) setState(() => _mainFocus = focus);
   }
 
   int get _extraCount => _existingPhotoUrls.length + _extraPhotos.length;
@@ -4186,6 +4239,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 ? () => setState(() {
                       _mainPhoto = null;
                       _existingMainUrl = null;
+                      _mainLibrarySize = null;
+                      _mainFocus = CoverFocus.center;
                     })
                 : null,
           ),
@@ -4206,6 +4261,16 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       ),
     );
   }
+
+  /// Main photo size hint, "Adjust position" and the small-image warning,
+  /// under the photo strip.
+  Widget _buildMainPhotoGuide() => CoverPhotoGuide(
+        hasImage: _mainProvider != null,
+        onAdjust: _positionMainPhoto,
+        adjustKey: const Key('event_main_photo_adjust'),
+        file: _mainPhoto,
+        knownSize: _mainLibrarySize,
+      );
 
   /// Full-screen, pinch-to-zoom preview of an event photo (file or URL).
   void _previewEventPhoto({XFile? file, String? url}) {
@@ -4386,6 +4451,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               summary: () => _titleController.text,
               builder: (context) => Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
             _buildPhotoSection(),
+            _buildMainPhotoGuide(),
             const SizedBox(height: 16),
             TextFormField(
               controller: _titleController,
@@ -5565,6 +5631,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         description: _descriptionController.text,
         category: _category,
         imageUrl: imageUrl,
+        coverFocus: (imageUrl ?? '').isEmpty ? CoverFocus.center : _mainFocus,
         photoUrls: photoUrls,
         startDate: _startDate,
         endDate: _endDate,
@@ -5621,6 +5688,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       description: _descriptionController.text,
       category: _category,
       imageUrl: imageUrl,
+      coverFocus: (imageUrl ?? '').isEmpty ? CoverFocus.center : _mainFocus,
       photoUrls: photoUrls,
       startDate: _startDate,
       endDate: _endDate,

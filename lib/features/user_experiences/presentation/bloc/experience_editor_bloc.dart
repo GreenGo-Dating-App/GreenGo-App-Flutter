@@ -116,6 +116,7 @@ class ExperienceEditorBloc
         description: x.description,
         category: x.category,
         mainPhotoUrl: x.mainPhotoUrl,
+        coverFocus: x.coverFocus,
         photoUrls: x.photoUrls,
         included: x.included,
         notIncluded: x.notIncluded,

@@ -114,6 +114,13 @@ function finiteNum(v: unknown): number | null {
   return typeof v === 'number' && Number.isFinite(v) ? v : null;
 }
 
+/** A finite number clamped to [min, max]; [fallback] when absent / invalid. */
+function clampNum(v: unknown, min: number, max: number, fallback: number): number {
+  const n = finiteNum(v);
+  if (n === null) return fallback;
+  return Math.min(max, Math.max(min, n));
+}
+
 /** Lower-cased search tokens (title, city, country, category), like events. */
 export function buildSearchKeywords(parts: Array<string | null | undefined>): string[] {
   const out = new Set<string>();
@@ -156,6 +163,12 @@ export function validateExperiencePayload(p: Record<string, unknown> | null | un
 
   const mainPhotoUrl = str(d.mainPhotoUrl);
   if (!isHttpUrl(mainPhotoUrl)) errors.push('mainPhotoUrl');
+  // Main photo position (cover focal point + zoom, app 5.0.52): Flutter
+  // Alignment -1..1 per axis and zoom 1..3. Optional; bad values are clamped
+  // (default centre, no zoom), never an error.
+  const coverFocalX = clampNum(d.coverFocalX, -1, 1, 0);
+  const coverFocalY = clampNum(d.coverFocalY, -1, 1, 0);
+  const coverZoom = clampNum(d.coverZoom, 1, 3, 1);
   const photoUrls = strList(d.photoUrls);
   if (photoUrls.length > LIMITS.maxPhotos || photoUrls.some((u) => !isHttpUrl(u))) {
     errors.push('photoUrls');
@@ -257,6 +270,9 @@ export function validateExperiencePayload(p: Record<string, unknown> | null | un
     description,
     category,
     mainPhotoUrl,
+    coverFocalX,
+    coverFocalY,
+    coverZoom,
     photoUrls,
     included,
     notIncluded,

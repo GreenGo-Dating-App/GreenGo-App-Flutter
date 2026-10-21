@@ -8840,5 +8840,20 @@
   "srvCommunityTransferDeclinedTitle": "ha rifiutato la proprietà della tua community",
   "srvCommunityTransferDeclinedBody": "Sei ancora il proprietario di {community}.",
   "srvCommunityTransferExpiredTitle": "Offerta di trasferimento scaduta",
-  "srvCommunityTransferExpiredBody": "Nessuno ha risposto alla tua offerta per {community}. Resti il proprietario."
+  "srvCommunityTransferExpiredBody": "Nessuno ha risposto alla tua offerta per {community}. Resti il proprietario.",
+  "coverImageHintBanner": "Consigliato: {width} × {height} px ({ratio}), JPG o PNG, max {maxMb} MB. Tieni il soggetto principale al centro: i bordi possono essere tagliati nelle schede più piccole.",
+  "coverImageHintSquare": "Consigliato: {width} × {height} px (quadrata, 1:1), JPG o PNG, max {maxMb} MB. Viene mostrata in un cerchio: tienila centrata con un po' di margine.",
+  "coverImageWarnSmall": "Questa immagine è piccola ({width} × {height} px) e potrebbe apparire sfocata. Per un risultato nitido usa almeno {minWidth} px di larghezza. Puoi comunque usarla.",
+  "coverImageWarnShape": "La forma di questa immagine è molto diversa da {ratio}, quindi alcune parti verranno tagliate.",
+  "coverImageWarnPreview": "Ecco come apparirà:",
+  "coverPositionTitle": "Posiziona l'immagine",
+  "coverPositionDone": "Fatto",
+  "coverPositionHelp": "Trascina l'immagine per scegliere cosa si vede nella cornice. Usa due dita o il cursore per lo zoom. Tutto ciò che è fuori dalla cornice viene nascosto.",
+  "coverPositionReset": "Centra",
+  "coverPositionAdjust": "Regola posizione",
+  "coverFrameExplore": "Esplora",
+  "coverFrameHeader": "Intestazione della pagina",
+  "coverFrameCard": "Scheda negli elenchi",
+  "coverFrameList": "Riga dell'elenco",
+  "coverFrameAvatar": "Immagine del profilo"
 }

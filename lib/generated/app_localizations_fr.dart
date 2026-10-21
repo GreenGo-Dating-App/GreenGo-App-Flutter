@@ -28488,4 +28488,59 @@ class AppLocalizationsFr extends AppLocalizations {
   String srvCommunityTransferExpiredBody(String community) {
     return 'Personne n\'a répondu à votre offre pour $community. Vous restez propriétaire.';
   }
+
+  @override
+  String coverImageHintBanner(
+      String width, String height, String ratio, String maxMb) {
+    return 'Recommandé : $width × $height px ($ratio), JPG ou PNG, $maxMb Mo max. Gardez le sujet principal centré : les bords peuvent être rognés sur les petites cartes.';
+  }
+
+  @override
+  String coverImageHintSquare(String width, String height, String maxMb) {
+    return 'Recommandé : $width × $height px (carré, 1:1), JPG ou PNG, $maxMb Mo max. Affichée dans un cercle : gardez-la centrée avec un peu de marge.';
+  }
+
+  @override
+  String coverImageWarnSmall(String width, String height, String minWidth) {
+    return 'Cette image est petite ($width × $height px) et peut paraître floue. Pour un résultat net, utilisez au moins $minWidth px de large. Vous pouvez quand même l\'utiliser.';
+  }
+
+  @override
+  String coverImageWarnShape(String ratio) {
+    return 'Le format de cette image est très différent de $ratio : certaines parties seront rognées.';
+  }
+
+  @override
+  String get coverImageWarnPreview => 'Aperçu du rendu :';
+
+  @override
+  String get coverPositionTitle => 'Positionner l\'image';
+
+  @override
+  String get coverPositionDone => 'OK';
+
+  @override
+  String get coverPositionHelp =>
+      'Faites glisser l\'image pour choisir ce qui apparaît dans le cadre. Pincez ou utilisez le curseur pour zoomer. Tout ce qui dépasse du cadre est masqué.';
+
+  @override
+  String get coverPositionReset => 'Centrer';
+
+  @override
+  String get coverPositionAdjust => 'Ajuster la position';
+
+  @override
+  String get coverFrameExplore => 'Explorer';
+
+  @override
+  String get coverFrameHeader => 'En-tête de la page';
+
+  @override
+  String get coverFrameCard => 'Carte dans les listes';
+
+  @override
+  String get coverFrameList => 'Ligne de liste';
+
+  @override
+  String get coverFrameAvatar => 'Photo de profil';
 }

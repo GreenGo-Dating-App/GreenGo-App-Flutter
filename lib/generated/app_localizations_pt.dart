@@ -28298,6 +28298,61 @@ class AppLocalizationsPt extends AppLocalizations {
   String srvCommunityTransferExpiredBody(String community) {
     return 'Ninguém respondeu à sua oferta para $community. Continua a ser o proprietário.';
   }
+
+  @override
+  String coverImageHintBanner(
+      String width, String height, String ratio, String maxMb) {
+    return 'Recomendado: $width × $height px ($ratio), JPG ou PNG, máx. $maxMb MB. Mantenha o motivo principal centrado: as margens podem ser cortadas nos cartões mais pequenos.';
+  }
+
+  @override
+  String coverImageHintSquare(String width, String height, String maxMb) {
+    return 'Recomendado: $width × $height px (quadrada, 1:1), JPG ou PNG, máx. $maxMb MB. É mostrada num círculo: mantenha-a centrada e com alguma margem.';
+  }
+
+  @override
+  String coverImageWarnSmall(String width, String height, String minWidth) {
+    return 'Esta imagem é pequena ($width × $height px) e pode ficar desfocada. Para um resultado nítido use pelo menos $minWidth px de largura. Pode usá-la na mesma.';
+  }
+
+  @override
+  String coverImageWarnShape(String ratio) {
+    return 'O formato desta imagem é muito diferente de $ratio, por isso partes dela serão cortadas.';
+  }
+
+  @override
+  String get coverImageWarnPreview => 'Assim vai ficar:';
+
+  @override
+  String get coverPositionTitle => 'Posicionar a imagem';
+
+  @override
+  String get coverPositionDone => 'Concluído';
+
+  @override
+  String get coverPositionHelp =>
+      'Arraste a imagem para escolher o que aparece na moldura. Use dois dedos ou o controlo deslizante para fazer zoom. Tudo o que ficar fora da moldura é ocultado.';
+
+  @override
+  String get coverPositionReset => 'Centrar';
+
+  @override
+  String get coverPositionAdjust => 'Ajustar posição';
+
+  @override
+  String get coverFrameExplore => 'Explorar';
+
+  @override
+  String get coverFrameHeader => 'Cabeçalho da página';
+
+  @override
+  String get coverFrameCard => 'Cartão nas listas';
+
+  @override
+  String get coverFrameList => 'Linha da lista';
+
+  @override
+  String get coverFrameAvatar => 'Foto de perfil';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -56599,4 +56654,59 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String srvCommunityTransferExpiredBody(String community) {
     return 'Ninguém respondeu à sua oferta para $community. Você continua sendo o proprietário.';
   }
+
+  @override
+  String coverImageHintBanner(
+      String width, String height, String ratio, String maxMb) {
+    return 'Recomendado: $width × $height px ($ratio), JPG ou PNG, máx. $maxMb MB. Mantenha o assunto principal centralizado: as bordas podem ser cortadas nos cards menores.';
+  }
+
+  @override
+  String coverImageHintSquare(String width, String height, String maxMb) {
+    return 'Recomendado: $width × $height px (quadrada, 1:1), JPG ou PNG, máx. $maxMb MB. Ela aparece em um círculo: mantenha centralizada e com um pouco de margem.';
+  }
+
+  @override
+  String coverImageWarnSmall(String width, String height, String minWidth) {
+    return 'Esta imagem é pequena ($width × $height px) e pode ficar borrada. Para um resultado nítido, use pelo menos $minWidth px de largura. Você ainda pode usá-la.';
+  }
+
+  @override
+  String coverImageWarnShape(String ratio) {
+    return 'O formato desta imagem é muito diferente de $ratio, então partes dela serão cortadas.';
+  }
+
+  @override
+  String get coverImageWarnPreview => 'Assim vai ficar:';
+
+  @override
+  String get coverPositionTitle => 'Posicionar a imagem';
+
+  @override
+  String get coverPositionDone => 'Concluído';
+
+  @override
+  String get coverPositionHelp =>
+      'Arraste a imagem para escolher o que aparece na moldura. Use dois dedos ou o controle deslizante para dar zoom. Tudo o que ficar fora da moldura é ocultado.';
+
+  @override
+  String get coverPositionReset => 'Centralizar';
+
+  @override
+  String get coverPositionAdjust => 'Ajustar posição';
+
+  @override
+  String get coverFrameExplore => 'Explorar';
+
+  @override
+  String get coverFrameHeader => 'Cabeçalho da página';
+
+  @override
+  String get coverFrameCard => 'Card nas listas';
+
+  @override
+  String get coverFrameList => 'Linha da lista';
+
+  @override
+  String get coverFrameAvatar => 'Foto de perfil';
 }

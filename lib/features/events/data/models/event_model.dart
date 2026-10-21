@@ -3,6 +3,7 @@ import '../../../../core/utils/geo_query.dart';
 import '../../../ticket_payments/domain/price_phases.dart';
 import '../../domain/entities/event.dart';
 import 'event_attendee_model.dart';
+import '../../../../core/media/cover_focus.dart';
 
 /// Event Model
 ///
@@ -15,6 +16,7 @@ class EventModel extends Event {
     required super.organizerName,
     required super.title, required super.description, required super.category, required super.startDate, required super.endDate, required super.locationName, required super.maxAttendees, required super.status, required super.createdAt, super.organizerPhotoUrl,
     super.imageUrl,
+    super.coverFocus,
     super.photoUrls = const [],
     super.allowedScannerIds = const [],
     super.coOrganizerIds = const [],
@@ -72,6 +74,7 @@ class EventModel extends Event {
       description: event.description,
       category: event.category,
       imageUrl: event.imageUrl,
+      coverFocus: event.coverFocus,
       photoUrls: event.photoUrls,
       allowedScannerIds: event.allowedScannerIds,
       coOrganizerIds: event.coOrganizerIds,
@@ -142,6 +145,7 @@ class EventModel extends Event {
       description: json['description'] as String? ?? '',
       category: _parseCategoryFromString(json['category'] as String?),
       imageUrl: json['imageUrl'] as String?,
+      coverFocus: CoverFocus.fromMap(json),
       photoUrls: List<String>.from(json['photoUrls'] as List? ?? []),
       allowedScannerIds:
           List<String>.from(json['allowedScannerIds'] as List? ?? []),
@@ -232,6 +236,7 @@ class EventModel extends Event {
       'description': description,
       'category': category.name,
       'imageUrl': imageUrl,
+      ...coverFocus.toMap(),
       'photoUrls': photoUrls,
       'allowedScannerIds': allowedScannerIds,
       // Co-owners (max kMaxEventCoOrganizers). Only the creator may change

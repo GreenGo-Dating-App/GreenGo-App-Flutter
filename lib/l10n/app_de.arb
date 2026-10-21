@@ -8840,5 +8840,20 @@
   "srvCommunityTransferDeclinedTitle": "hat die Eigentümerschaft deiner Community abgelehnt",
   "srvCommunityTransferDeclinedBody": "Du bist weiterhin Eigentümer von {community}.",
   "srvCommunityTransferExpiredTitle": "Übertragungsangebot abgelaufen",
-  "srvCommunityTransferExpiredBody": "Niemand hat auf dein Angebot für {community} geantwortet. Du bleibst Eigentümer."
+  "srvCommunityTransferExpiredBody": "Niemand hat auf dein Angebot für {community} geantwortet. Du bleibst Eigentümer.",
+  "coverImageHintBanner": "Empfohlen: {width} × {height} px ({ratio}), JPG oder PNG, max. {maxMb} MB. Das Hauptmotiv mittig halten: Auf kleineren Karten können die Ränder abgeschnitten werden.",
+  "coverImageHintSquare": "Empfohlen: {width} × {height} px (quadratisch, 1:1), JPG oder PNG, max. {maxMb} MB. Wird als Kreis angezeigt: mittig und mit etwas Rand platzieren.",
+  "coverImageWarnSmall": "Dieses Bild ist klein ({width} × {height} px) und kann unscharf wirken. Für ein scharfes Ergebnis mindestens {minWidth} px Breite verwenden. Du kannst es trotzdem nutzen.",
+  "coverImageWarnShape": "Das Format dieses Bildes weicht stark von {ratio} ab, daher werden Teile abgeschnitten.",
+  "coverImageWarnPreview": "So wird es angezeigt:",
+  "coverPositionTitle": "Bild positionieren",
+  "coverPositionDone": "Fertig",
+  "coverPositionHelp": "Ziehe das Bild, um zu wählen, was im Rahmen zu sehen ist. Mit zwei Fingern oder dem Regler zoomen. Alles außerhalb des Rahmens wird ausgeblendet.",
+  "coverPositionReset": "Zentrieren",
+  "coverPositionAdjust": "Position anpassen",
+  "coverFrameExplore": "Entdecken",
+  "coverFrameHeader": "Seitenkopf",
+  "coverFrameCard": "Karte in Listen",
+  "coverFrameList": "Listenzeile",
+  "coverFrameAvatar": "Profilbild"
 }

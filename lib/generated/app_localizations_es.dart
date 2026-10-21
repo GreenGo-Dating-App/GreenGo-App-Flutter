@@ -28319,4 +28319,59 @@ class AppLocalizationsEs extends AppLocalizations {
   String srvCommunityTransferExpiredBody(String community) {
     return 'Nadie respondió a tu oferta para $community. Sigues siendo el propietario.';
   }
+
+  @override
+  String coverImageHintBanner(
+      String width, String height, String ratio, String maxMb) {
+    return 'Recomendado: $width × $height px ($ratio), JPG o PNG, máx. $maxMb MB. Mantén el motivo principal centrado: los bordes pueden recortarse en tarjetas más pequeñas.';
+  }
+
+  @override
+  String coverImageHintSquare(String width, String height, String maxMb) {
+    return 'Recomendado: $width × $height px (cuadrada, 1:1), JPG o PNG, máx. $maxMb MB. Se muestra en un círculo: mantenla centrada y con algo de margen.';
+  }
+
+  @override
+  String coverImageWarnSmall(String width, String height, String minWidth) {
+    return 'Esta imagen es pequeña ($width × $height px) y puede verse borrosa. Para un resultado nítido usa al menos $minWidth px de ancho. Aun así puedes usarla.';
+  }
+
+  @override
+  String coverImageWarnShape(String ratio) {
+    return 'La forma de esta imagen es muy distinta de $ratio, así que se recortarán partes.';
+  }
+
+  @override
+  String get coverImageWarnPreview => 'Así se verá:';
+
+  @override
+  String get coverPositionTitle => 'Coloca tu imagen';
+
+  @override
+  String get coverPositionDone => 'Listo';
+
+  @override
+  String get coverPositionHelp =>
+      'Arrastra la imagen para elegir qué se ve en el marco. Pellizca o usa el control deslizante para hacer zoom. Lo que quede fuera del marco no se mostrará.';
+
+  @override
+  String get coverPositionReset => 'Centrar';
+
+  @override
+  String get coverPositionAdjust => 'Ajustar posición';
+
+  @override
+  String get coverFrameExplore => 'Explorar';
+
+  @override
+  String get coverFrameHeader => 'Cabecera de la página';
+
+  @override
+  String get coverFrameCard => 'Tarjeta en listas';
+
+  @override
+  String get coverFrameList => 'Fila de lista';
+
+  @override
+  String get coverFrameAvatar => 'Foto de perfil';
 }

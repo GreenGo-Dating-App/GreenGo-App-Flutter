@@ -2,6 +2,7 @@ import 'package:equatable/equatable.dart';
 
 import '../../../ticket_payments/domain/price_phases.dart';
 import 'event_scheduling.dart';
+import '../../../../core/media/cover_focus.dart';
 
 export 'event_scheduling.dart';
 
@@ -125,6 +126,7 @@ class Event extends Equatable {
     required this.organizerName,
     required this.title, required this.description, required this.category, required this.startDate, required this.endDate, required this.locationName, required this.maxAttendees, required this.status, required this.createdAt, this.organizerPhotoUrl,
     this.imageUrl,
+    this.coverFocus = CoverFocus.center,
     this.photoUrls = const [],
     this.allowedScannerIds = const [],
     this.coOrganizerIds = const [],
@@ -182,6 +184,10 @@ class Event extends Equatable {
   final String description;
   final EventCategory category;
   final String? imageUrl;
+
+  /// Position of the main photo ([imageUrl]) in every frame (focal point +
+  /// zoom, stored as coverFocalX / coverFocalY / coverZoom). Centre default.
+  final CoverFocus coverFocus;
   final List<String> photoUrls;
 
   /// Users (besides the organizer) who are allowed to scan/redeem this event's
@@ -435,6 +441,7 @@ class Event extends Equatable {
         description,
         category,
         imageUrl,
+        coverFocus,
         allowedScannerIds,
         coOrganizerIds,
         photoUrls,
@@ -496,6 +503,7 @@ class Event extends Equatable {
     String? description,
     EventCategory? category,
     String? imageUrl,
+    CoverFocus? coverFocus,
     List<String>? photoUrls,
     List<String>? allowedScannerIds,
     List<String>? coOrganizerIds,
@@ -562,6 +570,7 @@ class Event extends Equatable {
       description: description ?? this.description,
       category: category ?? this.category,
       imageUrl: imageUrl ?? this.imageUrl,
+      coverFocus: coverFocus ?? this.coverFocus,
       photoUrls: photoUrls ?? this.photoUrls,
       allowedScannerIds: allowedScannerIds ?? this.allowedScannerIds,
       coOrganizerIds: coOrganizerIds ?? this.coOrganizerIds,

@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/media/cover_focus.dart';
 import '../../domain/entities/community.dart';
 
 /// Community Model
@@ -24,6 +25,7 @@ class CommunityModel extends Community {
     super.pinnedPromo,
     super.rules,
     super.resourceLinks,
+    super.coverFocus,
   });
 
   /// Parse a stored list of `{title,url}` maps into [CommunityLink]s.
@@ -59,6 +61,7 @@ class CommunityModel extends Community {
       pinnedPromo: community.pinnedPromo,
       rules: community.rules,
       resourceLinks: community.resourceLinks,
+      coverFocus: community.coverFocus,
     );
   }
 
@@ -101,6 +104,7 @@ class CommunityModel extends Community {
           : null,
       rules: data['rules'] as String?,
       resourceLinks: _parseLinks(data['resourceLinks']),
+      coverFocus: CoverFocus.fromMap(data),
     );
   }
 
@@ -141,6 +145,7 @@ class CommunityModel extends Community {
           : null,
       rules: json['rules'] as String?,
       resourceLinks: _parseLinks(json['resourceLinks']),
+      coverFocus: CoverFocus.fromMap(json),
     );
   }
 
@@ -151,6 +156,7 @@ class CommunityModel extends Community {
       'description': description,
       'type': type.value,
       'imageUrl': imageUrl,
+      ...coverFocus.toMap(),
       'createdByUserId': createdByUserId,
       'createdByName': createdByName,
       'createdAt': Timestamp.fromDate(createdAt),
@@ -179,6 +185,7 @@ class CommunityModel extends Community {
       'description': description,
       'type': type.value,
       'imageUrl': imageUrl,
+      ...coverFocus.toMap(),
       'createdByUserId': createdByUserId,
       'createdByName': createdByName,
       'createdAt': createdAt.toIso8601String(),
@@ -220,6 +227,7 @@ class CommunityModel extends Community {
       pinnedPromo: pinnedPromo,
       rules: rules,
       resourceLinks: resourceLinks,
+      coverFocus: coverFocus,
     );
   }
 }

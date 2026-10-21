@@ -17974,5 +17974,106 @@
         "type": "String"
       }
     }
+  },
+  "coverImageHintBanner": "Recommended: {width} × {height} px ({ratio}), JPG or PNG, max {maxMb} MB. Keep the main subject centred: edges may be cropped on smaller cards.",
+  "@coverImageHintBanner": {
+    "description": "Recommended size hint under a 16:9 cover / banner / main photo picker",
+    "placeholders": {
+      "width": {
+        "type": "String"
+      },
+      "height": {
+        "type": "String"
+      },
+      "ratio": {
+        "type": "String"
+      },
+      "maxMb": {
+        "type": "String"
+      }
+    }
+  },
+  "coverImageHintSquare": "Recommended: {width} × {height} px (square, 1:1), JPG or PNG, max {maxMb} MB. It is shown in a circle: keep it centred with some margin.",
+  "@coverImageHintSquare": {
+    "description": "Recommended size hint for a square logo / group photo shown in a circle",
+    "placeholders": {
+      "width": {
+        "type": "String"
+      },
+      "height": {
+        "type": "String"
+      },
+      "maxMb": {
+        "type": "String"
+      }
+    }
+  },
+  "coverImageWarnSmall": "This image is small ({width} × {height} px) and may look blurry. For a sharp result use at least {minWidth} px wide. You can still use it.",
+  "@coverImageWarnSmall": {
+    "description": "Non-blocking warning after picking a cover image that is too small",
+    "placeholders": {
+      "width": {
+        "type": "String"
+      },
+      "height": {
+        "type": "String"
+      },
+      "minWidth": {
+        "type": "String"
+      }
+    }
+  },
+  "coverImageWarnShape": "This image's shape is very different from {ratio}, so parts of it will be cropped.",
+  "@coverImageWarnShape": {
+    "description": "Non-blocking warning after picking a cover image with a very different aspect ratio",
+    "placeholders": {
+      "ratio": {
+        "type": "String"
+      }
+    }
+  },
+  "coverImageWarnPreview": "How it will look:",
+  "@coverImageWarnPreview": {
+    "description": "Label above the crop preview in the cover image warning"
+  },
+  "coverPositionTitle": "Position your picture",
+  "@coverPositionTitle": {
+    "description": "Cover positioning step (focal point editor) / live preview frame label"
+  },
+  "coverPositionDone": "Done",
+  "@coverPositionDone": {
+    "description": "Cover positioning step (focal point editor) / live preview frame label"
+  },
+  "coverPositionHelp": "Drag the picture to choose what shows in the frame. Pinch or use the slider to zoom. Everything outside the frame is hidden.",
+  "@coverPositionHelp": {
+    "description": "Cover positioning step (focal point editor) / live preview frame label"
+  },
+  "coverPositionReset": "Centre",
+  "@coverPositionReset": {
+    "description": "Cover positioning step (focal point editor) / live preview frame label"
+  },
+  "coverPositionAdjust": "Adjust position",
+  "@coverPositionAdjust": {
+    "description": "Cover positioning step (focal point editor) / live preview frame label"
+  },
+  "coverFrameExplore": "Explore",
+  "@coverFrameExplore": {
+    "description": "Cover positioning step (focal point editor) / live preview frame label"
+  },
+  "coverFrameHeader": "Page header",
+  "@coverFrameHeader": {
+    "description": "Cover positioning step (focal point editor) / live preview frame label"
+  },
+  "coverFrameCard": "Card in lists",
+  "@coverFrameCard": {
+    "description": "Cover positioning step (focal point editor) / live preview frame label"
+  },
+  "coverFrameList": "List row",
+  "@coverFrameList": {
+    "description": "Cover positioning step (focal point editor) / live preview frame label"
+  },
+  "coverFrameAvatar": "Profile picture",
+  "@coverFrameAvatar": {
+    "description": "Cover positioning step (focal point editor) / live preview frame label"
   }
 }
