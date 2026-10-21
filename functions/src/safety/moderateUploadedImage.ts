@@ -142,6 +142,9 @@ export function quarantineQueueId(objectPath: string, generation: unknown): stri
 }
 
 /** Statement-of-reasons code for SafeSearch reasons; null = no rule breach (no_face). Pure. */
+/** SafeSearch racy level from which an upload is held (owner 2026-10-21). */
+export const RACY_HOLD_AT: Likelihood = 'VERY_LIKELY';
+
 export function reasonCodeForVision(reasons: string[]): string | null {
   if (reasons.includes('adult') || reasons.includes('racy')) return 'sexual_content';
   if (reasons.includes('violence')) return 'violence';
@@ -159,7 +162,7 @@ type Likelihood =
 const RANK: Record<string, number> = {
   UNKNOWN: 0, VERY_UNLIKELY: 0, UNLIKELY: 1, POSSIBLE: 2, LIKELY: 3, VERY_LIKELY: 4,
 };
-const atLeast = (v: Likelihood | null | undefined, min: keyof typeof RANK) =>
+export const atLeast = (v: Likelihood | null | undefined, min: keyof typeof RANK) =>
   RANK[v || 'UNKNOWN'] >= RANK[min];
 
 export const moderateUploadedImage = onObjectFinalized(
@@ -281,9 +284,10 @@ export const moderateUploadedImage = onObjectFinalized(
       const reasons: string[] = [];
       // Nudity: zero tolerance. POSSIBLE is enough to hold it back.
       if (atLeast(safe.adult as Likelihood, 'POSSIBLE')) reasons.push('adult');
-      // Racy at POSSIBLE fires on ordinary beach and gym photos, so the bar
-      // here is LIKELY. Tune in one place if it proves too loose or too tight.
-      if (atLeast(safe.racy as Likelihood, 'LIKELY')) reasons.push('racy');
+      // Racy ("suggestive": swimwear, gym, beach) fires on ordinary holiday
+      // photos even at LIKELY, so only VERY_LIKELY holds a photo back (owner
+      // decision 2026-10-21). Nudity above stays at POSSIBLE.
+      if (atLeast(safe.racy as Likelihood, RACY_HOLD_AT)) reasons.push('racy');
       if (atLeast(safe.violence as Likelihood, 'LIKELY')) reasons.push('violence');
       if (requireFace && faces.length === 0) reasons.push('no_face');
 
