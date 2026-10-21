@@ -8221,5 +8221,15 @@
   "myPicturesAddPictureTitle": "Ajouter une image",
   "communitiesEditCommunity": "Modifier la communauté",
   "communitiesUpdatedSuccess": "Communauté mise à jour",
-  "communitiesCoverUploadFailed": "Impossible d’enregistrer l’image de couverture. Essayez une autre image."
+  "communitiesCoverUploadFailed": "Impossible d’enregistrer l’image de couverture. Essayez une autre image.",
+  "pullLocationUpdated": "Position mise à jour",
+  "pullLocationUpdatedCity": "Position mise à jour : {city}",
+  "pullLocationUpToDate": "Position à jour",
+  "pullLocationTravelerKept": "Le mode voyageur est actif : ta position de voyage est conservée",
+  "pullLocationServiceOff": "Les services de localisation sont désactivés. Résultats pour ta position enregistrée.",
+  "pullLocationPermissionOff": "L'accès à la position est désactivé. Résultats pour ta position enregistrée.",
+  "pullLocationBlockedInBrowser": "La position est bloquée dans ce navigateur. Autorise-la dans les paramètres du site pour la mettre à jour.",
+  "pullLocationUnavailable": "Impossible d'obtenir ta position. Résultats pour ta position enregistrée.",
+  "pullLocationOpenSettings": "Paramètres",
+  "pullLocationAllow": "Autoriser"
 }

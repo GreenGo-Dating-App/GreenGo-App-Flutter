@@ -8795,5 +8795,15 @@
   "myPicturesAddPictureTitle": "Bild hinzufügen",
   "communitiesEditCommunity": "Community bearbeiten",
   "communitiesUpdatedSuccess": "Community aktualisiert",
-  "communitiesCoverUploadFailed": "Das Titelbild konnte nicht gespeichert werden. Bitte versuche ein anderes Bild."
+  "communitiesCoverUploadFailed": "Das Titelbild konnte nicht gespeichert werden. Bitte versuche ein anderes Bild.",
+  "pullLocationUpdated": "Standort aktualisiert",
+  "pullLocationUpdatedCity": "Standort aktualisiert: {city}",
+  "pullLocationUpToDate": "Standort ist aktuell",
+  "pullLocationTravelerKept": "Reisemodus ist aktiv: Dein Reiseort bleibt erhalten",
+  "pullLocationServiceOff": "Die Ortungsdienste sind aus. Ergebnisse für deinen gespeicherten Standort.",
+  "pullLocationPermissionOff": "Der Standortzugriff ist aus. Ergebnisse für deinen gespeicherten Standort.",
+  "pullLocationBlockedInBrowser": "Der Standort ist in diesem Browser blockiert. Erlaube ihn in den Website-Einstellungen, um ihn zu aktualisieren.",
+  "pullLocationUnavailable": "Dein Standort konnte nicht ermittelt werden. Ergebnisse für deinen gespeicherten Standort.",
+  "pullLocationOpenSettings": "Einstellungen",
+  "pullLocationAllow": "Erlauben"
 }

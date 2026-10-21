@@ -50,6 +50,7 @@ import '../../../../core/utils/grid_columns.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/page_tour_host.dart';
+import '../../../../core/widgets/location_pull_to_refresh.dart';
 
 /// A full-screen, Apple-safe people directory reached from the Explore
 /// "Network Discovery → See all" action.
@@ -1355,12 +1356,13 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
           children: [
             _tagFilterBar(),
             Expanded(
-              // Swipe down to force-refresh the people grid with fresh server
-              // data (see _load, which force-reads from the server on refresh).
-              child: RefreshIndicator(
-                color: AppColors.richGold,
-                backgroundColor: AppColors.backgroundCard,
-                onRefresh: () => Future.wait([
+              // Swipe down: update the location (throttled; Traveler mode
+              // keeps the travel location), then force-refresh the grid with
+              // fresh server data, nearest-first from the saved position (see
+              // _load, which force-reads from the server on refresh).
+              child: LocationPullToRefresh(
+                userId: widget.userId,
+                onReload: (_) => Future.wait([
                   // The people pool is only re-read when it is on screen.
                   if (!_bizGeoMode) _load(forceRefresh: true),
                   // Also retries a geo search that failed (e.g. index
@@ -1536,16 +1538,26 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
               : (candidates.isEmpty
                   ? l10n.exploreNoPartners
                   : l10n.groupNoSearchResults);
-      return Center(
-        child: Padding(
-          padding: const EdgeInsets.all(24),
-          child: Text(
-            message,
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-              color: AppColors.textTertiary,
-              fontSize: 14,
-              height: 1.35,
+      // Scrollable (always) so swipe-down still updates the location and
+      // reloads when there is nothing to show.
+      return LayoutBuilder(
+        builder: (context, constraints) => SingleChildScrollView(
+          physics: const AlwaysScrollableScrollPhysics(),
+          child: ConstrainedBox(
+            constraints: BoxConstraints(minHeight: constraints.maxHeight),
+            child: Center(
+              child: Padding(
+                padding: const EdgeInsets.all(24),
+                child: Text(
+                  message,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: AppColors.textTertiary,
+                    fontSize: 14,
+                    height: 1.35,
+                  ),
+                ),
+              ),
             ),
           ),
         ),

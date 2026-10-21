@@ -8795,5 +8795,15 @@
   "myPicturesAddPictureTitle": "Adicionar uma imagem",
   "communitiesEditCommunity": "Editar comunidade",
   "communitiesUpdatedSuccess": "Comunidade atualizada",
-  "communitiesCoverUploadFailed": "Não foi possível guardar a imagem de capa. Experimente outra imagem."
+  "communitiesCoverUploadFailed": "Não foi possível guardar a imagem de capa. Experimente outra imagem.",
+  "pullLocationUpdated": "Localização atualizada",
+  "pullLocationUpdatedCity": "Localização atualizada: {city}",
+  "pullLocationUpToDate": "Localização em dia",
+  "pullLocationTravelerKept": "O modo viajante está ativo: a tua localização de viagem é mantida",
+  "pullLocationServiceOff": "Os serviços de localização estão desligados. Resultados para a tua localização guardada.",
+  "pullLocationPermissionOff": "O acesso à localização está desligado. Resultados para a tua localização guardada.",
+  "pullLocationBlockedInBrowser": "A localização está bloqueada neste navegador. Permite-a nas definições do site para a atualizar.",
+  "pullLocationUnavailable": "Não foi possível obter a tua localização. Resultados para a tua localização guardada.",
+  "pullLocationOpenSettings": "Definições",
+  "pullLocationAllow": "Permitir"
 }
