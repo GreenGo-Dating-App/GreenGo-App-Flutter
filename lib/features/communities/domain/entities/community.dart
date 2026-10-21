@@ -1,5 +1,7 @@
 import 'package:equatable/equatable.dart';
 
+import '../../../../core/media/cover_focus.dart';
+
 /// Community Entity
 ///
 /// Represents an interest group, language circle, or local guide community
@@ -24,12 +26,17 @@ class Community extends Equatable {
     this.pinnedPromo,
     this.rules,
     this.resourceLinks = const [],
+    this.coverFocus = CoverFocus.center,
   });
   final String id;
   final String name;
   final String description;
   final CommunityType type;
   final String? imageUrl;
+
+  /// Position of the cover ([imageUrl]) in every frame (focal point + zoom,
+  /// stored as coverFocalX / coverFocalY / coverZoom). Centre by default.
+  final CoverFocus coverFocus;
   final String createdByUserId;
   final String createdByName;
   final DateTime createdAt;
@@ -131,6 +138,7 @@ class Community extends Equatable {
     String? rules,
     bool clearRules = false,
     List<CommunityLink>? resourceLinks,
+    CoverFocus? coverFocus,
   }) {
     return Community(
       id: id ?? this.id,
@@ -155,6 +163,7 @@ class Community extends Equatable {
           clearPinnedPromo ? null : (pinnedPromo ?? this.pinnedPromo),
       rules: clearRules ? null : (rules ?? this.rules),
       resourceLinks: resourceLinks ?? this.resourceLinks,
+      coverFocus: coverFocus ?? this.coverFocus,
     );
   }
 
@@ -165,6 +174,7 @@ class Community extends Equatable {
         description,
         type,
         imageUrl,
+        coverFocus,
         createdByUserId,
         createdByName,
         createdAt,

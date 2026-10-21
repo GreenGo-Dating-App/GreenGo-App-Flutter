@@ -8805,5 +8805,20 @@
   "pullLocationBlockedInBrowser": "A localização está bloqueada neste navegador. Permite-a nas definições do site para a atualizar.",
   "pullLocationUnavailable": "Não foi possível obter a tua localização. Resultados para a tua localização guardada.",
   "pullLocationOpenSettings": "Definições",
-  "pullLocationAllow": "Permitir"
+  "pullLocationAllow": "Permitir",
+  "coverImageHintBanner": "Recomendado: {width} × {height} px ({ratio}), JPG ou PNG, máx. {maxMb} MB. Mantenha o motivo principal centrado: as margens podem ser cortadas nos cartões mais pequenos.",
+  "coverImageHintSquare": "Recomendado: {width} × {height} px (quadrada, 1:1), JPG ou PNG, máx. {maxMb} MB. É mostrada num círculo: mantenha-a centrada e com alguma margem.",
+  "coverImageWarnSmall": "Esta imagem é pequena ({width} × {height} px) e pode ficar desfocada. Para um resultado nítido use pelo menos {minWidth} px de largura. Pode usá-la na mesma.",
+  "coverImageWarnShape": "O formato desta imagem é muito diferente de {ratio}, por isso partes dela serão cortadas.",
+  "coverImageWarnPreview": "Assim vai ficar:",
+  "coverPositionTitle": "Posicionar a imagem",
+  "coverPositionDone": "Concluído",
+  "coverPositionHelp": "Arraste a imagem para escolher o que aparece na moldura. Use dois dedos ou o controlo deslizante para fazer zoom. Tudo o que ficar fora da moldura é ocultado.",
+  "coverPositionReset": "Centrar",
+  "coverPositionAdjust": "Ajustar posição",
+  "coverFrameExplore": "Explorar",
+  "coverFrameHeader": "Cabeçalho da página",
+  "coverFrameCard": "Cartão nas listas",
+  "coverFrameList": "Linha da lista",
+  "coverFrameAvatar": "Foto de perfil"
 }

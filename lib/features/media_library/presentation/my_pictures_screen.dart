@@ -18,20 +18,26 @@ class MyPicturesScreen extends StatefulWidget {
     this.repository,
     this.pickMode = false,
     this.pageSize = 30,
+    this.pickHint,
   });
 
   final MediaLibraryRepository? repository;
   final bool pickMode;
   final int pageSize;
 
+  /// Shown above the grid in pick mode (e.g. the recommended cover size).
+  final Widget? pickHint;
+
   /// Opens the picker; resolves to the chosen approved picture or null.
   static Future<MediaLibraryItem?> pick(
     BuildContext context, {
     MediaLibraryRepository? repository,
+    Widget? pickHint,
   }) {
     return Navigator.of(context).push<MediaLibraryItem>(
       MaterialPageRoute(
-        builder: (_) => MyPicturesScreen(repository: repository, pickMode: true),
+        builder: (_) => MyPicturesScreen(
+            repository: repository, pickMode: true, pickHint: pickHint),
       ),
     );
   }
@@ -198,10 +204,23 @@ class _MyPicturesScreenState extends State<MyPicturesScreen> {
           style: const TextStyle(color: AppColors.textPrimary),
         ),
       ),
-      body: RefreshIndicator(
-        onRefresh: _refresh,
-        child: _body(l10n),
-      ),
+      body: widget.pickMode && widget.pickHint != null
+          ? Column(children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+                child: widget.pickHint,
+              ),
+              Expanded(
+                child: RefreshIndicator(
+                  onRefresh: _refresh,
+                  child: _body(l10n),
+                ),
+              ),
+            ])
+          : RefreshIndicator(
+              onRefresh: _refresh,
+              child: _body(l10n),
+            ),
     );
   }
 

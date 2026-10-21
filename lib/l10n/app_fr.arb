@@ -8231,5 +8231,20 @@
   "pullLocationBlockedInBrowser": "La position est bloquée dans ce navigateur. Autorise-la dans les paramètres du site pour la mettre à jour.",
   "pullLocationUnavailable": "Impossible d'obtenir ta position. Résultats pour ta position enregistrée.",
   "pullLocationOpenSettings": "Paramètres",
-  "pullLocationAllow": "Autoriser"
+  "pullLocationAllow": "Autoriser",
+  "coverImageHintBanner": "Recommandé : {width} × {height} px ({ratio}), JPG ou PNG, {maxMb} Mo max. Gardez le sujet principal centré : les bords peuvent être rognés sur les petites cartes.",
+  "coverImageHintSquare": "Recommandé : {width} × {height} px (carré, 1:1), JPG ou PNG, {maxMb} Mo max. Affichée dans un cercle : gardez-la centrée avec un peu de marge.",
+  "coverImageWarnSmall": "Cette image est petite ({width} × {height} px) et peut paraître floue. Pour un résultat net, utilisez au moins {minWidth} px de large. Vous pouvez quand même l'utiliser.",
+  "coverImageWarnShape": "Le format de cette image est très différent de {ratio} : certaines parties seront rognées.",
+  "coverImageWarnPreview": "Aperçu du rendu :",
+  "coverPositionTitle": "Positionner l'image",
+  "coverPositionDone": "OK",
+  "coverPositionHelp": "Faites glisser l'image pour choisir ce qui apparaît dans le cadre. Pincez ou utilisez le curseur pour zoomer. Tout ce qui dépasse du cadre est masqué.",
+  "coverPositionReset": "Centrer",
+  "coverPositionAdjust": "Ajuster la position",
+  "coverFrameExplore": "Explorer",
+  "coverFrameHeader": "En-tête de la page",
+  "coverFrameCard": "Carte dans les listes",
+  "coverFrameList": "Ligne de liste",
+  "coverFrameAvatar": "Photo de profil"
 }

@@ -25,6 +25,13 @@ import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/page_tour_host.dart';
 import '../../../../core/widgets/locked_reason_sheet.dart';
+import '../../../../core/media/cover_crop.dart';
+import '../../../../core/media/cover_focus.dart';
+import '../../../../core/platform/web_media.dart';
+import '../../../../core/widgets/cover_frames.dart';
+import '../../../../core/widgets/cover_image_size_hint.dart';
+import '../../../../core/widgets/cover_positioner.dart';
+import '../../../../core/widgets/focal_cover_image.dart';
 
 /// Storefront editor — lets a business account owner curate the public
 /// storefront that visitors see in [BusinessStorefrontScreen].
@@ -97,6 +104,16 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   // the removal survives the copyWith(coverImageUrl:) null-coalescing on save.
   String? _coverImageUrl;
 
+  // Position of the featured image in every frame (focal point + zoom).
+  CoverFocus _coverFocus = CoverFocus.center;
+  // Chosen in the positioning step for the picture being uploaded; applied
+  // with its URL (a failed upload leaves the current cover + focus alone).
+  CoverFocus? _pendingCoverFocus;
+  // The last picked featured picture (file, or My pictures size) for the
+  // small / odd-shape warning.
+  XFile? _featuredFile;
+  Size? _featuredLibrarySize;
+
   // Business profile picture URL (required; never the personal photoUrls).
   String? _businessLogoUrl;
 
@@ -116,6 +133,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
     super.initState();
     _galleryImages = List<String>.from(widget.profile.galleryImages);
     _coverImageUrl = widget.profile.coverImageUrl;
+    _coverFocus = widget.profile.coverFocus;
     _businessLogoUrl = widget.profile.businessLogoUrl;
 
     // Seed 7 weekday rows, hydrating from any saved entries.
@@ -173,26 +191,93 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
         maxWidth: 1920,
         maxHeight: 1920,
         imageQuality: 85,
+        hint: switch (target) {
+          _UploadTarget.logo =>
+            const CoverImageSizeHint(spec: CoverImageSpec.square),
+          _UploadTarget.featured => const CoverImageSizeHint(),
+          _UploadTarget.gallery => null,
+        },
       );
       if (picked == null || !mounted) return;
+      final provider = picked.isLibrary
+          ? NetworkImage(picked.url!)
+          : WebMedia.imageProviderFor(picked.file!);
+      final l10n = AppLocalizations.of(context)!;
+      if (target == _UploadTarget.logo) {
+        // The logo is shown as an avatar in many places, so it is stored
+        // already square: position it in the circle, then crop on device.
+        final focus = await showCoverPositioner(
+          context,
+          image: provider,
+          spec: CoverImageSpec.square,
+          frames: CoverFrames.logo(l10n),
+          title: _businessNameController.text.trim(),
+          file: picked.file,
+          knownSize: picked.librarySize,
+        );
+        if (focus == null || !mounted) return; // dismissed = cancelled
+        final cropped = await cropImageToFocus(provider, focus);
+        if (!mounted) return;
+        if (cropped != null) {
+          _dispatchUpload(target, cropped, isMainPhoto: isMainPhoto);
+          return;
+        }
+        // Could not crop (unreadable picture): keep it as picked.
+      }
+      if (target == _UploadTarget.featured) {
+        setState(() {
+          _featuredFile = picked.file;
+          _featuredLibrarySize = picked.librarySize;
+        });
+        final focus = await showCoverPositioner(
+          context,
+          image: provider,
+          frames: CoverFrames.storefrontFeatured(l10n),
+          title: _businessNameController.text.trim(),
+          file: picked.file,
+          knownSize: picked.librarySize,
+        );
+        if (!mounted) return;
+        // Dismissed: the new picture starts centred.
+        _pendingCoverFocus = focus ?? CoverFocus.center;
+      }
       // My pictures: an approved picture is reused as is (no upload).
       if (picked.isLibrary) {
         setState(() => _applyImageUrl(target, picked.url!));
         return;
       }
-      final image = picked.file!;
-      setState(() => _pendingUploadTarget = target);
-      context.read<ProfileBloc>().add(
-            ProfilePhotoUploadRequested(
-              userId: widget.profile.userId,
-              photo: image,
-              isMainPhoto: isMainPhoto,
-              isPrivate: false,
-            ),
-          );
+      _dispatchUpload(target, picked.file!, isMainPhoto: isMainPhoto);
     } catch (_) {
       if (mounted) setState(() => _pendingUploadTarget = null);
     }
+  }
+
+  void _dispatchUpload(_UploadTarget target, XFile image,
+      {required bool isMainPhoto}) {
+    setState(() => _pendingUploadTarget = target);
+    context.read<ProfileBloc>().add(
+          ProfilePhotoUploadRequested(
+            userId: widget.profile.userId,
+            photo: image,
+            isMainPhoto: isMainPhoto,
+            isPrivate: false,
+          ),
+        );
+  }
+
+  /// Re-opens the positioning step for the current featured image.
+  Future<void> _adjustFeaturedImage() async {
+    final url = _coverImageUrl ?? '';
+    if (url.isEmpty) return;
+    final l10n = AppLocalizations.of(context)!;
+    final focus = await showCoverPositioner(
+      context,
+      image: NetworkImage(url),
+      initial: _coverFocus,
+      frames: CoverFrames.storefrontFeatured(l10n),
+      title: _businessNameController.text.trim(),
+    );
+    if (focus != null && mounted) setState(() => _coverFocus = focus);
   }
 
   /// Puts an approved image URL (fresh upload or My pictures) in its slot.
@@ -204,6 +289,8 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
         break;
       case _UploadTarget.featured:
         _coverImageUrl = url;
+        _coverFocus = _pendingCoverFocus ?? CoverFocus.center;
+        _pendingCoverFocus = null;
         break;
       case _UploadTarget.gallery:
         if (!_galleryImages.contains(url)) _galleryImages.add(url);
@@ -224,7 +311,12 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   void _removeFeaturedImage() {
     // Empty-string sentinel: survives copyWith(coverImageUrl:) so removal
     // actually persists (the display treats empty as "no cover").
-    setState(() => _coverImageUrl = '');
+    setState(() {
+      _coverImageUrl = '';
+      _coverFocus = CoverFocus.center;
+      _featuredFile = null;
+      _featuredLibrarySize = null;
+    });
   }
 
   // ─── Gallery ────────────────────────────────────────────────────────────
@@ -319,6 +411,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
       // '' sentinel persists a removal; a URL persists the new cover; null
       // leaves the existing value untouched via copyWith's null-coalescing.
       coverImageUrl: _coverImageUrl,
+      coverFocus: _coverFocus,
       // The business profile picture (separate from personal photoUrls).
       businessLogoUrl: _businessLogoUrl,
       openingHours: _openingHours,
@@ -479,6 +572,8 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
               description: l10n.tourStorefrontLogoDesc,
               child: _logoPicker(l10n),
             ),
+            const SizedBox(height: 8),
+            const CoverImageSizeHint(spec: CoverImageSpec.square),
             if (_logoRequiredError &&
                 !StorefrontEditorScreen.hasRequiredLogo(_businessLogoUrl)) ...[
               const SizedBox(height: 8),
@@ -535,6 +630,15 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
               title: l10n.tourStorefrontFeaturedTitle,
               description: l10n.tourStorefrontFeaturedDesc,
               child: _featuredImagePicker(l10n),
+            ),
+            const SizedBox(height: 6),
+            CoverPhotoGuide(
+              hasImage: (_coverImageUrl ?? '').isNotEmpty,
+              onAdjust:
+                  _pendingUploadTarget != null ? null : _adjustFeaturedImage,
+              adjustKey: const Key('storefront_featured_adjust'),
+              file: _featuredFile,
+              knownSize: _featuredLibrarySize,
             ),
             const SizedBox(height: 28),
 
@@ -990,9 +1094,10 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
           fit: StackFit.expand,
           children: [
             if (hasCover)
-              Image.network(
-                _coverImageUrl!,
-                fit: BoxFit.cover,
+              FocalCoverImage(
+                key: const Key('storefront_featured_image'),
+                image: NetworkImage(_coverImageUrl!),
+                focus: _coverFocus,
                 errorBuilder: (_, __, ___) => _featuredPlaceholder(l10n),
               )
             else

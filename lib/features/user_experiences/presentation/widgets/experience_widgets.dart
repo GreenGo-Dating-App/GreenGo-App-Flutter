@@ -11,6 +11,8 @@ import '../../../../core/widgets/verified_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/user_experience.dart';
 import '../experience_l10n.dart';
+import '../../../../core/media/cover_focus.dart';
+import '../../../../core/widgets/focal_cover_image.dart';
 
 /// Read-only stars (supports halves), e.g. 4.3 → ★★★★½.
 class StarRatingDisplay extends StatelessWidget {
@@ -84,12 +86,16 @@ class ExperienceImage extends StatelessWidget {
     this.width = double.infinity,
     this.fit = BoxFit.cover,
     this.category,
+    this.focus = CoverFocus.center,
   });
   final String url;
   final double? height;
   final double width;
   final BoxFit fit;
   final ExperienceCategory? category;
+
+  /// The host's main-photo position (focal point + zoom); centre otherwise.
+  final CoverFocus focus;
 
   /// Decode width (physical px) for an image laid out [logicalWidth] wide.
   static int memCacheWidthFor(double logicalWidth, double devicePixelRatio) =>
@@ -125,18 +131,22 @@ class ExperienceImage extends StatelessWidget {
       final logical = width.isFinite
           ? width
           : (box.maxWidth.isFinite ? box.maxWidth : mq.size.width);
-      return CachedNetworkImage(
-        imageUrl: url,
-        height: height,
-        width: width,
-        fit: fit,
-        memCacheWidth: memCacheWidthFor(logical, mq.devicePixelRatio),
-        placeholder: (_, __) => Container(
+      return FocalCoverImage.wrap(
+        focus,
+        CachedNetworkImage(
+          imageUrl: url,
           height: height,
           width: width,
-          color: AppColors.backgroundInput,
+          fit: fit,
+          alignment: focus.alignment,
+          memCacheWidth: memCacheWidthFor(logical, mq.devicePixelRatio),
+          placeholder: (_, __) => Container(
+            height: height,
+            width: width,
+            color: AppColors.backgroundInput,
+          ),
+          errorWidget: (_, __, ___) => placeholder(),
         ),
-        errorWidget: (_, __, ___) => placeholder(),
       );
     });
   }
@@ -495,7 +505,10 @@ class ExperienceCard extends StatelessWidget {
               children: [
                 Expanded(
                   child: Stack(fit: StackFit.expand, children: [
-                    ExperienceImage(url: e.mainPhotoUrl, category: e.category),
+                    ExperienceImage(
+                        url: e.mainPhotoUrl,
+                        category: e.category,
+                        focus: e.coverFocus),
                     Positioned(top: 4, left: 4, right: 4, child: Align(alignment: Alignment.topLeft, child: badge)),
                     if (statusChip != null)
                       Positioned(bottom: 4, left: 4, child: statusChip),
@@ -554,7 +567,10 @@ class ExperienceCard extends StatelessWidget {
                 borderRadius:
                     const BorderRadius.vertical(top: Radius.circular(14)),
                 child: ExperienceImage(
-                    url: e.mainPhotoUrl, height: 170, category: e.category),
+                    url: e.mainPhotoUrl,
+                    height: 170,
+                    category: e.category,
+                    focus: e.coverFocus),
               ),
               Positioned(top: 8, left: 8, child: badge),
               if (statusChip != null)

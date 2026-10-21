@@ -2095,6 +2095,10 @@ service cloud.firestore {
           && request.resource.data.get('description', '') == resource.data.get('description', '')
           && request.resource.data.get('type', 'general') == resource.data.get('type', 'general')
           && request.resource.data.get('imageUrl', null) == resource.data.get('imageUrl', null)
+          // Cover position (focal point + zoom, 5.0.52): part of the cover.
+          && request.resource.data.get('coverFocalX', 0) == resource.data.get('coverFocalX', 0)
+          && request.resource.data.get('coverFocalY', 0) == resource.data.get('coverFocalY', 0)
+          && request.resource.data.get('coverZoom', 1) == resource.data.get('coverZoom', 1)
           && request.resource.data.get('languages', []) == resource.data.get('languages', [])
           && request.resource.data.get('tags', []) == resource.data.get('tags', [])
           && request.resource.data.get('isPublic', true) == resource.data.get('isPublic', true)

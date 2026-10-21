@@ -49,6 +49,7 @@ import '../../../app_tour/presentation/widgets/page_tour_host.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../../core/widgets/locked_reason_sheet.dart';
+import '../../../../core/widgets/focal_cover_image.dart';
 
 /// Community Detail Screen
 ///
@@ -327,13 +328,19 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                   SizedBox(
                     height: 140,
                     width: double.infinity,
-                    child: CachedNetworkImage(
-                      imageUrl: _community.imageUrl!,
-                      fit: BoxFit.cover,
-                      memCacheWidth: (MediaQuery.sizeOf(context).width *
-                              MediaQuery.devicePixelRatioOf(context))
-                          .round(),
-                      errorWidget: (_, __, ___) => const SizedBox.shrink(),
+                    child: FocalCoverImage.wrap(
+                      _community.coverFocus,
+                      CachedNetworkImage(
+                        imageUrl: _community.imageUrl!,
+                        fit: BoxFit.cover,
+                        alignment: _community.coverFocus.alignment,
+                        width: double.infinity,
+                        height: 140,
+                        memCacheWidth: (MediaQuery.sizeOf(context).width *
+                                MediaQuery.devicePixelRatioOf(context))
+                            .round(),
+                        errorWidget: (_, __, ___) => const SizedBox.shrink(),
+                      ),
                     ),
                   ),
 

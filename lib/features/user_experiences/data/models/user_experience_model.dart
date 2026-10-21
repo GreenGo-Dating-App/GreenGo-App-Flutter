@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../domain/entities/experience_review.dart';
 import '../../domain/entities/user_experience.dart';
 import '../../domain/experience_validation.dart';
+import '../../../../core/media/cover_focus.dart';
 
 /// Firestore value (Timestamp / DateTime / millis / ISO string) → DateTime.
 DateTime? experienceDateFrom(Object? v) {
@@ -77,6 +78,7 @@ class UserExperienceModel {
       description: d['description'] as String? ?? '',
       category: ExperienceCategory.fromWire(d['category']),
       mainPhotoUrl: d['mainPhotoUrl'] as String? ?? '',
+      coverFocus: CoverFocus.fromMap(d),
       photoUrls: _strList(d['photoUrls']),
       included: _strList(d['included']),
       notIncluded: _strList(d['notIncluded']),
@@ -151,6 +153,8 @@ class UserExperienceModel {
       'description': e.description.trim(),
       'category': e.category.name,
       'mainPhotoUrl': e.mainPhotoUrl,
+      // Main photo position (createUserExperience validation.ts clamps it).
+      ...e.coverFocus.toMap(),
       'photoUrls': e.photoUrls,
       'included': included,
       'notIncluded': notIncluded,

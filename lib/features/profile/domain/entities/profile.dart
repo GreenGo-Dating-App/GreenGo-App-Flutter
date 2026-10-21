@@ -5,6 +5,7 @@ import '../../../membership/domain/entities/membership.dart';
 import 'business_address.dart';
 import 'location.dart';
 import 'social_links.dart';
+import '../../../../core/media/cover_focus.dart';
 
 /// Controls how the user appears on the Globe map for discovery.
 enum GlobeDiscoverability {
@@ -93,6 +94,7 @@ class Profile extends Equatable {
     this.storefrontBio,
     this.storefrontLinks = const [],
     this.coverImageUrl,
+    this.coverFocus = CoverFocus.center,
     this.businessLogoUrl,
     this.isBanned = false,
     this.isIdVerified = false,
@@ -250,6 +252,10 @@ class Profile extends Equatable {
   // and the gallery. Optional & null by default so existing docs stay
   // backward-compatible. A legacy empty string is treated as "no cover".
   final String? coverImageUrl;
+
+  /// Position of [coverImageUrl] in every frame (focal point + zoom, stored
+  /// as coverFocalX / coverFocalY / coverZoom). Centre by default.
+  final CoverFocus coverFocus;
 
   // Owner 2026-10-19: the BUSINESS's own profile picture (logo / storefront
   // photo), deliberately separate from the owner's personal [photoUrls].
@@ -427,6 +433,7 @@ class Profile extends Equatable {
         storefrontBio,
         storefrontLinks,
         coverImageUrl,
+        coverFocus,
         businessLogoUrl,
         isBanned,
         isIdVerified,
@@ -515,6 +522,7 @@ class Profile extends Equatable {
     String? storefrontBio,
     List<String>? storefrontLinks,
     String? coverImageUrl,
+    CoverFocus? coverFocus,
     String? businessLogoUrl,
     bool? isBanned,
     bool? isIdVerified,
@@ -599,6 +607,7 @@ class Profile extends Equatable {
       storefrontBio: storefrontBio ?? this.storefrontBio,
       storefrontLinks: storefrontLinks ?? this.storefrontLinks,
       coverImageUrl: coverImageUrl ?? this.coverImageUrl,
+      coverFocus: coverFocus ?? this.coverFocus,
       businessLogoUrl: businessLogoUrl ?? this.businessLogoUrl,
       isBanned: isBanned ?? this.isBanned,
       isIdVerified: isIdVerified ?? this.isIdVerified,

@@ -1,4 +1,5 @@
-import 'package:equatable/equatable.dart';
+
+import '../../../../core/media/cover_focus.dart';import 'package:equatable/equatable.dart';
 
 /// `moderation.reason` of an experience hidden by a plan downgrade.
 const String kExperienceDowngradeReason = 'plan_downgrade';
@@ -119,6 +120,7 @@ class UserExperience extends Equatable {
     required this.description,
     required this.category,
     required this.mainPhotoUrl,
+    this.coverFocus = CoverFocus.center,
     required this.included,
     required this.locationName,
     required this.durationMinutes,
@@ -184,6 +186,10 @@ class UserExperience extends Equatable {
   final String description;
   final ExperienceCategory category;
   final String mainPhotoUrl;
+
+  /// Position of [mainPhotoUrl] in every frame (focal point + zoom, stored as
+  /// coverFocalX / coverFocalY / coverZoom). Centre by default.
+  final CoverFocus coverFocus;
   final List<String> photoUrls;
   final List<String> included;
   final List<String> notIncluded;
@@ -342,6 +348,7 @@ class UserExperience extends Equatable {
         description: description,
         category: category,
         mainPhotoUrl: mainPhotoUrl,
+        coverFocus: coverFocus,
         photoUrls: photoUrls,
         included: included,
         notIncluded: notIncluded,
@@ -405,6 +412,7 @@ class UserExperience extends Equatable {
         description: description,
         category: category,
         mainPhotoUrl: mainPhotoUrl,
+        coverFocus: coverFocus,
         photoUrls: photoUrls,
         included: included,
         notIncluded: notIncluded,
@@ -466,6 +474,7 @@ class UserExperience extends Equatable {
         description,
         category,
         mainPhotoUrl,
+        coverFocus,
         photoUrls,
         included,
         notIncluded,

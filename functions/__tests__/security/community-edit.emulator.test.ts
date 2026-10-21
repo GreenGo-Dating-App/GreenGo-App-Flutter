@@ -166,6 +166,13 @@ describe('creator edits the community info and cover', () => {
     expect((await db.doc(C).get()).data()!.imageUrl).toBeNull();
   });
 
+  test('cover position (coverFocalX / coverFocalY / coverZoom) is creator-editable', async () => {
+    expect(await clientUpdate(CREATOR, C, appUpdate({ coverFocalX: -0.5, coverFocalY: 0.25, coverZoom: 1.4 }))).toBe(200);
+    const d = (await db.doc(C).get()).data()!;
+    expect([d.coverFocalX, d.coverFocalY, d.coverZoom]).toEqual([-0.5, 0.25, 1.4]);
+    expect(await clientUpdate(CREATOR, C, { coverFocalX: 0.9 })).toBe(200);
+  });
+
   test('a creator who left the community can still edit it', async () => {
     await db.doc(`${C}/members/${CREATOR}`).delete();
     expect(await clientUpdate(CREATOR, C, { name: 'Still mine' })).toBe(200);
@@ -188,6 +195,26 @@ describe('non-creators cannot edit the info or cover', () => {
       expect((await db.doc(C).get()).data()!.name).toBe('Old name');
     });
   }
+
+  for (const [who, uid] of [['member', MEMBER], ['stranger', STRANGER], ['community admin', ADMIN_MEMBER]] as const) {
+    test(`${who}: cover position (focal point / zoom) denied`, async () => {
+      expect(await clientUpdate(uid, C, { coverFocalX: 0.5 })).toBe(403);
+      expect(await clientUpdate(uid, C, { coverFocalY: -1 })).toBe(403);
+      expect(await clientUpdate(uid, C, { coverZoom: 2 })).toBe(403);
+      expect(await clientUpdate(uid, C, appUpdate({ coverFocalX: 0.3, coverFocalY: 0.3, coverZoom: 1.2 }))).toBe(403);
+    });
+  }
+
+  test('community admin rules edit with the DEFAULT cover position on a doc without it still works', async () => {
+    // The app writes coverFocalX/Y 0 and coverZoom 1 (read defaults) on its
+    // full-doc update; a doc that never had them must not count as a change.
+    expect(await clientUpdate(ADMIN_MEMBER, C, appUpdate({
+      coverFocalX: 0, coverFocalY: 0, coverZoom: 1, rules: 'Be kind',
+    }))).toBe(200);
+    expect(await clientUpdate(ADMIN_MEMBER, C, appUpdate({
+      coverFocalX: 0.0, coverFocalY: 0.0, coverZoom: 1.0, rules: 'Be kinder',
+    }))).toBe(200);
+  });
 
   test('community admin still edits rules / resources (app full-doc shape)', async () => {
     expect(await clientUpdate(ADMIN_MEMBER, C, appUpdate({

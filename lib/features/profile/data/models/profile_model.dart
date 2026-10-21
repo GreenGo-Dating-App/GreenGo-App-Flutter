@@ -7,6 +7,7 @@ import '../../domain/entities/profile.dart';
 import '../private_profile.dart';
 import '../profile_geohash.dart';
 import '../../domain/entities/social_links.dart';
+import '../../../../core/media/cover_focus.dart';
 
 class ProfileModel extends Profile {
   const ProfileModel({
@@ -77,6 +78,7 @@ class ProfileModel extends Profile {
     super.storefrontBio,
     super.storefrontLinks,
     super.coverImageUrl,
+    super.coverFocus,
     super.businessLogoUrl,
     super.isBanned,
     super.isIdVerified,
@@ -169,6 +171,7 @@ class ProfileModel extends Profile {
       storefrontBio: profile.storefrontBio,
       storefrontLinks: profile.storefrontLinks,
       coverImageUrl: profile.coverImageUrl,
+      coverFocus: profile.coverFocus,
       businessLogoUrl: profile.businessLogoUrl,
       isBanned: profile.isBanned,
       isIdVerified: profile.isIdVerified,
@@ -326,6 +329,7 @@ class ProfileModel extends Profile {
           ? List<String>.from(json['storefrontLinks'] as List)
           : <String>[],
       coverImageUrl: json['coverImageUrl'] as String?,
+      coverFocus: CoverFocus.fromMap(json),
       businessLogoUrl: json['businessLogoUrl'] as String?,
       isBanned: json['isBanned'] as bool? ?? false,
       // Server-owned; read only (never in toJson).
@@ -496,6 +500,7 @@ class ProfileModel extends Profile {
       'storefrontBio': storefrontBio,
       'storefrontLinks': storefrontLinks,
       'coverImageUrl': coverImageUrl,
+      ...coverFocus.toMap(),
       'businessLogoUrl': businessLogoUrl,
       'isBanned': isBanned,
     };

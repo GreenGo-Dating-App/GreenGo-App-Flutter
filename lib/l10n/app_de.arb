@@ -8805,5 +8805,20 @@
   "pullLocationBlockedInBrowser": "Der Standort ist in diesem Browser blockiert. Erlaube ihn in den Website-Einstellungen, um ihn zu aktualisieren.",
   "pullLocationUnavailable": "Dein Standort konnte nicht ermittelt werden. Ergebnisse für deinen gespeicherten Standort.",
   "pullLocationOpenSettings": "Einstellungen",
-  "pullLocationAllow": "Erlauben"
+  "pullLocationAllow": "Erlauben",
+  "coverImageHintBanner": "Empfohlen: {width} × {height} px ({ratio}), JPG oder PNG, max. {maxMb} MB. Das Hauptmotiv mittig halten: Auf kleineren Karten können die Ränder abgeschnitten werden.",
+  "coverImageHintSquare": "Empfohlen: {width} × {height} px (quadratisch, 1:1), JPG oder PNG, max. {maxMb} MB. Wird als Kreis angezeigt: mittig und mit etwas Rand platzieren.",
+  "coverImageWarnSmall": "Dieses Bild ist klein ({width} × {height} px) und kann unscharf wirken. Für ein scharfes Ergebnis mindestens {minWidth} px Breite verwenden. Du kannst es trotzdem nutzen.",
+  "coverImageWarnShape": "Das Format dieses Bildes weicht stark von {ratio} ab, daher werden Teile abgeschnitten.",
+  "coverImageWarnPreview": "So wird es angezeigt:",
+  "coverPositionTitle": "Bild positionieren",
+  "coverPositionDone": "Fertig",
+  "coverPositionHelp": "Ziehe das Bild, um zu wählen, was im Rahmen zu sehen ist. Mit zwei Fingern oder dem Regler zoomen. Alles außerhalb des Rahmens wird ausgeblendet.",
+  "coverPositionReset": "Zentrieren",
+  "coverPositionAdjust": "Position anpassen",
+  "coverFrameExplore": "Entdecken",
+  "coverFrameHeader": "Seitenkopf",
+  "coverFrameCard": "Karte in Listen",
+  "coverFrameList": "Listenzeile",
+  "coverFrameAvatar": "Profilbild"
 }

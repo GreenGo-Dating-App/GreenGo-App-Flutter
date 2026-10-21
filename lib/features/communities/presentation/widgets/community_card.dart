@@ -7,6 +7,7 @@ import '../../../../generated/app_localizations.dart';
 import '../utils/community_l10n.dart';
 import '../../domain/entities/community.dart';
 import 'sponsored_badge.dart';
+import '../../../../core/widgets/focal_cover_image.dart';
 
 /// Community Card Widget
 ///
@@ -209,11 +210,19 @@ class CommunityCard extends StatelessWidget {
       child: community.imageUrl != null
           ? ClipRRect(
               borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-              child: CachedNetworkImage(
-                imageUrl: community.imageUrl!,
-                fit: BoxFit.cover,
-                memCacheWidth: 112,
-                errorWidget: (_, __, ___) => _buildTypeIcon(),
+              child: FocalCoverImage.wrap(
+                community.coverFocus,
+                CachedNetworkImage(
+                  imageUrl: community.imageUrl!,
+                  fit: BoxFit.cover,
+                  alignment: community.coverFocus.alignment,
+                  width: 56,
+                  height: 56,
+                  // Decoded at full width: a focal point off-centre must
+                  // stay sharp after the zoom (still tiny: 56 px tile).
+                  memCacheWidth: 112 * 2,
+                  errorWidget: (_, __, ___) => _buildTypeIcon(),
+                ),
               ),
             )
           : _buildTypeIcon(),

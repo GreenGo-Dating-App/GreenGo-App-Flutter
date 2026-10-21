@@ -28261,4 +28261,59 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get pullLocationAllow => 'Erlauben';
+
+  @override
+  String coverImageHintBanner(
+      String width, String height, String ratio, String maxMb) {
+    return 'Empfohlen: $width × $height px ($ratio), JPG oder PNG, max. $maxMb MB. Das Hauptmotiv mittig halten: Auf kleineren Karten können die Ränder abgeschnitten werden.';
+  }
+
+  @override
+  String coverImageHintSquare(String width, String height, String maxMb) {
+    return 'Empfohlen: $width × $height px (quadratisch, 1:1), JPG oder PNG, max. $maxMb MB. Wird als Kreis angezeigt: mittig und mit etwas Rand platzieren.';
+  }
+
+  @override
+  String coverImageWarnSmall(String width, String height, String minWidth) {
+    return 'Dieses Bild ist klein ($width × $height px) und kann unscharf wirken. Für ein scharfes Ergebnis mindestens $minWidth px Breite verwenden. Du kannst es trotzdem nutzen.';
+  }
+
+  @override
+  String coverImageWarnShape(String ratio) {
+    return 'Das Format dieses Bildes weicht stark von $ratio ab, daher werden Teile abgeschnitten.';
+  }
+
+  @override
+  String get coverImageWarnPreview => 'So wird es angezeigt:';
+
+  @override
+  String get coverPositionTitle => 'Bild positionieren';
+
+  @override
+  String get coverPositionDone => 'Fertig';
+
+  @override
+  String get coverPositionHelp =>
+      'Ziehe das Bild, um zu wählen, was im Rahmen zu sehen ist. Mit zwei Fingern oder dem Regler zoomen. Alles außerhalb des Rahmens wird ausgeblendet.';
+
+  @override
+  String get coverPositionReset => 'Zentrieren';
+
+  @override
+  String get coverPositionAdjust => 'Position anpassen';
+
+  @override
+  String get coverFrameExplore => 'Entdecken';
+
+  @override
+  String get coverFrameHeader => 'Seitenkopf';
+
+  @override
+  String get coverFrameCard => 'Karte in Listen';
+
+  @override
+  String get coverFrameList => 'Listenzeile';
+
+  @override
+  String get coverFrameAvatar => 'Profilbild';
 }

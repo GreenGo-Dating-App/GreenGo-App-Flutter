@@ -23,12 +23,23 @@ class PickedImage {
 
   /// Reused picture: its approved download URL (no upload, no re-moderation).
   String? get url => libraryItem?.url;
+
+  /// Pixel size of a reused library picture when recorded, else null.
+  Size? get librarySize {
+    final w = libraryItem?.width;
+    final h = libraryItem?.height;
+    return (w != null && h != null && w > 0 && h > 0)
+        ? Size(w.toDouble(), h.toDouble())
+        : null;
+  }
 }
 
 /// Bottom sheet: Camera (optional) / Gallery / Choose from My pictures.
+/// [hint] (e.g. a CoverImageSizeHint) is shown under the title.
 Future<ImageSourceChoice?> showImageSourceSheet(
   BuildContext context, {
   bool allowCamera = true,
+  Widget? hint,
 }) {
   final l10n = AppLocalizations.of(context)!;
   return showModalBottomSheet<ImageSourceChoice>(
@@ -52,6 +63,11 @@ Future<ImageSourceChoice?> showImageSourceSheet(
               ),
             ),
           ),
+          if (hint != null)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+              child: hint,
+            ),
           if (allowCamera)
             ListTile(
               key: const Key('image_source_camera'),
@@ -97,11 +113,14 @@ Future<PickedImage?> pickImageWithLibrary(
   double? maxHeight,
   int? imageQuality,
   MediaLibraryRepository? repository,
+  Widget? hint,
 }) async {
-  final choice = await showImageSourceSheet(context, allowCamera: allowCamera);
+  final choice = await showImageSourceSheet(context,
+      allowCamera: allowCamera, hint: hint);
   if (choice == null || !context.mounted) return null;
   if (choice == ImageSourceChoice.library) {
-    final item = await MyPicturesScreen.pick(context, repository: repository);
+    final item = await MyPicturesScreen.pick(context,
+        repository: repository, pickHint: hint);
     return (item != null && item.isApproved) ? PickedImage.library(item) : null;
   }
   final file = await (picker ?? ImagePicker()).pickImage(

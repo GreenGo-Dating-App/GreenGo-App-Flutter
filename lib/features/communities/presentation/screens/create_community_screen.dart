@@ -25,6 +25,11 @@ import '../widgets/community_card.dart';
 import '../widgets/sponsorship_editor_sheet.dart';
 import '../widgets/sponsorship_gate.dart';
 import 'community_detail_screen.dart';
+import '../../../../core/media/cover_focus.dart';
+import '../../../../core/widgets/cover_frames.dart';
+import '../../../../core/widgets/cover_image_size_hint.dart';
+import '../../../../core/widgets/cover_positioner.dart';
+import '../../../../core/widgets/focal_cover_image.dart';
 
 /// Create Community Screen
 ///
@@ -75,6 +80,12 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
   // A cover that is already a URL (no upload): a picture from My pictures, or
   // in edit mode the community's current cover.
   String? _coverLibraryUrl;
+
+  // Where the cover sits in every frame (focal point + zoom), chosen in the
+  // positioning step after a pick; centre by default.
+  CoverFocus _coverFocus = CoverFocus.center;
+  // Pixel size of a My pictures cover (for the small-image warning).
+  Size? _coverLibrarySize;
 
   ImageProvider? get _coverProvider => _coverImage != null
       ? WebMedia.imageProviderFor(_coverImage!)
@@ -142,6 +153,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
       _tags.addAll(c.tags);
       final image = c.imageUrl ?? '';
       _coverLibraryUrl = image.isEmpty ? null : image;
+      _coverFocus = c.coverFocus;
       _isSponsored = c.isSponsored;
       _pinnedPromo = c.pinnedPromo;
     }
@@ -648,11 +660,11 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
           if (_coverProvider != null) ...[
             ClipRRect(
               borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-              child: Image(
-                image: _coverProvider!,
+              child: SizedBox(
                 height: 160,
                 width: double.infinity,
-                fit: BoxFit.cover,
+                child: FocalCoverImage(
+                    image: _coverProvider!, focus: _coverFocus),
               ),
             ),
             const SizedBox(height: AppDimensions.paddingM),
@@ -802,21 +814,22 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
         GestureDetector(
           onTap: _pickCoverImage,
           child: AspectRatio(
-            aspectRatio: 16 / 9,
+            aspectRatio: CoverImageSpec.banner.aspectRatio,
             child: Container(
+              clipBehavior: Clip.antiAlias,
               decoration: BoxDecoration(
                 color: AppColors.backgroundCard,
                 borderRadius: BorderRadius.circular(AppDimensions.radiusM),
                 border: Border.all(color: AppColors.divider, width: 0.5),
-                image: _coverProvider != null
-                    ? DecorationImage(
-                        image: _coverProvider!,
-                        fit: BoxFit.cover,
-                      )
-                    : null,
               ),
               child: _coverProvider != null
-                  ? Align(
+                  ? Stack(fit: StackFit.expand, children: [
+                      FocalCoverImage(
+                        key: const Key('communityCoverImage'),
+                        image: _coverProvider!,
+                        focus: _coverFocus,
+                      ),
+                      Align(
                       alignment: Alignment.topRight,
                       child: Padding(
                         padding: const EdgeInsets.all(8),
@@ -832,11 +845,14 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                             onPressed: () => setState(() {
                               _coverImage = null;
                               _coverLibraryUrl = null;
+                              _coverLibrarySize = null;
+                              _coverFocus = CoverFocus.center;
                             }),
                           ),
                         ),
                       ),
-                    )
+                    ),
+                    ])
                   : Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -853,8 +869,34 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
             ),
           ),
         ),
+        const SizedBox(height: 6),
+        CoverPhotoGuide(
+          hasImage: _coverProvider != null,
+          onAdjust: _positionCover,
+          adjustKey: const Key('communityCoverAdjust'),
+          file: _coverImage,
+          knownSize: _coverLibrarySize,
+        ),
       ],
     );
+  }
+
+  /// Positioning step: drag / zoom the cover inside the real frame with a
+  /// live preview of every place it is shown.
+  Future<void> _positionCover() async {
+    final provider = _coverProvider;
+    if (provider == null) return;
+    final l10n = AppLocalizations.of(context)!;
+    final focus = await showCoverPositioner(
+      context,
+      image: provider,
+      initial: _coverFocus,
+      frames: CoverFrames.community(l10n),
+      title: _nameController.text.trim(),
+      file: _coverImage,
+      knownSize: _coverImage == null ? _coverLibrarySize : null,
+    );
+    if (focus != null && mounted) setState(() => _coverFocus = focus);
   }
 
   Future<void> _pickCoverImage() async {
@@ -863,17 +905,23 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
       context,
       maxWidth: 1600,
       imageQuality: 82,
+      hint: const CoverImageSizeHint(),
     );
     if (picked == null || !mounted) return;
     setState(() {
+      // A new picture starts centred; the positioning step moves it.
+      _coverFocus = CoverFocus.center;
       if (picked.isLibrary) {
         _coverImage = null;
         _coverLibraryUrl = picked.url;
+        _coverLibrarySize = picked.librarySize;
       } else {
         _coverImage = picked.file;
         _coverLibraryUrl = null;
+        _coverLibrarySize = null;
       }
     });
+    await _positionCover();
   }
 
   /// Upload the picked cover image to Storage; returns its download URL or null.
@@ -923,6 +971,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
       type: _selectedType,
       imageUrl: imageUrl,
       clearImageUrl: imageUrl == null,
+      coverFocus: imageUrl == null ? CoverFocus.center : _coverFocus,
       languages: List<String>.of(_selectedLanguages),
       tags: List<String>.of(_tags),
       isPublic: _isPublic,
@@ -984,6 +1033,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
       createdAt: DateTime.now(),
       memberCount: 1,
       imageUrl: imageUrl,
+      coverFocus: imageUrl == null ? CoverFocus.center : _coverFocus,
       languages: _selectedLanguages,
       tags: _tags,
       isPublic: _isPublic,
