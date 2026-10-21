@@ -362,6 +362,8 @@ export type ArbKey =
   | 'srvGuestLeftReviewBody'
   | 'srvHostReviewedYou'
   | 'srvHostReviewedYouBody'
+  | 'srvImageReviewApprovedBody'
+  | 'srvImageReviewApprovedTitle'
   | 'srvJoinedYourCommunity'
   | 'srvJoinedYourEvent'
   | 'srvJoinedYourGroup'
@@ -799,6 +801,8 @@ export const ARB_KEYS: readonly ArbKey[] = [
   'srvGuestLeftReviewBody',
   'srvHostReviewedYou',
   'srvHostReviewedYouBody',
+  'srvImageReviewApprovedBody',
+  'srvImageReviewApprovedTitle',
   'srvJoinedYourCommunity',
   'srvJoinedYourEvent',
   'srvJoinedYourGroup',
@@ -1238,6 +1242,8 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvGuestLeftReviewBody: "Review your guest to reveal both reviews.",
     srvHostReviewedYou: "Your host reviewed you",
     srvHostReviewedYouBody: "Review your experience to see what they said.",
+    srvImageReviewApprovedBody: "We reviewed your picture and it is visible again. Find it in My pictures and use it anywhere in the app.",
+    srvImageReviewApprovedTitle: "Your picture was approved",
     srvJoinedYourCommunity: "joined your community",
     srvJoinedYourEvent: "joined your event",
     srvJoinedYourGroup: "joined your group",
@@ -1675,6 +1681,8 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvGuestLeftReviewBody: "Bewerte deinen Gast, um beide Bewertungen zu sehen.",
     srvHostReviewedYou: "Dein Gastgeber hat dich bewertet",
     srvHostReviewedYouBody: "Bewerte dein Erlebnis, um zu sehen, was er geschrieben hat.",
+    srvImageReviewApprovedBody: "Wir haben dein Bild geprüft und es ist wieder sichtbar. Du findest es unter Meine Bilder und kannst es überall in der App verwenden.",
+    srvImageReviewApprovedTitle: "Dein Bild wurde freigegeben",
     srvJoinedYourCommunity: "ist deiner Community beigetreten",
     srvJoinedYourEvent: "nimmt an deinem Event teil",
     srvJoinedYourGroup: "ist deiner Gruppe beigetreten",
@@ -2112,6 +2120,8 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvGuestLeftReviewBody: "Valora a tu invitado para ver ambas valoraciones.",
     srvHostReviewedYou: "Tu anfitrión te valoró",
     srvHostReviewedYouBody: "Valora tu experiencia para ver lo que dijo.",
+    srvImageReviewApprovedBody: "Hemos revisado tu imagen y vuelve a estar visible. La encontrarás en Mis imágenes y puedes usarla en cualquier parte de la app.",
+    srvImageReviewApprovedTitle: "Tu imagen ha sido aprobada",
     srvJoinedYourCommunity: "se unió a tu comunidad",
     srvJoinedYourEvent: "se unió a tu evento",
     srvJoinedYourGroup: "se unió a tu grupo",
@@ -2549,6 +2559,8 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvGuestLeftReviewBody: "Évaluez votre participant pour révéler les deux avis.",
     srvHostReviewedYou: "Votre hôte vous a évalué",
     srvHostReviewedYouBody: "Évaluez votre expérience pour voir ce qu’il a écrit.",
+    srvImageReviewApprovedBody: "Nous avons examiné votre image et elle est de nouveau visible. Retrouvez-la dans Mes images et utilisez-la partout dans l’app.",
+    srvImageReviewApprovedTitle: "Votre image a été approuvée",
     srvJoinedYourCommunity: "a rejoint votre communauté",
     srvJoinedYourEvent: "participe à votre événement",
     srvJoinedYourGroup: "a rejoint votre groupe",
@@ -2986,6 +2998,8 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvGuestLeftReviewBody: "Recensisci il tuo ospite per vedere entrambe le recensioni.",
     srvHostReviewedYou: "Il tuo host ti ha recensito",
     srvHostReviewedYouBody: "Recensisci la tua esperienza per vedere cosa ha scritto.",
+    srvImageReviewApprovedBody: "Abbiamo esaminato la tua immagine ed è di nuovo visibile. La trovi in Le mie immagini e puoi usarla ovunque nell’app.",
+    srvImageReviewApprovedTitle: "La tua immagine è stata approvata",
     srvJoinedYourCommunity: "si è unito alla tua community",
     srvJoinedYourEvent: "partecipa al tuo evento",
     srvJoinedYourGroup: "si è unito al tuo gruppo",
@@ -3423,6 +3437,8 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvGuestLeftReviewBody: "Avalia o teu convidado para veres as duas avaliações.",
     srvHostReviewedYou: "O teu anfitrião avaliou-te",
     srvHostReviewedYouBody: "Avalia a tua experiência para veres o que escreveu.",
+    srvImageReviewApprovedBody: "Analisámos a sua imagem e ela está novamente visível. Encontre-a em As minhas imagens e use-a em qualquer parte da app.",
+    srvImageReviewApprovedTitle: "A sua imagem foi aprovada",
     srvJoinedYourCommunity: "juntou-se à tua comunidade",
     srvJoinedYourEvent: "juntou-se ao teu evento",
     srvJoinedYourGroup: "juntou-se ao teu grupo",
@@ -3860,6 +3876,8 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvGuestLeftReviewBody: "Avalie seu convidado para ver as duas avaliações.",
     srvHostReviewedYou: "Seu anfitrião avaliou você",
     srvHostReviewedYouBody: "Avalie sua experiência para ver o que ele escreveu.",
+    srvImageReviewApprovedBody: "Analisamos sua imagem e ela está visível novamente. Encontre-a em Minhas imagens e use-a em qualquer lugar do app.",
+    srvImageReviewApprovedTitle: "Sua imagem foi aprovada",
     srvJoinedYourCommunity: "entrou na sua comunidade",
     srvJoinedYourEvent: "vai ao seu evento",
     srvJoinedYourGroup: "entrou no seu grupo",

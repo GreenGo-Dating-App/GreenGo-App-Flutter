@@ -234,6 +234,9 @@ export const ACCOUNT_DATA_INVENTORY: InventoryEntry[] = [
     'game_stats', 'blocked_users',
     // Data-subject export log (P3-2, auth/dataExport.ts; runs subcollection).
     'data_exports',
+    // My pictures library (items subcollection) + review-request rate limit
+    // (safety/mediaLibrary.ts, safety/imageReview.ts).
+    'media_library', 'image_review_limits',
   ),
   { kind: 'path', path: 'leaderboards/xp/rankings/{uid}' },
 

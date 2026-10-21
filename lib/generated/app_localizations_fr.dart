@@ -6395,7 +6395,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return 'Abonnement $tierName actif jusqu\'au $formattedDate$coinsText';
   }
 
@@ -16329,13 +16332,21 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan : $price par $interval. Renouvellement automatique le $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan : $price par $interval. Résilié ; accès jusqu\'au $date.';
   }
 
@@ -19935,7 +19946,9 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-      String name, String rewards) {
+    String name,
+    String rewards,
+  ) {
     return 'Récompenses de $name récupérées ! $rewards';
   }
 
@@ -20401,7 +20414,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-      String location, int hours, int minutes) {
+    String location,
+    int hours,
+    int minutes,
+  ) {
     return '$location - $hours h $minutes min restantes';
   }
 
@@ -22373,7 +22389,11 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date) {
+    String reason,
+    String message,
+    String user,
+    String date,
+  ) {
     return 'Motif : $reason\nMessage signalé : « $message »\nUtilisateur signalé : $user\nSignalé le : $date';
   }
 
@@ -22726,50 +22746,41 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Première connexion',
-        'social_butterfly': 'Papillon social',
-        'popular': 'Populaire',
-        'video_enthusiast': 'Fan de vidéo',
-        'daily_streak_7': 'Série de 7 jours',
-        'daily_streak_30': 'Série de 30 jours',
-        'other': 'Nouveau succès',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Première connexion',
+      'social_butterfly': 'Papillon social',
+      'popular': 'Populaire',
+      'video_enthusiast': 'Fan de vidéo',
+      'daily_streak_7': 'Série de 7 jours',
+      'daily_streak_30': 'Série de 30 jours',
+      'other': 'Nouveau succès',
+    });
     return 'Succès débloqué : $_temp0 !';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Établissez votre première connexion',
-        'social_butterfly': 'Envoyez 100 messages',
-        'popular': 'Établissez 50 connexions',
-        'video_enthusiast': 'Terminez 10 appels vidéo',
-        'daily_streak_7': 'Connectez-vous 7 jours d’affilée',
-        'daily_streak_30': 'Connectez-vous 30 jours d’affilée',
-        'other': 'Continuez comme ça !',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Établissez votre première connexion',
+      'social_butterfly': 'Envoyez 100 messages',
+      'popular': 'Établissez 50 connexions',
+      'video_enthusiast': 'Terminez 10 appels vidéo',
+      'daily_streak_7': 'Connectez-vous 7 jours d’affilée',
+      'daily_streak_30': 'Connectez-vous 30 jours d’affilée',
+      'other': 'Continuez comme ça !',
+    });
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(
-      challenge,
-      {
-        'send_5_messages': 'Lanceur de conversations',
-        'get_3_matches': 'Connecteur',
-        'complete_profile': 'Profil parfait',
-        'video_call_1': 'Face à face',
-        'other': 'Défi du jour',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(challenge, {
+      'send_5_messages': 'Lanceur de conversations',
+      'get_3_matches': 'Connecteur',
+      'complete_profile': 'Profil parfait',
+      'video_call_1': 'Face à face',
+      'other': 'Défi du jour',
+    });
     return 'Défi relevé : $_temp0 !';
   }
 
@@ -28256,4 +28267,89 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get deletedUserName => 'Utilisateur supprimé';
+
+  @override
+  String get srvImageReviewApprovedTitle => 'Votre image a été approuvée';
+
+  @override
+  String get srvImageReviewApprovedBody =>
+      'Nous avons examiné votre image et elle est de nouveau visible. Retrouvez-la dans Mes images et utilisez-la partout dans l’app.';
+
+  @override
+  String get myPicturesTitle => 'Mes images';
+
+  @override
+  String get myPicturesSubtitle =>
+      'Les images que vous avez importées, prêtes à être réutilisées';
+
+  @override
+  String get myPicturesEmpty =>
+      'Pas encore d’images. Les images importées apparaissent ici dès qu’elles ont passé notre vérification.';
+
+  @override
+  String get myPicturesPickerEmpty => 'Pas encore d’images approuvées.';
+
+  @override
+  String get myPicturesChoose => 'Choisir dans Mes images';
+
+  @override
+  String get myPicturesNotVisibleHeld => 'Non visible - retenue';
+
+  @override
+  String get myPicturesNotVisibleReview => 'Non visible - en cours d’examen';
+
+  @override
+  String get myPicturesNotVisibleRejected => 'Non visible - refusée';
+
+  @override
+  String get myPicturesHiddenNote =>
+      'Vous seul voyez cette entrée. Personne d’autre ne peut voir l’image.';
+
+  @override
+  String get myPicturesAskReview => 'Demander un examen';
+
+  @override
+  String get myPicturesReviewSla => 'Nous déciderons sous 24 à 48 heures.';
+
+  @override
+  String get myPicturesReviewNoteHint =>
+      'Pourquoi cette image devrait-elle être autorisée ? (facultatif)';
+
+  @override
+  String get myPicturesReviewSend => 'Envoyer la demande';
+
+  @override
+  String get myPicturesReviewSent =>
+      'Examen demandé. Nous déciderons sous 24 à 48 heures.';
+
+  @override
+  String get myPicturesReviewRateLimited =>
+      'Vous avez demandé trop d’examens aujourd’hui. Réessayez demain.';
+
+  @override
+  String get myPicturesReviewAlready =>
+      'Un examen de cette image est déjà en cours.';
+
+  @override
+  String get myPicturesReviewFailed =>
+      'Impossible d’envoyer la demande. Réessayez.';
+
+  @override
+  String get myPicturesRemoveTitle => 'Retirer de Mes images ?';
+
+  @override
+  String get myPicturesRemoveBody =>
+      'L’image quitte votre bibliothèque. Les endroits qui l’utilisent déjà continuent de l’afficher.';
+
+  @override
+  String get myPicturesRemove => 'Retirer';
+
+  @override
+  String get myPicturesCamera => 'Appareil photo';
+
+  @override
+  String get myPicturesGallery => 'Galerie';
+
+  @override
+  String get myPicturesAddPictureTitle => 'Ajouter une image';
 }

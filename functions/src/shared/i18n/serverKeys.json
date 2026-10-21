@@ -357,6 +357,8 @@
   "srvGuestLeftReviewBody",
   "srvHostReviewedYou",
   "srvHostReviewedYouBody",
+  "srvImageReviewApprovedBody",
+  "srvImageReviewApprovedTitle",
   "srvJoinedYourCommunity",
   "srvJoinedYourEvent",
   "srvJoinedYourGroup",

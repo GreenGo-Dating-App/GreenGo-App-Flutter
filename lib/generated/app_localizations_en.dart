@@ -6291,7 +6291,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return '$tierName membership active until $formattedDate$coinsText';
   }
 
@@ -16071,13 +16074,21 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price per $interval. Renews automatically on $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price per $interval. Cancelled; access ends on $date.';
   }
 
@@ -19627,7 +19638,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-      String name, String rewards) {
+    String name,
+    String rewards,
+  ) {
     return '$name rewards claimed! $rewards';
   }
 
@@ -20090,7 +20103,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-      String location, int hours, int minutes) {
+    String location,
+    int hours,
+    int minutes,
+  ) {
     return '$location - ${hours}h ${minutes}m remaining';
   }
 
@@ -22024,7 +22040,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date) {
+    String reason,
+    String message,
+    String user,
+    String date,
+  ) {
     return 'Reason: $reason\nReported message: \"$message\"\nReported user: $user\nReported at: $date';
   }
 
@@ -22369,50 +22389,41 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'First Connection',
-        'social_butterfly': 'Social Butterfly',
-        'popular': 'Popular',
-        'video_enthusiast': 'Video Enthusiast',
-        'daily_streak_7': '7-Day Streak',
-        'daily_streak_30': '30-Day Streak',
-        'other': 'New achievement',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'First Connection',
+      'social_butterfly': 'Social Butterfly',
+      'popular': 'Popular',
+      'video_enthusiast': 'Video Enthusiast',
+      'daily_streak_7': '7-Day Streak',
+      'daily_streak_30': '30-Day Streak',
+      'other': 'New achievement',
+    });
     return 'Achievement Unlocked: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Make your first connection',
-        'social_butterfly': 'Send 100 messages',
-        'popular': 'Make 50 connections',
-        'video_enthusiast': 'Complete 10 video calls',
-        'daily_streak_7': 'Log in 7 days in a row',
-        'daily_streak_30': 'Log in 30 days in a row',
-        'other': 'Keep it up!',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Make your first connection',
+      'social_butterfly': 'Send 100 messages',
+      'popular': 'Make 50 connections',
+      'video_enthusiast': 'Complete 10 video calls',
+      'daily_streak_7': 'Log in 7 days in a row',
+      'daily_streak_30': 'Log in 30 days in a row',
+      'other': 'Keep it up!',
+    });
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(
-      challenge,
-      {
-        'send_5_messages': 'Conversation Starter',
-        'get_3_matches': 'Connector',
-        'complete_profile': 'Profile Perfectionist',
-        'video_call_1': 'Face to Face',
-        'other': 'Daily challenge',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(challenge, {
+      'send_5_messages': 'Conversation Starter',
+      'get_3_matches': 'Connector',
+      'complete_profile': 'Profile Perfectionist',
+      'video_call_1': 'Face to Face',
+      'other': 'Daily challenge',
+    });
     return 'Challenge Completed: $_temp0!';
   }
 
@@ -27829,4 +27840,88 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get deletedUserName => 'Deleted user';
+
+  @override
+  String get srvImageReviewApprovedTitle => 'Your picture was approved';
+
+  @override
+  String get srvImageReviewApprovedBody =>
+      'We reviewed your picture and it is visible again. Find it in My pictures and use it anywhere in the app.';
+
+  @override
+  String get myPicturesTitle => 'My pictures';
+
+  @override
+  String get myPicturesSubtitle => 'Pictures you uploaded, ready to reuse';
+
+  @override
+  String get myPicturesEmpty =>
+      'No pictures yet. Pictures you upload appear here once they pass our check.';
+
+  @override
+  String get myPicturesPickerEmpty => 'No approved pictures yet.';
+
+  @override
+  String get myPicturesChoose => 'Choose from My pictures';
+
+  @override
+  String get myPicturesNotVisibleHeld => 'Not visible - held back';
+
+  @override
+  String get myPicturesNotVisibleReview => 'Not visible - under review';
+
+  @override
+  String get myPicturesNotVisibleRejected => 'Not visible - rejected';
+
+  @override
+  String get myPicturesHiddenNote =>
+      'Only you see this entry. Nobody else can see the picture.';
+
+  @override
+  String get myPicturesAskReview => 'Ask for a review';
+
+  @override
+  String get myPicturesReviewSla => 'We\'ll decide within 24-48 hours.';
+
+  @override
+  String get myPicturesReviewNoteHint =>
+      'Why should this picture be allowed? (optional)';
+
+  @override
+  String get myPicturesReviewSend => 'Send request';
+
+  @override
+  String get myPicturesReviewSent =>
+      'Review requested. We\'ll decide within 24-48 hours.';
+
+  @override
+  String get myPicturesReviewRateLimited =>
+      'You have asked for too many reviews today. Please try again tomorrow.';
+
+  @override
+  String get myPicturesReviewAlready =>
+      'A review of this picture is already in progress.';
+
+  @override
+  String get myPicturesReviewFailed =>
+      'Could not send the request. Please try again.';
+
+  @override
+  String get myPicturesRemoveTitle => 'Remove from My pictures?';
+
+  @override
+  String get myPicturesRemoveBody =>
+      'The picture leaves your library. Places that already use it keep showing it.';
+
+  @override
+  String get myPicturesRemove => 'Remove';
+
+  @override
+  String get myPicturesCamera => 'Camera';
+
+  @override
+  String get myPicturesGallery => 'Gallery';
+
+  @override
+  String get myPicturesAddPictureTitle => 'Add a picture';
 }

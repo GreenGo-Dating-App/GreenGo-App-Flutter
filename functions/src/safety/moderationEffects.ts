@@ -19,6 +19,7 @@
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
 import { syncHostExperiencesForBan } from '../user_experiences/hostBan';
+import { recordLibraryRestored } from './mediaLibrary';
 
 const db = () => admin.firestore();
 const TS = admin.firestore.Timestamp;
@@ -264,11 +265,25 @@ export async function restoreQuarantined(objectPath: string, quarantinePath: str
   await verdictRef.set({ restorePending: true, objectPath }, { merge: true });
   const [copy] = await held.copy(bucket.file(objectPath));
   let generation: string | null = null;
+  let custom: Record<string, string> = {};
   try {
     const [meta] = await copy.getMetadata();
     generation = meta.generation !== undefined ? String(meta.generation) : null;
+    custom = (meta.metadata || {}) as Record<string, string>;
   } catch {
     generation = null;
+  }
+  // The hold rotated the download token (quarantineObject) so the old URL
+  // could not open the quarantined copy. Put the original token back: every
+  // place that already stored the URL works again.
+  if (typeof custom.heldDownloadToken === 'string' && custom.heldDownloadToken) {
+    try {
+      await copy.setMetadata({ metadata: { firebaseStorageDownloadTokens: custom.heldDownloadToken, heldDownloadToken: null } });
+      custom = { ...custom, firebaseStorageDownloadTokens: custom.heldDownloadToken };
+      delete custom.heldDownloadToken;
+    } catch (e) {
+      console.error(`[restoreQuarantined] token restore failed for ${objectPath}:`, e);
+    }
   }
   await verdictRef.set({
     status: 'approved',
@@ -282,6 +297,12 @@ export async function restoreQuarantined(objectPath: string, quarantinePath: str
     expiresAt: TS.fromMillis(Date.now() + 24 * 3600 * 1000),
   }, { merge: true });
   await held.delete({ ignoreNotFound: true });
+  // "My pictures": the image is usable again (status approved + URL).
+  try {
+    await recordLibraryRestored({ bucket: bucket.name, objectPath, generation, meta: custom });
+  } catch (e) {
+    console.error(`[restoreQuarantined] library update failed for ${objectPath}:`, e);
+  }
   return 'restored';
 }
 

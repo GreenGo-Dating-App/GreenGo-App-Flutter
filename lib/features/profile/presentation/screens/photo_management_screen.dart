@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 
+import '../../../media_library/domain/media_library_item.dart';
+import '../../../media_library/presentation/image_source_picker.dart';
 import '../../../../core/widgets/info_button.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -67,12 +69,19 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
     }
 
     try {
-      final image = await _picker.pickImage(
-        source: ImageSource.gallery,
+      final picked = await pickImageWithLibrary(
+        context,
+        picker: _picker,
         maxWidth: 1920,
         maxHeight: 1920,
         imageQuality: 85,
       );
+      if (picked == null || !mounted) return;
+      if (picked.isLibrary) {
+        _addFromLibrary(picked.libraryItem!, isPrivate: isPrivate);
+        return;
+      }
+      final image = picked.file;
 
       if (image != null) {
         if (!mounted) return;
@@ -93,6 +102,31 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
       if (!mounted) return;
       showUserError(context, e);
     }
+  }
+
+  /// My pictures: adds an approved picture by URL (no upload, no second
+  /// check). A personal account's MAIN photo must show a face: a library
+  /// picture known to have none is refused here, and mainPhotoFaceRule.ts
+  /// enforces the same rule server-side on the profile write.
+  void _addFromLibrary(MediaLibraryItem item, {required bool isPrivate}) {
+    final l10n = AppLocalizations.of(context)!;
+    final url = item.url;
+    if (url == null) return;
+    final target = isPrivate ? _privatePhotoUrls : _photoUrls;
+    if (target.contains(url)) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(l10n.photoAlreadyExistsInAlbum),
+        backgroundColor: AppColors.warningAmber,
+      ));
+      return;
+    }
+    final becomesMain = !isPrivate && _photoUrls.isEmpty;
+    if (becomesMain && !widget.profile.isBusiness && item.hasFace == false) {
+      _showPhotoRejectedDialog(l10n.photoMainNoFace);
+      return;
+    }
+    setState(() => target.add(url));
+    _updateProfile();
   }
 
   String _localizeValidationError(PhotoValidationError? code) {

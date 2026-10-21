@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 
+import '../../../media_library/presentation/image_source_picker.dart';
 import '../../../../core/services/place_search_service.dart';
 import '../../../../core/widgets/info_button.dart';
 import '../../../../core/widgets/location_picker.dart';
@@ -166,13 +167,20 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
       {required bool isMainPhoto}) async {
     if (_pendingUploadTarget != null) return; // one upload at a time
     try {
-      final image = await _picker.pickImage(
-        source: ImageSource.gallery,
+      final picked = await pickImageWithLibrary(
+        context,
+        picker: _picker,
         maxWidth: 1920,
         maxHeight: 1920,
         imageQuality: 85,
       );
-      if (image == null || !mounted) return;
+      if (picked == null || !mounted) return;
+      // My pictures: an approved picture is reused as is (no upload).
+      if (picked.isLibrary) {
+        setState(() => _applyImageUrl(target, picked.url!));
+        return;
+      }
+      final image = picked.file!;
       setState(() => _pendingUploadTarget = target);
       context.read<ProfileBloc>().add(
             ProfilePhotoUploadRequested(
@@ -184,6 +192,22 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
           );
     } catch (_) {
       if (mounted) setState(() => _pendingUploadTarget = null);
+    }
+  }
+
+  /// Puts an approved image URL (fresh upload or My pictures) in its slot.
+  void _applyImageUrl(_UploadTarget target, String url) {
+    switch (target) {
+      case _UploadTarget.logo:
+        _businessLogoUrl = url;
+        _logoRequiredError = false;
+        break;
+      case _UploadTarget.featured:
+        _coverImageUrl = url;
+        break;
+      case _UploadTarget.gallery:
+        if (!_galleryImages.contains(url)) _galleryImages.add(url);
+        break;
     }
   }
 
@@ -399,20 +423,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
           if (state is ProfilePhotoUploaded && _pendingUploadTarget != null) {
             final target = _pendingUploadTarget;
             _pendingUploadTarget = null;
-            setState(() {
-              switch (target!) {
-                case _UploadTarget.logo:
-                  _businessLogoUrl = state.photoUrl;
-                  _logoRequiredError = false;
-                  break;
-                case _UploadTarget.featured:
-                  _coverImageUrl = state.photoUrl;
-                  break;
-                case _UploadTarget.gallery:
-                  _galleryImages.add(state.photoUrl);
-                  break;
-              }
-            });
+            setState(() => _applyImageUrl(target!, state.photoUrl));
           } else if (state is ProfileUpdated && _saving) {
             _saving = false;
             ScaffoldMessenger.of(context).showSnackBar(

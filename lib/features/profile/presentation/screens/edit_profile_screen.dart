@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../media_library/presentation/my_pictures_screen.dart';
 import '../../../../core/utils/phone_verification_gate.dart';
 import '../../../../core/widgets/add_phone_banner.dart';
 import '../../../../core/widgets/info_button.dart';
@@ -427,6 +428,17 @@ class EditProfileScreen extends StatelessWidget {
                         subtitle: AppLocalizations.of(context)!.profilePhotosCount(activeProfile.photoUrls.length),
                         icon: Icons.photo_library,
                         onTap: () => _navigateToPhotoManagement(context, activeProfile),
+                      ),
+                      const SizedBox(height: MenuRow.gap),
+                      // My pictures: every uploaded picture, reusable anywhere.
+                      EditSectionCard(
+                        key: const Key('profile_my_pictures'),
+                        title: AppLocalizations.of(context)!.myPicturesTitle,
+                        subtitle: AppLocalizations.of(context)!.myPicturesSubtitle,
+                        icon: Icons.collections_bookmark_outlined,
+                        onTap: () => Navigator.of(context).push(
+                          MaterialPageRoute(builder: (_) => const MyPicturesScreen()),
+                        ),
                       ),
                       const SizedBox(height: MenuRow.gap),
                       // Nickname Section

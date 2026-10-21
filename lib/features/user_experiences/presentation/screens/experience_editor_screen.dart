@@ -1,4 +1,5 @@
 import 'dart:async';
+import '../../../media_library/presentation/image_source_picker.dart';
 import '../../../../core/widgets/listing_wizard.dart';
 import '../../../experience_bookings/data/datasources/experience_availability_service.dart';
 import '../../../experience_bookings/domain/availability_rules.dart';
@@ -389,16 +390,32 @@ class _EditorFormState extends State<_EditorForm> {
   // ───────────────────────────────────────────── photos
 
   Future<void> _pickMain() async {
-    final x =
-        await _picker.pickImage(source: ImageSource.gallery, imageQuality: 80);
-    if (x != null) setState(() => _mainPhoto = x);
+    final picked =
+        await pickImageWithLibrary(context, picker: _picker, imageQuality: 80);
+    if (picked == null || !mounted) return;
+    setState(() {
+      if (picked.isLibrary) {
+        // My pictures: reuse the approved URL (no upload).
+        _mainPhoto = null;
+        _existingMainUrl = picked.url;
+      } else {
+        _mainPhoto = picked.file;
+      }
+    });
   }
 
   Future<void> _pickExtra() async {
     if (_photoCount >= ExperienceLimits.maxPhotos) return;
-    final x =
-        await _picker.pickImage(source: ImageSource.gallery, imageQuality: 80);
-    if (x != null) setState(() => _newPhotos.add(x));
+    final picked =
+        await pickImageWithLibrary(context, picker: _picker, imageQuality: 80);
+    if (picked == null || !mounted) return;
+    setState(() {
+      if (picked.isLibrary) {
+        if (!_existingPhotos.contains(picked.url)) _existingPhotos.add(picked.url!);
+      } else {
+        _newPhotos.add(picked.file!);
+      }
+    });
   }
 
   Future<bool> _photosAreClean() async {
