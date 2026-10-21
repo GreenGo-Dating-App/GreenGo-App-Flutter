@@ -8792,5 +8792,8 @@
   "myPicturesRemove": "Remover",
   "myPicturesCamera": "Câmera",
   "myPicturesGallery": "Galeria",
-  "myPicturesAddPictureTitle": "Adicionar uma imagem"
+  "myPicturesAddPictureTitle": "Adicionar uma imagem",
+  "communitiesEditCommunity": "Editar comunidade",
+  "communitiesUpdatedSuccess": "Comunidade atualizada",
+  "communitiesCoverUploadFailed": "Não foi possível salvar a imagem de capa. Tente outra imagem."
 }

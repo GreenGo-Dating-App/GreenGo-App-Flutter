@@ -8792,5 +8792,8 @@
   "myPicturesRemove": "Quitar",
   "myPicturesCamera": "Cámara",
   "myPicturesGallery": "Galería",
-  "myPicturesAddPictureTitle": "Añadir una imagen"
+  "myPicturesAddPictureTitle": "Añadir una imagen",
+  "communitiesEditCommunity": "Editar comunidad",
+  "communitiesUpdatedSuccess": "Comunidad actualizada",
+  "communitiesCoverUploadFailed": "No se pudo guardar la imagen de portada. Prueba con otra imagen."
 }

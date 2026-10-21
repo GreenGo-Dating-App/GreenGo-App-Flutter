@@ -29,14 +29,28 @@ import 'community_detail_screen.dart';
 /// Create Community Screen
 ///
 /// Form for creating a new community with name, description,
-/// type, languages, tags, and privacy settings
+/// type, languages, tags, and privacy settings.
+///
+/// With [existing] the SAME form opens in EDIT mode (owner request
+/// 2026-10-21: "who created a community can change the community info and
+/// featured image"): prefilled, no preview step, Save dispatches
+/// [UpdateCommunity]. Only the creator reaches it (detail screen menu; the
+/// Firestore rules enforce the same).
 class CreateCommunityScreen extends StatefulWidget {
 
   const CreateCommunityScreen({
     super.key,
     this.preselectedType,
+    this.existing,
+    this.currentUserId,
   });
   final CommunityType? preselectedType;
+
+  /// The signed-in user's id; null = read it from FirebaseAuth (tests pass it).
+  final String? currentUserId;
+
+  /// The community being edited (null = create a new one).
+  final Community? existing;
 
   @override
   State<CreateCommunityScreen> createState() => _CreateCommunityScreenState();
@@ -58,7 +72,8 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
 
   // Hero/cover image (optional). Picked locally, uploaded to Storage on create.
   XFile? _coverImage;
-  // My pictures: an approved picture reused as the cover (no upload).
+  // A cover that is already a URL (no upload): a picture from My pictures, or
+  // in edit mode the community's current cover.
   String? _coverLibraryUrl;
 
   ImageProvider? get _coverProvider => _coverImage != null
@@ -72,7 +87,10 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
   /// The new community's doc id, generated ONCE for this form: every tap on
   /// Create (or retry) writes the SAME `communities/{id}`, so a double submit
   /// can never produce two communities (owner bug 2026-10-21).
-  final String _communityId = newCommunityId();
+  /// In edit mode the edited community's id.
+  late final String _communityId = widget.existing?.id ?? newCommunityId();
+
+  bool get _isEdit => widget.existing != null;
 
   /// True from the first Create tap until the bloc answers (success navigates
   /// away; an error re-enables the buttons). Both Create buttons are disabled
@@ -112,6 +130,21 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
     if (widget.preselectedType != null) {
       _selectedType = widget.preselectedType!;
     }
+    final c = widget.existing;
+    if (c != null) {
+      _nameController.text = c.name;
+      _descriptionController.text = c.description;
+      _cityController.text = c.city ?? '';
+      _countryController.text = c.country ?? '';
+      _selectedType = c.type;
+      _isPublic = c.isPublic;
+      _selectedLanguages.addAll(c.languages);
+      _tags.addAll(c.tags);
+      final image = c.imageUrl ?? '';
+      _coverLibraryUrl = image.isEmpty ? null : image;
+      _isSponsored = c.isSponsored;
+      _pinnedPromo = c.pinnedPromo;
+    }
   }
 
   @override
@@ -136,7 +169,9 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: Text(
-          AppLocalizations.of(context)!.communitiesCreateCommunity,
+          _isEdit
+              ? AppLocalizations.of(context)!.communitiesEditCommunity
+              : AppLocalizations.of(context)!.communitiesCreateCommunity,
           style: const TextStyle(
             color: AppColors.textPrimary,
             fontSize: 20,
@@ -144,6 +179,21 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
           ),
         ),
         actions: [
+          if (_isEdit)
+            TextButton(
+              key: const Key('editCommunitySaveAppBarAction'),
+              onPressed: _submitting ? null : _saveEdits,
+              child: Text(
+                AppLocalizations.of(context)!.communitiesSaveLabel,
+                style: TextStyle(
+                  color: _submitting
+                      ? AppColors.textTertiary
+                      : AppColors.richGold,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            )
+          else
           TextButton(
             key: const Key('createCommunityAppBarAction'),
             onPressed: _showPreview && !_submitting ? _createCommunity : null,
@@ -161,6 +211,26 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
       ),
       body: BlocListener<CommunitiesBloc, CommunitiesState>(
         listener: (context, state) {
+          if (_isEdit) {
+            if (state is CommunityInfoUpdated &&
+                state.community.id == _communityId &&
+                _submitting) {
+              _submitting = false;
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(
+                    AppLocalizations.of(context)!.communitiesUpdatedSuccess,
+                  ),
+                  backgroundColor: AppColors.successGreen,
+                ),
+              );
+              Navigator.of(context).pop(state.community);
+            } else if (state is CommunitiesError && _submitting) {
+              setState(() => _submitting = false);
+              showUserError(context, state.message);
+            }
+            return;
+          }
           if (state is CommunityCreated) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
@@ -495,15 +565,21 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
             ),
             const SizedBox(height: AppDimensions.paddingL),
 
-            // Sponsorship (Platinum-business feature)
-            _buildSponsorshipSection(),
-            const SizedBox(height: AppDimensions.paddingXL),
+            // Sponsorship (Platinum-business feature). In edit mode it stays
+            // in the detail screen's own sponsorship editor.
+            if (!_isEdit) ...[
+              _buildSponsorshipSection(),
+              const SizedBox(height: AppDimensions.paddingXL),
+            ],
 
-            // Preview button
+            // Preview button (create) / Save button (edit)
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: _validateAndShowPreview,
+                key: _isEdit ? const Key('editCommunitySaveButton') : null,
+                onPressed: _isEdit
+                    ? (_submitting ? null : _saveEdits)
+                    : _validateAndShowPreview,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppColors.richGold,
                   foregroundColor: AppColors.deepBlack,
@@ -513,13 +589,24 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                         BorderRadius.circular(AppDimensions.radiusFull),
                   ),
                 ),
-                child: Text(
-                  AppLocalizations.of(context)!.communitiesPreview,
-                  style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
+                child: _isEdit && _submitting
+                    ? const SizedBox(
+                        width: 20,
+                        height: 20,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          color: AppColors.deepBlack,
+                        ),
+                      )
+                    : Text(
+                        _isEdit
+                            ? AppLocalizations.of(context)!.communitiesSaveLabel
+                            : AppLocalizations.of(context)!.communitiesPreview,
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
               ),
             ),
             const SizedBox(height: AppDimensions.paddingXL),
@@ -736,7 +823,9 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                         child: CircleAvatar(
                           radius: 16,
                           backgroundColor: Colors.black54,
-                          child: IconButton(tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
+                          child: IconButton(
+                            key: const Key('communityCoverRemove'),
+                            tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
                             padding: EdgeInsets.zero,
                             iconSize: 18,
                             icon: const Icon(Icons.close, color: Colors.white),
@@ -820,6 +909,68 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
       setState(() => _showPreview = true);
       HapticFeedback.mediumImpact();
     }
+  }
+
+  /// EDIT mode: the edited community with the form's info fields applied.
+  /// Everything else (creator, createdAt, member count, sponsorship, rules,
+  /// resources) is carried over unchanged.
+  Community _buildEditedCommunity({String? imageUrl}) {
+    final city = _cityController.text.trim();
+    final country = _countryController.text.trim();
+    return widget.existing!.copyWith(
+      name: _nameController.text.trim(),
+      description: _descriptionController.text.trim(),
+      type: _selectedType,
+      imageUrl: imageUrl,
+      clearImageUrl: imageUrl == null,
+      languages: List<String>.of(_selectedLanguages),
+      tags: List<String>.of(_tags),
+      isPublic: _isPublic,
+      city: city.isEmpty ? null : city,
+      clearCity: city.isEmpty,
+      country: country.isEmpty ? null : country,
+      clearCountry: country.isEmpty,
+    );
+  }
+
+  /// EDIT mode: validate, upload a newly picked cover (same moderation wait
+  /// as create), then save via [UpdateCommunity]. The previous cover's
+  /// Storage object is left in place: it may be a My pictures item or still
+  /// referenced elsewhere.
+  Future<void> _saveEdits() async {
+    if (_submitting || _uploadingCover) return;
+    if (!(_formKey.currentState?.validate() ?? false)) return;
+    final userId =
+        widget.currentUserId ?? FirebaseAuth.instance.currentUser?.uid;
+    if (userId == null) return;
+    setState(() => _submitting = true);
+
+    String? imageUrl = _coverLibraryUrl;
+    if (_coverImage != null) {
+      if (_uploadedCoverFor == _coverImage && _uploadedCoverUrl != null) {
+        imageUrl = _uploadedCoverUrl;
+      } else {
+        setState(() => _uploadingCover = true);
+        imageUrl = await _uploadCoverImage(userId);
+        if (!mounted) return;
+        setState(() => _uploadingCover = false);
+        if (imageUrl == null) {
+          // Upload failed or the picture was held by moderation: never drop
+          // the current cover silently.
+          setState(() => _submitting = false);
+          showUserError(context,
+              AppLocalizations.of(context)!.communitiesCoverUploadFailed);
+          return;
+        }
+        _uploadedCoverFor = _coverImage;
+        _uploadedCoverUrl = imageUrl;
+      }
+    }
+    if (!mounted) return;
+    context.read<CommunitiesBloc>().add(
+          UpdateCommunity(community: _buildEditedCommunity(imageUrl: imageUrl)),
+        );
+    HapticFeedback.mediumImpact();
   }
 
   Community _buildCommunityFromForm({String? imageUrl}) {

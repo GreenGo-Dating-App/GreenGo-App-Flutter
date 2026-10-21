@@ -805,6 +805,8 @@ export {
   onExperienceReplyCreated,
   // Community deleted -> its experiences are kept and unlinked.
   onCommunityDeletedUnlinkExperiences,
+  // Community renamed by its creator -> linked experiences' communityName.
+  onCommunityRenamedSyncExperiences,
 } from './user_experiences';
 
 // Experience bookings: slots, bookings (free / cash / host link — no money

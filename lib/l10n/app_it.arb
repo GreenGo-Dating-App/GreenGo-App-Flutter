@@ -8792,5 +8792,8 @@
   "myPicturesRemove": "Rimuovi",
   "myPicturesCamera": "Fotocamera",
   "myPicturesGallery": "Galleria",
-  "myPicturesAddPictureTitle": "Aggiungi un’immagine"
+  "myPicturesAddPictureTitle": "Aggiungi un’immagine",
+  "communitiesEditCommunity": "Modifica comunità",
+  "communitiesUpdatedSuccess": "Comunità aggiornata",
+  "communitiesCoverUploadFailed": "Impossibile salvare l’immagine di copertina. Prova con un’altra immagine."
 }

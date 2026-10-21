@@ -2089,6 +2089,36 @@ service cloud.firestore {
         return isCommunityMod() ||
           (isMemberOf() && myMemberDoc().data.get('canWriteAnnouncements', false) == true);
       }
+      // Community INFO (owner request 2026-10-21: "who created a community can
+      // change the community info and featured image"): only the CREATOR (or a
+      // platform admin) may change these. Compared with the app's read
+      // defaults (CommunityModel.fromFirestore) so the full-doc write of a
+      // moderator's rules/resources edit on a legacy doc that lacks a field
+      // does not count as an info change.
+      function infoUnchanged() {
+        return request.resource.data.get('name', '') == resource.data.get('name', '')
+          && request.resource.data.get('description', '') == resource.data.get('description', '')
+          && request.resource.data.get('type', 'general') == resource.data.get('type', 'general')
+          && request.resource.data.get('imageUrl', null) == resource.data.get('imageUrl', null)
+          && request.resource.data.get('languages', []) == resource.data.get('languages', [])
+          && request.resource.data.get('tags', []) == resource.data.get('tags', [])
+          && request.resource.data.get('isPublic', true) == resource.data.get('isPublic', true)
+          && request.resource.data.get('city', null) == resource.data.get('city', null)
+          && request.resource.data.get('country', null) == resource.data.get('country', null);
+      }
+      // Identity / server-maintained fields NO client edit may rewrite (the
+      // join/leave counter has its own onlyDenormChanged path below).
+      function identityUnchanged() {
+        return request.resource.data.get('createdByUserId', '') == resource.data.get('createdByUserId', '')
+          && request.resource.data.get('createdByName', '') == resource.data.get('createdByName', '')
+          && (!('createdAt' in resource.data)
+              || request.resource.data.get('createdAt', null) == resource.data.createdAt)
+          && !request.resource.data.diff(resource.data).affectedKeys().hasAny(['memberCount']);
+      }
+      function modEditAllowed() {
+        return isCommunityMod() && identityUnchanged()
+          && (infoUnchanged() || isCommunityCreator() || isAdmin());
+      }
       function onlyDenormChanged() {
         // Fields any member's action legitimately touches on the community doc:
         // the join/leave counter and the last-message denormalization written by
@@ -2141,7 +2171,9 @@ service cloud.firestore {
             || sponsorBusinessActive(request.auth.uid));
       // Community edits (rules/resources/sponsor/promo) → owner/admin only,
       // EXCEPT denormalized member-driven fields (memberCount / last message).
-      allow update: if (isCommunityMod() || (isSignedIn() && onlyDenormChanged()))
+      // Info + cover → creator only; creator / createdAt / memberCount are
+      // never rewritten by an edit (modEditAllowed).
+      allow update: if (modEditAllowed() || (isSignedIn() && onlyDenormChanged()))
         && (!becomesSponsored() || sponsorBusinessActive(request.auth.uid));
       allow delete: if isCommunityCreator() || isAdmin();
 

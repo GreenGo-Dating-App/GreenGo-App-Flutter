@@ -404,8 +404,19 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
             curr is CommunityCreated ||
             curr is CommunityJoined ||
             curr is CommunityLeft ||
-            curr is CommunityDeleted,
+            curr is CommunityDeleted ||
+            curr is CommunityInfoUpdated,
         listener: (context, state) {
+          if (state is CommunityInfoUpdated) {
+            // A saved edit (name / cover / info): patch the cached tab lists
+            // in place - no reload, so no visible refresh.
+            final loaded = _lastLoaded;
+            if (loaded != null) {
+              setState(() => _lastLoaded =
+                  replaceCommunityInLoaded(loaded, state.community));
+            }
+            return;
+          }
           if (state is CommunityLeft) _dropFavorite(state.communityId);
           if (state is CommunityDeleted) _dropFavorite(state.communityId);
           _reloadLists();

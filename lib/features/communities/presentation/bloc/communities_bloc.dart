@@ -662,16 +662,30 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     UpdateCommunity event,
     Emitter<CommunitiesState> emit,
   ) async {
+    // The detail being shown BEFORE the save: the one-shot
+    // CommunityInfoUpdated below replaces it as the bloc state, and the
+    // detail is then re-emitted with the saved community.
+    final before = state;
     final result = await _repository.updateCommunity(event.community);
 
     result.fold(
       (failure) => emit(CommunitiesError(message: failure.message)),
       (_) {
-        // Reflect the updated community in-place so the detail view (promo,
-        // header badge) refreshes without dropping the live message stream.
-        final currentState = state;
-        if (currentState is CommunityDetailLoaded) {
-          emit(currentState.copyWith(community: event.community));
+        final saved = event.community;
+        if (_lastDetailCommunity?.id == saved.id) _lastDetailCommunity = saved;
+        // Name / city / tags / type may have changed: drop the memoised
+        // Discover pages so a refresh shows the new info.
+        _discoverMemo.clear();
+        final current = state;
+        emit(CommunityInfoUpdated(community: saved));
+        // Reflect the updated community in-place so the detail view (name,
+        // cover, promo, header badge) refreshes without dropping the live
+        // message stream.
+        final detail = current is CommunityDetailLoaded
+            ? current
+            : (before is CommunityDetailLoaded ? before : null);
+        if (detail != null && detail.community.id == saved.id) {
+          emit(detail.copyWith(community: saved));
         }
       },
     );

@@ -40,6 +40,7 @@ import '../widgets/join_requests_sheet.dart';
 import '../widgets/member_moderation_sheet.dart';
 import '../widgets/rules_editor_sheet.dart';
 import '../widgets/tip_composer_sheet.dart';
+import 'create_community_screen.dart';
 import '../widgets/sponsored_badge.dart';
 import '../widgets/sponsored_promo_card.dart';
 import '../widgets/sponsorship_editor_sheet.dart';
@@ -56,9 +57,13 @@ import '../../../../core/widgets/locked_reason_sheet.dart';
 class CommunityDetailScreen extends StatefulWidget {
   const CommunityDetailScreen({
     required this.community,
+    this.currentUserId,
     super.key,
   });
   final Community community;
+
+  /// The signed-in user's id; null = read it from FirebaseAuth (tests pass it).
+  final String? currentUserId;
 
   @override
   State<CommunityDetailScreen> createState() => _CommunityDetailScreenState();
@@ -108,6 +113,12 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
   /// The current user can moderate (owner or admin).
   bool get _isModerator => _isOwner || _myRole == CommunityRole.admin;
 
+  /// Only the community's CREATOR may edit its info and cover (name,
+  /// description, type, languages, location, tags, public/private) - the
+  /// Firestore rules enforce the same. Admins keep rules/resources/members.
+  bool get _canEditInfo =>
+      _currentUserId != null && _currentUserId == _community.createdByUserId;
+
   /// Freshest community (starts as the passed-in one, refreshed from the
   /// detail state and after sponsorship edits) — drives the header badge and
   /// pinned promo.
@@ -123,7 +134,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
     _community = widget.community;
     _tabController =
         TabController(length: CommunityDetailTabBar.tabCount, vsync: this);
-    _currentUserId = FirebaseAuth.instance.currentUser?.uid;
+    _currentUserId =
+        widget.currentUserId ?? FirebaseAuth.instance.currentUser?.uid;
     _loadUserInfo();
     _loadCommunityDetail();
     _loadBlocked();
@@ -459,6 +471,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
               case 'info':
                 _showCommunityInfo();
                 break;
+              case 'edit':
+                _openEditCommunity();
+                break;
               case 'requests':
                 _showJoinRequests();
                 break;
@@ -484,11 +499,30 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                   const Icon(Icons.info_outline,
                       color: AppColors.textSecondary, size: 20),
                   const SizedBox(width: 12),
-                  Text(AppLocalizations.of(context)!.communitiesCommunityInfo,
+                  Flexible(
+                    child: Text(AppLocalizations.of(context)!.communitiesCommunityInfo,
                       style: const TextStyle(color: AppColors.textPrimary)),
+                  ),
                 ],
               ),
             ),
+            // Creator only: edit the community info and cover picture.
+            if (_canEditInfo)
+              PopupMenuItem(
+                key: const ValueKey('community-menu-edit'),
+                value: 'edit',
+                child: Row(
+                  children: [
+                    const Icon(Icons.edit_outlined,
+                        color: AppColors.richGold, size: 20),
+                    const SizedBox(width: 12),
+                    Flexible(
+                      child: Text(AppLocalizations.of(context)!.communitiesEditCommunity,
+                        style: const TextStyle(color: AppColors.textPrimary)),
+                    ),
+                  ],
+                ),
+              ),
             // Owner/admin of a PRIVATE community: review join requests.
             if (_isModerator && !_community.isPublic)
               PopupMenuItem(
@@ -498,10 +532,12 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                     const Icon(Icons.how_to_reg_outlined,
                         color: AppColors.richGold, size: 20),
                     const SizedBox(width: 12),
-                    Text(
+                    Flexible(
+                      child: Text(
                         AppLocalizations.of(context)!
                             .communitiesJoinRequestsTitle,
                         style: const TextStyle(color: AppColors.textPrimary)),
+                    ),
                   ],
                 ),
               ),
@@ -513,10 +549,12 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                     const Icon(Icons.workspace_premium,
                         color: AppColors.richGold, size: 20),
                     const SizedBox(width: 12),
-                    Text(
+                    Flexible(
+                      child: Text(
                         AppLocalizations.of(context)!
                             .communitiesEditSponsorship,
                         style: const TextStyle(color: AppColors.textPrimary)),
+                    ),
                   ],
                 ),
               ),
@@ -528,9 +566,11 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                     const Icon(Icons.exit_to_app,
                         color: AppColors.errorRed, size: 20),
                     const SizedBox(width: 12),
-                    Text(
+                    Flexible(
+                      child: Text(
                         AppLocalizations.of(context)!.communitiesLeaveCommunity,
                         style: const TextStyle(color: AppColors.errorRed)),
+                    ),
                   ],
                 ),
               ),
@@ -544,10 +584,12 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                     const Icon(Icons.flag_outlined,
                         color: AppColors.errorRed, size: 20),
                     const SizedBox(width: 12),
-                    Text(
+                    Flexible(
+                      child: Text(
                         AppLocalizations.of(context)!
                             .communitiesReportCommunity,
                         style: const TextStyle(color: AppColors.textPrimary)),
+                    ),
                   ],
                 ),
               ),
@@ -560,10 +602,12 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                     const Icon(Icons.delete_forever,
                         color: AppColors.errorRed, size: 20),
                     const SizedBox(width: 12),
-                    Text(
+                    Flexible(
+                      child: Text(
                         AppLocalizations.of(context)!
                             .communitiesDeleteCommunity,
                         style: const TextStyle(color: AppColors.errorRed)),
+                    ),
                   ],
                 ),
               ),
@@ -1428,6 +1472,31 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
     }
 
     HapticFeedback.mediumImpact();
+  }
+
+  /// Opens the create form in EDIT mode, prefilled with this community. The
+  /// save goes through UpdateCommunity; the bloc re-emits this detail with
+  /// the saved community (the listener refreshes [_community]).
+  Future<void> _openEditCommunity() async {
+    final communitiesBloc = context.read<CommunitiesBloc>();
+    final profileBloc = context.read<ProfileBloc>();
+    final saved = await Navigator.of(context).push<Community>(
+      MaterialPageRoute(
+        builder: (_) => MultiBlocProvider(
+          providers: [
+            BlocProvider.value(value: communitiesBloc),
+            BlocProvider.value(value: profileBloc),
+          ],
+          child: CreateCommunityScreen(
+            existing: _community,
+            currentUserId: _currentUserId,
+          ),
+        ),
+      ),
+    );
+    if (saved != null && mounted && saved.id == _community.id) {
+      setState(() => _community = saved);
+    }
   }
 
   Future<void> _editRules() async {

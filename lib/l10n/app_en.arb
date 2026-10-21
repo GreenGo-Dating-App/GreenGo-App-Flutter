@@ -17737,5 +17737,17 @@
   "myPicturesAddPictureTitle": "Add a picture",
   "@myPicturesAddPictureTitle": {
     "description": "Title of the image source sheet (camera / gallery / My pictures)"
+  },
+  "communitiesEditCommunity": "Edit community",
+  "@communitiesEditCommunity": {
+    "description": "Menu action and screen title: the creator edits the community info and cover picture"
+  },
+  "communitiesUpdatedSuccess": "Community updated",
+  "@communitiesUpdatedSuccess": {
+    "description": "Snackbar after the creator saved community info changes"
+  },
+  "communitiesCoverUploadFailed": "The cover picture could not be saved. Please try another picture.",
+  "@communitiesCoverUploadFailed": {
+    "description": "Error when the new community cover picture failed to upload or was held by moderation"
   }
 }

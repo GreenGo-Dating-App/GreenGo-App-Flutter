@@ -8218,5 +8218,8 @@
   "myPicturesRemove": "Retirer",
   "myPicturesCamera": "Appareil photo",
   "myPicturesGallery": "Galerie",
-  "myPicturesAddPictureTitle": "Ajouter une image"
+  "myPicturesAddPictureTitle": "Ajouter une image",
+  "communitiesEditCommunity": "Modifier la communauté",
+  "communitiesUpdatedSuccess": "Communauté mise à jour",
+  "communitiesCoverUploadFailed": "Impossible d’enregistrer l’image de couverture. Essayez une autre image."
 }

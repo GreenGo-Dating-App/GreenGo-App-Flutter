@@ -8792,5 +8792,8 @@
   "myPicturesRemove": "Entfernen",
   "myPicturesCamera": "Kamera",
   "myPicturesGallery": "Galerie",
-  "myPicturesAddPictureTitle": "Bild hinzufügen"
+  "myPicturesAddPictureTitle": "Bild hinzufügen",
+  "communitiesEditCommunity": "Community bearbeiten",
+  "communitiesUpdatedSuccess": "Community aktualisiert",
+  "communitiesCoverUploadFailed": "Das Titelbild konnte nicht gespeichert werden. Bitte versuche ein anderes Bild."
 }

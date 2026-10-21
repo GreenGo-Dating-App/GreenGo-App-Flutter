@@ -6,6 +6,7 @@ export { createUserExperience } from './createUserExperience';
 export { backfillHostRatings } from './backfillHostRatings';
 export { setExperienceFeatured } from './featured';
 export { onCommunityDeletedUnlinkExperiences } from './communityUnlink';
+export { onCommunityRenamedSyncExperiences } from './communityRename';
 export {
   publishUserExperience,
   acceptHostAgreement,

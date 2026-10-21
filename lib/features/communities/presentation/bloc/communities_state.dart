@@ -180,6 +180,15 @@ class CommunityCreated extends CommunitiesState {
   final Community community;
 }
 
+/// A community's doc was saved (creator info edit, rules, sponsorship).
+/// One-shot: the list screen patches its cached lists with [community] and the
+/// edit form closes; the detail screen gets the follow-up
+/// [CommunityDetailLoaded] carrying the same community.
+class CommunityInfoUpdated extends CommunitiesState {
+  const CommunityInfoUpdated({required this.community});
+  final Community community;
+}
+
 /// Community joined successfully
 class CommunityJoined extends CommunitiesState {
   const CommunityJoined({required this.communityId});
@@ -208,4 +217,20 @@ class CommunityDeleted extends CommunitiesState {
 class CommunitiesError extends CommunitiesState {
   const CommunitiesError({required this.message});
   final String message;
+}
+
+/// [loaded] with every list entry whose id is [updated]'s replaced by
+/// [updated] (Discover, joined, recommended, language circles, managed).
+CommunitiesLoaded replaceCommunityInLoaded(
+    CommunitiesLoaded loaded, Community updated) {
+  List<Community> swap(List<Community> list) => list.any((c) => c.id == updated.id)
+      ? [for (final c in list) c.id == updated.id ? updated : c]
+      : list;
+  return loaded.copyWith(
+    communities: swap(loaded.communities),
+    userCommunities: swap(loaded.userCommunities),
+    recommended: swap(loaded.recommended),
+    languageCircles: swap(loaded.languageCircles),
+    managedCommunities: swap(loaded.managedCommunities),
+  );
 }
