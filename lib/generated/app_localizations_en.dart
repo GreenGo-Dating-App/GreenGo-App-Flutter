@@ -2876,6 +2876,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get communitiesCityTipLabel => 'City Tip';
 
   @override
+  String get communitiesOtherTipLabel => 'Other';
+
+  @override
+  String get communitiesOtherTipUpper => 'OTHER';
+
+  @override
+  String get communitiesShareOtherTip => 'Share a tip...';
+
+  @override
   String get communitiesCityTipUpper => 'CITY TIP';
 
   @override

@@ -2920,6 +2920,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get communitiesCityTipLabel => 'Stadttipp';
 
   @override
+  String get communitiesOtherTipLabel => 'Sonstiges';
+
+  @override
+  String get communitiesOtherTipUpper => 'SONSTIGES';
+
+  @override
+  String get communitiesShareOtherTip => 'Teile einen Tipp...';
+
+  @override
   String get communitiesCityTipUpper => 'STADTTIPP';
 
   @override

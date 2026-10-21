@@ -97,6 +97,7 @@ class CommunityDetailLoaded extends CommunitiesState {
     this.hasMoreMembers = false,
     this.hasMoreMessages = false,
     this.hasMoreTips = false,
+    this.hasMoreTipsByType = const {},
     this.isLoadingOlderMessages = false,
     this.isLoadingOlderTips = false,
   });
@@ -107,6 +108,15 @@ class CommunityDetailLoaded extends CommunitiesState {
 
   /// Older tips may exist before the loaded ones (endless scroll).
   final bool hasMoreTips;
+
+  /// Per stored tip type, once a filter chip paged it: older tips of that
+  /// type may exist. A type missing here falls back to [hasMoreTips].
+  final Map<String, bool> hasMoreTipsByType;
+
+  /// Older tips of [tipType] (null = all tips) may exist.
+  bool hasMoreTipsOf(String? tipType) => tipType == null
+      ? hasMoreTips
+      : (hasMoreTipsByType[tipType] ?? hasMoreTips);
   final bool isLoadingOlderMessages;
   final bool isLoadingOlderTips;
 
@@ -149,6 +159,7 @@ class CommunityDetailLoaded extends CommunitiesState {
     bool? hasMoreMembers,
     bool? hasMoreMessages,
     bool? hasMoreTips,
+    Map<String, bool>? hasMoreTipsByType,
     bool? isLoadingOlderMessages,
     bool? isLoadingOlderTips,
   }) {
@@ -166,6 +177,7 @@ class CommunityDetailLoaded extends CommunitiesState {
       isLoadingMembers: isLoadingMembers ?? this.isLoadingMembers,
       hasMoreMessages: hasMoreMessages ?? this.hasMoreMessages,
       hasMoreTips: hasMoreTips ?? this.hasMoreTips,
+      hasMoreTipsByType: hasMoreTipsByType ?? this.hasMoreTipsByType,
       isLoadingOlderMessages:
           isLoadingOlderMessages ?? this.isLoadingOlderMessages,
       isLoadingOlderTips: isLoadingOlderTips ?? this.isLoadingOlderTips,

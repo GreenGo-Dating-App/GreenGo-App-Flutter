@@ -801,6 +801,8 @@ export { onAttractionRatingWritten } from './attractions/attractionRatings';
 export { translateTexts } from './messaging/sharedTranslations';
 // Client-contributed translations of public content, shared after 3 qualified users agree (or an admin).
 export { submitSharedTranslations } from './messaging/submitSharedTranslations';
+// Community Tips in the viewer's language: tip text read server-side, stored once in translations/{id}.
+export { translateCommunityTips } from './communities/translateCommunityTips';
 
 // User-created experiences (member-hosted) with reviews, replies + '@' mentions.
 export {

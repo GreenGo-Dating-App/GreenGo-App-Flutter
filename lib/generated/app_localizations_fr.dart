@@ -2925,6 +2925,15 @@ class AppLocalizationsFr extends AppLocalizations {
   String get communitiesCityTipLabel => 'Conseil Ville';
 
   @override
+  String get communitiesOtherTipLabel => 'Autres';
+
+  @override
+  String get communitiesOtherTipUpper => 'AUTRES';
+
+  @override
+  String get communitiesShareOtherTip => 'Partage une astuce...';
+
+  @override
   String get communitiesCityTipUpper => 'CONSEIL VILLE';
 
   @override

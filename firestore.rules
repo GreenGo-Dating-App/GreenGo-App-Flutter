@@ -2208,9 +2208,9 @@ service cloud.firestore {
               || request.resource.data.get('senderId', '') == 'system')
           && (
           (request.resource.data.type == 'announcement' && canWriteAnnouncements()) ||
-          (request.resource.data.type in ['language_tip', 'cultural_fact', 'city_tip']
+          (request.resource.data.type in ['language_tip', 'cultural_fact', 'city_tip', 'other_tip']
               && canWriteTips() && canPostChat()) ||
-          (!(request.resource.data.type in ['announcement', 'language_tip', 'cultural_fact', 'city_tip'])
+          (!(request.resource.data.type in ['announcement', 'language_tip', 'cultural_fact', 'city_tip', 'other_tip'])
               && canPostChat())
         );
         allow update, delete: if isCommunityMod();
@@ -2330,7 +2330,7 @@ service cloud.firestore {
     // yesterday, to absorb clock skew at midnight); never updated, deleted or
     // read by clients.
     // Shared translations of PUBLIC content, written only by the
-    // translateTexts function. Readable by id (the id is a hash of language +
+    // translateTexts / translateCommunityTips functions. Readable by id (the id is a hash of language +
     // text, so you must already know the text); never listable.
     match /translations/{id} {
       allow get: if isSignedIn();

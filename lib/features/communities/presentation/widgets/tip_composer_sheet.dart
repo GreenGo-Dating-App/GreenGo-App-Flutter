@@ -57,6 +57,7 @@ class _TipComposerSheetState extends State<TipComposerSheet> {
       (CommunityMessageType.culturalFact, l10n.communitiesCulturalFactLabel),
       if (widget.allowCityTip)
         (CommunityMessageType.cityTip, l10n.communitiesCityTipLabel),
+      (CommunityMessageType.otherTip, l10n.communitiesOtherTipLabel),
     ];
 
     return Padding(

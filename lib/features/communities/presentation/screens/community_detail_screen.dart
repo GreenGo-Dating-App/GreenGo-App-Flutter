@@ -702,12 +702,16 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
               m.senderName.toLowerCase().contains(q))
           .toList();
     }
+    // A selected chip pages ITS type on the server (not a client-side filter
+    // of the loaded pages), so a rare type is never buried.
+    final tipType = _tipFilter?.value;
+    final hasMore = state.hasMoreTipsOf(tipType);
     return Column(
       children: [
         _buildTipSearch(),
         _buildTipFilterBar(),
         Expanded(
-          child: tips.isEmpty && !state.hasMoreTips
+          child: tips.isEmpty && !hasMore
               ? _buildTabEmpty(
                   Icons.lightbulb_outline,
                   AppLocalizations.of(context)!.communitiesTipsEmpty,
@@ -716,11 +720,11 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                   padding: const EdgeInsets.symmetric(
                       vertical: AppDimensions.paddingS),
                   // + the endless-scroll footer while older tips may exist.
-                  itemCount: tips.length + (state.hasMoreTips ? 1 : 0),
+                  itemCount: tips.length + (hasMore ? 1 : 0),
                   itemBuilder: (context, index) {
                     if (index == tips.length) {
                       return _loadOlderFooter(() => LoadOlderCommunityTips(
-                          communityId: _community.id));
+                          communityId: _community.id, tipType: tipType));
                     }
                     return CommunityMessageBubble(
                       message: tips[index],
@@ -897,6 +901,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
           chip(l10n.communitiesCulturalFactLabel,
               CommunityMessageType.culturalFact),
           chip(l10n.communitiesCityTipLabel, CommunityMessageType.cityTip),
+          chip(l10n.communitiesOtherTipLabel, CommunityMessageType.otherTip),
         ],
       ),
     );
@@ -1302,6 +1307,12 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                 type: CommunityMessageType.cityTip,
               ),
             ],
+            const SizedBox(width: 6),
+            _buildTypeChip(
+              label: AppLocalizations.of(context)!.communitiesOtherTipLabel,
+              icon: Icons.push_pin_outlined,
+              type: CommunityMessageType.otherTip,
+            ),
           ],
         ),
       ),
@@ -1407,6 +1418,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
         return l10n.communitiesShareCulturalFact;
       case CommunityMessageType.cityTip:
         return l10n.communitiesShareCityTip;
+      case CommunityMessageType.otherTip:
+        return l10n.communitiesShareOtherTip;
       default:
         return l10n.communitiesTypeAMessage;
     }

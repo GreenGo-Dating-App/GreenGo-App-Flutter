@@ -843,6 +843,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
       messages: _latestMessages,
       hasMoreMessages: _feed.hasMoreMessages,
       hasMoreTips: _feed.hasMoreTips,
+      hasMoreTipsByType: _feed.hasMoreTipsByType,
       isLoadingOlderMessages: loadingOlderMessages,
       isLoadingOlderTips: loadingOlderTips,
     ));
@@ -879,21 +880,23 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     _emitFeed(emit, loadingOlderMessages: false);
   }
 
-  /// Endless scroll (Tips): the next 50 older tips. Falls back to an older
-  /// mixed page (which carries the tips too) while the tips index is not
-  /// deployed.
+  /// Endless scroll (Tips): the next 50 older tips — of the selected filter
+  /// chip's type only when [LoadOlderCommunityTips.tipType] is set (server
+  /// query, index type ASC + sentAt DESC). Falls back to an older mixed page
+  /// (which carries the tips too) while the tips index is not deployed.
   Future<void> _onLoadOlderTips(
     LoadOlderCommunityTips event,
     Emitter<CommunitiesState> emit,
   ) async {
     final s = state;
+    final type = event.tipType;
     if (s is! CommunityDetailLoaded ||
         event.communityId != _subscribedCommunityId ||
         s.isLoadingOlderTips ||
-        !_feed.hasMoreTips) {
+        !(type == null ? _feed.hasMoreTips : _feed.hasMoreTipsOf(type))) {
       return;
     }
-    final before = _feed.tipsCursor;
+    final before = type == null ? _feed.tipsCursor : _feed.tipsCursorOf(type);
     if (before == null) return;
     final feed = _feed;
     emit(s.copyWith(isLoadingOlderTips: true));
@@ -902,10 +905,15 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
       before: before,
       limit: feed.pageSize,
       tipsOnly: true,
+      tipType: type,
     );
     if (!identical(feed, _feed)) return;
     final ok = tips.fold((_) => false, (page) {
-      feed.addTipsPage(page);
+      if (type == null) {
+        feed.addTipsPage(page);
+      } else {
+        feed.addTipsPageOf(type, page);
+      }
       return true;
     });
     if (!ok) {

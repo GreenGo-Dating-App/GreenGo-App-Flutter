@@ -29,7 +29,8 @@ class CommunityMessage extends Equatable {
   bool get isSpecialType =>
       type == CommunityMessageType.languageTip ||
       type == CommunityMessageType.culturalFact ||
-      type == CommunityMessageType.cityTip;
+      type == CommunityMessageType.cityTip ||
+      type == CommunityMessageType.otherTip;
 
   /// A "tip" post (language tip / cultural fact / city tip) — surfaced in the
   /// community's Tips tab rather than the live chat. Alias of [isSpecialType].
@@ -109,6 +110,7 @@ enum CommunityMessageType {
   languageTip('Language Tip'),
   culturalFact('Cultural Fact'),
   cityTip('City Tip'),
+  otherTip('Other'),
   announcement('Announcement'),
   system('System');
 
@@ -130,6 +132,8 @@ extension CommunityMessageTypeExtension on CommunityMessageType {
         return 'cultural_fact';
       case CommunityMessageType.cityTip:
         return 'city_tip';
+      case CommunityMessageType.otherTip:
+        return 'other_tip';
       case CommunityMessageType.announcement:
         return 'announcement';
       case CommunityMessageType.system:
@@ -149,6 +153,8 @@ extension CommunityMessageTypeExtension on CommunityMessageType {
         return CommunityMessageType.culturalFact;
       case 'city_tip':
         return CommunityMessageType.cityTip;
+      case 'other_tip':
+        return CommunityMessageType.otherTip;
       case 'announcement':
         return CommunityMessageType.announcement;
       case 'system':

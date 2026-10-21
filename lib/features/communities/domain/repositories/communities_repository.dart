@@ -64,12 +64,14 @@ abstract class CommunitiesRepository {
   });
 
   /// One older page (newest first) of messages sent before [before]; only
-  /// tips when [tipsOnly].
+  /// tips when [tipsOnly]; only tips of the stored type [tipType] (e.g.
+  /// 'city_tip') when given.
   Future<Either<Failure, List<CommunityMessage>>> getOlderCommunityMessages(
     String communityId, {
     required DateTime before,
     int? limit,
     bool tipsOnly = false,
+    String? tipType,
   });
 
   /// Send a message to a community
