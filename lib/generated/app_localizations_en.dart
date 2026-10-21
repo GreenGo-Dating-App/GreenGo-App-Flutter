@@ -27887,4 +27887,41 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get communitiesCoverUploadFailed =>
       'The cover picture could not be saved. Please try another picture.';
+
+  @override
+  String get pullLocationUpdated => 'Location updated';
+
+  @override
+  String pullLocationUpdatedCity(String city) {
+    return 'Location updated: $city';
+  }
+
+  @override
+  String get pullLocationUpToDate => 'Location up to date';
+
+  @override
+  String get pullLocationTravelerKept =>
+      'Traveler mode is on: your travel location is kept';
+
+  @override
+  String get pullLocationServiceOff =>
+      'Location services are off. Showing results for your saved location.';
+
+  @override
+  String get pullLocationPermissionOff =>
+      'Location access is off. Showing results for your saved location.';
+
+  @override
+  String get pullLocationBlockedInBrowser =>
+      'Location is blocked in this browser. Allow it in the site settings to update it.';
+
+  @override
+  String get pullLocationUnavailable =>
+      'Couldn\'t get your location. Showing results for your saved location.';
+
+  @override
+  String get pullLocationOpenSettings => 'Settings';
+
+  @override
+  String get pullLocationAllow => 'Allow';
 }

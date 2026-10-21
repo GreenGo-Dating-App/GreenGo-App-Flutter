@@ -28,6 +28,7 @@ import 'package:showcaseview/showcaseview.dart';
 import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/location_change.dart';
 import '../../../../core/services/location_refresh_service.dart';
+import '../../../../core/widgets/location_pull_to_refresh.dart';
 import '../../../../core/services/interaction_log_service.dart';
 import '../../../../core/cache/last_result_cache.dart';
 import '../../../analytics/data/services/performance_monitoring_service.dart';
@@ -625,27 +626,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
     unawaited(_loadTopExperiences());
   }
 
-  /// Pull-to-refresh: refresh the location first (bounded) and reload the
-  /// page ONLY when it actually changed; otherwise keep the current data and
-  /// end the refresh at once. A refresh that times out but lands later is
-  /// handled by the profile listener ([_maybeReloadLocationSections]).
-  Future<void> _onPullToRefresh() async {
-    _pullRefreshing = true;
-    try {
-      await reloadIfLocationChanged(
-        refreshLocation: () => LocationRefreshService().refreshIfAllowed(
-          widget.userId,
-          // Traveler mode wins over GPS (the refresh is skipped): the
-          // travel location is what Explore follows.
-          isTravelerActive: _travelerActive,
-          fixTimeout: const Duration(seconds: 5),
-        ),
-        reload: () => _load(forceRefresh: true),
-      );
-    } finally {
-      _pullRefreshing = false;
-    }
-  }
+  /// Pull-to-refresh (owner 2026-10-21: "swipe down in Explore updates the
+  /// location"): [LocationPullToRefresh] first saves a fresh position
+  /// (throttled; Traveler mode keeps the travel location), then this reloads
+  /// the WHOLE page from the server - always, also when the location did not
+  /// change - nearest-first from the saved position. A location fix that
+  /// lands after the bounded wait is handled by the profile listener
+  /// ([_maybeReloadLocationSections]).
+  Future<void> _onPullReload(PullLocationResult _) => _load(forceRefresh: true);
 
   // LastResultCache keys for the sections painted instantly on open.
   static const String _kCacheLuxury = 'explore_luxury_v1';
@@ -2143,12 +2131,18 @@ class _ExploreScreenState extends State<ExploreScreen> {
       body: ColoredBox(
         color: AppColors.backgroundDark,
         child: SafeArea(
-          child: RefreshIndicator(
-            color: AppColors.richGold,
-            backgroundColor: AppColors.backgroundCard,
-            // Swipe down to force-refresh the whole Explore feed with fresh
-            // server data (bypasses the people-pool cache on refresh).
-            onRefresh: _onPullToRefresh,
+          child: LocationPullToRefresh(
+            userId: widget.userId,
+            // Traveler mode wins over GPS: the travel location is what
+            // Explore follows, so it is never overwritten by a pull.
+            isTravelerActive: () => _travelerActive,
+            // While the pull runs it reloads the whole page itself, so the
+            // profile listener must not reload the sections a second time.
+            onPullStateChanged: (pulling) => _pullRefreshing = pulling,
+            // Swipe down: update the location, then force-refresh the whole
+            // Explore feed with fresh server data (bypasses the people-pool
+            // cache on refresh).
+            onReload: _onPullReload,
             child: CustomScrollView(
               // AlwaysScrollable so the pull-to-refresh works even when the
               // content doesn't fill the screen.

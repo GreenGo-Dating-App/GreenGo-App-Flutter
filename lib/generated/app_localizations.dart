@@ -47630,6 +47630,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'The cover picture could not be saved. Please try another picture.'**
   String get communitiesCoverUploadFailed;
+
+  /// Explore pull-to-refresh location update snackbar
+  ///
+  /// In en, this message translates to:
+  /// **'Location updated'**
+  String get pullLocationUpdated;
+
+  /// Explore pull-to-refresh: the location was updated to this city
+  ///
+  /// In en, this message translates to:
+  /// **'Location updated: {city}'**
+  String pullLocationUpdatedCity(String city);
+
+  /// Explore pull-to-refresh location update snackbar
+  ///
+  /// In en, this message translates to:
+  /// **'Location up to date'**
+  String get pullLocationUpToDate;
+
+  /// Explore pull-to-refresh location update snackbar
+  ///
+  /// In en, this message translates to:
+  /// **'Traveler mode is on: your travel location is kept'**
+  String get pullLocationTravelerKept;
+
+  /// Explore pull-to-refresh location update snackbar
+  ///
+  /// In en, this message translates to:
+  /// **'Location services are off. Showing results for your saved location.'**
+  String get pullLocationServiceOff;
+
+  /// Explore pull-to-refresh location update snackbar
+  ///
+  /// In en, this message translates to:
+  /// **'Location access is off. Showing results for your saved location.'**
+  String get pullLocationPermissionOff;
+
+  /// Explore pull-to-refresh location update snackbar
+  ///
+  /// In en, this message translates to:
+  /// **'Location is blocked in this browser. Allow it in the site settings to update it.'**
+  String get pullLocationBlockedInBrowser;
+
+  /// Explore pull-to-refresh location update snackbar
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t get your location. Showing results for your saved location.'**
+  String get pullLocationUnavailable;
+
+  /// Explore pull-to-refresh location update snackbar
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get pullLocationOpenSettings;
+
+  /// Explore pull-to-refresh location update snackbar
+  ///
+  /// In en, this message translates to:
+  /// **'Allow'**
+  String get pullLocationAllow;
 }
 
 class _AppLocalizationsDelegate

@@ -28191,4 +28191,41 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get communitiesCoverUploadFailed =>
       'Impossibile salvare l’immagine di copertina. Prova con un’altra immagine.';
+
+  @override
+  String get pullLocationUpdated => 'Posizione aggiornata';
+
+  @override
+  String pullLocationUpdatedCity(String city) {
+    return 'Posizione aggiornata: $city';
+  }
+
+  @override
+  String get pullLocationUpToDate => 'Posizione già aggiornata';
+
+  @override
+  String get pullLocationTravelerKept =>
+      'La modalità viaggiatore è attiva: la tua posizione di viaggio viene mantenuta';
+
+  @override
+  String get pullLocationServiceOff =>
+      'I servizi di localizzazione sono disattivati. Risultati per la posizione salvata.';
+
+  @override
+  String get pullLocationPermissionOff =>
+      'L\'accesso alla posizione è disattivato. Risultati per la posizione salvata.';
+
+  @override
+  String get pullLocationBlockedInBrowser =>
+      'La posizione è bloccata in questo browser. Consentila nelle impostazioni del sito per aggiornarla.';
+
+  @override
+  String get pullLocationUnavailable =>
+      'Impossibile ottenere la tua posizione. Risultati per la posizione salvata.';
+
+  @override
+  String get pullLocationOpenSettings => 'Impostazioni';
+
+  @override
+  String get pullLocationAllow => 'Consenti';
 }

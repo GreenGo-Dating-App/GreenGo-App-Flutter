@@ -28224,4 +28224,41 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get communitiesCoverUploadFailed =>
       'Das Titelbild konnte nicht gespeichert werden. Bitte versuche ein anderes Bild.';
+
+  @override
+  String get pullLocationUpdated => 'Standort aktualisiert';
+
+  @override
+  String pullLocationUpdatedCity(String city) {
+    return 'Standort aktualisiert: $city';
+  }
+
+  @override
+  String get pullLocationUpToDate => 'Standort ist aktuell';
+
+  @override
+  String get pullLocationTravelerKept =>
+      'Reisemodus ist aktiv: Dein Reiseort bleibt erhalten';
+
+  @override
+  String get pullLocationServiceOff =>
+      'Die Ortungsdienste sind aus. Ergebnisse für deinen gespeicherten Standort.';
+
+  @override
+  String get pullLocationPermissionOff =>
+      'Der Standortzugriff ist aus. Ergebnisse für deinen gespeicherten Standort.';
+
+  @override
+  String get pullLocationBlockedInBrowser =>
+      'Der Standort ist in diesem Browser blockiert. Erlaube ihn in den Website-Einstellungen, um ihn zu aktualisieren.';
+
+  @override
+  String get pullLocationUnavailable =>
+      'Dein Standort konnte nicht ermittelt werden. Ergebnisse für deinen gespeicherten Standort.';
+
+  @override
+  String get pullLocationOpenSettings => 'Einstellungen';
+
+  @override
+  String get pullLocationAllow => 'Erlauben';
 }

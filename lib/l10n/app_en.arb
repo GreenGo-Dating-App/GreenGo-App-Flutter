@@ -17749,5 +17749,50 @@
   "communitiesCoverUploadFailed": "The cover picture could not be saved. Please try another picture.",
   "@communitiesCoverUploadFailed": {
     "description": "Error when the new community cover picture failed to upload or was held by moderation"
+  },
+  "pullLocationUpdated": "Location updated",
+  "@pullLocationUpdated": {
+    "description": "Explore pull-to-refresh location update snackbar"
+  },
+  "pullLocationUpdatedCity": "Location updated: {city}",
+  "@pullLocationUpdatedCity": {
+    "description": "Explore pull-to-refresh: the location was updated to this city",
+    "placeholders": {
+      "city": {
+        "type": "String"
+      }
+    }
+  },
+  "pullLocationUpToDate": "Location up to date",
+  "@pullLocationUpToDate": {
+    "description": "Explore pull-to-refresh location update snackbar"
+  },
+  "pullLocationTravelerKept": "Traveler mode is on: your travel location is kept",
+  "@pullLocationTravelerKept": {
+    "description": "Explore pull-to-refresh location update snackbar"
+  },
+  "pullLocationServiceOff": "Location services are off. Showing results for your saved location.",
+  "@pullLocationServiceOff": {
+    "description": "Explore pull-to-refresh location update snackbar"
+  },
+  "pullLocationPermissionOff": "Location access is off. Showing results for your saved location.",
+  "@pullLocationPermissionOff": {
+    "description": "Explore pull-to-refresh location update snackbar"
+  },
+  "pullLocationBlockedInBrowser": "Location is blocked in this browser. Allow it in the site settings to update it.",
+  "@pullLocationBlockedInBrowser": {
+    "description": "Explore pull-to-refresh location update snackbar"
+  },
+  "pullLocationUnavailable": "Couldn't get your location. Showing results for your saved location.",
+  "@pullLocationUnavailable": {
+    "description": "Explore pull-to-refresh location update snackbar"
+  },
+  "pullLocationOpenSettings": "Settings",
+  "@pullLocationOpenSettings": {
+    "description": "Explore pull-to-refresh location update snackbar"
+  },
+  "pullLocationAllow": "Allow",
+  "@pullLocationAllow": {
+    "description": "Explore pull-to-refresh location update snackbar"
   }
 }

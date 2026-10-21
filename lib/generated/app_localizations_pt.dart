@@ -28123,6 +28123,43 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get communitiesCoverUploadFailed =>
       'Não foi possível guardar a imagem de capa. Experimente outra imagem.';
+
+  @override
+  String get pullLocationUpdated => 'Localização atualizada';
+
+  @override
+  String pullLocationUpdatedCity(String city) {
+    return 'Localização atualizada: $city';
+  }
+
+  @override
+  String get pullLocationUpToDate => 'Localização em dia';
+
+  @override
+  String get pullLocationTravelerKept =>
+      'O modo viajante está ativo: a tua localização de viagem é mantida';
+
+  @override
+  String get pullLocationServiceOff =>
+      'Os serviços de localização estão desligados. Resultados para a tua localização guardada.';
+
+  @override
+  String get pullLocationPermissionOff =>
+      'O acesso à localização está desligado. Resultados para a tua localização guardada.';
+
+  @override
+  String get pullLocationBlockedInBrowser =>
+      'A localização está bloqueada neste navegador. Permite-a nas definições do site para a atualizar.';
+
+  @override
+  String get pullLocationUnavailable =>
+      'Não foi possível obter a tua localização. Resultados para a tua localização guardada.';
+
+  @override
+  String get pullLocationOpenSettings => 'Definições';
+
+  @override
+  String get pullLocationAllow => 'Permitir';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -56249,4 +56286,41 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get communitiesCoverUploadFailed =>
       'Não foi possível salvar a imagem de capa. Tente outra imagem.';
+
+  @override
+  String get pullLocationUpdated => 'Localização atualizada';
+
+  @override
+  String pullLocationUpdatedCity(String city) {
+    return 'Localização atualizada: $city';
+  }
+
+  @override
+  String get pullLocationUpToDate => 'Localização em dia';
+
+  @override
+  String get pullLocationTravelerKept =>
+      'O modo viajante está ativo: sua localização de viagem é mantida';
+
+  @override
+  String get pullLocationServiceOff =>
+      'Os serviços de localização estão desativados. Resultados para sua localização salva.';
+
+  @override
+  String get pullLocationPermissionOff =>
+      'O acesso à localização está desativado. Resultados para sua localização salva.';
+
+  @override
+  String get pullLocationBlockedInBrowser =>
+      'A localização está bloqueada neste navegador. Permita-a nas configurações do site para atualizá-la.';
+
+  @override
+  String get pullLocationUnavailable =>
+      'Não foi possível obter sua localização. Resultados para sua localização salva.';
+
+  @override
+  String get pullLocationOpenSettings => 'Configurações';
+
+  @override
+  String get pullLocationAllow => 'Permitir';
 }
