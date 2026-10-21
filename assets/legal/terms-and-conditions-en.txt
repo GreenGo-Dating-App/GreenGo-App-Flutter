@@ -1,12 +1,13 @@
 GREENGO TERMS AND CONDITIONS
 
-Version: 5.3.2
-Effective date: 17 October 2026 for accounts created on or after
+Version: 5.3.3
+Effective date: 21 October 2026 for accounts created on or after
   16 October 2026; 16 November 2026 for accounts created before
   16 October 2026
-Announced: 17 October 2026
-Previous version: 5.2.1 (16 October 2026), which continues to apply to accounts
-  created before 16 October 2026 until 15 November 2026
+Announced: 21 October 2026
+Previous version: 5.3.2 (17 October 2026) for accounts created on or after
+  16 October 2026; 5.2.1 (16 October 2026), which continues to apply to
+  accounts created before 16 October 2026 until 15 November 2026
 
 ================================================================================
 1. ABOUT THESE TERMS
@@ -475,6 +476,15 @@ f) Price phases: the organiser of a paid Event can sell its tickets in price
    If the phase changes while you are paying, we show you the new price
    before you confirm. Together, the price phases cannot hold more tickets
    than the Event's capacity.
+g) If the organiser cancels or deletes a paid Event before it ends, every
+   buyer, with or without an account, automatically gets a full refund of
+   the ticket price to the original payment method, through the organiser's
+   own Stripe or Mercado Pago account. GreenGo returns its service fee to the
+   organiser (section 11.6 f). The payment providers' own processing fees are
+   not refunded by GreenGo. If an automatic refund fails, the organiser must
+   refund the buyer directly and upload proof of the refund in the app;
+   GreenGo reviews the proof and tells the buyer. GreenGo does not pay
+   refunds from its own funds.
 
 11.3 Event check-in uses a QR code in the app. For paid Events the QR code is
 issued only after your payment is confirmed. Guests who book without an
@@ -581,10 +591,15 @@ f) These Terms apply to guest bookings as far as they are relevant.
   goes to the Host's account: the payment does not pass through GreenGo, and
   GreenGo does not hold payments for Experiences. GreenGo receives only its
   service fee, which the Host pays (section 11.6).
-- Refunds: if the Host removes a booked time or cancels a booking, GreenGo
-  starts a full refund to the Guest through the Host's own Stripe or Mercado
-  Pago account. In all other cases, refunds follow the Host's cancellation
-  policy and are paid by the Host.
+- Refunds: if the Host cancels a booking or a whole time slot, removes a
+  booked time or deletes the Experience, the Guest automatically gets a full
+  refund of the price paid to the original payment method, through the
+  Host's own Stripe or Mercado Pago account. GreenGo returns its service fee
+  to the Host; the payment providers' own processing fees are not refunded
+  by GreenGo. If an automatic refund fails, the Host must refund the Guest
+  directly and upload proof of the refund in the app; GreenGo reviews the
+  proof. In all other cases, refunds follow the Host's cancellation policy
+  and are paid by the Host.
 - Only Hosts with an active Business account (section 13) can publish paid
   Experiences. How many Experiences a Host can have at a time depends on the
   Host's plan (section 11.7).
@@ -630,12 +645,14 @@ New Hosts may publish only one paid Experience until they have 3 reviews.
 a) Read the listing and the cancellation policy before booking.
 b) Pay only through the in-app checkout. Never pay a Host outside GreenGo,
    for example with a payment link, a bank transfer or cash.
-c) If the Host removes your booked time or cancels your booking, GreenGo
-   starts a full refund to you through the Host's own Stripe or Mercado Pago
-   account. Otherwise, refunds follow the Host's cancellation policy and are
-   paid by the Host. If something goes wrong, you can open a dispute in the
-   app within the window shown. GreenGo will look at it and may record a
-   refund owed by the Host, or take action against the Host's account.
+c) If the Host cancels your booking or your time slot, removes your booked
+   time or deletes the Experience, you automatically get a full refund to
+   your original payment method, through the Host's own Stripe or Mercado
+   Pago account (section 12.2). Otherwise, refunds follow the Host's
+   cancellation policy and are paid by the Host. If something goes wrong,
+   you can open a dispute in the app within the window shown. GreenGo will
+   look at it and may record a refund owed by the Host, or take action
+   against the Host's account.
    GreenGo itself does not pay refunds for Experiences from its own funds.
 d) To book an Experience as a member, you do not need an identity document
    (section 4.4).
@@ -1037,6 +1054,13 @@ https://greengochat.com/child-safety.
 - in the app, under Profile > Delete Account;
 - on the web, at https://greengochat.com/delete-account.
 
+You cannot delete your account while, as an organiser or Host, you have
+upcoming or ongoing Events or Experiences with paid tickets or bookings that
+have not been refunded, or refunds that are not finished (for example a failed
+refund whose proof GreenGo has not yet accepted). Cancel them first: buyers
+are refunded automatically (sections 11.2 g and 12.2). The app shows you what
+is still open.
+
 When you delete your account:
 - a Membership bought on the web is cancelled automatically;
 - a Membership bought in the iOS or Android app is not: cancel it in the
@@ -1261,6 +1285,22 @@ Copyright (DMCA): copyright@greengochat.com
 ================================================================================
 VERSION HISTORY
 ================================================================================
+
+5.3.3 - effective 21 October 2026 for accounts created on or after
+16 October 2026; 16 November 2026 for accounts created before 16 October 2026
+(announced 21 October 2026)
+- Section 11.2 g: if the organiser cancels or deletes a paid Event, every
+  buyer, with or without an account, automatically gets a full refund of the
+  ticket price to the original payment method; GreenGo returns its service
+  fee to the organiser; payment providers' processing fees are not refunded
+  by GreenGo; if an automatic refund fails, the organiser refunds the buyer
+  directly and uploads proof, which GreenGo reviews.
+- Sections 12.2 and 12.5 c: automatic full refund to the Guest when the Host
+  cancels a booking or a time slot, removes a booked time or deletes the
+  Experience; the same rules for fees and failed refunds.
+- Section 20.1: an account cannot be deleted while it has upcoming or ongoing
+  Events or Experiences with paid tickets or bookings that have not been
+  refunded, or refunds that are not finished.
 
 5.3.2 - effective 17 October 2026 for accounts created on or after
 16 October 2026; 16 November 2026 for accounts created before 16 October 2026

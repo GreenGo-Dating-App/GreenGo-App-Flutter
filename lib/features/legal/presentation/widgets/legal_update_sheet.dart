@@ -119,6 +119,18 @@ List<String> legalUpdateBullets(AppLocalizations l10n, String? version) =>
           l10n.legalUpdate531BulletFeeCaps,
           l10n.legalUpdate532BulletPhases,
         ],
+      // 5.3.3 = 5.3.2 + automatic refunds when a seller cancels and the
+      // account-deletion rule (20.1).
+      '5.3.3' => [
+          l10n.legalUpdate530BulletReferral,
+          l10n.legalUpdate530BulletCoinGifts,
+          l10n.legalUpdate530BulletMenus,
+          l10n.legalUpdate530BulletModeration,
+          l10n.legalUpdate530BulletTraders,
+          l10n.legalUpdate531BulletFeeCaps,
+          l10n.legalUpdate532BulletPhases,
+          l10n.legalUpdate533BulletRefunds,
+        ],
       _ => const <String>[],
     };
 

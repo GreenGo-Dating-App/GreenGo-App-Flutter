@@ -118,16 +118,16 @@ describe('adminSendTermsChangeNotice', () => {
   });
 
   test('superAdmin only; known versions only', async () => {
-    await expectCode(call({ version: '5.3.2' }), 'unauthenticated');
-    await expectCode(call({ version: '5.3.2' }, 'mod'), 'permission-denied');
-    await expectCode(call({ version: '5.3.2' }, 'nobody'), 'permission-denied');
+    await expectCode(call({ version: '5.3.3' }), 'unauthenticated');
+    await expectCode(call({ version: '5.3.3' }, 'mod'), 'permission-denied');
+    await expectCode(call({ version: '5.3.3' }, 'nobody'), 'permission-denied');
     await expectCode(call({ version: '9.9.9' }, 'boss'), 'invalid-argument', /unknown_version/);
     // 5.3.2 (after 5.3.1) replaced 5.3.0 before it took effect for existing accounts.
     await expectCode(call({ version: '5.3.0' }, 'boss'), 'invalid-argument', /unknown_version/);
   });
 
   test('dry run is the default: counts, preview, no email, no claim, no run record', async () => {
-    const r = await call({ version: '5.3.2' }, 'boss');
+    const r = await call({ version: '5.3.3' }, 'boss');
     expect(r).toMatchObject({ dryRun: true, sent: 0, failed: 0, alreadySent: 0, done: true, nextCursor: null,
       effectiveDate: '2026-11-16', url: 'https://greengochat.com/terms-of-service/upcoming' });
     // 6 users docs + the 2 admin_users are not users: processed counts users docs only.
@@ -140,7 +140,7 @@ describe('adminSendTermsChangeNotice', () => {
     expect(r.preview.subject).toContain('16 November 2026');
     expect(sent).toHaveLength(0);
     expect((await db.collection(EMAIL_DISPATCH).get()).size).toBe(0);
-    expect((await db.doc(`${NOTICE_RUNS}/terms_5.3.2`).get()).exists).toBe(false);
+    expect((await db.doc(`${NOTICE_RUNS}/terms_5.3.3`).get()).exists).toBe(false);
   });
 
   test('live run in pages of 2, each user once, in their language; a re-run sends nothing', async () => {
@@ -148,7 +148,7 @@ describe('adminSendTermsChangeNotice', () => {
     let pages = 0;
     let total = 0;
     do {
-      const r: any = await call({ version: '5.3.2', dryRun: false, pageSize: 2, cursor }, 'boss');
+      const r: any = await call({ version: '5.3.3', dryRun: false, pageSize: 2, cursor }, 'boss');
       pages++;
       total += r.sent;
       expect(r.processed).toBeLessThanOrEqual(2);
@@ -163,22 +163,22 @@ describe('adminSendTermsChangeNotice', () => {
     expect(byTo['b@example.com'].subject).toMatch(/^Nossos Termos mudam em 16 de novembro de 2026/);
     expect(byTo['c@example.com'].subject).toMatch(/^Our Terms are changing on 16 November 2026/);
     expect(byTo['e@example.com'].text).toContain('billing@greengochat.com');
-    const claim = (await db.doc(`${EMAIL_DISPATCH}/${noticeKey('5.3.2', 'n_a')}`).get()).data()!;
+    const claim = (await db.doc(`${EMAIL_DISPATCH}/${noticeKey('5.3.3', 'n_a')}`).get()).data()!;
     expect(claim.status).toBe('sent');
-    const run = (await db.doc(`${NOTICE_RUNS}/terms_5.3.2`).get()).data()!;
+    const run = (await db.doc(`${NOTICE_RUNS}/terms_5.3.3`).get()).data()!;
     expect(run).toMatchObject({ sent: 4, skippedNoEmail: 1, skippedNewAccounts: 1, done: true, updatedBy: 'boss' });
 
-    const again = await call({ version: '5.3.2', dryRun: false, pageSize: 500 }, 'boss');
+    const again = await call({ version: '5.3.3', dryRun: false, pageSize: 500 }, 'boss');
     expect(again).toMatchObject({ sent: 0, alreadySent: 4, done: true });
     expect(sent).toHaveLength(4);
-    const dry = await call({ version: '5.3.2' }, 'boss');
+    const dry = await call({ version: '5.3.3' }, 'boss');
     expect(dry.alreadySent).toBe(4);
   });
 
   test('refused once the change has taken effect', async () => {
     emailDeps.now = () => Date.parse('2026-11-16T00:00:00Z');
     try {
-      await expectCode(call({ version: '5.3.2', dryRun: false }, 'boss'), 'failed-precondition', /notice_period_over/);
+      await expectCode(call({ version: '5.3.3', dryRun: false }, 'boss'), 'failed-precondition', /notice_period_over/);
     } finally {
       emailDeps.now = () => Date.parse('2026-10-16T12:00:00Z');
     }
@@ -246,7 +246,7 @@ describe('trader declaration', () => {
   });
 
   test('rules: declarations and notice runs admin-only; public part signed-in read-only', async () => {
-    await db.doc(`${NOTICE_RUNS}/terms_5.3.2`).set({ sent: 1 });
+    await db.doc(`${NOTICE_RUNS}/terms_5.3.3`).set({ sent: 1 });
     expect(await rest('host1', 'GET', `${TRADER}/host1`)).toBe(403);
     expect(await rest('other', 'GET', `${TRADER}/host1`)).toBe(403);
     expect(await rest('boss', 'GET', `${TRADER}/host1`)).toBe(200);
@@ -254,8 +254,8 @@ describe('trader declaration', () => {
     expect(await rest('other', 'GET', `${TRADER_PUBLIC}/host1`)).toBe(200);
     expect(await rest(null, 'GET', `${TRADER_PUBLIC}/host1`)).toBe(403);
     expect(await rest('host1', 'PATCH', `${TRADER_PUBLIC}/host1`, { fields: { name: { stringValue: 'Fake' } } })).toBe(403);
-    expect(await rest('host1', 'GET', `${NOTICE_RUNS}/terms_5.3.2`)).toBe(403);
-    expect(await rest('boss', 'GET', `${NOTICE_RUNS}/terms_5.3.2`)).toBe(200);
+    expect(await rest('host1', 'GET', `${NOTICE_RUNS}/terms_5.3.3`)).toBe(403);
+    expect(await rest('boss', 'GET', `${NOTICE_RUNS}/terms_5.3.3`)).toBe(200);
   });
 });
 

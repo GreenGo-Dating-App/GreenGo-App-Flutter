@@ -1,12 +1,14 @@
 TERMINI E CONDIZIONI DI GREENGO
 
-Versione: 5.3.2
-Data di entrata in vigore: 17 ottobre 2026 per gli account creati dal
+Versione: 5.3.3
+Data di entrata in vigore: 21 ottobre 2026 per gli account creati dal
   16 ottobre 2026 in poi; 16 novembre 2026 per gli account creati prima del
   16 ottobre 2026
-Annunciata il: 17 ottobre 2026
-Versione precedente: 5.2.1 (16 ottobre 2026), che continua ad applicarsi agli
-  account creati prima del 16 ottobre 2026 fino al 15 novembre 2026
+Annunciata il: 21 ottobre 2026
+Versione precedente: 5.3.2 (17 ottobre 2026) per gli account creati dal
+  16 ottobre 2026 in poi; 5.2.1 (16 ottobre 2026), che continua ad
+  applicarsi agli account creati prima del 16 ottobre 2026 fino al
+  15 novembre 2026
 
 ================================================================================
 1. INFORMAZIONI SU QUESTI TERMINI
@@ -521,6 +523,16 @@ f) Fasi di prezzo: l'organizzatore di un Evento a pagamento può vendere i
    Se la fase cambia mentre stai pagando, ti mostriamo il nuovo prezzo prima
    che tu confermi. Nel complesso, le fasi di prezzo non possono contenere
    più biglietti della capienza dell'Evento.
+g) Se l'organizzatore annulla o elimina un Evento a pagamento prima che
+   termini, ogni acquirente, con o senza account, riceve automaticamente un
+   rimborso completo del prezzo del biglietto sul metodo di pagamento
+   originale, tramite l'account Stripe o Mercado Pago dell'organizzatore.
+   GreenGo restituisce la propria commissione di servizio all'organizzatore
+   (sezione 11.6 f). Le commissioni di elaborazione dei fornitori di
+   pagamento non vengono rimborsate da GreenGo. Se un rimborso automatico non
+   va a buon fine, l'organizzatore deve rimborsare direttamente l'acquirente
+   e caricare nell'app una prova del rimborso; GreenGo esamina la prova e
+   informa l'acquirente. GreenGo non paga rimborsi con fondi propri.
 
 11.3 Il check-in agli Eventi utilizza un codice QR nell'app. Per gli Eventi a
 pagamento il codice QR viene emesso solo dopo la conferma del tuo pagamento. I
@@ -642,11 +654,16 @@ f) I presenti Termini si applicano alle prenotazioni dei visitatori in quanto
   sull'account dell'Host: il pagamento non transita attraverso GreenGo e
   GreenGo non detiene i pagamenti per le Esperienze. GreenGo riceve solo la
   propria commissione di servizio, pagata dall'Host (sezione 11.6).
-- Rimborsi: se l'Host rimuove un orario prenotato o annulla una
-  prenotazione, GreenGo avvia un rimborso completo all'Ospite tramite
-  l'account Stripe o Mercado Pago dell'Host. In tutti gli altri casi, i
-  rimborsi seguono la politica di annullamento dell'Host e sono pagati
-  dall'Host.
+- Rimborsi: se l'Host annulla una prenotazione o un'intera fascia oraria,
+  rimuove un orario prenotato o elimina l'Esperienza, l'Ospite riceve
+  automaticamente un rimborso completo del prezzo pagato sul metodo di
+  pagamento originale, tramite l'account Stripe o Mercado Pago dell'Host.
+  GreenGo restituisce la propria commissione di servizio all'Host; le
+  commissioni di elaborazione dei fornitori di pagamento non vengono
+  rimborsate da GreenGo. Se un rimborso automatico non va a buon fine, l'Host
+  deve rimborsare direttamente l'Ospite e caricare nell'app una prova del
+  rimborso; GreenGo esamina la prova. In tutti gli altri casi, i rimborsi
+  seguono la politica di annullamento dell'Host e sono pagati dall'Host.
 - Solo gli Host con un Account business attivo (sezione 13) possono
   pubblicare Esperienze a pagamento. Quante Esperienze un Host può avere
   contemporaneamente dipende dal suo piano (sezione 11.7).
@@ -697,14 +714,16 @@ a) Leggi l'annuncio e la politica di annullamento prima di prenotare.
 b) Paga solo tramite il checkout nell'app. Non pagare mai un Host al di fuori
    di GreenGo, ad esempio con un link di pagamento, un bonifico bancario o in
    contanti.
-c) Se l'Host rimuove il tuo orario prenotato o annulla la tua prenotazione,
-   GreenGo avvia un rimborso completo a tuo favore tramite l'account Stripe o
-   Mercado Pago dell'Host. Negli altri casi, i rimborsi seguono la politica di
-   annullamento dell'Host e sono pagati dall'Host. Se qualcosa va storto, puoi
-   aprire una controversia nell'app entro il periodo indicato. GreenGo la
-   esaminerà e potrà registrare un rimborso dovuto dall'Host, o adottare
-   misure nei confronti dell'account dell'Host. GreenGo non paga rimborsi per
-   le Esperienze con fondi propri.
+c) Se l'Host annulla la tua prenotazione o la tua fascia oraria, rimuove il
+   tuo orario prenotato o elimina l'Esperienza, ricevi automaticamente un
+   rimborso completo sul tuo metodo di pagamento originale, tramite
+   l'account Stripe o Mercado Pago dell'Host (sezione 12.2). Negli altri
+   casi, i rimborsi seguono la politica di annullamento dell'Host e sono
+   pagati dall'Host. Se qualcosa va storto, puoi aprire una controversia
+   nell'app entro il periodo indicato. GreenGo la esaminerà e potrà
+   registrare un rimborso dovuto dall'Host, o adottare misure nei confronti
+   dell'account dell'Host. GreenGo non paga rimborsi per le Esperienze con
+   fondi propri.
 d) Per prenotare un'Esperienza come membro, non ti serve un documento
    d'identità (sezione 4.4).
 
@@ -1130,6 +1149,13 @@ momento:
 - nell'app, in Profilo > Elimina Account;
 - sul web, all'indirizzo https://greengochat.com/delete-account.
 
+Non puoi eliminare il tuo account finché, come organizzatore o Host, hai
+Eventi o Esperienze imminenti o in corso con biglietti o prenotazioni a
+pagamento non rimborsati, o rimborsi non completati (ad esempio un rimborso
+non riuscito la cui prova GreenGo non ha ancora accettato). Annullali prima:
+gli acquirenti vengono rimborsati automaticamente (sezioni 11.2 g e 12.2).
+L'app ti mostra cosa è ancora in sospeso.
+
 Quando elimini il tuo account:
 - un Abbonamento acquistato sul web viene annullato automaticamente;
 - un Abbonamento acquistato nell'app iOS o Android non lo è: annullalo nello
@@ -1365,6 +1391,25 @@ Diritto d'autore (DMCA): copyright@greengochat.com
 ================================================================================
 CRONOLOGIA DELLE VERSIONI
 ================================================================================
+
+5.3.3 - in vigore dal 21 ottobre 2026 per gli account creati dal 16 ottobre
+2026 in poi; dal 16 novembre 2026 per gli account creati prima del 16 ottobre
+2026 (annunciata il 21 ottobre 2026)
+- Sezione 11.2 g: se l'organizzatore annulla o elimina un Evento a
+  pagamento, ogni acquirente, con o senza account, riceve automaticamente un
+  rimborso completo del prezzo del biglietto sul metodo di pagamento
+  originale; GreenGo restituisce la propria commissione di servizio
+  all'organizzatore; le commissioni di elaborazione dei fornitori di
+  pagamento non vengono rimborsate da GreenGo; se un rimborso automatico non
+  va a buon fine, l'organizzatore rimborsa direttamente l'acquirente e
+  carica una prova, che GreenGo esamina.
+- Sezioni 12.2 e 12.5 c: rimborso completo automatico all'Ospite quando
+  l'Host annulla una prenotazione o una fascia oraria, rimuove un orario
+  prenotato o elimina l'Esperienza; le stesse regole per le commissioni e i
+  rimborsi non riusciti.
+- Sezione 20.1: un account non può essere eliminato finché ha Eventi o
+  Esperienze imminenti o in corso con biglietti o prenotazioni a pagamento
+  non rimborsati, o rimborsi non completati.
 
 5.3.2 - in vigore dal 17 ottobre 2026 per gli account creati dal 16 ottobre
 2026 in poi; dal 16 novembre 2026 per gli account creati prima del 16 ottobre

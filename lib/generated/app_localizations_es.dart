@@ -25945,6 +25945,10 @@ class AppLocalizationsEs extends AppLocalizations {
       'Fases de precio para las entradas de eventos (por ejemplo, anticipada) y la oferta de lanzamiento 2026: 50 % de descuento en el primer periodo de una nueva Membresía';
 
   @override
+  String get legalUpdate533BulletRefunds =>
+      'Reembolso completo automático cuando un organizador cancela un evento de pago o un anfitrión cancela una reserva; las cuentas con ventas pagadas aún no reembolsadas no se pueden eliminar';
+
+  @override
   String get legalUpdateCloseAccount => 'No acepto: cerrar mi cuenta';
 
   @override

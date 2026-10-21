@@ -8189,6 +8189,7 @@
   "legalUpdate530BulletTraders": "Los comerciantes que venden Experiencias a personas en la UE deben facilitar sus datos de comerciante",
   "legalUpdate531BulletFeeCaps": "Tope más alto de la tarifa de servicio de GreenGo por entrada para vendedores: Silver 30 US$, Gold 28 US$, Platinum 25 US$",
   "legalUpdate532BulletPhases": "Fases de precio para las entradas de eventos (por ejemplo, anticipada) y la oferta de lanzamiento 2026: 50 % de descuento en el primer periodo de una nueva Membresía",
+  "legalUpdate533BulletRefunds": "Reembolso completo automático cuando un organizador cancela un evento de pago o un anfitrión cancela una reserva; las cuentas con ventas pagadas aún no reembolsadas no se pueden eliminar",
   "legalUpdateCloseAccount": "No acepto: cerrar mi cuenta",
   "legalUpdateCloseAccountTitle": "Cerrar tu cuenta",
   "legalUpdateCloseAccountBody": "Si no aceptas los nuevos Términos, puedes poner fin a tu contrato con GreenGo sin coste eliminando tu cuenta. Si pagaste una Membresía por adelantado, te reembolsamos la parte no usada: escribe a {email}.\n\nDespués, abre tu Perfil y toca «Eliminar Cuenta» al final.",

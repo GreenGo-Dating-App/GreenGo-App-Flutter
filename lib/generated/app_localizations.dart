@@ -44004,6 +44004,12 @@ abstract class AppLocalizations {
   /// **'Ticket price phases for events (for example early bird), and the 2026 launch offer: 50% off the first period of a new Membership'**
   String get legalUpdate532BulletPhases;
 
+  /// Terms 5.3.3 "what changes" bullet: automatic full refunds when a seller cancels (11.2 g, 12.2) and no account deletion while paid sales are not refunded (20.1) (re-acceptance sheet and advance notice).
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic full refunds when an organiser cancels a paid event or a host cancels a booking; accounts with paid sales not yet refunded cannot be deleted'**
+  String get legalUpdate533BulletRefunds;
+
   /// Third option of the Terms re-acceptance sheet (Terms 24.2 c).
   ///
   /// In en, this message translates to:

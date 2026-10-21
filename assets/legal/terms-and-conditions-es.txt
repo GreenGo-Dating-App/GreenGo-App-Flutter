@@ -1,13 +1,14 @@
 TÉRMINOS Y CONDICIONES DE GREENGO
 
-Versión: 5.3.2
-Fecha de entrada en vigor: 17 de octubre de 2026 para las cuentas creadas a
+Versión: 5.3.3
+Fecha de entrada en vigor: 21 de octubre de 2026 para las cuentas creadas a
   partir del 16 de octubre de 2026; 16 de noviembre de 2026 para las cuentas
   creadas antes del 16 de octubre de 2026
-Anunciada: 17 de octubre de 2026
-Versión anterior: 5.2.1 (16 de octubre de 2026), que se sigue aplicando a las
-  cuentas creadas antes del 16 de octubre de 2026 hasta el
-  15 de noviembre de 2026
+Anunciada: 21 de octubre de 2026
+Versión anterior: 5.3.2 (17 de octubre de 2026) para las cuentas creadas a
+  partir del 16 de octubre de 2026; 5.2.1 (16 de octubre de 2026), que se
+  sigue aplicando a las cuentas creadas antes del 16 de octubre de 2026
+  hasta el 15 de noviembre de 2026
 
 ================================================================================
 1. SOBRE ESTOS TÉRMINOS
@@ -517,6 +518,16 @@ f) Fases de precio: el organizador de un Evento de pago puede vender sus
    Si la fase cambia mientras estás pagando, te mostramos el nuevo precio
    antes de que confirmes. En conjunto, las fases de precio no pueden tener
    más entradas que el aforo del Evento.
+g) Si el organizador cancela o elimina un Evento de pago antes de que
+   termine, cada comprador, con o sin cuenta, recibe automáticamente un
+   reembolso completo del precio de la entrada en su método de pago original,
+   a través de la propia cuenta de Stripe o de Mercado Pago del organizador.
+   GreenGo devuelve su tarifa de servicio al organizador (sección 11.6 f).
+   GreenGo no reembolsa las comisiones de procesamiento de los proveedores de
+   pago. Si un reembolso automático falla, el organizador debe reembolsar
+   directamente al comprador y subir en la app un comprobante del reembolso;
+   GreenGo revisa el comprobante e informa al comprador. GreenGo no paga
+   reembolsos con sus propios fondos.
 
 11.3 El registro de entrada en los eventos utiliza un código QR en la app. En
 los Eventos de pago, el código QR solo se emite una vez confirmado tu pago.
@@ -636,11 +647,17 @@ f) Estos Términos se aplican a las reservas de visitantes en lo que resulte
   a la cuenta del Anfitrión: el pago no pasa por GreenGo, y GreenGo no
   retiene pagos de Experiencias. GreenGo solo recibe su tarifa de servicio,
   que paga el Anfitrión (sección 11.6).
-- Reembolsos: si el Anfitrión elimina un horario reservado o cancela una
-  reserva, GreenGo inicia un reembolso completo al Invitado a través de la
-  propia cuenta de Stripe o de Mercado Pago del Anfitrión. En todos los demás
-  casos, los reembolsos siguen la política de cancelación del Anfitrión y los
-  paga el Anfitrión.
+- Reembolsos: si el Anfitrión cancela una reserva o una franja horaria
+  completa, elimina un horario reservado o elimina la Experiencia, el
+  Invitado recibe automáticamente un reembolso completo del precio pagado en
+  su método de pago original, a través de la propia cuenta de Stripe o de
+  Mercado Pago del Anfitrión. GreenGo devuelve su tarifa de servicio al
+  Anfitrión; GreenGo no reembolsa las comisiones de procesamiento de los
+  proveedores de pago. Si un reembolso automático falla, el Anfitrión debe
+  reembolsar directamente al Invitado y subir en la app un comprobante del
+  reembolso; GreenGo revisa el comprobante. En todos los demás casos, los
+  reembolsos siguen la política de cancelación del Anfitrión y los paga el
+  Anfitrión.
 - Solo los Anfitriones con una Cuenta de empresa activa (sección 13) pueden
   publicar Experiencias de pago. Cuántas Experiencias puede tener un
   Anfitrión a la vez depende de su plan (sección 11.7).
@@ -690,12 +707,14 @@ a) Lee el anuncio y la política de cancelación antes de reservar.
 b) Paga solo a través del pago en la app. No pagues nunca a un Anfitrión
    fuera de GreenGo, por ejemplo con un enlace de pago, una transferencia
    bancaria o en efectivo.
-c) Si el Anfitrión elimina tu horario reservado o cancela tu reserva,
-   GreenGo inicia un reembolso completo a tu favor a través de la propia
-   cuenta de Stripe o de Mercado Pago del Anfitrión. En los demás casos, los
-   reembolsos siguen la política de cancelación del Anfitrión y los paga el
-   Anfitrión. Si algo sale mal, puedes abrir una disputa en la app dentro del
-   plazo indicado. GreenGo la examinará y podrá registrar un reembolso
+c) Si el Anfitrión cancela tu reserva o tu franja horaria, elimina tu
+   horario reservado o elimina la Experiencia, recibes automáticamente un
+   reembolso completo en tu método de pago original, a través de la propia
+   cuenta de Stripe o de Mercado Pago del Anfitrión (sección 12.2). En los
+   demás casos, los reembolsos siguen la política de cancelación del
+   Anfitrión y los paga el Anfitrión. Si algo sale mal, puedes abrir una
+   disputa en la app dentro del plazo indicado. GreenGo la examinará y podrá
+   registrar un reembolso
    adeudado por el Anfitrión, o tomar medidas contra la cuenta del Anfitrión.
    GreenGo no paga reembolsos de Experiencias con sus propios fondos.
 d) Para reservar una Experiencia como miembro, no necesitas un documento de
@@ -1128,6 +1147,13 @@ https://greengochat.com/child-safety.
 - en la app, en Perfil > Eliminar Cuenta;
 - en la web, en https://greengochat.com/delete-account.
 
+No puedes eliminar tu cuenta mientras, como organizador o Anfitrión, tengas
+Eventos o Experiencias próximos o en curso con entradas o reservas de pago
+que no se han reembolsado, o reembolsos sin terminar (por ejemplo, un
+reembolso fallido cuyo comprobante GreenGo aún no ha aceptado). Cancélalos
+primero: los compradores reciben el reembolso automáticamente (véanse las
+secciones 11.2 g y 12.2). La app te muestra lo que sigue pendiente.
+
 Cuando eliminas tu cuenta:
 - una Membresía comprada en la web se cancela automáticamente;
 - una Membresía comprada en la app de iOS o de Android no: cancélala en la
@@ -1364,6 +1390,25 @@ Derechos de autor (DMCA): copyright@greengochat.com
 ================================================================================
 HISTORIAL DE VERSIONES
 ================================================================================
+
+5.3.3 - en vigor desde el 21 de octubre de 2026 para las cuentas creadas a
+partir del 16 de octubre de 2026; desde el 16 de noviembre de 2026 para las
+cuentas creadas antes del 16 de octubre de 2026 (anunciada el 21 de octubre
+de 2026)
+- Sección 11.2 g: si el organizador cancela o elimina un Evento de pago, cada
+  comprador, con o sin cuenta, recibe automáticamente un reembolso completo
+  del precio de la entrada en su método de pago original; GreenGo devuelve su
+  tarifa de servicio al organizador; GreenGo no reembolsa las comisiones de
+  procesamiento de los proveedores de pago; si un reembolso automático falla,
+  el organizador reembolsa directamente al comprador y sube un comprobante,
+  que GreenGo revisa.
+- Secciones 12.2 y 12.5 c: reembolso completo automático al Invitado cuando
+  el Anfitrión cancela una reserva o una franja horaria, elimina un horario
+  reservado o elimina la Experiencia; las mismas reglas para las tarifas y
+  los reembolsos fallidos.
+- Sección 20.1: no se puede eliminar una cuenta mientras tenga Eventos o
+  Experiencias próximos o en curso con entradas o reservas de pago que no se
+  han reembolsado, o reembolsos sin terminar.
 
 5.3.2 - en vigor desde el 17 de octubre de 2026 para las cuentas creadas a
 partir del 16 de octubre de 2026; desde el 16 de noviembre de 2026 para las
