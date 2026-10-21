@@ -732,6 +732,10 @@ String? serverText(
       return l10n.srvHostReviewedYou;
     case 'srvHostReviewedYouBody':
       return l10n.srvHostReviewedYouBody;
+    case 'srvImageReviewApprovedBody':
+      return l10n.srvImageReviewApprovedBody;
+    case 'srvImageReviewApprovedTitle':
+      return l10n.srvImageReviewApprovedTitle;
     case 'srvJoinedYourCommunity':
       return l10n.srvJoinedYourCommunity;
     case 'srvJoinedYourEvent':

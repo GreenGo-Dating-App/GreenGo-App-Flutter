@@ -32,6 +32,7 @@ import '../shared/firebaseAdmin';
 import { t as tr } from '../shared/i18n';
 import { resolveLocale } from '../shared/i18n/recipientLocale';
 import { monitored } from '../shared/monitoring';
+import { syncLibraryAfterAppeal } from './mediaLibrary';
 import { MODERATION_ROLES, requireAdmin } from '../shared/adminAuth';
 import { authEmailOf, escapeHtml, sendEmailOnce } from '../emails/sendEmail';
 import { detailsTable, emailFrame } from '../emails/emailFormat';
@@ -214,6 +215,13 @@ export async function resolveAppeal(input: ResolveAppealInput): Promise<ResolveA
       moderatorNotes: explanation,
       statementOfReasons: { reasonCode: 'appeal', explanation, action: `appeal_${outcome}`, decidedBy: input.reviewerUid, decidedAt: now, automated: false },
     }, { merge: true });
+  }
+  // My pictures: an upheld appeal on a held image makes the hold final; an
+  // overturned one was re-approved by restoreQuarantined (reverseEffects).
+  try {
+    await syncLibraryAfterAppeal(decision, outcome);
+  } catch (e) {
+    console.error(`[appeals] library sync for ${appealId} failed:`, e);
   }
   await db().collection('moderation_actions_log').add({
     moderatorId: input.reviewerUid,

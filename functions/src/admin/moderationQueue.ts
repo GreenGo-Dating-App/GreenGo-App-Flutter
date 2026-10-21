@@ -15,6 +15,8 @@ import {
   applyBan, applySuspension, backupMessage, DecisionEffect, recordStrike, recordWarning, restoreQuarantined,
 } from '../safety/moderationEffects';
 import { escalateIfRepeatOffender } from '../safety/repeatOffenders';
+import { resolveImageReview } from '../safety/imageReview';
+import { recordLibraryHoldFinal } from '../safety/mediaLibrary';
 import { originalDeciders, resolveAppeal, reverseDecisionOnReview } from '../safety/appealResolution';
 import { clearReporterReview, suspendReporting, SUSPEND_DAYS as REPORTER_SUSPEND_DAYS } from '../safety/reporterStanding';
 
@@ -542,6 +544,28 @@ export const takeModerationAction = functions.runWith({ memory: '512MB' }).https
     return { queueId, action, moderatorId, notes, statementOfReasons, appeal: r, success: true, errorMessage: null };
   }
 
+  // "Ask for a review" on a held picture (safety/imageReview.ts): approve =
+  // restore + publish to My pictures; removeContent = keep hidden + statement
+  // of reasons. No other action applies to a review request.
+  if (queueData.itemType === 'imageReview') {
+    if (action !== 'approve' && action !== 'removeContent') {
+      throw new functions.https.HttpsError('failed-precondition',
+        'imageReview items: approve = publish the picture, removeContent = keep it hidden');
+    }
+    const r = await resolveImageReview(queueData, action, moderatorId,
+      statementOfReasons ?? (notes ? { reasonCode: null, explanation: String(notes) } : null));
+    await logModerationAction(moderatorId, queueId, action, notes, statementOfReasons);
+    await firestore.collection('admin_audit_log').add({
+      adminId: moderatorId,
+      action: 'reviewedImageReview',
+      targetType: 'moderation_queue',
+      targetId: queueId,
+      details: { action, notes, userId: queueData.userId ?? null, outcome: r.outcome, statementOfReasons },
+      timestamp: admin.firestore.FieldValue.serverTimestamp(),
+    });
+    return { queueId, action, moderatorId, notes, statementOfReasons, imageReview: r, success: true, errorMessage: null };
+  }
+
   // A report re-opened by a reporter's appeal: not by the first decider.
   if (Array.isArray(queueData.excludedReviewers) && queueData.excludedReviewers.includes(moderatorId)) {
     throw new functions.https.HttpsError('permission-denied',
@@ -657,6 +681,14 @@ export const takeModerationAction = functions.runWith({ memory: '512MB' }).https
     // effects (for an appeal reversal). Best-effort: the action happened.
     try {
       if (queueData.itemType === 'quarantinedImage' && action === 'removeContent') {
+        // My pictures: a person confirmed the hold. Still appealable when the
+        // hold carried a DSA decision; otherwise final.
+        if (typeof queueData.objectPath === 'string' && typeof queueData.userId === 'string') {
+          const hadDecision = (await firestore.collection(MODERATION_DECISIONS).doc(queueId).get()).data()?.decisionId === queueId;
+          await recordLibraryHoldFinal({
+            uid: queueData.userId, objectPath: queueData.objectPath, reviewable: hadDecision,
+          }).catch((e) => console.error(`takeModerationAction: library update for ${queueId} failed:`, e));
+        }
         // The Vision hold already produced the decision: a person confirmed it.
         await firestore.collection(MODERATION_DECISIONS).doc(queueId).set({
           confirmedBy: moderatorId,

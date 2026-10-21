@@ -15,6 +15,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:showcaseview/showcaseview.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../media_library/presentation/my_pictures_screen.dart';
 import '../../../../core/platform/web_media.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/config/app_config.dart';
@@ -1006,6 +1007,15 @@ class _ChatScreenState extends State<ChatScreen> {
                   color: Colors.blue,
                   onTap: () => _pickImage(parentContext, ImageSource.camera),
                 ),
+                _buildAttachmentOption(
+                  sheetCtx,
+                  icon: Icons.collections_bookmark_outlined,
+                  label: AppLocalizations.of(sheetCtx)!.myPicturesTitle,
+                  color: Colors.amber,
+                  onTap: () => WidgetsBinding.instance.addPostFrameCallback((_) {
+                    if (mounted) _sendLibraryImage();
+                  }),
+                ),
               ],
             ),
             const SizedBox(height: 12),
@@ -1626,6 +1636,20 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   /// Send a photo from private album — bypasses media limit
+  /// My pictures: sends an already-approved picture by URL (no upload, no
+  /// second moderation pass). Counts as a media send like any image.
+  Future<void> _sendLibraryImage() async {
+    final item = await MyPicturesScreen.pick(context);
+    if (item == null || !item.isApproved || !mounted) return;
+    if (!await _checkMediaSendLimit(context)) return;
+    if (!mounted) return;
+    _addSend(ChatMessageSent(content: item.url!, type: MessageType.image));
+    await _usageLimitService.recordUsage(
+      userId: widget.currentUserId,
+      limitType: UsageLimitType.mediaSends,
+    );
+  }
+
   Future<void> _sendAlbumPhotosSequentially(List<String> photoUrls) async {
     for (final photoUrl in photoUrls) {
       if (!mounted) return;

@@ -15,6 +15,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:uuid/uuid.dart';
 import 'package:video_player/video_player.dart';
 
+import '../../../media_library/presentation/my_pictures_screen.dart';
 import '../../../../core/platform/web_media.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -509,6 +510,13 @@ class _GroupChatViewState extends State<_GroupChatView> {
                   color: Colors.green,
                   onTap: () => _sendLocation(parentContext),
                 ),
+                _attachmentOption(
+                  sheetCtx,
+                  icon: Icons.collections_bookmark_outlined,
+                  label: l10n.myPicturesTitle,
+                  color: Colors.amber,
+                  onTap: () => _sendLibraryImage(parentContext),
+                ),
               ],
             ),
             const SizedBox(height: 12),
@@ -606,6 +614,15 @@ class _GroupChatViewState extends State<_GroupChatView> {
         messenger.showSnackBar(SnackBar(content: Text(l10n.voiceFailedToSend)));
       }
     }
+  }
+
+  /// My pictures: sends an already-approved picture by URL (no upload).
+  Future<void> _sendLibraryImage(BuildContext context) async {
+    final bloc = context.read<GroupChatBloc>();
+    final item = await MyPicturesScreen.pick(context);
+    if (item == null || !item.isApproved) return;
+    bloc.add(GroupChatMessageSent(content: item.url!, type: MessageType.image));
+    AppSoundService().play(AppSound.messageSent);
   }
 
   Future<void> _sendVideo(BuildContext context, ImageSource source) async {

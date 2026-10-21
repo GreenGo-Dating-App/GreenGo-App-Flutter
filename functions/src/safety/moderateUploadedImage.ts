@@ -50,6 +50,7 @@
 import { onObjectFinalized } from 'firebase-functions/v2/storage';
 import * as admin from 'firebase-admin';
 import vision from '@google-cloud/vision';
+import { randomUUID } from 'crypto';
 import { logInfo, logError } from '../shared/utils';
 import { screenUploadAgainstHashLists } from './takedowns/uploadScreening';
 import { createModerationDecision } from './moderationDecisions';
@@ -58,6 +59,7 @@ import {
   enforceAfterVerdict,
   firestoreFaceRulePorts,
 } from './mainPhotoFaceRule';
+import { recordLibraryVerdict } from './mediaLibrary';
 
 const db = admin.firestore();
 // Constructed lazily: this module is loaded by index.js along with every other
@@ -103,6 +105,33 @@ const NEVER = [
 ];
 
 const IMAGE = /\.(jpe?g|png|webp|heic|heif|bmp|gif)$/i;
+
+/**
+ * Moves an upload to `quarantine/<path>`. The copy gets a NEW download token
+ * (the original one is kept in `heldDownloadToken` for restoreQuarantined):
+ * token URLs bypass storage.rules, so with the old token anyone who saw the
+ * original URL (a chat partner, a client that did not wait for the verdict)
+ * could open the quarantined copy just by prefixing the path.
+ */
+export async function quarantineObject(
+  bucket: { file(path: string): any },
+  objectPath: string,
+  meta: Record<string, string>,
+): Promise<void> {
+  const dest = bucket.file(`quarantine/${objectPath}`);
+  await bucket.file(objectPath).copy(dest);
+  const oldToken = typeof meta.firebaseStorageDownloadTokens === 'string'
+    ? meta.firebaseStorageDownloadTokens.split(',')[0].trim() : '';
+  try {
+    await dest.setMetadata({ metadata: {
+      firebaseStorageDownloadTokens: randomUUID(),
+      ...(oldToken ? { heldDownloadToken: oldToken } : {}),
+    } });
+  } catch (e) {
+    logError(`[moderate] token rotation failed for quarantine/${objectPath}`, e);
+  }
+  await bucket.file(objectPath).delete();
+}
 
 /**
  * moderation_queue id of one held upload: one item per object GENERATION, so
@@ -208,6 +237,20 @@ export const moderateUploadedImage = onObjectFinalized(
           checkedAt: admin.firestore.FieldValue.serverTimestamp(),
           expiresAt: admin.firestore.Timestamp.fromMillis(Date.now() + 24 * 3600 * 1000),
         });
+        try {
+          await recordLibraryVerdict({
+            bucket: event.data.bucket,
+            objectPath,
+            generation: event.data.generation,
+            contentType,
+            meta,
+            status: 'rejected',
+            reasons: ['blocked_hash'],
+            reviewable: false,
+          });
+        } catch (e) {
+          logError(`[moderate] library (blocked) failed for ${objectPath}`, e);
+        }
         logInfo(`[moderate] BLOCKED_HASH ${objectPath} case=${screening.caseId}`);
         return;
       }
@@ -251,8 +294,7 @@ export const moderateUploadedImage = onObjectFinalized(
         // recoverable, and an admin needs to see what was rejected.
         let moved = false;
         try {
-          await bucket.file(objectPath).copy(bucket.file(`quarantine/${objectPath}`));
-          await bucket.file(objectPath).delete();
+          await quarantineObject(bucket, objectPath, meta);
           moved = true;
         } catch (e) {
           logError(`[moderate] quarantine move failed for ${objectPath}`, e);
@@ -300,6 +342,7 @@ export const moderateUploadedImage = onObjectFinalized(
         // uploader gets the statement of reasons (in-app + email) and can
         // appeal (overturn restores the file). A missing face is a profile
         // photo requirement, not a rule breach: no decision for that alone.
+        let decisionId: string | null = null;
         if (moved && reasonCode && userId) {
           try {
             await createModerationDecision({
@@ -314,9 +357,31 @@ export const moderateUploadedImage = onObjectFinalized(
               automated: { detection: 'vision', decision: true },
               effects: [{ type: 'quarantine', objectPath, quarantinePath: `quarantine/${objectPath}` }],
             });
+            decisionId = queueId;
           } catch (e) {
             logError(`[moderate] decision notice failed for ${objectPath}`, e);
           }
+        }
+
+        // My pictures: the owner sees it as "not visible - held" and may ask
+        // for a review (appeal when a decision exists, else imageReview).
+        try {
+          await recordLibraryVerdict({
+            bucket: event.data.bucket,
+            objectPath,
+            generation: event.data.generation,
+            contentType,
+            meta,
+            status: 'held',
+            reasons,
+            reasonCode,
+            ...(recordFaces ? { hasFace: faces.length > 0 } : {}),
+            queueId,
+            decisionId,
+            reviewable: moved,
+          });
+        } catch (e) {
+          logError(`[moderate] library (held) failed for ${objectPath}`, e);
         }
       }
 
@@ -334,6 +399,25 @@ export const moderateUploadedImage = onObjectFinalized(
         // keeps the collection from growing without bound.
         expiresAt: admin.firestore.Timestamp.fromMillis(Date.now() + 24 * 3600 * 1000),
       });
+
+      // My pictures: every approved image is reusable without re-upload.
+      // After the verdict write, so the waiting uploader is not slowed down.
+      if (approved) {
+        try {
+          await recordLibraryVerdict({
+            bucket: event.data.bucket,
+            objectPath,
+            generation: event.data.generation,
+            contentType,
+            meta,
+            status: 'approved',
+            reasons: [],
+            ...(recordFaces ? { hasFace: faces.length > 0 } : {}),
+          });
+        } catch (e) {
+          logError(`[moderate] library (approved) failed for ${objectPath}`, e);
+        }
+      }
 
       // Race cover for the main-photo face rule: the URL may already be the
       // profile's photoUrls[0] (a client that did not wait for this verdict,

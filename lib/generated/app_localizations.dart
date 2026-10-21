@@ -67,7 +67,7 @@ import 'app_localizations_pt.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -90,11 +90,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR')
+    Locale('pt', 'BR'),
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -11374,7 +11374,10 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText);
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  );
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -28301,14 +28304,22 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Renews automatically on {date}.'**
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date);
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
 
   /// Web (Stripe) subscription cancelled at period end
   ///
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Cancelled; access ends on {date}.'**
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date);
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
 
   /// No description provided for @billingIntervalMonth.
   ///
@@ -38311,7 +38322,11 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reason: {reason}\nReported message: \"{message}\"\nReported user: {user}\nReported at: {date}'**
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date);
+    String reason,
+    String message,
+    String user,
+    String date,
+  );
 
   /// No description provided for @supportChatWithGreenGoSubject.
   ///
@@ -47462,6 +47477,156 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Deleted user'**
   String get deletedUserName;
+
+  /// Notification title (server): a held picture was approved after the user asked for a review
+  ///
+  /// In en, this message translates to:
+  /// **'Your picture was approved'**
+  String get srvImageReviewApprovedTitle;
+
+  /// Notification body (server): a held picture was approved after review
+  ///
+  /// In en, this message translates to:
+  /// **'We reviewed your picture and it is visible again. Find it in My pictures and use it anywhere in the app.'**
+  String get srvImageReviewApprovedBody;
+
+  /// Title of the My pictures screen / menu entry (library of the user's uploaded pictures)
+  ///
+  /// In en, this message translates to:
+  /// **'My pictures'**
+  String get myPicturesTitle;
+
+  /// Subtitle of the My pictures menu entry
+  ///
+  /// In en, this message translates to:
+  /// **'Pictures you uploaded, ready to reuse'**
+  String get myPicturesSubtitle;
+
+  /// Empty state of the My pictures screen
+  ///
+  /// In en, this message translates to:
+  /// **'No pictures yet. Pictures you upload appear here once they pass our check.'**
+  String get myPicturesEmpty;
+
+  /// Empty state of the Choose from My pictures picker
+  ///
+  /// In en, this message translates to:
+  /// **'No approved pictures yet.'**
+  String get myPicturesPickerEmpty;
+
+  /// Option next to Camera / Gallery in every image picker: reuse an approved picture from the library
+  ///
+  /// In en, this message translates to:
+  /// **'Choose from My pictures'**
+  String get myPicturesChoose;
+
+  /// Badge on a picture held back by the automatic check (only the uploader sees the entry)
+  ///
+  /// In en, this message translates to:
+  /// **'Not visible - held back'**
+  String get myPicturesNotVisibleHeld;
+
+  /// Badge on a held picture whose review was requested
+  ///
+  /// In en, this message translates to:
+  /// **'Not visible - under review'**
+  String get myPicturesNotVisibleReview;
+
+  /// Badge on a picture that stays hidden after a decision
+  ///
+  /// In en, this message translates to:
+  /// **'Not visible - rejected'**
+  String get myPicturesNotVisibleRejected;
+
+  /// Explanation under a held / rejected picture in My pictures
+  ///
+  /// In en, this message translates to:
+  /// **'Only you see this entry. Nobody else can see the picture.'**
+  String get myPicturesHiddenNote;
+
+  /// Button on a held picture: ask a person to review the automatic decision
+  ///
+  /// In en, this message translates to:
+  /// **'Ask for a review'**
+  String get myPicturesAskReview;
+
+  /// Promise shown when asking for a review
+  ///
+  /// In en, this message translates to:
+  /// **'We\'ll decide within 24-48 hours.'**
+  String get myPicturesReviewSla;
+
+  /// Optional text field in the Ask for a review dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Why should this picture be allowed? (optional)'**
+  String get myPicturesReviewNoteHint;
+
+  /// Send button of the Ask for a review dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Send request'**
+  String get myPicturesReviewSend;
+
+  /// Confirmation after asking for a review
+  ///
+  /// In en, this message translates to:
+  /// **'Review requested. We\'ll decide within 24-48 hours.'**
+  String get myPicturesReviewSent;
+
+  /// Error: too many review requests today
+  ///
+  /// In en, this message translates to:
+  /// **'You have asked for too many reviews today. Please try again tomorrow.'**
+  String get myPicturesReviewRateLimited;
+
+  /// Error: a review of this picture is already in progress
+  ///
+  /// In en, this message translates to:
+  /// **'A review of this picture is already in progress.'**
+  String get myPicturesReviewAlready;
+
+  /// Error: the review request could not be sent
+  ///
+  /// In en, this message translates to:
+  /// **'Could not send the request. Please try again.'**
+  String get myPicturesReviewFailed;
+
+  /// Title of the confirm dialog to remove a picture from My pictures
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from My pictures?'**
+  String get myPicturesRemoveTitle;
+
+  /// Body of the remove-from-library confirm dialog
+  ///
+  /// In en, this message translates to:
+  /// **'The picture leaves your library. Places that already use it keep showing it.'**
+  String get myPicturesRemoveBody;
+
+  /// Button: remove a picture from My pictures
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get myPicturesRemove;
+
+  /// Image source option: take a photo with the camera
+  ///
+  /// In en, this message translates to:
+  /// **'Camera'**
+  String get myPicturesCamera;
+
+  /// Image source option: pick from the device gallery
+  ///
+  /// In en, this message translates to:
+  /// **'Gallery'**
+  String get myPicturesGallery;
+
+  /// Title of the image source sheet (camera / gallery / My pictures)
+  ///
+  /// In en, this message translates to:
+  /// **'Add a picture'**
+  String get myPicturesAddPictureTitle;
 }
 
 class _AppLocalizationsDelegate
@@ -47475,13 +47640,13 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-        'de',
-        'en',
-        'es',
-        'fr',
-        'it',
-        'pt'
-      ].contains(locale.languageCode);
+    'de',
+    'en',
+    'es',
+    'fr',
+    'it',
+    'pt',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -47517,8 +47682,9 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-      'an issue with the localizations generation tool. Please file an issue '
-      'on GitHub with a reproducible sample app and the gen-l10n configuration '
-      'that was used.');
+    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+    'an issue with the localizations generation tool. Please file an issue '
+    'on GitHub with a reproducible sample app and the gen-l10n configuration '
+    'that was used.',
+  );
 }

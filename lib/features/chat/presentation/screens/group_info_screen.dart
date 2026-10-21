@@ -5,8 +5,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart' show Either;
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
 
+import '../../../media_library/presentation/image_source_picker.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/error/failures.dart';
@@ -352,12 +352,14 @@ class GroupInfoScreen extends StatelessWidget {
   Future<void> _changeGroupPhoto(BuildContext context) async {
     final l10n = AppLocalizations.of(context)!;
     final messenger = ScaffoldMessenger.of(context);
-    final picked = await ImagePicker()
-        .pickImage(source: ImageSource.gallery, imageQuality: 80);
-    if (picked == null) return;
+    final choice = await pickImageWithLibrary(context, imageQuality: 80);
+    if (choice == null) return;
+    // My pictures: an approved picture needs no upload and no new check.
+    final libraryUrl = choice.url;
+    final picked = choice.file;
     // Reject nudity / explicit content before uploading. On-device ML Kit is
     // native-only — skip on web (server-side moderation still applies).
-    if (!kIsWeb) {
+    if (picked != null && !kIsWeb) {
       final validation = await PhotoValidationService()
           .validateImageForSending(File(picked.path));
       if (!validation.isValid) {
@@ -368,12 +370,15 @@ class GroupInfoScreen extends StatelessWidget {
         return;
       }
     }
-    messenger.showSnackBar(
-      SnackBar(content: Text(l10n.groupUploadingPhoto)),
-    );
+    if (picked != null) {
+      messenger.showSnackBar(
+        SnackBar(content: Text(l10n.groupUploadingPhoto)),
+      );
+    }
     try {
-      final url = await sl<ProfileRemoteDataSource>()
-          .uploadPhoto(currentUserId, picked, folder: 'groups');
+      final url = libraryUrl ??
+          await sl<ProfileRemoteDataSource>()
+              .uploadPhoto(currentUserId, picked!, folder: 'groups');
       await sl<UpdateGroupInfo>()(groupId: groupId, photoUrl: url);
       // Optimistic: update own inbox row so my Groups list reflects it
       // immediately (the onGroupInfoChanged CF fans it out to other members).

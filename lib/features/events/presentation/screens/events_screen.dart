@@ -1,3 +1,4 @@
+import '../../../media_library/presentation/image_source_picker.dart';
 import '../../../../core/widgets/helpful_empty_state.dart';
 import '../../../../core/widgets/locked_reason_sheet.dart';
 import '../../../../core/widgets/listing_wizard.dart';
@@ -4070,18 +4071,36 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   }
 
   Future<void> _pickMainPhoto() async {
-    final x =
-        await _picker.pickImage(source: ImageSource.gallery, imageQuality: 80);
-    if (x != null) setState(() => _mainPhoto = x);
+    final picked =
+        await pickImageWithLibrary(context, picker: _picker, imageQuality: 80);
+    if (picked == null || !mounted) return;
+    setState(() {
+      if (picked.isLibrary) {
+        // My pictures: reuse the approved URL (no upload).
+        _mainPhoto = null;
+        _existingMainUrl = picked.url;
+      } else {
+        _mainPhoto = picked.file;
+      }
+    });
   }
 
   int get _extraCount => _existingPhotoUrls.length + _extraPhotos.length;
 
   Future<void> _pickExtraPhoto() async {
     if (_extraCount >= 4) return;
-    final x =
-        await _picker.pickImage(source: ImageSource.gallery, imageQuality: 80);
-    if (x != null) setState(() => _extraPhotos.add(x));
+    final picked =
+        await pickImageWithLibrary(context, picker: _picker, imageQuality: 80);
+    if (picked == null || !mounted) return;
+    setState(() {
+      if (picked.isLibrary) {
+        if (!_existingPhotoUrls.contains(picked.url)) {
+          _existingPhotoUrls.add(picked.url!);
+        }
+      } else {
+        _extraPhotos.add(picked.file!);
+      }
+    });
   }
 
   /// Who may sell tickets on this event (the creator's business status).

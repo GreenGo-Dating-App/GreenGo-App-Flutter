@@ -3596,6 +3596,26 @@ service cloud.firestore {
       allow write: if false;
     }
 
+    // "My pictures" library (functions/src/safety/mediaLibrary.ts):
+    // media_library/{uid}/items/{itemId}. Written ONLY by the server when a
+    // moderation verdict lands (approved / held / rejected), so `url`,
+    // `status` and `hasFace` cannot be forged. The owner reads (paged) and
+    // removes entries; nobody creates or edits one from a client. Removing
+    // an entry never touches the storage object.
+    match /media_library/{uid} {
+      allow read, write: if false;
+      match /items/{itemId} {
+        allow get, list, delete: if isSignedIn() && request.auth.uid == uid;
+        allow create, update: if false;
+      }
+    }
+
+    // "Ask for a review" rate-limit counters (functions/src/safety/imageReview.ts).
+    // Server only; requests go through the requestImageReview callable.
+    match /image_review_limits/{uid} {
+      allow read, write: if false;
+    }
+
     // Consent records (functions/src/ai/aiGateway.ts recordConsent). The owner
     // may READ their own summary doc so the app shows the true state of the
     // "AI services" switch across devices (and GDPR art. 15 access). Writes

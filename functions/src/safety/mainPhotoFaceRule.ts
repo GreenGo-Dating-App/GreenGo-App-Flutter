@@ -70,6 +70,7 @@ import * as admin from 'firebase-admin';
 import vision from '@google-cloud/vision';
 import { logError, logInfo } from '../shared/utils';
 import { lt, notifTextFields } from '../shared/i18n';
+import { libraryHasFace, saveLibraryFace } from './mediaLibrary';
 
 export type FaceStatus = 'face' | 'no_face' | 'unknown';
 
@@ -219,6 +220,22 @@ export interface FaceRulePorts {
   ): Promise<boolean>;
   /** Create the notice; must be a no-op when [id] already exists. */
   notify(uid: string, id: string, kind: 'moved' | 'needed'): Promise<void>;
+  /**
+   * hasFace of the owner's "My pictures" item for [path] (approved items
+   * only), or null. A picture reused from the library has no fresh verdict.
+   */
+  readLibraryFace?(uid: string, path: string): Promise<boolean | null>;
+  /** Caches an on-demand face result on the library item (best-effort). */
+  saveLibraryFace?(uid: string, path: string, hasFace: boolean): Promise<void>;
+}
+
+/**
+ * Objects whose face status can be decided: user uploads in the default
+ * bucket under a "My pictures" prefix (a library picture may be reused as
+ * the main photo whatever surface it was first uploaded to). Pure.
+ */
+export function isFaceCheckablePath(path: string): boolean {
+  return /^(profiles|communities|chat_images|group_media)\//.test(path);
 }
 
 /** Face status of one photo URL: verdict first, else one on-demand Vision call. */
@@ -229,12 +246,20 @@ export function makeStatusResolver(uid: string, ports: FaceRulePorts) {
     if (hit) return hit;
     let status: FaceStatus = 'unknown';
     const obj = storageObjectFromUrl(url);
-    if (obj && obj.bucket === ports.defaultBucket() && obj.path.startsWith('profiles/')) {
+    if (obj && obj.bucket === ports.defaultBucket() && isFaceCheckablePath(obj.path)) {
       const docId = verdictDocId(obj.path);
       try {
         status = faceStatusFromVerdict(await ports.readVerdict(docId));
       } catch (e) {
         logError(`[faceRule] verdict read failed for ${obj.path}`, e);
+      }
+      if (status === 'unknown' && ports.readLibraryFace) {
+        try {
+          const f = await ports.readLibraryFace(uid, obj.path);
+          if (f !== null) status = f ? 'face' : 'no_face';
+        } catch (e) {
+          logError(`[faceRule] library read failed for ${obj.path}`, e);
+        }
       }
       if (status === 'unknown') {
         try {
@@ -246,6 +271,7 @@ export function makeStatusResolver(uid: string, ports: FaceRulePorts) {
             faces,
             hasFace: faces > 0,
           });
+          if (ports.saveLibraryFace) await ports.saveLibraryFace(uid, obj.path, faces > 0);
         } catch (e) {
           // Not uploaded yet / Vision down: undecidable now. If it is a fresh
           // upload, enforceAfterVerdict decides once the verdict is written.
@@ -356,6 +382,8 @@ export function firestoreFaceRulePorts(): FaceRulePorts {
       tx.update(ref, { photoUrls: next });
       return true;
     }),
+    readLibraryFace: (uid, path) => libraryHasFace(uid, path),
+    saveLibraryFace: (uid, path, hasFace) => saveLibraryFace(uid, path, hasFace),
     notify: async (uid, id, kind) => {
       try {
         await db.collection('notifications').doc(id).create({

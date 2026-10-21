@@ -353,6 +353,9 @@ export {
 
 // Server-side NSFW moderation of every user upload (Storage trigger).
 export { moderateUploadedImage } from './safety/moderateUploadedImage';
+// My pictures library + "Ask for a review" on held images (2026-10-21).
+export { onMediaObjectDeleted } from './safety/mediaLibraryTriggers';
+export { requestImageReview, imageReviewSlaSweep } from './safety/imageReview';
 
 // P2-8b: keyword screen of community / group / event chat messages ->
 // moderation_queue (flag-for-review only, no automatic action).

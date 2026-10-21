@@ -5,6 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 
+import '../../../media_library/presentation/image_source_picker.dart';
+import '../../../../core/services/image_moderation_gate.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/platform/web_media.dart';
@@ -56,6 +58,12 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
 
   // Hero/cover image (optional). Picked locally, uploaded to Storage on create.
   XFile? _coverImage;
+  // My pictures: an approved picture reused as the cover (no upload).
+  String? _coverLibraryUrl;
+
+  ImageProvider? get _coverProvider => _coverImage != null
+      ? WebMedia.imageProviderFor(_coverImage!)
+      : (_coverLibraryUrl != null ? NetworkImage(_coverLibraryUrl!) : null);
   bool _uploadingCover = false;
   // The URL of [_coverImage] once uploaded, so a retry never uploads it twice.
   XFile? _uploadedCoverFor;
@@ -550,11 +558,11 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
 
           // Featured/cover image hero (the picked image isn't uploaded yet, so
           // preview it from the local file).
-          if (_coverImage != null) ...[
+          if (_coverProvider != null) ...[
             ClipRRect(
               borderRadius: BorderRadius.circular(AppDimensions.radiusM),
               child: Image(
-                image: WebMedia.imageProviderFor(_coverImage!),
+                image: _coverProvider!,
                 height: 160,
                 width: double.infinity,
                 fit: BoxFit.cover,
@@ -713,14 +721,14 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                 color: AppColors.backgroundCard,
                 borderRadius: BorderRadius.circular(AppDimensions.radiusM),
                 border: Border.all(color: AppColors.divider, width: 0.5),
-                image: _coverImage != null
+                image: _coverProvider != null
                     ? DecorationImage(
-                        image: WebMedia.imageProviderFor(_coverImage!),
+                        image: _coverProvider!,
                         fit: BoxFit.cover,
                       )
                     : null,
               ),
-              child: _coverImage != null
+              child: _coverProvider != null
                   ? Align(
                       alignment: Alignment.topRight,
                       child: Padding(
@@ -732,8 +740,10 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                             padding: EdgeInsets.zero,
                             iconSize: 18,
                             icon: const Icon(Icons.close, color: Colors.white),
-                            onPressed: () =>
-                                setState(() => _coverImage = null),
+                            onPressed: () => setState(() {
+                              _coverImage = null;
+                              _coverLibraryUrl = null;
+                            }),
                           ),
                         ),
                       ),
@@ -760,25 +770,34 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
 
   Future<void> _pickCoverImage() async {
     HapticFeedback.selectionClick();
-    final picked = await ImagePicker().pickImage(
-      source: ImageSource.gallery,
+    final picked = await pickImageWithLibrary(
+      context,
       maxWidth: 1600,
       imageQuality: 82,
     );
-    if (picked != null) {
-      setState(() => _coverImage = picked);
-    }
+    if (picked == null || !mounted) return;
+    setState(() {
+      if (picked.isLibrary) {
+        _coverImage = null;
+        _coverLibraryUrl = picked.url;
+      } else {
+        _coverImage = picked.file;
+        _coverLibraryUrl = null;
+      }
+    });
   }
 
   /// Upload the picked cover image to Storage; returns its download URL or null.
   Future<String?> _uploadCoverImage(String communityOwnerId) async {
-    if (_coverImage == null) return null;
+    if (_coverImage == null) return _coverLibraryUrl;
     try {
       final fileName = 'cover_${DateTime.now().millisecondsSinceEpoch}.jpg';
-      final ref = FirebaseStorage.instance
-          .ref()
-          .child('communities/$communityOwnerId/$fileName');
+      final objectPath = 'communities/$communityOwnerId/$fileName';
+      final ref = FirebaseStorage.instance.ref().child(objectPath);
       final task = await WebMedia.uploadXFile(ref, _coverImage!);
+      // Never store a URL before the server check passed: a held picture is
+      // moved out of reach and must not end up on the community doc.
+      await ImageModerationGate().awaitVerdict(objectPath);
       return task.ref.getDownloadURL();
     } catch (e) {
       debugPrint('Cover image upload failed: $e');
@@ -850,8 +869,9 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
     setState(() => _submitting = true);
 
     // Upload the cover image (if any) BEFORE creating the community so its URL
-    // is stored on the doc. Reused on a retry so it is uploaded only once.
-    String? imageUrl;
+    // is stored on the doc. Reused on a retry so it is uploaded only once;
+    // a picture chosen from My pictures is used as-is (no upload).
+    String? imageUrl = _coverLibraryUrl;
     if (_coverImage != null) {
       if (_uploadedCoverFor == _coverImage && _uploadedCoverUrl != null) {
         imageUrl = _uploadedCoverUrl;

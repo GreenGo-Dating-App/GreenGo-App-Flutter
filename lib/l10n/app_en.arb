@@ -17637,5 +17637,105 @@
   "deletedUserName": "Deleted user",
   "@deletedUserName": {
     "description": "Shown instead of the name of a participant / buyer / guest who deleted their GreenGo account (participant lists, bookings, CSV)"
+  },
+  "srvImageReviewApprovedTitle": "Your picture was approved",
+  "@srvImageReviewApprovedTitle": {
+    "description": "Notification title (server): a held picture was approved after the user asked for a review"
+  },
+  "srvImageReviewApprovedBody": "We reviewed your picture and it is visible again. Find it in My pictures and use it anywhere in the app.",
+  "@srvImageReviewApprovedBody": {
+    "description": "Notification body (server): a held picture was approved after review"
+  },
+  "myPicturesTitle": "My pictures",
+  "@myPicturesTitle": {
+    "description": "Title of the My pictures screen / menu entry (library of the user's uploaded pictures)"
+  },
+  "myPicturesSubtitle": "Pictures you uploaded, ready to reuse",
+  "@myPicturesSubtitle": {
+    "description": "Subtitle of the My pictures menu entry"
+  },
+  "myPicturesEmpty": "No pictures yet. Pictures you upload appear here once they pass our check.",
+  "@myPicturesEmpty": {
+    "description": "Empty state of the My pictures screen"
+  },
+  "myPicturesPickerEmpty": "No approved pictures yet.",
+  "@myPicturesPickerEmpty": {
+    "description": "Empty state of the Choose from My pictures picker"
+  },
+  "myPicturesChoose": "Choose from My pictures",
+  "@myPicturesChoose": {
+    "description": "Option next to Camera / Gallery in every image picker: reuse an approved picture from the library"
+  },
+  "myPicturesNotVisibleHeld": "Not visible - held back",
+  "@myPicturesNotVisibleHeld": {
+    "description": "Badge on a picture held back by the automatic check (only the uploader sees the entry)"
+  },
+  "myPicturesNotVisibleReview": "Not visible - under review",
+  "@myPicturesNotVisibleReview": {
+    "description": "Badge on a held picture whose review was requested"
+  },
+  "myPicturesNotVisibleRejected": "Not visible - rejected",
+  "@myPicturesNotVisibleRejected": {
+    "description": "Badge on a picture that stays hidden after a decision"
+  },
+  "myPicturesHiddenNote": "Only you see this entry. Nobody else can see the picture.",
+  "@myPicturesHiddenNote": {
+    "description": "Explanation under a held / rejected picture in My pictures"
+  },
+  "myPicturesAskReview": "Ask for a review",
+  "@myPicturesAskReview": {
+    "description": "Button on a held picture: ask a person to review the automatic decision"
+  },
+  "myPicturesReviewSla": "We'll decide within 24-48 hours.",
+  "@myPicturesReviewSla": {
+    "description": "Promise shown when asking for a review"
+  },
+  "myPicturesReviewNoteHint": "Why should this picture be allowed? (optional)",
+  "@myPicturesReviewNoteHint": {
+    "description": "Optional text field in the Ask for a review dialog"
+  },
+  "myPicturesReviewSend": "Send request",
+  "@myPicturesReviewSend": {
+    "description": "Send button of the Ask for a review dialog"
+  },
+  "myPicturesReviewSent": "Review requested. We'll decide within 24-48 hours.",
+  "@myPicturesReviewSent": {
+    "description": "Confirmation after asking for a review"
+  },
+  "myPicturesReviewRateLimited": "You have asked for too many reviews today. Please try again tomorrow.",
+  "@myPicturesReviewRateLimited": {
+    "description": "Error: too many review requests today"
+  },
+  "myPicturesReviewAlready": "A review of this picture is already in progress.",
+  "@myPicturesReviewAlready": {
+    "description": "Error: a review of this picture is already in progress"
+  },
+  "myPicturesReviewFailed": "Could not send the request. Please try again.",
+  "@myPicturesReviewFailed": {
+    "description": "Error: the review request could not be sent"
+  },
+  "myPicturesRemoveTitle": "Remove from My pictures?",
+  "@myPicturesRemoveTitle": {
+    "description": "Title of the confirm dialog to remove a picture from My pictures"
+  },
+  "myPicturesRemoveBody": "The picture leaves your library. Places that already use it keep showing it.",
+  "@myPicturesRemoveBody": {
+    "description": "Body of the remove-from-library confirm dialog"
+  },
+  "myPicturesRemove": "Remove",
+  "@myPicturesRemove": {
+    "description": "Button: remove a picture from My pictures"
+  },
+  "myPicturesCamera": "Camera",
+  "@myPicturesCamera": {
+    "description": "Image source option: take a photo with the camera"
+  },
+  "myPicturesGallery": "Gallery",
+  "@myPicturesGallery": {
+    "description": "Image source option: pick from the device gallery"
+  },
+  "myPicturesAddPictureTitle": "Add a picture",
+  "@myPicturesAddPictureTitle": {
+    "description": "Title of the image source sheet (camera / gallery / My pictures)"
   }
 }
