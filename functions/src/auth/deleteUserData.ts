@@ -53,7 +53,9 @@ export const onUserDeletedCleanup = functions
   .onDelete(async (user) => {
     const uid = user.uid;
     logInfo(`onUserDeletedCleanup: starting for ${uid}`);
-    const report = await sweepDeletedAccount(uid);
+    // The record of the deleted user: its verified e-mail links shared-link
+    // guest purchases to the account (pseudonymised with it).
+    const report = await sweepDeletedAccount(uid, { email: user.email ?? null, emailVerified: user.emailVerified === true });
     if (report.failures.length === 0) {
       logInfo(
         `onUserDeletedCleanup: done for ${uid} - ${report.documents} docs, ` +

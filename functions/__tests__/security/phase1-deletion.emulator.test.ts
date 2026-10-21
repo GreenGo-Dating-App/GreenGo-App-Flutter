@@ -452,7 +452,15 @@ describe('inventory: every listed location is cleared', () => {
           break;
         case 'group':
           await db.doc(`parents${i}/p1`).set({ [e.parentCounter]: 5 });
-          await db.doc(`parents${i}/p1/${e.group}/${UID}`).set({ userId: UID });
+          // Event rosters count PLACES of 'going' attendees (attendeeSeats):
+          // a doc without a status takes no place, so it must be 'going' here.
+          await db.doc(`parents${i}/p1/${e.group}/${UID}`).set({ userId: UID, status: 'going' });
+          break;
+        case 'buyerRecords':
+          await db.doc(`${e.collection}/b${i}`).set({
+            [e.field]: UID, kind: 'event', listingId: `ev${i}`, status: 'paid', totalAmount: 1000, currency: 'brl',
+            attendeeName: 'Inv User', guestName: 'Inv User', attendeeNames: [{ firstName: 'Inv', lastName: 'User' }],
+          });
           break;
         case 'finance':
           if (e.byDocId) await db.doc(`${e.collection}/${UID}`).set({ amount: 1, email: 'inv@example.com' });
@@ -505,6 +513,10 @@ describe('inventory: every listed location is cleared', () => {
     await seed(mod);
     const report = await mod.deleteAccountCompletely(UID, { source: 'app_callable' });
     expect(report.failures).toEqual([]);
+    // Buyer-side ticket records: the follow-up task (trigger in production).
+    const fu = require('../../src/auth/deletionFollowups');
+    expect((await db.doc(`deletion_followups/${UID}`).get()).data()!.ticketsStatus).toBe('pending');
+    expect(await fu.processTicketsFollowup(UID)).toBe('done');
 
     const hits: string[] = [];
     await findUid(db, hits, mod.RETENTION_STORES);
@@ -536,5 +548,95 @@ describe('inventory: every listed location is cleared', () => {
     expect(scrubbedConv.every((d) => d.keep === OTHER && d.map[OTHER] === 2)).toBe(true);
     const groups = (await db.collection('groups').get()).docs.map((d) => d.data());
     expect(groups[0].participants).toEqual([OTHER]);
+
+    // Ticket purchases: kept with the pseudonym, without names (privacy 15.2 e).
+    const pseudonym = mod.retentionUidHash(UID);
+    for (const c of ['ticket_orders', 'tickets', 'ticket_refunds', 'admin_alerts']) {
+      const rows = (await db.collection(c).get()).docs.map((d) => d.data());
+      expect(rows.length).toBe(1);
+      expect(rows[0]).toMatchObject({ totalAmount: 1000, currency: 'brl', buyerDeleted: true, buyerId: pseudonym });
+      expect(JSON.stringify(rows)).not.toMatch(/Inv User|"Inv"/);
+    }
+    expect((await db.collection('ticket_holdings').get()).size).toBe(0);
+  });
+
+  test('ticket buyer: orders / tickets / refunds pseudonymised, holder names + counters deleted, guest purchases of the VERIFIED e-mail too', async () => {
+    const mod = require('../../src/auth/accountDeletion');
+    const fu = require('../../src/auth/deletionFollowups');
+    const { guestKeyFor } = require('../../src/shared/guestIdentity');
+    const { guestIdentitySecret } = require('../../src/guest/guestKeys');
+    const BUYER = 'ticketBuyer1';
+    await auth.createUser({ uid: BUYER, email: 'buyer@example.com', emailVerified: true, password: 'Passw0rd!x' });
+    await db.doc(`profiles/${BUYER}`).set({ name: 'Buyer Person', email: 'buyer@example.com' });
+    await db.doc(`users/${BUYER}`).set({ email: 'buyer@example.com' });
+    const gk = guestKeyFor(await guestIdentitySecret(), 'Buyer@Example.com');
+    const otherGk = guestKeyFor(await guestIdentitySecret(), 'someone@example.com');
+    const past = admin.firestore.Timestamp.fromMillis(Date.now() - 10 * 86400_000);
+    const soon = admin.firestore.Timestamp.fromMillis(Date.now() + 10 * 86400_000);
+    await db.doc('events/evA').set({ title: 'A', attendeeCount: 3, organizerId: 'orgX' });
+    await db.doc(`events/evA/attendees/${BUYER}`).set({ userId: BUYER, status: 'going', guestCount: 1 });
+    await db.doc(`events/evA/attendee_names/${BUYER}`).set({ buyerId: BUYER, names: [{ ticketId: 'oA_1', firstName: 'Holder', lastName: 'One' }] });
+    await db.doc('ticket_orders/oA').set({
+      kind: 'event', listingId: 'evA', buyerId: BUYER, organizerId: 'orgX', status: 'paid', totalAmount: 4000, feeTotal: 400,
+      hostNet: 3600, currency: 'eur', startsAt: soon, paidAt: past, attendeeNames: [{ firstName: 'Holder', lastName: 'One' }],
+    });
+    await db.doc('tickets/oA_1').set({ orderId: 'oA', buyerId: BUYER, organizerId: 'orgX', status: 'valid', qrPayload: 'qr', startsAt: soon, attendeeName: 'Holder One' });
+    await db.doc('ticket_refunds/oB').set({ orderId: 'oB', buyerId: BUYER, organizerId: 'orgX', amount: 1500, currency: 'eur', status: 'refunded' });
+    await db.doc(`ticket_holdings/event_evA_${BUYER}`).set({ uid: BUYER, owned: 2 });
+    // Guest purchase with the same (verified) e-mail before the account existed.
+    await db.doc('ticket_orders/oG').set({
+      kind: 'event', listingId: 'evA', buyerId: gk, organizerId: 'orgX', status: 'paid', totalAmount: 2000, currency: 'eur',
+      isGuest: true, guest: { firstName: 'Guest', lastName: 'Buyer' }, guestName: 'Guest Buyer', startsAt: past,
+    });
+    await db.doc(`guest_contacts/${gk}`).set({ email: 'buyer@example.com', locale: 'en' });
+    // Someone else's guest order: untouched.
+    await db.doc('ticket_orders/oX').set({ kind: 'event', listingId: 'evA', buyerId: otherGk, status: 'paid', guestName: 'Other Guest' });
+
+    const report = await mod.deleteAccountCompletely(BUYER, { source: 'app_callable' });
+    expect(report.failures).toEqual([]);
+    // Inline: the roster entry (2 places) and its holder names are gone.
+    expect(await docExists(`events/evA/attendees/${BUYER}`)).toBe(false);
+    expect(await docExists(`events/evA/attendee_names/${BUYER}`)).toBe(false);
+    expect((await db.doc('events/evA').get()).data()!.attendeeCount).toBe(1);
+    const fdoc = (await db.doc(`deletion_followups/${BUYER}`).get()).data()!;
+    expect(fdoc.ticketGuestKeys).toEqual([gk]);
+    expect(JSON.stringify(fdoc)).not.toContain('example.com');
+
+    expect(await fu.processTicketsFollowup(BUYER)).toBe('done');
+    const P = mod.retentionUidHash(BUYER);
+    const oA = (await db.doc('ticket_orders/oA').get()).data()!;
+    expect(oA).toMatchObject({ buyerId: P, organizerId: 'orgX', totalAmount: 4000, feeTotal: 400, hostNet: 3600, currency: 'eur', status: 'paid', attendeeNames: null, buyerDeleted: true });
+    const tA = (await db.doc('tickets/oA_1').get()).data()!;
+    expect(tA).toMatchObject({ buyerId: P, status: 'void', attendeeName: null });
+    expect(tA.qrPayload).toBeUndefined();
+    expect((await db.doc('ticket_refunds/oB').get()).data()).toMatchObject({ buyerId: P, amount: 1500, status: 'refunded' });
+    expect(await docExists(`ticket_holdings/event_evA_${BUYER}`)).toBe(false);
+    const oG = (await db.doc('ticket_orders/oG').get()).data()!;
+    expect(oG).toMatchObject({ buyerId: P, totalAmount: 2000, isGuest: true });
+    expect(oG.guestName).toBeUndefined();
+    expect(oG.guest).toBeUndefined();
+    expect(await docExists(`guest_contacts/${gk}`)).toBe(false);
+    expect((await db.doc('ticket_orders/oX').get()).data()).toMatchObject({ buyerId: otherGk, guestName: 'Other Guest' });
+    const fdone = (await db.doc(`deletion_followups/${BUYER}`).get()).data()!;
+    expect(fdone.ticketsStatus).toBe('done');
+    expect(fdone.ticketGuestKeys).toBeUndefined();
+
+    // Idempotent: a second pass (e.g. the Auth trigger sweep) changes nothing.
+    await db.doc(`deletion_followups/${BUYER}`).set({ ticketsStatus: 'pending' }, { merge: true });
+    expect(await fu.processTicketsFollowup(BUYER)).toBe('done');
+    expect((await db.doc('ticket_orders/oA').get()).data()).toEqual(oA);
+  });
+
+  test('an UNVERIFIED e-mail never links guest purchases', async () => {
+    const mod = require('../../src/auth/accountDeletion');
+    const { guestKeyFor } = require('../../src/shared/guestIdentity');
+    const { guestIdentitySecret } = require('../../src/guest/guestKeys');
+    await auth.createUser({ uid: 'unverified1', email: 'claimed@example.com', emailVerified: false, password: 'Passw0rd!x' });
+    await db.doc('profiles/unverified1').set({ name: 'U' });
+    const gk = guestKeyFor(await guestIdentitySecret(), 'claimed@example.com');
+    await db.doc('ticket_orders/oV').set({ buyerId: gk, guestName: 'Real Owner', status: 'paid' });
+    await mod.deleteAccountCompletely('unverified1', { source: 'app_callable' });
+    expect((await db.doc('deletion_followups/unverified1').get()).data()!.ticketGuestKeys).toBeUndefined();
+    expect((await db.doc('ticket_orders/oV').get()).data()).toMatchObject({ buyerId: gk, guestName: 'Real Owner' });
   });
 });

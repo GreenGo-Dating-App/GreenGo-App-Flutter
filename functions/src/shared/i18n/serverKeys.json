@@ -81,6 +81,7 @@
   "csvStatusCheckedIn",
   "csvStatusConfirmed",
   "csvStatusPaid",
+  "deletedUserName",
   "emailAskOrganizer",
   "emailBookingConfirmedGuestIntro",
   "emailBookingConfirmedHostIntro",

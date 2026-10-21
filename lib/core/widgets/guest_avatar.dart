@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
-export '../utils/guest_identity.dart' show isGuestUserId;
+export '../utils/guest_identity.dart' show isGuestUserId, isDeletedUserId;
 
 /// The generic guest avatar: a neutral person outline on a muted disc.
 class GuestAvatar extends StatelessWidget {
@@ -46,6 +46,40 @@ class GuestLabel extends StatelessWidget {
           fontWeight: FontWeight.w600,
         ),
       ),
+    );
+  }
+}
+
+/// Neutral avatar + the localized "Deleted user" for someone who deleted
+/// their account (no profile, never tappable).
+class DeletedUserNameAvatar extends StatelessWidget {
+  const DeletedUserNameAvatar({super.key, this.radius = 16, this.textStyle});
+
+  final double radius;
+  final TextStyle? textStyle;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context)!;
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        GuestAvatar(radius: radius),
+        const SizedBox(width: 8),
+        Flexible(
+          child: Text(
+            l.deletedUserName,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: textStyle ??
+                const TextStyle(
+                  color: AppColors.textTertiary,
+                  fontSize: 14,
+                  fontStyle: FontStyle.italic,
+                ),
+          ),
+        ),
+      ],
     );
   }
 }

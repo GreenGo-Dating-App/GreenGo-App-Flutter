@@ -64,6 +64,19 @@
  *   person no longer sees the deleted user's words.) A conversation's
  *   `lastMessage` preview written by the deleted user is cleared the same way.
  *
+ * RETAINED - TICKET PURCHASES AS BUYER (privacy policy 15.2 e, owner decision
+ *   2026-10-21): ticket_orders / tickets / ticket_refunds (and refund admin
+ *   alerts) of the user as BUYER stay for the organiser's bookkeeping, but
+ *   the follow-up task 'tickets' (./deletionBuyerRecords.ts) replaces the
+ *   buyer id with the pseudonym retentionUidHash(uid) (the same code as
+ *   retention_finance.uidHash and the BigQuery financial rows), removes the
+ *   names (guest name, ticket holder names), the e-mail (guest_contacts of
+ *   the verified e-mail's guest key), the buyer's receipt image and the QR
+ *   codes (upcoming tickets are voided), and deletes ticket_holdings and
+ *   events/{id}/attendee_names of the user. Amounts, currency, fees, dates,
+ *   ids, organiser id and refund status are kept. Inventory kind
+ *   'buyerRecords' (run by that task, not inline).
+ *
  * NOT DONE HERE (enqueued in `deletion_followups/{uid}` for a later worker,
  * ./deletionFollowups.ts):
  *   - Stripe: cancels the user's web subscriptions immediately (Terms 7.3),
@@ -85,6 +98,8 @@ import { enqueueFollowGraphCleanup, removeFollowGraphRound } from '../social/fol
 import { preserveForAccountDeletion, LEGAL_HOLD_KEEP_COLLECTIONS } from '../safety/takedowns/legalHold';
 import { attendeeSeats } from '../ticket_payments/ticketRules';
 import { assertNoDeletionBlockers } from './deletionBlockers';
+import { guestKeyFor } from '../shared/guestIdentity';
+import { guestIdentitySecret } from '../guest/guestKeys';
 
 const db = () => admin.firestore();
 const TS = () => admin.firestore.Timestamp.now();
@@ -163,6 +178,13 @@ export type InventoryEntry =
   | { kind: 'arrayRemove'; collection: string; field: string }
   /** Other users' docs that reference the uid in one field: set to tombstone. */
   | { kind: 'replaceField'; collection: string; field: string }
+  /**
+   * The user's purchases as a ticket BUYER (privacy policy 15.2 e): run by the
+   * deletion follow-up task 'tickets' (./deletionBuyerRecords.ts), NOT inline.
+   * 'pseudonymise': kept, buyer id -> pseudonym, names / e-mail / QR removed;
+   * 'delete': per-buyer counters.
+   */
+  | { kind: 'buyerRecords'; collection: string; field: string; action: 'pseudonymise' | 'delete' }
   /** Two-party content: keep, but strip author identity + media. */
   | { kind: 'anonymise'; group: string; field: string; topLevelOnly?: boolean }
   /** Storage prefix `${prefix}/${uid}/` (default bucket unless `buckets`). */
@@ -297,6 +319,16 @@ export const ACCOUNT_DATA_INVENTORY: InventoryEntry[] = [
   { kind: 'scrub', collection: 'guest_reviews', field: 'guestId' },
   { kind: 'scrub', collection: 'guest_reviews', field: 'hostId' },
   { kind: 'arrayRemove', collection: 'users', field: 'blockedUsers' },
+
+  // --- Ticket purchases as BUYER: pseudonymised by the follow-up task -------
+  // (events/{id}/attendees/{uid} + attendee_names go with the 'attendees'
+  // group entry above; the task also removes attendee_names left without an
+  // attendee doc, and the guest-key records of the verified e-mail.)
+  { kind: 'buyerRecords', collection: 'ticket_orders', field: 'buyerId', action: 'pseudonymise' },
+  { kind: 'buyerRecords', collection: 'tickets', field: 'buyerId', action: 'pseudonymise' },
+  { kind: 'buyerRecords', collection: 'ticket_refunds', field: 'buyerId', action: 'pseudonymise' },
+  { kind: 'buyerRecords', collection: 'admin_alerts', field: 'buyerId', action: 'pseudonymise' },
+  { kind: 'buyerRecords', collection: 'ticket_holdings', field: 'uid', action: 'delete' },
   { kind: 'replaceField', collection: 'coinTransactions', field: 'relatedUserId' },
 
   // --- Two-party content: anonymise ----------------------------------------
@@ -332,6 +364,9 @@ export const KNOWN_RESIDUALS = [
   'communities created by the user (createdByUserId) and events organised by the user (organizerId): left for their members',
   'Storage objects outside uid-keyed prefixes that carry only customMetadata.userId',
   'admin_users/{uid} (admin roles are removed by an admin, not by self-deletion)',
+  'ticket purchases as BUYER: kept for bookkeeping with the buyer id replaced by the retention pseudonym (follow-up task tickets); refund_proofs/{orderId}/ images uploaded by the SELLER (manual refund proof) are the SELLER accounting records and stay',
+  'ticket_orders / ticket_refunds where organizerId == uid (the user as SELLER): bookkeeping of the seller, kept with the id (fee invoices keep the seller details, privacy policy 15.2 e)',
+  'guest purchases made with an e-mail address the account never verified (not linkable to the account)',
   'ACCOUNTS UNDER A CSAE LEGAL HOLD: copies in legal_holds/{holdId} (+ Storage legal_holds/{holdId}/files/) and the moderation records in LEGAL_HOLD_KEEP_COLLECTIONS are kept for the hold period (1 year, REPORT Act / Lei 15.211)',
 ];
 
@@ -665,6 +700,30 @@ async function removeSupportChats(uid: string, report: DeletionReport) {
 export interface DeletionExtras {
   /** The app's GA4 app instance id (deleteMyAccount), for the GA4 User Deletion API. */
   analyticsAppInstanceId?: string | null;
+  /**
+   * The Auth e-mail and whether it was verified (Auth onDelete passes the
+   * deleted user record; otherwise read from Auth). A VERIFIED e-mail's guest
+   * key (shared-link purchases) is pseudonymised with the account.
+   */
+  email?: string | null;
+  emailVerified?: boolean;
+}
+
+/** Guest key of the account's verified Auth e-mail, or null. */
+export async function verifiedGuestKeyOf(uid: string, extra: DeletionExtras = {}): Promise<string | null> {
+  let email = extra.email ?? null;
+  let verified = extra.emailVerified === true;
+  if (extra.email === undefined) {
+    try {
+      const u = await admin.auth().getUser(uid);
+      email = u.email ?? null;
+      verified = u.emailVerified === true;
+    } catch (e: any) {
+      if (e?.code !== 'auth/user-not-found') throw e;
+    }
+  }
+  if (!email || !verified) return null;
+  return guestKeyFor(await guestIdentitySecret(), email);
 }
 
 async function runInventory(uid: string, report: DeletionReport, legalHold = false, extra: DeletionExtras = {}) {
@@ -686,6 +745,13 @@ async function runInventory(uid: string, report: DeletionReport, legalHold = fal
       stripeCustomerId = stripeCustomerId || d?.customerId || d?.stripeCustomerId || null;
       stripeTestCustomerId = stripeTestCustomerId || d?.testCustomerId || d?.stripeTestCustomerId || null;
     }
+  });
+  // Guest purchases made with the account's verified e-mail (the buyer chat
+  // already treats them as the account's): pseudonymised with it. Only the
+  // derived key is stored, never the e-mail.
+  let ticketGuestKey: string | null = null;
+  await step('followup:guestKey', async () => {
+    ticketGuestKey = await verifiedGuestKeyOf(uid, extra);
   });
 
   // Identity documents: 30-day fraud retention (existing policy).
@@ -839,6 +905,10 @@ async function runInventory(uid: string, report: DeletionReport, legalHold = fal
         analytics: true,
         analyticsStatus: 'pending',
         ...(extra.analyticsAppInstanceId ? { ga4AppInstanceIds: [extra.analyticsAppInstanceId] } : {}),
+        // Buyer-side ticket records (privacy policy 15.2 e): ./deletionBuyerRecords.ts.
+        tickets: true,
+        ticketsStatus: 'pending',
+        ...(ticketGuestKey ? { ticketGuestKeys: admin.firestore.FieldValue.arrayUnion(ticketGuestKey) } : {}),
         crashlytics: true,
         status: 'pending',
         createdAt: TS(),
@@ -1014,8 +1084,8 @@ export async function deleteAccountCompletely(
 }
 
 /** Auth onDelete path (account already gone from Auth). Never throws. */
-export async function sweepDeletedAccount(uid: string): Promise<DeletionReport> {
-  const report = await deleteAccountData(uid, 'auth_trigger');
+export async function sweepDeletedAccount(uid: string, extra: DeletionExtras = {}): Promise<DeletionReport> {
+  const report = await deleteAccountData(uid, 'auth_trigger', extra);
   try {
     await writeReceipt(uid, report, 'auth_trigger');
   } catch (e) {

@@ -125,8 +125,11 @@ async function namesOf(uids: string[]): Promise<Record<string, { name: string; i
 const ORDER_FIELDS = [
   'kind', 'listingId', 'bookingId', 'buyerId', 'organizerId', 'provider', 'mode', 'quantity', 'unitAmount',
   'ticketSubtotal', 'feeTotal', 'feeRuleApplied', 'totalAmount', 'currency', 'status', 'title', 'startsAt',
-  'platform', 'createdAt', 'updatedAt', 'paidAt', 'isGuest', 'guestName', 'refund', 'code',
+  'platform', 'createdAt', 'updatedAt', 'paidAt', 'isGuest', 'guestName', 'refund', 'code', 'buyerDeleted',
 ];
+/** Buyer column of an order: guest name, profile name, or "Deleted user" (pseudonymised on account deletion). */
+const buyerNameOf = (o: any, names: Record<string, { name?: string } | undefined>): string | null =>
+  o.guestName || names[o.buyerId]?.name || (o.buyerDeleted === true ? 'Deleted user' : null);
 const pick = (d: any, fields: string[]) => Object.fromEntries(fields.filter((f) => d?.[f] !== undefined).map((f) => [f, d[f]]));
 
 // ─────────────────────────────────────────────────────────────── reads
@@ -180,7 +183,7 @@ async function listSales(data: any) {
       const o = d.data();
       return {
         id: d.id, ...plain(pick(o, ORDER_FIELDS)),
-        buyerName: o.guestName || names[o.buyerId]?.name || null,
+        buyerName: buyerNameOf(o, names),
         organizerName: names[o.organizerId]?.name || null,
         isTest: !!(names[o.buyerId]?.isTest || names[o.organizerId]?.isTest),
       };
@@ -202,7 +205,7 @@ async function getOrder(data: any) {
   const names = await namesOf([o.buyerId, o.organizerId]);
   return {
     order: { id: orderId, ...plain(pick(o, ORDER_FIELDS)), feeLines: plain(o.feeLines || null) },
-    buyerName: o.guestName || names[o.buyerId]?.name || null,
+    buyerName: buyerNameOf(o, names),
     organizerName: names[o.organizerId]?.name || null,
     booking: booking?.exists ? { id: booking.id, ...plain(pick(booking.data(), [
       'experienceTitle', 'slotStart', 'slotEnd', 'guests', 'status', 'price', 'cancellation', 'checkIn', 'dispute', 'refundDue',

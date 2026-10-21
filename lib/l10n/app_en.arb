@@ -17677,5 +17677,9 @@
   "deletionBlockedExperience": "Experience",
   "@deletionBlockedExperience": {
     "description": "Label: the item is an experience"
+  },
+  "deletedUserName": "Deleted user",
+  "@deletedUserName": {
+    "description": "Shown instead of the name of a participant / buyer / guest who deleted their GreenGo account (participant lists, bookings, CSV)"
   }
 }

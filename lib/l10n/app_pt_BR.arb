@@ -8775,5 +8775,6 @@
   "deletionBlockedCheckFailed": "Não conseguimos verificar seus anúncios. Tente novamente.",
   "deletionBlockedActionFailed": "Não funcionou. Tente novamente.",
   "deletionBlockedEvent": "Evento",
-  "deletionBlockedExperience": "Experiência"
+  "deletionBlockedExperience": "Experiência",
+  "deletedUserName": "Usuário excluído"
 }

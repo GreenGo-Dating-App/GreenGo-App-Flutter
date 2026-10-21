@@ -180,6 +180,8 @@ String? serverText(
       return l10n.csvStatusConfirmed;
     case 'csvStatusPaid':
       return l10n.csvStatusPaid;
+    case 'deletedUserName':
+      return l10n.deletedUserName;
     case 'emailAskOrganizer':
       return l10n.emailAskOrganizer;
     case 'emailBookingConfirmedGuestIntro':

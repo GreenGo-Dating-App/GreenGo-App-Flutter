@@ -50,7 +50,12 @@ export interface ParticipantRow {
   status: ParticipantStatus;
   /** "Ask for attendee names": every ticket holder of this buyer ("; "-joined). */
   ticketHolders?: string;
+  /** The guest deleted their account: the name column says "Deleted user" (localized). */
+  deletedUser?: boolean;
 }
+
+/** Account deletion's tombstone id (auth/accountDeletion.ts TOMBSTONE). */
+const DELETED_USER_ID = 'deleted_user';
 
 // ─────────────────────────────────────────────────────────── CSV (pure)
 
@@ -77,7 +82,7 @@ export function buildParticipantsCsv(locale: unknown, rows: ParticipantRow[]): s
   const holders = rows.some((r) => r.ticketHolders);
   if (holders) header.push(t(locale, 'csvColTicketHolders'));
   const lines = [header, ...rows.map((r) => [
-    r.name, r.email, r.bookingCode, r.ticket, statusLabel(locale, r.status), ...(holders ? [r.ticketHolders ?? ''] : []),
+    r.deletedUser && !r.name ? t(locale, 'deletedUserName') : r.name, r.email, r.bookingCode, r.ticket, statusLabel(locale, r.status), ...(holders ? [r.ticketHolders ?? ''] : []),
   ])]
     .map((cells) => cells.map(csvCell).join(','));
   return '﻿' + lines.join('\r\n') + '\r\n';
@@ -216,6 +221,7 @@ export async function experienceSlotParticipants(experienceId: string, slotStart
     return {
       name: names.get(String(b.guestId)) || (typeof b.guestName === 'string' ? b.guestName : ''),
       email: emails.get(String(b.guestId)) || '',
+      ...(b.guestId === DELETED_USER_ID ? { deletedUser: true } : {}),
       bookingCode: orderId ? orderBookingCode(orderId, orders.get(orderId)) : checkInCode(secret, id),
       ticket: String(Math.max(1, Number(b.guests) || 1)),
       status: b.checkIn ? 'checked_in' : (paid ? 'paid' : 'confirmed'),

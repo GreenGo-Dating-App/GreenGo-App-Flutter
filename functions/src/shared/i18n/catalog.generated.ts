@@ -86,6 +86,7 @@ export type ArbKey =
   | 'csvStatusCheckedIn'
   | 'csvStatusConfirmed'
   | 'csvStatusPaid'
+  | 'deletedUserName'
   | 'emailAskOrganizer'
   | 'emailBookingConfirmedGuestIntro'
   | 'emailBookingConfirmedHostIntro'
@@ -522,6 +523,7 @@ export const ARB_KEYS: readonly ArbKey[] = [
   'csvStatusCheckedIn',
   'csvStatusConfirmed',
   'csvStatusPaid',
+  'deletedUserName',
   'emailAskOrganizer',
   'emailBookingConfirmedGuestIntro',
   'emailBookingConfirmedHostIntro',
@@ -960,6 +962,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusCheckedIn: "checked-in",
     csvStatusConfirmed: "confirmed",
     csvStatusPaid: "paid",
+    deletedUserName: "Deleted user",
     emailAskOrganizer: "Ask the organizer",
     emailBookingConfirmedGuestIntro: "Your booking is confirmed.",
     emailBookingConfirmedHostIntro: "{name} has a confirmed booking for your experience.",
@@ -1396,6 +1399,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusCheckedIn: "eingecheckt",
     csvStatusConfirmed: "bestätigt",
     csvStatusPaid: "bezahlt",
+    deletedUserName: "Gelöschter Nutzer",
     emailAskOrganizer: "Den Veranstalter fragen",
     emailBookingConfirmedGuestIntro: "Deine Buchung ist bestätigt.",
     emailBookingConfirmedHostIntro: "{name} hat eine bestätigte Buchung für dein Erlebnis.",
@@ -1832,6 +1836,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusCheckedIn: "registrado",
     csvStatusConfirmed: "confirmado",
     csvStatusPaid: "pagado",
+    deletedUserName: "Usuario eliminado",
     emailAskOrganizer: "Preguntar al organizador",
     emailBookingConfirmedGuestIntro: "Tu reserva está confirmada.",
     emailBookingConfirmedHostIntro: "{name} tiene una reserva confirmada para tu experiencia.",
@@ -2268,6 +2273,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusCheckedIn: "enregistré",
     csvStatusConfirmed: "confirmé",
     csvStatusPaid: "payé",
+    deletedUserName: "Utilisateur supprimé",
     emailAskOrganizer: "Demander à l’organisateur",
     emailBookingConfirmedGuestIntro: "Votre réservation est confirmée.",
     emailBookingConfirmedHostIntro: "{name} a une réservation confirmée pour votre expérience.",
@@ -2704,6 +2710,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusCheckedIn: "check-in fatto",
     csvStatusConfirmed: "confermato",
     csvStatusPaid: "pagato",
+    deletedUserName: "Utente eliminato",
     emailAskOrganizer: "Chiedi all’organizzatore",
     emailBookingConfirmedGuestIntro: "La tua prenotazione è confermata.",
     emailBookingConfirmedHostIntro: "{name} ha una prenotazione confermata per la tua esperienza.",
@@ -3140,6 +3147,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusCheckedIn: "check-in feito",
     csvStatusConfirmed: "confirmado",
     csvStatusPaid: "pago",
+    deletedUserName: "Utilizador eliminado",
     emailAskOrganizer: "Perguntar ao organizador",
     emailBookingConfirmedGuestIntro: "A tua reserva está confirmada.",
     emailBookingConfirmedHostIntro: "{name} tem uma reserva confirmada para a tua experiência.",
@@ -3576,6 +3584,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusCheckedIn: "check-in feito",
     csvStatusConfirmed: "confirmado",
     csvStatusPaid: "pago",
+    deletedUserName: "Usuário excluído",
     emailAskOrganizer: "Perguntar ao organizador",
     emailBookingConfirmedGuestIntro: "Sua reserva está confirmada.",
     emailBookingConfirmedHostIntro: "{name} tem uma reserva confirmada para sua experiência.",

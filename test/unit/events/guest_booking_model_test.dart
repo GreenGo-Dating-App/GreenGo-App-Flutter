@@ -22,6 +22,15 @@ void main() {
       expect(isGuestUserId('guest_${'A1' * 20}'), isFalse);
       expect(isGuestUserId(null), isFalse);
     });
+
+    test('deleted account: tombstone or 64-hex pseudonym, never a uid / guest', () {
+      expect(isDeletedUserId('deleted_user'), isTrue);
+      expect(isDeletedUserId('ab' * 32), isTrue);
+      expect(isDeletedUserId('AbC123xyzUSERuid0001xyzABCD'), isFalse);
+      expect(isDeletedUserId(guestKey), isFalse);
+      expect(isDeletedUserId('AB' * 32), isFalse);
+      expect(isDeletedUserId(null), isFalse);
+    });
   });
 
   group('Event.guestBookingAllowed <-> guestsAllowed', () {

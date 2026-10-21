@@ -8201,5 +8201,6 @@
   "deletionBlockedCheckFailed": "Nous n’avons pas pu vérifier vos annonces. Réessayez.",
   "deletionBlockedActionFailed": "Cela n’a pas fonctionné. Réessayez.",
   "deletionBlockedEvent": "Événement",
-  "deletionBlockedExperience": "Expérience"
+  "deletionBlockedExperience": "Expérience",
+  "deletedUserName": "Utilisateur supprimé"
 }

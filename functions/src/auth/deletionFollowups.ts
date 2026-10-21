@@ -35,6 +35,14 @@
  *      per-user deletion API and the app sets no Crashlytics user id (reports
  *      expire after 90 days): recorded as `crashlytics: 'not_linked'`.
  *
+ *  tickets (ticketsStatus ...; privacy policy 15.2 e, 2026-10-21):
+ *   the BUYER's ticket orders / tickets / refunds keep their amounts, dates
+ *   and ids, but the buyer's account id becomes the retention pseudonym and
+ *   names / e-mail / holder names / QR codes are removed; per-buyer counters
+ *   and holder-name docs are deleted (./deletionBuyerRecords.ts). Bounded:
+ *   when work is left the task goes back to 'pending' without counting an
+ *   attempt (the write re-fires the trigger).
+ *
  * Idempotent and retried:
  *   - processDeletionFollowup (Firestore trigger) runs each due task.
  *   - retryDeletionFollowups (every 30 min) picks up docs in 'retry' /
@@ -54,10 +62,13 @@ import { defineSecret } from 'firebase-functions/params';
 import '../shared/firebaseAdmin';
 import { DELETION_FOLLOWUPS, retentionUidHash } from './accountDeletion';
 import { STRIPE_API_VERSION } from '../payments/stripeCore';
+import { BuyerRecordsDeps, buyerRecordsDepsFromEnv, pseudonymiseBuyerRecords } from './deletionBuyerRecords';
 
 export const MAX_ATTEMPTS = 8;
 export const LEASE_MS = 5 * 60 * 1000;
 export const RETRY_BATCH = 50;
+/** Time after which the retry scheduler stops starting new tasks. */
+export const SCHEDULER_BUDGET_MS = 300 * 1000;
 /** Statuses that can still bill or be resumed; everything else is final. */
 export const CANCELLABLE_STATUSES: readonly string[] = [
   'active', 'trialing', 'past_due', 'unpaid', 'incomplete', 'paused',
@@ -65,8 +76,11 @@ export const CANCELLABLE_STATUSES: readonly string[] = [
 
 export type StripeFollowupStatus =
   | 'pending' | 'processing' | 'retry' | 'done' | 'failed';
-export type FollowupTask = 'stripe' | 'analytics';
-export const TASKS: readonly FollowupTask[] = ['stripe', 'analytics'];
+export type FollowupTask = 'stripe' | 'analytics' | 'tickets';
+export const TASKS: readonly FollowupTask[] = ['stripe', 'analytics', 'tickets'];
+
+/** A task's work result: fields to store; `more` = bounds hit, run again. */
+export const MORE = '__more';
 
 export interface StripeLike {
   subscriptions: {
@@ -94,6 +108,8 @@ export interface FollowupDeps {
   bigquery?(): BigQueryLike | null;
   /** GA4 User Deletion API for one app instance id; null when not enabled. */
   ga4DeleteAppInstance?: ((appInstanceId: string) => Promise<void>) | null;
+  /** Buyer-side ticket records (task 'tickets'); defaults to the production deps on db()/now(). */
+  buyerRecords?(): BuyerRecordsDeps;
 }
 
 export interface CancelResult {
@@ -443,6 +459,18 @@ async function runTask(
   const del = admin.firestore.FieldValue.delete();
   try {
     const fields = await work(d);
+    if (fields[MORE] === true) {
+      // Bounded run with work left: back to 'pending' (re-fires the trigger),
+      // no attempt counted. Progress lives in the source data itself.
+      delete fields[MORE];
+      await ref.update({
+        ...fields,
+        [`${task}Status`]: 'pending',
+        [`${task}Passes`]: admin.firestore.FieldValue.increment(1),
+        [`${task}LeaseUntil`]: del,
+      });
+      return 'pending';
+    }
     await ref.update({
       [`${task}Status`]: 'done',
       [`${task}Attempts`]: attempts,
@@ -468,7 +496,8 @@ async function runTask(
       // Admin queue: ids only, so a human can finish it by hand.
       await db.collection('admin_alerts').doc(`deletion_followup_${task}_${uid}`).set({
         type: 'deletion_followup_failed',
-        task: task === 'stripe' ? 'cancel_stripe_subscriptions_delete_customer' : 'delete_analytics_data',
+        task: task === 'stripe' ? 'cancel_stripe_subscriptions_delete_customer'
+          : task === 'analytics' ? 'delete_analytics_data' : 'pseudonymise_buyer_ticket_records',
         followupId: uid,
         ...(task === 'stripe' ? {
           stripeCustomerId: d.stripeCustomerId || null,
@@ -522,18 +551,44 @@ export async function processAnalyticsFollowup(
   }, deps);
 }
 
+/** Processes the buyer ticket-records task of one follow-up doc. Never throws. */
+export async function processTicketsFollowup(
+  uid: string,
+  deps: FollowupDeps = deletionFollowupDeps,
+): Promise<StripeFollowupStatus | 'skipped'> {
+  return runTask(uid, 'tickets', async (d) => {
+    const bdeps = deps.buyerRecords ? deps.buyerRecords() : buyerRecordsDepsFromEnv(deps.db, deps.now);
+    const r = await pseudonymiseBuyerRecords(uid, d, bdeps);
+    if (r.blocked > 0) throw new Error(`open_orders_pending:${r.blocked}`);
+    const { more, blocked, ...counts } = r;
+    void blocked;
+    return {
+      ...(more ? { [MORE]: true } : {}),
+      // Counts only (no ids, no personal data).
+      [`tickets${more ? 'Progress' : 'Result'}`]: counts,
+      // The guest keys are not needed any more once done.
+      ...(more ? {} : { ticketGuestKeys: admin.firestore.FieldValue.delete() }),
+    };
+  }, deps);
+}
+
 /** Scheduler body: due 'retry' / 'pending' tasks and stale leases, bounded per run. */
 export async function retryDueFollowups(deps: FollowupDeps = deletionFollowupDeps): Promise<number> {
   const now = deps.now();
+  const started = Date.now();
   let n = 0;
   for (const task of TASKS) {
     for (const status of ['retry', 'processing', 'pending'] as const) {
       const snap = await deps.db().collection(DELETION_FOLLOWUPS)
         .where(`${task}Status`, '==', status).limit(RETRY_BATCH).get();
       for (const doc of snap.docs) {
+        // Stay inside the 540 s schedule timeout (a tickets pass may take
+        // up to ~200 s); what is left is picked up by the next run.
+        if (Date.now() - started > SCHEDULER_BUDGET_MS) return n;
         if (!isTaskDue(doc.data(), task, now)) continue;
         if (task === 'stripe') await processStripeFollowup(doc.id, deps);
-        else await processAnalyticsFollowup(doc.id, deps);
+        else if (task === 'analytics') await processAnalyticsFollowup(doc.id, deps);
+        else await processTicketsFollowup(doc.id, deps);
         n++;
       }
     }
@@ -558,6 +613,7 @@ export const processDeletionFollowup = onDocumentWritten(
     const now = new Date();
     if (isTaskDue(after, 'stripe', now)) await processStripeFollowup(event.params.uid);
     if (isTaskDue(after, 'analytics', now)) await processAnalyticsFollowup(event.params.uid);
+    if (isTaskDue(after, 'tickets', now)) await processTicketsFollowup(event.params.uid);
   },
 );
 

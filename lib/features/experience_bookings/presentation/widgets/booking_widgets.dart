@@ -116,6 +116,8 @@ class BookingPartyRow extends StatelessWidget {
   Widget build(BuildContext context) {
     // Shared-link guest: no profile, rating, badge or tap target.
     if (isGuestUserId(uid)) return GuestNameAvatar(name: guestName, radius: radius);
+    // Deleted account: no profile, rating, badge or tap target.
+    if (isDeletedUserId(uid)) return DeletedUserNameAvatar(radius: radius);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,

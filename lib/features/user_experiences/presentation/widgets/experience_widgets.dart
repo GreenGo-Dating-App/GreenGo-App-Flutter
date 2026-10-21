@@ -171,6 +171,10 @@ class UserNameAvatar extends StatelessWidget {
       return GuestNameAvatar(
           name: fallbackName, radius: radius, textStyle: textStyle);
     }
+    // Deleted account: no profile to resolve or open.
+    if (isDeletedUserId(uid)) {
+      return DeletedUserNameAvatar(radius: radius, textStyle: textStyle);
+    }
     return ListenableBuilder(
       listenable: UserDirectoryService.instance,
       builder: (context, _) {

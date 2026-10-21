@@ -19,7 +19,9 @@
  *                 document version), legal_acknowledgements/{uid}/items
  *                 (private-content warning confirmations, privacy policy 10.5)
  *   data/         one JSON (and a CSV when there is more than one record) per
- *                 inventory location that holds something
+ *                 inventory location that holds something (incl. the ticket
+ *                 orders / tickets / refunds the caller bought, without the
+ *                 signed QR token)
  *   messages/     the messages the CALLER sent (all conversations / groups /
  *                 communities / events), JSON + CSV
  *   conversations/ metadata only of the caller's conversations and groups
@@ -453,6 +455,19 @@ export async function collectSections(uid: string): Promise<{ sections: Section[
         const r = await readQuery(db().collectionGroup(e.group).where(e.field, '==', uid),
           (d) => recs.push(record(d, uid, { parent: d.ref.parent.parent?.path ?? null })));
         add(`data/memberships__${safeName(e.group)}`, `*/${e.group} where ${e.field} = you`, recs, r.truncated);
+        break;
+      }
+      case 'buyerRecords': {
+        // The caller's ticket purchases as buyer (orders, tickets, refunds,
+        // per-buyer counters). The signed QR token is left out; admin alerts
+        // are internal operations records, not exported.
+        if (e.collection === 'admin_alerts') break;
+        const recs: Array<Record<string, any>> = [];
+        const r = await readQuery(
+          db().collection(e.collection).where(e.field, '==', uid),
+          (d) => { const rec = record(d, uid); delete rec.qrPayload; recs.push(rec); },
+        );
+        add(`data/${safeName(e.collection)}__${safeName(e.field)}`, `${e.collection} where ${e.field} = you`, recs, r.truncated);
         break;
       }
       case 'scrub': {

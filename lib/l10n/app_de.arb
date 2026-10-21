@@ -8775,5 +8775,6 @@
   "deletionBlockedCheckFailed": "Wir konnten deine Angebote nicht prüfen. Versuche es erneut.",
   "deletionBlockedActionFailed": "Das hat nicht geklappt. Versuche es erneut.",
   "deletionBlockedEvent": "Event",
-  "deletionBlockedExperience": "Erlebnis"
+  "deletionBlockedExperience": "Erlebnis",
+  "deletedUserName": "Gelöschter Nutzer"
 }
