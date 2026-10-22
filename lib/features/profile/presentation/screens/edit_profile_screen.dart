@@ -29,6 +29,8 @@ import '../../../../core/widgets/settings_accordion.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/deletion_blockers_service.dart';
 import '../widgets/deletion_blockers_sheet.dart';
+import 'pending_deletion_screen.dart';
+import '../../../../core/widgets/reauthenticate_dialog.dart';
 import '../../../../core/utils/country_names_l10n.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
@@ -196,6 +198,22 @@ class EditProfileScreen extends StatelessWidget {
                   .pushNamedAndRemoveUntil('/', (route) => false);
               return;
             }
+            if (state is ProfileDeletionScheduled) {
+              // Apple 5.1.1(v): accepted, waits for the buyers' refunds; the
+              // account stays signed in (hidden) until it is deleted.
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(AppLocalizations.of(context)!.deletionScheduledSnack),
+                  backgroundColor: AppColors.successGreen,
+                ),
+              );
+              final uid = userId ?? FirebaseAuth.instance.currentUser?.uid;
+              if (uid != null) {
+                context.read<ProfileBloc>().add(ProfileLoadRequested(userId: uid));
+              }
+              PendingDeletionScreen.open(context);
+              return;
+            }
             if (state is ProfileBoostActivated) {
               // The free monthly boost (if any) was counted by the server.
               final remaining = state.expiry.difference(DateTime.now());
@@ -258,7 +276,7 @@ class EditProfileScreen extends StatelessWidget {
               // Sign-in too old: ask for the password again, then retry.
               final uid = userId ?? FirebaseAuth.instance.currentUser?.uid;
               if (state.reason == ProfileDeleteFailure.requiresRecentLogin && uid != null) {
-                _showPasswordConfirmDialog(context, uid);
+                _reauthAndDelete(context, uid, afterRefusal: true);
               }
               // Paid, unrefunded sales appeared since the pre-check: list them.
               if (state.reason == ProfileDeleteFailure.blockedPaidOrders) {
@@ -1577,14 +1595,17 @@ class EditProfileScreen extends StatelessWidget {
       return;
     }
 
-    // Owner rule 2026-10-21: no deletion while the user sells paid tickets /
-    // bookings that are not refunded. List them first ("Cancel & refund",
-    // "Upload refund proof"); continue only once nothing blocks. The server
-    // refuses the same (deletion_blocked_paid_orders).
+    // Apple 5.1.1(v) (2026-10-22): deletion can ALWAYS be requested here.
+    // Paid tickets / bookings that are not refunded yet don't refuse it any
+    // more: the sheet lists them and what happens ("We'll cancel X listings
+    // and refund Y buyers automatically"), and the server schedules the
+    // deletion (functions/src/auth/scheduledDeletion.ts) - it completes by
+    // itself once every refund is done. A request already waiting opens its
+    // status screen (withdraw it there).
     final service = DeletionBlockersService();
-    List<DeletionBlocker> blockers;
+    DeletionState state;
     try {
-      blockers = await service.fetch();
+      state = await service.fetchState();
     } catch (_) {
       if (screenContext.mounted) {
         showUserErrorMessage(screenContext,
@@ -1593,10 +1614,22 @@ class EditProfileScreen extends StatelessWidget {
       return;
     }
     if (!screenContext.mounted) return;
-    if (blockers.isNotEmpty) {
-      final clear = await DeletionBlockersSheet.show(screenContext,
-          blockers: blockers, service: service);
-      if (!clear || !screenContext.mounted) return;
+    if (state.scheduled != null) {
+      await PendingDeletionScreen.open(screenContext, service: service, initial: state);
+      return;
+    }
+    var scheduling = false;
+    if (state.blockers.isNotEmpty) {
+      final proceed = await DeletionBlockersSheet.show(screenContext,
+          blockers: state.blockers, service: service);
+      if (!proceed || !screenContext.mounted) return;
+      // The sheet also closes when the user cancelled & refunded everything.
+      try {
+        scheduling = (await service.fetch()).isNotEmpty;
+      } catch (_) {
+        scheduling = true;
+      }
+      if (!screenContext.mounted) return;
     }
 
     // Step 1: Confirm intent
@@ -1610,12 +1643,28 @@ class EditProfileScreen extends StatelessWidget {
         ),
         // Terms 7.3 / 8.7: what deleting does (and does not) do.
         content: SingleChildScrollView(
-          child: Text(
-            ProductCatalog.isAppleStore
-                ? AppLocalizations.of(dialogContext)!.deleteAccountConfirmationIos
-                : AppLocalizations.of(dialogContext)!.deleteAccountConfirmation,
-            key: const ValueKey('delete-account-consequences'),
-            style: const TextStyle(color: AppColors.textSecondary, height: 1.4),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Scheduled (paid sales not refunded): not deleted at once;
+              // withdrawing later keeps the cancelled listings cancelled.
+              if (scheduling) ...[
+                Text(
+                  AppLocalizations.of(dialogContext)!.deletionScheduleConfirmExtra,
+                  key: const ValueKey('delete-account-schedule-note'),
+                  style: const TextStyle(color: AppColors.textPrimary, height: 1.4),
+                ),
+                const SizedBox(height: 12),
+              ],
+              Text(
+                ProductCatalog.isAppleStore
+                    ? AppLocalizations.of(dialogContext)!.deleteAccountConfirmationIos
+                    : AppLocalizations.of(dialogContext)!.deleteAccountConfirmation,
+                key: const ValueKey('delete-account-consequences'),
+                style: const TextStyle(color: AppColors.textSecondary, height: 1.4),
+              ),
+            ],
           ),
         ),
         actions: [
@@ -1626,8 +1675,8 @@ class EditProfileScreen extends StatelessWidget {
           TextButton(
             onPressed: () {
               Navigator.of(dialogContext).pop();
-              // Step 2: Ask for password confirmation
-              _showPasswordConfirmDialog(screenContext, currentProfile.userId);
+              // Step 2: prove it is you (password, or Google / Apple sign-in)
+              _reauthAndDelete(screenContext, currentProfile.userId);
             },
             child: Text(
               AppLocalizations.of(dialogContext)!.deleteAccount,
@@ -1637,6 +1686,34 @@ class EditProfileScreen extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  /// Re-authentication before deleteMyAccount (recent sign-in, 10 min):
+  /// email/password accounts confirm the password; Google / Apple accounts
+  /// sign in with the provider again (Apple 5.1.1(v): every account type can
+  /// delete in the app). Other sign-in methods (phone / nickname) call the
+  /// server directly - a fresh session is accepted; an old one gets "sign out
+  /// and in again" ([afterRefusal]).
+  Future<void> _reauthAndDelete(BuildContext screenContext, String deleteUserId,
+      {bool afterRefusal = false}) async {
+    final user = FirebaseAuth.instance.currentUser;
+    final providers = user?.providerData.map((p) => p.providerId).toSet() ?? <String>{};
+    if (providers.contains('password') && user?.email != null) {
+      _showPasswordConfirmDialog(screenContext, deleteUserId);
+      return;
+    }
+    if (providers.contains('google.com') || providers.contains('apple.com')) {
+      final ok = await reauthenticateCurrentUser(screenContext);
+      if (ok && screenContext.mounted) {
+        screenContext.read<ProfileBloc>().add(ProfileDeleteRequested(userId: deleteUserId));
+      }
+      return;
+    }
+    if (afterRefusal) {
+      showUserErrorMessage(screenContext, AppLocalizations.of(screenContext)!.reauthSignInAgain);
+      return;
+    }
+    screenContext.read<ProfileBloc>().add(ProfileDeleteRequested(userId: deleteUserId));
   }
 
   void _showPasswordConfirmDialog(BuildContext screenContext, String deleteUserId) {

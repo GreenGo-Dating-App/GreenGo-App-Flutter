@@ -75,6 +75,13 @@ class ProfileDeleted extends ProfileState {
   const ProfileDeleted();
 }
 
+/// The deletion request was ACCEPTED but waits for refunds (paid sales not
+/// refunded yet; Apple 5.1.1(v), functions/src/auth/scheduledDeletion.ts):
+/// the account is hidden and deleted automatically once refunds are done.
+class ProfileDeletionScheduled extends ProfileState {
+  const ProfileDeletionScheduled();
+}
+
 /// Why `deleteMyAccount` did not delete the account (nothing was deleted).
 enum ProfileDeleteFailure {
   /// The sign-in is older than the server allows: confirm the password again.

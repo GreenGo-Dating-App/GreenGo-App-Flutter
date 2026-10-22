@@ -28555,4 +28555,114 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get coverFrameAvatar => 'Photo de profil';
+
+  @override
+  String get emailAccountDeletionScheduledSubject =>
+      'La suppression de votre compte GreenGo est programmée';
+
+  @override
+  String get srvAccountDeletionScheduledBody =>
+      'Nous avons reçu votre demande de suppression de votre compte GreenGo. Vos prochains événements et réservations payants ont été annulés et chaque acheteur est remboursé automatiquement. Votre compte sera supprimé dès que tous les remboursements seront terminés, généralement en quelques jours, et nous vous enverrons alors un e-mail. D’ici là, votre profil est masqué. Vous pouvez annuler la demande dans l’app : Profil > Supprimer le Compte.';
+
+  @override
+  String get srvAccountDeletionCompletedBody =>
+      'Tous les remboursements sont terminés : votre compte GreenGo et ses données ont donc été supprimés, comme vous l’avez demandé. Les documents que la loi nous oblige à conserver (relevés de paiement) sont gardés sans votre profil, comme décrit dans notre politique de confidentialité.';
+
+  @override
+  String get srvAccountDeletionProofNeededTitle =>
+      'Preuve de remboursement requise';
+
+  @override
+  String srvAccountDeletionProofNeededBody(String title) {
+    return 'Nous n’avons pas pu rembourser automatiquement un acheteur de $title. Remboursez-le depuis votre propre compte Stripe ou Mercado Pago et téléversez la preuve dans l’app (Profil > Supprimer le Compte). Votre compte sera supprimé une fois tous les remboursements effectués.';
+  }
+
+  @override
+  String emailAccountDeletionProofNeededSubject(String title) {
+    return 'Action requise : preuve de remboursement pour $title';
+  }
+
+  @override
+  String get deletionScheduleBody =>
+      'Vous vendez des billets ou des réservations payés et pas encore remboursés. Vous pouvez quand même supprimer votre compte : nous annulons ces annonces, remboursons automatiquement chaque acheteur et supprimons votre compte dès que tous les remboursements sont terminés.';
+
+  @override
+  String deletionScheduleListings(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nous annulerons $count annonces avec des ventes payées.',
+      one: 'Nous annulerons 1 annonce avec des ventes payées.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String deletionScheduleBuyers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count acheteurs sont remboursés automatiquement.',
+      one: '1 acheteur est remboursé automatiquement.',
+      zero: 'Aucun acheteur n’attend de nouveau remboursement.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get deletionScheduleWhen =>
+      'Vos autres événements et réservations payants à venir sont aussi annulés, et plus personne ne peut vous acheter quoi que ce soit. Votre compte est supprimé une fois tous les remboursements terminés, généralement en quelques jours.';
+
+  @override
+  String get deletionScheduleContinue => 'Demander la suppression';
+
+  @override
+  String get deletionScheduleConfirmExtra =>
+      'Votre compte n’est pas supprimé tout de suite. Il est masqué dès maintenant, vos annonces payantes sont annulées et les acheteurs remboursés, puis la suppression se fait automatiquement une fois tous les remboursements terminés. D’ici là, vous pouvez annuler la demande, mais les événements et réservations annulés le restent.';
+
+  @override
+  String get deletionScheduledSnack =>
+      'Suppression demandée. Votre compte sera supprimé une fois tous les remboursements terminés.';
+
+  @override
+  String get deletionPendingTitle => 'Suppression du compte demandée';
+
+  @override
+  String deletionPendingBody(String date) {
+    return 'Demandée le $date. Nous attendons la fin des remboursements de vos acheteurs. Votre compte sera ensuite supprimé automatiquement, généralement en quelques jours, et nous vous enverrons un e-mail.';
+  }
+
+  @override
+  String get deletionPendingHidden =>
+      'D’ici là, votre profil est masqué dans Découvrir et la recherche, et personne ne peut vous acheter de billets ni de réservations.';
+
+  @override
+  String get deletionPendingDeleting =>
+      'Tous les remboursements sont effectués. Votre compte est en cours de suppression.';
+
+  @override
+  String get deletionPendingFailed =>
+      'Nous n’avons pas pu terminer automatiquement la suppression de votre compte. GreenGo a été alerté et la terminera pour vous ; vous n’avez rien à faire.';
+
+  @override
+  String get deletionPendingNothingLeft =>
+      'Il n’y a plus de remboursement en attente. Votre compte sera supprimé sous peu.';
+
+  @override
+  String get deletionPendingCancel => 'Annuler la demande de suppression';
+
+  @override
+  String get deletionPendingCancelConfirm =>
+      'Garder votre compte ? Votre profil redevient visible. Les événements et réservations annulés le restent, et les remboursements déjà lancés parviennent quand même aux acheteurs.';
+
+  @override
+  String get deletionPendingKeepAccount => 'Garder mon compte';
+
+  @override
+  String get deletionPendingCancelled =>
+      'Demande de suppression annulée. Votre compte est conservé.';
+
+  @override
+  String get deletionPendingTooLate =>
+      'Votre compte est déjà en cours de suppression. Il n’est plus possible de l’arrêter.';
 }

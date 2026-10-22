@@ -359,48 +359,136 @@ describe('refund_proofs storage', () => {
 
 // ═══════════════════════════════════════════════ account deletion blockers
 
-describe('account deletion is refused while paid sales are not refunded', () => {
+describe('account deletion with paid sales not refunded: scheduled, never refused (Apple 5.1.1(v))', () => {
+  // What the app writes for a new paid event (client create, rules apply).
+  const newPaidEvent = () => ({
+    organizerId: ORG, title: 'New night', attendeeCount: 0, maxAttendees: 0, price: 15, ticketProvider: 'stripe',
+    status: 'published', startDate: new Date(Date.now() + 48 * HOUR), endDate: new Date(Date.now() + 50 * HOUR),
+  });
+
   async function orgWithSale(): Promise<string> {
     await admin.auth().createUser({ uid: ORG, email: 'org@example.com', password: 'Passw0rd!x' });
     await paidEvent('d1');
     return buyAndPay('d1', 1);
   }
 
-  test('getDeletionBlockers + every entry point refuses; nothing is deleted', async () => {
+  test('getDeletionBlockers lists them; an OLD app (no allowScheduled) is still refused, nothing deleted', async () => {
     const orderId = await orgWithSale();
     const g = await v2call(ep.getDeletionBlockers, {}, { uid: ORG, token: {} });
     expect(g.blocked).toBe(true);
+    expect(g.scheduled).toBeNull();
     expect(g.blockers[0]).toMatchObject({ kind: 'event', listingId: 'd1', paidOrders: 1 });
 
-    // App callable.
+    // App callable from an app that predates scheduled deletions.
     await expect(v2call(ep.deleteMyAccount, {}, { uid: ORG, token: { auth_time: Math.floor(Date.now() / 1000) - 30 } }))
       .rejects.toMatchObject({ code: 'failed-precondition', details: { code: 'deletion_blocked_paid_orders' } });
 
-    // Website, signed-in mode.
-    const tok = await idTokenFor(ORG);
-    const res1 = mockRes();
-    await ep.handleRequestAccountDeletion(mockReq({ headers: { authorization: `Bearer ${tok}`, origin: 'https://greengochat.com' } }), res1);
-    expect(res1.statusCode).toBe(409);
-    expect(res1.body.code).toBe('deletion_blocked_paid_orders');
+    expect((await admin.auth().getUser(ORG)).uid).toBe(ORG);
+    expect((await db.doc(`profiles/${ORG}`).get()).exists).toBe(true);
+    expect((await db.doc(`ticket_orders/${orderId}`).get()).data()!.status).toBe('paid');
+    expect((await db.doc(`scheduled_account_deletions/${ORG}`).get()).exists).toBe(false);
+    expect((await db.doc('events/d1').get()).data()!.status).toBe('published');
+  });
 
-    // Website, e-mail link: GET shows the list, POST refuses and gives the link back.
+  // Apple 5.1.1(v) (2026-10-22): with blockers the request is ACCEPTED.
+  test('app: deletion is scheduled, listings cancelled, sales closed, deleted once refunds are done', async () => {
+    const orderId = await orgWithSale();
+    const sched = await import('../../src/auth/scheduledDeletion');
+    const mailsSent: string[] = [];
+    sched.scheduledDeletionDeps.sendMailOnce = async (key) => { mailsSent.push(key); };
+    const r = await v2call(ep.deleteMyAccount, { allowScheduled: true },
+      { uid: ORG, token: { auth_time: Math.floor(Date.now() / 1000) - 30 } });
+    expect(r).toMatchObject({ success: true, status: 'scheduled', cancelledEvents: 1 });
+    expect(r.blockers[0]).toMatchObject({ listingId: 'd1' });
+    expect((await db.doc(`scheduled_account_deletions/${ORG}`).get()).data()).toMatchObject({ status: 'waiting_refunds', source: 'app_callable' });
+    expect((await db.doc(`profiles/${ORG}`).get()).data()!.accountStatus).toBe('deletion_pending');
+    // The existing cancel path: status 'cancelled' (the trigger enqueues the refunds).
+    const after = (await db.doc('events/d1').get()).data()!;
+    expect(after.status).toBe('cancelled');
+    expect(mailsSent).toEqual([expect.stringMatching(/^account_deletion_scheduled_organizer01_/)]);
+    const g = await v2call(ep.getDeletionBlockers, {}, { uid: ORG, token: {} });
+    expect(g.scheduled).toMatchObject({ status: 'waiting_refunds', cancelledEvents: 1 });
+
+    // No new sales while it waits: another (re-created) paid event can't sell.
+    await paidEvent('d2');
+    await expect(createTicketCheckout(BUYER, { kind: 'event', id: 'd2', quantity: 1 }, 'buyer@example.com'))
+      .rejects.toMatchObject({ details: { code: 'seller_unavailable' } });
+    // ... nor re-open a cancelled paid event, nor create a new paid one (rules);
+    // editing a cancelled one still works.
+    await db.doc('events/d2').update({ status: 'cancelled' });
+    expect(await clientWrite(ORG, 'events/d2', { status: 'published' }, ['status'])).toBe(403);
+    expect(await clientWrite(ORG, 'events/d1', { description: 'Cancelled' }, ['description'])).toBe(200);
+    expect(await clientWrite(ORG, 'events/d3', newPaidEvent())).toBe(403);
+    expect(await clientWrite(ORG, 'events/d4', { ...newPaidEvent(), price: 0, ticketProvider: null })).toBe(200);
+    await db.doc('events/d2').delete();
+    await db.doc('events/d4').delete();
+
+    // Refund running: still waiting.
+    await R.enqueueEventRefunds('d1', after, 'event_cancelled');
+    expect(await sched.processScheduledDeletion(ORG)).toBe('waiting');
+    expect((await admin.auth().getUser(ORG)).uid).toBe(ORG);
+    // Refunded: the trigger / sweep runs the normal deletion.
+    expect(await R.processRefund(orderId)).toBe('refunded');
+    await db.doc(`scheduled_account_deletions/${ORG}`).set({ nextCheckAt: TS.fromMillis(Date.now() - 1000) }, { merge: true });
+    expect(await sched.sweepScheduledDeletions()).toBe(1);
+    await expect(admin.auth().getUser(ORG)).rejects.toMatchObject({ code: 'auth/user-not-found' });
+    expect((await db.doc(`profiles/${ORG}`).get()).exists).toBe(false);
+    expect((await db.doc(`scheduled_account_deletions/${ORG}`).get()).exists).toBe(false);
+    expect((await db.doc(`deletion_receipts/${ORG}`).get()).data()!.source).toBe('scheduled');
+    expect(mailsSent).toContain(`account_deletion_completed_${ORG}`);
+    // The buyer's refunded order is kept (bookkeeping).
+    expect((await db.doc(`ticket_orders/${orderId}`).get()).data()!.status).toBe('refunded');
+  });
+
+  test('website: signed-in mode and the e-mail link schedule too; the app can withdraw', async () => {
+    await orgWithSale();
+    const sched = await import('../../src/auth/scheduledDeletion');
+    sched.scheduledDeletionDeps.sendMailOnce = async () => undefined;
+
+    // E-mail link: GET explains + shows the button, POST schedules (token used).
     const token = crypto.randomBytes(32).toString('base64url');
     await db.doc(`deletion_requests/${ep.sha256(token)}`).set({
       uid: ORG, used: false, createdAt: TS.now(), expiresAt: TS.fromMillis(Date.now() + HOUR),
     });
     const get = mockRes();
     await ep.handleConfirmAccountDeletion(mockReq({ method: 'GET', query: { token } }), get);
-    expect(get.statusCode).toBe(409);
+    expect(get.statusCode).toBe(200);
     expect(get.body).toContain('Rooftop Samba');
-    expect(get.body).not.toContain('<form');
+    expect(get.body).toContain('<form');
+    expect(get.body).toContain('refund every buyer automatically');
     const post = mockRes();
     await ep.handleConfirmAccountDeletion(mockReq({ method: 'POST', body: { token } }), post);
-    expect(post.statusCode).toBe(409);
-    expect((await db.doc(`deletion_requests/${ep.sha256(token)}`).get()).data()!.used).toBe(false);
+    expect(post.statusCode).toBe(202);
+    expect(post.body).toContain('Deletion requested');
+    expect((await db.doc(`deletion_requests/${ep.sha256(token)}`).get()).data()!.used).toBe(true);
+    expect((await db.doc(`scheduled_account_deletions/${ORG}`).get()).data()).toMatchObject({ status: 'waiting_refunds', source: 'web_email_link' });
 
+    // Signed-in mode: accepted (202), same record.
+    const tok = await idTokenFor(ORG);
+    const res1 = mockRes();
+    await ep.handleRequestAccountDeletion(mockReq({ headers: { authorization: `Bearer ${tok}`, origin: 'https://greengochat.com' } }), res1);
+    expect(res1.statusCode).toBe(202);
+    expect(res1.body).toMatchObject({ success: true, status: 'scheduled' });
+
+    // Withdraw in the app: profile visible again, the cancelled event stays cancelled.
+    expect(await v2call(ep.cancelAccountDeletionRequest, {}, { uid: ORG, token: {} })).toEqual({ status: 'cancelled' });
+    expect((await db.doc(`profiles/${ORG}`).get()).data()!.accountStatus).toBe('active');
+    expect((await db.doc('events/d1').get()).data()!.status).toBe('cancelled');
+    const g = await v2call(ep.getDeletionBlockers, {}, { uid: ORG, token: {} });
+    expect(g.scheduled).toBeNull();
     expect((await admin.auth().getUser(ORG)).uid).toBe(ORG);
-    expect((await db.doc(`profiles/${ORG}`).get()).exists).toBe(true);
-    expect((await db.doc(`ticket_orders/${orderId}`).get()).data()!.status).toBe('paid');
+    // Selling works again (a new paid event and its re-opening).
+    expect(await clientWrite(ORG, 'events/d3', newPaidEvent())).toBe(200);
+    await expect(v2call(ep.cancelAccountDeletionRequest, {}, undefined)).rejects.toMatchObject({ code: 'unauthenticated' });
+  });
+
+  test('scheduled_account_deletions: the owner reads, nobody writes', async () => {
+    await db.doc(`scheduled_account_deletions/${ORG}`).set({ uid: ORG, status: 'waiting_refunds' });
+    expect(await clientRead(ORG, `scheduled_account_deletions/${ORG}`)).toBe(200);
+    expect(await clientRead(STRANGER, `scheduled_account_deletions/${ORG}`)).toBe(403);
+    expect(await clientWrite(ORG, `scheduled_account_deletions/${ORG}`, { status: 'cancelled' }, ['status'])).toBe(403);
+    expect(await clientDelete(ORG, `scheduled_account_deletions/${ORG}`)).toBe(403);
+    expect(await clientWrite(STRANGER, `scheduled_account_deletions/${STRANGER}`, { status: 'waiting_refunds' })).toBe(403);
   });
 
   test('once the event is cancelled and refunded, nothing blocks any more', async () => {
@@ -412,7 +500,7 @@ describe('account deletion is refused while paid sales are not refunded', () => 
     expect(g.blockers[0]).toMatchObject({ refundsInProgress: 1 });
     await R.processRefund(orderId);
     g = await v2call(ep.getDeletionBlockers, {}, { uid: ORG, token: {} });
-    expect(g).toEqual({ blocked: false, code: null, blockers: [] });
+    expect(g).toEqual({ blocked: false, code: null, blockers: [], scheduled: null });
   });
 
   test('a failed refund keeps blocking until an admin accepts the proof', async () => {

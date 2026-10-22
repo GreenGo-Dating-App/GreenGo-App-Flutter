@@ -143,3 +143,37 @@ refund proof); the password step opens only when the list is empty.
 
 Indexes (firestore.indexes.json): `ticket_orders (organizerId, status,
 startsAt)`, `ticket_refunds (organizerId, status)`.
+
+### 5.1 Scheduled deletion (Apple 5.1.1(v), 2026-10-22, branch fix/apple-deletion-request)
+
+Blockers no longer REFUSE a deletion request: the request is accepted and
+scheduled (`functions/src/auth/scheduledDeletion.ts`). Record
+`scheduled_account_deletions/{uid}` (server-only, owner may read):
+`waiting_refunds -> deleting -> (removed)`, `cancelled` (withdrawn by the
+user), `failed` (5 failed deletion attempts, `admin_alerts/
+scheduled_deletion_failed_{uid}`).
+
+* On request: profile `accountStatus = 'deletion_pending'` (hidden from every
+  people surface; previous value kept in `preDeletionAccountStatus`), upcoming
+  / ongoing PAID events set to `cancelled` (the refund trigger refunds every
+  buyer), upcoming paid / requested experience bookings cancelled by the host
+  (`cancelBooking`, full refund), e-mail "deletion scheduled".
+* While waiting: `createTicketCheckout` (`seller_unavailable`),
+  `createBooking` (`host_unavailable`) and paid `createUserExperience`
+  (`seller_account_closing`) refuse; rules `sellerClosing()` refuse creating /
+  re-opening a paid event.
+* `sweepScheduledAccountDeletions` (every 30 min, `nextCheckAt <= now`) and
+  `checkScheduledDeletionOnRefund` (ticket_refunds row became final) re-check
+  the blockers: still blocked -> re-cancel anything new, push + e-mail once
+  per `refund_failed` order ("refund by hand and upload the proof"); clear ->
+  `deleteAccountCompletely(source 'scheduled')`, then the "deleted" e-mail
+  (address captured before the deletion).
+* `cancelAccountDeletionRequest`: withdraws (refused with
+  `deletion_in_progress` while the deletion itself runs); cancelled listings
+  stay cancelled, refunds already started continue.
+* Entry points: `deleteMyAccount` schedules only with `allowScheduled: true`
+  (apps from this branch; older apps keep the refusal); website signed-in mode
+  answers 202 `{ status: 'scheduled' }`; the e-mail link GET shows what
+  happens + the button, POST schedules (202 page). `getDeletionBlockers` also
+  returns `scheduled: { status, requestedAt, cancelledEvents,
+  cancelledBookings } | null`.

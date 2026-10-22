@@ -94,6 +94,15 @@ service cloud.firestore {
         && get(/databases/$(database)/documents/profiles/$(uid)).data.get('isBusiness', false) == true
         && tierRankOf(get(/databases/$(database)/documents/profiles/$(uid)).data) >= 1;
     }
+    // Apple 5.1.1(v) (2026-10-22): the seller asked to delete their account
+    // and the deletion waits for refunds (functions/src/auth/scheduledDeletion.ts):
+    // no new or re-opened paid listing until it completes or is withdrawn.
+    function sellerClosing(uid) {
+      return uid is string
+        && exists(/databases/$(database)/documents/scheduled_account_deletions/$(uid))
+        && get(/databases/$(database)/documents/scheduled_account_deletions/$(uid)).data.get('status', '')
+             in ['waiting_refunds', 'deleting', 'failed'];
+    }
     // Sponsoring a community / pinning a promo stays a PLATINUM business
     // feature (SponsorshipGate in the app).
     function sponsorBusinessActive(uid) {
@@ -2581,6 +2590,13 @@ service cloud.firestore {
           || (resource != null && isPaidEventData(resource.data))
           || sellerBusinessActive(organizerId);
       }
+      // A seller whose account deletion is pending keeps only cancelled /
+      // draft / completed paid events (scheduledDeletion.ts cancels the rest).
+      function closingSellerOk(organizerId) {
+        return !isPaidEventData(request.resource.data)
+          || request.resource.data.get('status', '') in ['cancelled', 'draft', 'completed']
+          || !sellerClosing(organizerId);
+      }
       // Owner rule 2026-10-12: no e-mail address or phone number in an
       // event's own text (title, description, language pairs, place name).
       // Same patterns as the e-mail / phone kinds of ContactInfoDetector
@@ -2640,6 +2656,7 @@ service cloud.firestore {
         && attendeeNamesOk()
         && (!isPaidEventData(request.resource.data)
             || sellerBusinessActive(request.auth.uid))
+        && closingSellerOk(request.auth.uid)
         // Audit P-H4 / M1: an end date (what makes an event "ongoing") and
         // the tier's cap of ACTIVE events at a time - Base 1, Silver 5,
         // Gold 10, Platinum unlimited (onEventWrittenUsage counts them).
@@ -2671,7 +2688,8 @@ service cloud.firestore {
                         && guestBookingOk(request.resource.data)
                         && plusOnesOk()
                         && attendeeNamesOk()
-                        && paidAllowed(resource.data.organizerId))
+                        && paidAllowed(resource.data.organizerId)
+                        && closingSellerOk(resource.data.organizerId))
         || (isSignedIn()
             && request.resource.data.diff(resource.data).affectedKeys()
                  .hasOnly(['viewCount']))
@@ -2694,7 +2712,8 @@ service cloud.firestore {
         && !request.resource.data.diff(resource.data).affectedKeys()
               .hasAny(['organizerId', 'organizerName', 'organizerPhotoUrl',
                        'coOrganizerIds'])
-        && paidAllowed(resource.data.organizerId);
+        && paidAllowed(resource.data.organizerId)
+        && closingSellerOk(resource.data.organizerId);
 
       match /attendees/{uid} {
         function parentEvent() {
@@ -3821,6 +3840,14 @@ service cloud.firestore {
     match /safety_request_status/{caseId} {
       allow get: if isSignedIn() && resource.data.requesterUid == request.auth.uid;
       allow list: if isSignedIn() && resource.data.requesterUid == request.auth.uid;
+      allow write: if false;
+    }
+
+    // Scheduled account deletion (Apple 5.1.1(v), 2026-10-22,
+    // functions/src/auth/scheduledDeletion.ts): written by Cloud Functions
+    // only; the owner may read their own request (pending-deletion screen).
+    match /scheduled_account_deletions/{uid} {
+      allow read: if isOwner(uid);
       allow write: if false;
     }
 

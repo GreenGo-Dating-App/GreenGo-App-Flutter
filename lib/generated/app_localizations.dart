@@ -48015,6 +48015,150 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Profile picture'**
   String get coverFrameAvatar;
+
+  /// E-mail subject: the account deletion was requested and waits for refunds
+  ///
+  /// In en, this message translates to:
+  /// **'Your GreenGo account deletion is scheduled'**
+  String get emailAccountDeletionScheduledSubject;
+
+  /// E-mail body: deletion requested while paid sales were not refunded; what happens and how to cancel
+  ///
+  /// In en, this message translates to:
+  /// **'We received your request to delete your GreenGo account. Your upcoming paid events and bookings have been cancelled and every buyer is refunded automatically. Your account is deleted as soon as all refunds are finished, usually within a few days, and we’ll e-mail you then. Until then your profile is hidden. You can cancel the request in the app: Profile > Delete Account.'**
+  String get srvAccountDeletionScheduledBody;
+
+  /// E-mail body: the scheduled account deletion completed after all refunds
+  ///
+  /// In en, this message translates to:
+  /// **'All refunds are finished, so your GreenGo account and its data have now been deleted, as you asked. Records we must keep by law (payment records) are kept without your profile, as described in our privacy policy.'**
+  String get srvAccountDeletionCompletedBody;
+
+  /// Push title to a seller with a pending account deletion: a refund failed, manual proof needed
+  ///
+  /// In en, this message translates to:
+  /// **'Refund proof needed'**
+  String get srvAccountDeletionProofNeededTitle;
+
+  /// Push/e-mail body to a seller with a pending account deletion: a buyer refund failed, refund by hand and upload the proof
+  ///
+  /// In en, this message translates to:
+  /// **'We couldn’t refund a buyer of {title} automatically. Refund them from your own Stripe or Mercado Pago account and upload the proof in the app (Profile > Delete Account). Your account is deleted once every refund is done.'**
+  String srvAccountDeletionProofNeededBody(String title);
+
+  /// E-mail subject: refund proof needed before the scheduled account deletion can finish
+  ///
+  /// In en, this message translates to:
+  /// **'Action needed: refund proof for {title}'**
+  String emailAccountDeletionProofNeededSubject(String title);
+
+  /// Delete account sheet: paid unrefunded sales exist, deletion is still possible (scheduled)
+  ///
+  /// In en, this message translates to:
+  /// **'You sell tickets or bookings that are paid and not refunded yet. You can still delete your account: we cancel these listings, refund every buyer automatically, and delete your account as soon as all refunds are done.'**
+  String get deletionScheduleBody;
+
+  /// Delete account sheet summary: how many listings with paid sales are cancelled
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{We’ll cancel 1 listing with paid sales.} other{We’ll cancel {count} listings with paid sales.}}'**
+  String deletionScheduleListings(int count);
+
+  /// Delete account sheet summary: how many buyers are refunded automatically
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No buyer is waiting for a new refund.} =1{1 buyer is refunded automatically.} other{{count} buyers are refunded automatically.}}'**
+  String deletionScheduleBuyers(int count);
+
+  /// Delete account sheet summary: other paid listings are cancelled too, deletion when refunds are done
+  ///
+  /// In en, this message translates to:
+  /// **'Your other upcoming paid events and bookings are cancelled too, and nobody can buy from you any more. Your account is deleted when all refunds are done, usually within a few days.'**
+  String get deletionScheduleWhen;
+
+  /// Delete account sheet button: request the (scheduled) deletion
+  ///
+  /// In en, this message translates to:
+  /// **'Request deletion'**
+  String get deletionScheduleContinue;
+
+  /// Delete account confirm dialog, extra paragraph when the deletion will be scheduled (cancel keeps cancelled listings cancelled)
+  ///
+  /// In en, this message translates to:
+  /// **'Your account is not deleted right away. It is hidden now, your paid listings are cancelled and buyers are refunded, and the deletion completes by itself once all refunds are done. You can cancel the request until then, but cancelled events and bookings stay cancelled.'**
+  String get deletionScheduleConfirmExtra;
+
+  /// Snackbar after the deletion request was accepted and scheduled
+  ///
+  /// In en, this message translates to:
+  /// **'Deletion requested. Your account is deleted once all refunds are done.'**
+  String get deletionScheduledSnack;
+
+  /// Pending account deletion screen title
+  ///
+  /// In en, this message translates to:
+  /// **'Account deletion requested'**
+  String get deletionPendingTitle;
+
+  /// Pending account deletion screen: when it was requested and what we wait for
+  ///
+  /// In en, this message translates to:
+  /// **'Requested on {date}. We’re waiting for the refunds to your buyers to finish. Your account is deleted automatically when they are done, usually within a few days, and we’ll e-mail you.'**
+  String deletionPendingBody(String date);
+
+  /// Pending account deletion screen: the profile is hidden and nobody can buy meanwhile
+  ///
+  /// In en, this message translates to:
+  /// **'Until then your profile is hidden from discovery and search, and nobody can buy tickets or bookings from you.'**
+  String get deletionPendingHidden;
+
+  /// Pending account deletion screen: refunds done, deletion running
+  ///
+  /// In en, this message translates to:
+  /// **'All refunds are done. Your account is being deleted now.'**
+  String get deletionPendingDeleting;
+
+  /// Pending account deletion screen: the automatic deletion failed, staff alerted
+  ///
+  /// In en, this message translates to:
+  /// **'We couldn’t finish deleting your account automatically. GreenGo has been alerted and will finish it for you; you don’t need to do anything.'**
+  String get deletionPendingFailed;
+
+  /// Pending account deletion screen: no refunds left, deletion soon
+  ///
+  /// In en, this message translates to:
+  /// **'No refunds are left. Your account will be deleted shortly.'**
+  String get deletionPendingNothingLeft;
+
+  /// Pending account deletion screen button: withdraw the deletion request
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel deletion request'**
+  String get deletionPendingCancel;
+
+  /// Confirm dialog before withdrawing the deletion request (cancelled listings stay cancelled)
+  ///
+  /// In en, this message translates to:
+  /// **'Keep your account? Your profile becomes visible again. Events and bookings that were cancelled stay cancelled, and refunds already started still go to the buyers.'**
+  String get deletionPendingCancelConfirm;
+
+  /// Confirm button: withdraw the deletion request and keep the account
+  ///
+  /// In en, this message translates to:
+  /// **'Keep my account'**
+  String get deletionPendingKeepAccount;
+
+  /// Snackbar: the deletion request was withdrawn
+  ///
+  /// In en, this message translates to:
+  /// **'Deletion request cancelled. Your account stays.'**
+  String get deletionPendingCancelled;
+
+  /// Snackbar: the deletion is already running and cannot be withdrawn
+  ///
+  /// In en, this message translates to:
+  /// **'Your account is already being deleted. It can’t be stopped now.'**
+  String get deletionPendingTooLate;
 }
 
 class _AppLocalizationsDelegate

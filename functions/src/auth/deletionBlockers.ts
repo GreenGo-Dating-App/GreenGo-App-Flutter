@@ -28,6 +28,20 @@ import { REFUNDS, UNSETTLED, eventStillRefundable } from '../ticket_payments/ref
 import { msOf } from '../ticket_payments/orders';
 
 export const DELETION_BLOCKED = 'deletion_blocked_paid_orders';
+/**
+ * Deletion requested while blockers exist (Apple 5.1.1(v), 2026-10-22):
+ * `scheduled_account_deletions/{uid}`, server-only, owner may read
+ * (./scheduledDeletion.ts). Lives here so accountDeletion.ts can clear it
+ * without an import cycle.
+ */
+export const SCHEDULED_DELETIONS = 'scheduled_account_deletions';
+/** Profile accountStatus while a scheduled deletion waits (hidden everywhere). */
+export const DELETION_PENDING_STATUS = 'deletion_pending';
+
+/** A deletion request that has not been cancelled (the seller can't sell). */
+export function isClosingRecord(d: Record<string, any> | undefined | null): boolean {
+  return !!d && (d.status === 'waiting_refunds' || d.status === 'deleting' || d.status === 'failed');
+}
 /** An order whose start is older than this is past for sure (ongoing events are checked on the event). */
 const ONGOING_WINDOW_MS = 2 * 24 * 3600 * 1000;
 const ORDER_LIMIT = 500;

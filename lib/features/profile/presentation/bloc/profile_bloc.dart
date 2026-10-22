@@ -335,7 +335,10 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     // report success after a partial deletion.
     try {
       final result = await (deleteAccountCall ?? _callDeleteMyAccount)();
-      if (result['success'] == true) {
+      if (result['success'] == true && result['status'] == 'scheduled') {
+        // Paid sales not refunded yet: accepted, completes by itself.
+        emit(const ProfileDeletionScheduled());
+      } else if (result['success'] == true) {
         emit(const ProfileDeleted());
       } else {
         emit(const ProfileDeleteFailed(reason: ProfileDeleteFailure.failed));
@@ -370,9 +373,12 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
         .call<Map<String, dynamic>>(<String, dynamic>{
       if (appInstanceId != null && appInstanceId.isNotEmpty)
         'analyticsAppInstanceId': appInstanceId,
+      // Apple 5.1.1(v): with paid, unrefunded sales the server schedules the
+      // deletion instead of refusing it (status 'scheduled').
+      'allowScheduled': true,
     });
     final data = Map<String, dynamic>.from(res.data);
-    if (data['success'] == true && !kIsWeb) {
+    if (data['success'] == true && data['status'] != 'scheduled' && !kIsWeb) {
       // Local analytics data of the deleted account goes too.
       try {
         await FirebaseAnalytics.instance.resetAnalyticsData();

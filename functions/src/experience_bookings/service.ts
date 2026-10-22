@@ -27,6 +27,7 @@ import { emitNotification, resolveActor, Actor } from '../notifications/notifyHe
 import { LText, lt, rawText } from '../shared/i18n';
 import { recordMeeting } from '../checkin/meetings';
 import { enqueueBookingRefund } from '../ticket_payments/refunds';
+import { SCHEDULED_DELETIONS, isClosingRecord } from '../auth/deletionBlockers';
 import { guestRecordFields } from '../shared/guestIdentity';
 import { SLOT_COUNTERS, counterId as slotCounterId, generateSlots, rulesError, AvailabilityRules } from './availability';
 import {
@@ -561,13 +562,14 @@ export async function createBooking(
       .where('status', 'in', ACTIVE_STATUSES as unknown as string[])
       .limit(10);
     const lockRef = db.collection(HOST_SCHEDULES).doc(hostId);
-    const [existing, exp, slot, guestP, hostP, susp, dup, lock] = await Promise.all([
+    const [existing, exp, slot, guestP, hostP, susp, dup, lock, closing] = await Promise.all([
       tx.get(bookingRef), tx.get(expRef), tx.get(slotRef),
       tx.get(db.collection('profiles').doc(uid)),
       tx.get(db.collection('profiles').doc(hostId)),
       tx.get(db.collection(HOST_SUSPENSIONS).doc(hostId)),
       tx.get(dupQ),
       tx.get(lockRef),
+      tx.get(db.collection(SCHEDULED_DELETIONS).doc(hostId)),
     ]);
     void lock; // read so this transaction conflicts with the host's other bookings
     if (existing.exists) {
@@ -582,6 +584,8 @@ export async function createBooking(
     const host = hostP.data() ?? null;
     if (!hostP.exists || isBannedProfile(host)) fail('failed-precondition', 'host_unavailable');
     if (susp.exists && susp.data()?.active !== false) fail('failed-precondition', 'host_unavailable');
+    // The host asked to delete their account (auth/scheduledDeletion.ts).
+    if (isClosingRecord(closing.data())) fail('failed-precondition', 'host_unavailable');
     if (!asGuest) {
       const guest = guestP.data() ?? null;
       if (!guestP.exists || isBannedProfile(guest)) fail('permission-denied', 'account_restricted');

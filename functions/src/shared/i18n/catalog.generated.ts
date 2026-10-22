@@ -87,6 +87,8 @@ export type ArbKey =
   | 'csvStatusConfirmed'
   | 'csvStatusPaid'
   | 'deletedUserName'
+  | 'emailAccountDeletionProofNeededSubject'
+  | 'emailAccountDeletionScheduledSubject'
   | 'emailAskOrganizer'
   | 'emailBookingConfirmedGuestIntro'
   | 'emailBookingConfirmedHostIntro'
@@ -274,6 +276,10 @@ export type ArbKey =
   | 'sharePreviewOpenApp'
   | 'sharePreviewOpenWeb'
   | 'sharePreviewPhotoCredit'
+  | 'srvAccountDeletionCompletedBody'
+  | 'srvAccountDeletionProofNeededBody'
+  | 'srvAccountDeletionProofNeededTitle'
+  | 'srvAccountDeletionScheduledBody'
   | 'srvAccountNotApprovedContactSupport'
   | 'srvAccountNotApprovedReason'
   | 'srvAccountNotApprovedTitle'
@@ -534,6 +540,8 @@ export const ARB_KEYS: readonly ArbKey[] = [
   'csvStatusConfirmed',
   'csvStatusPaid',
   'deletedUserName',
+  'emailAccountDeletionProofNeededSubject',
+  'emailAccountDeletionScheduledSubject',
   'emailAskOrganizer',
   'emailBookingConfirmedGuestIntro',
   'emailBookingConfirmedHostIntro',
@@ -721,6 +729,10 @@ export const ARB_KEYS: readonly ArbKey[] = [
   'sharePreviewOpenApp',
   'sharePreviewOpenWeb',
   'sharePreviewPhotoCredit',
+  'srvAccountDeletionCompletedBody',
+  'srvAccountDeletionProofNeededBody',
+  'srvAccountDeletionProofNeededTitle',
+  'srvAccountDeletionScheduledBody',
   'srvAccountNotApprovedContactSupport',
   'srvAccountNotApprovedReason',
   'srvAccountNotApprovedTitle',
@@ -983,6 +995,8 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusConfirmed: "confirmed",
     csvStatusPaid: "paid",
     deletedUserName: "Deleted user",
+    emailAccountDeletionProofNeededSubject: "Action needed: refund proof for {title}",
+    emailAccountDeletionScheduledSubject: "Your GreenGo account deletion is scheduled",
     emailAskOrganizer: "Ask the organizer",
     emailBookingConfirmedGuestIntro: "Your booking is confirmed.",
     emailBookingConfirmedHostIntro: "{name} has a confirmed booking for your experience.",
@@ -1170,6 +1184,10 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     sharePreviewOpenApp: "Open in GreenGo",
     sharePreviewOpenWeb: "Open on the web",
     sharePreviewPhotoCredit: "Photo: {credit}",
+    srvAccountDeletionCompletedBody: "All refunds are finished, so your GreenGo account and its data have now been deleted, as you asked. Records we must keep by law (payment records) are kept without your profile, as described in our privacy policy.",
+    srvAccountDeletionProofNeededBody: "We couldn’t refund a buyer of {title} automatically. Refund them from your own Stripe or Mercado Pago account and upload the proof in the app (Profile > Delete Account). Your account is deleted once every refund is done.",
+    srvAccountDeletionProofNeededTitle: "Refund proof needed",
+    srvAccountDeletionScheduledBody: "We received your request to delete your GreenGo account. Your upcoming paid events and bookings have been cancelled and every buyer is refunded automatically. Your account is deleted as soon as all refunds are finished, usually within a few days, and we’ll e-mail you then. Until then your profile is hidden. You can cancel the request in the app: Profile > Delete Account.",
     srvAccountNotApprovedContactSupport: "Your account could not be approved. Please contact support.",
     srvAccountNotApprovedReason: "Your account could not be approved. Reason: {reason}",
     srvAccountNotApprovedTitle: "Account not approved",
@@ -1430,6 +1448,8 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusConfirmed: "bestätigt",
     csvStatusPaid: "bezahlt",
     deletedUserName: "Gelöschter Nutzer",
+    emailAccountDeletionProofNeededSubject: "Aktion erforderlich: Erstattungsnachweis für {title}",
+    emailAccountDeletionScheduledSubject: "Die Löschung deines GreenGo-Kontos ist geplant",
     emailAskOrganizer: "Den Veranstalter fragen",
     emailBookingConfirmedGuestIntro: "Deine Buchung ist bestätigt.",
     emailBookingConfirmedHostIntro: "{name} hat eine bestätigte Buchung für dein Erlebnis.",
@@ -1617,6 +1637,10 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     sharePreviewOpenApp: "In GreenGo öffnen",
     sharePreviewOpenWeb: "Im Web öffnen",
     sharePreviewPhotoCredit: "Foto: {credit}",
+    srvAccountDeletionCompletedBody: "Alle Erstattungen sind abgeschlossen. Dein GreenGo-Konto und seine Daten wurden daher wie gewünscht gelöscht. Unterlagen, die wir gesetzlich aufbewahren müssen (Zahlungsbelege), bleiben ohne dein Profil erhalten, wie in unserer Datenschutzerklärung beschrieben.",
+    srvAccountDeletionProofNeededBody: "Wir konnten einem Käufer von {title} das Geld nicht automatisch erstatten. Erstatte es über dein eigenes Stripe- oder Mercado-Pago-Konto und lade den Nachweis in der App hoch (Profil > Konto Löschen). Dein Konto wird gelöscht, sobald alle Erstattungen erledigt sind.",
+    srvAccountDeletionProofNeededTitle: "Erstattungsnachweis erforderlich",
+    srvAccountDeletionScheduledBody: "Wir haben deine Anfrage zur Löschung deines GreenGo-Kontos erhalten. Deine kommenden kostenpflichtigen Events und Buchungen wurden abgesagt und alle Käufer erhalten ihr Geld automatisch zurück. Dein Konto wird gelöscht, sobald alle Erstattungen abgeschlossen sind, meist innerhalb weniger Tage, und wir schicken dir dann eine E-Mail. Bis dahin ist dein Profil ausgeblendet. Du kannst die Anfrage in der App zurückziehen: Profil > Konto Löschen.",
     srvAccountNotApprovedContactSupport: "Dein Konto konnte nicht freigegeben werden. Bitte kontaktiere den Support.",
     srvAccountNotApprovedReason: "Dein Konto konnte nicht freigegeben werden. Grund: {reason}",
     srvAccountNotApprovedTitle: "Konto nicht freigegeben",
@@ -1877,6 +1901,8 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusConfirmed: "confirmado",
     csvStatusPaid: "pagado",
     deletedUserName: "Usuario eliminado",
+    emailAccountDeletionProofNeededSubject: "Acción necesaria: comprobante de reembolso de {title}",
+    emailAccountDeletionScheduledSubject: "La eliminación de tu cuenta de GreenGo está programada",
     emailAskOrganizer: "Preguntar al organizador",
     emailBookingConfirmedGuestIntro: "Tu reserva está confirmada.",
     emailBookingConfirmedHostIntro: "{name} tiene una reserva confirmada para tu experiencia.",
@@ -2064,6 +2090,10 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     sharePreviewOpenApp: "Abrir en GreenGo",
     sharePreviewOpenWeb: "Abrir en la web",
     sharePreviewPhotoCredit: "Foto: {credit}",
+    srvAccountDeletionCompletedBody: "Todos los reembolsos han terminado, así que tu cuenta de GreenGo y sus datos se han eliminado, como pediste. Los registros que la ley nos obliga a conservar (registros de pagos) se guardan sin tu perfil, como se describe en nuestra política de privacidad.",
+    srvAccountDeletionProofNeededBody: "No pudimos reembolsar automáticamente a un comprador de {title}. Reembólsale desde tu propia cuenta de Stripe o Mercado Pago y sube el comprobante en la app (Perfil > Eliminar Cuenta). Tu cuenta se eliminará cuando todos los reembolsos estén hechos.",
+    srvAccountDeletionProofNeededTitle: "Se necesita un comprobante de reembolso",
+    srvAccountDeletionScheduledBody: "Hemos recibido tu solicitud para eliminar tu cuenta de GreenGo. Tus próximos eventos y reservas de pago se han cancelado y cada comprador recibe el reembolso automáticamente. Tu cuenta se eliminará en cuanto terminen todos los reembolsos, normalmente en pocos días, y te avisaremos por correo. Hasta entonces tu perfil queda oculto. Puedes cancelar la solicitud en la app: Perfil > Eliminar Cuenta.",
     srvAccountNotApprovedContactSupport: "No se pudo aprobar tu cuenta. Ponte en contacto con soporte.",
     srvAccountNotApprovedReason: "No se pudo aprobar tu cuenta. Motivo: {reason}",
     srvAccountNotApprovedTitle: "Cuenta no aprobada",
@@ -2324,6 +2354,8 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusConfirmed: "confirmé",
     csvStatusPaid: "payé",
     deletedUserName: "Utilisateur supprimé",
+    emailAccountDeletionProofNeededSubject: "Action requise : preuve de remboursement pour {title}",
+    emailAccountDeletionScheduledSubject: "La suppression de votre compte GreenGo est programmée",
     emailAskOrganizer: "Demander à l’organisateur",
     emailBookingConfirmedGuestIntro: "Votre réservation est confirmée.",
     emailBookingConfirmedHostIntro: "{name} a une réservation confirmée pour votre expérience.",
@@ -2511,6 +2543,10 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     sharePreviewOpenApp: "Ouvrir dans GreenGo",
     sharePreviewOpenWeb: "Ouvrir sur le web",
     sharePreviewPhotoCredit: "Photo : {credit}",
+    srvAccountDeletionCompletedBody: "Tous les remboursements sont terminés : votre compte GreenGo et ses données ont donc été supprimés, comme vous l’avez demandé. Les documents que la loi nous oblige à conserver (relevés de paiement) sont gardés sans votre profil, comme décrit dans notre politique de confidentialité.",
+    srvAccountDeletionProofNeededBody: "Nous n’avons pas pu rembourser automatiquement un acheteur de {title}. Remboursez-le depuis votre propre compte Stripe ou Mercado Pago et téléversez la preuve dans l’app (Profil > Supprimer le Compte). Votre compte sera supprimé une fois tous les remboursements effectués.",
+    srvAccountDeletionProofNeededTitle: "Preuve de remboursement requise",
+    srvAccountDeletionScheduledBody: "Nous avons reçu votre demande de suppression de votre compte GreenGo. Vos prochains événements et réservations payants ont été annulés et chaque acheteur est remboursé automatiquement. Votre compte sera supprimé dès que tous les remboursements seront terminés, généralement en quelques jours, et nous vous enverrons alors un e-mail. D’ici là, votre profil est masqué. Vous pouvez annuler la demande dans l’app : Profil > Supprimer le Compte.",
     srvAccountNotApprovedContactSupport: "Votre compte n’a pas pu être approuvé. Veuillez contacter l’assistance.",
     srvAccountNotApprovedReason: "Votre compte n’a pas pu être approuvé. Motif : {reason}",
     srvAccountNotApprovedTitle: "Compte non approuvé",
@@ -2771,6 +2807,8 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusConfirmed: "confermato",
     csvStatusPaid: "pagato",
     deletedUserName: "Utente eliminato",
+    emailAccountDeletionProofNeededSubject: "Azione richiesta: prova del rimborso per {title}",
+    emailAccountDeletionScheduledSubject: "L’eliminazione del tuo account GreenGo è programmata",
     emailAskOrganizer: "Chiedi all’organizzatore",
     emailBookingConfirmedGuestIntro: "La tua prenotazione è confermata.",
     emailBookingConfirmedHostIntro: "{name} ha una prenotazione confermata per la tua esperienza.",
@@ -2958,6 +2996,10 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     sharePreviewOpenApp: "Apri in GreenGo",
     sharePreviewOpenWeb: "Apri sul web",
     sharePreviewPhotoCredit: "Foto: {credit}",
+    srvAccountDeletionCompletedBody: "Tutti i rimborsi sono completati, quindi il tuo account GreenGo e i suoi dati sono stati eliminati, come hai chiesto. I dati che la legge ci obbliga a conservare (registri dei pagamenti) restano senza il tuo profilo, come descritto nella nostra informativa sulla privacy.",
+    srvAccountDeletionProofNeededBody: "Non siamo riusciti a rimborsare automaticamente un acquirente di {title}. Rimborsalo dal tuo account Stripe o Mercado Pago e carica la prova nell’app (Profilo > Elimina Account). Il tuo account verrà eliminato quando tutti i rimborsi saranno fatti.",
+    srvAccountDeletionProofNeededTitle: "Serve la prova del rimborso",
+    srvAccountDeletionScheduledBody: "Abbiamo ricevuto la tua richiesta di eliminare l’account GreenGo. I tuoi prossimi eventi e prenotazioni a pagamento sono stati annullati e ogni acquirente viene rimborsato automaticamente. Il tuo account verrà eliminato appena tutti i rimborsi saranno completati, di solito entro pochi giorni, e ti invieremo un’email. Fino ad allora il tuo profilo è nascosto. Puoi annullare la richiesta nell’app: Profilo > Elimina Account.",
     srvAccountNotApprovedContactSupport: "Non è stato possibile approvare il tuo account. Contatta il supporto.",
     srvAccountNotApprovedReason: "Non è stato possibile approvare il tuo account. Motivo: {reason}",
     srvAccountNotApprovedTitle: "Account non approvato",
@@ -3218,6 +3260,8 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusConfirmed: "confirmado",
     csvStatusPaid: "pago",
     deletedUserName: "Utilizador eliminado",
+    emailAccountDeletionProofNeededSubject: "Ação necessária: comprovativo de reembolso de {title}",
+    emailAccountDeletionScheduledSubject: "A eliminação da tua conta GreenGo está agendada",
     emailAskOrganizer: "Perguntar ao organizador",
     emailBookingConfirmedGuestIntro: "A tua reserva está confirmada.",
     emailBookingConfirmedHostIntro: "{name} tem uma reserva confirmada para a tua experiência.",
@@ -3405,6 +3449,10 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     sharePreviewOpenApp: "Abrir no GreenGo",
     sharePreviewOpenWeb: "Abrir na web",
     sharePreviewPhotoCredit: "Foto: {credit}",
+    srvAccountDeletionCompletedBody: "Todos os reembolsos terminaram, por isso a tua conta GreenGo e os respetivos dados foram eliminados, como pediste. Os registos que a lei nos obriga a guardar (registos de pagamentos) ficam guardados sem o teu perfil, como descrito na nossa política de privacidade.",
+    srvAccountDeletionProofNeededBody: "Não conseguimos reembolsar automaticamente um comprador de {title}. Reembolsa-o a partir da tua própria conta Stripe ou Mercado Pago e carrega o comprovativo na app (Perfil > Eliminar Conta). A tua conta é eliminada quando todos os reembolsos estiverem feitos.",
+    srvAccountDeletionProofNeededTitle: "É necessário o comprovativo de reembolso",
+    srvAccountDeletionScheduledBody: "Recebemos o teu pedido para eliminar a tua conta GreenGo. Os teus próximos eventos e reservas pagos foram cancelados e cada comprador é reembolsado automaticamente. A tua conta é eliminada assim que todos os reembolsos terminarem, normalmente em poucos dias, e enviamos-te um e-mail nessa altura. Até lá, o teu perfil fica oculto. Podes cancelar o pedido na app: Perfil > Eliminar Conta.",
     srvAccountNotApprovedContactSupport: "Não foi possível aprovar a tua conta. Contacta o suporte.",
     srvAccountNotApprovedReason: "Não foi possível aprovar a tua conta. Motivo: {reason}",
     srvAccountNotApprovedTitle: "Conta não aprovada",
@@ -3665,6 +3713,8 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusConfirmed: "confirmado",
     csvStatusPaid: "pago",
     deletedUserName: "Usuário excluído",
+    emailAccountDeletionProofNeededSubject: "Ação necessária: comprovante de reembolso de {title}",
+    emailAccountDeletionScheduledSubject: "A exclusão da sua conta GreenGo está agendada",
     emailAskOrganizer: "Perguntar ao organizador",
     emailBookingConfirmedGuestIntro: "Sua reserva está confirmada.",
     emailBookingConfirmedHostIntro: "{name} tem uma reserva confirmada para sua experiência.",
@@ -3852,6 +3902,10 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     sharePreviewOpenApp: "Abrir no GreenGo",
     sharePreviewOpenWeb: "Abrir na web",
     sharePreviewPhotoCredit: "Foto: {credit}",
+    srvAccountDeletionCompletedBody: "Todos os reembolsos terminaram, então sua conta GreenGo e os dados dela foram excluídos, como você pediu. Os registros que a lei nos obriga a guardar (registros de pagamento) são mantidos sem o seu perfil, como descrito na nossa política de privacidade.",
+    srvAccountDeletionProofNeededBody: "Não conseguimos reembolsar automaticamente um comprador de {title}. Faça o reembolso pela sua própria conta Stripe ou Mercado Pago e envie o comprovante no app (Perfil > Excluir Conta). Sua conta será excluída quando todos os reembolsos estiverem feitos.",
+    srvAccountDeletionProofNeededTitle: "Comprovante de reembolso necessário",
+    srvAccountDeletionScheduledBody: "Recebemos seu pedido para excluir sua conta GreenGo. Seus próximos eventos e reservas pagos foram cancelados e cada comprador é reembolsado automaticamente. Sua conta será excluída assim que todos os reembolsos terminarem, normalmente em poucos dias, e enviaremos um e-mail para você. Até lá, seu perfil fica oculto. Você pode cancelar o pedido no app: Perfil > Excluir Conta.",
     srvAccountNotApprovedContactSupport: "Não foi possível aprovar sua conta. Entre em contato com o suporte.",
     srvAccountNotApprovedReason: "Não foi possível aprovar sua conta. Motivo: {reason}",
     srvAccountNotApprovedTitle: "Conta não aprovada",

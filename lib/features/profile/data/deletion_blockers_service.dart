@@ -83,6 +83,77 @@ List<DeletionBlocker> parseDeletionBlockers(Object? data) {
 /// The server's refusal code when deletion is blocked.
 const String kDeletionBlockedCode = 'deletion_blocked_paid_orders';
 
+/// A deletion request that waits for refunds (Apple 5.1.1(v), 2026-10-22;
+/// server: functions/src/auth/scheduledDeletion.ts). The account is hidden,
+/// its paid listings are cancelled, and it is deleted automatically once
+/// every refund is done; the user can withdraw it until then.
+class ScheduledDeletion {
+  const ScheduledDeletion({
+    required this.status,
+    this.requestedAt,
+    this.cancelledEvents = 0,
+    this.cancelledBookings = 0,
+  });
+
+  /// Null for anything that is not a live request.
+  static ScheduledDeletion? fromMap(Object? raw) {
+    if (raw is! Map) return null;
+    final status = raw['status'];
+    if (status is! String || !kLiveScheduledStatuses.contains(status)) return null;
+    int n(Object? v) => v is num ? v.toInt() : 0;
+    final at = raw['requestedAt'];
+    return ScheduledDeletion(
+      status: status,
+      requestedAt: at is String ? DateTime.tryParse(at) : null,
+      cancelledEvents: n(raw['cancelledEvents']),
+      cancelledBookings: n(raw['cancelledBookings']),
+    );
+  }
+
+  /// 'waiting_refunds' | 'deleting' | 'failed'.
+  final String status;
+  final DateTime? requestedAt;
+  final int cancelledEvents;
+  final int cancelledBookings;
+
+  bool get isDeleting => status == 'deleting';
+  bool get isFailed => status == 'failed';
+}
+
+/// Statuses of a deletion request that has not been withdrawn.
+const Set<String> kLiveScheduledStatuses = {'waiting_refunds', 'deleting', 'failed'};
+
+/// What the Delete account flow needs: what blocks an immediate deletion and
+/// the pending request, if any.
+class DeletionState {
+  const DeletionState({this.blockers = const [], this.scheduled});
+
+  factory DeletionState.fromMap(Object? data) => DeletionState(
+        blockers: parseDeletionBlockers(data),
+        scheduled: data is Map ? ScheduledDeletion.fromMap(data['scheduled']) : null,
+      );
+
+  final List<DeletionBlocker> blockers;
+  final ScheduledDeletion? scheduled;
+}
+
+/// "We'll cancel X listings and refund Y buyers automatically" for [blockers]:
+/// listings that still have paid orders, and the buyers whose refund has not
+/// started yet (refunds already running / failed / under review are not new).
+({int listings, int buyers}) deletionPlan(List<DeletionBlocker> blockers) {
+  var listings = 0;
+  var buyers = 0;
+  for (final b in blockers) {
+    if (b.paidOrders > 0) listings++;
+    final pending = b.paidOrders - b.refundsInProgress - b.failedRefunds - b.pendingReview;
+    if (pending > 0) buyers += pending;
+  }
+  return (listings: listings, buyers: buyers);
+}
+
+/// Result of withdrawing a deletion request.
+enum CancelDeletionResult { cancelled, nothingToCancel, tooLate }
+
 /// Max size of a manual-refund proof (storage.rules refund_proofs: 10 MB).
 const int kRefundProofMaxBytes = 10 * 1024 * 1024;
 
@@ -116,9 +187,31 @@ class DeletionBlockersService {
 
   FirebaseFunctions get _fn => _functions ?? FirebaseFunctions.instance;
 
-  Future<List<DeletionBlocker>> fetch() async {
+  Future<List<DeletionBlocker>> fetch() async => (await fetchState()).blockers;
+
+  /// Blockers + the pending deletion request (one call).
+  Future<DeletionState> fetchState() async {
     final res = await _fn.httpsCallable('getDeletionBlockers').call<Map<String, dynamic>>(<String, dynamic>{});
-    return parseDeletionBlockers(res.data);
+    return DeletionState.fromMap(res.data);
+  }
+
+  /// Withdraws the pending deletion request (cancelAccountDeletionRequest).
+  /// Listings it cancelled stay cancelled.
+  Future<CancelDeletionResult> cancelScheduledDeletion() async {
+    try {
+      final res = await _fn
+          .httpsCallable('cancelAccountDeletionRequest')
+          .call<Map<String, dynamic>>(<String, dynamic>{});
+      return res.data['status'] == 'cancelled'
+          ? CancelDeletionResult.cancelled
+          : CancelDeletionResult.nothingToCancel;
+    } on FirebaseFunctionsException catch (e) {
+      final details = e.details;
+      if (details is Map && details['code'] == 'deletion_in_progress') {
+        return CancelDeletionResult.tooLate;
+      }
+      rethrow;
+    }
   }
 
   /// Cancels the event: the server refunds every buyer in full

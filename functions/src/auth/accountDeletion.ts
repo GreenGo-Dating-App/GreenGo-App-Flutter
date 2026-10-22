@@ -97,7 +97,7 @@ import { retainIdentityRecordOnAccountDeletion } from '../safety/identityRecords
 import { enqueueFollowGraphCleanup, removeFollowGraphRound } from '../social/followCleanup';
 import { preserveForAccountDeletion, LEGAL_HOLD_KEEP_COLLECTIONS } from '../safety/takedowns/legalHold';
 import { attendeeSeats } from '../ticket_payments/ticketRules';
-import { assertNoDeletionBlockers } from './deletionBlockers';
+import { SCHEDULED_DELETIONS, assertNoDeletionBlockers } from './deletionBlockers';
 import { guestKeyFor } from '../shared/guestIdentity';
 import { guestIdentitySecret } from '../guest/guestKeys';
 
@@ -145,6 +145,12 @@ export const RETENTION_STORES = [
   // 5.1.0 section 14); NEVER add these to ACCOUNT_DATA_INVENTORY.
   CONSENTS_COLLECTION,
   LEGAL_ACKNOWLEDGEMENTS,
+  // Deletion requested while paid sales were not refunded yet (Apple
+  // 5.1.1(v), ./scheduledDeletion.ts): keyed by uid, no personal data beyond
+  // listing titles; removed at the end of every completed deletion
+  // (deleteAccountCompletely / Auth trigger sweep). NOT in the inventory: the
+  // scheduled run needs it until the deletion has fully succeeded.
+  SCHEDULED_DELETIONS,
 ];
 
 // ---------------------------------------------------------------------------
@@ -931,7 +937,7 @@ async function retainSubcollectionLedgers(uid: string, report: DeletionReport) {
   report.retained += await pagedQuery(col, (ds) => retainFinanceDocs('coinBalances.coinTransactions', ds, uid));
 }
 
-export type DeletionSource = 'app_callable' | 'web_email_link' | 'web_id_token' | 'auth_trigger';
+export type DeletionSource = 'app_callable' | 'web_email_link' | 'web_id_token' | 'scheduled' | 'auth_trigger';
 
 /**
  * Deletes (or retains/anonymises, per the policy above) all data of [uid].
@@ -1083,6 +1089,8 @@ export async function deleteAccountCompletely(
     }
   }
   await jobRef.delete();
+  // A deletion request that was waiting for refunds is fulfilled now.
+  await db().collection(SCHEDULED_DELETIONS).doc(uid).delete().catch(() => undefined);
   console.log(
     `accountDeletion: done for ${uid} via ${opts.source} - ${report.documents} docs, ` +
       `${report.anonymised} anonymised, ${report.files} files, ${report.retained} finance rows retained`,
@@ -1098,6 +1106,8 @@ export async function sweepDeletedAccount(uid: string, extra: DeletionExtras = {
   } catch (e) {
     console.error('accountDeletion: could not write receipt', e);
   }
+  // Auth is gone: a waiting deletion request has nothing left to do.
+  await db().collection(SCHEDULED_DELETIONS).doc(uid).delete().catch(() => undefined);
   if (report.failures.length > 0) {
     console.error(`onUserDeletedCleanup: INCOMPLETE for ${uid} - ${report.failures.length} failures`, report.failures);
   }

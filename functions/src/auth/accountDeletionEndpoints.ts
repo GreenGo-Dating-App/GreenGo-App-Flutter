@@ -21,6 +21,14 @@
  *    Returns { success: true } only after everything is gone; Auth user last.
  *
  * All three run the single routine in accountDeletion.ts.
+ *
+ * Apple 5.1.1(v) (2026-10-22): a request is never refused because of paid,
+ * unrefunded sales any more. With blockers the request is ACCEPTED and
+ * scheduled (./scheduledDeletion.ts): paid listings are cancelled, buyers
+ * refunded automatically, and the deletion completes by itself once every
+ * refund is done. deleteMyAccount schedules only for apps that send
+ * `allowScheduled: true` (older apps keep the refusal they know how to show);
+ * the website always schedules. cancelAccountDeletionRequest withdraws it.
  */
 
 import { onRequest, onCall, Request, HttpsError } from 'firebase-functions/v2/https';
@@ -33,6 +41,18 @@ import { monitored } from '../shared/monitoring';
 import { maskEmail, sendResendEmail } from '../shared/resendEmail';
 import { deleteAccountCompletely } from './accountDeletion';
 import { DELETION_BLOCKED, DeletionBlocker, DeletionBlockedError, computeDeletionBlockers } from './deletionBlockers';
+import { onSchedule } from 'firebase-functions/v2/scheduler';
+import { onDocumentUpdated } from 'firebase-functions/v2/firestore';
+import {
+  SCHEDULED_DELETIONS,
+  ScheduleResult,
+  cancelScheduledDeletion,
+  processScheduledDeletion,
+  refundJustSettled,
+  scheduleAccountDeletion,
+  scheduledDeletionView,
+  sweepScheduledDeletions,
+} from './scheduledDeletion';
 
 const db = () => admin.firestore();
 
@@ -157,6 +177,21 @@ function confirmationEmailHtml(link: string): string {
 </div></body></html>`;
 }
 
+/** Website / API answer for a deletion that waits for refunds. */
+export const SCHEDULED_MESSAGE =
+  'Your deletion request is accepted. You sell tickets or bookings that are paid and not refunded yet: '
+  + 'we have cancelled them and every buyer is refunded automatically. Your account is deleted as soon as all '
+  + 'refunds are finished (usually within a few days) and we will e-mail you then. Until then your profile is hidden; '
+  + 'you can cancel the request in the app (Profile > Delete account).';
+
+function scheduledBody(r: ScheduleResult): Record<string, unknown> {
+  return {
+    success: true, status: 'scheduled', code: DELETION_BLOCKED, requestedAt: r.requestedAt ?? null,
+    blockers: r.blockers, cancelledEvents: r.cancelledEvents, cancelledBookings: r.cancelledBookings,
+    message: SCHEDULED_MESSAGE,
+  };
+}
+
 // ---------------------------------------------------------------------------
 // requestAccountDeletion
 // ---------------------------------------------------------------------------
@@ -203,11 +238,8 @@ export async function handleRequestAccountDeletion(req: Request, res: Response):
         await deleteAccountCompletely(decoded.uid, { source: 'web_id_token' });
       } catch (e) {
         if (e instanceof DeletionBlockedError) {
-          await finish(409, {
-            success: false, code: DELETION_BLOCKED, blockers: e.blockers,
-            error: 'Your account cannot be deleted yet: you sell tickets or bookings that are paid and not refunded. '
-              + 'Cancel those listings in the app (buyers are refunded automatically), then try again.',
-          });
+          const r = await scheduleAccountDeletion(decoded.uid, { source: 'web_id_token' }, undefined, e.blockers);
+          await finish(202, scheduledBody(r));
           return;
         }
         throw e;
@@ -290,18 +322,43 @@ function esc(s: unknown): string {
   return String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]!));
 }
 
-/** Deletion refused: what still has paid, unrefunded orders (escaped). */
-export function blockedPage(blockers: DeletionBlocker[]): string {
-  const items = blockers.slice(0, 50).map((b) =>
+function blockerItems(blockers: DeletionBlocker[]): string {
+  return blockers.slice(0, 50).map((b) =>
     `<li>${b.kind === 'event' ? 'Event' : 'Experience'}: <b>${esc(b.title || b.listingId)}</b> - `
     + `${b.paidOrders} paid order(s) not refunded${b.failedRefunds ? `, ${b.failedRefunds} refund(s) failed` : ''}</li>`).join('');
+}
+
+/**
+ * GET with blockers: the deletion can still be requested. Says what happens
+ * (listings cancelled, buyers refunded, deletion once refunds are done) and
+ * carries the confirm button (escaped).
+ */
+export function scheduleConfirmPage(blockers: DeletionBlocker[], token: string): string {
+  const safe = encodeURIComponent(token);
   return page(
-    'Your account cannot be deleted yet',
-    '<p>You sell tickets or bookings that are paid and not refunded yet. Open the GreenGo app, go to '
-      + 'Profile &gt; Delete account and use "Cancel &amp; refund" on each item (buyers are refunded automatically), '
-      + 'or wait until these listings have taken place. Then open this link again.</p>'
-      + `<ul>${items}</ul>`
-      + '<p>Questions: <a href="mailto:privacy@greengochat.com">privacy@greengochat.com</a></p>',
+    'Delete your GreenGo account?',
+    '<p>You sell tickets or bookings that are paid and not refunded yet:</p>'
+      + `<ul>${blockerItems(blockers)}</ul>`
+      + '<p>If you continue, we cancel your upcoming paid events and bookings, refund every buyer automatically, '
+      + 'and delete your account as soon as all refunds are finished (usually within a few days). We e-mail you when it is done. '
+      + 'Until then your profile is hidden and nobody can buy from you. You can cancel the request in the app '
+      + '(Profile &gt; Delete account), but cancelled events and bookings stay cancelled.</p>'
+      + '<p>The deletion permanently removes your profile, photos, connections and messages. Remaining coins and active '
+      + 'subscriptions are lost. Cancel any App Store / Google Play subscription in the store as well.</p>'
+      + `<form method="POST" action="?token=${safe}"><input type="hidden" name="token" value="${safe}">`
+      + '<button type="submit">Request deletion</button></form>',
+  );
+}
+
+/** POST with blockers: the request is recorded. */
+export function scheduledPage(blockers: DeletionBlocker[]): string {
+  return page(
+    'Deletion requested',
+    '<p>Your request is accepted. We have cancelled your paid listings and every buyer is refunded automatically:</p>'
+      + `<ul>${blockerItems(blockers)}</ul>`
+      + '<p>Your account is deleted automatically as soon as all refunds are finished (usually within a few days), and we '
+      + 'e-mail you then. If a refund cannot be made automatically, we tell you how to send the proof of a manual refund. '
+      + 'You can cancel the request in the app (Profile &gt; Delete account).</p>',
   );
 }
 
@@ -338,7 +395,8 @@ export async function handleConfirmAccountDeletion(req: Request, res: Response):
       }
       const blockers = await computeDeletionBlockers(st.uid);
       if (blockers.length) {
-        res.status(409).type('html').send(blockedPage(blockers));
+        // Still possible: the deletion is scheduled on POST.
+        res.status(200).type('html').send(scheduleConfirmPage(blockers, String(token)));
         return;
       }
       const safe = encodeURIComponent(String(token));
@@ -383,9 +441,9 @@ export async function handleConfirmAccountDeletion(req: Request, res: Response):
       await deleteAccountCompletely(uid, { source: 'web_email_link' });
     } catch (e: any) {
       if (e instanceof DeletionBlockedError) {
-        // Nothing deleted: give the link back so it works once the listings are settled.
-        await ref.update({ used: false, blockedAt: admin.firestore.Timestamp.now() }).catch(() => undefined);
-        res.status(409).type('html').send(blockedPage(e.blockers));
+        // Accepted and scheduled: completes by itself once refunds are done.
+        const r = await scheduleAccountDeletion(uid, { source: 'web_email_link' }, undefined, e.blockers);
+        res.status(202).type('html').send(scheduledPage(r.blockers));
         return;
       }
       // Account left intact (Auth is deleted last). Release the token so the
@@ -437,8 +495,20 @@ export const deleteMyAccount = onCall(
       // id): lets the follow-up file a GA4 User Deletion request.
       const aid = request.data?.analyticsAppInstanceId;
       const analyticsAppInstanceId = typeof aid === 'string' && /^[A-Za-z0-9_-]{8,128}$/.test(aid) ? aid : null;
-      await deleteAccountCompletely(uid, { source: 'app_callable', analyticsAppInstanceId });
-      return { success: true };
+      try {
+        await deleteAccountCompletely(uid, { source: 'app_callable', analyticsAppInstanceId });
+      } catch (e) {
+        // Apps from 2026-10-22 accept a scheduled deletion (Apple 5.1.1(v)).
+        if (e instanceof DeletionBlockedError && request.data?.allowScheduled === true) {
+          const r = await scheduleAccountDeletion(uid, { source: 'app_callable', analyticsAppInstanceId }, undefined, e.blockers);
+          return {
+            success: true, status: 'scheduled', requestedAt: r.requestedAt ?? null, blockers: r.blockers,
+            cancelledEvents: r.cancelledEvents, cancelledBookings: r.cancelledBookings,
+          };
+        }
+        throw e;
+      }
+      return { success: true, status: 'deleted' };
     } catch (e) {
       if (e instanceof DeletionBlockedError) {
         throw new HttpsError('failed-precondition', 'Account deletion is blocked by paid, unrefunded orders.', {
@@ -462,7 +532,56 @@ export const getDeletionBlockers = onCall(
   monitored('getDeletionBlockers', async (request: any) => {
     const uid = request.auth?.uid;
     if (!uid) throw new HttpsError('unauthenticated', 'unauthenticated', { code: 'unauthenticated' });
-    const blockers = await computeDeletionBlockers(uid);
-    return { blocked: blockers.length > 0, code: blockers.length ? DELETION_BLOCKED : null, blockers };
+    const [blockers, scheduled] = await Promise.all([computeDeletionBlockers(uid), scheduledDeletionView(uid)]);
+    return { blocked: blockers.length > 0, code: blockers.length ? DELETION_BLOCKED : null, blockers, scheduled };
   }),
+);
+
+// ---------------------------------------------------------------------------
+// cancelAccountDeletionRequest (callable, app): keep the account
+// ---------------------------------------------------------------------------
+
+export const cancelAccountDeletionRequest = onCall(
+  { memory: '512MiB', timeoutSeconds: 60 },
+  monitored('cancelAccountDeletionRequest', async (request: any) => {
+    const uid = request.auth?.uid;
+    if (!uid) throw new HttpsError('unauthenticated', 'unauthenticated', { code: 'unauthenticated' });
+    const r = await cancelScheduledDeletion(uid);
+    if (r.status === 'deleting') {
+      throw new HttpsError('failed-precondition', 'deletion_in_progress', { code: 'deletion_in_progress' });
+    }
+    return { status: r.status };
+  }),
+);
+
+// ---------------------------------------------------------------------------
+// Scheduled deletions: sweep + refund-settled trigger (./scheduledDeletion.ts)
+// ---------------------------------------------------------------------------
+
+/** Re-checks due requests; deletes the accounts whose refunds are all done. */
+export const sweepScheduledAccountDeletions = onSchedule(
+  { schedule: 'every 30 minutes', memory: '512MiB', timeoutSeconds: 540 },
+  async () => {
+    const n = await sweepScheduledDeletions();
+    if (n) console.log(`[scheduledDeletion] sweep processed ${n} request(s)`);
+  },
+);
+
+/**
+ * A refund of a seller became final (refunded, failed, under review...):
+ * if that seller asked for deletion, re-check now instead of waiting for the
+ * sweep. Cheap early exit for every other update.
+ */
+export const checkScheduledDeletionOnRefund = onDocumentUpdated(
+  { document: 'ticket_refunds/{orderId}', memory: '512MiB', timeoutSeconds: 540 },
+  async (event) => {
+    const before = event.data?.before?.data();
+    const after = event.data?.after?.data();
+    if (!refundJustSettled(before, after)) return;
+    const uid = String(after?.organizerId || '');
+    if (!uid || uid.includes('/')) return;
+    const d = (await admin.firestore().collection(SCHEDULED_DELETIONS).doc(uid).get()).data();
+    if (d?.status !== 'waiting_refunds') return;
+    await processScheduledDeletion(uid);
+  },
 );

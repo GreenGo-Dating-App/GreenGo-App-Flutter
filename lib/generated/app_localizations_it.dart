@@ -28433,4 +28433,114 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get coverFrameAvatar => 'Immagine del profilo';
+
+  @override
+  String get emailAccountDeletionScheduledSubject =>
+      'L’eliminazione del tuo account GreenGo è programmata';
+
+  @override
+  String get srvAccountDeletionScheduledBody =>
+      'Abbiamo ricevuto la tua richiesta di eliminare l’account GreenGo. I tuoi prossimi eventi e prenotazioni a pagamento sono stati annullati e ogni acquirente viene rimborsato automaticamente. Il tuo account verrà eliminato appena tutti i rimborsi saranno completati, di solito entro pochi giorni, e ti invieremo un’email. Fino ad allora il tuo profilo è nascosto. Puoi annullare la richiesta nell’app: Profilo > Elimina Account.';
+
+  @override
+  String get srvAccountDeletionCompletedBody =>
+      'Tutti i rimborsi sono completati, quindi il tuo account GreenGo e i suoi dati sono stati eliminati, come hai chiesto. I dati che la legge ci obbliga a conservare (registri dei pagamenti) restano senza il tuo profilo, come descritto nella nostra informativa sulla privacy.';
+
+  @override
+  String get srvAccountDeletionProofNeededTitle =>
+      'Serve la prova del rimborso';
+
+  @override
+  String srvAccountDeletionProofNeededBody(String title) {
+    return 'Non siamo riusciti a rimborsare automaticamente un acquirente di $title. Rimborsalo dal tuo account Stripe o Mercado Pago e carica la prova nell’app (Profilo > Elimina Account). Il tuo account verrà eliminato quando tutti i rimborsi saranno fatti.';
+  }
+
+  @override
+  String emailAccountDeletionProofNeededSubject(String title) {
+    return 'Azione richiesta: prova del rimborso per $title';
+  }
+
+  @override
+  String get deletionScheduleBody =>
+      'Vendi biglietti o prenotazioni pagati e non ancora rimborsati. Puoi comunque eliminare il tuo account: annulliamo questi annunci, rimborsiamo automaticamente ogni acquirente ed eliminiamo l’account appena tutti i rimborsi sono completati.';
+
+  @override
+  String deletionScheduleListings(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Annulleremo $count annunci con vendite pagate.',
+      one: 'Annulleremo 1 annuncio con vendite pagate.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String deletionScheduleBuyers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count acquirenti vengono rimborsati automaticamente.',
+      one: '1 acquirente viene rimborsato automaticamente.',
+      zero: 'Nessun acquirente attende un nuovo rimborso.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get deletionScheduleWhen =>
+      'Anche gli altri tuoi eventi e prenotazioni a pagamento in programma vengono annullati e nessuno potrà più acquistare da te. Il tuo account viene eliminato quando tutti i rimborsi sono completati, di solito entro pochi giorni.';
+
+  @override
+  String get deletionScheduleContinue => 'Richiedi l’eliminazione';
+
+  @override
+  String get deletionScheduleConfirmExtra =>
+      'Il tuo account non viene eliminato subito. Da ora è nascosto, i tuoi annunci a pagamento vengono annullati e gli acquirenti rimborsati, e l’eliminazione si completa da sola quando tutti i rimborsi sono fatti. Fino ad allora puoi annullare la richiesta, ma gli eventi e le prenotazioni annullati restano annullati.';
+
+  @override
+  String get deletionScheduledSnack =>
+      'Eliminazione richiesta. Il tuo account verrà eliminato quando tutti i rimborsi saranno completati.';
+
+  @override
+  String get deletionPendingTitle => 'Eliminazione dell’account richiesta';
+
+  @override
+  String deletionPendingBody(String date) {
+    return 'Richiesta il $date. Stiamo aspettando che i rimborsi ai tuoi acquirenti siano completati. Poi il tuo account verrà eliminato automaticamente, di solito entro pochi giorni, e ti invieremo un’email.';
+  }
+
+  @override
+  String get deletionPendingHidden =>
+      'Fino ad allora il tuo profilo è nascosto in Scopri e nella ricerca, e nessuno può acquistare biglietti o prenotazioni da te.';
+
+  @override
+  String get deletionPendingDeleting =>
+      'Tutti i rimborsi sono completati. Il tuo account è in fase di eliminazione.';
+
+  @override
+  String get deletionPendingFailed =>
+      'Non siamo riusciti a completare automaticamente l’eliminazione del tuo account. GreenGo è stato avvisato e la completerà per te; non devi fare nulla.';
+
+  @override
+  String get deletionPendingNothingLeft =>
+      'Non ci sono più rimborsi in sospeso. Il tuo account verrà eliminato a breve.';
+
+  @override
+  String get deletionPendingCancel => 'Annulla la richiesta di eliminazione';
+
+  @override
+  String get deletionPendingCancelConfirm =>
+      'Vuoi tenere il tuo account? Il tuo profilo torna visibile. Gli eventi e le prenotazioni annullati restano annullati e i rimborsi già avviati arrivano comunque agli acquirenti.';
+
+  @override
+  String get deletionPendingKeepAccount => 'Tieni il mio account';
+
+  @override
+  String get deletionPendingCancelled =>
+      'Richiesta di eliminazione annullata. Il tuo account resta attivo.';
+
+  @override
+  String get deletionPendingTooLate =>
+      'Il tuo account è già in fase di eliminazione. Non è più possibile fermarla.';
 }

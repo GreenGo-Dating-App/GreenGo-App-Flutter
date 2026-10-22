@@ -452,6 +452,13 @@ describe('createBooking', () => {
     await expectCode(book(GUEST2), 'host_unavailable');
     db.remove(`host_suspensions/${HOST}`);
 
+    // The host asked to delete their account (scheduled until refunds are
+    // done): no new bookings (a withdrawn request: isClosingRecord, see
+    // scheduledDeletion.test.ts).
+    db.seed(`scheduled_account_deletions/${HOST}`, { status: 'waiting_refunds' });
+    await expectCode(book(GUEST2), 'host_unavailable');
+    db.remove(`scheduled_account_deletions/${HOST}`);
+
     db.seed(`user_experiences/${EXP}`, { ...db.get(`user_experiences/${EXP}`), status: 'draft' });
     await expectCode(book(GUEST2), 'experience_not_bookable');
   });

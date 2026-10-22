@@ -475,8 +475,14 @@ export {
   requestAccountDeletion,
   confirmAccountDeletion,
   deleteMyAccount,
-  // Deletion refused while the user sells paid, unrefunded orders (2026-10-21).
+  // What blocks an immediate deletion (paid, unrefunded sales, 2026-10-21) +
+  // the scheduled request, if any (Apple 5.1.1(v), 2026-10-22).
   getDeletionBlockers,
+  // Scheduled deletion (./auth/scheduledDeletion.ts): withdraw, sweep, and the
+  // re-check when one of the seller's refunds settles.
+  cancelAccountDeletionRequest,
+  sweepScheduledAccountDeletions,
+  checkScheduledDeletionOnRefund,
 } from './auth/accountDeletionEndpoints';
 
 // Account deletion follow-up: cancels the user's web (Stripe) subscriptions

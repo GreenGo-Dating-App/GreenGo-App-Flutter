@@ -11,13 +11,16 @@ import '../../profile/domain/entities/profile.dart';
 class DiscoveryVisibility {
   DiscoveryVisibility._();
 
-  /// Explicitly removed accounts (the matching scan's rule).
+  /// Explicitly removed accounts (the matching scan's rule), and accounts
+  /// whose deletion was requested and waits for refunds ('deletion_pending',
+  /// functions/src/auth/scheduledDeletion.ts).
   static bool isRemovedAccount(Profile p) {
     final status = p.accountStatus.toLowerCase();
     return p.isBanned ||
         status == 'suspended' ||
         status == 'banned' ||
-        status == 'deleted';
+        status == 'deleted' ||
+        status == 'deletion_pending';
   }
 
   /// Ghost mode (always hidden) or an unexpired incognito window.

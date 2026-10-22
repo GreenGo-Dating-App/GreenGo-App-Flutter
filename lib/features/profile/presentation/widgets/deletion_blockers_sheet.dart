@@ -5,26 +5,35 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/deletion_blockers_service.dart';
 
-/// Delete account is refused while the user sells paid, unrefunded tickets /
-/// bookings (owner rule 2026-10-21). This sheet lists them with
-/// "Cancel & refund" (buyers are refunded automatically by the server) and,
-/// for a refund that failed, "Upload refund proof". Deletion is possible only
-/// once the list is empty (the server re-checks on delete).
+/// The user sells paid, unrefunded tickets / bookings. Deletion is still
+/// possible (Apple 5.1.1(v), 2026-10-22): "Request deletion" (pops true)
+/// schedules it - the server cancels these listings, refunds every buyer and
+/// deletes the account once all refunds are done. The sheet lists the items
+/// with "Cancel & refund" (buyers are refunded automatically by the server)
+/// and, for a refund that failed, "Upload refund proof", plus a summary of
+/// what the request does. It also pops true once nothing blocks any more
+/// (immediate deletion).
 class DeletionBlockersSheet extends StatefulWidget {
   const DeletionBlockersSheet({
     super.key,
     required this.initial,
     required this.service,
+    this.requestMode = true,
   });
 
   final List<DeletionBlocker> initial;
   final DeletionBlockersService service;
+
+  /// false on the pending-deletion screen: only the items and their actions
+  /// (the request already exists), no summary / "Request deletion".
+  final bool requestMode;
 
   /// Shows the sheet; resolves to true when nothing blocks any more.
   static Future<bool> show(
     BuildContext context, {
     required List<DeletionBlocker> blockers,
     DeletionBlockersService? service,
+    bool requestMode = true,
   }) async {
     final r = await showModalBottomSheet<bool>(
       context: context,
@@ -36,6 +45,7 @@ class DeletionBlockersSheet extends StatefulWidget {
       builder: (_) => DeletionBlockersSheet(
         initial: blockers,
         service: service ?? DeletionBlockersService(),
+        requestMode: requestMode,
       ),
     );
     return r ?? false;
@@ -54,7 +64,7 @@ class _DeletionBlockersSheetState extends State<DeletionBlockersSheet> {
       final next = await widget.service.fetch();
       if (!mounted) return;
       setState(() => _items = next);
-      if (next.isEmpty) Navigator.of(context).pop(true);
+      if (next.isEmpty && widget.requestMode) Navigator.of(context).pop(true);
     } catch (_) {
       // Keep the current list; the user can retry.
     }
@@ -179,10 +189,11 @@ class _DeletionBlockersSheetState extends State<DeletionBlockersSheet> {
                 ],
               ),
               const SizedBox(height: 10),
-              Text(
-                l10n.deletionBlockedBody,
-                style: const TextStyle(color: AppColors.textSecondary, height: 1.4),
-              ),
+              if (widget.requestMode)
+                Text(
+                  l10n.deletionScheduleBody,
+                  style: const TextStyle(color: AppColors.textSecondary, height: 1.4),
+                ),
               const SizedBox(height: 12),
               Flexible(
                 child: ListView.separated(
@@ -192,9 +203,55 @@ class _DeletionBlockersSheetState extends State<DeletionBlockersSheet> {
                   itemBuilder: (context, i) => _tile(context, _items[i]),
                 ),
               ),
+              if (widget.requestMode) ...[
+                const SizedBox(height: 12),
+                _summary(context),
+                const SizedBox(height: 12),
+                // Apple 5.1.1(v): deletion can always be requested in the app.
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    key: const ValueKey('deletion-request-button'),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.errorRed,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: _busy != null ? null : () => Navigator.of(context).pop(true),
+                    child: Text(l10n.deletionScheduleContinue),
+                  ),
+                ),
+              ],
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  /// What a deletion request does now: listings cancelled, buyers refunded,
+  /// deletion once every refund is done.
+  Widget _summary(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    final plan = deletionPlan(_items);
+    const style = TextStyle(color: AppColors.textPrimary, fontSize: 13, height: 1.4);
+    return Container(
+      key: const ValueKey('deletion-plan-summary'),
+      width: double.infinity,
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: AppColors.richGold.withValues(alpha: 0.08),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: AppColors.richGold.withValues(alpha: 0.3)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          if (plan.listings > 0) Text(l10n.deletionScheduleListings(plan.listings), style: style),
+          Text(l10n.deletionScheduleBuyers(plan.buyers), style: style),
+          const SizedBox(height: 4),
+          Text(l10n.deletionScheduleWhen,
+              style: const TextStyle(color: AppColors.textSecondary, fontSize: 13, height: 1.4)),
+        ],
       ),
     );
   }

@@ -28128,4 +28128,113 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get coverFrameAvatar => 'Profile picture';
+
+  @override
+  String get emailAccountDeletionScheduledSubject =>
+      'Your GreenGo account deletion is scheduled';
+
+  @override
+  String get srvAccountDeletionScheduledBody =>
+      'We received your request to delete your GreenGo account. Your upcoming paid events and bookings have been cancelled and every buyer is refunded automatically. Your account is deleted as soon as all refunds are finished, usually within a few days, and we’ll e-mail you then. Until then your profile is hidden. You can cancel the request in the app: Profile > Delete Account.';
+
+  @override
+  String get srvAccountDeletionCompletedBody =>
+      'All refunds are finished, so your GreenGo account and its data have now been deleted, as you asked. Records we must keep by law (payment records) are kept without your profile, as described in our privacy policy.';
+
+  @override
+  String get srvAccountDeletionProofNeededTitle => 'Refund proof needed';
+
+  @override
+  String srvAccountDeletionProofNeededBody(String title) {
+    return 'We couldn’t refund a buyer of $title automatically. Refund them from your own Stripe or Mercado Pago account and upload the proof in the app (Profile > Delete Account). Your account is deleted once every refund is done.';
+  }
+
+  @override
+  String emailAccountDeletionProofNeededSubject(String title) {
+    return 'Action needed: refund proof for $title';
+  }
+
+  @override
+  String get deletionScheduleBody =>
+      'You sell tickets or bookings that are paid and not refunded yet. You can still delete your account: we cancel these listings, refund every buyer automatically, and delete your account as soon as all refunds are done.';
+
+  @override
+  String deletionScheduleListings(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'We’ll cancel $count listings with paid sales.',
+      one: 'We’ll cancel 1 listing with paid sales.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String deletionScheduleBuyers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count buyers are refunded automatically.',
+      one: '1 buyer is refunded automatically.',
+      zero: 'No buyer is waiting for a new refund.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get deletionScheduleWhen =>
+      'Your other upcoming paid events and bookings are cancelled too, and nobody can buy from you any more. Your account is deleted when all refunds are done, usually within a few days.';
+
+  @override
+  String get deletionScheduleContinue => 'Request deletion';
+
+  @override
+  String get deletionScheduleConfirmExtra =>
+      'Your account is not deleted right away. It is hidden now, your paid listings are cancelled and buyers are refunded, and the deletion completes by itself once all refunds are done. You can cancel the request until then, but cancelled events and bookings stay cancelled.';
+
+  @override
+  String get deletionScheduledSnack =>
+      'Deletion requested. Your account is deleted once all refunds are done.';
+
+  @override
+  String get deletionPendingTitle => 'Account deletion requested';
+
+  @override
+  String deletionPendingBody(String date) {
+    return 'Requested on $date. We’re waiting for the refunds to your buyers to finish. Your account is deleted automatically when they are done, usually within a few days, and we’ll e-mail you.';
+  }
+
+  @override
+  String get deletionPendingHidden =>
+      'Until then your profile is hidden from discovery and search, and nobody can buy tickets or bookings from you.';
+
+  @override
+  String get deletionPendingDeleting =>
+      'All refunds are done. Your account is being deleted now.';
+
+  @override
+  String get deletionPendingFailed =>
+      'We couldn’t finish deleting your account automatically. GreenGo has been alerted and will finish it for you; you don’t need to do anything.';
+
+  @override
+  String get deletionPendingNothingLeft =>
+      'No refunds are left. Your account will be deleted shortly.';
+
+  @override
+  String get deletionPendingCancel => 'Cancel deletion request';
+
+  @override
+  String get deletionPendingCancelConfirm =>
+      'Keep your account? Your profile becomes visible again. Events and bookings that were cancelled stay cancelled, and refunds already started still go to the buyers.';
+
+  @override
+  String get deletionPendingKeepAccount => 'Keep my account';
+
+  @override
+  String get deletionPendingCancelled =>
+      'Deletion request cancelled. Your account stays.';
+
+  @override
+  String get deletionPendingTooLate =>
+      'Your account is already being deleted. It can’t be stopped now.';
 }

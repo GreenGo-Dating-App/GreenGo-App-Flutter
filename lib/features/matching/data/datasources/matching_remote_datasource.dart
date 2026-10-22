@@ -753,7 +753,10 @@ List<MatchCandidate> buildCandidates(CandidateBuildRequest r) {
 
       // Skip explicitly suspended/banned/deleted profiles
       final status = candidateProfile.accountStatus.toLowerCase();
-      if (status == 'suspended' || status == 'banned' || status == 'deleted') {
+      if (status == 'suspended' ||
+          status == 'banned' ||
+          status == 'deleted' ||
+          status == 'deletion_pending') {
         continue;
       }
 

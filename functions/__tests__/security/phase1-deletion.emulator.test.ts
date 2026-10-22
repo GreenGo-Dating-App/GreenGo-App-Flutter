@@ -273,7 +273,7 @@ describe('app: deleteMyAccount callable', () => {
     await db.doc('stripe_customers/app2').set({ customerId: 'cus_123', email: 'app2@example.com' });
 
     const r = await v2call(fn(), {}, fresh('app2'));
-    expect(r).toEqual({ success: true });
+    expect(r).toEqual({ success: true, status: 'deleted' });
 
     expect(await authExists('app2')).toBe(false);
     for (const p of ['profiles/app2', 'users/app2', 'coinBalances/app2', 'purchaseLedger/tokhash', 'coinTransactions/t1', 'stripe_customers/app2']) {
@@ -327,7 +327,7 @@ describe('app: deleteMyAccount callable', () => {
     await db.doc('consents/app3/events/e1').set({ type: 'terms', accepted: true, docVersion: '5.1.0' });
     await db.doc('legal_acknowledgements/app3/items/w1').set({ type: 'private_content_warning', termsVersion: '5.1.0' });
 
-    expect(await v2call(fn(), {}, fresh('app3'))).toEqual({ success: true });
+    expect(await v2call(fn(), {}, fresh('app3'))).toEqual({ success: true, status: 'deleted' });
     expect(await authExists('app3')).toBe(false);
     expect(await docExists('profiles/app3')).toBe(false);
 
@@ -360,7 +360,7 @@ describe('app: deleteMyAccount callable', () => {
     expect((await db.doc('deletion_jobs/app3').get()).data()).toMatchObject({ status: 'failed' });
     expect(await docExists('deletion_receipts/app3')).toBe(false);
 
-    await expect(v2call(fn(), {}, fresh('app3'))).resolves.toEqual({ success: true });
+    await expect(v2call(fn(), {}, fresh('app3'))).resolves.toEqual({ success: true, status: 'deleted' });
     expect(await authExists('app3')).toBe(false);
     expect(await exists('profiles/app3/photos/a.jpg')).toBe(false);
   });
