@@ -182,6 +182,10 @@ String? serverText(
       return l10n.csvStatusPaid;
     case 'deletedUserName':
       return l10n.deletedUserName;
+    case 'emailAccountDeletionProofNeededSubject':
+      return l10n.emailAccountDeletionProofNeededSubject(_str(p['title']));
+    case 'emailAccountDeletionScheduledSubject':
+      return l10n.emailAccountDeletionScheduledSubject;
     case 'emailAskOrganizer':
       return l10n.emailAskOrganizer;
     case 'emailBookingConfirmedGuestIntro':
@@ -556,6 +560,14 @@ String? serverText(
       return l10n.sharePreviewOpenWeb;
     case 'sharePreviewPhotoCredit':
       return l10n.sharePreviewPhotoCredit(_str(p['credit']));
+    case 'srvAccountDeletionCompletedBody':
+      return l10n.srvAccountDeletionCompletedBody;
+    case 'srvAccountDeletionProofNeededBody':
+      return l10n.srvAccountDeletionProofNeededBody(_str(p['title']));
+    case 'srvAccountDeletionProofNeededTitle':
+      return l10n.srvAccountDeletionProofNeededTitle;
+    case 'srvAccountDeletionScheduledBody':
+      return l10n.srvAccountDeletionScheduledBody;
     case 'srvAccountNotApprovedContactSupport':
       return l10n.srvAccountNotApprovedContactSupport;
     case 'srvAccountNotApprovedReason':

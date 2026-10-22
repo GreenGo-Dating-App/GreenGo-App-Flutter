@@ -82,6 +82,7 @@ import { BILLING, billingMissing } from '../finance/billing';
 import { AttendeeName, attendeeFullName, eventTicketLimit, parseAttendeeNames, requiresAttendeeNames } from './ticketRules';
 // Lazy cycle (refunds.ts imports this module): used at call time only.
 import { refundIfListingCancelled } from './refunds';
+import { SCHEDULED_DELETIONS, isClosingRecord } from '../auth/deletionBlockers';
 
 const db = () => admin.firestore();
 const ts = (ms: number) => admin.firestore.Timestamp.fromMillis(ms);
@@ -472,6 +473,10 @@ export async function createTicketCheckout(
       seller = (await tx.get(db().collection('profiles').doc(listing.organizerId))).data();
       if (!isBusinessActive(seller)) fail('failed-precondition', 'seller_not_business');
     }
+    // The seller asked to delete their account (scheduled until every refund
+    // is done, auth/scheduledDeletion.ts): no new sales, free tickets included.
+    const closing = (await tx.get(db().collection(SCHEDULED_DELETIONS).doc(listing.organizerId))).data();
+    if (isClosingRecord(closing)) fail('failed-precondition', 'seller_unavailable');
 
     // Readiness of the organizer's payment setup.
     let payment: ReturnType<typeof linkPaymentSnapshot> = null;

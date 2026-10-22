@@ -29,6 +29,7 @@ import '../shared/firebaseAdmin';
 import { assertPhoneVerified, identityRequirementMet } from '../shared/participation';
 import { effectiveTier, hasBaseAccess, isBusinessActive, isProfileAdmin } from '../shared/effectiveTier';
 import { moderateExperienceText } from './moderation';
+import { SCHEDULED_DELETIONS, isClosingRecord } from '../auth/deletionBlockers';
 import { maxExperiencesFor, validateExperiencePayload } from './validation';
 import {
   communityDisplayName,
@@ -81,6 +82,13 @@ export const createUserExperience = onCall(
       throw new HttpsError('invalid-argument', 'invalid_community', {
         code: 'invalid_community',
       });
+    }
+
+    // The host asked to delete their account (auth/scheduledDeletion.ts): no
+    // new listing that takes money while the refunds of the old ones run.
+    if (takesPayment(v.data as Record<string, unknown>)
+        && isClosingRecord((await db.collection(SCHEDULED_DELETIONS).doc(uid).get()).data())) {
+      throw new HttpsError('failed-precondition', 'seller_account_closing', { code: 'seller_account_closing' });
     }
 
     const profileRef = db.collection('profiles').doc(uid);

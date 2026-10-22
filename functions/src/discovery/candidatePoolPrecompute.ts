@@ -85,7 +85,8 @@ function toPoolMember(doc: admin.firestore.DocumentSnapshot): PoolMember | null 
   if (!d) return null;
 
   const status = (d.accountStatus as string || 'active').toLowerCase();
-  if (status === 'suspended' || status === 'banned' || status === 'deleted') return null;
+  // 'deletion_pending': deletion requested, waiting for refunds (auth/scheduledDeletion.ts).
+  if (status === 'suspended' || status === 'banned' || status === 'deleted' || status === 'deletion_pending') return null;
 
   // Must be verified and have at least one photo
   const isVerified = d.isVerified === true || d.verificationStatus === 'approved' || d.verificationStatus === 'verified';

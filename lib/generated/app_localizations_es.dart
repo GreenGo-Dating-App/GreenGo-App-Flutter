@@ -28398,4 +28398,114 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get communitiesDatingWordingWarning =>
       'GreenGo es para la amistad, la cultura y el networking. No se permiten comunidades para buscar pareja: centra la tuya en intereses, idiomas y lugares compartidos.';
+
+  @override
+  String get emailAccountDeletionScheduledSubject =>
+      'La eliminación de tu cuenta de GreenGo está programada';
+
+  @override
+  String get srvAccountDeletionScheduledBody =>
+      'Hemos recibido tu solicitud para eliminar tu cuenta de GreenGo. Tus próximos eventos y reservas de pago se han cancelado y cada comprador recibe el reembolso automáticamente. Tu cuenta se eliminará en cuanto terminen todos los reembolsos, normalmente en pocos días, y te avisaremos por correo. Hasta entonces tu perfil queda oculto. Puedes cancelar la solicitud en la app: Perfil > Eliminar Cuenta.';
+
+  @override
+  String get srvAccountDeletionCompletedBody =>
+      'Todos los reembolsos han terminado, así que tu cuenta de GreenGo y sus datos se han eliminado, como pediste. Los registros que la ley nos obliga a conservar (registros de pagos) se guardan sin tu perfil, como se describe en nuestra política de privacidad.';
+
+  @override
+  String get srvAccountDeletionProofNeededTitle =>
+      'Se necesita un comprobante de reembolso';
+
+  @override
+  String srvAccountDeletionProofNeededBody(String title) {
+    return 'No pudimos reembolsar automáticamente a un comprador de $title. Reembólsale desde tu propia cuenta de Stripe o Mercado Pago y sube el comprobante en la app (Perfil > Eliminar Cuenta). Tu cuenta se eliminará cuando todos los reembolsos estén hechos.';
+  }
+
+  @override
+  String emailAccountDeletionProofNeededSubject(String title) {
+    return 'Acción necesaria: comprobante de reembolso de $title';
+  }
+
+  @override
+  String get deletionScheduleBody =>
+      'Vendes entradas o reservas pagadas que aún no se han reembolsado. Aun así puedes eliminar tu cuenta: cancelamos estos anuncios, reembolsamos automáticamente a cada comprador y eliminamos tu cuenta en cuanto terminen todos los reembolsos.';
+
+  @override
+  String deletionScheduleListings(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Cancelaremos $count anuncios con ventas pagadas.',
+      one: 'Cancelaremos 1 anuncio con ventas pagadas.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String deletionScheduleBuyers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count compradores reciben el reembolso automáticamente.',
+      one: '1 comprador recibe el reembolso automáticamente.',
+      zero: 'Ningún comprador espera un nuevo reembolso.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get deletionScheduleWhen =>
+      'Tus demás eventos y reservas de pago próximos también se cancelan y nadie podrá comprarte nada más. Tu cuenta se elimina cuando terminen todos los reembolsos, normalmente en pocos días.';
+
+  @override
+  String get deletionScheduleContinue => 'Solicitar la eliminación';
+
+  @override
+  String get deletionScheduleConfirmExtra =>
+      'Tu cuenta no se elimina de inmediato. Ahora se oculta, tus anuncios de pago se cancelan y los compradores reciben el reembolso, y la eliminación se completa sola cuando terminen todos los reembolsos. Hasta entonces puedes cancelar la solicitud, pero los eventos y reservas cancelados seguirán cancelados.';
+
+  @override
+  String get deletionScheduledSnack =>
+      'Eliminación solicitada. Tu cuenta se eliminará cuando terminen todos los reembolsos.';
+
+  @override
+  String get deletionPendingTitle => 'Eliminación de cuenta solicitada';
+
+  @override
+  String deletionPendingBody(String date) {
+    return 'Solicitada el $date. Estamos esperando a que terminen los reembolsos a tus compradores. Después tu cuenta se eliminará automáticamente, normalmente en pocos días, y te avisaremos por correo.';
+  }
+
+  @override
+  String get deletionPendingHidden =>
+      'Hasta entonces tu perfil está oculto en Descubrir y en la búsqueda, y nadie puede comprarte entradas ni reservas.';
+
+  @override
+  String get deletionPendingDeleting =>
+      'Todos los reembolsos están hechos. Tu cuenta se está eliminando ahora.';
+
+  @override
+  String get deletionPendingFailed =>
+      'No pudimos terminar de eliminar tu cuenta automáticamente. GreenGo ya está avisado y lo terminará por ti; no tienes que hacer nada.';
+
+  @override
+  String get deletionPendingNothingLeft =>
+      'No quedan reembolsos pendientes. Tu cuenta se eliminará en breve.';
+
+  @override
+  String get deletionPendingCancel => 'Cancelar la solicitud de eliminación';
+
+  @override
+  String get deletionPendingCancelConfirm =>
+      '¿Conservar tu cuenta? Tu perfil vuelve a ser visible. Los eventos y reservas cancelados siguen cancelados, y los reembolsos ya iniciados llegarán igualmente a los compradores.';
+
+  @override
+  String get deletionPendingKeepAccount => 'Conservar mi cuenta';
+
+  @override
+  String get deletionPendingCancelled =>
+      'Solicitud de eliminación cancelada. Tu cuenta se mantiene.';
+
+  @override
+  String get deletionPendingTooLate =>
+      'Tu cuenta ya se está eliminando. Ya no se puede detener.';
 }

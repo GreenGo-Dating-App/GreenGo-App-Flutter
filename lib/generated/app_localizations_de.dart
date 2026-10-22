@@ -28478,4 +28478,114 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get communitiesDatingWordingWarning =>
       'GreenGo ist für Freundschaft, Kultur und Networking da. Communities zur Partnersuche sind nicht erlaubt: Halte deine bei gemeinsamen Interessen, Sprachen und Orten.';
+
+  @override
+  String get emailAccountDeletionScheduledSubject =>
+      'Die Löschung deines GreenGo-Kontos ist geplant';
+
+  @override
+  String get srvAccountDeletionScheduledBody =>
+      'Wir haben deine Anfrage zur Löschung deines GreenGo-Kontos erhalten. Deine kommenden kostenpflichtigen Events und Buchungen wurden abgesagt und alle Käufer erhalten ihr Geld automatisch zurück. Dein Konto wird gelöscht, sobald alle Erstattungen abgeschlossen sind, meist innerhalb weniger Tage, und wir schicken dir dann eine E-Mail. Bis dahin ist dein Profil ausgeblendet. Du kannst die Anfrage in der App zurückziehen: Profil > Konto Löschen.';
+
+  @override
+  String get srvAccountDeletionCompletedBody =>
+      'Alle Erstattungen sind abgeschlossen. Dein GreenGo-Konto und seine Daten wurden daher wie gewünscht gelöscht. Unterlagen, die wir gesetzlich aufbewahren müssen (Zahlungsbelege), bleiben ohne dein Profil erhalten, wie in unserer Datenschutzerklärung beschrieben.';
+
+  @override
+  String get srvAccountDeletionProofNeededTitle =>
+      'Erstattungsnachweis erforderlich';
+
+  @override
+  String srvAccountDeletionProofNeededBody(String title) {
+    return 'Wir konnten einem Käufer von $title das Geld nicht automatisch erstatten. Erstatte es über dein eigenes Stripe- oder Mercado-Pago-Konto und lade den Nachweis in der App hoch (Profil > Konto Löschen). Dein Konto wird gelöscht, sobald alle Erstattungen erledigt sind.';
+  }
+
+  @override
+  String emailAccountDeletionProofNeededSubject(String title) {
+    return 'Aktion erforderlich: Erstattungsnachweis für $title';
+  }
+
+  @override
+  String get deletionScheduleBody =>
+      'Du verkaufst Tickets oder Buchungen, die bezahlt und noch nicht erstattet sind. Du kannst dein Konto trotzdem löschen: Wir sagen diese Angebote ab, erstatten allen Käufern automatisch ihr Geld und löschen dein Konto, sobald alle Erstattungen erledigt sind.';
+
+  @override
+  String deletionScheduleListings(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wir sagen $count Angebote mit bezahlten Verkäufen ab.',
+      one: 'Wir sagen 1 Angebot mit bezahlten Verkäufen ab.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String deletionScheduleBuyers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Käufer erhalten ihr Geld automatisch zurück.',
+      one: '1 Käufer erhält sein Geld automatisch zurück.',
+      zero: 'Kein Käufer wartet auf eine neue Erstattung.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get deletionScheduleWhen =>
+      'Deine anderen kommenden kostenpflichtigen Events und Buchungen werden ebenfalls abgesagt, und niemand kann mehr bei dir kaufen. Dein Konto wird gelöscht, sobald alle Erstattungen erledigt sind, meist innerhalb weniger Tage.';
+
+  @override
+  String get deletionScheduleContinue => 'Löschung beantragen';
+
+  @override
+  String get deletionScheduleConfirmExtra =>
+      'Dein Konto wird nicht sofort gelöscht. Es wird jetzt ausgeblendet, deine kostenpflichtigen Angebote werden abgesagt und die Käufer erhalten ihr Geld zurück. Die Löschung erfolgt automatisch, sobald alle Erstattungen erledigt sind. Bis dahin kannst du die Anfrage zurückziehen, abgesagte Events und Buchungen bleiben aber abgesagt.';
+
+  @override
+  String get deletionScheduledSnack =>
+      'Löschung beantragt. Dein Konto wird gelöscht, sobald alle Erstattungen erledigt sind.';
+
+  @override
+  String get deletionPendingTitle => 'Kontolöschung beantragt';
+
+  @override
+  String deletionPendingBody(String date) {
+    return 'Beantragt am $date. Wir warten, bis die Erstattungen an deine Käufer abgeschlossen sind. Danach wird dein Konto automatisch gelöscht, meist innerhalb weniger Tage, und wir schicken dir eine E-Mail.';
+  }
+
+  @override
+  String get deletionPendingHidden =>
+      'Bis dahin ist dein Profil in Entdecken und Suche ausgeblendet, und niemand kann Tickets oder Buchungen bei dir kaufen.';
+
+  @override
+  String get deletionPendingDeleting =>
+      'Alle Erstattungen sind erledigt. Dein Konto wird jetzt gelöscht.';
+
+  @override
+  String get deletionPendingFailed =>
+      'Wir konnten die Löschung deines Kontos nicht automatisch abschließen. GreenGo wurde benachrichtigt und erledigt das für dich; du musst nichts tun.';
+
+  @override
+  String get deletionPendingNothingLeft =>
+      'Es sind keine Erstattungen mehr offen. Dein Konto wird in Kürze gelöscht.';
+
+  @override
+  String get deletionPendingCancel => 'Löschantrag zurückziehen';
+
+  @override
+  String get deletionPendingCancelConfirm =>
+      'Konto behalten? Dein Profil wird wieder sichtbar. Abgesagte Events und Buchungen bleiben abgesagt, und bereits gestartete Erstattungen gehen trotzdem an die Käufer.';
+
+  @override
+  String get deletionPendingKeepAccount => 'Konto behalten';
+
+  @override
+  String get deletionPendingCancelled =>
+      'Löschantrag zurückgezogen. Dein Konto bleibt bestehen.';
+
+  @override
+  String get deletionPendingTooLate =>
+      'Dein Konto wird bereits gelöscht. Das lässt sich jetzt nicht mehr stoppen.';
 }
