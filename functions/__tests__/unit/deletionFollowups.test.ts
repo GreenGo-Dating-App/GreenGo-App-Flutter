@@ -285,6 +285,14 @@ describe('processAnalyticsFollowup', () => {
     expect(db.get('deletion_followups', 'u1')!.analyticsGa4).toEqual({ _: 'not_enabled' });
   });
 
+  test('GA4 deletion goes to the Admin API submitUserDeletion (v3 upsert is retired)', () => {
+    expect(f.ga4DeletionRequest('521563225', 'abcdef0123456789')).toEqual({
+      url: 'https://analyticsadmin.googleapis.com/v1alpha/properties/521563225:submitUserDeletion',
+      method: 'POST',
+      data: { appInstanceId: 'abcdef0123456789' },
+    });
+  });
+
   test('old follow-up docs (no analyticsStatus) only run the Stripe task', () => {
     expect(f.isTaskDue({ stripeStatus: 'done' }, 'analytics', NOW)).toBe(false);
     expect(f.isTaskDue({}, 'stripe', NOW)).toBe(true);

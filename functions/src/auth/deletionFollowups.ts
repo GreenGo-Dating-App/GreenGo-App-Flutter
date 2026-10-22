@@ -30,8 +30,9 @@
  *      (backoff up to 12 h; the buffer flushes within ~90 min).
  *   3. GA4 (Google Analytics for Firebase): the app does not set a GA4 user
  *      id, so the only handle is the device's app instance id, which the app
- *      sends with deleteMyAccount. With GA4_USER_DELETION=on the worker files
- *      a User Deletion API request per app instance id. Crashlytics has no
+ *      sends with deleteMyAccount. With GA4_USER_DELETION=on (and
+ *      GA4_PROPERTY_ID set) the worker files an Analytics Admin API
+ *      submitUserDeletion request per app instance id. Crashlytics has no
  *      per-user deletion API and the app sets no Crashlytics user id (reports
  *      expire after 90 days): recorded as `crashlytics: 'not_linked'`.
  *
@@ -399,21 +400,26 @@ function bigQueryFromEnv(): BigQueryLike | null {
 }
 
 /**
- * GA4 User Deletion API (Firebase project, app instance id). Needs the
- * functions service account to have the Editor (or Administrator) role on
- * the GA4 property linked to the Firebase project, and GA4_USER_DELETION=on.
+ * GA4 user deletion via the Analytics Admin API (submitUserDeletion). The old
+ * v3 User Deletion API (userDeletionRequests:upsert) was retired with
+ * Universal Analytics and answers 404. Needs the functions service account
+ * to have the Editor (or Administrator) role on the GA4 property linked to
+ * the Firebase project, GA4_PROPERTY_ID (numeric) and GA4_USER_DELETION=on.
  */
+export function ga4DeletionRequest(propertyId: string, appInstanceId: string) {
+  return {
+    url: `https://analyticsadmin.googleapis.com/v1alpha/properties/${encodeURIComponent(propertyId)}:submitUserDeletion`,
+    method: 'POST' as const,
+    data: { appInstanceId },
+  };
+}
+
 async function ga4DeleteFromEnv(appInstanceId: string): Promise<void> {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   const { GoogleAuth } = require('google-auth-library');
-  const auth = new GoogleAuth({ scopes: ['https://www.googleapis.com/auth/analytics.user.deletion'] });
+  const auth = new GoogleAuth({ scopes: ['https://www.googleapis.com/auth/analytics.edit'] });
   const client = await auth.getClient();
-  const project = process.env.GCLOUD_PROJECT || process.env.GCP_PROJECT || '';
-  await client.request({
-    url: 'https://www.googleapis.com/analytics/v3/userDeletion/userDeletionRequests:upsert',
-    method: 'POST',
-    data: { kind: 'analytics#userDeletionRequest', id: { type: 'APP_INSTANCE_ID', userId: appInstanceId }, firebaseProjectId: project },
-  });
+  await client.request(ga4DeletionRequest(process.env.GA4_PROPERTY_ID || '', appInstanceId));
 }
 
 export const deletionFollowupDeps: FollowupDeps = {
@@ -421,7 +427,8 @@ export const deletionFollowupDeps: FollowupDeps = {
   now: () => new Date(),
   db: () => admin.firestore(),
   bigquery: bigQueryFromEnv,
-  ga4DeleteAppInstance: process.env.GA4_USER_DELETION === 'on' ? ga4DeleteFromEnv : null,
+  ga4DeleteAppInstance:
+    process.env.GA4_USER_DELETION === 'on' && /^\d+$/.test(process.env.GA4_PROPERTY_ID || '') ? ga4DeleteFromEnv : null,
 };
 
 /** Claims [task] of the doc (lease) if due. Returns its data, or null. */
