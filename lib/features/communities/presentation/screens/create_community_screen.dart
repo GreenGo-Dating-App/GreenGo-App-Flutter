@@ -30,6 +30,7 @@ import '../../../../core/widgets/cover_frames.dart';
 import '../../../../core/widgets/cover_image_size_hint.dart';
 import '../../../../core/widgets/cover_positioner.dart';
 import '../../../../core/widgets/focal_cover_image.dart';
+import '../widgets/community_text_warning.dart';
 
 /// Create Community Screen
 ///
@@ -328,6 +329,10 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                 }
                 return null;
               },
+            ),
+            // Apple 4.3(b): gentle note on dating wording (never blocks).
+            CommunityTextWarning(
+              controllers: [_nameController, _descriptionController],
             ),
             const SizedBox(height: AppDimensions.paddingL),
 

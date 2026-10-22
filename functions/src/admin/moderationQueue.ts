@@ -252,6 +252,18 @@ export const getModerationReviewItem = functions.runWith({ memory: '512MB' }).ht
         labels: queueData.labels ?? [],
         visibility: queueData.visibility ?? null,
       };
+    } else if (queueData.itemType === 'communityText') {
+      // Apple 4.3(b) guard: current community text + the matched dating terms.
+      const c = (await firestore.collection('communities').doc(queueData.itemId).get()).data() || {};
+      content = {
+        name: c.name ?? null,
+        description: c.description ?? null,
+        rules: c.rules ?? null,
+        tags: c.tags ?? [],
+        isPublic: c.isPublic !== false,
+        matchedTerms: queueData.metadata?.matchedTerms ?? {},
+        text: [c.name, c.description, c.rules].filter((x) => typeof x === 'string' && x).join('\n\n'),
+      };
     } else if (queueData.source?.collection) {
       // Report-pipeline item from message_reports / reports.
       const reportDoc = await firestore

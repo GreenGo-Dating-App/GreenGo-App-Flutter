@@ -28365,6 +28365,18 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get coverFrameAvatar => 'Foto de perfil';
+
+  @override
+  String get aiConsentAutoTranslate =>
+      'Tradução automática: as dicas das comunidades, as descrições de eventos e experiências e as avaliações escritas por outras pessoas são mostradas no teu idioma. O texto delas (nunca o teu, nunca o teu perfil) é enviado ao serviço de tradução da Google. Se recusares, vês o texto original e podes tocar em Traduzir quando quiseres.';
+
+  @override
+  String get aiServicesFeatureAutoTranslate =>
+      'Tradução automática de dicas das comunidades, eventos, experiências e avaliações para o teu idioma';
+
+  @override
+  String get communitiesDatingWordingWarning =>
+      'O GreenGo é para amizade, cultura e networking. Não são permitidas comunidades para procurar parceiro: mantém a tua centrada em interesses, idiomas e lugares em comum.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -56733,4 +56745,16 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get coverFrameAvatar => 'Foto de perfil';
+
+  @override
+  String get aiConsentAutoTranslate =>
+      'Tradução automática: dicas das comunidades, descrições de eventos e experiências e avaliações escritas por outras pessoas são mostradas no seu idioma. O texto delas (nunca o seu, nunca o seu perfil) é enviado ao serviço de tradução do Google. Se você recusar, verá o texto original e poderá tocar em Traduzir quando quiser.';
+
+  @override
+  String get aiServicesFeatureAutoTranslate =>
+      'Tradução automática de dicas das comunidades, eventos, experiências e avaliações para o seu idioma';
+
+  @override
+  String get communitiesDatingWordingWarning =>
+      'O GreenGo é para amizade, cultura e networking. Não são permitidas comunidades para procurar parceiro: mantenha a sua focada em interesses, idiomas e lugares em comum.';
 }

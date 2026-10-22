@@ -122,8 +122,11 @@ class TranslationResult {
 
 /// Translation Service
 ///
-/// Private text (chat messages) is translated only after the user accepted
-/// the AI-processing notice ([AiConsentService]; Apple 5.1.2(i), audit H-17).
+/// ANY text (chat messages, and since App Review 2026-10-22 also public
+/// content: tips, events, experiences, reviews) is sent for translation only
+/// after the user accepted the AI-processing notice ([AiConsentService];
+/// Apple 5.1.2(i), audit H-17). Stored translations (device cache, the
+/// shared `translations/` store) are shown without it: nothing leaves GreenGo.
 /// Backends:
 ///  - PRIVATE text (chat messages, [requiresConsent] true) ALWAYS goes to the
 ///    `translatePrivateText` callable: the contracted Google Cloud Translation
@@ -475,10 +478,13 @@ class TranslationService {
   /// Never throws: a failure comes back as [TranslationResult.failed] with the
   /// original text, and is not cached.
   ///
-  /// [requiresConsent]: true (default) for private / personal text such as
-  /// chat messages. Without an accepted AI-processing notice nothing is sent
-  /// and a [TranslationResult.consentRequired] result comes back. Only public
-  /// content (events, attractions, experiences, public reviews) passes false.
+  /// Without an accepted AI-processing notice nothing is sent and a
+  /// [TranslationResult.consentRequired] result comes back, for ALL text
+  /// (since App Review 2026-10-22 public content needs it too).
+  /// [requiresConsent] now only picks the route: true (default) for private /
+  /// personal text such as chat messages (contracted server API); public
+  /// content (events, experiences, public reviews) passes false (free
+  /// endpoint).
   Future<TranslationResult> translateDetailed({
     required String text,
     String sourceLanguage = 'auto',
@@ -536,7 +542,10 @@ class TranslationService {
           _remember(cacheKey, local);
           return _trace(local, sw);
         }
-        if (requiresConsent && !await _consentOk()) {
+        // Every request that leaves the device (chat to the contracted API,
+        // public content to Google's free endpoint) needs the account's AI
+        // consent (Apple 5.1.2(i), App Review 2026-10-22).
+        if (!await _consentOk()) {
           return TranslationResult.consentRequired(text);
         }
         final TranslationResult r;
@@ -1031,6 +1040,11 @@ class TranslationService {
     }));
     if (stillMissing.isEmpty) return out;
 
+    // Misses are sent to Google (server or device): only with the account's
+    // AI consent (Apple 5.1.2(i)). Without it the originals come back; the
+    // stored translations above never left our own backend.
+    if (!await _consentOk()) return out;
+
     // 2) Translate the misses once on the server, which stores them for
     //    everyone (chunks of 50).
     final unresolved = <int>[];
@@ -1041,14 +1055,30 @@ class TranslationService {
       final chunk = stillMissing.sublist(
           c, c + 50 > stillMissing.length ? stillMissing.length : c + 50);
       try {
-        final res = await FirebaseFunctions.instance
-            .httpsCallable('translateTexts',
-                options: HttpsCallableOptions(
-                    timeout: const Duration(seconds: 30)))
-            .call<Map<String, dynamic>>({
-          'texts': [for (final i in chunk) texts[i]],
-          'target': target,
-        });
+        Future<HttpsCallableResult<Map<String, dynamic>>> send() =>
+            FirebaseFunctions.instance
+                .httpsCallable('translateTexts',
+                    options: HttpsCallableOptions(
+                        timeout: const Duration(seconds: 30)))
+                .call<Map<String, dynamic>>({
+              'texts': [for (final i in chunk) texts[i]],
+              'target': target,
+            });
+        HttpsCallableResult<Map<String, dynamic>> res;
+        try {
+          res = await send();
+        } catch (e) {
+          // The server has no consent record although this device says
+          // "granted" (first send failed): re-send it once, then retry. A
+          // withdrawal made on another device is adopted instead.
+          if (isAiConsentRequiredError(e) &&
+              await AiConsentService.instance.resyncAfterServerRejection()) {
+            res = await send();
+          } else {
+            if (isAiConsentRequiredError(e)) return out;
+            rethrow;
+          }
+        }
         final list = (res.data['translations'] as List?) ?? const [];
         for (var k = 0; k < chunk.length; k++) {
           final v = k < list.length ? list[k] as String? : null;

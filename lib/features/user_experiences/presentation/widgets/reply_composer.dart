@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/ai_consent_service.dart';
 import '../../../../core/services/translation_service.dart';
+import '../../../../core/widgets/ai_consent_sheet.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/experience_validation.dart';
@@ -38,10 +40,55 @@ class _MentionTextState extends State<MentionText> {
   bool _showTranslation = false;
   bool _translating = false;
 
+  /// Auto mode without the account's AI consent (Apple 5.1.2(i)): the
+  /// original with a "Translate" action that asks for it.
+  bool _awaitingConsent = false;
+
+  bool _grantedNow() {
+    try {
+      return AiConsentService.instance.isGranted;
+    } catch (_) {
+      return false;
+    }
+  }
+
   @override
   void initState() {
     super.initState();
-    if (widget.autoTranslate) _translate();
+    if (widget.autoTranslate) _startAuto();
+  }
+
+  void _startAuto() {
+    if (widget.targetLang == null || widget.text.trim().isEmpty) return;
+    if (_grantedNow()) {
+      _translate();
+      return;
+    }
+    _awaitingConsent = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      if (!mounted) return;
+      bool ok;
+      try {
+        ok = await AiConsentGate.allowAutoTranslate(context);
+      } catch (_) {
+        ok = false;
+      }
+      if (!mounted || !_awaitingConsent || !ok) return;
+      setState(() => _awaitingConsent = false);
+      _translate();
+    });
+  }
+
+  Future<void> _tapTranslate() async {
+    bool ok;
+    try {
+      ok = await AiConsentGate.requestTranslation(context);
+    } catch (_) {
+      ok = false;
+    }
+    if (!ok || !mounted) return;
+    setState(() => _awaitingConsent = false);
+    await _translate();
   }
 
   @override
@@ -50,7 +97,8 @@ class _MentionTextState extends State<MentionText> {
     if (old.text != widget.text || old.targetLang != widget.targetLang) {
       _translated = null;
       _showTranslation = false;
-      if (widget.autoTranslate) _translate();
+      _awaitingConsent = false;
+      if (widget.autoTranslate) _startAuto();
     }
   }
 
@@ -121,7 +169,8 @@ class _MentionTextState extends State<MentionText> {
               ));
             },
           );
-    final showToggle = widget.autoTranslate && (_translating || _translated != null);
+    final showToggle = widget.autoTranslate &&
+        (_translating || _translated != null || _awaitingConsent);
     if (!showToggle) return body;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -129,9 +178,11 @@ class _MentionTextState extends State<MentionText> {
       children: [
         body,
         GestureDetector(
-          onTap: _translating || _translated == null
+          onTap: _translating
               ? null
-              : () => setState(() => _showTranslation = !_showTranslation),
+              : _translated == null
+                  ? (_awaitingConsent ? _tapTranslate : null)
+                  : () => setState(() => _showTranslation = !_showTranslation),
           child: Padding(
             padding: const EdgeInsets.only(top: 4),
             child: Text(

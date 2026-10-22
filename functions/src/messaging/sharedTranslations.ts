@@ -13,6 +13,9 @@
  * stores the translated text, never the original. Private chat text never
  * goes through here.
  *
+ * Consent: the caller (viewer) must have accepted the AI-processing notice
+ * (requireTranslationConsent), else failed-precondition AI_CONSENT_REQUIRED.
+ *
  * Guard rails: signed-in only, ≤ 50 texts per call, ≤ 5,000 chars each, and a
  * per-user daily quota of misses (cache hits are free).
  *
@@ -27,6 +30,7 @@ import * as admin from 'firebase-admin';
 import * as crypto from 'crypto';
 import '../shared/firebaseAdmin';
 import { freeTranslateMany } from './freeTranslate';
+import { requireTranslationConsent } from '../shared/aiConsent';
 
 const db = admin.firestore();
 
@@ -60,6 +64,10 @@ export const translateTexts = onCall<Req>(
       .slice(0, MAX_TEXTS)
       .map((t) => t.slice(0, MAX_CHARS));
     if (texts.length === 0) return { translations: [] as string[] };
+
+    // Apple 5.1.2(i): the viewer must have allowed sending text to Google
+    // (account-level AI consent; see shared/aiConsent.ts).
+    await requireTranslationConsent(uid);
 
     const unique = [...new Set(texts)];
     const refs = unique.map((t) => db.collection('translations').doc(sharedTranslationId(target, t)));

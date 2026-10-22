@@ -1,0 +1,353 @@
+{
+ "_doc": "Shared by functions/src/communities/communityTextGuard.ts and lib/features/communities/domain/community_text_guard.dart. terms/exceptions MUST equal the in-code lists; vectors list the FIRST-listed matching term only when expected is non-empty (tests check containment).",
+ "terms": [
+  "dating*",
+  "speed dating",
+  "online dating",
+  "romance",
+  "romantic partner*",
+  "romantic relationship*",
+  "romantic date*",
+  "hookup*",
+  "hook up",
+  "hook ups",
+  "one night stand*",
+  "friends with benefits",
+  "fwb",
+  "find love",
+  "finding love",
+  "looking for love",
+  "find true love",
+  "soulmate*",
+  "soul mate*",
+  "find a boyfriend",
+  "find a girlfriend",
+  "looking for a boyfriend",
+  "looking for a girlfriend",
+  "get a girlfriend",
+  "get a boyfriend",
+  "find a wife",
+  "find a husband",
+  "looking for a wife",
+  "looking for a husband",
+  "meet singles",
+  "for singles",
+  "singles night*",
+  "singles party",
+  "singles event*",
+  "flirt*",
+  "sugar daddy",
+  "sugar daddies",
+  "sugar baby",
+  "sugar babies",
+  "sugar mommy",
+  "casual sex",
+  "casual encounter*",
+  "nsfw",
+  "namor*",
+  "paquer*",
+  "encontro romantico",
+  "encontros romanticos",
+  "encontro amoroso",
+  "encontros amorosos",
+  "relacionamento serio",
+  "alma gemea",
+  "pegacao",
+  "sexo casual",
+  "encontrar o amor",
+  "achar o amor",
+  "encontrar um amor",
+  "procurando amor",
+  "para solteiros",
+  "encontro de solteiros",
+  "ficar com gringo*",
+  "ficar com gringa*",
+  "procuro esposa",
+  "procuro marido",
+  "citas romanticas",
+  "cita romantica",
+  "app de citas",
+  "aplicacion de citas",
+  "pagina de citas",
+  "sitio de citas",
+  "busco pareja",
+  "buscar pareja",
+  "encontrar pareja",
+  "conocer pareja",
+  "ligar con",
+  "ligoteo",
+  "media naranja",
+  "encontrar el amor",
+  "busco novia",
+  "busco novio",
+  "encontrar novia",
+  "encontrar novio",
+  "conseguir novia",
+  "conseguir novio",
+  "para solteros",
+  "appuntamenti romantici",
+  "appuntamento romantico",
+  "incontri romantici",
+  "incontri per single",
+  "incontri single",
+  "anima gemella",
+  "trovare l amore",
+  "cerco fidanzata",
+  "cerco fidanzato",
+  "trovare una fidanzata",
+  "trovare un fidanzato",
+  "rimorchiare",
+  "rencontre amoureuse",
+  "rencontres amoureuses",
+  "site de rencontre*",
+  "rencontres coquines",
+  "rencontre coquine",
+  "trouver l amour",
+  "ame soeur",
+  "plan cul",
+  "drague*",
+  "pour celibataires",
+  "rencontre celibataire*",
+  "rencontres celibataire*",
+  "petit ami",
+  "petite amie",
+  "partnersuch*",
+  "partnerborse*",
+  "partnervermittlung*",
+  "singleborse*",
+  "liebe finden",
+  "die liebe finden",
+  "feste freundin",
+  "festen freund",
+  "romantische treffen",
+  "seitensprung*",
+  "sexdate*",
+  "blind date*"
+ ],
+ "exceptions": [
+  "carbon dating",
+  "radiocarbon dating",
+  "dating back",
+  "dating from",
+  "dating to",
+  "romance language*",
+  "romance studies",
+  "romance philology",
+  "romance novel*",
+  "romance book*",
+  "romance literature",
+  "romance linguistics"
+ ],
+ "vectors": [
+  {
+   "text": "Gringos for dating in Rio",
+   "expected": [
+    "dating*"
+   ]
+  },
+  {
+   "text": "Speed dating night for expats",
+   "expected": [
+    "dating*"
+   ]
+  },
+  {
+   "text": "Quer namorar um gringo?",
+   "expected": [
+    "namor*"
+   ]
+  },
+  {
+   "text": "Procuro namorada estrangeira",
+   "expected": [
+    "namor*"
+   ]
+  },
+  {
+   "text": "Paquera e amizade",
+   "expected": [
+    "paquer*"
+   ]
+  },
+  {
+   "text": "Encontro romântico em Paris",
+   "expected": [
+    "encontro romantico"
+   ]
+  },
+  {
+   "text": "Citas románticas para viajeros",
+   "expected": [
+    "citas romanticas"
+   ]
+  },
+  {
+   "text": "Busco pareja extranjera",
+   "expected": [
+    "busco pareja"
+   ]
+  },
+  {
+   "text": "Para ligar con chicas en Madrid",
+   "expected": [
+    "ligar con"
+   ]
+  },
+  {
+   "text": "Appuntamenti romantici a Roma",
+   "expected": [
+    "appuntamenti romantici"
+   ]
+  },
+  {
+   "text": "Trovare l'amore all'estero",
+   "expected": [
+    "trovare l amore"
+   ]
+  },
+  {
+   "text": "Rencontre amoureuse entre voyageurs",
+   "expected": [
+    "rencontre amoureuse"
+   ]
+  },
+  {
+   "text": "Trouver l'âme sœur",
+   "expected": [
+    "ame soeur"
+   ]
+  },
+  {
+   "text": "Partnersuche für Expats",
+   "expected": [
+    "partnersuch*"
+   ]
+  },
+  {
+   "text": "Die Partnerbörse für Reisende",
+   "expected": [
+    "partnerborse*"
+   ]
+  },
+  {
+   "text": "Hook-up spot for travelers",
+   "expected": [
+    "hook up"
+   ]
+  },
+  {
+   "text": "Find a girlfriend abroad",
+   "expected": [
+    "find a girlfriend"
+   ]
+  },
+  {
+   "text": "Looking for love in Lisbon",
+   "expected": [
+    "looking for love"
+   ]
+  },
+  {
+   "text": "ROMANCE & travel",
+   "expected": [
+    "romance"
+   ]
+  },
+  {
+   "text": "Flirting tips for tourists",
+   "expected": [
+    "flirt*"
+   ]
+  },
+  {
+   "text": "Sugar daddy meetups",
+   "expected": [
+    "sugar daddy"
+   ]
+  },
+  {
+   "text": "Language exchange every Saturday",
+   "expected": []
+  },
+  {
+   "text": "Event date: 12 March, see you there!",
+   "expected": []
+  },
+  {
+   "text": "Save the date for our cultural festival",
+   "expected": []
+  },
+  {
+   "text": "Up to date city guide and updates",
+   "expected": []
+  },
+  {
+   "text": "Candidate tips for job interviews",
+   "expected": []
+  },
+  {
+   "text": "Carbon dating workshop at the museum",
+   "expected": []
+  },
+  {
+   "text": "Castles dating back to the 12th century",
+   "expected": []
+  },
+  {
+   "text": "Romance languages club: Italian, Spanish, French",
+   "expected": []
+  },
+  {
+   "text": "Romance novels book club",
+   "expected": []
+  },
+  {
+   "text": "Ligue para nós: (11) 5555-0000",
+   "expected": []
+  },
+  {
+   "text": "Vamos ligar o projetor às 19h",
+   "expected": []
+  },
+  {
+   "text": "Citas médicas y trámites para expats",
+   "expected": []
+  },
+  {
+   "text": "Incontri culturali e scambio linguistico",
+   "expected": []
+  },
+  {
+   "text": "Rencontres culturelles et échanges",
+   "expected": []
+  },
+  {
+   "text": "Partnerschaft mit lokalen Museen",
+   "expected": []
+  },
+  {
+   "text": "Single travelers welcome, families too",
+   "expected": []
+  },
+  {
+   "text": "Rimorchio e camper in Toscana",
+   "expected": []
+  },
+  {
+   "text": "Amor pela cultura brasileira",
+   "expected": []
+  },
+  {
+   "text": "Meet friends and learn Portuguese",
+   "expected": []
+  },
+  {
+   "text": "Dragon boat racing club",
+   "expected": []
+  },
+  {
+   "text": "Enamorados del flamenco",
+   "expected": []
+  }
+ ]
+}

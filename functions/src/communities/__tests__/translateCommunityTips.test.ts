@@ -63,6 +63,7 @@ jest.mock('../../shared/adminAuth', () => ({
 
 import { sharedTranslationId } from '../../messaging/sharedTranslations';
 import { tipTextHash, translateCommunityTips } from '../translateCommunityTips';
+import { clearTranslationConsentCache } from '../../shared/aiConsent';
 
 const call = (data: any, uid: string | null = 'u1') =>
   (translateCommunityTips as any).run({ data, auth: uid ? { uid } : undefined });
@@ -77,6 +78,36 @@ beforeEach(() => {
   adminCaller = false;
   mockMany.mockReset();
   docs.set('communities/c1', { isPublic: true });
+  // The viewer allowed AI services (Apple 5.1.2(i) consent).
+  docs.set('consents/u1', { ai_processing: { accepted: true, version: 2 } });
+  clearTranslationConsentCache();
+});
+
+describe('viewer consent (Apple 5.1.2(i))', () => {
+  it('refuses without the viewer consent: no read of tips, nothing sent to Google', async () => {
+    docs.delete('consents/u1');
+    tip('c1', 'm1', 'Good morning');
+    await expect(call({ communityId: 'c1', messageIds: ['m1'], target: 'it' }))
+      .rejects.toMatchObject({ code: 'failed-precondition', details: { code: 'AI_CONSENT_REQUIRED' } });
+    expect(mockMany).not.toHaveBeenCalled();
+    expect(writes).toHaveLength(0);
+  });
+
+  it('refuses when the viewer turned AI services off', async () => {
+    docs.set('consents/u1', { ai_processing: { accepted: false, version: 2 } });
+    tip('c1', 'm1', 'Good morning');
+    await expect(call({ communityId: 'c1', messageIds: ['m1'], target: 'it' }))
+      .rejects.toMatchObject({ code: 'failed-precondition' });
+    expect(mockMany).not.toHaveBeenCalled();
+  });
+
+  it('the AUTHOR consent is irrelevant: only the viewer is checked', async () => {
+    docs.set('consents/a', { ai_processing: { accepted: false, version: 2 } }); // tip author
+    tip('c1', 'm1', 'Good morning');
+    mockMany.mockResolvedValue([{ text: 'Buongiorno', detectedLanguage: 'en', sameLanguage: false }]);
+    const out = await call({ communityId: 'c1', messageIds: ['m1'], target: 'it' });
+    expect(out.translations[0].text).toBe('Buongiorno');
+  });
 });
 
 it('serves a stored translation without calling the translator', async () => {

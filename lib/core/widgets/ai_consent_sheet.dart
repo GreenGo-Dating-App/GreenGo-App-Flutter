@@ -6,7 +6,9 @@ import '../services/ai_consent_service.dart';
 
 /// One-time notice + choice before the first use of a feature that sends
 /// text to AI services: Google (smart replies, AI coach, translating messages
-/// from other people, read-aloud) and Anthropic (support assistant). Returns true (allow), false (decline) or
+/// from other people, AUTOMATIC translation of public content written by
+/// others: community tips, events, experiences, reviews; read-aloud) and
+/// Anthropic (support assistant). Returns true (allow), false (decline) or
 /// null (dismissed without choosing: asked again later). The decision is
 /// stored through [AiConsentService]. With [recordDecline] false a "Decline"
 /// is returned but not recorded (the settings switch uses this: turning AI
@@ -78,6 +80,7 @@ class _AiConsentSheetBody extends StatelessWidget {
             point(Icons.business, l10n.aiConsentProvidersV2),
             point(Icons.chat_bubble_outline, l10n.aiConsentWhatSentV2),
             point(Icons.translate, l10n.aiConsentTranslateReceived),
+            point(Icons.g_translate, l10n.aiConsentAutoTranslate),
             point(Icons.help_outline, l10n.aiConsentWhy),
             point(Icons.toggle_off_outlined, l10n.aiConsentDeclineInfo),
             const SizedBox(height: 8),
@@ -138,6 +141,76 @@ class AiConsentGate {
         svc.promptedThisSession = true;
         return await showAiConsentSheet(context, service: svc) == true;
     }
+  }
+
+  static Future<AiConsentStatus>? _refreshing;
+
+  /// One server read for all the widgets asking at the same time.
+  static Future<void> _refreshOnce(AiConsentService svc) async {
+    final f = _refreshing ??= svc.refreshFromServer();
+    try {
+      await f;
+    } finally {
+      if (identical(_refreshing, f)) _refreshing = null;
+    }
+  }
+
+  // One sheet for every widget that wants to auto-translate at the same time
+  // (a page of tips): they all wait for the same decision.
+  static Future<bool?>? _autoPrompt;
+
+  /// AUTOMATIC translation of public content written by others (community
+  /// tips, events, experiences, reviews; Apple 5.1.2(i)). True when it may
+  /// run. The choice is per ACCOUNT (server record `consents/{uid}`): an
+  /// undecided device first checks the server (decided on another device),
+  /// then shows the consent sheet ONCE per session; every widget asking
+  /// meanwhile waits for that one answer. Declined or dismissed: false, and
+  /// the caller shows the original with a Translate action
+  /// ([requestTranslation]).
+  static Future<bool> allowAutoTranslate(BuildContext context,
+      {AiConsentService? service}) async {
+    final svc = service ?? AiConsentService.instance;
+    await svc.ensureLoaded();
+    if (svc.status == AiConsentStatus.unknown && !svc.promptedThisSession) {
+      await _refreshOnce(svc);
+    }
+    switch (svc.status) {
+      case AiConsentStatus.granted:
+        return true;
+      case AiConsentStatus.declined:
+        return false;
+      case AiConsentStatus.unknown:
+        final pending = _autoPrompt;
+        if (pending != null) {
+          await pending;
+          return svc.isGranted;
+        }
+        if (svc.promptedThisSession || !context.mounted) return false;
+        svc.promptedThisSession = true;
+        final prompt = showAiConsentSheet(context, service: svc);
+        _autoPrompt = prompt;
+        try {
+          await prompt;
+        } finally {
+          _autoPrompt = null;
+        }
+        return svc.isGranted;
+    }
+  }
+
+  /// The user TAPPED Translate on content written by someone else. Granted:
+  /// true. Otherwise the consent sheet is shown (again, also after a
+  /// decline: the tap is the user asking to reconsider) and the answer is
+  /// returned.
+  static Future<bool> requestTranslation(BuildContext context,
+      {AiConsentService? service}) async {
+    final svc = service ?? AiConsentService.instance;
+    await svc.ensureLoaded();
+    if (svc.status == AiConsentStatus.unknown) await _refreshOnce(svc);
+    if (svc.isGranted) return true;
+    if (!context.mounted) return false;
+    svc.promptedThisSession = true;
+    return await showAiConsentSheet(context, service: svc) == true;
   }
 
   /// Shows the sheet once per session while the user has not decided yet.

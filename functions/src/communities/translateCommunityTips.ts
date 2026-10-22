@@ -20,6 +20,9 @@
  * THAT community. The client never supplies a text or a translation, so
  * nobody can plant a fake translation or translate arbitrary text.
  *
+ * Consent: the VIEWER (caller) must have accepted the AI-processing notice
+ * (requireTranslationConsent), else failed-precondition AI_CONSENT_REQUIRED.
+ *
  * Visibility: signed-in only. Private communities (isPublic == false) also
  * require a non-banned member doc (or a platform moderator), which is stricter
  * than the message read rule.
@@ -37,6 +40,7 @@ import '../shared/firebaseAdmin';
 import { freeTranslateMany } from '../messaging/freeTranslate';
 import { MAX_CHARS, TARGET_RE, sharedTranslationId } from '../messaging/sharedTranslations';
 import { isAdminCaller, MODERATION_ROLES } from '../shared/adminAuth';
+import { requireTranslationConsent } from '../shared/aiConsent';
 
 const db = admin.firestore();
 
@@ -112,6 +116,10 @@ export const translateCommunityTips = onCall<Req>(
     }
     const messageIds = ids as string[];
     if (messageIds.length === 0) return { translations: [] };
+
+    // Apple 5.1.2(i): the VIEWER asks for the translation, so the viewer's
+    // account-level AI consent is required (shared/aiConsent.ts).
+    await requireTranslationConsent(uid);
 
     await assertCanRead(uid, request.auth, communityId);
 

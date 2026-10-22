@@ -1,5 +1,7 @@
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:greengo_chat/core/services/ai_consent_service.dart';
 import 'package:greengo_chat/core/services/translation_service.dart';
 import 'package:greengo_chat/features/communities/data/services/community_tip_translator.dart';
 import 'package:greengo_chat/features/communities/domain/entities/community_message.dart';
@@ -9,7 +11,26 @@ import 'package:greengo_chat/generated/app_localizations.dart';
 /// Owner request 2026-10-21: tips are shown in the viewer's language,
 /// translated ONCE (shared server store) and cached in the app, with
 /// "Show original".
+class _MemConsentStore implements AiConsentStore {
+  final Map<String, String> data = {};
+  @override
+  Future<String?> read(String key) async => data[key];
+  @override
+  Future<void> write(String key, String value) async => data[key] = value;
+}
+
+/// A signed-in user's AI consent with an in-memory store, a fake server
+/// recorder and a server record of [server] (null = never decided).
+AiConsentService consentService({bool? server}) => AiConsentService(
+      store: _MemConsentStore(),
+      recorder: ({required bool accepted, required int version}) async {},
+      currentUid: () => 'viewer',
+      serverReader: (_) async => server,
+    );
+
 void main() {
+  late AiConsentService granted;
+
   CommunityMessage tip(String id, String content,
           {CommunityMessageType type = CommunityMessageType.languageTip,
           String sender = 'other'}) =>
@@ -55,7 +76,9 @@ void main() {
         },
       );
 
-  setUp(() {
+  setUp(() async {
+    granted = consentService();
+    await granted.setDecision(accepted: true);
     serverCalls = [];
     sharedReads = [];
     sharedStore = {};
@@ -78,6 +101,7 @@ void main() {
       isCurrentUser: false,
       currentUserLanguage: 'it',
       tipTranslator: tr,
+      aiConsent: granted,
     )));
     await tester.pumpAndSettle();
 
@@ -106,6 +130,7 @@ void main() {
       isCurrentUser: false,
       currentUserLanguage: 'it',
       tipTranslator: translator(MemoryTipTranslationStore()),
+      aiConsent: granted,
     )));
     await tester.pumpAndSettle();
     expect(find.text('Ciao a tutti'), findsOneWidget);
@@ -120,6 +145,7 @@ void main() {
       isCurrentUser: true,
       currentUserLanguage: 'it',
       tipTranslator: translator(MemoryTipTranslationStore()),
+      aiConsent: granted,
     )));
     await tester.pumpAndSettle();
     expect(find.text('My tip'), findsOneWidget);
@@ -134,6 +160,7 @@ void main() {
       isCurrentUser: false,
       currentUserLanguage: 'it',
       tipTranslator: translator(MemoryTipTranslationStore()),
+      aiConsent: granted,
     )));
     await tester.pumpAndSettle();
     expect(find.text('Untranslatable now'), findsOneWidget);
@@ -149,6 +176,7 @@ void main() {
       isCurrentUser: false,
       currentUserLanguage: 'it',
       tipTranslator: translator(store),
+      aiConsent: granted,
     )));
     await tester.pumpAndSettle();
     expect(serverCalls, hasLength(1));
@@ -160,11 +188,120 @@ void main() {
       isCurrentUser: false,
       currentUserLanguage: 'it',
       tipTranslator: translator(store),
+      aiConsent: granted,
     )));
     await tester.pumpAndSettle();
     expect(find.text('IT:Bring cash'), findsOneWidget);
     expect(serverCalls, hasLength(1), reason: 'served from the device cache');
     expect(sharedReads, hasLength(1), reason: 'no Firestore read either');
+  });
+
+  group('consent (Apple 5.1.2(i))', () {
+    Widget twoTips(CommunityTipTranslator tr, AiConsentService c) => app(Column(
+          children: [
+            CommunityMessageBubble(
+              message: tip('t1', 'Say thank you'),
+              isCurrentUser: false,
+              currentUserLanguage: 'it',
+              tipTranslator: tr,
+              aiConsent: c,
+            ),
+            CommunityMessageBubble(
+              message: tip('t2', 'Bring cash', type: CommunityMessageType.cityTip),
+              isCurrentUser: false,
+              currentUserLanguage: 'it',
+              tipTranslator: tr,
+              aiConsent: c,
+            ),
+          ],
+        ));
+
+    Future<void> tapSheet(WidgetTester tester, String key) async {
+      await tester.ensureVisible(find.byKey(Key(key)));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(Key(key)));
+      await tester.pumpAndSettle();
+    }
+
+    testWidgets('undecided: ONE consent sheet for the whole page; nothing is '
+        'sent before Allow; Allow translates every tip', (tester) async {
+      serverTexts['t1'] = 'Say thank you';
+      serverTexts['t2'] = 'Bring cash';
+      final c = consentService();
+      await tester.pumpWidget(twoTips(translator(MemoryTipTranslationStore()), c));
+      await tester.pumpAndSettle();
+
+      expect(find.byKey(const Key('aiConsentAccept')), findsOneWidget);
+      expect(serverCalls, isEmpty);
+      expect(sharedReads, isEmpty);
+      expect(find.text('Say thank you'), findsOneWidget);
+
+      await tapSheet(tester, 'aiConsentAccept');
+      expect(c.status, AiConsentStatus.granted);
+      expect(find.byKey(const Key('aiConsentAccept')), findsNothing);
+      expect(find.text('IT:Say thank you'), findsOneWidget);
+      expect(find.text('IT:Bring cash'), findsOneWidget);
+    });
+
+    testWidgets('declined: originals, nothing sent, Translate asks again',
+        (tester) async {
+      serverTexts['t1'] = 'Say thank you';
+      serverTexts['t2'] = 'Bring cash';
+      final c = consentService();
+      await c.setDecision(accepted: false);
+      await tester.pumpWidget(twoTips(translator(MemoryTipTranslationStore()), c));
+      await tester.pumpAndSettle();
+
+      expect(find.byKey(const Key('aiConsentAccept')), findsNothing,
+          reason: 'a decided account is never prompted automatically');
+      expect(find.text('Say thank you'), findsOneWidget);
+      expect(find.text('Bring cash'), findsOneWidget);
+      expect(find.text('Translate'), findsNWidgets(2));
+      expect(serverCalls, isEmpty);
+      expect(sharedReads, isEmpty);
+
+      await tester.tap(find.text('Translate').first);
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('aiConsentAccept')), findsOneWidget,
+          reason: 'the tap asks again');
+      await tapSheet(tester, 'aiConsentAccept');
+      expect(c.status, AiConsentStatus.granted);
+      expect(find.text('IT:Say thank you'), findsOneWidget);
+      // Granting is account-wide: the other tip translates too.
+      expect(find.text('IT:Bring cash'), findsOneWidget);
+    });
+
+    testWidgets('dismissed without choosing: not asked again this session',
+        (tester) async {
+      serverTexts['t1'] = 'Say thank you';
+      final c = consentService();
+      final tr = translator(MemoryTipTranslationStore());
+      await tester.pumpWidget(twoTips(tr, c));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('aiConsentAccept')), findsOneWidget);
+      await tester.tapAt(const Offset(10, 10)); // dismiss the sheet
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('aiConsentAccept')), findsNothing);
+
+      // The screen is opened again: no new sheet, originals + Translate.
+      await tester.pumpWidget(app(const SizedBox()));
+      await tester.pumpWidget(twoTips(tr, c));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('aiConsentAccept')), findsNothing);
+      expect(find.text('Translate'), findsNWidgets(2));
+      expect(serverCalls, isEmpty);
+    });
+
+    testWidgets('decided on another device: the server record is used, no sheet',
+        (tester) async {
+      serverTexts['t1'] = 'Say thank you';
+      serverTexts['t2'] = 'Bring cash';
+      final c = consentService(server: true);
+      await tester.pumpWidget(twoTips(translator(MemoryTipTranslationStore()), c));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('aiConsentAccept')), findsNothing);
+      expect(find.text('IT:Say thank you'), findsOneWidget);
+    });
   });
 
   group('CommunityTipTranslator', () {
@@ -217,6 +354,36 @@ void main() {
       expect(serverCalls, hasLength(1));
       await tr.translate(tip('t1', 'Hello'), 'de');
       expect(serverCalls, hasLength(2));
+    });
+
+    test('server says AI_CONSENT_REQUIRED: consent re-sent, retried once',
+        () async {
+      var calls = 0;
+      var resyncs = 0;
+      final tr = CommunityTipTranslator(
+        store: MemoryTipTranslationStore(),
+        readShared: (_) async => null,
+        callServer: (cid, ids, target) async {
+          calls++;
+          if (calls == 1) {
+            throw FirebaseFunctionsException(
+                message: 'consent',
+                code: 'failed-precondition',
+                details: {'code': 'AI_CONSENT_REQUIRED'});
+          }
+          return [
+            {'messageId': 't1', 'hash': 'h', 'text': 'IT:Hi', 'sameLanguage': false}
+          ];
+        },
+        onConsentRequired: () async {
+          resyncs++;
+          return true;
+        },
+      );
+      final r = await tr.translate(tip('t1', 'Hi'), 'it');
+      expect(r!.text, 'IT:Hi');
+      expect(calls, 2);
+      expect(resyncs, 1);
     });
 
     test('chat messages are never sent', () async {

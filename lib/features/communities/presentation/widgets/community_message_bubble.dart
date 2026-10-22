@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/services/ai_consent_service.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/utils/chat_l10n.dart';
@@ -18,6 +19,11 @@ import '../../../../core/widgets/ai_consent_sheet.dart';
 /// once for everyone on the server, then cached on the device — see
 /// [CommunityTipTranslator]) with a "Show original" toggle; chat messages keep
 /// on-demand translation (like 1:1/group chat). Long-press to report.
+///
+/// Consent (Apple 5.1.2(i)): automatic tip translation sends the tip to
+/// Google, so it runs only with the account's AI consent; the first tip asks
+/// once ([AiConsentGate.allowAutoTranslate]). Without it the original is
+/// shown with "Translate", which asks again.
 class CommunityMessageBubble extends StatefulWidget {
   const CommunityMessageBubble({
     required this.message,
@@ -28,6 +34,7 @@ class CommunityMessageBubble extends StatefulWidget {
     this.onReport,
     this.onRemove,
     this.tipTranslator,
+    this.aiConsent,
   });
 
   final CommunityMessage message;
@@ -48,6 +55,9 @@ class CommunityMessageBubble extends StatefulWidget {
   /// Tip auto-translation; defaults to [CommunityTipTranslator.instance].
   final CommunityTipTranslator? tipTranslator;
 
+  /// Consent source; defaults to [AiConsentService.instance] (tests inject).
+  final AiConsentService? aiConsent;
+
   @override
   State<CommunityMessageBubble> createState() => _CommunityMessageBubbleState();
 }
@@ -62,6 +72,20 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
   TipTranslation? _tipTr;
   bool _tipLoading = false;
   bool _tipShowOriginal = false;
+
+  /// A tip waiting for the account's AI consent: shown in the original.
+  bool _tipAwaitingConsent = false;
+
+  AiConsentService get _consent => widget.aiConsent ?? AiConsentService.instance;
+
+  /// Synchronous consent check; false when it cannot be read (no Firebase).
+  bool _grantedNow() {
+    try {
+      return _consent.isGranted;
+    } catch (_) {
+      return false;
+    }
+  }
 
   CommunityMessage get message => widget.message;
   bool get isCurrentUser => widget.isCurrentUser;
@@ -88,7 +112,25 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
   @override
   void initState() {
     super.initState();
+    try {
+      _consent.statusListenable.addListener(_onConsentChanged);
+    } catch (_) {}
     _startTipTranslation();
+  }
+
+  @override
+  void dispose() {
+    try {
+      _consent.statusListenable.removeListener(_onConsentChanged);
+    } catch (_) {}
+    super.dispose();
+  }
+
+  /// Accepted elsewhere (another bubble's sheet, Settings): translate now.
+  void _onConsentChanged() {
+    if (!mounted || !_tipAwaitingConsent || !_grantedNow()) return;
+    setState(() => _tipAwaitingConsent = false);
+    _fetchTip();
   }
 
   @override
@@ -102,19 +144,50 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
       _tipShowOriginal = false;
       _translated = null;
       _showingTranslation = false;
+      _tipAwaitingConsent = false;
       _startTipTranslation();
     }
   }
 
   void _startTipTranslation() {
     if (!_autoTranslates) return;
-    final target = widget.currentUserLanguage;
-    final known = _tipTranslator.peek(message, target);
+    if (!_grantedNow()) {
+      // Ask once per account (the sheet needs a laid-out context).
+      _tipAwaitingConsent = true;
+      WidgetsBinding.instance.addPostFrameCallback((_) async {
+        if (!mounted) return;
+        bool ok;
+        try {
+          ok = await AiConsentGate.allowAutoTranslate(context, service: _consent);
+        } catch (_) {
+          ok = false;
+        }
+        if (!mounted || !_tipAwaitingConsent || !ok) return;
+        setState(() => _tipAwaitingConsent = false);
+        _fetchTip();
+      });
+      return;
+    }
+    final known = _tipTranslator.peek(message, widget.currentUserLanguage);
     if (known != null) {
       _tipTr = known;
       return;
     }
-    _tipLoading = true;
+    _fetchTip(initial: true);
+  }
+
+  void _fetchTip({bool initial = false}) {
+    final target = widget.currentUserLanguage;
+    if (initial) {
+      _tipLoading = true;
+    } else {
+      final known = _tipTranslator.peek(message, target);
+      if (known != null) {
+        setState(() => _tipTr = known);
+        return;
+      }
+      setState(() => _tipLoading = true);
+    }
     final forId = message.id;
     final forContent = message.content;
     _tipTranslator.translate(message, target).then((r) {
@@ -137,8 +210,21 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
       return;
     }
     // Translating someone else's message sends it to Google: AI consent.
-    if (!await AiConsentGate.ensure(context)) return;
+    // Asked again after a decline (the tap is the user reconsidering).
+    final tipWaiting = _tipAwaitingConsent;
+    if (!await AiConsentGate.requestTranslation(context, service: _consent)) {
+      return;
+    }
     if (!mounted) return;
+    if (tipWaiting) {
+      // A tip: translated through the shared store, like the others (the
+      // consent listener may already have started it).
+      if (_tipAwaitingConsent) {
+        setState(() => _tipAwaitingConsent = false);
+        _fetchTip();
+      }
+      return;
+    }
     setState(() {
       _translating = true;
       _failed = false;

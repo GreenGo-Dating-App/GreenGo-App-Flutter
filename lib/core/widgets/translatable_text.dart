@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../constants/app_colors.dart';
+import '../services/ai_consent_service.dart';
 import '../services/translation_service.dart';
+import 'ai_consent_sheet.dart';
 import '../../generated/app_localizations.dart';
 
 /// Text rendered in the VIEWER's language (any of the app's languages),
@@ -14,6 +16,12 @@ import '../../generated/app_localizations.dart';
 ///   events, attractions, experiences). A "Show original" / "Translate" toggle
 ///   stays available; when the text is already in the viewer's language
 ///   nothing changes and no toggle is shown.
+///
+/// Consent (Apple 5.1.2(i)): translating sends the text to Google, so it
+/// needs the account's AI consent. Auto mode asks once
+/// ([AiConsentGate.allowAutoTranslate]); without consent the original is
+/// shown with a "Translate" action, and tapping it asks again
+/// ([AiConsentGate.requestTranslation]).
 class TranslatableText extends StatefulWidget {
   const TranslatableText({
     required this.text,
@@ -24,7 +32,17 @@ class TranslatableText extends StatefulWidget {
     this.maxLines,
     this.overflow,
     this.autoTranslate = false,
+    this.aiConsent,
+    this.translator,
   });
+
+  /// Consent source; defaults to [AiConsentService.instance] (tests inject).
+  final AiConsentService? aiConsent;
+
+  /// Translation backend; defaults to the shared store / [TranslationService]
+  /// (tests inject). Returns the translation or the original.
+  final Future<String> Function(String text, String target, {required bool shared})?
+      translator;
 
   /// The original text to display (and optionally translate).
   final String text;
@@ -56,10 +74,69 @@ class _TranslatableTextState extends State<TranslatableText> {
   /// Auto mode found the text already in the viewer's language.
   bool _sameLanguage = false;
 
+  /// Auto mode without consent: the original with a "Translate" action.
+  bool _awaitingConsent = false;
+
+  AiConsentService get _consent => widget.aiConsent ?? AiConsentService.instance;
+
+  /// Synchronous consent check; false when it cannot be read (no Firebase).
+  bool _grantedNow() {
+    try {
+      return _consent.isGranted;
+    } catch (_) {
+      return false;
+    }
+  }
+
   @override
   void initState() {
     super.initState();
-    if (widget.autoTranslate) _translate();
+    try {
+      _consent.statusListenable.addListener(_onConsentChanged);
+    } catch (_) {}
+    if (widget.autoTranslate) _startAuto();
+  }
+
+  @override
+  void dispose() {
+    try {
+      _consent.statusListenable.removeListener(_onConsentChanged);
+    } catch (_) {}
+    super.dispose();
+  }
+
+  /// Accepted elsewhere (the sheet another widget opened, Settings): the
+  /// waiting auto text translates now.
+  void _onConsentChanged() {
+    if (!mounted || !widget.autoTranslate || !_awaitingConsent) return;
+    if (_grantedNow()) {
+      setState(() => _awaitingConsent = false);
+      _translate();
+    }
+  }
+
+  void _startAuto() {
+    if (widget.text.trim().isEmpty) return;
+    if (_grantedNow()) {
+      _translate();
+      return;
+    }
+    _awaitingConsent = true;
+    // The consent sheet needs a laid-out context.
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      if (!mounted) return;
+      bool ok;
+      try {
+        ok = await AiConsentGate.allowAutoTranslate(context, service: _consent);
+      } catch (_) {
+        ok = false;
+      }
+      if (!mounted || !_awaitingConsent) return;
+      if (ok) {
+        setState(() => _awaitingConsent = false);
+        _translate();
+      }
+    });
   }
 
   @override
@@ -69,7 +146,8 @@ class _TranslatableTextState extends State<TranslatableText> {
       _translated = null;
       _showingTranslation = false;
       _sameLanguage = false;
-      if (widget.autoTranslate) _translate();
+      _awaitingConsent = false;
+      if (widget.autoTranslate) _startAuto();
     }
   }
 
@@ -83,11 +161,14 @@ class _TranslatableTextState extends State<TranslatableText> {
       // Auto mode is for PUBLIC content: use the shared store, so each text
       // is translated once per language for everyone. The on-demand mode is
       // also used for chat, which must stay private.
-      final svc = TranslationService();
       final target = widget.targetLang.replaceAll('_', '-');
-      final result = widget.autoTranslate
-          ? await svc.translateSharedOne(widget.text, targetLanguage: target)
-          : await svc.translate(
+      final custom = widget.translator;
+      final svc = custom == null ? TranslationService() : null;
+      final result = custom != null
+          ? await custom(widget.text, target, shared: widget.autoTranslate)
+          : widget.autoTranslate
+          ? await svc!.translateSharedOne(widget.text, targetLanguage: target)
+          : await svc!.translate(
               text: widget.text,
               sourceLanguage: 'auto',
               targetLanguage: target,
@@ -116,6 +197,18 @@ class _TranslatableTextState extends State<TranslatableText> {
       setState(() => _showingTranslation = !_showingTranslation);
       return;
     }
+    // Sends the text to Google: the account's AI consent (asks again after
+    // a decline: the tap is the user reconsidering).
+    bool ok;
+    try {
+      ok = await AiConsentGate.requestTranslation(context, service: _consent);
+    } catch (_) {
+      ok = false;
+    }
+    if (!ok || !mounted) return;
+    _awaitingConsent = false;
+    // The consent listener may already have started it.
+    if (_translating || _translated != null) return;
     await _translate();
   }
 
@@ -132,6 +225,7 @@ class _TranslatableTextState extends State<TranslatableText> {
     final showAction = widget.text.trim().isNotEmpty &&
         (!widget.autoTranslate ||
             _translating ||
+            _awaitingConsent ||
             (_translated != null && !_sameLanguage));
     final keepClamped = widget.autoTranslate || !_showingTranslation;
     final showingTranslation =
@@ -168,6 +262,7 @@ class _TranslatableTextState extends State<TranslatableText> {
                           color: AppColors.textTertiary, fontSize: 12)),
                 ],
                 GestureDetector(
+                  key: const ValueKey('translatable-text-action'),
                   onTap: _translating ? null : _toggle,
                   child: Text(
                     label,

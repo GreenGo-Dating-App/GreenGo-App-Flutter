@@ -48015,6 +48015,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Profile picture'**
   String get coverFrameAvatar;
+
+  /// AI consent sheet: automatic translation of public content written by others (Apple 5.1.2(i))
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic translation: community tips, event and experience descriptions and reviews written by other people are shown in your language. Their text (never yours, never your profile) is sent to Google\'s translation service. If you decline, you see the original text and can tap Translate at any time.'**
+  String get aiConsentAutoTranslate;
+
+  /// AI services settings card: feature covered by the switch (automatic translation)
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic translation of community tips, events, experiences and reviews into your language'**
+  String get aiServicesFeatureAutoTranslate;
+
+  /// Community create/edit form: gentle warning when the name/description/rules contain dating wording (Apple 4.3(b))
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo is for friendship, culture and networking. Communities for finding a partner aren\'t allowed: keep yours about shared interests, languages and places.'**
+  String get communitiesDatingWordingWarning;
 }
 
 class _AppLocalizationsDelegate

@@ -8859,5 +8859,8 @@
   "coverFrameHeader": "Cabeçalho da página",
   "coverFrameCard": "Card nas listas",
   "coverFrameList": "Linha da lista",
-  "coverFrameAvatar": "Foto de perfil"
+  "coverFrameAvatar": "Foto de perfil",
+  "aiConsentAutoTranslate": "Tradução automática: dicas das comunidades, descrições de eventos e experiências e avaliações escritas por outras pessoas são mostradas no seu idioma. O texto delas (nunca o seu, nunca o seu perfil) é enviado ao serviço de tradução do Google. Se você recusar, verá o texto original e poderá tocar em Traduzir quando quiser.",
+  "aiServicesFeatureAutoTranslate": "Tradução automática de dicas das comunidades, eventos, experiências e avaliações para o seu idioma",
+  "communitiesDatingWordingWarning": "O GreenGo é para amizade, cultura e networking. Não são permitidas comunidades para procurar parceiro: mantenha a sua focada em interesses, idiomas e lugares em comum."
 }

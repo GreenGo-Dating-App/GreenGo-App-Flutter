@@ -28128,4 +28128,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get coverFrameAvatar => 'Profile picture';
+
+  @override
+  String get aiConsentAutoTranslate =>
+      'Automatic translation: community tips, event and experience descriptions and reviews written by other people are shown in your language. Their text (never yours, never your profile) is sent to Google\'s translation service. If you decline, you see the original text and can tap Translate at any time.';
+
+  @override
+  String get aiServicesFeatureAutoTranslate =>
+      'Automatic translation of community tips, events, experiences and reviews into your language';
+
+  @override
+  String get communitiesDatingWordingWarning =>
+      'GreenGo is for friendship, culture and networking. Communities for finding a partner aren\'t allowed: keep yours about shared interests, languages and places.';
 }

@@ -7,6 +7,7 @@ import 'package:crypto/crypto.dart';
 import 'package:flutter/foundation.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
+import '../../../../core/services/ai_consent_service.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../domain/entities/community_message.dart';
 
@@ -98,7 +99,8 @@ typedef TipTranslateCall = Future<List<dynamic>> Function(
 ///  2. the shared store, read directly by id (no function call on a hit);
 ///  3. `translateCommunityTips` for the misses only: the server reads the tip
 ///     text itself (the client sends ids, never texts or translations),
-///     translates, stores it for everyone and returns it.
+///     translates, stores it for everyone and returns it. The server requires
+///     the viewer's AI consent; the bubble only asks once it is granted.
 ///
 /// Requests made in the same frame (one visible page of tips) are batched,
 /// at most [maxPerCall] ids per callable, and identical in-flight requests
@@ -108,9 +110,12 @@ class CommunityTipTranslator {
     TipTranslationStore? store,
     SharedTranslationReader? readShared,
     TipTranslateCall? callServer,
+    Future<bool> Function()? onConsentRequired,
   })  : _store = store ?? HiveTipTranslationStore(),
         _readShared = readShared ?? _defaultReadShared,
-        _callServer = callServer ?? _defaultCallServer;
+        _callServer = callServer ?? _defaultCallServer,
+        _onConsentRequired = onConsentRequired ??
+            (() => AiConsentService.instance.resyncAfterServerRejection());
 
   /// The app-wide instance.
   static final CommunityTipTranslator instance = CommunityTipTranslator();
@@ -126,6 +131,10 @@ class CommunityTipTranslator {
   final TipTranslationStore _store;
   final SharedTranslationReader _readShared;
   final TipTranslateCall _callServer;
+
+  /// The server refused for lack of AI consent (Apple 5.1.2(i)) although the
+  /// app showed the tip translated: re-send the consent; true = retry once.
+  final Future<bool> Function() _onConsentRequired;
 
   final Map<String, TipTranslation> _memory = {};
   final Map<String, Future<TipTranslation?>> _inFlight = {};
@@ -250,7 +259,15 @@ class CommunityTipTranslator {
       }
       List<dynamic> out = const [];
       try {
-        out = await _callServer(communityId, ids, target);
+        try {
+          out = await _callServer(communityId, ids, target);
+        } catch (e) {
+          if (isAiConsentRequiredError(e) && await _onConsentRequired()) {
+            out = await _callServer(communityId, ids, target);
+          } else {
+            rethrow;
+          }
+        }
       } catch (e) {
         debugPrint('translateCommunityTips failed: $e');
       }

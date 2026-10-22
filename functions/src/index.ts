@@ -141,6 +141,8 @@ export {
 
 // Communities — searchKeywords for server-side community search (onCreate fill).
 export { onCommunityCreatedSearchKeywords } from './communities/searchKeywords';
+// Apple 4.3(b): community name/description/rules with dating wording -> low-priority moderation_queue item (never blocks).
+export { onCommunityTextWritten } from './communities/communityTextGuard';
 
 // Communities — ownership transfer (owner offers with a fresh sign-in, the
 // member accepts / declines; 7-day expiry). Server-only: rules keep

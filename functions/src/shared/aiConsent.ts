@@ -20,6 +20,7 @@
  */
 import * as admin from 'firebase-admin';
 import './firebaseAdmin';
+import { HttpsError } from 'firebase-functions/v2/https';
 import { AppError } from './utils';
 
 export const CONSENTS = 'consents';
@@ -73,4 +74,59 @@ export async function hasSupportAiConsent(uid: string): Promise<boolean> {
 /** True when the user explicitly turned AI services off. */
 export async function hasWithdrawnAiConsent(uid: string): Promise<boolean> {
   return (await getAiConsentState(uid)) === 'withdrawn';
+}
+
+// ---------------------------------------------------------------------------
+// Machine translation of PUBLIC content (Apple 5.1.2(i), App Review 2026-10-22)
+// ---------------------------------------------------------------------------
+//
+// translateTexts and translateCommunityTips send text to Google's translation
+// service on cache misses. They run on behalf of the VIEWER (the person who
+// wants to read the text in their language), so the VIEWER's account-level
+// AI consent is required: the same `consents/{uid}.ai_processing` record the
+// chat translation, read-aloud and support assistant use (one choice per
+// account, one switch in Settings). The text's author published it to be read
+// by others (Terms: public content may be shown translated); the author's
+// choice is not consulted. Without the viewer's consent the callable refuses
+// the whole request (failed-precondition, details.code AI_CONSENT_REQUIRED),
+// even for texts already in the shared store: the app reads stored
+// translations straight from Firestore, so the callable is only ever asked for
+// misses, and a refusal keeps the rule simple ("no consent, no translation
+// call").
+//
+// The state is cached per function instance for a short time, and ONLY when
+// granted, so a grant takes effect at once and a withdrawal within
+// TRANSLATION_CONSENT_TTL_MS.
+
+export const TRANSLATION_CONSENT_TTL_MS = 60_000;
+const grantedUntil = new Map<string, number>();
+
+/** For tests. */
+export function clearTranslationConsentCache(): void {
+  grantedUntil.clear();
+}
+
+/**
+ * Throws HttpsError('failed-precondition', ..., { code: 'AI_CONSENT_REQUIRED',
+ * reason: 'consent-required' }) unless [uid] accepted the AI-processing
+ * notice. The app's isAiConsentRequiredError() recognises details.code.
+ */
+export async function requireTranslationConsent(
+  uid: string,
+  now: () => number = Date.now,
+): Promise<void> {
+  const until = grantedUntil.get(uid);
+  if (until !== undefined && until > now()) return;
+  const state = await getAiConsentState(uid);
+  if (state === 'granted') {
+    if (grantedUntil.size > 5000) grantedUntil.clear(); // bounded memory
+    grantedUntil.set(uid, now() + TRANSLATION_CONSENT_TTL_MS);
+    return;
+  }
+  grantedUntil.delete(uid);
+  throw new HttpsError(
+    'failed-precondition',
+    'Automatic translation needs your permission to send text to Google. Turn on AI services in Settings.',
+    { code: 'AI_CONSENT_REQUIRED', reason: 'consent-required', state },
+  );
 }

@@ -85,6 +85,8 @@ Typical declarations for this app (verify against your Firebase/analytics usage)
 - **Diagnostics**: Crash data, Performance — *Analytics* (Crashlytics/Performance).
 - **Purchases**: Purchase history — *App Functionality* (coins/IAP).
 
+Third-party AI (guideline 5.1.2(i), App Review 2026-10-22): text sent to Google (translation, read-aloud, transliteration) and Anthropic (support assistant) is covered by **User Content → Other User Content / Customer Support — App Functionality**, sent only after the in-app consent sheet (one choice per account, stored server-side in `consents/{uid}.ai_processing`, switch in Settings > AI services). Since this release that consent ALSO gates automatic translation of public content written by others (community tips, events, experiences, reviews): without it the app shows originals and nothing is sent; `translateTexts` / `translateCommunityTips` refuse with `failed-precondition` (`AI_CONSENT_REQUIRED`). Mention this in the Review Notes.
+
 For each: set **Linked to identity** and **Used for tracking** correctly. If you don't run cross-app ad tracking, *Used for tracking = No* everywhere (then you do **not** need App Tracking Transparency prompt).
 
 > Privacy Policy URL is **mandatory** and must be reachable at submit time.

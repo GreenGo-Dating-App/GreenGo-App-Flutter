@@ -28555,4 +28555,16 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get coverFrameAvatar => 'Photo de profil';
+
+  @override
+  String get aiConsentAutoTranslate =>
+      'Traduction automatique : les conseils des communautés, les descriptions d\'événements et d\'expériences et les avis écrits par d\'autres personnes s\'affichent dans ta langue. Leur texte (jamais le tien, jamais ton profil) est envoyé au service de traduction de Google. Si tu refuses, tu vois le texte original et tu peux toucher Traduire à tout moment.';
+
+  @override
+  String get aiServicesFeatureAutoTranslate =>
+      'Traduction automatique des conseils des communautés, des événements, des expériences et des avis dans ta langue';
+
+  @override
+  String get communitiesDatingWordingWarning =>
+      'GreenGo est fait pour l\'amitié, la culture et le networking. Les communautés pour trouver un partenaire ne sont pas autorisées : centre la tienne sur des centres d\'intérêt, des langues et des lieux partagés.';
 }

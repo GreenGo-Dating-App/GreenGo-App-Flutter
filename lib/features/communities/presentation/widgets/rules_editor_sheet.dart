@@ -4,6 +4,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/community.dart';
+import 'community_text_warning.dart';
 
 /// Result of the rules/resources editor.
 class RulesEditorResult {
@@ -155,6 +156,8 @@ class _RulesEditorSheetState extends State<RulesEditorSheet> {
                 style: const TextStyle(color: AppColors.textPrimary),
                 decoration: _fieldDecoration(l10n.communitiesRulesHint),
               ),
+              // Apple 4.3(b): gentle note on dating wording (never blocks).
+              CommunityTextWarning(controllers: [_rulesController]),
               const SizedBox(height: 24),
               _label(l10n.communitiesResourcesLabel),
               const SizedBox(height: 8),

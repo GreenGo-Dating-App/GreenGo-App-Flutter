@@ -225,12 +225,21 @@ void main() {
       expect(log, hasLength(1));
     });
 
-    test('public content (requiresConsent: false) still translates', () async {
+    test('public content (requiresConsent: false) also needs consent '
+        '(Apple 5.1.2(i), App Review 2026-10-22)', () async {
       final log = <http.Request>[];
-      final t = TranslationService.test(client: endpoint(log), consentGranted: () => false);
+      var granted = false;
+      final t = TranslationService.test(
+          client: endpoint(log), consentGranted: () => granted);
       final r = await t.translateDetailed(
           text: 'Hello', targetLanguage: 'it', requiresConsent: false);
-      expect(r.text, 'Ciao');
+      expect(r.consentRequired, isTrue);
+      expect(r.text, 'Hello');
+      expect(log, isEmpty, reason: 'nothing sent to Google without consent');
+      granted = true;
+      final r2 = await t.translateDetailed(
+          text: 'Hello', targetLanguage: 'it', requiresConsent: false);
+      expect(r2.text, 'Ciao');
     });
 
     test('production routing: private text ALWAYS goes to translatePrivateText; '

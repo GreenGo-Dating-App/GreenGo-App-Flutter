@@ -140,6 +140,8 @@ class _AiServicesSettingsCardState extends State<AiServicesSettingsCard> {
                     _point(
                         Icons.lightbulb_outline, l10n.aiServicesFeatureCoach),
                     _point(Icons.translate, l10n.aiServicesFeatureTranslate),
+                    _point(Icons.g_translate,
+                        l10n.aiServicesFeatureAutoTranslate),
                     _point(Icons.volume_up_outlined,
                         l10n.aiServicesFeatureReadAloud),
                     _point(Icons.support_agent, l10n.aiServicesFeatureSupport),
