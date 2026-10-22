@@ -14958,6 +14958,14 @@
   "@legalUpdate533BulletRefunds": {
     "description": "Terms 5.3.3 \"what changes\" bullet: automatic full refunds when a seller cancels (11.2 g, 12.2) and no account deletion while paid sales are not refunded (20.1) (re-acceptance sheet and advance notice)."
   },
+  "legalUpdate534BulletDeletion": "Sellers with paid sales not yet refunded can still ask to delete their account: we cancel and refund those sales, hide the profile and delete the account once all refunds are finished",
+  "@legalUpdate534BulletDeletion": {
+    "description": "Terms 5.3.4 \"what changes\" bullet: scheduled account deletion for sellers with unrefunded sales (20.1) (re-acceptance sheet and advance notice)."
+  },
+  "legalUpdate534BulletTranslation": "Automatic translation of content written by others (community tips, events, experiences, reviews) runs only after you allow AI services",
+  "@legalUpdate534BulletTranslation": {
+    "description": "Terms 5.3.4 / Privacy 5.3.2 \"what changes\" bullet: automatic translation of public content only after AI-services consent (re-acceptance sheet and advance notice)."
+  },
   "legalUpdateCloseAccount": "I don't accept – close my account",
   "@legalUpdateCloseAccount": {
     "description": "Third option of the Terms re-acceptance sheet (Terms 24.2 c)."

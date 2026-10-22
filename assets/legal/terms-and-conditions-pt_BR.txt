@@ -1,11 +1,11 @@
 TERMOS E CONDIÇÕES DO GREENGO
 
-Versão: 5.3.3
-Data de vigência: 21 de outubro de 2026 para contas criadas a partir de
+Versão: 5.3.4
+Data de vigência: 22 de outubro de 2026 para contas criadas a partir de
   16 de outubro de 2026; 16 de novembro de 2026 para contas criadas antes de
   16 de outubro de 2026
-Anunciada em: 21 de outubro de 2026
-Versão anterior: 5.3.2 (17 de outubro de 2026) para contas criadas a partir de
+Anunciada em: 22 de outubro de 2026
+Versão anterior: 5.3.3 (21 de outubro de 2026) para contas criadas a partir de
   16 de outubro de 2026; 5.2.1 (16 de outubro de 2026), que continua valendo
   para contas criadas antes de 16 de outubro de 2026 até 15 de novembro de 2026
 
@@ -1134,13 +1134,16 @@ momento:
 - no aplicativo, em Perfil > Excluir Conta;
 - na web, em https://greengochat.com/delete-account.
 
-Você não pode excluir a sua conta enquanto, como organizador ou Anfitrião,
-tiver Eventos ou Experiências futuros ou em andamento com ingressos ou reservas
-pagos que não foram reembolsados, ou reembolsos que não foram concluídos (por
-exemplo, um reembolso que falhou e cujo comprovante o GreenGo ainda não
-aceitou). Cancele-os primeiro: os compradores são reembolsados
-automaticamente (itens 11.2 g e 12.2). O aplicativo mostra o que ainda está
-pendente.
+Se, como organizador ou Anfitrião, você tiver Eventos ou Experiências futuros ou
+em andamento com ingressos ou reservas pagos que não foram reembolsados, ou
+reembolsos que não foram concluídos, ainda assim pode pedir a exclusão da sua
+conta. Nesse caso, cancelamos esses Eventos e reservas, reembolsamos
+automaticamente todos os compradores (itens 11.2 g e 12.2), ocultamos o seu
+perfil e interrompemos novas vendas, e excluímos a sua conta automaticamente
+assim que todos os reembolsos forem concluídos. Se um reembolso automático
+falhar, pedimos que você mesmo reembolse o comprador e envie o comprovante. Até
+a exclusão ser concluída, você pode retirar o pedido no aplicativo; os Eventos e
+reservas já cancelados continuam cancelados.
 
 Quando você exclui a sua conta:
 - uma Assinatura comprada na web é cancelada automaticamente;
@@ -1374,6 +1377,19 @@ Direitos autorais (DMCA): copyright@greengochat.com
 ================================================================================
 HISTÓRICO DE VERSÕES
 ================================================================================
+
+5.3.4 - em vigor a partir de 22 de outubro de 2026 para contas criadas a partir
+de 16 de outubro de 2026; a partir de 16 de novembro de 2026 para contas
+criadas antes de 16 de outubro de 2026 (anunciada em 22 de outubro de 2026)
+- Seção 20.1 (substitui a regra da 5.3.3): um organizador ou Anfitrião com
+  vendas pagas e não reembolsadas de Eventos ou Experiências futuros ou em
+  andamento, ou com reembolsos não concluídos, ainda pode pedir a exclusão da
+  conta. Cancelamos esses Eventos e reservas, reembolsamos automaticamente todos
+  os compradores, ocultamos o perfil e interrompemos novas vendas, e excluímos a
+  conta assim que todos os reembolsos forem concluídos; se um reembolso
+  automático falhar, pedimos ao vendedor que reembolse o comprador e envie o
+  comprovante; o pedido pode ser retirado até a exclusão ser concluída, e os
+  Eventos e reservas cancelados continuam cancelados.
 
 5.3.3 - em vigor a partir de 21 de outubro de 2026 para contas criadas a partir
 de 16 de outubro de 2026; a partir de 16 de novembro de 2026 para contas

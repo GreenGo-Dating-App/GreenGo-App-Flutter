@@ -25710,6 +25710,14 @@ class AppLocalizationsEn extends AppLocalizations {
       'Automatic full refunds when an organiser cancels a paid event or a host cancels a booking; accounts with paid sales not yet refunded cannot be deleted';
 
   @override
+  String get legalUpdate534BulletDeletion =>
+      'Sellers with paid sales not yet refunded can still ask to delete their account: we cancel and refund those sales, hide the profile and delete the account once all refunds are finished';
+
+  @override
+  String get legalUpdate534BulletTranslation =>
+      'Automatic translation of content written by others (community tips, events, experiences, reviews) runs only after you allow AI services';
+
+  @override
   String get legalUpdateCloseAccount => 'I don\'t accept – close my account';
 
   @override

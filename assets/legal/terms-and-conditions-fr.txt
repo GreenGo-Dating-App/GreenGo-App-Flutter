@@ -1,11 +1,11 @@
 CONDITIONS GÉNÉRALES DE GREENGO
 
-Version : 5.3.3
-Date d'entrée en vigueur : 21 octobre 2026 pour les comptes créés à partir du
+Version : 5.3.4
+Date d'entrée en vigueur : 22 octobre 2026 pour les comptes créés à partir du
   16 octobre 2026 ; 16 novembre 2026 pour les comptes créés avant le
   16 octobre 2026
-Annoncée le : 21 octobre 2026
-Version précédente : 5.3.2 (17 octobre 2026) pour les comptes créés à partir
+Annoncée le : 22 octobre 2026
+Version précédente : 5.3.3 (21 octobre 2026) pour les comptes créés à partir
   du 16 octobre 2026 ; 5.2.1 (16 octobre 2026), qui continue de s'appliquer
   aux comptes créés avant le 16 octobre 2026 jusqu'au 15 novembre 2026
 
@@ -1216,13 +1216,18 @@ moment :
 - dans l'application, sous Profil > Supprimer le Compte ;
 - sur le web, à l'adresse https://greengochat.com/delete-account.
 
-Vous ne pouvez pas supprimer votre compte tant que, en tant qu'organisateur ou
-Hôte, vous avez des Événements ou des Expériences à venir ou en cours avec des
-billets ou des réservations payés qui n'ont pas été remboursés, ou des
-remboursements qui ne sont pas terminés (par exemple un remboursement échoué
-dont GreenGo n'a pas encore accepté la preuve). Annulez-les d'abord : les
-acheteurs sont remboursés automatiquement (sections 11.2 g et 12.2).
-L'application vous indique ce qui reste en suspens.
+Si, en tant qu'organisateur ou Hôte, vous avez des Événements ou des
+Expériences à venir ou en cours avec des billets ou des réservations payés
+qui n'ont pas été remboursés, ou des remboursements qui ne sont pas
+terminés, vous pouvez tout de même demander la suppression de votre compte.
+Nous annulons alors ces Événements et réservations, remboursons
+automatiquement chaque acheteur (sections 11.2 g et 12.2), masquons votre
+profil, bloquons les nouvelles ventes et supprimons votre compte
+automatiquement dès que tous les remboursements sont terminés. Si un
+remboursement automatique échoue, nous vous demandons de rembourser
+vous-même l'acheteur et d'en téléverser la preuve. Tant que la suppression
+n'est pas effectuée, vous pouvez retirer la demande dans l'application ; les
+Événements et réservations déjà annulés restent annulés.
 
 Lorsque vous supprimez votre compte :
 - un Abonnement acheté sur le web est résilié automatiquement ;
@@ -1469,6 +1474,20 @@ Droits d'auteur (DMCA) : copyright@greengochat.com
 ================================================================================
 HISTORIQUE DES VERSIONS
 ================================================================================
+
+5.3.4 - en vigueur le 22 octobre 2026 pour les comptes créés à partir du
+16 octobre 2026 ; le 16 novembre 2026 pour les comptes créés avant le
+16 octobre 2026 (annoncée le 22 octobre 2026)
+- Section 20.1 (remplace la règle de la 5.3.3) : un organisateur ou Hôte
+  ayant des ventes payées non remboursées d'Événements ou d'Expériences à
+  venir ou en cours, ou des remboursements non terminés, peut tout de même
+  demander la suppression de son compte. Nous annulons ces Événements et
+  réservations, remboursons automatiquement chaque acheteur, masquons le
+  profil, bloquons les nouvelles ventes et supprimons le compte dès que tous
+  les remboursements sont terminés ; si un remboursement automatique échoue,
+  nous demandons au vendeur de rembourser l'acheteur et d'en téléverser la
+  preuve ; la demande peut être retirée jusqu'à la suppression, et les
+  Événements et réservations annulés restent annulés.
 
 5.3.3 - en vigueur le 21 octobre 2026 pour les comptes créés à partir du
 16 octobre 2026 ; le 16 novembre 2026 pour les comptes créés avant le

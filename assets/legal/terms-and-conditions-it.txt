@@ -1,11 +1,11 @@
 TERMINI E CONDIZIONI DI GREENGO
 
-Versione: 5.3.3
-Data di entrata in vigore: 21 ottobre 2026 per gli account creati dal
+Versione: 5.3.4
+Data di entrata in vigore: 22 ottobre 2026 per gli account creati dal
   16 ottobre 2026 in poi; 16 novembre 2026 per gli account creati prima del
   16 ottobre 2026
-Annunciata il: 21 ottobre 2026
-Versione precedente: 5.3.2 (17 ottobre 2026) per gli account creati dal
+Annunciata il: 22 ottobre 2026
+Versione precedente: 5.3.3 (21 ottobre 2026) per gli account creati dal
   16 ottobre 2026 in poi; 5.2.1 (16 ottobre 2026), che continua ad
   applicarsi agli account creati prima del 16 ottobre 2026 fino al
   15 novembre 2026
@@ -1149,12 +1149,16 @@ momento:
 - nell'app, in Profilo > Elimina Account;
 - sul web, all'indirizzo https://greengochat.com/delete-account.
 
-Non puoi eliminare il tuo account finché, come organizzatore o Host, hai
-Eventi o Esperienze imminenti o in corso con biglietti o prenotazioni a
-pagamento non rimborsati, o rimborsi non completati (ad esempio un rimborso
-non riuscito la cui prova GreenGo non ha ancora accettato). Annullali prima:
-gli acquirenti vengono rimborsati automaticamente (sezioni 11.2 g e 12.2).
-L'app ti mostra cosa è ancora in sospeso.
+Se, come organizzatore o Host, hai Eventi o Esperienze imminenti o in corso con
+biglietti o prenotazioni a pagamento non rimborsati, o rimborsi non completati,
+puoi comunque chiedere di eliminare il tuo account. In tal caso annulliamo
+quegli Eventi e prenotazioni, rimborsiamo automaticamente ogni acquirente
+(sezioni 11.2 g e 12.2), nascondiamo il tuo profilo e blocchiamo le nuove
+vendite, ed eliminiamo automaticamente il tuo account non appena tutti i
+rimborsi sono completati. Se un rimborso automatico non va a buon fine, ti
+chiediamo di rimborsare tu stesso l'acquirente e di caricare la prova. Finché
+l'eliminazione non è completata puoi ritirare la richiesta nell'app; gli Eventi
+e le prenotazioni già annullati restano annullati.
 
 Quando elimini il tuo account:
 - un Abbonamento acquistato sul web viene annullato automaticamente;
@@ -1391,6 +1395,20 @@ Diritto d'autore (DMCA): copyright@greengochat.com
 ================================================================================
 CRONOLOGIA DELLE VERSIONI
 ================================================================================
+
+5.3.4 - in vigore dal 22 ottobre 2026 per gli account creati dal 16 ottobre
+2026 in poi; dal 16 novembre 2026 per gli account creati prima del 16 ottobre
+2026 (annunciata il 22 ottobre 2026)
+- Sezione 20.1 (sostituisce la regola della 5.3.3): un organizzatore o Host con
+  vendite a pagamento non rimborsate di Eventi o Esperienze imminenti o in
+  corso, o con rimborsi non completati, può comunque chiedere di eliminare
+  l'account. Annulliamo quegli Eventi e prenotazioni, rimborsiamo
+  automaticamente ogni acquirente, nascondiamo il profilo e blocchiamo le nuove
+  vendite, ed eliminiamo l'account non appena tutti i rimborsi sono completati;
+  se un rimborso automatico non va a buon fine, chiediamo al venditore di
+  rimborsare l'acquirente e di caricare la prova; la richiesta può essere
+  ritirata finché l'eliminazione non è completata, e gli Eventi e le
+  prenotazioni annullati restano annullati.
 
 5.3.3 - in vigore dal 21 ottobre 2026 per gli account creati dal 16 ottobre
 2026 in poi; dal 16 novembre 2026 per gli account creati prima del 16 ottobre

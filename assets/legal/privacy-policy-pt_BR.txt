@@ -1,12 +1,13 @@
 POLÍTICA DE PRIVACIDADE DO GREENGO
 
-Versão: 5.3.1
-Data de vigência: 17 de outubro de 2026 para contas criadas a partir de
+Versão: 5.3.2
+Data de vigência: 22 de outubro de 2026 para contas criadas a partir de
   16 de outubro de 2026; 16 de novembro de 2026 para contas criadas antes de
   16 de outubro de 2026
-Anunciada em: 17 de outubro de 2026
-Versão anterior: 5.2.1 (16 de outubro de 2026), que continua valendo para contas
-  criadas antes de 16 de outubro de 2026 até 15 de novembro de 2026
+Anunciada em: 22 de outubro de 2026
+Versão anterior: 5.3.1 (17 de outubro de 2026) para contas criadas a partir de
+  16 de outubro de 2026; 5.2.1 (16 de outubro de 2026), que continua valendo
+  para contas criadas antes de 16 de outubro de 2026 até 15 de novembro de 2026
 
 ================================================================================
 1. QUEM SOMOS E COMO FALAR CONOSCO
@@ -106,7 +107,8 @@ reserva de uma experiência, como visitantes, a partir de um link compartilhado
   meio dos nossos servidores, exceto que o aplicativo pode pedir diretamente
   ao serviço de tradução do Google a tradução de conteúdo público. Pedimos o
   seu consentimento antes de eles processarem o seu conteúdo privado pela
-  primeira vez, e o assistente de suporte é claramente identificado como IA.
+  primeira vez ou traduzirem automaticamente conteúdo escrito por outras
+  pessoas, e o assistente de suporte é claramente identificado como IA.
 - Você pode excluir a sua conta a qualquer momento:
   - no aplicativo;
   - no nosso site, em https://greengochat.com/delete-account, confirmando um
@@ -667,8 +669,8 @@ Tradução de mensagens de chat    | Serviços de tradução do     | O texto a 
                                  | Translation no aplicativo   |
                                  | atual)                      |
 Tradução de conteúdo público     | Serviço de tradução do      | Somente o texto, sem dados
-(eventos, comunidades, anúncios) | Google, por meio de um      | pessoais
-                                 | armazenamento compartilhado |
+(dicas da comunidade, eventos,   | Google, por meio de um      | pessoais
+experiências, avaliações)        | armazenamento compartilhado |
                                  | nos nossos servidores; se a |
                                  | tradução não estiver lá, o  |
                                  | aplicativo pode pedi-la     |
@@ -692,16 +694,20 @@ Moderação de imagens e textos    | Google Cloud Vision e       | Imagens envia
 - Para o seu conteúdo privado, os provedores atuam como nossos operadores.
   Nós os usamos sob os seus termos comerciais pagos, segundo os quais eles não
   usam os seus dados para treinar os seus modelos.
-- Antes de os recursos de IA processarem o seu conteúdo privado pela
-  primeira vez (por exemplo, a tradução de mensagens de chat, a leitura em
-  voz alta, a transliteração e o assistente de IA), mostramos qual provedor é
-  usado e o que é enviado, e pedimos o seu consentimento. Você pode alterar
-  isso em Configurações.
-- O conteúdo público, como eventos, comunidades e anúncios, é traduzido com o
-  serviço de tradução do Google por meio de um armazenamento compartilhado
-  nos nossos servidores. Somente o texto é enviado, sem nenhum dado pessoal, e
-  a tradução fica armazenada para todos que visualizam esse conteúdo. Isso não
-  exige o seu consentimento.
+- Antes de os recursos de IA processarem o seu conteúdo privado pela primeira
+  vez (por exemplo, a tradução de mensagens de chat, a leitura em voz alta, a
+  transliteração e o assistente de IA), ou traduzirem automaticamente conteúdo
+  escrito por outras pessoas, mostramos qual provedor é usado e o que é enviado,
+  e pedimos o seu consentimento. Você pode alterar isso em Configurações.
+- O conteúdo público, como dicas da comunidade, eventos, experiências e
+  avaliações, é traduzido com o serviço de tradução do Google por meio de um
+  armazenamento compartilhado nos nossos servidores. Somente o texto é enviado,
+  sem nenhum dado pessoal, e a tradução fica armazenada para todos que
+  visualizam esse conteúdo. A tradução automática de conteúdo escrito por outras
+  pessoas (dicas da comunidade, eventos, experiências, avaliações) só é feita
+  depois que você autoriza os serviços de IA. Perguntamos uma vez por conta e
+  você pode alterar isso em Configurações > Serviços de IA. Sem essa
+  autorização, você vê o original e pode tocar em Traduzir.
 - As traduções de mensagens de chat são armazenadas junto com a mensagem,
   para que não precisem ser solicitadas de novo. As traduções de frases curtas
   sem detalhes pessoais (sem números, links, endereços de e-mail ou @nomes)
@@ -1171,6 +1177,13 @@ a conta.
   e-mail e enviaremos um link de confirmação válido por 24 horas. A sua conta é
   excluída quando você confirma. Para a sua segurança, a página não informa a
   ninguém se existe uma conta para aquele e-mail.
+- Se você vende ingressos ou Experiências e ainda tem vendas pagas de Eventos ou
+  Experiências futuros ou em andamento que não foram reembolsadas, ou reembolsos
+  que não foram concluídos, o seu pedido fica agendado (Termos, seção 20.1):
+  ocultamos o seu perfil imediatamente, cancelamos esses Eventos e reservas e
+  reembolsamos os compradores, e excluímos a sua conta automaticamente assim que
+  todos os reembolsos forem concluídos. Até lá, você pode retirar o pedido no
+  aplicativo.
 
 15.2 O que acontece
 
@@ -1579,6 +1592,20 @@ Representantes na UE e no Reino Unido: em processo de nomeação (veja o item
 ================================================================================
 HISTÓRICO DE VERSÕES
 ================================================================================
+
+5.3.2 - em vigor a partir de 22 de outubro de 2026 para contas criadas a partir
+de 16 de outubro de 2026; a partir de 16 de novembro de 2026 para contas
+criadas antes de 16 de outubro de 2026 (anunciada em 22 de outubro de 2026)
+- Seções 2, 9.1 e 9.2: a tradução automática de conteúdo escrito por outras
+  pessoas (dicas da comunidade, eventos, experiências, avaliações) só é feita
+  depois que você autoriza os serviços de IA; perguntamos uma vez por conta,
+  você pode alterar isso em Configurações > Serviços de IA e, sem essa
+  autorização, você vê o original e pode tocar em Traduzir.
+- Seção 15.1: o pedido de exclusão de um vendedor com vendas pagas não
+  reembolsadas ou reembolsos não concluídos fica agendado: o perfil é ocultado
+  imediatamente, as vendas são canceladas e reembolsadas, e a conta é excluída
+  assim que todos os reembolsos forem concluídos; o pedido pode ser retirado até
+  lá.
 
 5.3.1 - em vigor a partir de 17 de outubro de 2026 para contas criadas a partir
 de 16 de outubro de 2026; a partir de 16 de novembro de 2026 para contas

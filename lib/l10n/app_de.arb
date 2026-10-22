@@ -8194,6 +8194,8 @@
   "legalUpdate531BulletFeeCaps": "Höhere Obergrenze der GreenGo-Servicegebühr pro Ticket für Verkäufer: Silver 30 US$, Gold 28 US$, Platinum 25 US$",
   "legalUpdate532BulletPhases": "Preisphasen für Event-Tickets (zum Beispiel Early Bird) und das Einführungsangebot 2026: 50 % Rabatt auf den ersten Zeitraum einer neuen Mitgliedschaft",
   "legalUpdate533BulletRefunds": "Automatische volle Erstattung, wenn ein Veranstalter ein kostenpflichtiges Event absagt oder ein Gastgeber eine Buchung storniert; Konten mit noch nicht erstatteten Verkäufen können nicht gelöscht werden",
+  "legalUpdate534BulletDeletion": "Verkäufer mit noch nicht erstatteten Verkäufen können die Löschung ihres Kontos trotzdem beantragen: Wir stornieren und erstatten diese Verkäufe, verbergen das Profil und löschen das Konto, sobald alle Erstattungen abgeschlossen sind",
+  "legalUpdate534BulletTranslation": "Die automatische Übersetzung von Inhalten anderer (Community-Tipps, Events, Erlebnisse, Bewertungen) läuft nur, wenn du KI-Dienste erlaubst",
   "legalUpdateCloseAccount": "Ich stimme nicht zu – Konto schließen",
   "legalUpdateCloseAccountTitle": "Konto schließen",
   "legalUpdateCloseAccountBody": "Wenn du den neuen AGB nicht zustimmst, kannst du deinen Vertrag mit GreenGo kostenlos beenden, indem du dein Konto löschst. Hast du eine Mitgliedschaft im Voraus bezahlt, erstatten wir dir den nicht genutzten Teil: schreib an {email}.\n\nÖffne danach dein Profil und tippe unten auf „Konto Löschen“.",

@@ -1,12 +1,13 @@
 DATENSCHUTZERKLÄRUNG VON GREENGO
 
-Version: 5.3.1
-Gültig ab: 17. Oktober 2026 für Konten, die ab dem 16. Oktober 2026 erstellt
+Version: 5.3.2
+Gültig ab: 22. Oktober 2026 für Konten, die ab dem 16. Oktober 2026 erstellt
   werden; 16. November 2026 für Konten, die vor dem 16. Oktober 2026 erstellt
   wurden
-Angekündigt am: 17. Oktober 2026
-Vorherige Version: 5.2.1 (16. Oktober 2026), die für vor dem 16. Oktober 2026
-  erstellte Konten bis zum 15. November 2026 weiter gilt
+Angekündigt am: 22. Oktober 2026
+Vorherige Version: 5.3.1 (17. Oktober 2026) für Konten, die ab dem
+  16. Oktober 2026 erstellt werden; 5.2.1 (16. Oktober 2026), die für vor dem
+  16. Oktober 2026 erstellte Konten bis zum 15. November 2026 weiter gilt
 
 ================================================================================
 1. WER WIR SIND UND WIE DU UNS ERREICHST
@@ -107,8 +108,9 @@ Diese Erklärung gilt auch für sie.
   Support-Assistent nutzt Claude von Anthropic. Sie laufen über unsere Server,
   mit einer Ausnahme: Die App kann den Übersetzungsdienst von Google direkt
   bitten, öffentliche Inhalte zu übersetzen. Wir bitten dich um deine
-  Einwilligung, bevor sie zum ersten Mal deine privaten Inhalte verarbeiten,
-  und der Support-Assistent ist deutlich als KI gekennzeichnet.
+  Einwilligung, bevor sie zum ersten Mal deine privaten Inhalte verarbeiten
+  oder von anderen Personen verfasste Inhalte automatisch übersetzen, und der
+  Support-Assistent ist deutlich als KI gekennzeichnet.
 - Du kannst dein Konto jederzeit löschen:
   - in der App;
   - auf unserer Website unter https://greengochat.com/delete-account, indem du
@@ -681,8 +683,8 @@ Funktion                         | Anbieter (in unserem Auftrag)   | Was gesende
                                  | (Google Cloud Translation in    | und die Zielsprache
                                  | der aktuellen App)              |
 Übersetzung öffentlicher Inhalte | Übersetzungsdienst von Google,  | Nur der Text, ohne
-(Events, Communities, Angebote)  | über einen gemeinsamen Speicher | personenbezogene Daten
-                                 | auf unseren Servern; fehlt dort |
+(Community-Tipps, Events,        | über einen gemeinsamen Speicher | personenbezogene Daten
+Erlebnisse, Rezensionen)         | auf unseren Servern; fehlt dort |
                                  | eine Übersetzung, kann die App  |
                                  | sie direkt bei Google anfordern,|
                                  | das dann deine IP-Adresse sieht |
@@ -707,14 +709,19 @@ Bild- und Textmoderation         | Google Cloud Vision und Natural | Hochgeladen
   Modelle verwenden.
 - Bevor KI-Funktionen zum ersten Mal deine privaten Inhalte verarbeiten (zum
   Beispiel die Übersetzung von Chatnachrichten, das Vorlesen, die
-  Transliteration und der KI-Assistent), zeigen wir dir, welcher Anbieter
-  genutzt wird und was gesendet wird, und bitten um deine Einwilligung. Du
-  kannst dies in den Einstellungen ändern.
-- Öffentliche Inhalte, etwa Events, Communities und Angebote, werden mit dem
-  Übersetzungsdienst von Google über einen gemeinsamen Speicher auf unseren
-  Servern übersetzt. Gesendet wird nur der Text, ohne personenbezogene Daten,
-  und die Übersetzung wird für alle gespeichert, die diese Inhalte ansehen.
-  Dafür ist deine Einwilligung nicht nötig.
+  Transliteration und der KI-Assistent) oder von anderen Personen verfasste
+  Inhalte automatisch übersetzen, zeigen wir dir, welcher Anbieter genutzt
+  wird und was gesendet wird, und bitten um deine Einwilligung. Du kannst
+  dies in den Einstellungen ändern.
+- Öffentliche Inhalte, etwa Community-Tipps, Events, Erlebnisse und
+  Rezensionen, werden mit dem Übersetzungsdienst von Google über einen
+  gemeinsamen Speicher auf unseren Servern übersetzt. Gesendet wird nur der
+  Text, ohne personenbezogene Daten, und die Übersetzung wird für alle
+  gespeichert, die diese Inhalte ansehen. Die automatische Übersetzung von
+  Inhalten anderer Personen (Community-Tipps, Events, Erlebnisse,
+  Rezensionen) erfolgt erst, wenn du KI-Dienste erlaubst. Wir fragen einmal
+  pro Konto, und du kannst es unter Einstellungen > KI-Dienste ändern. Ohne
+  diese Erlaubnis siehst du das Original und kannst auf Übersetzen tippen.
 - Übersetzungen von Chatnachrichten werden zusammen mit der Nachricht
   gespeichert, damit sie nicht erneut angefordert werden müssen.
   Übersetzungen kurzer Sätze ohne persönliche Angaben (keine Zahlen, Links,
@@ -1193,6 +1200,14 @@ das Konto löschst.
   und wir senden dir einen Bestätigungslink, der 24 Stunden gültig ist. Dein
   Konto wird gelöscht, sobald du bestätigst. Zu deiner Sicherheit verrät die
   Seite niemandem, ob zu dieser E-Mail-Adresse ein Konto existiert.
+- Wenn du Tickets oder Erlebnisse verkaufst und noch bezahlte Verkäufe
+  bevorstehender oder laufender Events oder Erlebnisse hast, die nicht
+  erstattet wurden, oder Erstattungen, die nicht abgeschlossen sind, wird
+  dein Antrag vorgemerkt (Allgemeine Geschäftsbedingungen, Abschnitt 20.1):
+  Wir verbergen dein Profil sofort, sagen diese Events und Buchungen ab,
+  erstatten den Käufern den Betrag und löschen dein Konto automatisch, sobald
+  alle Erstattungen abgeschlossen sind. Bis dahin kannst du den Antrag in der
+  App zurückziehen.
 
 15.2 Was passiert
 
@@ -1613,6 +1628,20 @@ Vertreter in der EU und im Vereinigten Königreich: werden derzeit benannt
 ================================================================================
 VERSIONSVERLAUF
 ================================================================================
+
+5.3.2 - gültig ab 22. Oktober 2026 für Konten, die ab dem 16. Oktober 2026
+erstellt werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte
+Konten (angekündigt am 22. Oktober 2026)
+- Abschnitte 2, 9.1 und 9.2: Die automatische Übersetzung von Inhalten
+  anderer Personen (Community-Tipps, Events, Erlebnisse, Rezensionen)
+  erfolgt erst, wenn du KI-Dienste erlaubst; wir fragen einmal pro Konto, du
+  kannst es unter Einstellungen > KI-Dienste ändern, und ohne diese
+  Erlaubnis siehst du das Original und kannst auf Übersetzen tippen.
+- Abschnitt 15.1: Der Löschantrag eines Verkäufers mit bezahlten, nicht
+  erstatteten Verkäufen oder nicht abgeschlossenen Erstattungen wird
+  vorgemerkt: Das Profil wird sofort verborgen, die Verkäufe werden abgesagt
+  und erstattet, und das Konto wird gelöscht, sobald alle Erstattungen
+  abgeschlossen sind; bis dahin kann der Antrag zurückgezogen werden.
 
 5.3.1 - gültig ab 17. Oktober 2026 für Konten, die ab dem 16. Oktober 2026
 erstellt werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte

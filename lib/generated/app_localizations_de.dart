@@ -26014,6 +26014,14 @@ class AppLocalizationsDe extends AppLocalizations {
       'Automatische volle Erstattung, wenn ein Veranstalter ein kostenpflichtiges Event absagt oder ein Gastgeber eine Buchung storniert; Konten mit noch nicht erstatteten Verkäufen können nicht gelöscht werden';
 
   @override
+  String get legalUpdate534BulletDeletion =>
+      'Verkäufer mit noch nicht erstatteten Verkäufen können die Löschung ihres Kontos trotzdem beantragen: Wir stornieren und erstatten diese Verkäufe, verbergen das Profil und löschen das Konto, sobald alle Erstattungen abgeschlossen sind';
+
+  @override
+  String get legalUpdate534BulletTranslation =>
+      'Die automatische Übersetzung von Inhalten anderer (Community-Tipps, Events, Erlebnisse, Bewertungen) läuft nur, wenn du KI-Dienste erlaubst';
+
+  @override
   String get legalUpdateCloseAccount => 'Ich stimme nicht zu – Konto schließen';
 
   @override

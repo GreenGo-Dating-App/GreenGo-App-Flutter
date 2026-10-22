@@ -1,12 +1,14 @@
 POLÍTICA DE PRIVACIDADE DO GREENGO
 
-Versão: 5.3.1
-Data de entrada em vigor: 17 de outubro de 2026 para as contas criadas a partir
+Versão: 5.3.2
+Data de entrada em vigor: 22 de outubro de 2026 para as contas criadas a partir
   de 16 de outubro de 2026; 16 de novembro de 2026 para as contas criadas
   antes de 16 de outubro de 2026
-Anunciada em: 17 de outubro de 2026
-Versão anterior: 5.2.1 (16 de outubro de 2026), que continua a aplicar-se às
-  contas criadas antes de 16 de outubro de 2026 até 15 de novembro de 2026
+Anunciada em: 22 de outubro de 2026
+Versão anterior: 5.3.1 (17 de outubro de 2026) para as contas criadas a partir
+  de 16 de outubro de 2026; 5.2.1 (16 de outubro de 2026), que continua a
+  aplicar-se às contas criadas antes de 16 de outubro de 2026 até 15 de
+  novembro de 2026
 
 ================================================================================
 1. QUEM SOMOS E COMO NOS CONTACTAR
@@ -109,8 +111,9 @@ partilhada (secção 11.7). Esta política também se aplica a essas pessoas.
   o nosso assistente de apoio utiliza o Claude da Anthropic. Funcionam através
   dos nossos servidores, exceto que a aplicação pode pedir diretamente ao
   serviço de tradução da Google a tradução de conteúdo público. Pedimos o seu
-  consentimento antes de tratarem pela primeira vez o seu conteúdo privado, e
-  o assistente de apoio está claramente identificado como IA.
+  consentimento antes de tratarem pela primeira vez o seu conteúdo privado ou de
+  traduzirem automaticamente conteúdo escrito por outras pessoas, e o assistente
+  de apoio está claramente identificado como IA.
 - Pode eliminar a sua conta a qualquer momento:
   - na aplicação;
   - no nosso website, em https://greengochat.com/delete-account, confirmando
@@ -675,8 +678,8 @@ Tradução de mensagens de chat    | Serviços de tradução da Google  | O text
                                  | (Google Cloud Translation na    | idioma de destino
                                  | aplicação atual)                |
 Tradução de conteúdo público     | Serviço de tradução da Google,  | Apenas o texto, sem dados
-(eventos, comunidades, anúncios) | através de um repositório       | pessoais
-                                 | partilhado nos nossos           |
+(dicas da comunidade, eventos,   | através de um repositório       | pessoais
+experiências, avaliações)        | partilhado nos nossos           |
                                  | servidores; se uma tradução aí  |
                                  | não existir, a aplicação pode   |
                                  | pedi-la diretamente à Google,   |
@@ -702,15 +705,19 @@ Moderação de imagens e texto     | Google Cloud Vision e Natural   | Imagens c
   modelos.
 - Antes de as funcionalidades de IA tratarem o seu conteúdo privado pela
   primeira vez (por exemplo, a tradução de mensagens de chat, a leitura em voz
-  alta, a transliteração e o assistente de IA), mostramos-lhe qual o
-  fornecedor utilizado e o
-  que é enviado, e pedimos o seu consentimento. Pode alterar esta opção nas
+  alta, a transliteração e o assistente de IA), ou traduzirem automaticamente
+  conteúdo escrito por outras pessoas, mostramos-lhe qual o fornecedor utilizado
+  e o que é enviado, e pedimos o seu consentimento. Pode alterar esta opção nas
   Definições.
-- O conteúdo público, como eventos, comunidades e anúncios, é traduzido com o
-  serviço de tradução da Google através de um repositório partilhado nos
-  nossos servidores. É enviado apenas o texto, sem quaisquer dados pessoais, e
-  a tradução é guardada para todas as pessoas que veem esse conteúdo. Isto não
-  exige o seu consentimento.
+- O conteúdo público, como dicas da comunidade, eventos, experiências e
+  avaliações, é traduzido com o serviço de tradução da Google através de um
+  repositório partilhado nos nossos servidores. É enviado apenas o texto, sem
+  quaisquer dados pessoais, e a tradução é guardada para todas as pessoas que
+  veem esse conteúdo. A tradução automática de conteúdo escrito por outras
+  pessoas (dicas da comunidade, eventos, experiências, avaliações) só é feita
+  depois de autorizar os serviços de IA. Perguntamos uma vez por conta e pode
+  alterar esta opção em Definições > Serviços de IA. Sem esta autorização, vê o
+  original e pode tocar em Traduzir.
 - As traduções das mensagens de chat são guardadas com a mensagem, para que
   não tenham de ser pedidas novamente. As traduções de frases curtas sem
   dados pessoais (sem números, ligações, endereços de e-mail ou @nomes) são
@@ -1185,6 +1192,13 @@ conta.
   e-mail e enviar-lhe-emos uma ligação de confirmação válida durante 24 horas. A
   sua conta é eliminada quando confirmar. Para sua segurança, a página não
   indica a ninguém se existe uma conta associada a esse e-mail.
+- Se vende bilhetes ou Experiências e ainda tem vendas pagas de Eventos ou
+  Experiências futuros ou em curso que não tenham sido reembolsadas, ou
+  reembolsos que não estejam concluídos, o seu pedido fica agendado (Termos,
+  secção 20.1): ocultamos de imediato o seu perfil, cancelamos esses Eventos e
+  reservas e reembolsamos os compradores, e eliminamos a sua conta
+  automaticamente assim que todos os reembolsos estiverem concluídos. Até lá,
+  pode retirar o pedido na aplicação.
 
 15.2 O que acontece
 
@@ -1602,6 +1616,21 @@ Representantes na UE e no Reino Unido: em processo de designação (ver secção
 ================================================================================
 HISTÓRICO DE VERSÕES
 ================================================================================
+
+5.3.2 - em vigor a partir de 22 de outubro de 2026 para as contas criadas a
+partir de 16 de outubro de 2026; a partir de 16 de novembro de 2026 para as
+contas criadas antes de 16 de outubro de 2026 (anunciada a 22 de outubro de
+2026)
+- Secções 2, 9.1 e 9.2: a tradução automática de conteúdo escrito por outras
+  pessoas (dicas da comunidade, eventos, experiências, avaliações) só é feita
+  depois de autorizar os serviços de IA; perguntamos uma vez por conta, pode
+  alterar esta opção em Definições > Serviços de IA e, sem esta autorização, vê
+  o original e pode tocar em Traduzir.
+- Secção 15.1: o pedido de eliminação de um vendedor com vendas pagas não
+  reembolsadas ou reembolsos não concluídos fica agendado: o perfil é ocultado
+  de imediato, as vendas são canceladas e reembolsadas, e a conta é eliminada
+  assim que todos os reembolsos estiverem concluídos; o pedido pode ser retirado
+  até lá.
 
 5.3.1 - em vigor a partir de 17 de outubro de 2026 para as contas criadas a
 partir de 16 de outubro de 2026; a partir de 16 de novembro de 2026 para as

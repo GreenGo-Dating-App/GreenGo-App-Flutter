@@ -131,6 +131,19 @@ List<String> legalUpdateBullets(AppLocalizations l10n, String? version) =>
           l10n.legalUpdate532BulletPhases,
           l10n.legalUpdate533BulletRefunds,
         ],
+      // 5.3.4 = 5.3.3 + scheduled deletion (20.1) and translation consent.
+      '5.3.4' => [
+          l10n.legalUpdate530BulletReferral,
+          l10n.legalUpdate530BulletCoinGifts,
+          l10n.legalUpdate530BulletMenus,
+          l10n.legalUpdate530BulletModeration,
+          l10n.legalUpdate530BulletTraders,
+          l10n.legalUpdate531BulletFeeCaps,
+          l10n.legalUpdate532BulletPhases,
+          l10n.legalUpdate533BulletRefunds,
+          l10n.legalUpdate534BulletDeletion,
+          l10n.legalUpdate534BulletTranslation,
+        ],
       _ => const <String>[],
     };
 

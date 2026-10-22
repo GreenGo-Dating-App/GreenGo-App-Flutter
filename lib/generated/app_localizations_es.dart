@@ -25950,6 +25950,14 @@ class AppLocalizationsEs extends AppLocalizations {
       'Reembolso completo automático cuando un organizador cancela un evento de pago o un anfitrión cancela una reserva; las cuentas con ventas pagadas aún no reembolsadas no se pueden eliminar';
 
   @override
+  String get legalUpdate534BulletDeletion =>
+      'Los vendedores con ventas pagadas aún no reembolsadas pueden pedir igualmente que se elimine su cuenta: cancelamos y reembolsamos esas ventas, ocultamos el perfil y eliminamos la cuenta cuando terminan todos los reembolsos';
+
+  @override
+  String get legalUpdate534BulletTranslation =>
+      'La traducción automática del contenido de otras personas (consejos de comunidades, eventos, experiencias, reseñas) solo funciona después de que permitas los servicios de IA';
+
+  @override
   String get legalUpdateCloseAccount => 'No acepto: cerrar mi cuenta';
 
   @override

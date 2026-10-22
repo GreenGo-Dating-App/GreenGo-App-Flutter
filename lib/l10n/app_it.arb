@@ -8194,6 +8194,8 @@
   "legalUpdate531BulletFeeCaps": "Massimale più alto della commissione di servizio di GreenGo per biglietto per i venditori: Silver 30 US$, Gold 28 US$, Platinum 25 US$",
   "legalUpdate532BulletPhases": "Fasi di prezzo per i biglietti degli eventi (per esempio early bird) e l’offerta di lancio 2026: 50% di sconto sul primo periodo di un nuovo Abbonamento",
   "legalUpdate533BulletRefunds": "Rimborso completo automatico quando un organizzatore annulla un evento a pagamento o un host annulla una prenotazione; gli account con vendite pagate non ancora rimborsate non possono essere eliminati",
+  "legalUpdate534BulletDeletion": "I venditori con vendite pagate non ancora rimborsate possono comunque chiedere di eliminare l’account: annulliamo e rimborsiamo quelle vendite, nascondiamo il profilo ed eliminiamo l’account appena tutti i rimborsi sono conclusi",
+  "legalUpdate534BulletTranslation": "La traduzione automatica dei contenuti scritti da altri (consigli delle community, eventi, esperienze, recensioni) funziona solo dopo che hai consentito i servizi di IA",
   "legalUpdateCloseAccount": "Non accetto – chiudi il mio account",
   "legalUpdateCloseAccountTitle": "Chiudi il tuo account",
   "legalUpdateCloseAccountBody": "Se non accetti i nuovi Termini, puoi chiudere gratuitamente il tuo contratto con GreenGo eliminando il tuo account. Se hai pagato un Abbonamento in anticipo, ti rimborsiamo la parte non usata: scrivi a {email}.\n\nPoi apri il tuo Profilo e tocca \"Elimina Account\" in fondo.",

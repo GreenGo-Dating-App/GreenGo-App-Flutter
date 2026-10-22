@@ -44019,6 +44019,18 @@ abstract class AppLocalizations {
   /// **'Automatic full refunds when an organiser cancels a paid event or a host cancels a booking; accounts with paid sales not yet refunded cannot be deleted'**
   String get legalUpdate533BulletRefunds;
 
+  /// Terms 5.3.4 "what changes" bullet: scheduled account deletion for sellers with unrefunded sales (20.1) (re-acceptance sheet and advance notice).
+  ///
+  /// In en, this message translates to:
+  /// **'Sellers with paid sales not yet refunded can still ask to delete their account: we cancel and refund those sales, hide the profile and delete the account once all refunds are finished'**
+  String get legalUpdate534BulletDeletion;
+
+  /// Terms 5.3.4 / Privacy 5.3.2 "what changes" bullet: automatic translation of public content only after AI-services consent (re-acceptance sheet and advance notice).
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic translation of content written by others (community tips, events, experiences, reviews) runs only after you allow AI services'**
+  String get legalUpdate534BulletTranslation;
+
   /// Third option of the Terms re-acceptance sheet (Terms 24.2 c).
   ///
   /// In en, this message translates to:

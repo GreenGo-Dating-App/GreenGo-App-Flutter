@@ -1,11 +1,11 @@
 ALLGEMEINE GESCHÄFTSBEDINGUNGEN VON GREENGO
 
-Version: 5.3.3
-Gültig ab: 21. Oktober 2026 für Konten, die ab dem 16. Oktober 2026 erstellt
+Version: 5.3.4
+Gültig ab: 22. Oktober 2026 für Konten, die ab dem 16. Oktober 2026 erstellt
   werden; 16. November 2026 für Konten, die vor dem 16. Oktober 2026 erstellt
   wurden
-Angekündigt am: 21. Oktober 2026
-Vorherige Version: 5.3.2 (17. Oktober 2026) für Konten, die ab dem
+Angekündigt am: 22. Oktober 2026
+Vorherige Version: 5.3.3 (21. Oktober 2026) für Konten, die ab dem
   16. Oktober 2026 erstellt werden; 5.2.1 (16. Oktober 2026), die für vor dem
   16. Oktober 2026 erstellte Konten bis zum 15. November 2026 weiter gilt
 
@@ -1183,13 +1183,17 @@ https://greengochat.com/child-safety veröffentlicht.
 - in der App unter Profil > Konto Löschen;
 - im Web unter https://greengochat.com/delete-account.
 
-Du kannst dein Konto nicht löschen, solange du als Veranstalter oder
-Gastgeber bevorstehende oder laufende Events oder Erlebnisse mit bezahlten
-Tickets oder Buchungen hast, die nicht erstattet wurden, oder Erstattungen,
-die nicht abgeschlossen sind (zum Beispiel eine fehlgeschlagene Erstattung,
-deren Nachweis GreenGo noch nicht akzeptiert hat). Sage sie zuerst ab: Die
-Käufer werden automatisch erstattet (Abschnitte 11.2 g und 12.2). Die App
-zeigt dir, was noch offen ist.
+Wenn du als Veranstalter oder Gastgeber bevorstehende oder laufende Events
+oder Erlebnisse mit bezahlten Tickets oder Buchungen hast, die nicht
+erstattet wurden, oder Erstattungen, die nicht abgeschlossen sind, kannst du
+die Löschung deines Kontos trotzdem beantragen. Wir sagen dann diese Events
+und Buchungen ab, erstatten jedem Käufer automatisch den Betrag
+(Abschnitte 11.2 g und 12.2), verbergen dein Profil, stoppen neue Verkäufe
+und löschen dein Konto automatisch, sobald alle Erstattungen abgeschlossen
+sind. Schlägt eine automatische Erstattung fehl, bitten wir dich, dem Käufer
+den Betrag selbst zu erstatten und den Nachweis hochzuladen. Bis die Löschung
+erfolgt ist, kannst du den Antrag in der App zurückziehen; bereits abgesagte
+Events und Buchungen bleiben abgesagt.
 
 Wenn du dein Konto löschst:
 - wird eine im Web gekaufte Mitgliedschaft automatisch gekündigt;
@@ -1432,6 +1436,20 @@ Urheberrecht (DMCA): copyright@greengochat.com
 ================================================================================
 VERSIONSVERLAUF
 ================================================================================
+
+5.3.4 - gültig ab 22. Oktober 2026 für Konten, die ab dem 16. Oktober 2026
+erstellt werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte
+Konten (angekündigt am 22. Oktober 2026)
+- Abschnitt 20.1 (ersetzt die Regel aus 5.3.3): Ein Veranstalter oder
+  Gastgeber mit bezahlten, nicht erstatteten Verkäufen bevorstehender oder
+  laufender Events oder Erlebnisse oder mit nicht abgeschlossenen
+  Erstattungen kann die Löschung des Kontos trotzdem beantragen. Wir sagen
+  diese Events und Buchungen ab, erstatten jedem Käufer automatisch den
+  Betrag, verbergen das Profil, stoppen neue Verkäufe und löschen das Konto,
+  sobald alle Erstattungen abgeschlossen sind; schlägt eine automatische
+  Erstattung fehl, bitten wir den Verkäufer, dem Käufer den Betrag zu
+  erstatten und den Nachweis hochzuladen; der Antrag kann bis zur Löschung
+  zurückgezogen werden, und abgesagte Events und Buchungen bleiben abgesagt.
 
 5.3.3 - gültig ab 21. Oktober 2026 für Konten, die ab dem 16. Oktober 2026
 erstellt werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte

@@ -7,7 +7,7 @@
  */
 
 /** Terms and Conditions version currently published (Terms 16.9 d proof). */
-export const TERMS_VERSION = '5.3.3';
+export const TERMS_VERSION = '5.3.4';
 
 /**
  * Owner decision of 16 October 2026: TERMS_VERSION (5.3.0) applies from
@@ -18,6 +18,7 @@ export const TERMS_VERSION = '5.3.3';
  * (Silver US$30, Gold US$28, Platinum US$25); replaces 5.3.0.
  * 5.3.2 (17 Oct 2026, accounts created from 16 Oct 2026; older accounts
  * still move on 16 Nov 2026): clarifications + ticket price phases.
+ * 5.3.4 (22 Oct 2026, same pattern): 20.1 scheduled deletion (Apple).
  * 5.3.3 (21 Oct 2026, same pattern): automatic full refunds when a seller
  * cancels (11.2 g, 12.2, 12.5 c) and the account-deletion rule (20.1).
  */

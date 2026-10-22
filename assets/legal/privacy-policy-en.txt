@@ -1,12 +1,13 @@
 GREENGO PRIVACY POLICY
 
-Version: 5.3.1
-Effective date: 17 October 2026 for accounts created on or after
+Version: 5.3.2
+Effective date: 22 October 2026 for accounts created on or after
   16 October 2026; 16 November 2026 for accounts created before
   16 October 2026
-Announced: 17 October 2026
-Previous version: 5.2.1 (16 October 2026), which continues to apply to accounts
-  created before 16 October 2026 until 15 November 2026
+Announced: 22 October 2026
+Previous version: 5.3.1 (17 October 2026) for accounts created on or after
+  16 October 2026; 5.2.1 (16 October 2026), which continues to apply to
+  accounts created before 16 October 2026 until 15 November 2026
 
 ================================================================================
 1. WHO WE ARE AND HOW TO REACH US
@@ -100,7 +101,8 @@ applies to them too.
   assistant uses Anthropic's Claude. They run through our servers, except
   that the app may ask Google's translation service directly to translate
   public content. We ask for your consent before they first process your
-  private content, and the support assistant is clearly labelled as AI.
+  private content or automatically translate content written by other
+  people, and the support assistant is clearly labelled as AI.
 - You can delete your account at any time:
   - in the app;
   - on our website, at https://greengochat.com/delete-account, by confirming
@@ -618,8 +620,8 @@ Translation of chat messages     | Google's translation services   | The text to
                                  | (Google Cloud Translation in    | the target language
                                  | the current app)                |
 Translation of public content    | Google's translation service,   | The text only, without
-(events, communities, listings)  | through a shared store on our   | personal data
-                                 | servers; if a translation is    |
+(community tips, events,         | through a shared store on our   | personal data
+experiences, reviews)            | servers; if a translation is    |
                                  | not there, the app may request  |
                                  | it directly from Google, which  |
                                  | then sees your IP address       |
@@ -640,14 +642,18 @@ Image and text moderation        | Google Cloud Vision and Natural | Uploaded im
   under their paid business terms, under which they do not use your data to
   train their models.
 - Before AI features process your private content for the first time (for
-  example translation of chat messages, read-aloud and the AI assistant), we
-  show you which provider is used and what is sent, and we ask for your
-  consent. You can change this in Settings.
-- Public content, such as events, communities and listings, is translated
-  with Google's translation service through a shared store on our servers.
-  Only the text is sent, without any personal data, and the translation is
-  stored for everyone who views that content. This does not need your
-  consent.
+  example translation of chat messages, read-aloud and the AI assistant), or
+  automatically translate content written by other people, we show you
+  which provider is used and what is sent, and we ask for your consent. You
+  can change this in Settings.
+- Public content, such as community tips, events, experiences and reviews,
+  is translated with Google's translation service through a shared store on
+  our servers. Only the text is sent, without any personal data, and the
+  translation is stored for everyone who views that content. Automatic
+  translation of content written by other people (community tips, events,
+  experiences, reviews) runs only after you allow AI services. We ask once
+  per account and you can change it in Settings > AI services. Without it
+  you see the original and can tap Translate.
 - Translations of chat messages are stored with the message, so that they do
   not have to be requested again. Translations of short phrases with no
   personal details (no numbers, links, email addresses or @names) are also
@@ -1077,6 +1083,12 @@ account.
   and we will send you a confirmation link that is valid for 24 hours. Your
   account is deleted when you confirm. For your security, the page tells
   nobody whether an account exists for that email.
+- If you sell tickets or Experiences and still have paid sales of upcoming or
+  ongoing Events or Experiences that have not been refunded, or refunds that
+  are not finished, your request is scheduled (Terms, section 20.1): we hide
+  your profile at once, cancel those Events and bookings and refund the
+  buyers, and delete your account automatically as soon as all refunds are
+  finished. Until then you can withdraw the request in the app.
 
 15.2 What happens
 
@@ -1457,6 +1469,19 @@ EU and UK representatives: being appointed (see section 1.3)
 ================================================================================
 VERSION HISTORY
 ================================================================================
+
+5.3.2 - effective 22 October 2026 for accounts created on or after
+16 October 2026; 16 November 2026 for accounts created before 16 October 2026
+(announced 22 October 2026)
+- Sections 2, 9.1 and 9.2: automatic translation of content written by other
+  people (community tips, events, experiences, reviews) runs only after you
+  allow AI services; we ask once per account, you can change it in
+  Settings > AI services, and without it you see the original and can tap
+  Translate.
+- Section 15.1: a deletion request of a seller with paid, unrefunded sales or
+  unfinished refunds is scheduled: the profile is hidden at once, the sales
+  are cancelled and refunded, and the account is deleted as soon as all
+  refunds are finished; the request can be withdrawn until then.
 
 5.3.1 - effective 17 October 2026 for accounts created on or after
 16 October 2026; 16 November 2026 for accounts created before 16 October 2026
