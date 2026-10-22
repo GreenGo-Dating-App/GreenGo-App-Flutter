@@ -28886,6 +28886,12 @@ abstract class AppLocalizations {
   /// **'Price per group'**
   String get tpGroupPrice;
 
+  /// No description provided for @tpPricePerPerson.
+  ///
+  /// In en, this message translates to:
+  /// **'Price per person'**
+  String get tpPricePerPerson;
+
   /// Ticket payments
   ///
   /// In en, this message translates to:

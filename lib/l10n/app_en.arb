@@ -8363,6 +8363,7 @@
     }
   },
   "tpGroupPrice": "Price per group",
+  "tpPricePerPerson": "Price per person",
   "@tpGroupPrice": {
     "description": "Ticket payments"
   },

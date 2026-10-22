@@ -16612,6 +16612,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tpGroupPrice => 'Precio por grupo';
 
   @override
+  String get tpPricePerPerson => 'Precio por persona';
+
+  @override
   String tpHoldCountdown(String time) {
     return 'Tu plaza está reservada durante $time';
   }

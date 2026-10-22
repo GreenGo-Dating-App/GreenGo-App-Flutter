@@ -1999,7 +1999,22 @@ class _EditorFormState extends State<_EditorForm> {
         value: _isFree,
         onChanged: (v) => setState(() => _isFree = v),
       ),
-      if (!_isFree)
+      if (!_isFree) ...[
+        // ONE price field: per person (default) or one price for the whole
+        // group. The mode is chosen first; the field's label follows it.
+        SegmentedButton<String>(
+          key: const ValueKey('experience-pricing-mode'),
+          segments: [
+            ButtonSegment(value: 'per_person', label: Text(l.tpPerPerson)),
+            ButtonSegment(value: 'per_group', label: Text(l.tpPerGroup)),
+          ],
+          selected: {_pricingMode},
+          onSelectionChanged: (v) => setState(() => _pricingMode = v.first),
+        ),
+        const SizedBox(height: 6),
+        Text(_pricingMode == 'per_group' ? l.tpPerGroupInfo : l.tpPerPersonInfo,
+            style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
+        const SizedBox(height: 10),
         Row(children: [
           SizedBox(
             width: 110,
@@ -2019,54 +2034,35 @@ class _EditorFormState extends State<_EditorForm> {
           const SizedBox(width: 10),
           Expanded(
             child: TextField(
-              controller: _price,
+              key: ValueKey(_pricingMode == 'per_group'
+                  ? 'experience-group-price'
+                  : 'experience-price'),
+              controller: _pricingMode == 'per_group' ? _groupPrice : _price,
               keyboardType:
                   const TextInputType.numberWithOptions(decimal: true),
               inputFormatters: [
                 FilteringTextInputFormatter.allow(RegExp(r'[0-9.,]')),
               ],
               style: _text,
-              decoration: _dec(l.uexpPrice,
+              onChanged: (_) => setState(() {}),
+              decoration: _dec(
+                  _pricingMode == 'per_group'
+                      ? l.tpGroupPrice
+                      : l.tpPricePerPerson,
                   error: _err([ExperienceFieldError.priceInvalid])),
             ),
           ),
         ]),
-      if (!_isFree) ...[
-        const SizedBox(height: 12),
-        // Pricing mode: per person (default) or one price per group.
-        SegmentedButton<String>(
-          key: const ValueKey('experience-pricing-mode'),
-          segments: [
-            ButtonSegment(value: 'per_person', label: Text(l.tpPerPerson)),
-            ButtonSegment(value: 'per_group', label: Text(l.tpPerGroup)),
-          ],
-          selected: {_pricingMode},
-          onSelectionChanged: (v) => setState(() => _pricingMode = v.first),
-        ),
-        const SizedBox(height: 6),
-        Text(_pricingMode == 'per_group' ? l.tpPerGroupInfo : l.tpPerPersonInfo,
-            style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
-        if (_pricingMode == 'per_group') ...[
-          const SizedBox(height: 8),
-          TextField(
-            key: const ValueKey('experience-group-price'),
-            controller: _groupPrice,
-            keyboardType: const TextInputType.numberWithOptions(decimal: true),
-            inputFormatters: [FilteringTextInputFormatter.allow(RegExp(r'[0-9.,]'))],
-            style: _text,
-            onChanged: (_) => setState(() {}),
-            decoration: _dec('${l.tpGroupPrice} ($_currency)',
-                error: _err([ExperienceFieldError.priceInvalid])),
-          ),
-          if (_groupPrice.text.trim().isNotEmpty && int.tryParse(_maxGroup.text.trim()) != null)
-            Padding(
-              padding: const EdgeInsets.only(top: 4),
-              child: Text(
-                l.tpGroupPreview('$_currency${_groupPrice.text.trim()}', int.parse(_maxGroup.text.trim())),
-                style: const TextStyle(color: AppColors.richGold, fontSize: 12.5),
-              ),
+        if (_pricingMode == 'per_group' &&
+            _groupPrice.text.trim().isNotEmpty &&
+            int.tryParse(_maxGroup.text.trim()) != null)
+          Padding(
+            padding: const EdgeInsets.only(top: 4),
+            child: Text(
+              l.tpGroupPreview('$_currency${_groupPrice.text.trim()}', int.parse(_maxGroup.text.trim())),
+              style: const TextStyle(color: AppColors.richGold, fontSize: 12.5),
             ),
-        ],
+          ),
         const SizedBox(height: 8),
         SwitchListTile(
           key: const ValueKey('experience-weekend-toggle'),

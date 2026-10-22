@@ -4819,6 +4819,7 @@
   "tpGroupOf": "Groupe de {count}",
   "tpGroupPreview": "{price} pour un groupe jusqu'à {size}",
   "tpGroupPrice": "Prix par groupe",
+  "tpPricePerPerson": "Prix par personne",
   "tpHoldCountdown": "Votre place est réservée pendant {time}",
   "tpInstantSubtitle": "Les acheteurs paient dans l'app ; les billets sont confirmés automatiquement.",
   "tpIvePaid": "J'ai payé",
