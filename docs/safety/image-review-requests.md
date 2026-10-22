@@ -122,3 +122,17 @@ No new composite index. Functions (deploy by name): new `onMediaObjectDeleted`, 
 Rules: `firestore.additive.rules` (prod) and `firestore.rules`. storage.rules unchanged.
 
 Backfill (existing approved pictures -> library): `functions/scripts/backfill-media-library.cjs` (dry run by default).
+
+## 6. Admin preview of a held picture (`adminQuarantinePreview`)
+
+`quarantine/**` is readable in storage.rules only with the legacy `token.admin == true` claim, which the current
+admin role sync (`adminRole` claim) never sets, so panel moderators cannot open a held picture with the Storage SDK.
+Callable `adminQuarantinePreview({ queueId })` (`functions/src/safety/quarantinePreview.ts`, superAdmin | moderator)
+returns `{ url, expiresAt, path, location: 'quarantine' | 'original', contentType }`: a V4 signed URL valid 10 minutes
+for the item's `quarantine/<objectPath>` (or the original path when the move failed / the file was restored). Works for
+`quarantinedImage`, `imageReview` and picture `appeal` items (`imageReview.objectPath`); only moderated image prefixes,
+never `safety_holds/` / `legal_holds/`. Each view writes `admin_audit_log` `viewedHeldImage`. Needs the runtime SA to
+have signBlob on itself (same as `getMediaUrl`).
+
+Composite index `moderation_queue (itemType ASC, status ASC, addedAt ASC)` serves the panel's Pictures queue
+(oldest first). Until it is built the panel falls back to the existing `(status, addedAt)` index and filters by type.
