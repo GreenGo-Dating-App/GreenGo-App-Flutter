@@ -25991,6 +25991,14 @@ class AppLocalizationsIt extends AppLocalizations {
       'Rimborso completo automatico quando un organizzatore annulla un evento a pagamento o un host annulla una prenotazione; gli account con vendite pagate non ancora rimborsate non possono essere eliminati';
 
   @override
+  String get legalUpdate534BulletDeletion =>
+      'I venditori con vendite pagate non ancora rimborsate possono comunque chiedere di eliminare l’account: annulliamo e rimborsiamo quelle vendite, nascondiamo il profilo ed eliminiamo l’account appena tutti i rimborsi sono conclusi';
+
+  @override
+  String get legalUpdate534BulletTranslation =>
+      'La traduzione automatica dei contenuti scritti da altri (consigli delle community, eventi, esperienze, recensioni) funziona solo dopo che hai consentito i servizi di IA';
+
+  @override
   String get legalUpdateCloseAccount => 'Non accetto – chiudi il mio account';
 
   @override

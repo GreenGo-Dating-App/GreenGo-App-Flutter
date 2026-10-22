@@ -1,12 +1,14 @@
 INFORMATIVA SULLA PRIVACY DI GREENGO
 
-Versione: 5.3.1
-Data di entrata in vigore: 17 ottobre 2026 per gli account creati dal
+Versione: 5.3.2
+Data di entrata in vigore: 22 ottobre 2026 per gli account creati dal
   16 ottobre 2026 in poi; 16 novembre 2026 per gli account creati prima del
   16 ottobre 2026
-Annunciata il: 17 ottobre 2026
-Versione precedente: 5.2.1 (16 ottobre 2026), che continua ad applicarsi agli
-  account creati prima del 16 ottobre 2026 fino al 15 novembre 2026
+Annunciata il: 22 ottobre 2026
+Versione precedente: 5.3.1 (17 ottobre 2026) per gli account creati dal
+  16 ottobre 2026 in poi; 5.2.1 (16 ottobre 2026), che continua ad
+  applicarsi agli account creati prima del 16 ottobre 2026 fino al
+  15 novembre 2026
 
 ================================================================================
 1. CHI SIAMO E COME CONTATTARCI
@@ -103,14 +105,14 @@ richiesta di prenotazione per un'esperienza, da un link condiviso come ospiti
   dati esaminati in forma cifrata in un archivio ad accesso limitato, solo per
   identificarti quando la legge lo richiede, fino a 6 mesi dopo la chiusura
   del tuo account.
-- Le funzioni di IA (traduzione, lettura vocale e traslitterazione dei
-  messaggi scritti in alfabeti non latini) utilizzano servizi Google, e il
-  nostro assistente di supporto utilizza Claude di Anthropic. Passano
-  attraverso i nostri server, salvo che l'app può chiedere direttamente al
-  servizio di traduzione di Google di tradurre contenuti pubblici. Ti
-  chiediamo il consenso prima che trattino per la prima volta i tuoi
-  contenuti privati, e l'assistente di supporto è chiaramente indicato come
-  IA.
+- Le funzioni di IA (traduzione, lettura vocale e traslitterazione dei messaggi
+  scritti in alfabeti non latini) utilizzano servizi Google, e il nostro
+  assistente di supporto utilizza Claude di Anthropic. Passano attraverso i
+  nostri server, salvo che l'app può chiedere direttamente al servizio di
+  traduzione di Google di tradurre contenuti pubblici. Ti chiediamo il consenso
+  prima che trattino per la prima volta i tuoi contenuti privati o traducano
+  automaticamente contenuti scritti da altre persone, e l'assistente di supporto
+  è chiaramente indicato come IA.
 - Puoi eliminare il tuo account in qualsiasi momento:
   - nell'app;
   - sul nostro sito web, all'indirizzo https://greengochat.com/delete-account,
@@ -675,8 +677,8 @@ Traduzione dei messaggi di chat    | Servizi di traduzione di Google | Il testo 
                                    | (Google Cloud Translation       | lingua di destinazione
                                    | nell'app attuale)               |
 Traduzione dei contenuti pubblici  | Servizio di traduzione di       | Solo il testo, senza dati
-(eventi, community, annunci)       | Google, tramite un archivio     | personali
-                                   | condiviso sui nostri server; se |
+(consigli delle community,         | Google, tramite un archivio     | personali
+eventi, esperienze, recensioni)    | condiviso sui nostri server; se |
                                    | una traduzione non è presente,  |
                                    | l'app può richiederla           |
                                    | direttamente a Google, che vede |
@@ -702,14 +704,19 @@ Moderazione di immagini e testi    | Google Cloud Vision e Natural   | Immagini 
   modelli.
 - Prima che le funzioni di IA trattino per la prima volta i tuoi contenuti
   privati (ad esempio la traduzione dei messaggi di chat, la lettura vocale e
-  l'assistente di IA), ti mostriamo quale fornitore viene utilizzato e che
-  cosa viene inviato, e ti chiediamo il consenso. Puoi modificare questa
-  scelta nelle Impostazioni.
-- I contenuti pubblici, come eventi, community e annunci, sono tradotti con
-  il servizio di traduzione di Google tramite un archivio condiviso sui
-  nostri server. Viene inviato solo il testo, senza alcun dato personale, e
-  la traduzione viene conservata per tutti coloro che visualizzano quel
-  contenuto. Questo non richiede il tuo consenso.
+  l'assistente di IA), o traducano automaticamente contenuti scritti da altre
+  persone, ti mostriamo quale fornitore viene utilizzato e che cosa viene
+  inviato, e ti chiediamo il consenso. Puoi modificare questa scelta nelle
+  Impostazioni.
+- I contenuti pubblici, come consigli delle community, eventi, esperienze e
+  recensioni, sono tradotti con il servizio di traduzione di Google tramite un
+  archivio condiviso sui nostri server. Viene inviato solo il testo, senza alcun
+  dato personale, e la traduzione viene conservata per tutti coloro che
+  visualizzano quel contenuto. La traduzione automatica dei contenuti scritti da
+  altre persone (consigli delle community, eventi, esperienze, recensioni)
+  avviene solo dopo che hai consentito i servizi di IA. Te lo chiediamo una
+  volta per account e puoi modificare la scelta in Impostazioni > Servizi IA.
+  Senza il consenso vedi l'originale e puoi toccare "Traduci".
 - Le traduzioni dei messaggi di chat sono conservate insieme al messaggio,
   così che non debbano essere richieste di nuovo. Le traduzioni di brevi
   frasi senza dettagli personali (senza numeri, link, indirizzi e-mail o
@@ -1195,6 +1202,12 @@ l'account.
   e-mail e ti invieremo un link di conferma valido per 24 ore. Il tuo account
   viene eliminato quando confermi. Per la tua sicurezza, la pagina non rivela a
   nessuno se esiste un account associato a quell'indirizzo e-mail.
+- Se vendi biglietti o Esperienze e hai ancora vendite a pagamento di Eventi o
+  Esperienze imminenti o in corso non rimborsate, o rimborsi non completati, la
+  tua richiesta viene programmata (Termini, sezione 20.1): nascondiamo subito il
+  tuo profilo, annulliamo quegli Eventi e prenotazioni e rimborsiamo gli
+  acquirenti, ed eliminiamo automaticamente il tuo account non appena tutti i
+  rimborsi sono completati. Fino ad allora puoi ritirare la richiesta nell'app.
 
 15.2 Che cosa succede
 
@@ -1604,6 +1617,20 @@ Rappresentanti nell'UE e nel Regno Unito: in corso di nomina
 ================================================================================
 CRONOLOGIA DELLE VERSIONI
 ================================================================================
+
+5.3.2 - in vigore dal 22 ottobre 2026 per gli account creati dal 16 ottobre
+2026 in poi; dal 16 novembre 2026 per gli account creati prima del 16 ottobre
+2026 (annunciata il 22 ottobre 2026)
+- Sezioni 2, 9.1 e 9.2: la traduzione automatica dei contenuti scritti da altre
+  persone (consigli delle community, eventi, esperienze, recensioni) avviene
+  solo dopo che hai consentito i servizi di IA; te lo chiediamo una volta per
+  account, puoi modificare la scelta in Impostazioni > Servizi IA e, senza il
+  consenso, vedi l'originale e puoi toccare "Traduci".
+- Sezione 15.1: la richiesta di eliminazione di un venditore con vendite a
+  pagamento non rimborsate o rimborsi non completati viene programmata: il
+  profilo viene nascosto subito, le vendite vengono annullate e rimborsate, e
+  l'account viene eliminato non appena tutti i rimborsi sono completati; la
+  richiesta può essere ritirata fino ad allora.
 
 5.3.1 - in vigore dal 17 ottobre 2026 per gli account creati dal 16 ottobre
 2026 in poi; dal 16 novembre 2026 per gli account creati prima del 16 ottobre

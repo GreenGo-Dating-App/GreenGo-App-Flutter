@@ -8194,6 +8194,8 @@
   "legalUpdate531BulletFeeCaps": "Limite máximo maior da taxa de serviço do GreenGo por ingresso para vendedores: Silver US$ 30, Gold US$ 28, Platinum US$ 25",
   "legalUpdate532BulletPhases": "Fases de preço para ingressos de eventos (por exemplo, antecipado) e a oferta de lançamento 2026: 50% de desconto no primeiro período de uma nova Assinatura",
   "legalUpdate533BulletRefunds": "Reembolso integral automático quando um organizador cancela um evento pago ou um anfitrião cancela uma reserva; contas com vendas pagas ainda não reembolsadas não podem ser excluídas",
+  "legalUpdate534BulletDeletion": "Vendedores com vendas pagas ainda não reembolsadas podem mesmo assim pedir a exclusão da conta: cancelamos e reembolsamos essas vendas, ocultamos o perfil e excluímos a conta assim que todos os reembolsos forem concluídos",
+  "legalUpdate534BulletTranslation": "A tradução automática de conteúdos escritos por outras pessoas (dicas de comunidades, eventos, experiências, avaliações) só funciona depois que você permite os serviços de IA",
   "legalUpdateCloseAccount": "Não aceito – encerrar minha conta",
   "legalUpdateCloseAccountTitle": "Encerrar sua conta",
   "legalUpdateCloseAccountBody": "Se você não aceitar os novos Termos, pode encerrar seu contrato com o GreenGo sem custo, excluindo sua conta. Se você pagou uma Assinatura antecipadamente, reembolsamos a parte não usada: escreva para {email}.\n\nDepois, abra seu Perfil e toque em \"Excluir Conta\" no final.",

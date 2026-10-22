@@ -1,11 +1,11 @@
 TÉRMINOS Y CONDICIONES DE GREENGO
 
-Versión: 5.3.3
-Fecha de entrada en vigor: 21 de octubre de 2026 para las cuentas creadas a
+Versión: 5.3.4
+Fecha de entrada en vigor: 22 de octubre de 2026 para las cuentas creadas a
   partir del 16 de octubre de 2026; 16 de noviembre de 2026 para las cuentas
   creadas antes del 16 de octubre de 2026
-Anunciada: 21 de octubre de 2026
-Versión anterior: 5.3.2 (17 de octubre de 2026) para las cuentas creadas a
+Anunciada: 22 de octubre de 2026
+Versión anterior: 5.3.3 (21 de octubre de 2026) para las cuentas creadas a
   partir del 16 de octubre de 2026; 5.2.1 (16 de octubre de 2026), que se
   sigue aplicando a las cuentas creadas antes del 16 de octubre de 2026
   hasta el 15 de noviembre de 2026
@@ -1147,12 +1147,16 @@ https://greengochat.com/child-safety.
 - en la app, en Perfil > Eliminar Cuenta;
 - en la web, en https://greengochat.com/delete-account.
 
-No puedes eliminar tu cuenta mientras, como organizador o Anfitrión, tengas
-Eventos o Experiencias próximos o en curso con entradas o reservas de pago
-que no se han reembolsado, o reembolsos sin terminar (por ejemplo, un
-reembolso fallido cuyo comprobante GreenGo aún no ha aceptado). Cancélalos
-primero: los compradores reciben el reembolso automáticamente (véanse las
-secciones 11.2 g y 12.2). La app te muestra lo que sigue pendiente.
+Si, como organizador o Anfitrión, tienes Eventos o Experiencias próximos o en
+curso con entradas o reservas de pago que no se han reembolsado, o reembolsos
+sin terminar, puedes igualmente solicitar la eliminación de tu cuenta. En ese
+caso cancelamos esos Eventos y reservas, reembolsamos automáticamente a cada
+comprador (véanse las secciones 11.2 g y 12.2), ocultamos tu perfil y detenemos
+las nuevas ventas, y eliminamos tu cuenta automáticamente en cuanto terminen
+todos los reembolsos. Si un reembolso automático falla, te pedimos que
+reembolses tú mismo al comprador y subas el comprobante. Hasta que se complete
+la eliminación puedes retirar la solicitud en la app; los Eventos y reservas ya
+cancelados siguen cancelados.
 
 Cuando eliminas tu cuenta:
 - una Membresía comprada en la web se cancela automáticamente;
@@ -1390,6 +1394,20 @@ Derechos de autor (DMCA): copyright@greengochat.com
 ================================================================================
 HISTORIAL DE VERSIONES
 ================================================================================
+
+5.3.4 - en vigor desde el 22 de octubre de 2026 para las cuentas creadas a
+partir del 16 de octubre de 2026; desde el 16 de noviembre de 2026 para las
+cuentas creadas antes del 16 de octubre de 2026 (anunciada el 22 de octubre
+de 2026)
+- Sección 20.1 (sustituye la regla de la 5.3.3): un organizador o Anfitrión con
+  ventas de pago no reembolsadas de Eventos o Experiencias próximos o en curso,
+  o con reembolsos sin terminar, puede igualmente solicitar la eliminación de la
+  cuenta. Cancelamos esos Eventos y reservas, reembolsamos automáticamente a
+  cada comprador, ocultamos el perfil y detenemos las nuevas ventas, y
+  eliminamos la cuenta en cuanto terminen todos los reembolsos; si un reembolso
+  automático falla, pedimos al vendedor que reembolse al comprador y suba el
+  comprobante; la solicitud puede retirarse hasta que se complete la
+  eliminación, y los Eventos y reservas cancelados siguen cancelados.
 
 5.3.3 - en vigor desde el 21 de octubre de 2026 para las cuentas creadas a
 partir del 16 de octubre de 2026; desde el 16 de noviembre de 2026 para las

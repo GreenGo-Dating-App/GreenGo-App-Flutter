@@ -1,12 +1,13 @@
 POLITIQUE DE CONFIDENTIALITÉ DE GREENGO
 
-Version : 5.3.1
-Date d'entrée en vigueur : 17 octobre 2026 pour les comptes créés à partir du
+Version : 5.3.2
+Date d'entrée en vigueur : 22 octobre 2026 pour les comptes créés à partir du
   16 octobre 2026 ; 16 novembre 2026 pour les comptes créés avant le
   16 octobre 2026
-Annoncée le : 17 octobre 2026
-Version précédente : 5.2.1 (16 octobre 2026), qui continue de s'appliquer aux
-  comptes créés avant le 16 octobre 2026 jusqu'au 15 novembre 2026
+Annoncée le : 22 octobre 2026
+Version précédente : 5.3.1 (17 octobre 2026) pour les comptes créés à partir
+  du 16 octobre 2026 ; 5.2.1 (16 octobre 2026), qui continue de s'appliquer
+  aux comptes créés avant le 16 octobre 2026 jusqu'au 15 novembre 2026
 
 ================================================================================
 1. QUI NOUS SOMMES ET COMMENT NOUS CONTACTER
@@ -111,7 +112,8 @@ que visiteurs (point 11.7). La présente politique s'applique aussi à elles.
   passent par nos serveurs, sauf que l'application peut demander directement
   au service de traduction de Google de traduire des contenus publics. Nous
   vous demandons votre consentement avant qu'elles ne traitent pour la
-  première fois votre contenu privé, et l'assistant d'assistance est
+  première fois votre contenu privé ou ne traduisent automatiquement des
+  contenus rédigés par d'autres personnes, et l'assistant d'assistance est
   clairement identifié comme une IA.
 - Vous pouvez supprimer votre compte à tout moment :
   - dans l'application ;
@@ -706,8 +708,8 @@ Traduction des messages de chat  | Services de traduction de       | Le texte à
                                  | Translation dans l'application  |
                                  | actuelle)                       |
 Traduction des contenus publics  | Service de traduction de        | Le texte seul, sans données
-(événements, communautés,        | Google, au moyen d'un stockage  | personnelles
-annonces)                        | partagé sur nos serveurs ; si   |
+(conseils des communautés,       | Google, au moyen d'un stockage  | personnelles
+événements, expériences, avis)   | partagé sur nos serveurs ; si   |
                                  | une traduction n'y est pas,     |
                                  | l'application peut la demander  |
                                  | directement à Google, qui voit  |
@@ -733,15 +735,21 @@ textes                           | Language                        | contrôlé 
   données pour entraîner leurs modèles.
 - Avant que des fonctionnalités d'IA ne traitent votre contenu privé pour la
   première fois (par exemple la traduction des messages de chat, la lecture
-  à voix haute et l'assistant IA), nous vous indiquons quel fournisseur est
-  utilisé et ce qui est envoyé, et nous vous demandons votre consentement.
-  Vous pouvez modifier ce choix dans les Paramètres.
-- Les contenus publics, tels que les événements, les communautés et les
-  annonces, sont traduits avec le service de traduction de Google au moyen
-  d'un stockage partagé sur nos serveurs. Seul le texte est envoyé, sans
-  aucune donnée personnelle, et la traduction est conservée pour toutes les
-  personnes qui consultent ce contenu. Cela ne nécessite pas votre
-  consentement.
+  à voix haute et l'assistant IA), ou ne traduisent automatiquement des
+  contenus rédigés par d'autres personnes, nous vous indiquons quel
+  fournisseur est utilisé et ce qui est envoyé, et nous vous demandons votre
+  consentement. Vous pouvez modifier ce choix dans les Paramètres.
+- Les contenus publics, tels que les conseils des communautés, les
+  événements, les expériences et les avis, sont traduits avec le service de
+  traduction de Google au moyen d'un stockage partagé sur nos serveurs. Seul
+  le texte est envoyé, sans aucune donnée personnelle, et la traduction est
+  conservée pour toutes les personnes qui consultent ce contenu. La
+  traduction automatique des contenus rédigés par d'autres personnes
+  (conseils des communautés, événements, expériences, avis) n'a lieu
+  qu'après que vous avez autorisé les services d'IA. Nous vous le demandons
+  une fois par compte et vous pouvez modifier ce choix dans Paramètres >
+  Services d'IA. Sans cette autorisation, vous voyez l'original et pouvez
+  appuyer sur Traduire.
 - Les traductions des messages de chat sont conservées avec le message, afin
   de ne pas devoir être demandées à nouveau. Les traductions de phrases
   courtes sans données personnelles (sans chiffres, liens, adresses e-mail ni
@@ -1246,6 +1254,14 @@ les utilisiez ou supprimiez le compte.
   e-mail, et nous vous enverrons un lien de confirmation valable 24 heures.
   Votre compte est supprimé lorsque vous confirmez. Pour votre sécurité, la
   page n'indique à personne si un compte existe pour cette adresse e-mail.
+- Si vous vendez des billets ou des expériences et avez encore des ventes
+  payées d'événements ou d'expériences à venir ou en cours qui n'ont pas été
+  remboursées, ou des remboursements qui ne sont pas terminés, votre demande
+  est programmée (Conditions générales, section 20.1) : nous masquons
+  immédiatement votre profil, annulons ces événements et réservations,
+  remboursons les acheteurs et supprimons votre compte automatiquement dès
+  que tous les remboursements sont terminés. D'ici là, vous pouvez retirer
+  votre demande dans l'application.
 
 15.2 Ce qui se passe
 
@@ -1683,6 +1699,21 @@ point 1.3)
 ================================================================================
 HISTORIQUE DES VERSIONS
 ================================================================================
+
+5.3.2 - en vigueur le 22 octobre 2026 pour les comptes créés à partir du
+16 octobre 2026 ; le 16 novembre 2026 pour les comptes créés avant le
+16 octobre 2026 (annoncée le 22 octobre 2026)
+- Sections 2, 9.1 et 9.2 : la traduction automatique des contenus rédigés
+  par d'autres personnes (conseils des communautés, événements,
+  expériences, avis) n'a lieu qu'après que vous avez autorisé les services
+  d'IA ; nous le demandons une fois par compte, vous pouvez modifier ce
+  choix dans Paramètres > Services d'IA et, sans cette autorisation, vous
+  voyez l'original et pouvez appuyer sur Traduire.
+- Section 15.1 : la demande de suppression d'un vendeur ayant des ventes
+  payées non remboursées ou des remboursements non terminés est programmée :
+  le profil est masqué immédiatement, les ventes sont annulées et
+  remboursées, et le compte est supprimé dès que tous les remboursements
+  sont terminés ; la demande peut être retirée d'ici là.
 
 5.3.1 - en vigueur le 17 octobre 2026 pour les comptes créés à partir du
 16 octobre 2026 ; le 16 novembre 2026 pour les comptes créés avant le

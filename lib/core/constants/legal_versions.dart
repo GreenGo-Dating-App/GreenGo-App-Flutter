@@ -7,10 +7,10 @@
 library;
 
 /// Terms and Conditions version shown in-app and recorded at acceptance.
-const String kTermsVersion = '5.3.3';
+const String kTermsVersion = '5.3.4';
 
 /// Privacy Policy version shown in-app and recorded at acceptance.
-const String kPrivacyPolicyVersion = '5.3.1';
+const String kPrivacyPolicyVersion = '5.3.2';
 
 /// Effective date of [kPrivacyPolicyVersion] (and of the Terms up to 5.1.0).
 /// 5.2.0: in-app checkout only, seller-paid service fee 11.5, business
@@ -27,7 +27,10 @@ const String kPrivacyPolicyVersion = '5.3.1';
 /// still move from 5.2.1 on 16 Nov 2026): clarifications to match the app
 /// (AI features, Google translation services, stored chat translations, ID
 /// document for experiences, unfounded reports, Pix). No re-acceptance.
-final DateTime kLegalEffectiveDate = DateTime(2026, 10, 17);
+/// 5.3.2 (22 Oct 2026, same pattern): automatic translation of public content
+/// only after AI-services consent (9.2); scheduled deletion of sellers with
+/// unrefunded sales (15.1). No re-acceptance.
+final DateTime kLegalEffectiveDate = DateTime(2026, 10, 22);
 
 /// Effective date of [kTermsVersion] (5.1.1: section 9.2 - fixed price
 /// points per currency; 5.1.2: the 9.2 example uses the current Base price.
@@ -57,7 +60,10 @@ final DateTime kLegalEffectiveDate = DateTime(2026, 10, 17);
 /// seller cancels a paid Event or an Experience booking (11.2 g, 12.2,
 /// 12.5 c), no account deletion while paid sales are not refunded (20.1).
 /// Sign-up records 5.3.3; [kTermsReacceptFrom] is NOT raised.
-final DateTime kTermsEffectiveDate = DateTime(2026, 10, 21);
+/// 5.3.4 (22 Oct 2026, same pattern): 20.1 scheduled deletion instead of the
+/// 5.3.3 refusal (Apple 5.1.1(v)). Sign-up records 5.3.4;
+/// [kTermsReacceptFrom] is NOT raised.
+final DateTime kTermsEffectiveDate = DateTime(2026, 10, 22);
 
 /// Oldest accepted version that does NOT trigger the "we've updated our
 /// Terms" sheet. Raise it only for a MATERIAL change (5.1.0: new Terms 16.9
@@ -93,7 +99,9 @@ const String kPrivacyReacceptFrom = '5.1.0';
 /// everyone again and shows that version's bullets,
 /// [legalUpdateBulletsVersion]), and clear or replace these constants. Set
 /// [kUpcomingTermsVersion] to null when nothing is announced.
-const String? kUpcomingTermsVersion = '5.3.3';
+// 5.3.4 (22 Oct 2026) replaces 5.3.3 in the notice (scheduled deletion,
+// translation consent); older accounts move from 5.2.1 to 5.3.4 on 16 Nov.
+const String? kUpcomingTermsVersion = '5.3.4';
 
 /// Date from which [kUpcomingTermsVersion] applies to accounts created before
 /// [kUpcomingTermsAccountsCreatedBefore] (16 October 2026 + 30 days).

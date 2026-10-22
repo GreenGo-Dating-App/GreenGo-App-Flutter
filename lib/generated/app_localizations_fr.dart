@@ -26103,6 +26103,14 @@ class AppLocalizationsFr extends AppLocalizations {
       'Remboursement intégral automatique quand un organisateur annule un événement payant ou qu’un hôte annule une réservation ; un compte avec des ventes payées pas encore remboursées ne peut pas être supprimé';
 
   @override
+  String get legalUpdate534BulletDeletion =>
+      'Les vendeurs ayant des ventes payées pas encore remboursées peuvent quand même demander la suppression de leur compte : nous annulons et remboursons ces ventes, masquons le profil et supprimons le compte une fois tous les remboursements terminés';
+
+  @override
+  String get legalUpdate534BulletTranslation =>
+      'La traduction automatique des contenus écrits par d’autres personnes (conseils de communautés, événements, expériences, avis) ne fonctionne qu’après que vous avez autorisé les services d’IA';
+
+  @override
   String get legalUpdateCloseAccount => 'Je n’accepte pas – fermer mon compte';
 
   @override

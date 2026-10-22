@@ -6,7 +6,8 @@
  * kUpcomingTermsVersion / kUpcomingTermsEffectiveDate / kUpcomingTermsUrl and
  * the per-version bullets in the ARB files, legalUpdate530Bullet* +
  * legalUpdate531BulletFeeCaps + legalUpdate532BulletPhases +
- * legalUpdate533BulletRefunds). Add the
+ * legalUpdate533BulletRefunds +
+ * legalUpdate534BulletDeletion + legalUpdate534BulletTranslation). Add the
  * next version here together with the app constants.
  */
 import type { AppLocale } from '../shared/i18n/locales';
@@ -41,8 +42,10 @@ export const TERMS_NOTICES: Record<string, TermsNotice> = {
   // 5.3.3 (21 Oct 2026) replaced 5.3.2 before it took effect for older
   // accounts: automatic refunds when a seller cancels + deletion rule 20.1
   // (new key: users notified of 5.3.2 get the 5.3.3 email).
-  '5.3.3': {
-    version: '5.3.3',
+  // 5.3.4 (22 Oct 2026) replaced 5.3.3 before it took effect for older
+  // accounts: scheduled deletion (20.1) + translation consent (new key).
+  '5.3.4': {
+    version: '5.3.4',
     effectiveDate: '2026-11-16',
     accountsCreatedBefore: '2026-10-16',
     url: 'https://greengochat.com/terms-of-service/upcoming',
@@ -56,6 +59,8 @@ export const TERMS_NOTICES: Record<string, TermsNotice> = {
         'Higher maximum GreenGo service fee per ticket for sellers: Silver US$30, Gold US$28, Platinum US$25',
         'Ticket price phases for events (for example early bird), and the 2026 launch offer: 50% off the first period of a new Membership',
         'Automatic full refunds when an organiser cancels a paid event or a host cancels a booking; accounts with paid sales not yet refunded cannot be deleted',
+        'Sellers with paid sales not yet refunded can still ask to delete their account: we cancel and refund those sales, hide the profile and delete the account once all refunds are finished',
+        'Automatic translation of content written by others (community tips, events, experiences, reviews) runs only after you allow AI services',
       ],
       de: [
         'Empfehlungsprämien so beschrieben, wie sie in der App funktionieren (1 Woche Base für die neue Person, 50 Coins für dich, zusätzliche Prämien bei 5, 10 und 20 Freunden)',
@@ -66,6 +71,8 @@ export const TERMS_NOTICES: Record<string, TermsNotice> = {
         'Höhere Obergrenze der GreenGo-Servicegebühr pro Ticket für Verkäufer: Silver 30 US$, Gold 28 US$, Platinum 25 US$',
         'Preisphasen für Event-Tickets (zum Beispiel Early Bird) und das Einführungsangebot 2026: 50 % Rabatt auf den ersten Zeitraum einer neuen Mitgliedschaft',
         'Automatische volle Erstattung, wenn ein Veranstalter ein kostenpflichtiges Event absagt oder ein Gastgeber eine Buchung storniert; Konten mit noch nicht erstatteten Verkäufen können nicht gelöscht werden',
+        'Verkäufer mit noch nicht erstatteten Verkäufen können die Löschung ihres Kontos trotzdem beantragen: Wir stornieren und erstatten diese Verkäufe, verbergen das Profil und löschen das Konto, sobald alle Erstattungen abgeschlossen sind',
+        'Die automatische Übersetzung von Inhalten anderer (Community-Tipps, Events, Erlebnisse, Bewertungen) läuft nur, wenn du KI-Dienste erlaubst',
       ],
       es: [
         'Las recompensas por invitación descritas como funcionan en la app (1 semana de Base para la persona nueva, 50 Coins para ti, recompensas extra a los 5, 10 y 20 amigos)',
@@ -76,6 +83,8 @@ export const TERMS_NOTICES: Record<string, TermsNotice> = {
         'Tope más alto de la tarifa de servicio de GreenGo por entrada para vendedores: Silver 30 US$, Gold 28 US$, Platinum 25 US$',
         'Fases de precio para las entradas de eventos (por ejemplo, anticipada) y la oferta de lanzamiento 2026: 50 % de descuento en el primer periodo de una nueva Membresía',
         'Reembolso completo automático cuando un organizador cancela un evento de pago o un anfitrión cancela una reserva; las cuentas con ventas pagadas aún no reembolsadas no se pueden eliminar',
+        'Los vendedores con ventas pagadas aún no reembolsadas pueden pedir igualmente que se elimine su cuenta: cancelamos y reembolsamos esas ventas, ocultamos el perfil y eliminamos la cuenta cuando terminan todos los reembolsos',
+        'La traducción automática del contenido de otras personas (consejos de comunidades, eventos, experiencias, reseñas) solo funciona después de que permitas los servicios de IA',
       ],
       fr: [
         'Les récompenses de parrainage décrites telles qu’elles fonctionnent dans l’app (1 semaine de Base pour la nouvelle personne, 50 Coins pour vous, des récompenses en plus à 5, 10 et 20 amis)',
@@ -86,6 +95,8 @@ export const TERMS_NOTICES: Record<string, TermsNotice> = {
         'Plafond plus élevé des frais de service de GreenGo par billet pour les vendeurs : Silver 30 $ US, Gold 28 $ US, Platinum 25 $ US',
         'Des phases de prix pour les billets d’événements (par exemple early bird) et l’offre de lancement 2026 : 50 % de réduction sur la première période d’un nouvel Abonnement',
         'Remboursement intégral automatique quand un organisateur annule un événement payant ou qu’un hôte annule une réservation ; un compte avec des ventes payées pas encore remboursées ne peut pas être supprimé',
+        'Les vendeurs ayant des ventes payées pas encore remboursées peuvent quand même demander la suppression de leur compte : nous annulons et remboursons ces ventes, masquons le profil et supprimons le compte une fois tous les remboursements terminés',
+        'La traduction automatique des contenus écrits par d’autres personnes (conseils de communautés, événements, expériences, avis) ne fonctionne qu’après que vous avez autorisé les services d’IA',
       ],
       it: [
         'I premi per gli inviti descritti come funzionano nell’app (1 settimana di Base per la nuova persona, 50 Coins per te, premi extra a 5, 10 e 20 amici)',
@@ -96,6 +107,8 @@ export const TERMS_NOTICES: Record<string, TermsNotice> = {
         'Massimale più alto della commissione di servizio di GreenGo per biglietto per i venditori: Silver 30 US$, Gold 28 US$, Platinum 25 US$',
         'Fasi di prezzo per i biglietti degli eventi (per esempio early bird) e l’offerta di lancio 2026: 50% di sconto sul primo periodo di un nuovo Abbonamento',
         'Rimborso completo automatico quando un organizzatore annulla un evento a pagamento o un host annulla una prenotazione; gli account con vendite pagate non ancora rimborsate non possono essere eliminati',
+        'I venditori con vendite pagate non ancora rimborsate possono comunque chiedere di eliminare l’account: annulliamo e rimborsiamo quelle vendite, nascondiamo il profilo ed eliminiamo l’account appena tutti i rimborsi sono conclusi',
+        'La traduzione automatica dei contenuti scritti da altri (consigli delle community, eventi, esperienze, recensioni) funziona solo dopo che hai consentito i servizi di IA',
       ],
       pt: [
         'As recompensas por convite descritas como funcionam na app (1 semana de Base para a pessoa nova, 50 Coins para si, recompensas extra aos 5, 10 e 20 amigos)',
@@ -106,6 +119,8 @@ export const TERMS_NOTICES: Record<string, TermsNotice> = {
         'Limite máximo mais alto da taxa de serviço do GreenGo por bilhete para vendedores: Silver 30 US$, Gold 28 US$, Platinum 25 US$',
         'Fases de preço para os bilhetes de eventos (por exemplo, antecipado) e a oferta de lançamento 2026: 50% de desconto no primeiro período de uma nova Subscrição',
         'Reembolso total automático quando um organizador cancela um evento pago ou um anfitrião cancela uma reserva; as contas com vendas pagas ainda não reembolsadas não podem ser eliminadas',
+        'Os vendedores com vendas pagas ainda não reembolsadas podem mesmo assim pedir a eliminação da conta: cancelamos e reembolsamos essas vendas, ocultamos o perfil e eliminamos a conta assim que todos os reembolsos estiverem concluídos',
+        'A tradução automática de conteúdos escritos por outras pessoas (dicas de comunidades, eventos, experiências, avaliações) só funciona depois de autorizar os serviços de IA',
       ],
       pt_BR: [
         'As recompensas por indicação descritas como funcionam no app (1 semana de Base para a pessoa nova, 50 Coins para você, recompensas extras aos 5, 10 e 20 amigos)',
@@ -116,6 +131,8 @@ export const TERMS_NOTICES: Record<string, TermsNotice> = {
         'Limite máximo maior da taxa de serviço do GreenGo por ingresso para vendedores: Silver US$ 30, Gold US$ 28, Platinum US$ 25',
         'Fases de preço para ingressos de eventos (por exemplo, antecipado) e a oferta de lançamento 2026: 50% de desconto no primeiro período de uma nova Assinatura',
         'Reembolso integral automático quando um organizador cancela um evento pago ou um anfitrião cancela uma reserva; contas com vendas pagas ainda não reembolsadas não podem ser excluídas',
+        'Vendedores com vendas pagas ainda não reembolsadas podem mesmo assim pedir a exclusão da conta: cancelamos e reembolsamos essas vendas, ocultamos o perfil e excluímos a conta assim que todos os reembolsos forem concluídos',
+        'A tradução automática de conteúdos escritos por outras pessoas (dicas de comunidades, eventos, experiências, avaliações) só funciona depois que você permite os serviços de IA',
       ],
     },
   },
