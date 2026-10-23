@@ -99,7 +99,6 @@ import '../../../../core/utils/user_error.dart';
 import '../../../settings/presentation/screens/privacy_data_settings_screen.dart';
 import '../../../legal/presentation/screens/legal_document_screen.dart';
 import '../../../../core/utils/eula_link.dart';
-import '../../../../core/services/sound_feedback.dart';
 import '../widgets/sound_effects_row.dart';
 
 class EditProfileScreen extends StatelessWidget {
@@ -2935,7 +2934,7 @@ class _IncognitoToggleCard extends StatelessWidget {
         ),
         trailing: Switch(
           value: isActive,
-          onChanged: withToggleSound(onToggle),
+          onChanged: onToggle,
           activeThumbColor: AppColors.richGold,
         ),
       ),

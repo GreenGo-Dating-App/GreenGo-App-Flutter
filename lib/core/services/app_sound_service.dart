@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -61,6 +63,15 @@ class AppSoundService {
         await p.setPlayerMode(PlayerMode.mediaPlayer);
       }
       _ready = true;
+      // Load every sound up front (temp files on mobile, the browser cache on
+      // web) so a sound starts right after its action instead of after a
+      // first-play download / copy.
+      unawaited(AudioCache.instance
+          .loadAll(AppSound.values.map((s) => s.assetPath).toSet().toList())
+          .catchError((Object e) {
+        if (kDebugMode) debugPrint('[Sound] preload failed: $e');
+        return <Uri>[];
+      }));
     } catch (e) {
       if (kDebugMode) debugPrint('[Sound] init failed: $e');
     }
@@ -86,8 +97,8 @@ class AppSoundService {
       if (!_ready) await initialize();
       final player = _players[_next];
       _next = (_next + 1) % _poolSize;
-      // Restart so rapid effects (e.g. quick messages) retrigger cleanly.
-      await player.stop();
+      // play() replaces whatever the player had, so no stop() round trip
+      // before it (that delayed every sound).
       await player.play(AssetSource(assetPath), volume: volume);
     } catch (e) {
       // Missing asset / platform issue — never let SFX break the app.
@@ -146,7 +157,6 @@ enum AppSound {
   // Social
   like('sounds/like.mp3', category: SoundCategory.social, volumeMultiplier: 0.6),
   follow('sounds/follow.mp3', category: SoundCategory.social, volumeMultiplier: 0.7),
-  longPress('sounds/long_press.mp3', category: SoundCategory.ui, volumeMultiplier: 0.3),
   // Communities / events
   communityJoin('sounds/community_join.mp3', category: SoundCategory.social),
   eventRsvp('sounds/event_rsvp.mp3', category: SoundCategory.events),
@@ -159,15 +169,8 @@ enum AppSound {
   purchaseSuccess('sounds/purchase_success.mp3', category: SoundCategory.gamification),
   giftSent('sounds/gift_sent.mp3', category: SoundCategory.gamification, volumeMultiplier: 0.8),
   limitReached('sounds/limit_reached.mp3', category: SoundCategory.ui, volumeMultiplier: 0.6),
-  // Learning (no screen uses these yet)
-  correctAnswer('sounds/correct_answer.mp3', category: SoundCategory.learning),
-  wrongAnswer('sounds/wrong_answer.mp3', category: SoundCategory.learning),
-  flashcardFlip('sounds/flashcard_flip.mp3', category: SoundCategory.learning, volumeMultiplier: 0.5),
-  lessonComplete('sounds/lesson_complete.mp3', category: SoundCategory.learning),
-  quizStart('sounds/quiz_start.mp3', category: SoundCategory.learning),
-  quizComplete('sounds/quiz_complete.mp3', category: SoundCategory.learning),
+  // Learning
   streakMilestone('sounds/streak_milestone.mp3', category: SoundCategory.learning),
-  wordLearned('sounds/word_learned.mp3', category: SoundCategory.learning, volumeMultiplier: 0.5),
   // Gamification
   xpGained('sounds/xp_gained.mp3', category: SoundCategory.gamification, volumeMultiplier: 0.6),
   levelUp('sounds/level_up.mp3', category: SoundCategory.gamification),
@@ -181,17 +184,12 @@ enum AppSound {
   reminder('sounds/reminder.mp3', category: SoundCategory.notification, volumeMultiplier: 0.6),
   dismiss('sounds/dismiss.mp3', category: SoundCategory.notification, volumeMultiplier: 0.5),
   // UI
-  tabSwitch('sounds/tab_switch.mp3', category: SoundCategory.ui, volumeMultiplier: 0.3),
-  buttonTap('sounds/button_tap.mp3', category: SoundCategory.ui, volumeMultiplier: 0.3),
   success('sounds/success.mp3', category: SoundCategory.ui),
   error('sounds/error.mp3', category: SoundCategory.ui),
   refresh('sounds/refresh.mp3', category: SoundCategory.ui, volumeMultiplier: 0.5),
-  toggleOn('sounds/toggle_on.mp3', category: SoundCategory.ui, volumeMultiplier: 0.3),
   toggleOff('sounds/toggle_off.mp3', category: SoundCategory.ui, volumeMultiplier: 0.3),
-  sheetOpen('sounds/sheet_open.mp3', category: SoundCategory.ui, volumeMultiplier: 0.25),
   copy('sounds/copy.mp3', category: SoundCategory.ui, volumeMultiplier: 0.4),
   share('sounds/share.mp3', category: SoundCategory.ui, volumeMultiplier: 0.5),
-  tourStep('sounds/tour_step.mp3', category: SoundCategory.ui, volumeMultiplier: 0.3),
   translate('sounds/translate.mp3', category: SoundCategory.ui, volumeMultiplier: 0.4),
   // Media
   photoCapture('sounds/photo_capture.mp3', category: SoundCategory.video, volumeMultiplier: 0.6),
@@ -201,17 +199,6 @@ enum AppSound {
   safetyModuleComplete('sounds/safety_complete.mp3', category: SoundCategory.safety),
   videoRecordStart('sounds/record_start.mp3', category: SoundCategory.video),
   videoRecordStop('sounds/record_stop.mp3', category: SoundCategory.video),
-  // Games (no screen uses these yet)
-  gameWaiting('sounds/game_waiting.mp3', category: SoundCategory.games, volumeMultiplier: 0.4),
-  gameCountdown('sounds/game_countdown.mp3', category: SoundCategory.games),
-  gameStart('sounds/game_start.mp3', category: SoundCategory.games),
-  gameEnd('sounds/game_end.mp3', category: SoundCategory.games),
-  gameCorrect('sounds/game_correct.mp3', category: SoundCategory.games, volumeMultiplier: 0.6),
-  gameWrong('sounds/game_wrong.mp3', category: SoundCategory.games, volumeMultiplier: 0.6),
-  gameVictory('sounds/game_victory.mp3', category: SoundCategory.games),
-  gameDefeat('sounds/game_defeat.mp3', category: SoundCategory.games),
-  bombTick('sounds/bomb_tick.mp3', category: SoundCategory.games, volumeMultiplier: 0.5),
-  bombExplode('sounds/bomb_explode.mp3', category: SoundCategory.games),
   ;
 
   final String assetPath;
@@ -234,8 +221,7 @@ enum SoundCategory {
   ui('UI Sounds'),
   safety('Safety Sounds'),
   events('Event Sounds'),
-  video('Video Sounds'),
-  games('Game Sounds');
+  video('Video Sounds');
 
   final String displayName;
   const SoundCategory(this.displayName);

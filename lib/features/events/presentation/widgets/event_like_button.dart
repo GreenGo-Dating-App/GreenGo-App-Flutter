@@ -64,7 +64,6 @@ class _EventLikeButtonState extends State<EventLikeButton> {
     if (widget.userId.isEmpty || widget.eventId.isEmpty) return;
     final next = !_liked;
     HapticFeedback.lightImpact();
-    AppSoundService().play(next ? AppSound.like : AppSound.toggleOff);
     setState(() {
       _optimisticLiked = next;
       _optimisticCount = (_count + (next ? 1 : -1)).clamp(0, 1 << 31);
@@ -73,6 +72,7 @@ class _EventLikeButtonState extends State<EventLikeButton> {
       await di
           .sl<EventsRepository>()
           .setEventLiked(widget.eventId, widget.userId, next);
+      AppSoundService().play(next ? AppSound.like : AppSound.toggleOff);
     } catch (_) {
       if (mounted) {
         setState(() {

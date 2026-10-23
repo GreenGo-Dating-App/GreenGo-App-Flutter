@@ -61,7 +61,6 @@ import '../../../../core/security/viewer_watermark.dart';
 import '../../data/services/chat_screenshot_notice.dart';
 import '../utils/chat_l10n.dart';
 import '../../../copyright/data/copyright_service.dart';
-import '../../../../core/services/sound_feedback.dart';
 
 /// Group Chat Screen ("Culture Circle").
 ///
@@ -289,22 +288,22 @@ class _GroupChatViewState extends State<_GroupChatView> {
               SwitchListTile(
                 title: Text(l10n.groupTranslateMessages),
                 value: _translate,
-                onChanged: withToggleSound((v) {
+                onChanged: (v) {
                   setModal(() {});
                   setState(() => _translate = v);
                   _saveTranslationPrefs();
-                }),
+                },
               ),
               SwitchListTile(
                 title: Text(l10n.groupShowOriginal),
                 value: _showOriginal,
-                onChanged: withToggleSound(_translate
+                onChanged: _translate
                     ? (v) {
                         setModal(() {});
                         setState(() => _showOriginal = v);
                         _saveTranslationPrefs();
                       }
-                    : null),
+                    : null,
               ),
               // Double-tap a message to hear it. This chooses which text is read:
               // ON = translation (your language), OFF = original.
@@ -312,11 +311,11 @@ class _GroupChatViewState extends State<_GroupChatView> {
                 title: Text(l10n.groupTtsReadTranslated),
                 subtitle: Text(l10n.groupTtsReadTranslatedHint),
                 value: _ttsReadTranslated,
-                onChanged: withToggleSound((v) {
+                onChanged: (v) {
                   setModal(() {});
                   setState(() => _ttsReadTranslated = v);
                   _saveTranslationPrefs();
-                }),
+                },
               ),
               const Divider(),
               Padding(
@@ -622,7 +621,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
     final bloc = context.read<GroupChatBloc>();
     final item = await MyPicturesScreen.pick(context);
     if (item == null || !item.isApproved) return;
-    bloc.add(GroupChatMessageSent(content: item.url!, type: MessageType.image));
+    bloc.add(GroupChatMessageSent(content: item.reuseUrl!, type: MessageType.image));
     AppSoundService().play(AppSound.messageSent);
   }
 

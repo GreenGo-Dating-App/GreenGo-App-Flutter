@@ -114,7 +114,6 @@ import '../../../../core/widgets/cover_image_size_hint.dart';
 import '../../../../core/widgets/cover_positioner.dart';
 import '../../../../core/widgets/focal_cover_image.dart';
 import '../../../../core/services/app_sound_service.dart';
-import '../../../../core/services/sound_feedback.dart';
 
 /// Coin cost for an organizer to feature ("Feature this event") their event in
 /// the Explore featured carousel for 7 days. Pure revenue, zero run-cost.
@@ -522,6 +521,9 @@ class _EventsScreenState extends State<EventsScreen>
               unawaited(_loadUpcomingFallback());
               _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
             } else if (state is EventRsvpSuccess) {
+              if (state.status == RSVPStatus.going.name) {
+                AppSoundService().play(AppSound.eventRsvp);
+              }
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text(
@@ -1829,7 +1831,6 @@ class _EventsScreenState extends State<EventsScreen>
       return;
     }
     if (!mounted) return;
-    if (status == RSVPStatus.going) AppSoundService().play(AppSound.eventRsvp);
     _eventsBloc.add(RsvpEvent(
       eventId: event.id,
       userId: widget.currentUserId,
@@ -4121,7 +4122,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   ImageProvider? get _mainProvider => _mainPhoto != null
       ? WebMedia.imageProviderFor(_mainPhoto!)
       : ((_existingMainUrl ?? '').isNotEmpty
-          ? NetworkImage(_existingMainUrl!)
+          ? CachedNetworkImageProvider(_existingMainUrl!)
           : null);
 
   /// Positioning step: drag / zoom the main photo in the real frame with a
@@ -4199,7 +4200,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                         fit: BoxFit.cover)
                     : (url != null && url.isNotEmpty
                         ? DecorationImage(
-                            image: NetworkImage(url), fit: BoxFit.cover)
+                            image: CachedNetworkImageProvider(url), fit: BoxFit.cover)
                         : null),
                 border:
                     Border.all(color: AppColors.textTertiary.withOpacity(0.3)),
@@ -4291,7 +4292,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                     ? Image(
                         image: WebMedia.imageProviderFor(file),
                         fit: BoxFit.contain)
-                    : Image.network(url!, fit: BoxFit.contain),
+                    : Image(image: CachedNetworkImageProvider(url!), fit: BoxFit.contain),
               ),
             ),
             Positioned(
@@ -4625,12 +4626,12 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               ),
               value: _visibility == EventVisibility.private,
               activeThumbColor: AppColors.richGold,
-              onChanged: withToggleSound((v) => setState(() {
+              onChanged: (v) => setState(() {
                 _visibility =
                     v ? EventVisibility.private : EventVisibility.public;
                 // Guest booking is for public events only.
                 if (v) _guestsAllowed = false;
-              })),
+              }),
             ),
             // People without an account may book from the shared link.
             SwitchListTile(
@@ -4650,9 +4651,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               value: _guestsAllowed &&
                   _visibility == EventVisibility.public,
               activeThumbColor: AppColors.richGold,
-              onChanged: withToggleSound(_visibility == EventVisibility.private
+              onChanged: _visibility == EventVisibility.private
                   ? null
-                  : (v) => setState(() => _guestsAllowed = v)),
+                  : (v) => setState(() => _guestsAllowed = v),
             ),
             const SizedBox(height: 8),
             // Who may see WHO IS COMING - a separate decision from who may see
@@ -4731,7 +4732,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               ),
               value: _isUnlimited,
               activeThumbColor: AppColors.richGold,
-              onChanged: withToggleSound((v) => setState(() => _isUnlimited = v)),
+              onChanged: (v) => setState(() => _isUnlimited = v),
             ),
             if (!_isUnlimited)
               TextFormField(
@@ -4772,7 +4773,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 ),
                 value: _isFree,
                 activeThumbColor: AppColors.richGold,
-                onChanged: withToggleSound((v) => setState(() => _isFree = v)),
+                onChanged: (v) => setState(() => _isFree = v),
               ),
             if (!_isFree) ...[
               const SizedBox(height: 8),

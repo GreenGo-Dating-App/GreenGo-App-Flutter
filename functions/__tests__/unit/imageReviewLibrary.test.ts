@@ -27,12 +27,25 @@ const savedRev = { ...rev.imageReviewDeps };
 beforeEach(() => {
   db = new PathFakeFirestore();
   now = T0;
-  calls = { appeal: [], decision: [], restore: [], alert: [], notify: [] };
+  calls = { appeal: [], decision: [], restore: [], alert: [], notify: [], renditions: [], dropRenditions: [] };
   Object.assign(lib.mediaLibraryDeps, {
     db: () => db as any,
     now: () => now,
     ensureToken: async (_b: string, _p: string, meta: any) => lib.firstToken(meta) ?? 'generated-token',
     readDims: async () => ({ width: 800, height: 600 }),
+    makeRenditions: async (_b: string, objectPath: string, uid: string) => {
+      calls.renditions.push(objectPath);
+      const id = lib.libraryItemId(objectPath);
+      return {
+        thumbUrl: lib.downloadUrlFor(BUCKET, lib.renditionPath(uid, id, 'thumb'), 'tt'),
+        mediumUrl: lib.downloadUrlFor(BUCKET, lib.renditionPath(uid, id, 'medium'), 'tm'),
+        mediumWidth: 1280,
+        mediumHeight: 960,
+      };
+    },
+    deleteRenditions: async (_b: string, uid: string, itemId: string) => {
+      calls.dropRenditions.push(`${uid}/${itemId}`);
+    },
   });
   Object.assign(rev.imageReviewDeps, {
     db: () => db as any,
@@ -116,6 +129,36 @@ describe('verdict -> library item (server-written)', () => {
     expect(d.url).toBe(lib.downloadUrlFor(BUCKET, PHOTO, 'tok-1'));
     expect(d).toMatchObject({ path: PHOTO, width: 800, height: 600, hasFace: true, usage: 'profile', generation: '5' });
     expect(d.approvedAt.toMillis()).toBe(T0);
+    // Grid thumbnail + reduced copy for reuse, never the full original.
+    expect(d.thumbUrl).toContain(encodeURIComponent(`library_renditions/${UID}/${ITEM}_thumb.jpg`));
+    expect(d.mediumUrl).toContain(encodeURIComponent(`library_renditions/${UID}/${ITEM}_1280.jpg`));
+    expect(d).toMatchObject({ mediumWidth: 1280, mediumHeight: 960 });
+  });
+  test('APPROVED without renditions (resize failed): still approved, original only', async () => {
+    lib.mediaLibraryDeps.makeRenditions = async () => { throw new Error('sharp failed'); };
+    await lib.recordLibraryVerdict({
+      bucket: BUCKET, objectPath: PHOTO, generation: 5, contentType: 'image/jpeg',
+      meta: { userId: UID, visibility: 'public', firebaseStorageDownloadTokens: 'tok-1' },
+      status: 'approved', reasons: [], hasFace: true,
+    });
+    expect(item()).toMatchObject({ status: 'approved', thumbUrl: null, mediumUrl: null });
+  });
+  test('approved then held: its smaller copies are deleted too', async () => {
+    await lib.recordLibraryVerdict({
+      bucket: BUCKET, objectPath: PHOTO, generation: 5, contentType: 'image/jpeg',
+      meta: { userId: UID, visibility: 'public', firebaseStorageDownloadTokens: 'tok-1' },
+      status: 'approved', reasons: [], hasFace: true,
+    });
+    await hold();
+    expect(item()).toMatchObject({ status: 'held', thumbUrl: null, mediumUrl: null });
+    expect(calls.dropRenditions).toEqual([`${UID}/${ITEM}`]);
+  });
+  test('rendition paths map back to the original upload', () => {
+    expect(lib.renditionPath(UID, ITEM, 'thumb')).toBe(`library_renditions/${UID}/${ITEM}_thumb.jpg`);
+    expect(lib.originalFromRendition(lib.renditionPath(UID, ITEM, 'medium'))).toBe(PHOTO);
+    expect(lib.originalFromRendition(lib.renditionPath(UID, ITEM, 'thumb'))).toBe(PHOTO);
+    expect(lib.originalFromRendition(PHOTO)).toBeNull();
+    expect(lib.originalFromRendition(`library_renditions/${UID}/x.png`)).toBeNull();
   });
   test('REJECTED / held: no URL, not pickable (no approvedAt), reviewable', async () => {
     await hold();
@@ -144,6 +187,7 @@ describe('verdict -> library item (server-written)', () => {
     expect(await lib.handleLibraryObjectDeleted({ objectPath: PHOTO, generation: 4, meta: {} })).toBe('kept');
     expect(await lib.handleLibraryObjectDeleted({ objectPath: PHOTO, generation: 5, meta: {} })).toBe('deleted');
     expect(item()).toBeUndefined();
+    expect(calls.dropRenditions).toEqual([`${UID}/${ITEM}`]);
     await hold();
     expect(await lib.handleLibraryObjectDeleted({ objectPath: PHOTO, generation: 7, meta: {} })).toBe('kept');
     expect(item().status).toBe('held');
@@ -300,5 +344,22 @@ describe('main-photo face rule uses the library item', () => {
     expect(detected).toBe(0);
     expect(await resolve(lib.downloadUrlFor(BUCKET, 'communities/u/c.jpg', 't'))).toBe('face');
     expect(detected).toBe(1);
+  });
+  test('a reduced library copy has the face status of its original', async () => {
+    const chatPath = 'chat_images/match1/y.jpg';
+    const seen: string[] = [];
+    const resolve = makeStatusResolver(UID, {
+      defaultBucket: () => BUCKET,
+      readVerdict: async () => null,
+      detectFaces: async () => 1,
+      saveFaceResult: async () => undefined,
+      readProfile: async () => null,
+      updatePhotoUrls: async () => false,
+      notify: async () => undefined,
+      readLibraryFace: async (_u, p) => { seen.push(p); return p === chatPath ? false : null; },
+    });
+    const medium = lib.renditionPath(UID, lib.libraryItemId(chatPath), 'medium');
+    expect(await resolve(lib.downloadUrlFor(BUCKET, medium, 't'))).toBe('no_face');
+    expect(seen).toEqual([chatPath]);
   });
 });

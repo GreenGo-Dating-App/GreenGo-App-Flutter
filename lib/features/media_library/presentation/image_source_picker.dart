@@ -22,13 +22,13 @@ class PickedImage {
 
   bool get isLibrary => libraryItem != null;
 
-  /// Reused picture: its approved download URL (no upload, no re-moderation).
-  String? get url => libraryItem?.url;
+  /// Reused picture: its reduced approved copy (no upload, no re-moderation).
+  String? get url => libraryItem?.reuseUrl;
 
   /// Pixel size of a reused library picture when recorded, else null.
   Size? get librarySize {
-    final w = libraryItem?.width;
-    final h = libraryItem?.height;
+    final w = libraryItem?.reuseWidth;
+    final h = libraryItem?.reuseHeight;
     return (w != null && h != null && w > 0 && h > 0)
         ? Size(w.toDouble(), h.toDouble())
         : null;

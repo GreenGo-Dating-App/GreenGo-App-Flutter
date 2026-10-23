@@ -10,7 +10,6 @@ import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/match_preferences.dart';
 import '../../../../core/utils/country_names_l10n.dart';
 import '../discovery_l10n.dart';
-import '../../../../core/services/sound_feedback.dart';
 
 /// Discovery Preferences Screen
 ///
@@ -827,11 +826,11 @@ class _DiscoveryPreferencesScreenState
                   ),
                   value: _preferences.onlyRecentlyActive,
                   activeThumbColor: AppColors.richGold,
-                  onChanged: withToggleSound((bool value) {
+                  onChanged: (bool value) {
                     _updatePreferences(
                       _preferences.copyWith(onlyRecentlyActive: value),
                     );
-                  }),
+                  },
                 ),
                 SwitchListTile(
                   title: Text(
@@ -850,11 +849,11 @@ class _DiscoveryPreferencesScreenState
                   ),
                   value: _preferences.onlyOnlineNow,
                   activeThumbColor: AppColors.richGold,
-                  onChanged: withToggleSound((bool value) {
+                  onChanged: (bool value) {
                     _updatePreferences(
                       _preferences.copyWith(onlyOnlineNow: value),
                     );
-                  }),
+                  },
                 ),
                 const Divider(color: AppColors.divider),
                 SwitchListTile(
@@ -875,11 +874,11 @@ class _DiscoveryPreferencesScreenState
                   ),
                   value: _preferences.showMyNetwork,
                   activeThumbColor: AppColors.richGold,
-                  onChanged: withToggleSound((bool value) {
+                  onChanged: (bool value) {
                     _updatePreferences(
                       _preferences.copyWith(showMyNetwork: value),
                     );
-                  }),
+                  },
                 ),
                 const Divider(color: AppColors.divider),
                 SwitchListTile(
@@ -900,11 +899,11 @@ class _DiscoveryPreferencesScreenState
                   ),
                   value: _preferences.randomMode,
                   activeThumbColor: AppColors.richGold,
-                  onChanged: withToggleSound((bool value) {
+                  onChanged: (bool value) {
                     _updatePreferences(
                       _preferences.copyWith(randomMode: value),
                     );
-                  }),
+                  },
                 ),
                 const Divider(color: AppColors.divider),
                 SwitchListTile(
@@ -925,11 +924,11 @@ class _DiscoveryPreferencesScreenState
                   ),
                   value: _preferences.showSupportUser,
                   activeThumbColor: AppColors.richGold,
-                  onChanged: withToggleSound((bool value) {
+                  onChanged: (bool value) {
                     _updatePreferences(
                       _preferences.copyWith(showSupportUser: value),
                     );
-                  }),
+                  },
                 ),
                 const Divider(color: AppColors.divider),
                 SwitchListTile(
@@ -950,11 +949,11 @@ class _DiscoveryPreferencesScreenState
                   ),
                   value: _preferences.businessOnly,
                   activeThumbColor: AppColors.richGold,
-                  onChanged: withToggleSound((bool value) {
+                  onChanged: (bool value) {
                     _updatePreferences(
                       _preferences.copyWith(businessOnly: value),
                     );
-                  }),
+                  },
                 ),
               ],
             ),

@@ -134,8 +134,11 @@ class _UserFollowButtonState extends State<UserFollowButton> {
 
   Future<void> _onTap() async {
     HapticFeedback.lightImpact();
-    AppSoundService().play(AppSound.follow);
     final ok = await _controller.toggle();
+    if (ok) {
+      AppSoundService()
+          .play(_controller.following ? AppSound.follow : AppSound.toggleOff);
+    }
     if (ok || !mounted || _controller.lastError == null) return;
     final l10n = AppLocalizations.of(context)!;
     final blocked = _controller.lastError is FollowBlockedException;

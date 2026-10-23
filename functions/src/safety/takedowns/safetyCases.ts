@@ -56,6 +56,7 @@ import type { DecisionEffect } from '../moderationEffects';
 import { computeImageHashes, ImageHashes } from './perceptualHash';
 import { addBlockedHash, setCaseHashesActive } from './hashLists';
 import { ensureLegalHold, copyIntoHold } from './legalHold';
+import { originalFromRendition } from '../mediaLibrary';
 
 const db = () => admin.firestore();
 const TS = admin.firestore.Timestamp;
@@ -99,6 +100,7 @@ export interface Requester {
 const STORAGE_PREFIXES = [
   'profiles/', 'communities/', 'chat_images/', 'group_media/', 'storefronts/', 'video_profiles/',
   'voice_intros/', 'chat_videos/', 'support_attachments/', 'users/',
+  'library_renditions/',
 ];
 const MESSAGE_PATH = /^(conversations|groups|communities|events)\/[^/]+\/messages\/[^/]+$/;
 const APP_HOSTS = /(^|\.)greengochat\.com$|^greengo-chat\.web\.app$|^greengo-chat\.firebaseapp\.com$/;
@@ -212,6 +214,18 @@ async function holdStorageObject(caseId: string, kind: SafetyKind, path: string)
   return { type: 'storage', path, holdPath, hashes, contentType, ownerUid };
 }
 
+/**
+ * Holds [path] and, when it is a "My pictures" reduced copy, the original
+ * upload too (moving the original also drops its library item and every
+ * other copy, mediaLibrary.handleLibraryObjectDeleted).
+ */
+async function holdWithOriginal(caseId: string, kind: SafetyKind, path: string): Promise<HiddenItem[]> {
+  const out = [await holdStorageObject(caseId, kind, path)];
+  const original = originalFromRendition(path);
+  if (original && !original.includes('..')) out.push(await holdStorageObject(caseId, kind, original));
+  return out;
+}
+
 /** Removes every URL that points at [path] from the uid's profile photo arrays. */
 async function unlinkFromProfile(uid: string, paths: Set<string>): Promise<HiddenItem[]> {
   const out: HiddenItem[] = [];
@@ -251,7 +265,7 @@ async function hideMessage(caseId: string, kind: SafetyKind, path: string): Prom
   }
   for (const u of urls) {
     const p = storagePathFromUrl(u);
-    if (p && !p.includes('..')) out.push(await holdStorageObject(caseId, kind, p));
+    if (p && !p.includes('..')) out.push(...await holdWithOriginal(caseId, kind, p));
   }
   const evidenceRef = db().collection(SAFETY_CASES).doc(caseId).collection('evidence').doc();
   const original: Record<string, unknown> = {};
@@ -283,8 +297,7 @@ export async function hideContent(caseId: string, kind: SafetyKind, refs: Conten
   for (const r of refs) {
     try {
       if (r.type === 'storage') {
-        const item = await holdStorageObject(caseId, kind, r.value);
-        hidden.push(item);
+        hidden.push(...await holdWithOriginal(caseId, kind, r.value));
         const m = r.value.match(/^profiles\/([^/]+)\//);
         if (m) hidden.push(...await unlinkFromProfile(m[1], new Set([r.value])));
       } else if (r.type === 'profile') {
@@ -295,7 +308,7 @@ export async function hideContent(caseId: string, kind: SafetyKind, refs: Conten
           const p = typeof u === 'string' ? storagePathFromUrl(u) : null;
           if (p && !p.includes('..')) paths.add(p);
         }
-        for (const p of paths) hidden.push(await holdStorageObject(caseId, kind, p));
+        for (const p of paths) hidden.push(...await holdWithOriginal(caseId, kind, p));
         hidden.push(...await unlinkFromProfile(r.value, paths));
         if (paths.size === 0) hidden.push({ type: 'unresolved', value: `profile:${r.value}`, reason: 'no_photos' });
       } else if (r.type === 'message') {

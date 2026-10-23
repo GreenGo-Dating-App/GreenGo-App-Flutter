@@ -340,7 +340,6 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     ChatMessageDeleted event,
     Emitter<ChatState> emit,
   ) async {
-    AppSoundService().play(AppSound.messageDeleted);
     if (_conversationId == null) return;
 
     final result = await deleteMessage(
@@ -355,6 +354,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         emit(ChatError('Failed to delete message: ${failure.message}'));
       },
       (_) {
+        AppSoundService().play(AppSound.messageDeleted);
         emit(const ChatMessageActionSuccess('Message deleted'));
       },
     );
@@ -364,7 +364,6 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     ChatMessageDeletedForMe event,
     Emitter<ChatState> emit,
   ) async {
-    AppSoundService().play(AppSound.messageDeleted);
     if (_conversationId == null || _currentUserId == null) return;
 
     final result = await deleteMessageForMe(
@@ -380,6 +379,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         emit(ChatError('Failed to delete message: ${failure.message}'));
       },
       (_) {
+        AppSoundService().play(AppSound.messageDeleted);
         emit(const ChatMessageActionSuccess('Message deleted for you'));
       },
     );
@@ -389,7 +389,6 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     ChatMessageDeletedForBoth event,
     Emitter<ChatState> emit,
   ) async {
-    AppSoundService().play(AppSound.messageDeleted);
     if (_conversationId == null || _currentUserId == null) return;
 
     final result = await deleteMessageForBoth(

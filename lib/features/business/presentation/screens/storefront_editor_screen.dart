@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
@@ -32,7 +33,6 @@ import '../../../../core/widgets/cover_frames.dart';
 import '../../../../core/widgets/cover_image_size_hint.dart';
 import '../../../../core/widgets/cover_positioner.dart';
 import '../../../../core/widgets/focal_cover_image.dart';
-import '../../../../core/services/sound_feedback.dart';
 
 /// Storefront editor — lets a business account owner curate the public
 /// storefront that visitors see in [BusinessStorefrontScreen].
@@ -201,7 +201,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
       );
       if (picked == null || !mounted) return;
       final provider = picked.isLibrary
-          ? NetworkImage(picked.url!)
+          ? CachedNetworkImageProvider(picked.url!)
           : WebMedia.imageProviderFor(picked.file!);
       final l10n = AppLocalizations.of(context)!;
       if (target == _UploadTarget.logo) {
@@ -273,7 +273,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
     final l10n = AppLocalizations.of(context)!;
     final focus = await showCoverPositioner(
       context,
-      image: NetworkImage(url),
+      image: CachedNetworkImageProvider(url),
       initial: _coverFocus,
       frames: CoverFrames.storefrontFeatured(l10n),
       title: _businessNameController.text.trim(),
@@ -1034,8 +1034,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
                     ),
                   ),
                   child: hasLogo
-                      ? Image.network(
-                          url,
+                      ? Image(image: CachedNetworkImageProvider(url),
                           fit: BoxFit.cover,
                           errorBuilder: (_, __, ___) => const Icon(
                               Icons.storefront,
@@ -1097,7 +1096,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             if (hasCover)
               FocalCoverImage(
                 key: const Key('storefront_featured_image'),
-                image: NetworkImage(_coverImageUrl!),
+                image: CachedNetworkImageProvider(_coverImageUrl!),
                 focus: _coverFocus,
                 errorBuilder: (_, __, ___) => _featuredPlaceholder(l10n),
               )
@@ -1203,8 +1202,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
                   ClipRRect(
                     borderRadius:
                         BorderRadius.circular(AppDimensions.radiusM),
-                    child: Image.network(
-                      e.value,
+                    child: Image(image: CachedNetworkImageProvider(e.value),
                       width: 100,
                       height: 100,
                       fit: BoxFit.cover,
@@ -1339,7 +1337,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
           Switch(
             value: !day.isClosed,
             activeColor: AppColors.richGold,
-            onChanged: withToggleSound((open) => _toggleClosed(index, !open)),
+            onChanged: (open) => _toggleClosed(index, !open),
           ),
         ],
       ),

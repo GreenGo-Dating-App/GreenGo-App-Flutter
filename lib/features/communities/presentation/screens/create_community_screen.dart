@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +33,6 @@ import '../../../../core/widgets/cover_positioner.dart';
 import '../../../../core/widgets/focal_cover_image.dart';
 import '../widgets/community_text_warning.dart';
 import '../../../../core/services/app_sound_service.dart';
-import '../../../../core/services/sound_feedback.dart';
 
 /// Create Community Screen
 ///
@@ -92,7 +92,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
 
   ImageProvider? get _coverProvider => _coverImage != null
       ? WebMedia.imageProviderFor(_coverImage!)
-      : (_coverLibraryUrl != null ? NetworkImage(_coverLibraryUrl!) : null);
+      : (_coverLibraryUrl != null ? CachedNetworkImageProvider(_coverLibraryUrl!) : null);
   bool _uploadingCover = false;
   // The URL of [_coverImage] once uploaded, so a retry never uploads it twice.
   XFile? _uploadedCoverFor;
@@ -247,6 +247,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
             return;
           }
           if (state is CommunityCreated) {
+            AppSoundService().play(AppSound.communityJoin);
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
                 content: Text(
@@ -575,8 +576,8 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                   ),
                   Switch(
                     value: _isPublic,
-                    onChanged: withToggleSound((value) =>
-                        setState(() => _isPublic = value)),
+                    onChanged: (value) =>
+                        setState(() => _isPublic = value),
                     activeThumbColor: AppColors.richGold,
                   ),
                 ],
@@ -1105,7 +1106,6 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
           ),
         );
 
-    AppSoundService().play(AppSound.communityJoin);
     HapticFeedback.heavyImpact();
   }
 

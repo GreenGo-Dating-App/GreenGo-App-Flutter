@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'dart:io';
 import 'dart:ui';
 
@@ -427,7 +428,7 @@ class _PhotoCard extends StatelessWidget {
             image: DecorationImage(
               image: _isLocalFile
                   ? FileImage(File(photoUrl))
-                  : NetworkImage(photoUrl) as ImageProvider,
+                  : CachedNetworkImageProvider(photoUrl) as ImageProvider,
               fit: BoxFit.cover,
             ),
           ),

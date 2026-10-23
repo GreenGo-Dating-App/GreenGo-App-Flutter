@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'dart:async';
 import 'dart:io';
 
@@ -2995,7 +2996,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                       radius: 28,
                       backgroundColor: AppColors.backgroundDark,
                       backgroundImage: recipientPhotoUrl != null
-                          ? NetworkImage(recipientPhotoUrl)
+                          ? CachedNetworkImageProvider(recipientPhotoUrl)
                           : null,
                       child: recipientPhotoUrl == null
                           ? const Icon(Icons.person, color: AppColors.textTertiary, size: 28)

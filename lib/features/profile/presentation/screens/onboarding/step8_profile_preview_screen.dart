@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -111,8 +112,7 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                                                   );
                                                 },
                                               )
-                                            : Image.network(
-                                                photoUrl,
+                                            : Image(image: CachedNetworkImageProvider(photoUrl),
                                                 width: 150,
                                                 height: 200,
                                                 fit: BoxFit.cover,

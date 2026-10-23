@@ -11,7 +11,6 @@ import '../../../../generated/app_localizations.dart';
 import '../../data/services/follow_service.dart';
 import '../../data/services/followers_audience_service.dart';
 import '../widgets/people_search.dart';
-import '../../../../core/services/sound_feedback.dart';
 
 /// Business Followers screen.
 ///
@@ -360,7 +359,7 @@ class _FollowersScreenState extends State<FollowersScreen> {
           activeColor: AppColors.richGold,
           value: _onlyFollowers,
           title: Text(l10n.followersOnlyToggle, style: const TextStyle(color: AppColors.textPrimary)),
-          onChanged: withToggleSound((v) => setState(() => _onlyFollowers = v)),
+          onChanged: (v) => setState(() => _onlyFollowers = v),
         ),
         if (aud.capped)
           Padding(

@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'dart:async';
 import '../../../media_library/presentation/image_source_picker.dart';
 import '../../../../core/widgets/listing_wizard.dart';
@@ -44,7 +45,6 @@ import '../../../../core/media/cover_focus.dart';
 import '../../../../core/widgets/cover_frames.dart';
 import '../../../../core/widgets/cover_image_size_hint.dart';
 import '../../../../core/widgets/cover_positioner.dart';
-import '../../../../core/services/sound_feedback.dart';
 
 /// Languages a host can offer (same names profiles store).
 // i18n-ignore: stored values; displayed via ExperienceL10n.language
@@ -423,7 +423,7 @@ class _EditorFormState extends State<_EditorForm> {
   ImageProvider? get _mainProvider => _mainPhoto != null
       ? WebMedia.imageProviderFor(_mainPhoto!)
       : ((_existingMainUrl ?? '').isNotEmpty
-          ? NetworkImage(_existingMainUrl!)
+          ? CachedNetworkImageProvider(_existingMainUrl!)
           : null);
 
   /// Positioning step: drag / zoom the main photo in the real frame with a
@@ -1393,7 +1393,7 @@ class _EditorFormState extends State<_EditorForm> {
         title: Text(l.wzRecurringToggle, style: _text),
         subtitle: Text(l.wzRecurringInfo, style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
         value: _useRecurring,
-        onChanged: withToggleSound((v) => setState(() => _useRecurring = v)),
+        onChanged: (v) => setState(() => _useRecurring = v),
       ),
       if (_useRecurring) ...[
         const SizedBox(height: 8),
@@ -1790,7 +1790,7 @@ class _EditorFormState extends State<_EditorForm> {
                       image: WebMedia.imageProviderFor(file), fit: BoxFit.cover)
                   : (has
                       ? DecorationImage(
-                          image: NetworkImage(url!), fit: BoxFit.cover)
+                          image: CachedNetworkImageProvider(url!), fit: BoxFit.cover)
                       : null),
               border: Border.all(
                   color: main
@@ -1969,7 +1969,7 @@ class _EditorFormState extends State<_EditorForm> {
         ),
         value: _guestsAllowed,
         activeThumbColor: AppColors.richGold,
-        onChanged: withToggleSound((v) => setState(() => _guestsAllowed = v)),
+        onChanged: (v) => setState(() => _guestsAllowed = v),
       );
 
   Widget _pricingSection(AppLocalizations l) {
@@ -1998,7 +1998,7 @@ class _EditorFormState extends State<_EditorForm> {
         activeColor: AppColors.richGold,
         title: Text(l.uexpIsFree, style: _text),
         value: _isFree,
-        onChanged: withToggleSound((v) => setState(() => _isFree = v)),
+        onChanged: (v) => setState(() => _isFree = v),
       ),
       if (!_isFree) ...[
         // ONE price field: per person (default) or one price for the whole
@@ -2073,7 +2073,7 @@ class _EditorFormState extends State<_EditorForm> {
           subtitle: Text(l.mtWeekendPriceInfo,
               style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
           value: _weekendOn,
-          onChanged: withToggleSound((v) => setState(() => _weekendOn = v)),
+          onChanged: (v) => setState(() => _weekendOn = v),
         ),
         if (_weekendOn) ...[
           TextField(

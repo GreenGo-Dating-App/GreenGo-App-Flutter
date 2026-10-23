@@ -1416,7 +1416,6 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       return;
     }
     _presenceService.recordActivity();
-    if (index != _currentIndex) AppSoundService().play(AppSound.tabSwitch);
     setState(() {
       _currentIndex = index;
     });

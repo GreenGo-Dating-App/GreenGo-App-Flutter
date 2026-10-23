@@ -29,7 +29,6 @@ class _SoundEffectsRowState extends State<SoundEffectsRow> {
   Future<void> _set(bool value) async {
     setState(() => _enabled = value);
     await AppSoundService().setSoundEnabled(value);
-    if (value) AppSoundService().play(AppSound.toggleOn);
   }
 
   @override

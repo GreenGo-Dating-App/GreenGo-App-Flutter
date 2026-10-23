@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -451,7 +452,7 @@ class _VerificationPhotoCard extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppDimensions.radiusL),
             border: Border.all(color: AppColors.successGreen, width: 3),
-            image: DecorationImage(image: NetworkImage(photoUrl), fit: BoxFit.cover),
+            image: DecorationImage(image: CachedNetworkImageProvider(photoUrl), fit: BoxFit.cover),
           ),
           child: Stack(
             children: [

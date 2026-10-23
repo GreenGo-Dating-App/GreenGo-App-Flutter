@@ -12,6 +12,9 @@ class MediaLibraryItem {
     required this.status,
     this.url,
     this.thumbUrl,
+    this.mediumUrl,
+    this.mediumWidth,
+    this.mediumHeight,
     this.width,
     this.height,
     this.hasFace,
@@ -31,6 +34,9 @@ class MediaLibraryItem {
       status: (d['status'] as String?) ?? 'held',
       url: d['url'] as String?,
       thumbUrl: d['thumbUrl'] as String?,
+      mediumUrl: d['mediumUrl'] as String?,
+      mediumWidth: (d['mediumWidth'] as num?)?.toInt(),
+      mediumHeight: (d['mediumHeight'] as num?)?.toInt(),
       width: (d['width'] as num?)?.toInt(),
       height: (d['height'] as num?)?.toInt(),
       hasFace: d['hasFace'] as bool?,
@@ -52,6 +58,12 @@ class MediaLibraryItem {
   final String status;
   final String? url;
   final String? thumbUrl;
+
+  /// Reduced copy (longest side 1280 px) the app reuses instead of the
+  /// full-size original; null for pictures approved before it existed.
+  final String? mediumUrl;
+  final int? mediumWidth;
+  final int? mediumHeight;
   final int? width;
   final int? height;
   final bool? hasFace;
@@ -71,8 +83,20 @@ class MediaLibraryItem {
   bool get canAskForReview =>
       !isApproved && reviewable && !isReviewPending;
 
-  /// Grid thumbnail: the stored thumb, else the image itself.
-  String? get displayUrl => (thumbUrl ?? '').isNotEmpty ? thumbUrl : url;
+  /// Grid thumbnail: the stored thumb, else the reduced copy, else the image.
+  String? get displayUrl => (thumbUrl ?? '').isNotEmpty
+      ? thumbUrl
+      : ((mediumUrl ?? '').isNotEmpty ? mediumUrl : url);
+
+  bool get _hasMedium => (mediumUrl ?? '').isNotEmpty;
+
+  /// What a surface stores when it reuses this picture: the reduced copy
+  /// when there is one, else the original.
+  String? get reuseUrl => _hasMedium ? mediumUrl : url;
+
+  /// Pixel size of [reuseUrl], when known.
+  int? get reuseWidth => _hasMedium ? mediumWidth : width;
+  int? get reuseHeight => _hasMedium ? mediumHeight : height;
 
   static DateTime? _date(Object? v) {
     if (v is Timestamp) return v.toDate();

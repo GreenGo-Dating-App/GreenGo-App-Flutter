@@ -138,8 +138,6 @@ class _VoiceRecordSendButtonState extends State<VoiceRecordSendButton> {
   Future<void> _stop({required bool cancel}) async {
     if (!_isRecording) return;
     _ticker?.cancel();
-    AppSoundService().play(
-        cancel ? AppSound.messageDeleted : AppSound.videoRecordStop);
     _ticker = null;
     final elapsed =
         _startedAt == null ? Duration.zero : DateTime.now().difference(_startedAt!);
@@ -152,6 +150,9 @@ class _VoiceRecordSendButtonState extends State<VoiceRecordSendButton> {
     if (mounted) setState(() => _isRecording = false);
 
     final shouldCancel = cancel || _cancelZone;
+    AppSoundService().play(shouldCancel || path == null
+        ? AppSound.messageDeleted
+        : AppSound.videoRecordStop);
     if (shouldCancel || path == null) {
       _deleteFile(path ?? _path);
       return;

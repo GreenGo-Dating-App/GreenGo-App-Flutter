@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
@@ -111,7 +112,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
   /// enforces the same rule server-side on the profile write.
   void _addFromLibrary(MediaLibraryItem item, {required bool isPrivate}) {
     final l10n = AppLocalizations.of(context)!;
-    final url = item.url;
+    final url = item.reuseUrl;
     if (url == null) return;
     final target = isPrivate ? _privatePhotoUrls : _photoUrls;
     if (target.contains(url)) {
@@ -599,7 +600,7 @@ class _PhotoCard extends StatelessWidget {
                 width: isPrimary ? 3 : 1,
               ),
               image: DecorationImage(
-                image: NetworkImage(photoUrl),
+                image: CachedNetworkImageProvider(photoUrl),
                 fit: BoxFit.cover,
               ),
             ),

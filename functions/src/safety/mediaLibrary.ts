@@ -97,6 +97,42 @@ export function downloadUrlFor(bucket: string, objectPath: string, token: string
   return `https://firebasestorage.googleapis.com/v0/b/${bucket}/o/${encodeURIComponent(objectPath)}?alt=media&token=${token}`;
 }
 
+/**
+ * Smaller copies of an approved picture, written by the server only (no
+ * client may write `library_renditions/`, storage.rules): a grid thumbnail
+ * and a reduced copy the app reuses instead of the full-size original.
+ *   library_renditions/{uid}/{itemId}_thumb.jpg   longest side <= THUMB_PX
+ *   library_renditions/{uid}/{itemId}_1280.jpg    longest side <= MEDIUM_PX
+ */
+export const RENDITIONS = 'library_renditions';
+export const THUMB_PX = 320;
+export const MEDIUM_PX = 1280;
+export type RenditionKind = 'thumb' | 'medium';
+
+/** Storage path of one rendition. Pure. */
+export function renditionPath(uid: string, itemId: string, kind: RenditionKind): string {
+  return `${RENDITIONS}/${uid}/${itemId}_${kind === 'thumb' ? 'thumb' : MEDIUM_PX}.jpg`;
+}
+
+/**
+ * Original object path of a rendition path, or null when [path] is not a
+ * rendition. Used where a reused picture must be traced back to its upload
+ * (main-photo face rule). Pure.
+ */
+export function originalFromRendition(path: string): string | null {
+  const prefix = `${RENDITIONS}/`;
+  if (!path.startsWith(prefix)) return null;
+  const m = /^[^/]+\/(.+)_(?:thumb|1280)\.jpg$/.exec(path.slice(prefix.length));
+  return m ? m[1].replace(/~/g, '/') : null;
+}
+
+export interface Renditions {
+  thumbUrl: string;
+  mediumUrl: string;
+  mediumWidth: number;
+  mediumHeight: number;
+}
+
 /** First download token in a metadata map, or null. Pure. */
 export function firstToken(meta: Record<string, unknown> | null | undefined): string | null {
   const raw = meta?.firebaseStorageDownloadTokens;
@@ -130,6 +166,42 @@ export const mediaLibraryDeps = {
     } catch {
       return null;
     }
+  },
+  /** Writes the thumbnail + reduced copy of an approved picture. */
+  makeRenditions: async (bucket: string, objectPath: string, uid: string): Promise<Renditions> => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const sharp = require('sharp');
+    const b = admin.storage().bucket(bucket);
+    const [buf] = await b.file(objectPath).download();
+    const itemId = libraryItemId(objectPath);
+    const write = async (kind: RenditionKind, px: number, quality: number) => {
+      const { data, info } = await sharp(buf, { failOn: 'none' })
+        .rotate() // apply EXIF orientation before the EXIF is dropped
+        .resize({ width: px, height: px, fit: 'inside', withoutEnlargement: true })
+        .jpeg({ quality, mozjpeg: true })
+        .toBuffer({ resolveWithObject: true });
+      const path = renditionPath(uid, itemId, kind);
+      const token = randomUUID();
+      await b.file(path).save(data, {
+        resumable: false,
+        contentType: 'image/jpeg',
+        metadata: {
+          // Content is immutable per path + token: let devices cache it.
+          cacheControl: 'public, max-age=31536000',
+          metadata: { firebaseStorageDownloadTokens: token, source: objectPath },
+        },
+      });
+      return { url: downloadUrlFor(bucket, path, token), width: info.width as number, height: info.height as number };
+    };
+    const thumb = await write('thumb', THUMB_PX, 72);
+    const medium = await write('medium', MEDIUM_PX, 82);
+    return { thumbUrl: thumb.url, mediumUrl: medium.url, mediumWidth: medium.width, mediumHeight: medium.height };
+  },
+  /** Removes both renditions of an item (missing files are fine). */
+  deleteRenditions: async (bucket: string, uid: string, itemId: string): Promise<void> => {
+    const b = admin.storage().bucket(bucket);
+    await Promise.all((['thumb', 'medium'] as RenditionKind[]).map((k) =>
+      b.file(renditionPath(uid, itemId, k)).delete({ ignoreNotFound: true })));
   },
 };
 
@@ -188,9 +260,20 @@ export async function recordLibraryVerdict(v: VerdictRecord): Promise<string | n
   if (v.status === 'approved') {
     const token = await mediaLibraryDeps.ensureToken(v.bucket, v.objectPath, v.meta ?? null);
     const dims = await mediaLibraryDeps.readDims(v.bucket, v.objectPath);
+    // Without renditions the app falls back to the original (never blocks
+    // the approval).
+    let r: Renditions | null = null;
+    try {
+      r = await mediaLibraryDeps.makeRenditions(v.bucket, v.objectPath, target.uid);
+    } catch (e) {
+      logError(`[mediaLibrary] renditions failed for ${v.objectPath}`, e);
+    }
     Object.assign(base, {
       url: downloadUrlFor(v.bucket, v.objectPath, token),
-      thumbUrl: null,
+      thumbUrl: r?.thumbUrl ?? null,
+      mediumUrl: r?.mediumUrl ?? null,
+      mediumWidth: r?.mediumWidth ?? null,
+      mediumHeight: r?.mediumHeight ?? null,
       width: dims?.width ?? null,
       height: dims?.height ?? null,
       approvedAt: now,
@@ -199,11 +282,20 @@ export async function recordLibraryVerdict(v: VerdictRecord): Promise<string | n
       heldAt: del(),
     });
   } else {
+    // A held / rejected picture keeps no visible copies either.
+    if (prev?.thumbUrl || prev?.mediumUrl) {
+      try {
+        await mediaLibraryDeps.deleteRenditions(v.bucket, target.uid, libraryItemId(v.objectPath));
+      } catch (e) {
+        logError(`[mediaLibrary] rendition cleanup failed for ${v.objectPath}`, e);
+      }
+    }
     Object.assign(base, {
       // Never a URL for something nobody may see (the owner included: a
       // shareable link to quarantined content would defeat the hold).
       url: null,
       thumbUrl: null,
+      mediumUrl: null,
       approvedAt: del(),
       heldAt: now,
       quarantinePath: v.status === 'held' ? `quarantine/${v.objectPath}` : null,
@@ -339,6 +431,12 @@ export async function handleLibraryObjectDeleted(p: {
   if (!cur) return 'none';
   if (cur.status !== 'approved' || String(cur.generation) !== String(p.generation ?? '')) return 'kept';
   await ref.delete();
+  // The smaller copies must not outlive the original (removal or takedown).
+  try {
+    await mediaLibraryDeps.deleteRenditions(String(cur.bucket || ''), target.uid, libraryItemId(p.objectPath));
+  } catch (e) {
+    logError(`[mediaLibrary] rendition cleanup failed for ${p.objectPath}`, e);
+  }
   return 'deleted';
 }
 

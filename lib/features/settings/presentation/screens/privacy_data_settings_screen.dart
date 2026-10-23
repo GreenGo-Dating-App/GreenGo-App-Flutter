@@ -9,7 +9,6 @@ import '../../../../core/services/consent_recorder.dart';
 import '../../../../core/services/data_export_service.dart';
 import '../../../../core/widgets/reauthenticate_dialog.dart';
 import '../../../../generated/app_localizations.dart';
-import '../../../../core/services/sound_feedback.dart';
 
 /// Privacy & data choices (P2-5): usage analytics / crash reports and
 /// marketing emails; "Download my data" (P3-2, GDPR Art. 15/20, LGPD Art. 18).
@@ -267,7 +266,7 @@ class _PrivacyDataSettingsScreenState extends State<PrivacyDataSettingsScreen> {
                   subtitle: Text(l10n.privacyAnalyticsToggleSubtitle,
                       style: const TextStyle(color: AppColors.textSecondary)),
                   value: _analytics.collectionAllowed,
-                  onChanged: withToggleSound((v) => _analytics.setChoice(granted: v)),
+                  onChanged: (v) => _analytics.setChoice(granted: v),
                 ),
               ),
               const Divider(height: 1),
@@ -279,7 +278,7 @@ class _PrivacyDataSettingsScreenState extends State<PrivacyDataSettingsScreen> {
                 subtitle: Text(l10n.privacyMarketingEmailSubtitle,
                     style: const TextStyle(color: AppColors.textSecondary)),
                 value: _marketingEmail,
-                onChanged: withToggleSound(_savingMarketing ? null : _setMarketing),
+                onChanged: _savingMarketing ? null : _setMarketing,
               ),
               const Divider(height: 1),
               // Terms 15.3: promotion only with the user's permission.
@@ -291,7 +290,7 @@ class _PrivacyDataSettingsScreenState extends State<PrivacyDataSettingsScreen> {
                 subtitle: Text(l10n.promotionalUseSubtitle,
                     style: const TextStyle(color: AppColors.textSecondary)),
                 value: _promotionalUse,
-                onChanged: withToggleSound(_savingPromotional ? null : _setPromotional),
+                onChanged: _savingPromotional ? null : _setPromotional,
               ),
               const Divider(height: 1),
               ListTile(

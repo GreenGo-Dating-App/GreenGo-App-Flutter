@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/ticket_rules.dart';
-import '../../../../core/services/sound_feedback.dart';
 
 /// Event editor, Tickets step (owner rules 2026-10-18), kept apart from the
 /// big editor so it can be widget-tested:
@@ -111,7 +110,7 @@ class AttendeeNamesSwitch extends StatelessWidget {
       ),
       value: value,
       activeThumbColor: AppColors.richGold,
-      onChanged: withToggleSound(onChanged),
+      onChanged: onChanged,
     );
   }
 }

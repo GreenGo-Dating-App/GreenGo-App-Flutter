@@ -70,7 +70,7 @@ import * as admin from 'firebase-admin';
 import vision from '@google-cloud/vision';
 import { logError, logInfo } from '../shared/utils';
 import { lt, notifTextFields } from '../shared/i18n';
-import { libraryHasFace, saveLibraryFace } from './mediaLibrary';
+import { libraryHasFace, originalFromRendition, saveLibraryFace } from './mediaLibrary';
 
 export type FaceStatus = 'face' | 'no_face' | 'unknown';
 
@@ -245,7 +245,10 @@ export function makeStatusResolver(uid: string, ports: FaceRulePorts) {
     const hit = cache.get(url);
     if (hit) return hit;
     let status: FaceStatus = 'unknown';
-    const obj = storageObjectFromUrl(url);
+    const raw = storageObjectFromUrl(url);
+    // A reduced "My pictures" copy has the face status of its original.
+    const original = raw ? originalFromRendition(raw.path) : null;
+    const obj = raw && original ? { ...raw, path: original } : raw;
     if (obj && obj.bucket === ports.defaultBucket() && isFaceCheckablePath(obj.path)) {
       const docId = verdictDocId(obj.path);
       try {

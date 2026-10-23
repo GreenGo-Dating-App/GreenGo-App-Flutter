@@ -354,6 +354,8 @@ export const ACCOUNT_DATA_INVENTORY: InventoryEntry[] = [
     'voice', 'age_verification', 'business_verification', 'communities',
     // Data-subject export ZIPs (P3-2): exports/{uid}/{ts}.zip, default bucket.
     'exports',
+    // "My pictures" thumbnails / reduced copies (safety/mediaLibrary.ts).
+    'library_renditions',
   ].map((p): InventoryEntry => ({ kind: 'storage', prefix: p })),
   // Conversation backups / PDF exports live in the backup bucket(s):
   // backups/{uid}/, exports/{uid}/, {uid}/ and auto/{uid}/.

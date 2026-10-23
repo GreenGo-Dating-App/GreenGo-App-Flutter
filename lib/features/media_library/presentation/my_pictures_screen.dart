@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/constants/app_colors.dart';
@@ -60,8 +61,24 @@ class _MyPicturesScreenState extends State<MyPicturesScreen> {
   void initState() {
     super.initState();
     _scroll.addListener(_onScroll);
+    _showCached();
     _loadMore();
   }
+
+  /// Pictures seen last time, shown until the server page arrives.
+  List<MediaLibraryItem>? _cached;
+
+  Future<void> _showCached() async {
+    final repo = _repo;
+    if (repo is! FirestoreMediaLibraryRepository) return;
+    final page = await repo.cachedFirstPage(
+        approvedOnly: widget.pickMode, limit: widget.pageSize);
+    if (!mounted || page == null || _items.isNotEmpty) return;
+    setState(() => _cached = page.items);
+  }
+
+  List<MediaLibraryItem> get _shown =>
+      _items.isEmpty && _loading && _cached != null ? _cached! : _items;
 
   @override
   void dispose() {
@@ -225,11 +242,12 @@ class _MyPicturesScreenState extends State<MyPicturesScreen> {
   }
 
   Widget _body(AppLocalizations l10n) {
-    if (_items.isEmpty && _loading) {
+    final shown = _shown;
+    if (shown.isEmpty && _loading) {
       return const Center(
           child: CircularProgressIndicator(color: AppColors.richGold));
     }
-    if (_items.isEmpty) {
+    if (shown.isEmpty) {
       return ListView(
         children: [
           const SizedBox(height: 120),
@@ -260,9 +278,9 @@ class _MyPicturesScreenState extends State<MyPicturesScreen> {
         crossAxisSpacing: 8,
         childAspectRatio: 0.78,
       ),
-      itemCount: _items.length + (_hasMore ? 1 : 0),
+      itemCount: shown.length + (_hasMore && !identical(shown, _cached) ? 1 : 0),
       itemBuilder: (context, i) {
-        if (i >= _items.length) {
+        if (i >= shown.length) {
           // Last cell: keeps loading when the grid is shorter than the screen.
           WidgetsBinding.instance.addPostFrameCallback((_) => _loadMore());
           return const Center(
@@ -274,7 +292,7 @@ class _MyPicturesScreenState extends State<MyPicturesScreen> {
             ),
           );
         }
-        return _tile(_items[i], l10n);
+        return _tile(shown[i], l10n);
       },
     );
   }
@@ -289,11 +307,14 @@ class _MyPicturesScreenState extends State<MyPicturesScreen> {
     final image = ClipRRect(
       borderRadius: BorderRadius.circular(10),
       child: visible
-          ? Image.network(
-              item.displayUrl!,
+          ? CachedNetworkImage(
+              imageUrl: item.displayUrl!,
               fit: BoxFit.cover,
-              cacheWidth: 320,
-              errorBuilder: (_, __, ___) => _placeholder(Icons.broken_image_outlined),
+              // Saved on the device: reopening the picker is instant.
+              memCacheWidth: 320,
+              fadeInDuration: const Duration(milliseconds: 120),
+              placeholder: (_, __) => _placeholder(Icons.image_outlined),
+              errorWidget: (_, __, ___) => _placeholder(Icons.broken_image_outlined),
             )
           : _placeholder(Icons.visibility_off_outlined),
     );

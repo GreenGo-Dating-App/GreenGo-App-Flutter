@@ -503,8 +503,8 @@ Future<void> shareLinkText(
     }
   }
   try {
-    AppSoundService().play(AppSound.copy);
     await Clipboard.setData(ClipboardData(text: link));
+    AppSoundService().play(AppSound.copy);
     messenger?.showSnackBar(SnackBar(content: Text(copiedLabel)));
   } catch (e) {
     debugPrint('shareLinkText: clipboard failed: $e');

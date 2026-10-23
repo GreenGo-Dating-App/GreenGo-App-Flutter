@@ -12,7 +12,6 @@ import '../../../coins/domain/entities/order.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../coins/presentation/coin_l10n.dart';
 import '../admin_coin_l10n.dart';
-import '../../../../core/services/sound_feedback.dart';
 
 /// Coin Management Screen
 /// Admin interface for managing coin packages and user balances
@@ -439,7 +438,7 @@ class _PackageEditDialogState extends State<_PackageEditDialog> {
               ),
               value: _isPromotional,
               activeThumbColor: AppColors.warningAmber,
-              onChanged: withToggleSound((value) => setState(() => _isPromotional = value)),
+              onChanged: (value) => setState(() => _isPromotional = value),
             ),
           ],
         ),

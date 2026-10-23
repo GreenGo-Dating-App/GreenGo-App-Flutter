@@ -226,6 +226,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
       body: BlocConsumer<CommunitiesBloc, CommunitiesState>(
         listener: (context, state) {
           if (state is CommunityJoined) {
+            AppSoundService().play(AppSound.communityJoin);
             setState(() => _isMember = true);
             _loadCommunityDetail();
             ScaffoldMessenger.of(context).showSnackBar(
@@ -249,6 +250,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
           } else if (state is CommunitiesError) {
             showUserError(context, state.message);
           } else if (state is CommunityJoinRequested) {
+            AppSoundService().play(AppSound.communityJoin);
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
                 content: Text(
@@ -1524,7 +1526,6 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
           );
     }
 
-    AppSoundService().play(AppSound.communityJoin);
     HapticFeedback.mediumImpact();
   }
 

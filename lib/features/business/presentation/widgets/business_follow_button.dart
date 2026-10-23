@@ -80,14 +80,14 @@ class _BusinessFollowButtonState extends State<BusinessFollowButton> {
     if (_busy) return;
     setState(() => _busy = true);
     HapticFeedback.lightImpact();
-    AppSoundService()
-        .play(currentlyFollowing ? AppSound.toggleOff : AppSound.follow);
     try {
       await _service.toggle(
         businessId: widget.businessId,
         uid: widget.currentUserId,
         currentlyFollowing: currentlyFollowing,
       );
+      AppSoundService()
+          .play(currentlyFollowing ? AppSound.toggleOff : AppSound.follow);
     } catch (_) {
       if (mounted) {
         showUserErrorMessage(

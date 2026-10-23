@@ -74,6 +74,30 @@ class FirestoreMediaLibraryRepository implements MediaLibraryRepository {
     );
   }
 
+  /// The first page as last seen on this device (Firestore's local cache),
+  /// or null when nothing is cached. Lets the screen show pictures at once
+  /// while the server page loads.
+  Future<MediaLibraryPage?> cachedFirstPage({
+    required bool approvedOnly,
+    int limit = 30,
+  }) async {
+    if (_owner.isEmpty) return null;
+    try {
+      final snap = await _items
+          .orderBy(approvedOnly ? 'approvedAt' : 'createdAt', descending: true)
+          .limit(limit)
+          .get(const GetOptions(source: Source.cache));
+      if (snap.docs.isEmpty) return null;
+      final items = snap.docs
+          .map((d) => MediaLibraryItem.fromMap(d.id, d.data()))
+          .where((i) => !approvedOnly || i.isApproved)
+          .toList();
+      return MediaLibraryPage(items, null, hasMore: false);
+    } catch (_) {
+      return null;
+    }
+  }
+
   @override
   Future<void> remove(String itemId) => _items.doc(itemId).delete();
 
