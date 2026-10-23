@@ -86,6 +86,9 @@ The test project uses the project-level roles without a condition.
 
   ```bash
   bash tools/test_env/get_admin_2fa_code.sh <email>
+- Blocking auth functions: the test project uses Identity Platform (needed to switch on e-mail sign-in by API), so a deploy of `logAccessOnSignUp` / `logAccessOnSignIn` REGISTERS them as blocking functions there. Cold starts of the big bundle exceed the 7 s limit and sign-in fails with "Cloud function deadline exceeded (auth/internal-error)". Production has none registered (plain Firebase Auth), so unregister them after such a deploy:
+  `curl -X PATCH "https://identitytoolkit.googleapis.com/admin/v2/projects/greengo-chat-test/config?updateMask=blockingFunctions" -H "Authorization: Bearer $(gcloud auth print-access-token)" -H "x-goog-user-project: greengo-chat-test" -H "Content-Type: application/json" -d '{"blockingFunctions":{}}'`
+  Note: for the same reason those two access-log functions never run in production.
   ```
 
 ## Production rollout (NOT done; needs the owner's OK)
