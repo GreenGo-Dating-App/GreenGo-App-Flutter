@@ -47,6 +47,12 @@ import {
 } from '../shared/aiConsent';
 import { effectiveTier } from '../shared/effectiveTier';
 import { aiChatHelpersEnabled, translateCharsDailyLimit } from '../shared/tierLimits';
+import { fetchJson, getServerKey, _resetKeyCache, _setAccessTokenProvider } from './router/http';
+import { ttsLanguageCode } from './router/adapters';
+import { generate, speak, translate } from './router/router';
+
+// Moved to ./router (kept exported here for existing callers and tests).
+export { getServerKey, _resetKeyCache, _setAccessTokenProvider, ttsLanguageCode };
 
 const db = () => admin.firestore();
 const TS = () => admin.firestore.Timestamp.now();
@@ -142,42 +148,6 @@ export async function consumeQuota(uid: string, field: string, amount: number, l
     throw new AppError('QUOTA_EXCEEDED', 'Daily limit reached. Please try again tomorrow.', 429, {
       reason: 'QUOTA_EXCEEDED', field,
     });
-  }
-}
-
-let keyCache: { at: number; data: Record<string, unknown> } | null = null;
-/** Test hook. */
-export function _resetKeyCache() { keyCache = null; }
-
-/** Server-side key lookup: env first, then app_config/api_keys (Admin SDK). */
-export async function getServerKey(envName: string, ...fields: string[]): Promise<string | null> {
-  const env = process.env[envName];
-  if (env) return env;
-  if (!keyCache || Date.now() - keyCache.at > 5 * 60_000) {
-    const snap = await db().collection('app_config').doc('api_keys').get();
-    keyCache = { at: Date.now(), data: snap.data() ?? {} };
-  }
-  for (const f of fields) {
-    const v = keyCache.data[f];
-    if (typeof v === 'string' && v.trim()) return v.trim();
-  }
-  return null;
-}
-
-async function fetchJson(url: string, init: any, timeoutMs: number): Promise<{ ok: boolean; status: number; body: any }> {
-  const ctrl = new AbortController();
-  const t = setTimeout(() => ctrl.abort(), timeoutMs);
-  try {
-    const res: any = await fetch(url, { ...init, signal: ctrl.signal });
-    let body: any = null;
-    try {
-      body = await res.json();
-    } catch {
-      body = null;
-    }
-    return { ok: !!res.ok, status: Number(res.status) || 0, body };
-  } finally {
-    clearTimeout(t);
   }
 }
 
@@ -306,35 +276,16 @@ function parseModelJson(text: string): any {
   }
 }
 
-async function callGemini(prompt: string): Promise<any> {
-  const key = await getServerKey('GEMINI_API_KEY', 'gemini_api_key');
-  if (!key) throw unavailable();
-  const model = process.env.GEMINI_MODEL || 'gemini-2.0-flash';
-  let r;
+/** Chat-helper prompt through the router (`text_assist`: Qwen Flash, Gemini ...). */
+async function callAssistModel(prompt: string, consentVersion: number): Promise<any> {
   try {
-    r = await fetchJson(
-      `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
-      {
-        method: 'POST',
-        // Key in a header, never in the URL (URLs end up in logs).
-        headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
-        body: JSON.stringify({
-          contents: [{ role: 'user', parts: [{ text: prompt }] }],
-          generationConfig: { temperature: 0.3, maxOutputTokens: 1024, responseMimeType: 'application/json' },
-        }),
-      },
-      20_000,
-    );
+    const r = await generate('text_assist', { messages: [{ role: 'user', content: prompt }], json: true },
+      { consentVersion: Number(consentVersion) || 0 });
+    return parseModelJson(r.text);
   } catch (e: any) {
-    console.warn('aiAssist: Gemini request failed', e?.name || 'error');
+    console.warn('aiAssist: no provider answered', e?.message || 'error');
     throw unavailable();
   }
-  if (!r.ok) {
-    console.warn(`aiAssist: Gemini HTTP ${r.status}`); // body not logged: may echo input
-    throw unavailable();
-  }
-  const text = r.body?.candidates?.[0]?.content?.parts?.[0]?.text;
-  return typeof text === 'string' ? parseModelJson(text) : null;
 }
 
 /**
@@ -362,10 +313,10 @@ export async function handleAiAssist(request: any) {
   const language = cleanLanguage(data.language);
   const target = cleanLanguage(data.targetLanguage, language);
   const userLanguage = cleanLanguage(data.userLanguage, 'en');
-  await requireAiConsent(uid);
+  const consentVersion = await requireAiConsent(uid);
   await requireTierForTask(uid, task);
   await consumeQuota(uid, 'assist', 1, limits().assist);
-  const raw = await callGemini(buildPrompt(task, text, language, target, userLanguage));
+  const raw = await callAssistModel(buildPrompt(task, text, language, target, userLanguage), consentVersion);
   const result = shapeResult(task, raw);
   if (!result) throw unavailable();
   return { success: true, task, result };
@@ -384,21 +335,6 @@ export const aiAssist = onCall(
 
 // ---------------------------------------------------------------------------
 // synthesizeSpeech (Cloud TTS, Chirp 3 HD)
-
-const TTS_LANG: Record<string, string> = {
-  en: 'en-US', it: 'it-IT', es: 'es-ES', fr: 'fr-FR', de: 'de-DE', pt: 'pt-PT',
-  'pt-br': 'pt-BR', ja: 'ja-JP', ko: 'ko-KR', zh: 'cmn-CN', ar: 'ar-XA',
-  hi: 'hi-IN', tr: 'tr-TR', ru: 'ru-RU',
-};
-export function ttsLanguageCode(language: string): string {
-  const lower = language.toLowerCase().replace(/_/g, '-');
-  if (TTS_LANG[lower]) return TTS_LANG[lower];
-  if (/^[a-z]{2,3}-[a-z]{2,4}$/.test(lower)) {
-    const [a, b] = lower.split('-');
-    return `${a}-${b.toUpperCase()}`;
-  }
-  return 'en-US';
-}
 
 /** Normalization shared with the app (PronunciationService.serverCacheKey). */
 export function normalizePhrase(phrase: string): string {
@@ -424,7 +360,7 @@ export async function handleSynthesizeSpeech(request: any) {
   const cacheRef = db().collection('pronunciation_cache').doc(key);
   // Independent reads in one round trip instead of three (latency: the user
   // is waiting for the first sound). Consent still gates the response.
-  const [, , cached] = await Promise.all([
+  const [consentVersion, , cached] = await Promise.all([
     requireAiConsent(uid),
     consumeQuota(uid, 'ttsCalls', 1, limits().ttsCalls),
     cacheRef.get(),
@@ -435,58 +371,35 @@ export async function handleSynthesizeSpeech(request: any) {
     return { success: true, cached: true, audioUrl: cachedUrl };
   }
 
-  const [, apiKey] = await Promise.all([
-    consumeQuota(uid, 'ttsSynth', 1, limits().ttsSynth),
-    getServerKey('CLOUD_TTS_API_KEY', 'cloud_tts_api_key', 'gemini_api_key'),
-  ]);
-  if (!apiKey) throw unavailable();
-  const languageCode = ttsLanguageCode(language);
-  const voice = `${languageCode}-Chirp3-HD-${isMale ? 'Orus' : 'Kore'}`;
-  let r;
+  await consumeQuota(uid, 'ttsSynth', 1, limits().ttsSynth);
+  let speech;
   try {
-    r = await fetchJson('https://texttospeech.googleapis.com/v1/text:synthesize', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
-      body: JSON.stringify({ input: { text }, voice: { languageCode, name: voice }, audioConfig: { audioEncoding: 'MP3' } }),
-    }, 30_000);
+    // `tts` route: Qwen TTS, then Google Chirp 3 HD (admin panel).
+    speech = await speak('tts', { text, language, isMale }, { consentVersion: Number(consentVersion) || 0 });
   } catch (e: any) {
-    console.warn('synthesizeSpeech: TTS request failed', e?.name || 'error');
+    console.warn('synthesizeSpeech: no provider answered', e?.message || 'error');
     throw unavailable();
   }
-  let audioContent = r.ok ? r.body?.audioContent : null;
-  // No Chirp 3 HD voice for this language (e.g. pt-PT): the language's
-  // default voice instead, then (pt-PT only) Brazilian Portuguese.
-  for (const fallback of [languageCode, ...(languageCode === 'pt-PT' ? ['pt-BR'] : [])]) {
-    if (typeof audioContent === 'string' && audioContent) break;
-    try {
-      r = await fetchJson('https://texttospeech.googleapis.com/v1/text:synthesize', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
-        body: JSON.stringify({ input: { text }, voice: { languageCode: fallback }, audioConfig: { audioEncoding: 'MP3' } }),
-      }, 30_000);
-      audioContent = r.ok ? r.body?.audioContent : null;
-    } catch (_) { /* next fallback */ }
-  }
-  if (typeof audioContent !== 'string' || !audioContent) {
-    console.warn(`synthesizeSpeech: TTS HTTP ${r.status}`);
-    throw unavailable();
-  }
+  const voice = speech.voice;
+  const audioContent = speech.audio.toString('base64');
 
   // Shared cache: Storage object + cache doc. No message text is stored.
   let audioUrl: string | null = null;
   try {
     const bucket = admin.storage().bucket();
-    const storagePath = `pronunciation_audio/${key.split('_')[1]}/${key}.mp3`;
+    const storagePath = `pronunciation_audio/${key.split('_')[1]}/${key}.${speech.extension}`;
     const token = crypto.randomUUID();
-    await bucket.file(storagePath).save(Buffer.from(audioContent, 'base64'), {
+    await bucket.file(storagePath).save(speech.audio, {
       resumable: false,
-      contentType: 'audio/mpeg',
+      contentType: speech.contentType,
       metadata: { metadata: { firebaseStorageDownloadTokens: token } },
     });
     audioUrl = downloadUrl(bucket.name, storagePath, token);
     await cacheRef.set({
       language: language.toLowerCase(),
       voice,
+      provider: speech.providerId,
+      contentType: speech.contentType,
       audioUrl,
       storagePath,
       generatedBy: 'server',
@@ -497,7 +410,7 @@ export async function handleSynthesizeSpeech(request: any) {
   } catch (e: any) {
     console.warn('synthesizeSpeech: cache write failed', e?.message || e);
   }
-  return { success: true, cached: false, audioUrl, audioContent };
+  return { success: true, cached: false, audioUrl, audioContent, contentType: speech.contentType };
 }
 
 export const synthesizeSpeech = onCall(
@@ -514,15 +427,6 @@ export const synthesizeSpeech = onCall(
 // ---------------------------------------------------------------------------
 // translatePrivateText (official Cloud Translation v2, service-account auth)
 
-type TokenProvider = () => Promise<string>;
-let tokenProvider: TokenProvider = async () => {
-  const cred = (admin.app().options.credential as any) ?? admin.credential.applicationDefault();
-  const t = await cred.getAccessToken();
-  return t.access_token as string;
-};
-/** Test hook (the emulator has no service account). */
-export function _setAccessTokenProvider(p: TokenProvider) { tokenProvider = p; }
-
 const baseLang = (s: string) => s.trim().toLowerCase().replace(/_/g, '-').split('-')[0];
 
 export function translateTarget(v: unknown): string {
@@ -534,37 +438,20 @@ export function translateTarget(v: unknown): string {
   return b ? `${a.toLowerCase()}-${b.toUpperCase()}` : a.toLowerCase();
 }
 
-/** One Cloud Translation v2 request (arrays are fine: up to 128 segments). */
 type CloudResult = { text: string; detectedLanguage: string | null; sameLanguage: boolean };
-async function cloudTranslate(texts: string[], target: string, source: string | null): Promise<CloudResult[]> {
-  let token: string;
-  try {
-    token = await tokenProvider();
-  } catch {
+
+/**
+ * Private chat text through the router (`translate_chat`: Qwen-MT Flash, then
+ * Cloud Translation v2). All-or-nothing, as before: a text no provider could
+ * translate fails the call and the app shows its retry.
+ */
+async function chatTranslate(texts: string[], target: string, source: string | null, consentVersion: number): Promise<CloudResult[]> {
+  const r = await translate('translate_chat', texts, target, { consentVersion: Number(consentVersion) || 0 }, { source });
+  if (r.items.some((x) => !x)) {
+    console.warn('translatePrivateText: no provider translated every text');
     throw unavailable();
   }
-  let r;
-  try {
-    r = await fetchJson('https://translation.googleapis.com/language/translate/v2', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
-      body: JSON.stringify({ q: texts, target, format: 'text', ...(source ? { source } : {}) }),
-    }, 20_000);
-  } catch {
-    throw unavailable();
-  }
-  const list = r.ok ? r.body?.data?.translations : null;
-  if (!Array.isArray(list) || list.length !== texts.length) {
-    console.warn(`translatePrivateText: HTTP ${r.status}`);
-    throw unavailable();
-  }
-  return texts.map((orig, i) => {
-    const detected = typeof list[i]?.detectedSourceLanguage === 'string'
-      ? list[i].detectedSourceLanguage : (source ?? null);
-    const same = !!detected && baseLang(detected) === baseLang(target);
-    const out = typeof list[i]?.translatedText === 'string' ? list[i].translatedText : orig;
-    return { text: same ? orig : out, detectedLanguage: detected, sameLanguage: same };
-  });
+  return r.items as CloudResult[];
 }
 
 export async function handleTranslatePrivateText(request: any) {
@@ -589,9 +476,9 @@ export async function handleTranslatePrivateText(request: any) {
   }) as string[];
   const total = texts.reduce((n, t) => n + t.length, 0);
   if (total > CAPS.translateTotalChars) throw new AppError('TEXT_TOO_LONG', 'Too much text in one call', 400);
-  await requireAiConsent(uid);
+  const consentVersion = await requireAiConsent(uid);
   await consumeQuota(uid, 'translateChars', total, await translateCharsLimit(uid));
-  return { success: true, target, translations: await cloudTranslate(texts, target, source) };
+  return { success: true, target, translations: await chatTranslate(texts, target, source, consentVersion) };
 }
 
 // ---------------------------------------------------------------------------
@@ -687,7 +574,7 @@ type ChatItemResult = {
 
 export async function handleTranslateChatMessages(uid: string, target: string, raw: unknown[]) {
   const refs = parseChatRefs(raw);
-  await requireAiConsent(uid);
+  const consentVersion = await requireAiConsent(uid);
 
   // One round trip: every parent (membership) + every message.
   const parentKeys = [...new Set(refs.map((r) => `${parentCollection(r.kind)}/${r.parentId}`))];
@@ -799,7 +686,7 @@ export async function handleTranslateChatMessages(uid: string, target: string, r
     const distinct = [...new Set(misses.map((p) => p.content))];
     const total = distinct.reduce((n, t) => n + t.length, 0);
     await consumeQuota(uid, 'translateChars', total, await translateCharsLimit(uid));
-    const results = await cloudTranslate(distinct, target, null);
+    const results = await chatTranslate(distinct, target, null, consentVersion);
     const byText = new Map(distinct.map((t, k) => [t, results[k]]));
     const cached = new Set<string>();
     for (const p of misses) {

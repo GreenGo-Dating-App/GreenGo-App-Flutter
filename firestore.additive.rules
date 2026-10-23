@@ -3846,6 +3846,20 @@ service cloud.firestore {
       allow write: if false;
     }
 
+    // AI router (functions/src/ai/router, 2026-10): providers / routes / rules
+    // and per-model usage counters. Server-only: the admin panel reads and
+    // writes them through the adminAi callable. API keys are NOT here (they
+    // live in Secret Manager).
+    match /ai_config/{doc}/{rest=**} {
+      allow read, write: if false;
+    }
+    match /ai_config/{doc} {
+      allow read, write: if false;
+    }
+    match /ai_usage_stats/{id} {
+      allow read, write: if false;
+    }
+
     // ============================================================================
     // DEFAULT DENY
     // ============================================================================

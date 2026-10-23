@@ -30,10 +30,11 @@ import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
 import { requireAiConsent } from '../shared/aiConsent';
+import { translate } from '../ai/router/router';
 import { AppError, handleError } from '../shared/utils';
 import {
-  freeTranslate,
-  freeTranslateMany,
+
+
   FreeTranslateError,
   normalizeTarget,
   SUPPORTED_LANGUAGES,
@@ -89,7 +90,7 @@ export const translateMessage = functions
   try {
     await assertParticipant(conversationId, context.auth.uid);
     // Private chat text goes to Google: only with AI services ON (consent).
-    await requireAiConsent(context.auth.uid);
+    const consentVersion = await requireAiConsent(context.auth.uid);
 
     const messageDoc = await firestore
       .collection('conversations')
@@ -112,7 +113,9 @@ export const translateMessage = functions
     }
 
     const text = String(message.content ?? '').slice(0, MAX_CHARS);
-    const result = await freeTranslate(text, targetLanguage);
+    const routed = await translate('translate_chat', [text], targetLanguage, { consentVersion });
+    const result = routed.items[0];
+    if (!result) throw new functions.https.HttpsError('unavailable', 'Translation is temporarily unavailable');
 
     if (result.sameLanguage) {
       return {
@@ -158,7 +161,7 @@ export const batchTranslateMessages = functions
   try {
     await assertParticipant(conversationId, context.auth.uid);
     // Private chat text goes to Google: only with AI services ON (consent).
-    await requireAiConsent(context.auth.uid);
+    const consentVersion = await requireAiConsent(context.auth.uid);
 
     const messagesSnapshot = await firestore
       .collection('conversations')
@@ -169,11 +172,13 @@ export const batchTranslateMessages = functions
       .get();
 
     const docs = messagesSnapshot.docs.filter((d) => d.data().type === 'text');
-    const translations = await freeTranslateMany(
+    const translations = (await translate(
+      'translate_chat',
       docs.map((d) => String(d.data().content ?? '').slice(0, MAX_CHARS)),
       targetLanguage,
-      { concurrency: 4, timeoutMs: 6000, deadlineMs: 40000 },
-    );
+      { consentVersion },
+      { deadlineMs: 40000 },
+    )).items;
 
     const results = docs.map((doc, i) => {
       const t = translations[i];

@@ -54,9 +54,22 @@ export function aiConsentRequiredError(): AppError {
   );
 }
 
-/** The caller must have ACCEPTED the AI-processing notice (server record). */
-export async function requireAiConsent(uid: string): Promise<void> {
-  if ((await getAiConsentState(uid)) !== 'granted') throw aiConsentRequiredError();
+/** Accepted AI-consent notice version of [uid] (0 = none or withdrawn). */
+export async function aiConsentVersion(uid: string): Promise<number> {
+  const snap = await admin.firestore().collection(CONSENTS).doc(uid).get();
+  const c = snap.data()?.[AI_CONSENT_TYPE];
+  return c && typeof c === 'object' && c.accepted === true ? Number(c.version) || 0 : 0;
+}
+
+/**
+ * The caller must have ACCEPTED the AI-processing notice (server record).
+ * Returns the accepted notice version: the AI router only uses providers
+ * named in that version (provider.minConsentVersion).
+ */
+export async function requireAiConsent(uid: string): Promise<number> {
+  const version = await aiConsentVersion(uid);
+  if (version < AI_CONSENT_MIN_VERSION) throw aiConsentRequiredError();
+  return version;
 }
 
 /**

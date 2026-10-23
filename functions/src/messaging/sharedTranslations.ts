@@ -19,7 +19,7 @@
  * Guard rails: signed-in only, ≤ 50 texts per call, ≤ 5,000 chars each, and a
  * per-user daily quota of misses (cache hits are free).
  *
- * Misses are translated with the FREE Google endpoint (./freeTranslate), at
+ * Misses are translated through the AI router (`translate_public`), at
  * most 4 requests in flight, retried with backoff. If the endpoint rate-limits
  * (429) or fails, the untranslated texts come back as '' (same response shape
  * as always), are not stored, and the app falls back to translating them on
@@ -29,7 +29,7 @@ import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import * as crypto from 'crypto';
 import '../shared/firebaseAdmin';
-import { freeTranslateMany } from './freeTranslate';
+import { translate } from '../ai/router/router';
 import { requireTranslationConsent } from '../shared/aiConsent';
 
 const db = admin.firestore();
@@ -97,12 +97,13 @@ export const translateTexts = onCall<Req>(
       });
 
       if (allowed) {
-        const out = await freeTranslateMany(misses, target, {
-          concurrency: 4,
-          timeoutMs: 6000,
+        // `translate_public` route (admin panel): Qwen-MT, then the free
+        // Google endpoint. Public texts only: no consent gate (version 0).
+        const routed = await translate('translate_public', misses, target, { consentVersion: 0 }, {
           // Well inside the app's 30s callable timeout.
           deadlineMs: 20000,
         });
+        const out = routed.items;
         const batch = db.batch();
         let writes = 0;
         misses.forEach((text, i) => {
@@ -113,6 +114,7 @@ export const translateTexts = onCall<Req>(
             target,
             translated,
             source: out[i]?.detectedLanguage || null,
+            provider: routed.providers[i] || null,
             createdAt: admin.firestore.FieldValue.serverTimestamp(),
           });
           writes++;

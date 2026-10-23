@@ -508,6 +508,10 @@ export {
   recordConsent,
 } from './ai/aiGateway';
 
+// AI router admin (admin panel "AI Providers"): providers, routes, context
+// rules, Secret Manager keys, usage per model (functions/src/ai/adminAi.ts).
+export { adminAi } from './ai/adminAi';
+
 // Web reverse geocoding through the server with coarse (~1 km) coordinates:
 // the browser no longer sends positions + IP to Nominatim (audit 2026-10).
 export { reverseGeocodeCoarse } from './location/reverseGeocodeCoarse';

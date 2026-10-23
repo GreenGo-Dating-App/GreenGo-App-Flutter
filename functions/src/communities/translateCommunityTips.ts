@@ -27,7 +27,7 @@
  * require a non-banned member doc (or a platform moderator), which is stricter
  * than the message read rule.
  *
- * Cost: misses use the FREE Google endpoint (./freeTranslate, $0, rate
+ * Cost: misses go through the AI router (`translate_public`; default the FREE Google endpoint, $0, rate
  * limited); every (text, language) is translated once globally. A per-user
  * daily miss quota bounds bursts. No trigger pre-translates on create (a
  * Firestore trigger cannot filter by type, so it would fire for every chat
@@ -37,7 +37,7 @@ import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import * as crypto from 'crypto';
 import '../shared/firebaseAdmin';
-import { freeTranslateMany } from '../messaging/freeTranslate';
+import { translate } from '../ai/router/router';
 import { MAX_CHARS, TARGET_RE, sharedTranslationId } from '../messaging/sharedTranslations';
 import { isAdminCaller, MODERATION_ROLES } from '../shared/adminAuth';
 import { requireTranslationConsent } from '../shared/aiConsent';
@@ -150,11 +150,9 @@ export const translateCommunityTips = onCall<Req>(
       });
 
       if (misses.length > 0 && (await takeQuota(uid, misses.length))) {
-        const out = await freeTranslateMany(misses, target, {
-          concurrency: 4,
-          timeoutMs: 6000,
-          deadlineMs: 20000,
-        });
+        // `translate_public` route (admin panel); community tips are public.
+        const routed = await translate('translate_public', misses, target, { consentVersion: 0 }, { deadlineMs: 20000 });
+        const out = routed.items;
         const batch = db.batch();
         let writes = 0;
         misses.forEach((text, i) => {
@@ -165,6 +163,7 @@ export const translateCommunityTips = onCall<Req>(
             target,
             translated: t,
             source: out[i]?.detectedLanguage || null,
+            provider: routed.providers[i] || null,
             origin: 'community_tip',
             createdAt: admin.firestore.FieldValue.serverTimestamp(),
           });

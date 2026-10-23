@@ -14,6 +14,7 @@ jest.mock('firebase-admin', () => {
     path,
     id: path.split('/').pop(),
     collection: (c: string) => ({ doc: (id: string) => ref(`${path}/${c}/${id}`) }),
+    get: async () => ({ exists: docs.has(path), data: () => docs.get(path) }),
   });
   const db: any = {
     collection: (c: string) => ({ doc: (id: string) => ref(`${c}/${id}`) }),
