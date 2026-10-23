@@ -213,6 +213,10 @@ const fin = (collection: string, ...fields: string[]): InventoryEntry[] =>
  * cheap and old accounts may still hold them.
  */
 export const ACCOUNT_DATA_INVENTORY: InventoryEntry[] = [
+  // GreenGo Buddies server-side usage / idempotency / job docs (field uid).
+  ...q('ai_buddy_usage', 'uid'),
+  ...q('ai_buddy_requests', 'uid'),
+  ...q('ai_buddy_jobs', 'uid'),
   // --- Documents keyed by uid (subcollections included) -------------------
   ...docs(true,
     'user_interactions', 'user_vectors', 'match_preferences', 'interaction_matrix',
@@ -224,6 +228,8 @@ export const ACCOUNT_DATA_INVENTORY: InventoryEntry[] = [
     'age_assurance',
     // Owner/admin-only half of the profile (exact location, DOB, ...; P1-4).
     'profiles_private',
+    // GreenGo Buddies: settings, messages, memory (buddies/buddies.ts).
+    'ai_buddies',
     // Owner-only follower / following counters (social/followCounters.ts).
     'follow_counts',
     // Public follower count (followersCount only; social/followCounters.ts).

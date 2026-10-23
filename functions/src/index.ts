@@ -512,6 +512,21 @@ export {
 // rules, Secret Manager keys, usage per model (functions/src/ai/adminAi.ts).
 export { adminAi } from './ai/adminAi';
 
+// GreenGo Buddies (AI chat friends): settings, replies through the AI router
+// (text_buddies), free daily replies then 1 coin, memory/summary jobs and
+// hourly proactive check-ins (functions/src/buddies).
+export {
+  getBuddyStatus,
+  createBuddy,
+  updateBuddy,
+  deleteBuddy,
+  clearBuddyChat,
+  forgetBuddyMemory,
+  sendBuddyMessage,
+  onBuddyJob,
+  buddyCheckIns,
+} from './buddies/buddies';
+
 // Web reverse geocoding through the server with coarse (~1 km) coordinates:
 // the browser no longer sends positions + IP to Nominatim (audit 2026-10).
 export { reverseGeocodeCoarse } from './location/reverseGeocodeCoarse';

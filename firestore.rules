@@ -3865,6 +3865,32 @@ service cloud.firestore {
       allow read, write: if false;
     }
 
+    // GreenGo Buddies (functions/src/buddies): the owner reads their Buddies,
+    // messages and today's free-reply usage; every write goes through the
+    // callables (settings validated, replies charged server-side).
+    match /ai_buddies/{uid} {
+      allow read: if isOwner(uid);
+      allow write: if false;
+      match /buddies/{buddyId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+        match /messages/{messageId} {
+          allow read: if isOwner(uid);
+          allow write: if false;
+        }
+      }
+    }
+    match /ai_buddy_usage/{docId} {
+      allow read: if isSignedIn() && resource.data.uid == request.auth.uid;
+      allow write: if false;
+    }
+    match /ai_buddy_requests/{docId} {
+      allow read, write: if false;
+    }
+    match /ai_buddy_jobs/{docId} {
+      allow read, write: if false;
+    }
+
     // ============================================================================
     // DEFAULT DENY
     // ============================================================================

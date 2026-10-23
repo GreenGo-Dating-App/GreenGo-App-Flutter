@@ -21,6 +21,8 @@ export type NotifCategory =
   | 'communityChat'
   | 'announcements'
   | 'tips'
+  // GreenGo Buddies check-ins (AI friends writing first after inactivity).
+  | 'buddies'
   // P2-5c: promotional pushes (admin broadcasts). Opt-in only.
   | 'marketing'
   // Legacy buckets still produced by categoryForType for non-chat types.
@@ -43,6 +45,7 @@ const CATEGORY_DEFAULTS: Record<string, boolean> = {
   communityChat: false,
   announcements: true,
   tips: false,
+  buddies: true,
   // P2-5c: marketing push is OFF unless the user explicitly turned it on.
   marketing: false,
   // legacy
@@ -60,6 +63,7 @@ function defaultFor(category: string): boolean {
 /** Map a notification `type`/`action` string to its preference category. */
 export function categoryForType(type: string): NotifCategory {
   const t = (type || '').toLowerCase();
+  if (t.includes('buddy')) return 'buddies';
   if (t.includes('marketing') || t.includes('promo')) return 'marketing';
   if (t.includes('group')) return 'groups';
   if (t.includes('announce')) return 'announcements';

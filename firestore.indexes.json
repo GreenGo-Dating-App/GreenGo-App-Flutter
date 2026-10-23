@@ -4447,6 +4447,20 @@
           "order": "ASCENDING"
         }
       ]
+    },
+    {
+      "collectionGroup": "buddies",
+      "queryScope": "COLLECTION_GROUP",
+      "fields": [
+        {
+          "fieldPath": "checkInsEnabled",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "nextCheckInAt",
+          "order": "ASCENDING"
+        }
+      ]
     }
   ],
   "fieldOverrides": [

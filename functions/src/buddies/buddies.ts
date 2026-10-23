@@ -1,0 +1,655 @@
+/**
+ * GreenGo Buddies: callables, background memory/summary jobs and proactive
+ * check-ins. All Cloud Functions (no VM). Model calls go through the AI
+ * router capability `text_buddies` (default Qwen Flash, admin-configurable).
+ *
+ *  createBuddy / updateBuddy / deleteBuddy      settings (validated, per-plan limit)
+ *  sendBuddyMessage                             one reply: crisis check -> charge
+ *                                               (free allowance, then 1 coin) ->
+ *                                               model -> rules -> store; refund on failure
+ *  clearBuddyChat / forgetBuddyMemory           user control over history + memory
+ *  getBuddyStatus                               plan limits + free replies left today
+ *  onBuddyJob (Firestore trigger)               long-term memory + rolling summary
+ *  buddyCheckIns (hourly)                       the Buddy writes first after inactivity
+ *
+ * Privacy: only the Buddy settings and the conversation text go to the model
+ * provider: never the uid, name, e-mail or profile.
+ */
+import * as admin from 'firebase-admin';
+import * as crypto from 'crypto';
+import { HttpsError, onCall } from 'firebase-functions/v2/https';
+import { onDocumentWritten } from 'firebase-functions/v2/firestore';
+import { onSchedule } from 'firebase-functions/v2/scheduler';
+import '../shared/firebaseAdmin';
+import { AppError, handleError } from '../shared/utils';
+import { monitored } from '../shared/monitoring';
+import { aiConsentVersion, requireAiConsent } from '../shared/aiConsent';
+import { effectiveTier, EffectiveTier } from '../shared/effectiveTier';
+import { fifoDraw, refusal, REASON, restoreSlices, validRequestId, DrawnSlice } from '../coins/ledger';
+import { loadConfig } from '../ai/router/config';
+import { eligibleChain, generate } from '../ai/router/router';
+import { fitContext } from '../ai/router/rules';
+import { CapabilityRules } from '../ai/router/types';
+import { emitNotification } from '../notifications/notifyHelpers';
+import { rawText } from '../shared/i18n';
+import {
+  BUDDIES, BUDDY_LIMIT, BUDDY_REQUESTS, BUDDY_USAGE, BuddyInputError, BuddySettings, COINS_PER_REPLY,
+  FREE_REPLIES_PER_DAY, Language, MemoryFact, USER_MESSAGE_MAX, utcDay, validateSettings,
+} from './model';
+import { CRISIS_REPLY, FALLBACK_REPLY, isCrisis, isUnsafeReply } from './crisis';
+import { checkInPrompt, memoryPrompt, parseJsonObject, summaryPrompt, systemPrompt } from './prompt';
+
+const db = () => admin.firestore();
+const TS = () => admin.firestore.Timestamp.now();
+const runtime = { memory: '512MiB' as const, timeoutSeconds: 60 };
+export const BUDDY_JOBS = 'ai_buddy_jobs';
+/** Messages per user per 10 minutes (all Buddies). */
+export const RATE_LIMIT_10MIN = 30;
+
+const toHttps = (e: unknown) => (e instanceof HttpsError ? e : e instanceof BuddyInputError
+  ? new HttpsError('invalid-argument', e.message) : handleError(e));
+
+function callable(name: string, fn: (uid: string, data: any) => Promise<unknown>) {
+  return onCall(runtime, monitored(name, async (request: any) => {
+    try {
+      const uid = request?.auth?.uid;
+      if (!uid) throw new HttpsError('unauthenticated', 'Sign in first');
+      return await fn(uid as string, request.data ?? {});
+    } catch (e) {
+      throw toHttps(e);
+    }
+  }));
+}
+
+const ID = /^[A-Za-z0-9_-]{1,64}$/;
+const okId = (v: unknown, field = 'buddyId'): string => {
+  if (typeof v !== 'string' || !ID.test(v)) throw new HttpsError('invalid-argument', `Invalid ${field}`);
+  return v;
+};
+
+const buddiesCol = (uid: string) => db().collection(BUDDIES).doc(uid).collection('buddies');
+const unavailable = () => new AppError('AI_UNAVAILABLE', 'Your Buddy cannot answer right now. Please try again.', 503,
+  { reason: 'AI_UNAVAILABLE' });
+
+async function tierOf(uid: string): Promise<EffectiveTier> {
+  const p = (await db().collection('profiles').doc(uid).get()).data();
+  return effectiveTier(p);
+}
+
+/** The oldest [limit] Buddies stay usable after a downgrade; newer ones are locked. */
+async function activeBuddyIds(uid: string, tier: EffectiveTier): Promise<Set<string>> {
+  const snap = await buddiesCol(uid).orderBy('createdAt', 'asc').limit(BUDDY_LIMIT[tier]).select().get();
+  return new Set(snap.docs.map((d) => d.id));
+}
+
+const settingsOf = (d: any): BuddySettings => ({
+  name: d.name, avatar: d.avatar, topic: d.topic, role: d.role, tone: d.tone, language: d.language,
+  level: d.level, cefr: d.cefr ?? null, checkInsEnabled: d.checkInsEnabled !== false,
+});
+
+async function rules(): Promise<CapabilityRules> {
+  return (await loadConfig()).rules.text_buddies ?? {};
+}
+
+/**
+ * Throws a clear error when no `text_buddies` provider can serve this user:
+ * AI_CONSENT_UPDATE_REQUIRED when the provider needs a newer AI notice (the
+ * app then shows the consent sheet again), AI_UNAVAILABLE otherwise.
+ */
+async function requireBuddyProvider(consentVersion: number): Promise<void> {
+  const config = await loadConfig();
+  if (eligibleChain(config, 'text_buddies', { consentVersion }).length) return;
+  const needs = config.routes.text_buddies.chain
+    .map((id) => config.providers[id]?.minConsentVersion ?? 0)
+    .filter((v) => v > consentVersion);
+  if (needs.length) {
+    throw new AppError('AI_CONSENT_UPDATE_REQUIRED', 'Please review the updated AI notice to chat with your Buddy.', 403,
+      { reason: 'AI_CONSENT_UPDATE_REQUIRED', requiredVersion: Math.min(...needs) });
+  }
+  throw unavailable();
+}
+
+// ------------------------------------------------------------------ status
+
+export async function buddyStatus(uid: string) {
+  const tier = await tierOf(uid);
+  const [usage, count] = await Promise.all([
+    db().collection(BUDDY_USAGE).doc(`${uid}_${utcDay()}`).get(),
+    buddiesCol(uid).count().get(),
+  ]);
+  const freeLimit = FREE_REPLIES_PER_DAY[tier];
+  const used = Number(usage.data()?.freeUsed) || 0;
+  return {
+    tier,
+    buddyLimit: BUDDY_LIMIT[tier],
+    buddyCount: count.data().count,
+    freeRepliesPerDay: freeLimit,
+    freeRepliesLeft: Math.max(0, freeLimit - used),
+    coinsPerReply: COINS_PER_REPLY,
+  };
+}
+
+export const getBuddyStatus = callable('getBuddyStatus', (uid) => buddyStatus(uid));
+
+// ------------------------------------------------------------- create / edit
+
+export const createBuddy = callable('createBuddy', async (uid, data) => {
+  const s = validateSettings(data.settings ?? data, false) as BuddySettings;
+  const tier = await tierOf(uid);
+  const limit = BUDDY_LIMIT[tier];
+  const ref = buddiesCol(uid).doc();
+  await db().runTransaction(async (tx) => {
+    // Count inside the transaction (aggregate queries are not transactional, so
+    // the root doc counter is the serialization point).
+    const rootRef = db().collection(BUDDIES).doc(uid);
+    const root = await tx.get(rootRef);
+    const n = Number(root.data()?.buddyCount) || 0;
+    if (n >= limit) {
+      throw refusal('failed-precondition', REASON.tierRequired,
+        `Your plan allows ${limit} Buddy${limit === 1 ? '' : 'ies'}. Upgrade to create more.`, { limit, tier });
+    }
+    tx.set(rootRef, { uid, buddyCount: n + 1, updatedAt: TS() }, { merge: true });
+    tx.set(ref, {
+      ...s,
+      createdAt: TS(),
+      updatedAt: TS(),
+      lastMessage: null,
+      lastMessageAt: null,
+      lastUserMessageAt: null,
+      messageCount: 0,
+      userMessageCount: 0,
+      unansweredCheckIns: 0,
+      nextCheckInAt: null,
+      memory: [],
+      summary: '',
+      summaryCoveredUntil: null,
+    });
+  });
+  return { buddyId: ref.id };
+});
+
+export const updateBuddy = callable('updateBuddy', async (uid, data) => {
+  const buddyId = okId(data.buddyId);
+  const patch = validateSettings(data.settings ?? {}, true);
+  if (!Object.keys(patch).length) throw new HttpsError('invalid-argument', 'Nothing to update');
+  const ref = buddiesCol(uid).doc(buddyId);
+  const snap = await ref.get();
+  if (!snap.exists) throw new HttpsError('not-found', 'Buddy not found');
+  const extra: Record<string, unknown> = {};
+  if (patch.checkInsEnabled === false) extra.nextCheckInAt = null;
+  await ref.update({ ...patch, ...extra, updatedAt: TS() });
+  return { ok: true };
+});
+
+async function deleteMessages(ref: admin.firestore.DocumentReference) {
+  await db().recursiveDelete(ref.collection('messages'));
+}
+
+export const deleteBuddy = callable('deleteBuddy', async (uid, data) => {
+  const buddyId = okId(data.buddyId);
+  const ref = buddiesCol(uid).doc(buddyId);
+  if (!(await ref.get()).exists) throw new HttpsError('not-found', 'Buddy not found');
+  await deleteMessages(ref);
+  await db().runTransaction(async (tx) => {
+    const rootRef = db().collection(BUDDIES).doc(uid);
+    const root = await tx.get(rootRef);
+    tx.delete(ref);
+    tx.set(rootRef, { buddyCount: Math.max(0, (Number(root.data()?.buddyCount) || 1) - 1), updatedAt: TS() }, { merge: true });
+  });
+  await db().collection(BUDDY_JOBS).doc(`${uid}_${buddyId}`).delete().catch(() => undefined);
+  return { ok: true };
+});
+
+export const clearBuddyChat = callable('clearBuddyChat', async (uid, data) => {
+  const buddyId = okId(data.buddyId);
+  const ref = buddiesCol(uid).doc(buddyId);
+  if (!(await ref.get()).exists) throw new HttpsError('not-found', 'Buddy not found');
+  await deleteMessages(ref);
+  const forget = data.forgetMemory === true;
+  await ref.update({
+    lastMessage: null, lastMessageAt: null, messageCount: 0, userMessageCount: 0, summary: '', summaryCoveredUntil: null,
+    unansweredCheckIns: 0, nextCheckInAt: null, ...(forget ? { memory: [] } : {}), updatedAt: TS(),
+  });
+  return { ok: true };
+});
+
+/** Deletes one memory fact ([factId]) or all of them (no factId). */
+export const forgetBuddyMemory = callable('forgetBuddyMemory', async (uid, data) => {
+  const buddyId = okId(data.buddyId);
+  const ref = buddiesCol(uid).doc(buddyId);
+  await db().runTransaction(async (tx) => {
+    const snap = await tx.get(ref);
+    if (!snap.exists) throw new HttpsError('not-found', 'Buddy not found');
+    const memory: MemoryFact[] = Array.isArray(snap.data()?.memory) ? snap.data()!.memory : [];
+    const next = data.factId === undefined ? [] : memory.filter((f) => f.id !== okId(data.factId, 'factId'));
+    tx.update(ref, { memory: next, updatedAt: TS() });
+  });
+  return { ok: true };
+});
+
+// ------------------------------------------------------------------ messages
+
+interface ChargePlan { kind: 'free' | 'coin'; drawn: DrawnSlice[]; transactionId: string | null; freeLeft: number; balance: number | null }
+
+/** Rate limit + free allowance or 1-coin debit + idempotency claim, in ONE transaction. */
+async function reserveCharge(uid: string, tier: EffectiveTier, buddyId: string, requestId: string): Promise<ChargePlan> {
+  const nowMs = Date.now();
+  const usageRef = db().collection(BUDDY_USAGE).doc(`${uid}_${utcDay(nowMs)}`);
+  const reqRef = db().collection(BUDDY_REQUESTS).doc(`${uid}_${requestId}`);
+  const balanceRef = db().collection('coinBalances').doc(uid);
+  const window = `rl_${Math.floor(nowMs / 600_000)}`;
+  return db().runTransaction(async (tx) => {
+    const [usage, req, bal] = await Promise.all([tx.get(usageRef), tx.get(reqRef), tx.get(balanceRef)]);
+    if (req.exists) throw new AppError('DUPLICATE_REQUEST', 'This message is already being answered.', 409, { reason: 'DUPLICATE_REQUEST' });
+    const u = usage.data() ?? {};
+    if ((Number(u[window]) || 0) >= RATE_LIMIT_10MIN) {
+      throw new AppError('RATE_LIMITED', 'You are sending messages too fast. Take a short break.', 429, { reason: 'RATE_LIMITED' });
+    }
+    const freeLimit = FREE_REPLIES_PER_DAY[tier];
+    const used = Number(u.freeUsed) || 0;
+    const plan: ChargePlan = { kind: 'free', drawn: [], transactionId: null, freeLeft: 0, balance: null };
+    const usageUpdate: Record<string, unknown> = {
+      uid, day: utcDay(nowMs), [window]: (Number(u[window]) || 0) + 1, updatedAt: TS(),
+      expireAt: admin.firestore.Timestamp.fromMillis(nowMs + 3 * 864e5),
+    };
+    if (used < freeLimit) {
+      usageUpdate.freeUsed = used + 1;
+      plan.freeLeft = freeLimit - used - 1;
+    } else {
+      const b = bal.data() ?? {};
+      const total = Number(b.totalCoins) || 0;
+      if (total < COINS_PER_REPLY) {
+        throw refusal('failed-precondition', REASON.insufficientCoins,
+          'You used today\'s free Buddy replies. Each reply now costs 1 coin.',
+          { required: COINS_PER_REPLY, available: Math.max(0, total), freeRepliesPerDay: freeLimit });
+      }
+      const { batches, drawn } = fifoDraw(b.coinBatches, COINS_PER_REPLY);
+      const txnRef = db().collection('coinTransactions').doc();
+      tx.set(balanceRef, {
+        userId: uid, totalCoins: total - COINS_PER_REPLY,
+        spentCoins: (Number(b.spentCoins) || 0) + COINS_PER_REPLY, coinBatches: batches, lastUpdated: TS(),
+      }, { merge: true });
+      tx.set(txnRef, {
+        userId: uid, type: 'debit', amount: COINS_PER_REPLY, balanceAfter: total - COINS_PER_REPLY,
+        reason: 'featurePurchase', relatedId: buddyId, relatedUserId: null,
+        metadata: { feature: 'buddy_reply', requestId, source: 'sendBuddyMessage' }, createdAt: TS(),
+      });
+      usageUpdate.coinReplies = (Number(u.coinReplies) || 0) + 1;
+      Object.assign(plan, { kind: 'coin', drawn, transactionId: txnRef.id, balance: total - COINS_PER_REPLY });
+    }
+    tx.set(usageRef, usageUpdate, { merge: true });
+    tx.create(reqRef, {
+      uid, buddyId, status: 'pending', charge: plan.kind, drawn: plan.drawn, transactionId: plan.transactionId,
+      createdAt: TS(), expireAt: admin.firestore.Timestamp.fromMillis(nowMs + 7 * 864e5),
+    });
+    return plan;
+  });
+}
+
+/** Gives back what reserveCharge took (model failure). */
+async function refundCharge(uid: string, requestId: string, plan: ChargePlan): Promise<void> {
+  const reqRef = db().collection(BUDDY_REQUESTS).doc(`${uid}_${requestId}`);
+  const usageRef = db().collection(BUDDY_USAGE).doc(`${uid}_${utcDay()}`);
+  const balanceRef = db().collection('coinBalances').doc(uid);
+  try {
+    await db().runTransaction(async (tx) => {
+      const [req, bal] = await Promise.all([tx.get(reqRef), tx.get(balanceRef)]);
+      if (req.data()?.status !== 'pending') return;
+      if (plan.kind === 'free') {
+        tx.set(usageRef, { freeUsed: admin.firestore.FieldValue.increment(-1) }, { merge: true });
+      } else {
+        const b = bal.data() ?? {};
+        const total = (Number(b.totalCoins) || 0) + COINS_PER_REPLY;
+        tx.set(balanceRef, {
+          totalCoins: total, spentCoins: Math.max(0, (Number(b.spentCoins) || 0) - COINS_PER_REPLY),
+          coinBatches: restoreSlices(b.coinBatches, plan.drawn), lastUpdated: TS(),
+        }, { merge: true });
+        tx.set(db().collection('coinTransactions').doc(), {
+          userId: uid, type: 'credit', amount: COINS_PER_REPLY, balanceAfter: total, reason: 'refund',
+          relatedId: plan.transactionId, relatedUserId: null,
+          metadata: { feature: 'buddy_reply', requestId, source: 'sendBuddyMessage', why: 'reply failed' }, createdAt: TS(),
+        });
+      }
+      // Free the request id so the app can retry the same message.
+      tx.delete(reqRef);
+    });
+  } catch (e: any) {
+    console.error('sendBuddyMessage: refund failed', e?.message ?? e);
+  }
+}
+
+type Turn = { role: 'user' | 'assistant'; content: string };
+
+async function recentTurns(ref: admin.firestore.DocumentReference, n: number): Promise<{ turns: Turn[]; times: number[] }> {
+  const snap = await ref.collection('messages').orderBy('createdAt', 'desc').limit(n).get();
+  const docs = snap.docs.reverse();
+  return {
+    turns: docs.map((d) => ({ role: d.data().role === 'user' ? 'user' : 'assistant', content: String(d.data().text ?? '') }) as Turn),
+    times: docs.map((d) => d.data().createdAt?.toMillis?.() ?? 0),
+  };
+}
+
+export async function handleSendBuddyMessage(uid: string, data: any) {
+  const buddyId = okId(data.buddyId);
+  if (!validRequestId(data.requestId)) throw new HttpsError('invalid-argument', 'Invalid requestId');
+  const requestId = data.requestId as string;
+  if (typeof data.text !== 'string' || !data.text.trim()) throw new HttpsError('invalid-argument', 'text is required');
+  const text = data.text.trim();
+  if (Array.from(text).length > USER_MESSAGE_MAX) {
+    throw new AppError('TEXT_TOO_LONG', `Messages to a Buddy can be at most ${USER_MESSAGE_MAX} characters.`, 400, { max: USER_MESSAGE_MAX });
+  }
+
+  // A retried call whose reply was already stored gets the same answer.
+  const done = await db().collection(BUDDY_REQUESTS).doc(`${uid}_${requestId}`).get();
+  if (done.exists && done.data()?.status === 'done') return done.data()!.result;
+
+  const consentVersion = await requireAiConsent(uid);
+  const ref = buddiesCol(uid).doc(buddyId);
+  const [snap, tier] = await Promise.all([ref.get(), tierOf(uid)]);
+  if (!snap.exists) throw new HttpsError('not-found', 'Buddy not found');
+  if (!(await activeBuddyIds(uid, tier)).has(buddyId)) {
+    throw refusal('failed-precondition', REASON.tierRequired, 'This Buddy is locked on your current plan.', { tier });
+  }
+  const buddy = settingsOf(snap.data());
+  const lang = buddy.language as Language;
+  const r = await rules();
+  const now = Date.now();
+
+  // Crisis: fixed caring reply with helplines; no model, no charge.
+  if (isCrisis(text)) {
+    const reply = CRISIS_REPLY[lang] ?? CRISIS_REPLY.en;
+    await storeExchange(uid, ref, snap.data(), text, reply, 'safety', 'none', requestId, r, now);
+    const status = await buddyStatus(uid);
+    const result = { reply, kind: 'safety', charged: 'none', freeRepliesLeft: status.freeRepliesLeft };
+    return result;
+  }
+
+  await requireBuddyProvider(consentVersion);
+  const plan = await reserveCharge(uid, tier, buddyId, requestId);
+
+  let reply: string;
+  try {
+    const history = await recentTurns(ref, Math.max(2, r.contextMessages ?? 12));
+    const turns = fitContext([...history.turns, { role: 'user', content: text } as Turn],
+      Math.max(2, (r.contextMessages ?? 12) + 1), r.contextChars ?? 2400);
+    const d = snap.data() ?? {};
+    const memory: MemoryFact[] = Array.isArray(d.memory) ? d.memory : [];
+    const out = await generate('text_buddies', { system: systemPrompt(buddy, r, memory, String(d.summary ?? '')), messages: turns },
+      { consentVersion });
+    reply = isUnsafeReply(out.text, out.banned) ? (FALLBACK_REPLY[lang] ?? FALLBACK_REPLY.en) : out.text;
+  } catch (e: any) {
+    console.warn('sendBuddyMessage: model failed', e?.message ?? e);
+    await refundCharge(uid, requestId, plan);
+    throw unavailable();
+  }
+
+  const result = {
+    reply,
+    kind: 'chat',
+    charged: plan.kind,
+    freeRepliesLeft: plan.freeLeft,
+    ...(plan.balance !== null ? { coinBalance: plan.balance } : {}),
+  };
+  await storeExchange(uid, ref, snap.data(), text, reply, 'chat', plan.kind, requestId, r, now, result);
+  return result;
+}
+
+/** Writes the user message + the Buddy reply and updates the Buddy (one batch). */
+async function storeExchange(uid: string, ref: admin.firestore.DocumentReference, d: any, userText: string, reply: string,
+  kind: 'chat' | 'safety', charged: 'free' | 'coin' | 'none', requestId: string, r: CapabilityRules, nowMs: number,
+  result?: unknown) {
+  const batch = db().batch();
+  const tUser = admin.firestore.Timestamp.fromMillis(nowMs);
+  const tBuddy = admin.firestore.Timestamp.fromMillis(Math.max(nowMs + 1, Date.now()));
+  batch.set(ref.collection('messages').doc(), { role: 'user', text: userText, kind: 'chat', charged: 'none', createdAt: tUser });
+  batch.set(ref.collection('messages').doc(), { role: 'buddy', text: reply, kind, charged, createdAt: tBuddy });
+  const userCount = (Number(d?.userMessageCount) || 0) + 1;
+  const msgCount = (Number(d?.messageCount) || 0) + 2;
+  const checkIn = r.checkInsEnabled !== false && d?.checkInsEnabled !== false;
+  batch.update(ref, {
+    lastMessage: reply.slice(0, 200),
+    lastMessageAt: tBuddy,
+    lastUserMessageAt: tUser,
+    messageCount: msgCount,
+    userMessageCount: userCount,
+    unansweredCheckIns: 0,
+    nextCheckInAt: checkIn ? admin.firestore.Timestamp.fromMillis(nowMs + (r.checkInAfterHours ?? 24) * 3600_000) : null,
+    updatedAt: TS(),
+  });
+  if (result !== undefined) {
+    batch.set(db().collection(BUDDY_REQUESTS).doc(`${uid}_${requestId}`), { status: 'done', result, doneAt: TS() }, { merge: true });
+  }
+  // Background memory / summary work (onBuddyJob), only when due.
+  const memoryDue = (r.memoryEvery ?? 6) > 0 && userCount % (r.memoryEvery ?? 6) === 0;
+  const summaryDue = (r.summaryEvery ?? 20) > 0 && msgCount > (r.contextMessages ?? 12) && msgCount % (r.summaryEvery ?? 20) < 2;
+  if (kind === 'chat' && (memoryDue || summaryDue)) {
+    batch.set(db().collection(BUDDY_JOBS).doc(`${uid}_${ref.id}`), {
+      uid, buddyId: ref.id, memory: memoryDue, summary: summaryDue, at: TS(),
+    }, { merge: true });
+  }
+  await batch.commit();
+}
+
+export const sendBuddyMessage = callable('sendBuddyMessage', handleSendBuddyMessage);
+
+// ------------------------------------------------------- memory + summary job
+
+const factId = (text: string) => crypto.createHash('sha256').update(text.toLowerCase()).digest('hex').slice(0, 12);
+
+export async function runBuddyJob(uid: string, buddyId: string, job: { memory?: boolean; summary?: boolean }) {
+  const ref = buddiesCol(uid).doc(buddyId);
+  const snap = await ref.get();
+  if (!snap.exists) return;
+  const d = snap.data() ?? {};
+  const r = await rules();
+  const consentVersion = await aiConsentVersion(uid);
+  const jsonRules = { maxTokens: 600, temperature: 0.2, maxOutputChars: undefined, stripMarkdown: false, stripLinks: false };
+  const update: Record<string, unknown> = {};
+
+  if (job.memory && (r.memoryMaxFacts ?? 20) > 0) {
+    const { turns } = await recentTurns(ref, Math.max(6, (r.memoryEvery ?? 6) * 2 + 2));
+    try {
+      const out = await generate('text_buddies', {
+        messages: [{ role: 'user', content: memoryPrompt(Array.isArray(d.memory) ? d.memory : [], turns, r.memoryMaxFacts ?? 20) }],
+        json: true,
+      }, { consentVersion }, { rawReply: true, rules: jsonRules });
+      const facts = parseJsonObject(out.text)?.facts;
+      if (Array.isArray(facts)) {
+        const old = new Map<string, MemoryFact>((Array.isArray(d.memory) ? d.memory : []).map((f: MemoryFact) => [f.id, f]));
+        update.memory = facts
+          .filter((f: unknown): f is string => typeof f === 'string' && !!f.trim())
+          .slice(0, r.memoryMaxFacts ?? 20)
+          .map((f: string) => {
+            const text = f.trim().slice(0, 120);
+            const id = factId(text);
+            return { id, text, at: old.get(id)?.at ?? Date.now() };
+          });
+      }
+    } catch (e: any) {
+      console.warn('buddy memory job failed', e?.message ?? e);
+    }
+  }
+
+  if (job.summary) {
+    const keep = r.contextMessages ?? 12;
+    const snapMsgs = await ref.collection('messages').orderBy('createdAt', 'desc').limit(keep + (r.summaryEvery ?? 20) + 10).get();
+    const older = snapMsgs.docs.slice(keep).reverse()
+      .filter((m) => {
+        const covered = d.summaryCoveredUntil?.toMillis?.() ?? 0;
+        return (m.data().createdAt?.toMillis?.() ?? 0) > covered;
+      });
+    if (older.length) {
+      try {
+        const out = await generate('text_buddies', {
+          messages: [{
+            role: 'user',
+            content: summaryPrompt(String(d.summary ?? ''),
+              older.map((m) => ({ role: m.data().role, content: String(m.data().text ?? '') })), r.summaryMaxChars ?? 600),
+          }],
+          json: true,
+        }, { consentVersion }, { rawReply: true, rules: jsonRules });
+        const summary = parseJsonObject(out.text)?.summary;
+        if (typeof summary === 'string' && summary.trim()) {
+          update.summary = summary.trim().slice(0, r.summaryMaxChars ?? 600);
+          update.summaryCoveredUntil = older[older.length - 1].data().createdAt;
+        }
+      } catch (e: any) {
+        console.warn('buddy summary job failed', e?.message ?? e);
+      }
+    }
+  }
+  if (Object.keys(update).length) await ref.update(update);
+}
+
+export const onBuddyJob = onDocumentWritten({ document: `${BUDDY_JOBS}/{jobId}`, memory: '512MiB', timeoutSeconds: 120 },
+  async (event) => {
+    const after = event.data?.after;
+    if (!after?.exists) return;
+    const j = after.data() ?? {};
+    if (!j.uid || !j.buddyId || (!j.memory && !j.summary)) return;
+    // Claim the job first so a burst of messages runs it once.
+    await after.ref.delete().catch(() => undefined);
+    await runBuddyJob(String(j.uid), String(j.buddyId), { memory: !!j.memory, summary: !!j.summary });
+  });
+
+// ------------------------------------------------------------------ check-ins
+
+/** Local hour of a user from the notification prefs offset (default UTC). */
+export function localHour(nowMs: number, tzOffsetMinutes: number): number {
+  return new Date(nowMs + tzOffsetMinutes * 60_000).getUTCHours();
+}
+
+/** Milliseconds until the next local [startHour]:00 (0 if inside the window). */
+export function msUntilWindow(nowMs: number, tzOffsetMinutes: number, startHour: number, endHour: number): number {
+  const h = localHour(nowMs, tzOffsetMinutes);
+  if (h >= startHour && h < endHour) return 0;
+  const local = new Date(nowMs + tzOffsetMinutes * 60_000);
+  const next = new Date(local);
+  next.setUTCMinutes(0, 0, 0);
+  next.setUTCHours(startHour);
+  if (next.getTime() <= local.getTime()) next.setUTCDate(next.getUTCDate() + 1);
+  return next.getTime() - local.getTime();
+}
+
+export type CheckInDecision =
+  | { action: 'send' }
+  | { action: 'stop' }
+  | { action: 'later'; atMs: number };
+
+/** Pure eligibility rule (tested): daytime, one per user per day, stop after N unanswered. */
+export function checkInDecision(p: {
+  nowMs: number; unanswered: number; maxUnanswered: number; userCheckInDay: string | null;
+  tzOffsetMinutes: number; startHour: number; endHour: number;
+}): CheckInDecision {
+  if (p.unanswered >= p.maxUnanswered) return { action: 'stop' };
+  if (p.userCheckInDay === utcDay(p.nowMs)) return { action: 'later', atMs: p.nowMs + 6 * 3600_000 };
+  const wait = msUntilWindow(p.nowMs, p.tzOffsetMinutes, p.startHour, p.endHour);
+  if (wait > 0) return { action: 'later', atMs: p.nowMs + wait + Math.floor(Math.random() * 3600_000) };
+  return { action: 'send' };
+}
+
+async function checkInOne(doc: admin.firestore.QueryDocumentSnapshot, r: CapabilityRules, sentToday: Set<string>) {
+  const uid = doc.ref.parent.parent?.id;
+  if (!uid) return;
+  const d = doc.data();
+  const nowMs = Date.now();
+  const [root, prefs, consentVersion] = await Promise.all([
+    db().collection(BUDDIES).doc(uid).get(),
+    db().collection('notification_preferences').doc(uid).get(),
+    aiConsentVersion(uid),
+  ]);
+  const decision = checkInDecision({
+    nowMs,
+    unanswered: Number(d.unansweredCheckIns) || 0,
+    maxUnanswered: r.checkInMaxUnanswered ?? 3,
+    userCheckInDay: sentToday.has(uid) ? utcDay(nowMs) : (root.data()?.lastCheckInDay ?? null),
+    tzOffsetMinutes: Number(prefs.data()?.tzOffsetMinutes) || 0,
+    startHour: r.checkInStartHour ?? 9,
+    endHour: r.checkInEndHour ?? 21,
+  });
+  if (decision.action === 'stop') {
+    await doc.ref.update({ nextCheckInAt: null });
+    return;
+  }
+  if (decision.action === 'later') {
+    await doc.ref.update({ nextCheckInAt: admin.firestore.Timestamp.fromMillis(decision.atMs) });
+    return;
+  }
+  const config = await loadConfig();
+  if (!eligibleChain(config, 'text_buddies', { consentVersion }).length) {
+    // No provider for this user (e.g. old AI notice): wait until they write again.
+    await doc.ref.update({ nextCheckInAt: null });
+    return;
+  }
+  const buddy = settingsOf(d);
+  const lang = buddy.language as Language;
+  const { turns } = await recentTurns(doc.ref, 6);
+  const lastUser = d.lastUserMessageAt?.toMillis?.() ?? nowMs;
+  const p = checkInPrompt(buddy, r, Array.isArray(d.memory) ? d.memory : [], String(d.summary ?? ''), turns,
+    (nowMs - lastUser) / 3600_000, Number(d.unansweredCheckIns) || 0);
+  let text: string;
+  try {
+    const out = await generate('text_buddies', { system: p.system, messages: [{ role: 'user', content: p.user }] }, { consentVersion });
+    if (isUnsafeReply(out.text, out.banned)) throw new Error('unsafe reply');
+    text = out.text;
+  } catch (e: any) {
+    console.warn('buddyCheckIns: generation failed', e?.message ?? e);
+    await doc.ref.update({ nextCheckInAt: admin.firestore.Timestamp.fromMillis(nowMs + 6 * 3600_000) });
+    return;
+  }
+  const unanswered = (Number(d.unansweredCheckIns) || 0) + 1;
+  const batch = db().batch();
+  const at = TS();
+  // Free and never counted: kind 'checkin', charged 'none'.
+  batch.set(doc.ref.collection('messages').doc(), { role: 'buddy', text, kind: 'checkin', charged: 'none', createdAt: at });
+  batch.update(doc.ref, {
+    lastMessage: text.slice(0, 200), lastMessageAt: at, messageCount: admin.firestore.FieldValue.increment(1),
+    unansweredCheckIns: unanswered,
+    // Back off: 24h, then 48h, then 96h ...
+    nextCheckInAt: admin.firestore.Timestamp.fromMillis(nowMs + (r.checkInAfterHours ?? 24) * 3600_000 * 2 ** unanswered),
+  });
+  batch.set(db().collection(BUDDIES).doc(uid), { lastCheckInDay: utcDay(nowMs) }, { merge: true });
+  await batch.commit();
+  sentToday.add(uid);
+  await emitNotification({
+    recipientId: uid,
+    type: 'buddy_checkin',
+    title: rawText(buddy.name),
+    body: rawText(text),
+    data: { type: 'buddy_checkin', buddyId: doc.id },
+  }).catch(() => undefined);
+  void lang;
+}
+
+export async function runBuddyCheckIns(maxDocs = 2000): Promise<number> {
+  const r = await rules();
+  if (r.checkInsEnabled === false) return 0;
+  const sentToday = new Set<string>();
+  let processed = 0;
+  let last: admin.firestore.QueryDocumentSnapshot | null = null;
+  const deadline = Date.now() + 8 * 60_000;
+  while (processed < maxDocs && Date.now() < deadline) {
+    let q = db().collectionGroup('buddies')
+      .where('checkInsEnabled', '==', true)
+      .where('nextCheckInAt', '<=', TS())
+      .orderBy('nextCheckInAt', 'asc')
+      .limit(100);
+    if (last) q = q.startAfter(last);
+    const page = await q.get();
+    if (page.empty) break;
+    for (let i = 0; i < page.docs.length; i += 5) {
+      await Promise.all(page.docs.slice(i, i + 5).map((doc) =>
+        checkInOne(doc, r, sentToday).catch((e) => console.warn('buddyCheckIns: item failed', e?.message ?? e))));
+    }
+    processed += page.size;
+    last = page.docs[page.docs.length - 1];
+    if (page.size < 100) break;
+  }
+  return processed;
+}
+
+export const buddyCheckIns = onSchedule({ schedule: 'every 60 minutes', memory: '512MiB', timeoutSeconds: 540 },
+  async () => {
+    const n = await runBuddyCheckIns();
+    console.log(`buddyCheckIns: processed ${n}`);
+  });
