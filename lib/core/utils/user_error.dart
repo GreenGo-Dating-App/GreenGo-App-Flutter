@@ -16,6 +16,7 @@ import '../error/failures.dart';
 import '../widgets/connection_error_dialog.dart';
 import 'auth_error_localizer.dart';
 import '../services/analytics_consent_service.dart';
+import '../services/app_sound_service.dart';
 
 /// User-facing error handling.
 ///
@@ -404,6 +405,7 @@ Future<void> _showErrorDialog(
   final navigator = Navigator.maybeOf(context, rootNavigator: true);
   if (navigator == null) return;
   _userErrorDialogOpen = true;
+  AppSoundService().play(AppSound.error);
   try {
     await showDialog<void>(
       context: context,

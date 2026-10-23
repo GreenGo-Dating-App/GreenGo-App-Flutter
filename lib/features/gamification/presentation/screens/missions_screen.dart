@@ -9,6 +9,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../data/services/missions_service.dart';
 import '../../data/services/streak_service.dart';
 import '../utils/gamification_l10n.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Streaks & Missions hub (glass).
 ///
@@ -67,6 +68,7 @@ class _MissionsScreenState extends State<MissionsScreen> {
       final missions = await _missionsService.load(widget.userId);
       if (!mounted) return;
       setState(() => _missions = missions);
+      AppSoundService().play(AppSound.dailyChallengeComplete);
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('+${mission.def.coinReward} 🪙'),

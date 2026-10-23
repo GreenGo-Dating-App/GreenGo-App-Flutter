@@ -8,6 +8,7 @@ import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../services/location_change.dart';
 import '../services/location_refresh_service.dart';
+import '../services/app_sound_service.dart';
 
 /// Gets a fresh position and saves it (see
 /// [LocationRefreshService.refreshOnPull]).
@@ -89,6 +90,7 @@ class LocationPullToRefresh extends StatelessWidget {
     final messenger = ScaffoldMessenger.maybeOf(context);
     final l10n = AppLocalizations.of(context);
     onPullStateChanged?.call(true);
+    AppSoundService().play(AppSound.refresh);
     try {
       final result = await _refreshLocation();
       if (messenger != null && l10n != null && context.mounted) {

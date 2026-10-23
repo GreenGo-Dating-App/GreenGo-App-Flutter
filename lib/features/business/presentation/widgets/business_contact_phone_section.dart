@@ -8,6 +8,7 @@ import '../../../../core/utils/country_names_l10n.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/business_contact_phone.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// Business Center: the optional business contact number (any country,
 /// landline allowed, not SMS-verified) + "Show on my storefront" switch.
@@ -232,7 +233,7 @@ class _BusinessContactPhoneSectionState
             l10n.businessContactPhoneShowHint,
             style: const TextStyle(color: AppColors.textTertiary, fontSize: 12),
           ),
-          onChanged: (v) => setState(() => _show = v),
+          onChanged: withToggleSound((v) => setState(() => _show = v)),
         ),
         Align(
           alignment: Alignment.centerRight,

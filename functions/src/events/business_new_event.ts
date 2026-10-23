@@ -46,6 +46,7 @@ import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
 import { LText, lt, notifTextFields, rawText, render, t } from '../shared/i18n';
 import { pushRecipientsFromUserDocs, sendLocalizedMulticast } from '../notifications/localizedPush';
+import { PUSH_CHANNEL_ID, PUSH_SOUND_ANDROID, PUSH_SOUND_IOS } from '../notifications/pushSound';
 
 const db = admin.firestore();
 
@@ -152,8 +153,8 @@ async function fanOutNewEventToFollowers(
             priority: 'high',
             collapseKey: `event_new_${eventId}`,
             notification: {
-              sound: 'default',
-              channelId: 'greengo_notifications',
+              sound: PUSH_SOUND_ANDROID,
+              channelId: PUSH_CHANNEL_ID,
               priority: 'high' as any,
               tag: `event_new_${eventId}`,
               ...(eventImage ? { imageUrl: eventImage } : {}),
@@ -161,7 +162,7 @@ async function fanOutNewEventToFollowers(
           },
           apns: {
             headers: { 'apns-collapse-id': `event_new_${eventId}` },
-            payload: { aps: { sound: 'default', badge: 1 } },
+            payload: { aps: { sound: PUSH_SOUND_IOS, badge: 1 } },
           },
       }),
       `Business new-event FCM ${eventId}`,

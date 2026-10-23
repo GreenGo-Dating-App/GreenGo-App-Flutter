@@ -46,6 +46,7 @@ import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../../core/services/analytics_consent_service.dart';
 import '../../../../core/widgets/collapsible_how_it_works.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Coin Shop Screen
 /// Point 157: Coin purchase interface with packages and membership
@@ -3090,6 +3091,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           _isSendingCoins = false;
         });
         // Reload balance from Firestore to sync with batches
+        AppSoundService().play(AppSound.giftSent);
         context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(

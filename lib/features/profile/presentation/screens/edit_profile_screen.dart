@@ -99,6 +99,8 @@ import '../../../../core/utils/user_error.dart';
 import '../../../settings/presentation/screens/privacy_data_settings_screen.dart';
 import '../../../legal/presentation/screens/legal_document_screen.dart';
 import '../../../../core/utils/eula_link.dart';
+import '../../../../core/services/sound_feedback.dart';
+import '../widgets/sound_effects_row.dart';
 
 class EditProfileScreen extends StatelessWidget {
 
@@ -588,6 +590,9 @@ class EditProfileScreen extends StatelessWidget {
                         icon: Icons.notifications_outlined,
                         onTap: () => _navigateToNotificationSettings(context),
                       ),
+                      // In-app sound effects on / off (saved on this device).
+                      const SizedBox(height: MenuRow.gap),
+                      const SoundEffectsRow(),
                       // Privacy & data (P2-5): analytics / crash reports and
                       // marketing-email choices, for every user.
                       const SizedBox(height: MenuRow.gap),
@@ -2930,7 +2935,7 @@ class _IncognitoToggleCard extends StatelessWidget {
         ),
         trailing: Switch(
           value: isActive,
-          onChanged: onToggle,
+          onChanged: withToggleSound(onToggle),
           activeThumbColor: AppColors.richGold,
         ),
       ),

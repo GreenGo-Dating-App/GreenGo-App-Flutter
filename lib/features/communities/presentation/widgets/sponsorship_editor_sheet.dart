@@ -5,6 +5,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/community.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// Result returned by [SponsorshipEditorSheet].
 class SponsorshipResult {
@@ -207,7 +208,7 @@ class _SponsorshipEditorSheetState extends State<SponsorshipEditorSheet> {
                       ),
                       Switch(
                         value: _isSponsored,
-                        onChanged: (v) => setState(() => _isSponsored = v),
+                        onChanged: withToggleSound((v) => setState(() => _isSponsored = v)),
                         activeThumbColor: AppColors.richGold,
                       ),
                     ],

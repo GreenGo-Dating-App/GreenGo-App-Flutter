@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// "I've arrived safely" event check-in, shown on the event detail body to a
 /// user who is GOING to the event.
@@ -70,6 +71,7 @@ class _EventSafetyCheckInState extends State<EventSafetyCheckIn> {
         'checkedInSafeAt': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true));
       if (mounted) {
+        AppSoundService().play(AppSound.safetyModuleComplete);
         setState(() {
           _checkedIn = true;
           _submitting = false;

@@ -32,6 +32,7 @@ import '../../../../core/widgets/cover_frames.dart';
 import '../../../../core/widgets/cover_image_size_hint.dart';
 import '../../../../core/widgets/cover_positioner.dart';
 import '../../../../core/widgets/focal_cover_image.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// Storefront editor — lets a business account owner curate the public
 /// storefront that visitors see in [BusinessStorefrontScreen].
@@ -1338,7 +1339,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
           Switch(
             value: !day.isClosed,
             activeColor: AppColors.richGold,
-            onChanged: (open) => _toggleClosed(index, !open),
+            onChanged: withToggleSound((open) => _toggleClosed(index, !open)),
           ),
         ],
       ),

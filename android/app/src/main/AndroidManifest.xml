@@ -140,7 +140,7 @@
         <!-- FCM default notification channel -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
-            android:value="greengo_notifications" />
+            android:value="greengo_push_v2" />
 
         <!-- FCM status-bar icon: white/transparent GG glyph (Android tints it);
              a colored icon renders as a white square, so use a dedicated mask -->

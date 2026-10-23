@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 import '../constants/app_colors.dart';
+import '../services/app_sound_service.dart';
 
 /// The moment a boost takes effect.
 ///
@@ -34,6 +35,7 @@ class BoostCelebration extends StatefulWidget {
     required String title,
     required String subtitle,
   }) {
+    AppSoundService().play(AppSound.purchaseSuccess);
     return showDialog<void>(
       context: context,
       barrierDismissible: true,

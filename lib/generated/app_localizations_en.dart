@@ -7064,6 +7064,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notificationSoundSubtitle => 'Play sound for notifications';
 
   @override
+  String get soundEffectsTitle => 'Sound effects';
+
+  @override
+  String get soundEffectsSubtitle =>
+      'Sounds for taps, messages and celebrations in the app';
+
+  @override
   String get notificationSoundVibration => 'Sound & Vibration';
 
   @override

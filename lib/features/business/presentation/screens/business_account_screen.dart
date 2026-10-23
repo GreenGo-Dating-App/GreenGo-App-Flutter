@@ -25,6 +25,7 @@ import '../../../profile/presentation/bloc/profile_state.dart';
 import 'business_verification_request_screen.dart';
 import '../widgets/business_contact_phone_section.dart';
 import '../../../../core/widgets/locked_reason_sheet.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// Business / venue account screen.
 ///
@@ -491,7 +492,7 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
                         value: false,
                         activeColor: AppColors.deepBlack,
                         activeTrackColor: AppColors.richGold,
-                        onChanged: _handleToggleStorefront,
+                        onChanged: withToggleSound(_handleToggleStorefront),
                       ),
                   ],
                 ),

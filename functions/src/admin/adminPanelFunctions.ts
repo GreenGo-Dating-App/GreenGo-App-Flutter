@@ -23,6 +23,7 @@ import { getAiConsentState, hasSupportAiConsent } from '../shared/aiConsent';
 import { t } from '../shared/i18n';
 import { effectiveTier, EffectiveTier } from '../shared/effectiveTier';
 import { hasPrioritySupport, supportPriorityFor } from '../shared/tierLimits';
+import { PUSH_CHANNEL_ID, PUSH_SOUND_ANDROID, PUSH_SOUND_IOS } from '../notifications/pushSound';
 
 const db = admin.firestore();
 const auth = admin.auth();
@@ -937,15 +938,15 @@ export const onSupportMessageCreated = functions
             android: {
               priority: 'high',
               notification: {
-                channelId: 'greengo_notifications',
+                channelId: PUSH_CHANNEL_ID,
                 priority: 'high' as any,
-                sound: 'default',
+                sound: PUSH_SOUND_ANDROID,
               },
             },
             apns: {
               payload: {
                 aps: {
-                  sound: 'default',
+                  sound: PUSH_SOUND_IOS,
                   badge: 1,
                 },
               },

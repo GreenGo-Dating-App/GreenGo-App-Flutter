@@ -16,6 +16,7 @@ import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../domain/entities/event.dart';
 import '../widgets/scan_result_overlay.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Organizer-only QR scanner that checks attendees in at the door.
 ///
@@ -153,6 +154,7 @@ class _EventScannerScreenState extends State<EventScannerScreen> {
 
   void _approved(AppLocalizations l10n, String name) {
     if (!mounted) return;
+    AppSoundService().play(AppSound.scanOk);
     showScanResult(
       context,
       approved: true,
@@ -164,6 +166,7 @@ class _EventScannerScreenState extends State<EventScannerScreen> {
 
   void _denied(AppLocalizations l10n, String reason, {String? name}) {
     if (!mounted) return;
+    AppSoundService().play(AppSound.scanDenied);
     showScanResult(
       context,
       approved: false,

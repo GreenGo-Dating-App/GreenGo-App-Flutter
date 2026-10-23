@@ -14,6 +14,7 @@ import { PUSH_MEMORY } from '../shared/pushRuntime';
 import { AppLocale, LText, lt, notifTextFields, rawText, render, t } from '../shared/i18n';
 import { mediaLabel, truncatePreview } from '../shared/i18n/chatPreview';
 import { resolveLocale } from '../shared/i18n/recipientLocale';
+import { PUSH_CHANNEL_ID, PUSH_SOUND_ANDROID, PUSH_SOUND_IOS } from './pushSound';
 
 const db = admin.firestore();
 const messaging = admin.messaging();
@@ -191,8 +192,8 @@ async function sendPushToUser(
         priority: 'high',
         ...(options?.collapseKey ? { collapseKey: options.collapseKey } : {}),
         notification: {
-          sound: 'default',
-          channelId: 'greengo_notifications',
+          sound: PUSH_SOUND_ANDROID,
+          channelId: PUSH_CHANNEL_ID,
           priority: 'high' as any,
           ...(options?.collapseKey ? { tag: options.collapseKey } : {}),
           ...(options?.imageUrl ? { imageUrl: options.imageUrl } : {}),
@@ -204,7 +205,7 @@ async function sendPushToUser(
           : {}),
         payload: {
           aps: {
-            sound: 'default',
+            sound: PUSH_SOUND_IOS,
             badge: 1,
             ...(options?.threadId ? { 'thread-id': options.threadId } : {}),
             ...(options?.isCritical ? { 'interruption-level': 'time-sensitive' as any } : {}),

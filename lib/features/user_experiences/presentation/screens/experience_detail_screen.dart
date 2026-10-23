@@ -45,6 +45,7 @@ import '../../../app_tour/presentation/widgets/page_tour_host.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../../core/media/cover_focus.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// What the detail screen reports back to the list that opened it.
 class ExperienceDetailResult {
@@ -245,6 +246,7 @@ class _DetailViewState extends State<_DetailView> {
     if (!link.isOpenable) {
       // PIX key (or any non-URL value): copy it.
       await Clipboard.setData(ClipboardData(text: link.value));
+      AppSoundService().play(AppSound.copy);
       messenger.showSnackBar(SnackBar(content: Text(l.uexpPixCopied)));
       return;
     }

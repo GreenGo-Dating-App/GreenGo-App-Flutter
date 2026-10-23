@@ -5,6 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../user_experiences/domain/entities/user_experience.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Opens the host's payment link (a URL) or copies it (a PIX key / any
 /// non-URL value). The payment happens outside GreenGo.
@@ -14,6 +15,7 @@ Future<void> openBookingPaymentLink(
   final messenger = ScaffoldMessenger.of(context);
   if (!link.isOpenable) {
     await Clipboard.setData(ClipboardData(text: link.value));
+    AppSoundService().play(AppSound.copy);
     messenger.showSnackBar(SnackBar(content: Text(l.uexpPixCopied)));
     return;
   }

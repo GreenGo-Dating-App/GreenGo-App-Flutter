@@ -29,6 +29,7 @@ import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
 import { LText, lt, notifTextFields, rawText, render } from '../shared/i18n';
 import { pushRecipientsFromUserDocs, sendLocalizedMulticast } from '../notifications/localizedPush';
+import { PUSH_CHANNEL_ID, PUSH_SOUND_ANDROID, PUSH_SOUND_IOS } from '../notifications/pushSound';
 
 const db = admin.firestore();
 
@@ -98,8 +99,8 @@ async function notifyCommunityMembers(
             priority: 'high',
             collapseKey,
             notification: {
-              sound: 'default',
-              channelId: 'greengo_notifications',
+              sound: PUSH_SOUND_ANDROID,
+              channelId: PUSH_CHANNEL_ID,
               priority: 'high' as any,
               tag: collapseKey,
               ...(eventImage ? { imageUrl: eventImage } : {}),
@@ -107,7 +108,7 @@ async function notifyCommunityMembers(
           },
           apns: {
             headers: { 'apns-collapse-id': collapseKey },
-            payload: { aps: { sound: 'default', badge: 1 } },
+            payload: { aps: { sound: PUSH_SOUND_IOS, badge: 1 } },
           },
       }),
       `Community members multicast ${collapseKey}`,

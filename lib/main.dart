@@ -103,6 +103,7 @@ import 'features/video_profiles/presentation/screens/video_profile_screen.dart';
 import 'core/services/analytics_consent_service.dart';
 import 'firebase_options.dart';
 import 'generated/app_localizations.dart';
+import 'core/services/sound_feedback.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -484,6 +485,7 @@ class GreenGoChatApp extends StatelessWidget {
               languageProvider.currentLocale.toString());
           return MaterialApp(
             navigatorKey: PushNotificationService.navigatorKey,
+            navigatorObservers: [SoundNavigatorObserver()],
             title: AppStrings.appName,
             debugShowCheckedModeBanner: false,
             theme: AppTheme.darkTheme,

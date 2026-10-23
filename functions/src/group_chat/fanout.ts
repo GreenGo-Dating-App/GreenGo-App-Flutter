@@ -29,6 +29,7 @@ import '../shared/firebaseAdmin';
 import { t } from '../shared/i18n';
 import { mediaLabel, truncatePreview } from '../shared/i18n/chatPreview';
 import { pushRecipientsFromUserDocs, sendLocalizedMulticast } from '../notifications/localizedPush';
+import { PUSH_CHANNEL_ID, PUSH_SOUND_ANDROID, PUSH_SOUND_IOS } from '../notifications/pushSound';
 
 const db = admin.firestore();
 
@@ -210,8 +211,8 @@ export const onGroupMessageCreated = onDocumentCreated(
             priority: 'high',
             collapseKey: `group_${groupId}`,
             notification: {
-              sound: 'default',
-              channelId: 'greengo_notifications',
+              sound: PUSH_SOUND_ANDROID,
+              channelId: PUSH_CHANNEL_ID,
               priority: 'high' as any,
               tag: `group_${groupId}`,
             },
@@ -220,7 +221,7 @@ export const onGroupMessageCreated = onDocumentCreated(
             headers: { 'apns-collapse-id': `group_${groupId}` },
             payload: {
               aps: {
-                sound: 'default',
+                sound: PUSH_SOUND_IOS,
                 badge: 1,
               },
             },

@@ -8,6 +8,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../generated/app_localizations.dart';
 import '../widgets/guideline_principle_card.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Community Guidelines — a warm, welcoming glass experience about respectful
 /// cross-cultural exchange (this is NOT a dating app). Shown ONCE on first app
@@ -145,6 +146,7 @@ class _CommunityGuidelinesScreenState extends State<CommunityGuidelinesScreen>
 
   void _onAccept() {
     HapticFeedback.mediumImpact();
+    AppSoundService().play(AppSound.safetyModuleComplete);
     widget.onAccepted?.call();
     Navigator.of(context).maybePop();
   }

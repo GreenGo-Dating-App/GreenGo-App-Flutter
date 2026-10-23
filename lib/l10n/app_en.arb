@@ -3458,6 +3458,8 @@
   "notificationWebHowToInstall": "How to add it",
   "notificationSound": "Sound",
   "notificationSoundSubtitle": "Play sound for notifications",
+  "soundEffectsTitle": "Sound effects",
+  "soundEffectsSubtitle": "Sounds for taps, messages and celebrations in the app",
   "notificationSoundVibration": "Sound & Vibration",
   "notificationStartTime": "Start Time",
   "notificationSuperLike": "You received a priority connect from @{nickname}",

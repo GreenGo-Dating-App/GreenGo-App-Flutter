@@ -28,6 +28,7 @@ import '../booking_l10n.dart';
 import '../widgets/booking_widgets.dart';
 import 'booking_detail_screen.dart';
 import 'booking_result_screen.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Guest booking: date (seats left) → guests → payment method (when the
 /// listing accepts both) → ID document gate → consent → createBooking.
@@ -224,6 +225,7 @@ class _BookViewState extends State<_BookView> {
           a.failureSeq != b.failureSeq || (a.result == null && b.result != null),
       listener: (context, s) {
         if (s.result != null) {
+          AppSoundService().play(AppSound.ticketPurchased);
           Navigator.of(context).pushReplacement(BookingResultScreen.route(
             booking: s.result!,
             experience: s.experience!,

@@ -90,6 +90,7 @@ import '../../data/services/chat_screenshot_notice.dart';
 import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
 import '../../../safety/presentation/widgets/report_reasons.dart';
 import '../../../../core/widgets/locked_reason_sheet.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// Chat Screen
 ///
@@ -3002,10 +3003,10 @@ class _ChatScreenState extends State<ChatScreen> {
           else
             Switch(
               value: value,
-              onChanged: (v) {
+              onChanged: withToggleSound((v) {
                 setSheetState(() {});
                 onChanged(v);
-              },
+              }),
               activeThumbColor: AppColors.richGold,
               inactiveTrackColor: AppColors.backgroundDark,
             ),
@@ -3497,6 +3498,7 @@ class _ChatScreenState extends State<ChatScreen> {
   /// resolved from the match, so using matchId here wrote to a non-existent doc
   /// and silently failed. Use the message's own conversationId.
   Future<bool> _reactToMessage(Message message, String emoji) async {
+    AppSoundService().play(AppSound.reaction);
     final conversationId = message.conversationId.isNotEmpty
         ? message.conversationId
         : widget.matchId;

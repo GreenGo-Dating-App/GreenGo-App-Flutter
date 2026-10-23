@@ -4,6 +4,7 @@ import 'package:showcaseview/showcaseview.dart';
 
 import 'tour_keys.dart';
 import '../../../core/config/flavor_config.dart';
+import '../../../core/services/app_sound_service.dart';
 
 /// Coordinates the first-launch gesture tour and the one-time contextual
 /// mini-tours (chat, swipe mode, profile detail, story).
@@ -195,6 +196,7 @@ class TourController {
   /// Advances to the next step (wired to Next buttons and interactive
   /// target gestures).
   void advance(BuildContext context) {
+    AppSoundService().play(AppSound.tourStep);
     ShowCaseWidget.of(context).next();
   }
 

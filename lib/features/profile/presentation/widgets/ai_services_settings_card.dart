@@ -5,6 +5,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/ai_consent_service.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// Profile > Account settings > "AI services": the master on/off switch for
 /// every feature that sends text to third-party AI services (smart replies,
@@ -93,7 +94,7 @@ class _AiServicesSettingsCardState extends State<AiServicesSettingsCard> {
               SwitchListTile(
                 key: const Key('aiServicesSwitch'),
                 value: on,
-                onChanged: _busy ? null : _onChanged,
+                onChanged: withToggleSound(_busy ? null : _onChanged),
                 activeThumbColor: AppColors.richGold,
                 contentPadding: const EdgeInsets.fromLTRB(16, 8, 8, 4),
                 secondary: Container(

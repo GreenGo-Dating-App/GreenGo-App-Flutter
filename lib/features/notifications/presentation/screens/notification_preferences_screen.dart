@@ -14,6 +14,7 @@ import '../bloc/notification_preferences_bloc.dart';
 import '../bloc/notification_preferences_event.dart';
 import '../bloc/notification_preferences_state.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// Notification Preferences Screen — per-category push controls, sound/vibration,
 /// quiet hours, and the list of cities the user wants event alerts for.
@@ -297,7 +298,7 @@ class NotificationPreferencesScreen extends StatelessWidget {
         ),
       ),
       value: value,
-      onChanged: enabled ? onChanged : null,
+      onChanged: withToggleSound(enabled ? onChanged : null),
       activeThumbColor: AppColors.richGold,
     );
   }

@@ -10,6 +10,7 @@ import { shouldNotify, categoryForType } from './prefs';
 import { LText, notifTextFields, render, t, AppLocale } from '../shared/i18n';
 import { resolveLocale } from '../shared/i18n/recipientLocale';
 import { isGuestKey } from '../shared/guestIdentity';
+import { PUSH_CHANNEL_ID, PUSH_SOUND_ANDROID, PUSH_SOUND_IOS } from './pushSound';
 
 const db = admin.firestore();
 
@@ -130,9 +131,9 @@ export async function emitNotification(params: {
         data,
         android: {
           priority: 'high',
-          notification: { sound: 'default', channelId: 'greengo_notifications' },
+          notification: { sound: PUSH_SOUND_ANDROID, channelId: PUSH_CHANNEL_ID },
         },
-        apns: { payload: { aps: { sound: 'default', badge: 1 } } },
+        apns: { payload: { aps: { sound: PUSH_SOUND_IOS, badge: 1 } } },
       });
     }
   } catch {

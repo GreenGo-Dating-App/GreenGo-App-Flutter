@@ -10,6 +10,7 @@ import { AppLocale, t } from '../shared/i18n';
 import { LocaleCache, resolveLocale } from '../shared/i18n/recipientLocale';
 import { monitored } from '../shared/monitoring';
 import { requireAdmin } from '../shared/adminAuth';
+import { PUSH_CHANNEL_ID, PUSH_SOUND_ANDROID, PUSH_SOUND_IOS } from './pushSound';
 
 const firestore = admin.firestore();
 const messaging = admin.messaging();
@@ -105,15 +106,15 @@ export const sendPushNotification = functions.runWith({ memory: '512MB' }).https
       android: {
         priority: 'high',
         notification: {
-          sound: 'gold_chime', // Point 277
-          channelId: 'default',
+          sound: PUSH_SOUND_ANDROID, // Point 277
+          channelId: PUSH_CHANNEL_ID,
           priority: 'high' as any,
         },
       },
       apns: {
         payload: {
           aps: {
-            sound: 'gold_chime.mp3',
+            sound: PUSH_SOUND_IOS,
             badge: 1,
           },
         },

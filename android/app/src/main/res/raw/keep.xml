@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The push sound is referenced only by name from the server payload
+     (functions/src/notifications/pushSound.ts) and by the notification
+     channel, so resource shrinking must not remove it. -->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@raw/greengo_push" />

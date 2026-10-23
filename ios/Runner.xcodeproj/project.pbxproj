@@ -16,6 +16,7 @@
 		A1B2C3D4E5F60011 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60010 /* PrivacyInfo.xcprivacy */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
 		A1B2C3D4E5F60003 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60004 /* GoogleService-Info.plist */; };
+		A1B2C3D4E5F60021 /* greengo_push.wav in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60022 /* greengo_push.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		A1B2C3D4E5F60001 /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
 		A1B2C3D4E5F60002 /* RunnerRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RunnerRelease.entitlements; sourceTree = "<group>"; };
 		A1B2C3D4E5F60004 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1B2C3D4E5F60022 /* greengo_push.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = greengo_push.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				A1B2C3D4E5F60001 /* Runner.entitlements */,
 				A1B2C3D4E5F60002 /* RunnerRelease.entitlements */,
 				A1B2C3D4E5F60004 /* GoogleService-Info.plist */,
+				A1B2C3D4E5F60022 /* greengo_push.wav */,
 				1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */,
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
 				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
@@ -227,6 +230,7 @@
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
 				A1B2C3D4E5F60003 /* GoogleService-Info.plist in Resources */,
+				A1B2C3D4E5F60021 /* greengo_push.wav in Resources */,
 				A1B2C3D4E5F60011 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,6 +24,7 @@ import '../shared/firebaseAdmin';
 import { LText, lt, rawText, notifTextFields, render } from '../shared/i18n';
 import { resolveLocale } from '../shared/i18n/recipientLocale';
 import { Actor, actorNameFor, resolveActor } from './notifyHelpers';
+import { PUSH_CHANNEL_ID, PUSH_SOUND_ANDROID, PUSH_SOUND_IOS } from './pushSound';
 
 const db = admin.firestore();
 
@@ -113,9 +114,9 @@ async function emit(
         data,
         android: {
           priority: 'high',
-          notification: { sound: 'default', channelId: 'greengo_notifications' },
+          notification: { sound: PUSH_SOUND_ANDROID, channelId: PUSH_CHANNEL_ID },
         },
-        apns: { payload: { aps: { sound: 'default', badge: 1 } } },
+        apns: { payload: { aps: { sound: PUSH_SOUND_IOS, badge: 1 } } },
       });
     }
   } catch {

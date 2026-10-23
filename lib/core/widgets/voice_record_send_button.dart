@@ -9,6 +9,7 @@ import 'package:record/record.dart';
 
 import '../../generated/app_localizations.dart';
 import '../platform/voice_recording_format.dart';
+import '../services/app_sound_service.dart';
 
 /// WhatsApp-style send / voice-record button used by both 1:1 and group chats.
 ///
@@ -123,6 +124,7 @@ class _VoiceRecordSendButtonState extends State<VoiceRecordSendButton> {
     _startedAt = DateTime.now();
     _cancelZone = false;
     _elapsed = Duration.zero;
+    AppSoundService().play(AppSound.videoRecordStart);
     await HapticFeedback.mediumImpact();
     _ticker = Timer.periodic(const Duration(milliseconds: 200), (_) {
       if (_startedAt == null) return;
@@ -136,6 +138,8 @@ class _VoiceRecordSendButtonState extends State<VoiceRecordSendButton> {
   Future<void> _stop({required bool cancel}) async {
     if (!_isRecording) return;
     _ticker?.cancel();
+    AppSoundService().play(
+        cancel ? AppSound.messageDeleted : AppSound.videoRecordStop);
     _ticker = null;
     final elapsed =
         _startedAt == null ? Duration.zero : DateTime.now().difference(_startedAt!);

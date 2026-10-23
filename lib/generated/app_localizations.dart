@@ -12726,6 +12726,18 @@ abstract class AppLocalizations {
   /// **'Play sound for notifications'**
   String get notificationSoundSubtitle;
 
+  /// No description provided for @soundEffectsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sound effects'**
+  String get soundEffectsTitle;
+
+  /// No description provided for @soundEffectsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sounds for taps, messages and celebrations in the app'**
+  String get soundEffectsSubtitle;
+
   /// No description provided for @notificationSoundVibration.
   ///
   /// In en, this message translates to:

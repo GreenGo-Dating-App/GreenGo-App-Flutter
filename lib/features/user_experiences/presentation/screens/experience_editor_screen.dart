@@ -44,6 +44,7 @@ import '../../../../core/media/cover_focus.dart';
 import '../../../../core/widgets/cover_frames.dart';
 import '../../../../core/widgets/cover_image_size_hint.dart';
 import '../../../../core/widgets/cover_positioner.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// Languages a host can offer (same names profiles store).
 // i18n-ignore: stored values; displayed via ExperienceL10n.language
@@ -1392,7 +1393,7 @@ class _EditorFormState extends State<_EditorForm> {
         title: Text(l.wzRecurringToggle, style: _text),
         subtitle: Text(l.wzRecurringInfo, style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
         value: _useRecurring,
-        onChanged: (v) => setState(() => _useRecurring = v),
+        onChanged: withToggleSound((v) => setState(() => _useRecurring = v)),
       ),
       if (_useRecurring) ...[
         const SizedBox(height: 8),
@@ -1968,7 +1969,7 @@ class _EditorFormState extends State<_EditorForm> {
         ),
         value: _guestsAllowed,
         activeThumbColor: AppColors.richGold,
-        onChanged: (v) => setState(() => _guestsAllowed = v),
+        onChanged: withToggleSound((v) => setState(() => _guestsAllowed = v)),
       );
 
   Widget _pricingSection(AppLocalizations l) {
@@ -1997,7 +1998,7 @@ class _EditorFormState extends State<_EditorForm> {
         activeColor: AppColors.richGold,
         title: Text(l.uexpIsFree, style: _text),
         value: _isFree,
-        onChanged: (v) => setState(() => _isFree = v),
+        onChanged: withToggleSound((v) => setState(() => _isFree = v)),
       ),
       if (!_isFree) ...[
         // ONE price field: per person (default) or one price for the whole
@@ -2072,7 +2073,7 @@ class _EditorFormState extends State<_EditorForm> {
           subtitle: Text(l.mtWeekendPriceInfo,
               style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
           value: _weekendOn,
-          onChanged: (v) => setState(() => _weekendOn = v),
+          onChanged: withToggleSound((v) => setState(() => _weekendOn = v)),
         ),
         if (_weekendOn) ...[
           TextField(

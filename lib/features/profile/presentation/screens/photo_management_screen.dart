@@ -17,6 +17,7 @@ import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/widgets/locked_reason_sheet.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 class PhotoManagementScreen extends StatefulWidget {
 
@@ -379,6 +380,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
               _showPhotoRejectedDialog(
                   _localizeValidationError(state.errorCode));
             } else if (state is ProfilePhotoUploaded) {
+              AppSoundService().play(AppSound.uploadComplete);
               setState(() {
                 if (_uploadingToPrivate) {
                   _privatePhotoUrls.add(state.photoUrl);

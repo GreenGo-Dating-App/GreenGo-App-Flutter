@@ -7121,6 +7121,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get notificationSoundSubtitle => 'Reproduzir som para notificações';
 
   @override
+  String get soundEffectsTitle => 'Efeitos sonoros';
+
+  @override
+  String get soundEffectsSubtitle =>
+      'Sons para toques, mensagens e celebrações na app';
+
+  @override
   String get notificationSoundVibration => 'Som e Vibração';
 
   @override
@@ -35617,6 +35624,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get notificationSoundSubtitle => 'Reproduzir som para notificações';
+
+  @override
+  String get soundEffectsTitle => 'Efeitos sonoros';
+
+  @override
+  String get soundEffectsSubtitle =>
+      'Sons para toques, mensagens e comemorações no app';
 
   @override
   String get notificationSoundVibration => 'Som e Vibração';

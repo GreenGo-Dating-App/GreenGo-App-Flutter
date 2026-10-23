@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
+import '../services/app_sound_service.dart';
 
 /// A graceful error dialog for connection and authentication errors
 /// Shows a beautiful modal with icon, message, and retry option
@@ -33,6 +34,7 @@ class ConnectionErrorDialog extends StatefulWidget {
     VoidCallback? onRetry,
   }) {
     final l10n = AppLocalizations.of(context)!;
+    AppSoundService().play(AppSound.error);
     return showDialog(
       context: context,
       barrierDismissible: true,
@@ -55,6 +57,7 @@ class ConnectionErrorDialog extends StatefulWidget {
     required String message,
     VoidCallback? onRetry,
   }) {
+    AppSoundService().play(AppSound.error);
     return showDialog(
       context: context,
       barrierDismissible: true,
@@ -76,6 +79,7 @@ class ConnectionErrorDialog extends StatefulWidget {
     VoidCallback? onRetry,
   }) {
     final l10n = AppLocalizations.of(context)!;
+    AppSoundService().play(AppSound.error);
     return showDialog(
       context: context,
       barrierDismissible: true,
@@ -99,6 +103,7 @@ class ConnectionErrorDialog extends StatefulWidget {
     IconData icon = Icons.warning_amber_rounded,
     VoidCallback? onRetry,
   }) {
+    AppSoundService().play(AppSound.error);
     return showDialog(
       context: context,
       barrierDismissible: true,

@@ -6,6 +6,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/ticket_payments_service.dart';
 import '../../domain/ticket_payments.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// Organizer: the ticket types of a paid event (General, VIP, early bird…).
 /// Price per type, stock, sales window, per-person limit, hide / stop selling,
@@ -184,13 +185,13 @@ class TicketTypesScreen extends StatelessWidget {
                 contentPadding: EdgeInsets.zero,
                 title: Text(l.tpTypeSelling, style: const TextStyle(color: AppColors.textSecondary)),
                 value: active,
-                onChanged: (v) => setD(() => active = v),
+                onChanged: withToggleSound((v) => setD(() => active = v)),
               ),
               SwitchListTile(
                 contentPadding: EdgeInsets.zero,
                 title: Text(l.tpTypeHidden, style: const TextStyle(color: AppColors.textSecondary)),
                 value: hidden,
-                onChanged: (v) => setD(() => hidden = v),
+                onChanged: withToggleSound((v) => setD(() => hidden = v)),
               ),
               if (t != null && t.sold > 0)
                 Text(l.tpTypeHasSalesWarning,

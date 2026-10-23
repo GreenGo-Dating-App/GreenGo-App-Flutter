@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
+import '../services/app_sound_service.dart';
 
 /// Animated success dialog for profile actions
 /// Shows a beautiful modal with checkmark animation
@@ -198,6 +199,7 @@ class ActionSuccessDialog extends StatefulWidget {
     // Wait a frame to ensure any previous dialog is fully dismissed
     await Future.delayed(const Duration(milliseconds: 150));
     if (!context.mounted) return;
+    AppSoundService().play(AppSound.success);
     return showDialog(
       context: context,
       useRootNavigator: true,

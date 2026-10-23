@@ -14,6 +14,7 @@ import '../../../profile/domain/entities/profile.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/utils/distance_bucket.dart';
 import '../../../../core/utils/country_names_l10n.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Reusable, Apple-safe replica of the 2.2.4 Network grid card.
 ///
@@ -305,6 +306,7 @@ class _NetworkGridCardState extends State<NetworkGridCard> {
             },
             onLongPress: () {
               HapticFeedback.mediumImpact();
+              AppSoundService().play(AppSound.longPress);
               widget.onLongPressTag();
             },
           ),
@@ -323,6 +325,7 @@ class _NetworkGridCardState extends State<NetworkGridCard> {
             },
             onLongPress: () {
               HapticFeedback.mediumImpact();
+              AppSoundService().play(AppSound.longPress);
               widget.onLongPressTag();
             },
             child: Column(
@@ -409,6 +412,7 @@ class _NetworkGridCardState extends State<NetworkGridCard> {
               onTap: () => _prevPhoto(photoUrls.length),
               onLongPress: () {
                 HapticFeedback.mediumImpact();
+                AppSoundService().play(AppSound.longPress);
                 widget.onLongPressTag();
               },
               child: Padding(
@@ -432,6 +436,7 @@ class _NetworkGridCardState extends State<NetworkGridCard> {
               onTap: () => _nextPhoto(photoUrls.length),
               onLongPress: () {
                 HapticFeedback.mediumImpact();
+                AppSoundService().play(AppSound.longPress);
                 widget.onLongPressTag();
               },
               child: Padding(

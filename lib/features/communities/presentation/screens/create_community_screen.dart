@@ -31,6 +31,8 @@ import '../../../../core/widgets/cover_image_size_hint.dart';
 import '../../../../core/widgets/cover_positioner.dart';
 import '../../../../core/widgets/focal_cover_image.dart';
 import '../widgets/community_text_warning.dart';
+import '../../../../core/services/app_sound_service.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// Create Community Screen
 ///
@@ -573,8 +575,8 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                   ),
                   Switch(
                     value: _isPublic,
-                    onChanged: (value) =>
-                        setState(() => _isPublic = value),
+                    onChanged: withToggleSound((value) =>
+                        setState(() => _isPublic = value)),
                     activeThumbColor: AppColors.richGold,
                   ),
                 ],
@@ -1103,6 +1105,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
           ),
         );
 
+    AppSoundService().play(AppSound.communityJoin);
     HapticFeedback.heavyImpact();
   }
 

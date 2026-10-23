@@ -13,6 +13,7 @@ import '../../../app_tour/presentation/tour_controller.dart';
 import '../../data/services/referral_service.dart';
 import '../widgets/referral_progress_card.dart';
 import '../../../../core/widgets/collapsible_how_it_works.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 // on first run, instead of requiring manual entry below.
 
@@ -112,6 +113,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
     if (code == null) return;
     await Clipboard.setData(
         ClipboardData(text: DeepLinkService.buildReferralLink(code)));
+    AppSoundService().play(AppSound.copy);
     _snack(l10n.shareLinkCopied);
   }
 

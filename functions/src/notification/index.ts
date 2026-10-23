@@ -11,6 +11,7 @@ import sgMail from '@sendgrid/mail';
 import twilio from 'twilio';
 import { verifyAuth, handleError, logInfo, logError, db } from '../shared/utils';
 import { NotificationType } from '../shared/types';
+import { PUSH_SOUND_ANDROID, PUSH_SOUND_IOS } from '../notifications/pushSound';
 
 // Initialize SendGrid
 const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY || '';
@@ -98,14 +99,14 @@ export const sendPushNotification = onCall<SendPushNotificationRequest>(
         android: {
           priority: 'high',
           notification: {
-            sound: 'default',
+            sound: PUSH_SOUND_ANDROID,
             channelId: type,
           },
         },
         apns: {
           payload: {
             aps: {
-              sound: 'default',
+              sound: PUSH_SOUND_IOS,
               badge: 1,
             },
           },

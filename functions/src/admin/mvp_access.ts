@@ -13,6 +13,7 @@ import { monitored } from '../shared/monitoring';
 import { filterUidsByPref } from '../notifications/prefs';
 import { lt, notifTextFields, t } from '../shared/i18n';
 import { localeFromUserData, resolveLocale } from '../shared/i18n/recipientLocale';
+import { PUSH_BROADCAST_CHANNEL_ID, PUSH_SOUND_ANDROID, PUSH_SOUND_IOS } from '../notifications/pushSound';
 
 // MVP Release Dates
 const PREMIUM_ACCESS_DATE = new Date('2026-03-01T00:00:00Z'); // March 1st, 2026
@@ -733,14 +734,14 @@ export const sendBroadcastNotification = onCall<BroadcastNotificationRequest>(
             android: {
               priority: 'high',
               notification: {
-                channelId: 'greengo_broadcasts',
-                sound: 'default',
+                channelId: PUSH_BROADCAST_CHANNEL_ID,
+                sound: PUSH_SOUND_ANDROID,
               },
             },
             apns: {
               payload: {
                 aps: {
-                  sound: 'default',
+                  sound: PUSH_SOUND_IOS,
                   badge: 1,
                 },
               },

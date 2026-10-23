@@ -18,6 +18,7 @@ import '../widgets/ticket_fee_widgets.dart';
 import '../../../chat/domain/entities/conversation_listing_context.dart';
 import '../../../chat/presentation/listing_chat.dart';
 import '../../../chat/presentation/widgets/listing_chat_widgets.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// One ticket order, live (`ticket_orders/{id}`):
 ///  * instant (Stripe / MP): "Waiting for payment confirmation…", 30-min
@@ -47,6 +48,7 @@ class _TicketOrderScreenState extends State<TicketOrderScreen> with WidgetsBindi
   Timer? _tick;
   bool _busy = false;
   Uint8List? _receipt;
+  TicketOrderStatus? _lastStatus;
 
   @override
   void initState() {
@@ -104,6 +106,13 @@ class _TicketOrderScreenState extends State<TicketOrderScreen> with WidgetsBindi
           if (o == null) {
             return const Center(child: CircularProgressIndicator(color: AppColors.richGold));
           }
+          // The webhook flipped the order to paid while the buyer watches.
+          if (_lastStatus != null &&
+              _lastStatus != TicketOrderStatus.paid &&
+              o.status == TicketOrderStatus.paid) {
+            AppSoundService().play(AppSound.ticketPurchased);
+          }
+          _lastStatus = o.status;
           return ListView(padding: const EdgeInsets.all(16), children: [
             Text(o.title ?? '',
                 style: const TextStyle(
@@ -293,6 +302,7 @@ class _TicketOrderScreenState extends State<TicketOrderScreen> with WidgetsBindi
             icon: const Icon(Icons.copy, color: AppColors.richGold, size: 20),
             onPressed: () {
               Clipboard.setData(ClipboardData(text: value));
+              AppSoundService().play(AppSound.copy);
               ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l.tpCopied)));
             },
           ),
@@ -380,6 +390,7 @@ class TicketQrCard extends StatelessWidget {
       }
     } catch (_) {/* file sharing unsupported: fall back to text */}
     try {
+      AppSoundService().play(AppSound.share);
       await Share.share('$text\n${ticket.qrPayload}');
     } catch (_) {/* share sheet dismissed / unavailable */}
   }

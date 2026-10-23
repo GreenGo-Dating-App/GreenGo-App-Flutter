@@ -39,6 +39,7 @@ import '../bloc/notifications_state.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../safety/presentation/screens/moderation_decision_screen.dart';
 import '../../../copyright/presentation/screens/copyright_my_notices_screen.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Notifications Screen — the app's notifications hub.
 ///
@@ -706,7 +707,10 @@ class _NotificationTile extends StatelessWidget {
     return Dismissible(
       key: Key(notification.notificationId),
       direction: DismissDirection.endToStart,
-      onDismissed: (_) => onDismiss(),
+      onDismissed: (_) {
+        AppSoundService().play(AppSound.dismiss);
+        onDismiss();
+      },
       background: Container(
         alignment: Alignment.centerRight,
         padding: const EdgeInsets.only(right: 20),

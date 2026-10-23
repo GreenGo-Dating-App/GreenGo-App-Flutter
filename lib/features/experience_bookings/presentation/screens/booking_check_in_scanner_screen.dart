@@ -6,6 +6,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/widgets/glass_container.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/booking_rules.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Host: scans the guest's check-in QR (`greengo:checkin:{bookingId}:{code}`)
 /// and pops with the code when it belongs to [bookingId]. Works in browsers
@@ -43,11 +44,13 @@ class _BookingCheckInScannerScreenState
       final parsed = BookingRules.parseCheckInQr(raw);
       if (parsed != null && parsed.bookingId == widget.bookingId) {
         _done = true;
+        AppSoundService().play(AppSound.scanOk);
         Navigator.of(context).pop(parsed.code);
         return;
       }
       if (raw != _lastRejected) {
         _lastRejected = raw;
+        AppSoundService().play(AppSound.scanDenied);
         final l = AppLocalizations.of(context)!;
         // A short bar, not a popup: the camera must stay clear so the host
         // can scan the next code right away. The text is already localized.

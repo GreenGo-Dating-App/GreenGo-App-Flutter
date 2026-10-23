@@ -16,6 +16,7 @@ import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
 import { LText, lt, notifTextFields, rawText, render, t } from '../shared/i18n';
 import { pushRecipientsFromUserDocs, sendLocalizedMulticast } from '../notifications/localizedPush';
+import { PUSH_CHANNEL_ID, PUSH_SOUND_ANDROID, PUSH_SOUND_IOS } from '../notifications/pushSound';
 
 const db = admin.firestore();
 const FCM_CHUNK = 500;
@@ -171,15 +172,15 @@ export const onEventMessageCreated = onDocumentCreated(
             priority: 'high',
             collapseKey: `event_${eventId}`,
             notification: {
-              sound: 'default',
-              channelId: 'greengo_notifications',
+              sound: PUSH_SOUND_ANDROID,
+              channelId: PUSH_CHANNEL_ID,
               priority: 'high' as any,
               tag: `event_${eventId}`,
             },
           },
           apns: {
             headers: { 'apns-collapse-id': `event_${eventId}` },
-            payload: { aps: { sound: 'default', badge: 1 } },
+            payload: { aps: { sound: PUSH_SOUND_IOS, badge: 1 } },
           },
       }),
       'Event message FCM',

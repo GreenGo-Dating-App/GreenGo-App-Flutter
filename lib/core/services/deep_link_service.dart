@@ -27,6 +27,7 @@ import '../../features/referral/data/services/referral_auto_redeemer.dart';
 import '../../generated/app_localizations.dart';
 import '../di/injection_container.dart' as di;
 import 'push_notification_service.dart';
+import 'app_sound_service.dart';
 
 /// Handles inbound deep links / universal links for shareable PROFILE, EVENT,
 /// COMMUNITY, EXPERIENCE and ATTRACTION links, and builds/shares those same
@@ -494,6 +495,7 @@ Future<void> shareLinkText(
 
   if (!kIsWeb || _webCanUseNativeShare) {
     try {
+      AppSoundService().play(AppSound.share);
       await Share.share(text, subject: subject, sharePositionOrigin: origin);
       return;
     } catch (e) {
@@ -501,6 +503,7 @@ Future<void> shareLinkText(
     }
   }
   try {
+    AppSoundService().play(AppSound.copy);
     await Clipboard.setData(ClipboardData(text: link));
     messenger?.showSnackBar(SnackBar(content: Text(copiedLabel)));
   } catch (e) {

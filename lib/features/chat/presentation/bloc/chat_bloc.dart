@@ -23,6 +23,7 @@ import '../../domain/usecases/set_typing_indicator.dart';
 import '../../domain/usecases/star_message.dart';
 import 'chat_event.dart';
 import 'chat_state.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Chat BLoC
 ///
@@ -339,6 +340,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     ChatMessageDeleted event,
     Emitter<ChatState> emit,
   ) async {
+    AppSoundService().play(AppSound.messageDeleted);
     if (_conversationId == null) return;
 
     final result = await deleteMessage(
@@ -362,6 +364,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     ChatMessageDeletedForMe event,
     Emitter<ChatState> emit,
   ) async {
+    AppSoundService().play(AppSound.messageDeleted);
     if (_conversationId == null || _currentUserId == null) return;
 
     final result = await deleteMessageForMe(
@@ -386,6 +389,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     ChatMessageDeletedForBoth event,
     Emitter<ChatState> emit,
   ) async {
+    AppSoundService().play(AppSound.messageDeleted);
     if (_conversationId == null || _currentUserId == null) return;
 
     final result = await deleteMessageForBoth(

@@ -90,6 +90,7 @@ import '../../../subscription/presentation/screens/subscription_selection_screen
 import '../../../subscription/presentation/screens/membership_screen.dart';
 import '../../../../core/services/effective_tier.dart';
 import '../../../../core/widgets/analytics_consent_prompt.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Main Navigation Screen
 ///
@@ -608,7 +609,11 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
     // Record daily engagement streak (fire-and-forget; grants milestone coins
     // at 3/7/30-day streaks via the coin ledger). Never throws.
-    di.sl<StreakService>().touch(widget.userId);
+    di.sl<StreakService>().touch(widget.userId).then((info) {
+      if (info.milestoneReached != null) {
+        AppSoundService().play(AppSound.streakCelebration);
+      }
+    });
 
     // Daily free coins (once per calendar day).
     _grantDailyFreeCoins();
@@ -774,6 +779,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
       await prefs.setString('daily_coins_last_granted_${widget.userId}', todayKey);
       // The balance stream (SubscribeToCoinBalance) picks up the new balance.
+      AppSoundService().play(AppSound.coinEarned);
 
       debugPrint('Daily free coins: Granted 20 coins for $todayKey');
     } catch (e) {
@@ -1410,6 +1416,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       return;
     }
     _presenceService.recordActivity();
+    if (index != _currentIndex) AppSoundService().play(AppSound.tabSwitch);
     setState(() {
       _currentIndex = index;
     });

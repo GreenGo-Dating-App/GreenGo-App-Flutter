@@ -63,24 +63,34 @@ class PushNotificationService {
   /// Foreground notifications for this conversation are suppressed.
   static String? activeConversationId;
 
-  /// Android notification channels. MUST cover every `channelId` the Cloud
-  /// Functions send on — Android 8+ silently drops a notification whose channel
-  /// was never created on the device. Keep in sync with functions/src/**.
+  /// GreenGo's own push sound (android/app/src/main/res/raw/greengo_push.mp3).
+  static const _pushSound = RawResourceAndroidNotificationSound('greengo_push');
+
+  /// Channels replaced by the `_v2` ones: Android locks a channel's sound when
+  /// it is created, so the GreenGo sound needs new channel ids. A push still
+  /// sent on an old id falls back to the manifest default (greengo_push_v2).
+  static const _retiredChannels = ['greengo_notifications', 'greengo_broadcasts'];
+
+  /// Android notification channels. Keep in sync with
+  /// functions/src/notifications/pushSound.ts (an id the app never created
+  /// falls back to the manifest default channel).
   static List<AndroidNotificationChannel> _channels(AppLocalizations l10n) => [
     AndroidNotificationChannel(
-      'greengo_notifications',
+      'greengo_push_v2',
       l10n.pushChannelMainName,
       description: l10n.pushChannelMainDescription,
       importance: Importance.high,
       playSound: true,
+      sound: _pushSound,
       enableVibration: true,
     ),
     AndroidNotificationChannel(
-      'greengo_broadcasts',
+      'greengo_broadcasts_v2',
       l10n.pushChannelAnnouncementsName,
       description: l10n.pushChannelAnnouncementsDescription,
       importance: Importance.high,
       playSound: true,
+      sound: _pushSound,
       enableVibration: true,
     ),
     AndroidNotificationChannel(
@@ -134,6 +144,9 @@ class PushNotificationService {
     for (final channel in _channels(channelL10n)) {
       await androidPlugin?.createNotificationChannel(channel);
     }
+    for (final id in _retiredChannels) {
+      await androidPlugin?.deleteNotificationChannel(id);
+    }
 
     // Initialize local notifications for foreground display
     const androidSettings = AndroidInitializationSettings('@drawable/ic_launcher_foreground');
@@ -185,6 +198,7 @@ class PushNotificationService {
     //  - viewing this chat        -> "message sent" sound
     //  - super-like / first msg   -> "new message (first time)" sound
     //  - message from existing chat -> "new message" sound
+    //  - any other notification   -> "notification" sound
     try {
       final data = message.data;
       final convId = data['conversationId'];
@@ -200,6 +214,9 @@ class PushNotificationService {
         AppSoundService().play(AppSound.newMessageFirstTime);
       } else if (type.contains('message')) {
         AppSoundService().play(AppSound.newMessage);
+      } else {
+        // Everything else (gift, follow, event, community, booking...).
+        AppSoundService().play(AppSound.notification);
       }
     } catch (_) {}
   }

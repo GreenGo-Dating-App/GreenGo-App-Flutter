@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../theme/app_glass.dart';
+import '../services/app_sound_service.dart';
 
 /// A reusable frosted-glass surface.
 ///
@@ -49,6 +50,7 @@ class _GlassContainerState extends State<GlassContainer> {
 
   void _handleTap() {
     HapticFeedback.lightImpact();
+    AppSoundService().play(AppSound.buttonTap);
     widget.onTap?.call();
   }
 

@@ -61,6 +61,7 @@ import '../../../../core/security/viewer_watermark.dart';
 import '../../data/services/chat_screenshot_notice.dart';
 import '../utils/chat_l10n.dart';
 import '../../../copyright/data/copyright_service.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// Group Chat Screen ("Culture Circle").
 ///
@@ -288,22 +289,22 @@ class _GroupChatViewState extends State<_GroupChatView> {
               SwitchListTile(
                 title: Text(l10n.groupTranslateMessages),
                 value: _translate,
-                onChanged: (v) {
+                onChanged: withToggleSound((v) {
                   setModal(() {});
                   setState(() => _translate = v);
                   _saveTranslationPrefs();
-                },
+                }),
               ),
               SwitchListTile(
                 title: Text(l10n.groupShowOriginal),
                 value: _showOriginal,
-                onChanged: _translate
+                onChanged: withToggleSound(_translate
                     ? (v) {
                         setModal(() {});
                         setState(() => _showOriginal = v);
                         _saveTranslationPrefs();
                       }
-                    : null,
+                    : null),
               ),
               // Double-tap a message to hear it. This chooses which text is read:
               // ON = translation (your language), OFF = original.
@@ -311,11 +312,11 @@ class _GroupChatViewState extends State<_GroupChatView> {
                 title: Text(l10n.groupTtsReadTranslated),
                 subtitle: Text(l10n.groupTtsReadTranslatedHint),
                 value: _ttsReadTranslated,
-                onChanged: (v) {
+                onChanged: withToggleSound((v) {
                   setModal(() {});
                   setState(() => _ttsReadTranslated = v);
                   _saveTranslationPrefs();
-                },
+                }),
               ),
               const Divider(),
               Padding(

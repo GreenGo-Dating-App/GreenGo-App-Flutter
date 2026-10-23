@@ -5,6 +5,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/user_level.dart';
 import '../utils/gamification_l10n.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Level-up celebration dialog with Lottie confetti animation
 /// Shows when user reaches a new level with multilingual support
@@ -60,6 +61,7 @@ class _LevelUpCelebrationDialogState extends State<LevelUpCelebrationDialog>
   @override
   void initState() {
     super.initState();
+    AppSoundService().play(AppSound.levelUp);
 
     _scaleController = AnimationController(
       duration: const Duration(milliseconds: 800),

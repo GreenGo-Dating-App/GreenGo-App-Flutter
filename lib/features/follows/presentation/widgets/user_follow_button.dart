@@ -9,6 +9,7 @@ import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../business/data/services/follow_service.dart';
 import '../follow_toggle_controller.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Follow / Following button for another user's profile (or a list row).
 ///
@@ -133,6 +134,7 @@ class _UserFollowButtonState extends State<UserFollowButton> {
 
   Future<void> _onTap() async {
     HapticFeedback.lightImpact();
+    AppSoundService().play(AppSound.follow);
     final ok = await _controller.toggle();
     if (ok || !mounted || _controller.lastError == null) return;
     final l10n = AppLocalizations.of(context)!;

@@ -12,6 +12,7 @@ import '../bloc/explore_map_event.dart';
 import '../bloc/explore_map_state.dart';
 import '../../../../core/utils/distance_bucket.dart';
 import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// Explore Map Screen — List-based nearby users view.
 ///
@@ -108,7 +109,7 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
                     activeThumbColor: AppColors.successGreen,
                     inactiveThumbColor: AppColors.textTertiary,
                     inactiveTrackColor: AppColors.divider,
-                    onChanged: (value) {
+                    onChanged: withToggleSound((value) {
                       final profileState =
                           context.read<ProfileBloc>().state;
                       if (profileState is ProfileLoaded) {
@@ -119,7 +120,7 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
                               ),
                             );
                       }
-                    },
+                    }),
                   ),
                 ],
               );

@@ -20,6 +20,7 @@ import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
 import { lt, notifTextFields, rawText, render } from '../shared/i18n';
 import { pushRecipientsFromUserDocs, sendLocalizedMulticast } from './localizedPush';
+import { PUSH_CHANNEL_ID, PUSH_SOUND_ANDROID, PUSH_SOUND_IOS } from './pushSound';
 
 const db = admin.firestore();
 
@@ -163,12 +164,12 @@ async function notifyCity(
             priority: 'high',
             collapseKey: `city_${cityKey}`,
             notification: {
-              sound: 'default',
-              channelId: 'greengo_notifications',
+              sound: PUSH_SOUND_ANDROID,
+              channelId: PUSH_CHANNEL_ID,
               tag: `city_${cityKey}`,
             },
           },
-          apns: { payload: { aps: { sound: 'default', badge: 1 } } },
+          apns: { payload: { aps: { sound: PUSH_SOUND_IOS, badge: 1 } } },
       }),
       `notifyCity push ${cityKey}`,
     );

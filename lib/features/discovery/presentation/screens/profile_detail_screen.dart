@@ -40,6 +40,7 @@ import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../widgets/swipe_buttons.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Profile Detail Screen
 ///
@@ -270,6 +271,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
 
       // Haptic feedback
       HapticFeedback.mediumImpact();
+      AppSoundService().play(AppSound.like);
 
       // Hide animation after delay
       Future.delayed(const Duration(milliseconds: 800), () {

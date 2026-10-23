@@ -7,6 +7,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../generated/app_localizations.dart';
 import '../../data/services/follow_service.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Follow / Unfollow button for a public business account.
 ///
@@ -79,6 +80,8 @@ class _BusinessFollowButtonState extends State<BusinessFollowButton> {
     if (_busy) return;
     setState(() => _busy = true);
     HapticFeedback.lightImpact();
+    AppSoundService()
+        .play(currentlyFollowing ? AppSound.toggleOff : AppSound.follow);
     try {
       await _service.toggle(
         businessId: widget.businessId,

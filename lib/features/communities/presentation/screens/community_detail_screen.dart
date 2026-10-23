@@ -1524,6 +1524,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
           );
     }
 
+    AppSoundService().play(AppSound.communityJoin);
     HapticFeedback.mediumImpact();
   }
 

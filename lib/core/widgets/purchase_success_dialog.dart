@@ -4,6 +4,7 @@ import '../../features/subscription/domain/entities/subscription.dart';
 import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import 'subscription_celebration_screen.dart';
+import '../services/app_sound_service.dart';
 
 /// Animated purchase success dialog
 /// Shown after successful coin or subscription purchase
@@ -105,6 +106,7 @@ class _PurchaseSuccessDialogState extends State<PurchaseSuccessDialog>
   @override
   void initState() {
     super.initState();
+    AppSoundService().play(AppSound.purchaseSuccess);
 
     _scaleController = AnimationController(
       duration: const Duration(milliseconds: 400),

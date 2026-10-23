@@ -7163,6 +7163,13 @@ class AppLocalizationsDe extends AppLocalizations {
       'Ton bei Benachrichtigungen abspielen';
 
   @override
+  String get soundEffectsTitle => 'Soundeffekte';
+
+  @override
+  String get soundEffectsSubtitle =>
+      'Töne für Tippen, Nachrichten und Erfolge in der App';
+
+  @override
   String get notificationSoundVibration => 'Ton & Vibration';
 
   @override

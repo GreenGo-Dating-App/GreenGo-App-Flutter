@@ -7153,6 +7153,13 @@ class AppLocalizationsEs extends AppLocalizations {
       'Reproducir sonido para las notificaciones';
 
   @override
+  String get soundEffectsTitle => 'Efectos de sonido';
+
+  @override
+  String get soundEffectsSubtitle =>
+      'Sonidos al tocar, en los mensajes y en las celebraciones de la app';
+
+  @override
   String get notificationSoundVibration => 'Sonido y vibración';
 
   @override

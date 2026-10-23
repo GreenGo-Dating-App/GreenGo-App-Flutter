@@ -10,6 +10,7 @@ import '../../../discovery/presentation/discovery_l10n.dart';
 import '../../../explore/presentation/screens/network_discovery_screen.dart';
 import '../../data/saved_searches_service.dart';
 import '../../domain/entities/saved_search.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// Lists the user's saved discovery searches (glass), each with:
 ///  • Run    — re-opens the Network Discovery grid seeded with the saved
@@ -267,7 +268,7 @@ class _SavedSearchCard extends StatelessWidget {
               Switch(
                 value: search.alertsEnabled,
                 activeColor: AppColors.richGold,
-                onChanged: (v) => _toggleAlerts(context, v),
+                onChanged: withToggleSound((v) => _toggleAlerts(context, v)),
               ),
               const SizedBox(width: 4),
               TextButton.icon(

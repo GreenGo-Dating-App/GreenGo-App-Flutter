@@ -32,6 +32,7 @@ import '../../../../core/security/private_content_warning.dart';
 import '../../../copyright/data/copyright_service.dart';
 import '../../../copyright/presentation/screens/copyright_notice_form_screen.dart';
 import 'attraction_message.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Message Bubble Widget
 ///
@@ -191,6 +192,7 @@ class _MessageBubbleState extends State<MessageBubble> {
   /// the write fails, the optimistic change is reverted so the emoji never
   /// lingers unsaved.
   Future<void> _toggleReaction(String emoji) async {
+    AppSoundService().play(AppSound.reaction);
     final uid = widget.currentUserId ?? '';
     final previous = _effectiveReactions == null
         ? null

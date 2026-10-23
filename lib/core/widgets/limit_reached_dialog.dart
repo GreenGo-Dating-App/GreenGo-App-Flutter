@@ -6,6 +6,7 @@ import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../../features/subscription/presentation/tier_l10n.dart';
 import '../services/usage_limit_service.dart';
+import '../services/app_sound_service.dart';
 
 /// Dialog action types
 enum LimitDialogAction {
@@ -47,6 +48,7 @@ class LimitReachedDialog extends StatelessWidget {
     VoidCallback? onUpgrade,
     VoidCallback? onBuyCoins,
   }) {
+    AppSoundService().play(AppSound.limitReached);
     return showDialog<LimitDialogResult>(
       context: context,
       barrierDismissible: true,
@@ -526,6 +528,7 @@ class FeatureNotAvailableDialog extends StatelessWidget {
     required String userId,
     IconData? icon,
   }) {
+    AppSoundService().play(AppSound.limitReached);
     return showDialog<LimitDialogResult>(
       context: context,
       barrierDismissible: true,

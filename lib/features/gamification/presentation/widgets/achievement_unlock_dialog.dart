@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/achievement.dart';
 import '../utils/gamification_l10n.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 class AchievementUnlockDialog extends StatefulWidget {
 
@@ -34,6 +35,7 @@ class _AchievementUnlockDialogState extends State<AchievementUnlockDialog>
   @override
   void initState() {
     super.initState();
+    AppSoundService().play(AppSound.achievementUnlocked);
 
     // Scale animation
     _scaleController = AnimationController(

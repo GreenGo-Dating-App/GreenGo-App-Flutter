@@ -5,6 +5,7 @@ import '../services/ai_consent_service.dart';
 import '../services/translation_service.dart';
 import 'ai_consent_sheet.dart';
 import '../../generated/app_localizations.dart';
+import '../services/app_sound_service.dart';
 
 /// Text rendered in the VIEWER's language (any of the app's languages),
 /// per-viewer, with no schema change. Reuses the shared [TranslationService]
@@ -184,6 +185,9 @@ class _TranslatableTextState extends State<TranslatableText> {
           _showingTranslation = true;
         }
       });
+      if (!widget.autoTranslate && _showingTranslation) {
+        AppSoundService().play(AppSound.translate);
+      }
     } catch (_) {
       // Best-effort — leave the original text on any failure.
     } finally {

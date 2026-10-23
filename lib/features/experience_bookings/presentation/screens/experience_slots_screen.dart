@@ -24,6 +24,7 @@ import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import 'bookings_list_screen.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// Host: "Dates & availability" — a calendar (month / week / day) of the
 /// bookings people made and the times still open, with the Manage times
@@ -803,13 +804,13 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
                     style: const TextStyle(
                         color: AppColors.textTertiary, fontSize: 12)),
                 value: _repeat,
-                onChanged: (v) => setState(() {
+                onChanged: withToggleSound((v) => setState(() {
                   _repeat = v;
                   _noMatch = false;
                   _range ??= DateTimeRange(
                       start: _date,
                       end: DateTime(_date.year, _date.month, _date.day + 27));
-                }),
+                })),
               ),
               const SizedBox(height: 6),
             ],

@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../domain/repositories/events_repository.dart';
+import '../../../../core/services/app_sound_service.dart';
 
 /// Heart toggle + like count for an event. The per-user like is written to the
 /// `events/{id}/likes/{uid}` subcollection; the denormalized `likeCount` on the
@@ -63,6 +64,7 @@ class _EventLikeButtonState extends State<EventLikeButton> {
     if (widget.userId.isEmpty || widget.eventId.isEmpty) return;
     final next = !_liked;
     HapticFeedback.lightImpact();
+    AppSoundService().play(next ? AppSound.like : AppSound.toggleOff);
     setState(() {
       _optimisticLiked = next;
       _optimisticCount = (_count + (next ? 1 : -1)).clamp(0, 1 << 31);

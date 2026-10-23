@@ -2366,6 +2366,8 @@
   "notificationSettingsTitle": "Configuración de notificaciones",
   "notificationSound": "Sonido",
   "notificationSoundSubtitle": "Reproducir sonido para las notificaciones",
+  "soundEffectsTitle": "Efectos de sonido",
+  "soundEffectsSubtitle": "Sonidos al tocar, en los mensajes y en las celebraciones de la app",
   "notificationSoundVibration": "Sonido y vibración",
   "notificationStartTime": "Hora de inicio",
   "notificationSuperLike": "Recibiste una conexión prioritaria de @{nickname}",

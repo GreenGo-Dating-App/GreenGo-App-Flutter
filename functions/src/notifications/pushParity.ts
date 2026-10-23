@@ -30,6 +30,7 @@ import '../shared/firebaseAdmin';
 import { renderStoredText } from '../shared/i18n';
 import { resolveLocale } from '../shared/i18n/recipientLocale';
 import { clientWrittenText } from '../shared/i18n/clientWritten';
+import { PUSH_CHANNEL_ID, PUSH_SOUND_ANDROID, PUSH_SOUND_IOS } from './pushSound';
 
 const db = admin.firestore();
 
@@ -136,12 +137,12 @@ export const onNotificationCreatedPush = onDocumentCreated(
           android: {
             priority: 'high',
             notification: {
-              sound: 'default',
-              channelId: 'greengo_notifications',
+              sound: PUSH_SOUND_ANDROID,
+              channelId: PUSH_CHANNEL_ID,
               ...(imageUrl ? { imageUrl } : {}),
             },
           },
-          apns: { payload: { aps: { sound: 'default', badge: 1 } } },
+          apns: { payload: { aps: { sound: PUSH_SOUND_IOS, badge: 1 } } },
         });
       }
     } catch (e) {

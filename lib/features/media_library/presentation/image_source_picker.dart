@@ -6,6 +6,7 @@ import '../../../generated/app_localizations.dart';
 import '../data/media_library_repository.dart';
 import '../domain/media_library_item.dart';
 import 'my_pictures_screen.dart';
+import '../../../core/services/app_sound_service.dart';
 
 /// Where a picture comes from.
 enum ImageSourceChoice { camera, gallery, library }
@@ -131,5 +132,8 @@ Future<PickedImage?> pickImageWithLibrary(
     maxHeight: maxHeight,
     imageQuality: imageQuality,
   );
+  if (file != null && choice == ImageSourceChoice.camera) {
+    AppSoundService().play(AppSound.photoCapture);
+  }
   return file == null ? null : PickedImage.file(file);
 }

@@ -7,6 +7,7 @@ import '../../../ticket_payments/domain/ticket_payments.dart'
     show currencyExponent, isoCurrencyFor, toMinorUnits;
 import '../../data/datasources/experience_availability_service.dart';
 import '../../domain/availability_rules.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// The "Manage times" tools shared by the Manage times screen and the
 /// "Dates & availability" calendar: day editor, bulk actions and the save
@@ -149,7 +150,7 @@ Future<AvailabilityOverrides?> showScheduleDayEditor(
                               color: AppColors.textTertiary, fontSize: 12))
                       : null,
                   value: closed,
-                  onChanged: booked && !closed
+                  onChanged: withToggleSound(booked && !closed
                       ? null
                       : (v) => setS(() => ov = setDay(
                           ov,
@@ -158,7 +159,7 @@ Future<AvailabilityOverrides?> showScheduleDayEditor(
                               closed: v,
                               priceOverride: day?.priceOverride,
                               windowStart: v ? null : day?.windowStart,
-                              windowEnd: v ? null : day?.windowEnd))),
+                              windowEnd: v ? null : day?.windowEnd)))),
                 ),
                 if (!closed) ...[
                   Wrap(spacing: 6, runSpacing: 6, children: [

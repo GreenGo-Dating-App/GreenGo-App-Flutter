@@ -1,21 +1,46 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/foundation.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 /// Centralized sound management for the GreenGo app.
 ///
-/// Plays short asset-based sound effects. Only sounds whose asset files exist
-/// under `assets/sounds/` will play; any others fail silently (caught).
+/// Plays short asset-based sound effects from `assets/sounds/`. They can be
+/// turned off in Profile > Settings > Sound effects (saved on this device, so
+/// it applies from the first frame). Push-notification sounds are separate
+/// (Notification settings > Sound).
 class AppSoundService {
   factory AppSoundService() => _instance;
   AppSoundService._();
   static final AppSoundService _instance = AppSoundService._();
 
-  final AudioPlayer _player = AudioPlayer(playerId: 'greengo_sfx');
+  static const String _prefKey = 'app_sounds_enabled';
+
+  /// A small pool so a quick tap does not cut off a celebration that is still
+  /// playing (one shared player stopped the previous sound on every play).
+  static const int _poolSize = 3;
+  final List<AudioPlayer> _players = List.generate(
+    _poolSize,
+    (i) => AudioPlayer(playerId: 'greengo_sfx_$i'),
+  );
+  int _next = 0;
+
+  /// The same sound re-triggered within this window is skipped (double taps,
+  /// several list rows reacting to one event).
+  static const Duration _minRepeat = Duration(milliseconds: 80);
+  final Map<AppSound, DateTime> _lastPlayed = {};
+
   bool _soundEnabled = true;
   double _volume = 0.85;
   bool _ready = false;
+  Future<void>? _initializing;
 
-  Future<void> initialize() async {
+  Future<void> initialize() => _initializing ??= _init();
+
+  Future<void> _init() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      _soundEnabled = prefs.getBool(_prefKey) ?? true;
+    } catch (_) {}
     try {
       // iOS needs an explicit audio session or SFX silently don't play.
       // `playback` is audible regardless of the mute switch; `mixWithOthers`
@@ -29,10 +54,12 @@ class AppSoundService {
           android: const AudioContextAndroid(),
         ),
       );
-      await _player.setReleaseMode(ReleaseMode.stop);
-      // Use the default media-player mode. lowLatency (SoundPool on Android)
-      // silently dropped playback after stop() — sounds wouldn't play.
-      await _player.setPlayerMode(PlayerMode.mediaPlayer);
+      for (final p in _players) {
+        await p.setReleaseMode(ReleaseMode.stop);
+        // Use the default media-player mode. lowLatency (SoundPool on Android)
+        // silently dropped playback after stop() — sounds wouldn't play.
+        await p.setPlayerMode(PlayerMode.mediaPlayer);
+      }
       _ready = true;
     } catch (e) {
       if (kDebugMode) debugPrint('[Sound] init failed: $e');
@@ -41,6 +68,10 @@ class AppSoundService {
 
   Future<void> play(AppSound sound) async {
     if (!_soundEnabled) return;
+    final now = DateTime.now();
+    final last = _lastPlayed[sound];
+    if (last != null && now.difference(last) < _minRepeat) return;
+    _lastPlayed[sound] = now;
     final vol = (_volume * sound.volumeMultiplier).clamp(0.0, 1.0);
     await _playPath(sound.assetPath, vol);
   }
@@ -53,17 +84,25 @@ class AppSoundService {
   Future<void> _playPath(String assetPath, double volume) async {
     try {
       if (!_ready) await initialize();
+      final player = _players[_next];
+      _next = (_next + 1) % _poolSize;
       // Restart so rapid effects (e.g. quick messages) retrigger cleanly.
-      await _player.stop();
-      await _player.play(AssetSource(assetPath), volume: volume);
+      await player.stop();
+      await player.play(AssetSource(assetPath), volume: volume);
     } catch (e) {
       // Missing asset / platform issue — never let SFX break the app.
       if (kDebugMode) debugPrint('[Sound] play $assetPath failed: $e');
     }
   }
 
+  /// Turns in-app sound effects on or off and remembers it on this device.
   Future<void> setSoundEnabled(bool enabled) async {
     _soundEnabled = enabled;
+    if (!enabled) await stopAll();
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool(_prefKey, enabled);
+    } catch (_) {}
   }
 
   Future<void> setVolume(double volume) async {
@@ -76,34 +115,51 @@ class AppSoundService {
   Future<void> playBgMusic(AppSound sound) async {}
   Future<void> stopBgMusic() async {}
   Future<void> stopAll() async {
-    try {
-      await _player.stop();
-    } catch (_) {}
+    for (final p in _players) {
+      try {
+        await p.stop();
+      } catch (_) {}
+    }
   }
 
   Future<void> dispose() async {
-    try {
-      await _player.dispose();
-    } catch (_) {}
+    for (final p in _players) {
+      try {
+        await p.dispose();
+      } catch (_) {}
+    }
   }
 }
 
-/// All sounds used across the GreenGo app. Only the three chat/match sounds
-/// below have asset files; the rest are kept for call-site compatibility and
-/// no-op (missing asset, caught) until their files are added.
+/// All sounds used across the GreenGo app (files in `assets/sounds/`, made
+/// with the earshot sound bank: low / mid sounds, no bells or high notes).
+/// Quiet everyday UI sounds use a low volume multiplier.
 enum AppSound {
-  // Chat — the active, shipped sounds:
+  // Chat
   newMessage('sounds/new_message.mp3', category: SoundCategory.chat),
   newMessageFirstTime('sounds/new_message_first.mp3', category: SoundCategory.chat),
   messageSent('sounds/sent_message.mp3', category: SoundCategory.chat),
   messageReceived('sounds/new_message.mp3', category: SoundCategory.chat),
   typingIndicator('sounds/typing.mp3', category: SoundCategory.chat, volumeMultiplier: 0.3),
-  newMatch('sounds/new_match.mp3', category: SoundCategory.matching),
-  // Super-like reuses the "first message from a user" sound per product spec.
-  superLike('sounds/new_message_first.mp3', category: SoundCategory.matching),
-  swipeRight('sounds/swipe_right.mp3', category: SoundCategory.matching, volumeMultiplier: 0.5),
-  swipeLeft('sounds/swipe_left.mp3', category: SoundCategory.matching, volumeMultiplier: 0.4),
-  cardFlip('sounds/card_flip.mp3', category: SoundCategory.matching, volumeMultiplier: 0.5),
+  reaction('sounds/reaction.mp3', category: SoundCategory.chat, volumeMultiplier: 0.6),
+  messageDeleted('sounds/message_deleted.mp3', category: SoundCategory.chat, volumeMultiplier: 0.6),
+  // Social
+  like('sounds/like.mp3', category: SoundCategory.social, volumeMultiplier: 0.6),
+  follow('sounds/follow.mp3', category: SoundCategory.social, volumeMultiplier: 0.7),
+  longPress('sounds/long_press.mp3', category: SoundCategory.ui, volumeMultiplier: 0.3),
+  // Communities / events
+  communityJoin('sounds/community_join.mp3', category: SoundCategory.social),
+  eventRsvp('sounds/event_rsvp.mp3', category: SoundCategory.events),
+  eventReminder('sounds/event_reminder.mp3', category: SoundCategory.events),
+  ticketPurchased('sounds/ticket_purchased.mp3', category: SoundCategory.events),
+  scanOk('sounds/scan_ok.mp3', category: SoundCategory.events),
+  scanDenied('sounds/scan_denied.mp3', category: SoundCategory.events),
+  // Coins / purchases
+  coinEarned('sounds/coin_earned.mp3', category: SoundCategory.gamification, volumeMultiplier: 0.7),
+  purchaseSuccess('sounds/purchase_success.mp3', category: SoundCategory.gamification),
+  giftSent('sounds/gift_sent.mp3', category: SoundCategory.gamification, volumeMultiplier: 0.8),
+  limitReached('sounds/limit_reached.mp3', category: SoundCategory.ui, volumeMultiplier: 0.6),
+  // Learning (no screen uses these yet)
   correctAnswer('sounds/correct_answer.mp3', category: SoundCategory.learning),
   wrongAnswer('sounds/wrong_answer.mp3', category: SoundCategory.learning),
   flashcardFlip('sounds/flashcard_flip.mp3', category: SoundCategory.learning, volumeMultiplier: 0.5),
@@ -112,27 +168,40 @@ enum AppSound {
   quizComplete('sounds/quiz_complete.mp3', category: SoundCategory.learning),
   streakMilestone('sounds/streak_milestone.mp3', category: SoundCategory.learning),
   wordLearned('sounds/word_learned.mp3', category: SoundCategory.learning, volumeMultiplier: 0.5),
+  // Gamification
   xpGained('sounds/xp_gained.mp3', category: SoundCategory.gamification, volumeMultiplier: 0.6),
   levelUp('sounds/level_up.mp3', category: SoundCategory.gamification),
   achievementUnlocked('sounds/achievement_unlocked.mp3', category: SoundCategory.gamification),
   badgeEarned('sounds/badge_earned.mp3', category: SoundCategory.gamification),
   dailyChallengeComplete('sounds/daily_challenge.mp3', category: SoundCategory.gamification),
   streakCelebration('sounds/streak_celebration.mp3', category: SoundCategory.gamification),
-  coinEarned('sounds/coin_earned.mp3', category: SoundCategory.gamification, volumeMultiplier: 0.5),
+  // Notifications
   notification('sounds/notification.mp3', category: SoundCategory.notification),
   alert('sounds/alert.mp3', category: SoundCategory.notification),
   reminder('sounds/reminder.mp3', category: SoundCategory.notification, volumeMultiplier: 0.6),
+  dismiss('sounds/dismiss.mp3', category: SoundCategory.notification, volumeMultiplier: 0.5),
+  // UI
   tabSwitch('sounds/tab_switch.mp3', category: SoundCategory.ui, volumeMultiplier: 0.3),
   buttonTap('sounds/button_tap.mp3', category: SoundCategory.ui, volumeMultiplier: 0.3),
   success('sounds/success.mp3', category: SoundCategory.ui),
   error('sounds/error.mp3', category: SoundCategory.ui),
-  refresh('sounds/refresh.mp3', category: SoundCategory.ui, volumeMultiplier: 0.4),
+  refresh('sounds/refresh.mp3', category: SoundCategory.ui, volumeMultiplier: 0.5),
+  toggleOn('sounds/toggle_on.mp3', category: SoundCategory.ui, volumeMultiplier: 0.3),
+  toggleOff('sounds/toggle_off.mp3', category: SoundCategory.ui, volumeMultiplier: 0.3),
+  sheetOpen('sounds/sheet_open.mp3', category: SoundCategory.ui, volumeMultiplier: 0.25),
+  copy('sounds/copy.mp3', category: SoundCategory.ui, volumeMultiplier: 0.4),
+  share('sounds/share.mp3', category: SoundCategory.ui, volumeMultiplier: 0.5),
+  tourStep('sounds/tour_step.mp3', category: SoundCategory.ui, volumeMultiplier: 0.3),
+  translate('sounds/translate.mp3', category: SoundCategory.ui, volumeMultiplier: 0.4),
+  // Media
+  photoCapture('sounds/photo_capture.mp3', category: SoundCategory.video, volumeMultiplier: 0.6),
+  uploadComplete('sounds/upload_complete.mp3', category: SoundCategory.video, volumeMultiplier: 0.6),
+  // Safety
   safetyTipAppear('sounds/safety_tip.mp3', category: SoundCategory.safety, volumeMultiplier: 0.5),
   safetyModuleComplete('sounds/safety_complete.mp3', category: SoundCategory.safety),
-  eventRsvp('sounds/event_rsvp.mp3', category: SoundCategory.events),
-  eventReminder('sounds/event_reminder.mp3', category: SoundCategory.events),
   videoRecordStart('sounds/record_start.mp3', category: SoundCategory.video),
   videoRecordStop('sounds/record_stop.mp3', category: SoundCategory.video),
+  // Games (no screen uses these yet)
   gameWaiting('sounds/game_waiting.mp3', category: SoundCategory.games, volumeMultiplier: 0.4),
   gameCountdown('sounds/game_countdown.mp3', category: SoundCategory.games),
   gameStart('sounds/game_start.mp3', category: SoundCategory.games),
@@ -158,7 +227,7 @@ enum AppSound {
 
 enum SoundCategory {
   chat('Chat Sounds'),
-  matching('Match Sounds'),
+  social('Social Sounds'),
   learning('Learning Sounds'),
   gamification('Gamification Sounds'),
   notification('Notification Sounds'),

@@ -7,6 +7,7 @@ import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/tier_config.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../subscription/presentation/tier_l10n.dart';
+import '../../../../core/services/sound_feedback.dart';
 
 /// Tier Management Screen
 /// Admin interface for configuring tier limits and features
@@ -696,13 +697,13 @@ class _LimitSlider extends StatelessWidget {
                 Switch(
                   value: isUnlimited,
                   activeThumbColor: AppColors.successGreen,
-                  onChanged: (checked) {
+                  onChanged: withToggleSound((checked) {
                     if (checked) {
                       onChanged(-1);
                     } else {
                       onChanged(max ~/ 2);
                     }
-                  },
+                  }),
                 ),
               ],
             ),
@@ -760,7 +761,7 @@ class _FeatureToggle extends StatelessWidget {
         trailing: Switch(
           value: value,
           activeThumbColor: AppColors.successGreen,
-          onChanged: onChanged,
+          onChanged: withToggleSound(onChanged),
         ),
       ),
     );

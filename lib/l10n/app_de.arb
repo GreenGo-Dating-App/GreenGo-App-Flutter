@@ -2366,6 +2366,8 @@
   "notificationSettingsTitle": "Benachrichtigungseinstellungen",
   "notificationSound": "Ton",
   "notificationSoundSubtitle": "Ton bei Benachrichtigungen abspielen",
+  "soundEffectsTitle": "Soundeffekte",
+  "soundEffectsSubtitle": "Töne für Tippen, Nachrichten und Erfolge in der App",
   "notificationSoundVibration": "Ton & Vibration",
   "notificationStartTime": "Startzeit",
   "notificationSuperLike": "Du hast eine Prioritätsverbindung von @{nickname} erhalten",

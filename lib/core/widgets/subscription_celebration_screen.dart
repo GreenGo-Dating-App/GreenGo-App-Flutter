@@ -10,6 +10,7 @@ import '../../generated/app_localizations.dart';
 import '../../features/subscription/presentation/tier_l10n.dart';
 import '../constants/app_colors.dart';
 import '../services/tier_entitlements.dart';
+import '../services/app_sound_service.dart';
 
 /// Full-screen luxury celebration animation for subscription purchase
 class SubscriptionCelebrationScreen extends StatefulWidget {
@@ -73,6 +74,7 @@ class _SubscriptionCelebrationScreenState
   @override
   void initState() {
     super.initState();
+    AppSoundService().play(AppSound.purchaseSuccess);
     HapticFeedback.heavyImpact();
 
     // Initialize particles
