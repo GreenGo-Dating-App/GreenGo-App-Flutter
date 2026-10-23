@@ -114,6 +114,14 @@ class NotificationPreferencesScreen extends StatelessWidget {
                       enabled: on,
                       onChanged: (v) => update(prefs.copyWith(tips: v)),
                     ),
+                    // GreenGo Buddies check-ins (server category `buddies`).
+                    _switch(
+                      title: l10n.notificationCatBuddies,
+                      subtitle: l10n.notificationCatBuddiesSubtitle,
+                      value: prefs.buddies,
+                      enabled: on,
+                      onChanged: (v) => update(prefs.copyWith(buddies: v)),
+                    ),
                     // Marketing & promotions (admin broadcasts): explicit
                     // opt-in, OFF by default. The server's shouldNotify reads
                     // categories.marketing; the decision is also recorded as

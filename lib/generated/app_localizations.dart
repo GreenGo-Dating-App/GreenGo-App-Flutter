@@ -48237,6 +48237,1494 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your account is already being deleted. It can’t be stopped now.'**
   String get deletionPendingTooLate;
+
+  /// Exchanges tab label: AI chat friends (GreenGo Buddies)
+  ///
+  /// In en, this message translates to:
+  /// **'Buddies'**
+  String get messagesTabBuddies;
+
+  /// Small badge on AI Buddy avatars and messages: this is an AI, not a person
+  ///
+  /// In en, this message translates to:
+  /// **'AI'**
+  String get buddyAiBadge;
+
+  /// Feature name in the upgrade dialog
+  ///
+  /// In en, this message translates to:
+  /// **'AI Buddies'**
+  String get buddiesFeatureName;
+
+  /// Buddies tab empty state title
+  ///
+  /// In en, this message translates to:
+  /// **'Meet your Buddy'**
+  String get buddiesEmptyTitle;
+
+  /// Buddies tab empty state text
+  ///
+  /// In en, this message translates to:
+  /// **'A Buddy is an AI chat friend for the things you care about: practise a language, plan a trip, talk about films or just chat.'**
+  String get buddiesEmptyBody;
+
+  /// Button: start the Buddy builder
+  ///
+  /// In en, this message translates to:
+  /// **'Create your Buddy'**
+  String get buddiesCreateButton;
+
+  /// Button: create another Buddy
+  ///
+  /// In en, this message translates to:
+  /// **'New Buddy'**
+  String get buddiesNewButton;
+
+  /// How many Buddies the user has out of the plan limit, e.g. '2 of 3 Buddies'
+  ///
+  /// In en, this message translates to:
+  /// **'{count} of {limit} Buddies'**
+  String buddiesPlanUsage(int count, int limit);
+
+  /// Free AI Buddy replies left today
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No free replies left today} =1{1 free reply left today} other{{count} free replies left today}}'**
+  String buddyFreeRepliesLeft(int count);
+
+  /// After the free replies, each Buddy reply costs coins; shown after the free-replies count
+  ///
+  /// In en, this message translates to:
+  /// **'{coins, plural, =1{then 1 coin per reply} other{then {coins} coins per reply}}'**
+  String buddyThenCoinsPerReply(int coins);
+
+  /// Badge on a Buddy that is locked on the current plan
+  ///
+  /// In en, this message translates to:
+  /// **'Locked'**
+  String get buddyLockedBadge;
+
+  /// Subtitle of a locked Buddy in the list
+  ///
+  /// In en, this message translates to:
+  /// **'Locked on your plan. Upgrade to chat again.'**
+  String get buddyLockedHint;
+
+  /// Dialog title: Buddy beyond the plan limit
+  ///
+  /// In en, this message translates to:
+  /// **'This Buddy is locked'**
+  String get buddyLockedTitle;
+
+  /// Upgrade dialog text when the Buddy limit is reached or a Buddy is locked
+  ///
+  /// In en, this message translates to:
+  /// **'{limit, plural, =1{Your plan includes 1 Buddy.} other{Your plan includes {limit} Buddies.}} Upgrade your plan for more.'**
+  String buddyLimitBody(int limit);
+
+  /// Banner in a locked Buddy chat instead of the input
+  ///
+  /// In en, this message translates to:
+  /// **'This Buddy is locked on your current plan. Upgrade to keep chatting.'**
+  String get buddyLockedBanner;
+
+  /// Button: open the membership plans
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade'**
+  String get buddyUpgrade;
+
+  /// Error: too many Buddy messages in a short time
+  ///
+  /// In en, this message translates to:
+  /// **'You are sending messages too fast. Take a short break and try again.'**
+  String get buddyErrorRateLimited;
+
+  /// Error: the AI service is not available
+  ///
+  /// In en, this message translates to:
+  /// **'Your Buddy can\'t answer right now. Please try again in a moment.'**
+  String get buddyErrorUnavailable;
+
+  /// Error: message too long
+  ///
+  /// In en, this message translates to:
+  /// **'Messages to a Buddy can be at most {max} characters.'**
+  String buddyErrorTooLong(int max);
+
+  /// Error: user declined the AI-processing notice
+  ///
+  /// In en, this message translates to:
+  /// **'To chat with a Buddy, please allow AI services first.'**
+  String get buddyErrorConsentNeeded;
+
+  /// Dialog text: no coins left for a Buddy reply
+  ///
+  /// In en, this message translates to:
+  /// **'You used today\'s free Buddy replies. Each reply now costs {coins, plural, =1{1 coin} other{{coins} coins}}.'**
+  String buddyInsufficientCoinsBody(int coins);
+
+  /// Button: open the coin shop
+  ///
+  /// In en, this message translates to:
+  /// **'Get coins'**
+  String get buddyBuyCoins;
+
+  /// Under a user message that failed to send
+  ///
+  /// In en, this message translates to:
+  /// **'Not sent. Tap to try again.'**
+  String get buddyNotSent;
+
+  /// Typing indicator while the AI Buddy prepares a reply
+  ///
+  /// In en, this message translates to:
+  /// **'{name} is typing…'**
+  String buddyTyping(String name);
+
+  /// Chat input hint
+  ///
+  /// In en, this message translates to:
+  /// **'Message {name}…'**
+  String buddyInputHint(String name);
+
+  /// Label on a message the Buddy sent on its own after a quiet period
+  ///
+  /// In en, this message translates to:
+  /// **'Check-in'**
+  String get buddyCheckInLabel;
+
+  /// Label on a safety message with helplines
+  ///
+  /// In en, this message translates to:
+  /// **'Support information'**
+  String get buddySafetyLabel;
+
+  /// Button on a Buddy message: translate it
+  ///
+  /// In en, this message translates to:
+  /// **'Translate'**
+  String get buddyTranslate;
+
+  /// Button: show the untranslated Buddy message
+  ///
+  /// In en, this message translates to:
+  /// **'Show original'**
+  String get buddyShowOriginal;
+
+  /// Snackbar: translation failed
+  ///
+  /// In en, this message translates to:
+  /// **'Could not translate this message.'**
+  String get buddyTranslateFailed;
+
+  /// Button on a Buddy message: report it
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get buddyReport;
+
+  /// Title of the report dialog for a Buddy message
+  ///
+  /// In en, this message translates to:
+  /// **'Report this AI message'**
+  String get buddyReportTitle;
+
+  /// Button: copy the message text
+  ///
+  /// In en, this message translates to:
+  /// **'Copy'**
+  String get buddyCopy;
+
+  /// Snackbar after copying a message
+  ///
+  /// In en, this message translates to:
+  /// **'Copied'**
+  String get buddyCopied;
+
+  /// Empty chat with a Buddy
+  ///
+  /// In en, this message translates to:
+  /// **'Say hello to {name}! Your Buddy answers in a few seconds.'**
+  String buddyChatEmpty(String name);
+
+  /// Notice at the top of a Buddy chat
+  ///
+  /// In en, this message translates to:
+  /// **'{name} is an AI, not a real person. Replies can be wrong. Don\'t share passwords or very personal details.'**
+  String buddyAiDisclosure(String name);
+
+  /// Tooltip and title of the Buddy settings sheet
+  ///
+  /// In en, this message translates to:
+  /// **'Buddy settings'**
+  String get buddyQuickSettings;
+
+  /// Title of the Buddy builder
+  ///
+  /// In en, this message translates to:
+  /// **'Create your Buddy'**
+  String get buddyBuilderTitle;
+
+  /// Builder progress
+  ///
+  /// In en, this message translates to:
+  /// **'Step {step} of {total}'**
+  String buddyStepOf(int step, int total);
+
+  /// Builder step 1 title
+  ///
+  /// In en, this message translates to:
+  /// **'What do you want to talk about?'**
+  String get buddyTopicPrompt;
+
+  /// Search field hint in the topic picker
+  ///
+  /// In en, this message translates to:
+  /// **'Search topics'**
+  String get buddyTopicSearchHint;
+
+  /// Topic search without results
+  ///
+  /// In en, this message translates to:
+  /// **'No topics found'**
+  String get buddyNoTopicsFound;
+
+  /// Header of ready-made Buddy suggestions
+  ///
+  /// In en, this message translates to:
+  /// **'Quick start'**
+  String get buddySuggestionsTitle;
+
+  /// Builder step 2 title
+  ///
+  /// In en, this message translates to:
+  /// **'How should your Buddy help?'**
+  String get buddyRolePrompt;
+
+  /// Builder step 3 title
+  ///
+  /// In en, this message translates to:
+  /// **'Which language should your Buddy speak?'**
+  String get buddyLanguagePrompt;
+
+  /// Builder: user's level in the topic
+  ///
+  /// In en, this message translates to:
+  /// **'Your level'**
+  String get buddyLevelPrompt;
+
+  /// Builder: CEFR level for language practice
+  ///
+  /// In en, this message translates to:
+  /// **'Language level (optional)'**
+  String get buddyCefrPrompt;
+
+  /// CEFR option: no level chosen
+  ///
+  /// In en, this message translates to:
+  /// **'Not sure'**
+  String get buddyCefrNone;
+
+  /// Builder step 4: name field label
+  ///
+  /// In en, this message translates to:
+  /// **'Give your Buddy a name'**
+  String get buddyNamePrompt;
+
+  /// Name field hint
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Sunny'**
+  String get buddyNameHint;
+
+  /// Validation error for the Buddy name
+  ///
+  /// In en, this message translates to:
+  /// **'Use 1 to 24 letters, numbers, spaces, dots, apostrophes or hyphens.'**
+  String get buddyNameInvalid;
+
+  /// Builder: avatar picker title
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a look'**
+  String get buddyAvatarPrompt;
+
+  /// Accessibility label of an avatar choice
+  ///
+  /// In en, this message translates to:
+  /// **'Avatar {number}'**
+  String buddyAvatarLabel(int number);
+
+  /// Builder: tone picker title
+  ///
+  /// In en, this message translates to:
+  /// **'Tone'**
+  String get buddyTonePrompt;
+
+  /// Builder: next step
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get buddyNext;
+
+  /// Builder: previous step
+  ///
+  /// In en, this message translates to:
+  /// **'Back'**
+  String get buddyBack;
+
+  /// Builder: final create button
+  ///
+  /// In en, this message translates to:
+  /// **'Create Buddy'**
+  String get buddyCreate;
+
+  /// Ready-made Buddy suggestion
+  ///
+  /// In en, this message translates to:
+  /// **'Italian teacher'**
+  String get buddySuggestItalianTeacher;
+
+  /// Ready-made Buddy suggestion
+  ///
+  /// In en, this message translates to:
+  /// **'English conversation partner'**
+  String get buddySuggestEnglishPartner;
+
+  /// Ready-made Buddy suggestion
+  ///
+  /// In en, this message translates to:
+  /// **'Running coach'**
+  String get buddySuggestRunningCoach;
+
+  /// Ready-made Buddy suggestion: someone to talk about films with
+  ///
+  /// In en, this message translates to:
+  /// **'Film buddy'**
+  String get buddySuggestMovieBuddy;
+
+  /// Ready-made Buddy suggestion
+  ///
+  /// In en, this message translates to:
+  /// **'Budget travel planner'**
+  String get buddySuggestTravelPlanner;
+
+  /// Ready-made Buddy suggestion
+  ///
+  /// In en, this message translates to:
+  /// **'Cooking friend'**
+  String get buddySuggestCookingFriend;
+
+  /// Ready-made Buddy suggestion
+  ///
+  /// In en, this message translates to:
+  /// **'Job interview coach'**
+  String get buddySuggestInterviewCoach;
+
+  /// Ready-made Buddy suggestion
+  ///
+  /// In en, this message translates to:
+  /// **'Friendly debate partner'**
+  String get buddySuggestDebatePartner;
+
+  /// Settings row label
+  ///
+  /// In en, this message translates to:
+  /// **'Role'**
+  String get buddySettingRole;
+
+  /// Settings row label
+  ///
+  /// In en, this message translates to:
+  /// **'Tone'**
+  String get buddySettingTone;
+
+  /// Settings row label
+  ///
+  /// In en, this message translates to:
+  /// **'Topic'**
+  String get buddySettingTopic;
+
+  /// Settings row label
+  ///
+  /// In en, this message translates to:
+  /// **'Level'**
+  String get buddySettingLevel;
+
+  /// Settings row label
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get buddySettingLanguage;
+
+  /// Settings row label (CEFR)
+  ///
+  /// In en, this message translates to:
+  /// **'Language level'**
+  String get buddySettingCefr;
+
+  /// Switch: the Buddy may write first
+  ///
+  /// In en, this message translates to:
+  /// **'Check-ins'**
+  String get buddySettingCheckIns;
+
+  /// Check-ins switch subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'{name} may write first after a quiet day'**
+  String buddySettingCheckInsSubtitle(String name);
+
+  /// Section title: facts the Buddy remembers
+  ///
+  /// In en, this message translates to:
+  /// **'What {name} remembers'**
+  String buddyMemoryTitle(String name);
+
+  /// Empty memory list
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing yet. {name} remembers useful things you share, like your goals or favourite topics.'**
+  String buddyMemoryEmpty(String name);
+
+  /// Button: delete one remembered fact
+  ///
+  /// In en, this message translates to:
+  /// **'Forget'**
+  String get buddyMemoryForget;
+
+  /// Button: delete all remembered facts
+  ///
+  /// In en, this message translates to:
+  /// **'Forget everything'**
+  String get buddyMemoryForgetAll;
+
+  /// Confirm dialog: forget all
+  ///
+  /// In en, this message translates to:
+  /// **'{name} will forget everything it remembers about you. This can\'t be undone.'**
+  String buddyMemoryForgetAllConfirm(String name);
+
+  /// Button: delete all messages with the Buddy
+  ///
+  /// In en, this message translates to:
+  /// **'Clear chat'**
+  String get buddyClearChat;
+
+  /// Confirm dialog: clear chat
+  ///
+  /// In en, this message translates to:
+  /// **'Delete all messages with {name}? This can\'t be undone.'**
+  String buddyClearChatConfirm(String name);
+
+  /// Checkbox in the clear-chat dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Also forget what {name} remembers'**
+  String buddyClearChatAlsoForget(String name);
+
+  /// Confirm button: clear chat
+  ///
+  /// In en, this message translates to:
+  /// **'Clear'**
+  String get buddyClear;
+
+  /// Button: delete the Buddy
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Buddy'**
+  String get buddyDelete;
+
+  /// Confirm dialog: delete Buddy
+  ///
+  /// In en, this message translates to:
+  /// **'Delete {name}? All messages and memories are deleted. This can\'t be undone.'**
+  String buddyDeleteConfirm(String name);
+
+  /// Snackbar after saving Buddy settings
+  ///
+  /// In en, this message translates to:
+  /// **'Saved'**
+  String get buddySaved;
+
+  /// Notification settings: category for AI Buddy check-ins
+  ///
+  /// In en, this message translates to:
+  /// **'Buddies'**
+  String get notificationCatBuddies;
+
+  /// Notification settings: Buddies category subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Check-in messages from your AI Buddies'**
+  String get notificationCatBuddiesSubtitle;
+
+  /// AI Buddy role name
+  ///
+  /// In en, this message translates to:
+  /// **'Friend'**
+  String get buddyRole_friend;
+
+  /// Short description of the Buddy role 'Friend'
+  ///
+  /// In en, this message translates to:
+  /// **'A friendly companion to chat with'**
+  String get buddyRoleDesc_friend;
+
+  /// AI Buddy role name
+  ///
+  /// In en, this message translates to:
+  /// **'Expert'**
+  String get buddyRole_expert;
+
+  /// Short description of the Buddy role 'Expert'
+  ///
+  /// In en, this message translates to:
+  /// **'Knows the topic well and explains it'**
+  String get buddyRoleDesc_expert;
+
+  /// AI Buddy role name
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher'**
+  String get buddyRole_teacher;
+
+  /// Short description of the Buddy role 'Teacher'
+  ///
+  /// In en, this message translates to:
+  /// **'Teaches step by step and corrects you'**
+  String get buddyRoleDesc_teacher;
+
+  /// AI Buddy role name
+  ///
+  /// In en, this message translates to:
+  /// **'Coach'**
+  String get buddyRole_coach;
+
+  /// Short description of the Buddy role 'Coach'
+  ///
+  /// In en, this message translates to:
+  /// **'Motivates you and helps you reach goals'**
+  String get buddyRoleDesc_coach;
+
+  /// AI Buddy role name
+  ///
+  /// In en, this message translates to:
+  /// **'Conversation partner'**
+  String get buddyRole_conversation_partner;
+
+  /// Short description of the Buddy role 'Conversation partner'
+  ///
+  /// In en, this message translates to:
+  /// **'Keeps the conversation going so you can practise'**
+  String get buddyRoleDesc_conversation_partner;
+
+  /// AI Buddy role name
+  ///
+  /// In en, this message translates to:
+  /// **'Debate partner'**
+  String get buddyRole_debate_partner;
+
+  /// Short description of the Buddy role 'Debate partner'
+  ///
+  /// In en, this message translates to:
+  /// **'Politely argues the other side'**
+  String get buddyRoleDesc_debate_partner;
+
+  /// AI Buddy tone of voice (adjective)
+  ///
+  /// In en, this message translates to:
+  /// **'Warm'**
+  String get buddyTone_warm;
+
+  /// AI Buddy tone of voice (adjective)
+  ///
+  /// In en, this message translates to:
+  /// **'Funny'**
+  String get buddyTone_funny;
+
+  /// AI Buddy tone of voice (adjective)
+  ///
+  /// In en, this message translates to:
+  /// **'Calm'**
+  String get buddyTone_calm;
+
+  /// AI Buddy tone of voice (adjective)
+  ///
+  /// In en, this message translates to:
+  /// **'Direct'**
+  String get buddyTone_direct;
+
+  /// AI Buddy tone of voice (adjective)
+  ///
+  /// In en, this message translates to:
+  /// **'Formal'**
+  String get buddyTone_formal;
+
+  /// AI Buddy tone of voice (adjective)
+  ///
+  /// In en, this message translates to:
+  /// **'Playful'**
+  String get buddyTone_playful;
+
+  /// User's skill level in the Buddy topic
+  ///
+  /// In en, this message translates to:
+  /// **'Beginner'**
+  String get buddyLevel_beginner;
+
+  /// User's skill level in the Buddy topic
+  ///
+  /// In en, this message translates to:
+  /// **'Intermediate'**
+  String get buddyLevel_intermediate;
+
+  /// User's skill level in the Buddy topic
+  ///
+  /// In en, this message translates to:
+  /// **'Expert'**
+  String get buddyLevel_expert;
+
+  /// Language the Buddy speaks
+  ///
+  /// In en, this message translates to:
+  /// **'English'**
+  String get buddyLang_en;
+
+  /// Language the Buddy speaks
+  ///
+  /// In en, this message translates to:
+  /// **'German'**
+  String get buddyLang_de;
+
+  /// Language the Buddy speaks
+  ///
+  /// In en, this message translates to:
+  /// **'Spanish'**
+  String get buddyLang_es;
+
+  /// Language the Buddy speaks
+  ///
+  /// In en, this message translates to:
+  /// **'French'**
+  String get buddyLang_fr;
+
+  /// Language the Buddy speaks
+  ///
+  /// In en, this message translates to:
+  /// **'Italian'**
+  String get buddyLang_it;
+
+  /// Language the Buddy speaks
+  ///
+  /// In en, this message translates to:
+  /// **'Portuguese (Portugal)'**
+  String get buddyLang_pt;
+
+  /// Language the Buddy speaks
+  ///
+  /// In en, this message translates to:
+  /// **'Portuguese (Brazil)'**
+  String get buddyLang_pt_BR;
+
+  /// Group of Buddy topics
+  ///
+  /// In en, this message translates to:
+  /// **'Languages & culture'**
+  String get buddyTopicGroup_languages;
+
+  /// Group of Buddy topics
+  ///
+  /// In en, this message translates to:
+  /// **'Travel'**
+  String get buddyTopicGroup_travel;
+
+  /// Group of Buddy topics
+  ///
+  /// In en, this message translates to:
+  /// **'Sport & fitness'**
+  String get buddyTopicGroup_sport;
+
+  /// Group of Buddy topics
+  ///
+  /// In en, this message translates to:
+  /// **'Arts & music'**
+  String get buddyTopicGroup_arts;
+
+  /// Group of Buddy topics
+  ///
+  /// In en, this message translates to:
+  /// **'Food & drink'**
+  String get buddyTopicGroup_food;
+
+  /// Group of Buddy topics
+  ///
+  /// In en, this message translates to:
+  /// **'Knowledge'**
+  String get buddyTopicGroup_knowledge;
+
+  /// Group of Buddy topics
+  ///
+  /// In en, this message translates to:
+  /// **'Tech & games'**
+  String get buddyTopicGroup_tech;
+
+  /// Group of Buddy topics
+  ///
+  /// In en, this message translates to:
+  /// **'Career & study'**
+  String get buddyTopicGroup_career;
+
+  /// Group of Buddy topics
+  ///
+  /// In en, this message translates to:
+  /// **'Lifestyle & home'**
+  String get buddyTopicGroup_lifestyle;
+
+  /// Group of Buddy topics
+  ///
+  /// In en, this message translates to:
+  /// **'Entertainment'**
+  String get buddyTopicGroup_entertainment;
+
+  /// Group of Buddy topics
+  ///
+  /// In en, this message translates to:
+  /// **'Wellbeing'**
+  String get buddyTopicGroup_wellbeing;
+
+  /// Group of Buddy topics
+  ///
+  /// In en, this message translates to:
+  /// **'Friendship & fun'**
+  String get buddyTopicGroup_friendship;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Practise English'**
+  String get buddyTopic_practice_english;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Practise Italian'**
+  String get buddyTopic_practice_italian;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Practise Spanish'**
+  String get buddyTopic_practice_spanish;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Practise French'**
+  String get buddyTopic_practice_french;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Practise German'**
+  String get buddyTopic_practice_german;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Practise Portuguese'**
+  String get buddyTopic_practice_portuguese;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Slang & idioms'**
+  String get buddyTopic_slang_idioms;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'World cultures'**
+  String get buddyTopic_world_cultures;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Etiquette & manners'**
+  String get buddyTopic_etiquette;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Festivals & traditions'**
+  String get buddyTopic_festivals;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Pronunciation'**
+  String get buddyTopic_pronunciation;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'City guides'**
+  String get buddyTopic_city_guides;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Budget travel'**
+  String get buddyTopic_budget_travel;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Backpacking'**
+  String get buddyTopic_backpacking;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Road trips'**
+  String get buddyTopic_road_trips;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Local food on the road'**
+  String get buddyTopic_local_food_travel;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Packing tips'**
+  String get buddyTopic_packing;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Solo travel'**
+  String get buddyTopic_solo_travel;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Travel phrases'**
+  String get buddyTopic_travel_phrases;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Nature trips'**
+  String get buddyTopic_nature_trips;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Travel stories'**
+  String get buddyTopic_travel_stories;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Gym training'**
+  String get buddyTopic_gym;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Running'**
+  String get buddyTopic_running;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Football'**
+  String get buddyTopic_football;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Basketball'**
+  String get buddyTopic_basketball;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Tennis'**
+  String get buddyTopic_tennis;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Yoga'**
+  String get buddyTopic_yoga;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Cycling'**
+  String get buddyTopic_cycling;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Swimming'**
+  String get buddyTopic_swimming;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Martial arts'**
+  String get buddyTopic_martial_arts;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Hiking'**
+  String get buddyTopic_hiking;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Home workouts'**
+  String get buddyTopic_home_workouts;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Painting'**
+  String get buddyTopic_painting;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Drawing'**
+  String get buddyTopic_drawing;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Photography'**
+  String get buddyTopic_photography;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Music theory'**
+  String get buddyTopic_music_theory;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Guitar'**
+  String get buddyTopic_guitar;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Piano'**
+  String get buddyTopic_piano;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Singing'**
+  String get buddyTopic_singing;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Design'**
+  String get buddyTopic_design;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Creative writing'**
+  String get buddyTopic_creative_writing;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Poetry'**
+  String get buddyTopic_poetry;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Crafts & DIY art'**
+  String get buddyTopic_crafts;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Cooking'**
+  String get buddyTopic_cooking;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Baking'**
+  String get buddyTopic_baking;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Coffee'**
+  String get buddyTopic_coffee;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Tea'**
+  String get buddyTopic_tea;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Vegan & vegetarian'**
+  String get buddyTopic_vegan;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'World cuisines'**
+  String get buddyTopic_world_cuisines;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Wine culture'**
+  String get buddyTopic_wine_culture;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Barbecue & grilling'**
+  String get buddyTopic_barbecue;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Meal prep'**
+  String get buddyTopic_meal_prep;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Street food'**
+  String get buddyTopic_street_food;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'History'**
+  String get buddyTopic_history;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Astronomy & space'**
+  String get buddyTopic_astronomy;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Philosophy'**
+  String get buddyTopic_philosophy;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Science'**
+  String get buddyTopic_science;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Geography'**
+  String get buddyTopic_geography;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Myths & legends'**
+  String get buddyTopic_mythology;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Economics basics'**
+  String get buddyTopic_economics_basics;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Nature & animals'**
+  String get buddyTopic_nature_animals;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Environment'**
+  String get buddyTopic_environment;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Trivia & fun facts'**
+  String get buddyTopic_trivia;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Coding'**
+  String get buddyTopic_coding;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Artificial intelligence'**
+  String get buddyTopic_ai;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Gadgets'**
+  String get buddyTopic_gadgets;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Video games'**
+  String get buddyTopic_gaming;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Online safety'**
+  String get buddyTopic_cybersecurity_basics;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'3D printing'**
+  String get buddyTopic_3d_printing;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Web design'**
+  String get buddyTopic_web_design;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Robotics & electronics'**
+  String get buddyTopic_robotics;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Apps & digital tools'**
+  String get buddyTopic_apps_productivity;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Science fiction'**
+  String get buddyTopic_science_fiction;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Job interviews'**
+  String get buddyTopic_job_interviews;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'CV & cover letter'**
+  String get buddyTopic_cv;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Public speaking'**
+  String get buddyTopic_public_speaking;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Starting a business'**
+  String get buddyTopic_entrepreneurship;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Marketing & social media'**
+  String get buddyTopic_marketing;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Negotiation'**
+  String get buddyTopic_negotiation;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Productivity at work'**
+  String get buddyTopic_productivity_work;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Remote work'**
+  String get buddyTopic_remote_work;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Leadership'**
+  String get buddyTopic_leadership;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Studying & exams'**
+  String get buddyTopic_studying;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Good habits'**
+  String get buddyTopic_habits;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Minimalism'**
+  String get buddyTopic_minimalism;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Gardening & plants'**
+  String get buddyTopic_gardening;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Pets'**
+  String get buddyTopic_pets;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'DIY & home repairs'**
+  String get buddyTopic_diy;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Home organisation'**
+  String get buddyTopic_home_organisation;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Fashion & style'**
+  String get buddyTopic_fashion_basics;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Budgeting basics'**
+  String get buddyTopic_budgeting_basics;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Moving abroad'**
+  String get buddyTopic_moving_abroad;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Parenting tips'**
+  String get buddyTopic_parenting_tips;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Films'**
+  String get buddyTopic_movies;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Books'**
+  String get buddyTopic_books;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Anime & manga'**
+  String get buddyTopic_anime;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'TV series'**
+  String get buddyTopic_series;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Board games'**
+  String get buddyTopic_board_games;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Music'**
+  String get buddyTopic_music_genres;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Podcasts'**
+  String get buddyTopic_podcasts;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Comedy & jokes'**
+  String get buddyTopic_comedy;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Puzzles & riddles'**
+  String get buddyTopic_puzzles;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Theatre & musicals'**
+  String get buddyTopic_theatre;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Motivation'**
+  String get buddyTopic_motivation;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Sleep habits'**
+  String get buddyTopic_sleep_habits;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Stress relief'**
+  String get buddyTopic_stress_basics;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Mindfulness & breathing'**
+  String get buddyTopic_mindfulness;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Gratitude'**
+  String get buddyTopic_gratitude;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Healthy eating'**
+  String get buddyTopic_healthy_eating;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Digital detox'**
+  String get buddyTopic_digital_detox;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Self-confidence'**
+  String get buddyTopic_self_confidence;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Casual chat'**
+  String get buddyTopic_casual_chat;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'A good listener'**
+  String get buddyTopic_good_listener;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Joke buddy'**
+  String get buddyTopic_joke_buddy;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Friendly debates'**
+  String get buddyTopic_debate_partner;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Daily check-in'**
+  String get buddyTopic_daily_checkin;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Making friends'**
+  String get buddyTopic_make_friends;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Cultural exchange'**
+  String get buddyTopic_cultural_exchange;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Goal buddy'**
+  String get buddyTopic_goal_buddy;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Storytelling together'**
+  String get buddyTopic_storytelling;
+
+  /// Buddy chat topic label
+  ///
+  /// In en, this message translates to:
+  /// **'Would you rather?'**
+  String get buddyTopic_would_you_rather;
 }
 
 class _AppLocalizationsDelegate

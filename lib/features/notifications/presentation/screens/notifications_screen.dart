@@ -15,6 +15,7 @@ import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../chat/presentation/screens/group_chat_screen.dart';
 import '../../../chat/presentation/screens/support_chat_screen.dart';
+import '../../../buddies/presentation/screens/buddy_chat_screen.dart';
 import '../../../communities/domain/entities/community.dart';
 import '../../../communities/domain/repositories/communities_repository.dart';
 import '../../../communities/presentation/bloc/communities_bloc.dart';
@@ -342,6 +343,14 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
       if (decision != null) {
         Navigator.of(context).push(ModerationDecisionScreen.route(decision));
       }
+      return;
+    }
+
+    // GreenGo Buddies check-in → that Buddy chat.
+    final buddyId = pick(['buddyId']);
+    if (data['type'] == 'buddy_checkin' && buddyId != null) {
+      Navigator.of(context)
+          .push(BuddyChatScreen.route(userId: userId, buddyId: buddyId));
       return;
     }
 

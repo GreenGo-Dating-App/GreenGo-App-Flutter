@@ -27,6 +27,7 @@ import '../bloc/groups_state.dart';
 import 'groups_screen.dart';
 import '../../../../features/explore/presentation/screens/network_discovery_screen.dart';
 import '../../../../core/widgets/helpful_empty_state.dart';
+import '../../../buddies/presentation/widgets/buddies_tab.dart';
 
 /// Conversations Screen
 ///
@@ -464,16 +465,22 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
           create: (_) =>
               di.sl<GroupsBloc>()..add(GroupsLoadRequested(widget.userId)),
           child: DefaultTabController(
-          // Messages (1:1) and Groups for everyone; a third "Business" tab
-          // (conversations flagged businessInquiry = incoming storefront
-          // inquiries) ONLY when the account is in business mode.
+          // Messages (1:1), Groups and Buddies (AI chat friends) for
+          // everyone; a fourth "Business" tab (conversations flagged
+          // businessInquiry = incoming storefront inquiries) ONLY when the
+          // account is in business mode.
           key: ValueKey('exchanges-tabs-$_showBusinessTab'),
-          length: _showBusinessTab ? 3 : 2,
+          length: _showBusinessTab ? 4 : 3,
           child: Column(
             children: [
               Material(
                 color: AppColors.backgroundDark,
                 child: TabBar(
+                  // Four tabs (business accounts) may not fit narrow phones
+                  // in every language: let them scroll instead of clipping.
+                  isScrollable: _showBusinessTab,
+                  tabAlignment:
+                      _showBusinessTab ? TabAlignment.center : TabAlignment.fill,
                   indicatorColor: AppColors.richGold,
                   labelColor: AppColors.richGold,
                   unselectedLabelColor: AppColors.textTertiary,
@@ -502,6 +509,11 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                 .length
                             : 0,
                       ),
+                    ),
+                    // Buddies tab — the user's AI chat friends.
+                    Tab(
+                      key: const ValueKey('exchanges-tab-buddies'),
+                      text: l10n.messagesTabBuddies,
                     ),
                     // Business tab — storefront inquiries. Business accounts only.
                     if (_showBusinessTab)
@@ -802,6 +814,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                       userId: widget.userId,
                       showAppBar: false,
                     ),
+                    BuddiesTab(userId: widget.userId),
                     if (_showBusinessTab) _buildBusinessTab(l10n),
                   ],
                 ),

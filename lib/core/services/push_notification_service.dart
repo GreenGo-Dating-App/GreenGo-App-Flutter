@@ -13,6 +13,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../features/chat/presentation/screens/chat_screen.dart';
+import '../../features/buddies/presentation/screens/buddy_chat_screen.dart';
 import '../../../features/chat/presentation/screens/group_chat_screen.dart';
 import '../../../features/chat/presentation/screens/support_chat_screen.dart';
 import '../../../features/communities/domain/repositories/communities_repository.dart';
@@ -277,6 +278,13 @@ class PushNotificationService {
           ),
         ),
       );
+      return;
+    }
+
+    // GreenGo Buddies check-in (the AI Buddy wrote first) → that Buddy chat.
+    final buddyId = data['buddyId'];
+    if (type == 'buddy_checkin' && buddyId is String && buddyId.isNotEmpty) {
+      navigator.push(BuddyChatScreen.route(userId: userId, buddyId: buddyId));
       return;
     }
 

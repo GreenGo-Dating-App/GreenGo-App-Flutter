@@ -28526,6 +28526,823 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get deletionPendingTooLate =>
       'A tua conta já está a ser eliminada. Já não é possível parar.';
+
+  @override
+  String get messagesTabBuddies => 'Buddies';
+
+  @override
+  String get buddyAiBadge => 'IA';
+
+  @override
+  String get buddiesFeatureName => 'Buddies com IA';
+
+  @override
+  String get buddiesEmptyTitle => 'Conhece o teu Buddy';
+
+  @override
+  String get buddiesEmptyBody =>
+      'Um Buddy é um amigo de chat com IA para as coisas de que gostas: praticar uma língua, planear uma viagem, falar de filmes ou simplesmente conversar.';
+
+  @override
+  String get buddiesCreateButton => 'Cria o teu Buddy';
+
+  @override
+  String get buddiesNewButton => 'Novo Buddy';
+
+  @override
+  String buddiesPlanUsage(int count, int limit) {
+    return '$count de $limit Buddies';
+  }
+
+  @override
+  String buddyFreeRepliesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Restam-te $count respostas grátis hoje',
+      one: 'Resta-te 1 resposta grátis hoje',
+      zero: 'Hoje já não tens respostas grátis',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String buddyThenCoinsPerReply(int coins) {
+    String _temp0 = intl.Intl.pluralLogic(
+      coins,
+      locale: localeName,
+      other: 'depois, $coins moedas por resposta',
+      one: 'depois, 1 moeda por resposta',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get buddyLockedBadge => 'Bloqueado';
+
+  @override
+  String get buddyLockedHint =>
+      'Bloqueado no teu plano. Atualiza o plano para voltares a conversar.';
+
+  @override
+  String get buddyLockedTitle => 'Este Buddy está bloqueado';
+
+  @override
+  String buddyLimitBody(int limit) {
+    String _temp0 = intl.Intl.pluralLogic(
+      limit,
+      locale: localeName,
+      other: 'O teu plano inclui $limit Buddies.',
+      one: 'O teu plano inclui 1 Buddy.',
+    );
+    return '$_temp0 Atualiza o plano para teres mais.';
+  }
+
+  @override
+  String get buddyLockedBanner =>
+      'Este Buddy está bloqueado no teu plano atual. Atualiza o plano para continuares a conversar.';
+
+  @override
+  String get buddyUpgrade => 'Atualizar';
+
+  @override
+  String get buddyErrorRateLimited =>
+      'Estás a enviar mensagens demasiado depressa. Faz uma pequena pausa e tenta novamente.';
+
+  @override
+  String get buddyErrorUnavailable =>
+      'O teu Buddy não consegue responder agora. Tenta novamente daqui a pouco.';
+
+  @override
+  String buddyErrorTooLong(int max) {
+    return 'As mensagens para um Buddy podem ter no máximo $max caracteres.';
+  }
+
+  @override
+  String get buddyErrorConsentNeeded =>
+      'Para conversares com um Buddy, permite primeiro os serviços de IA.';
+
+  @override
+  String buddyInsufficientCoinsBody(int coins) {
+    String _temp0 = intl.Intl.pluralLogic(
+      coins,
+      locale: localeName,
+      other: '$coins moedas',
+      one: '1 moeda',
+    );
+    return 'Já usaste as respostas grátis de hoje. Cada resposta custa agora $_temp0.';
+  }
+
+  @override
+  String get buddyBuyCoins => 'Obter moedas';
+
+  @override
+  String get buddyNotSent => 'Não enviada. Toca para tentar novamente.';
+
+  @override
+  String buddyTyping(String name) {
+    return '$name está a escrever…';
+  }
+
+  @override
+  String buddyInputHint(String name) {
+    return 'Mensagem para $name…';
+  }
+
+  @override
+  String get buddyCheckInLabel => 'Check-in';
+
+  @override
+  String get buddySafetyLabel => 'Informação de apoio';
+
+  @override
+  String get buddyTranslate => 'Traduzir';
+
+  @override
+  String get buddyShowOriginal => 'Ver original';
+
+  @override
+  String get buddyTranslateFailed => 'Não foi possível traduzir esta mensagem.';
+
+  @override
+  String get buddyReport => 'Denunciar';
+
+  @override
+  String get buddyReportTitle => 'Denunciar esta mensagem de IA';
+
+  @override
+  String get buddyCopy => 'Copiar';
+
+  @override
+  String get buddyCopied => 'Copiado';
+
+  @override
+  String buddyChatEmpty(String name) {
+    return 'Diz olá a $name! O teu Buddy responde em poucos segundos.';
+  }
+
+  @override
+  String buddyAiDisclosure(String name) {
+    return '$name é uma IA, não uma pessoa real. As respostas podem estar erradas. Não partilhes palavras-passe nem dados muito pessoais.';
+  }
+
+  @override
+  String get buddyQuickSettings => 'Definições do Buddy';
+
+  @override
+  String get buddyBuilderTitle => 'Cria o teu Buddy';
+
+  @override
+  String buddyStepOf(int step, int total) {
+    return 'Passo $step de $total';
+  }
+
+  @override
+  String get buddyTopicPrompt => 'Sobre o que queres falar?';
+
+  @override
+  String get buddyTopicSearchHint => 'Pesquisar temas';
+
+  @override
+  String get buddyNoTopicsFound => 'Nenhum tema encontrado';
+
+  @override
+  String get buddySuggestionsTitle => 'Início rápido';
+
+  @override
+  String get buddyRolePrompt => 'Como deve o teu Buddy ajudar-te?';
+
+  @override
+  String get buddyLanguagePrompt => 'Que língua deve o teu Buddy falar?';
+
+  @override
+  String get buddyLevelPrompt => 'O teu nível';
+
+  @override
+  String get buddyCefrPrompt => 'Nível de língua (opcional)';
+
+  @override
+  String get buddyCefrNone => 'Não sei';
+
+  @override
+  String get buddyNamePrompt => 'Dá um nome ao teu Buddy';
+
+  @override
+  String get buddyNameHint => 'ex.: Sunny';
+
+  @override
+  String get buddyNameInvalid =>
+      'Usa de 1 a 24 letras, números, espaços, pontos, apóstrofos ou hífenes.';
+
+  @override
+  String get buddyAvatarPrompt => 'Escolhe um visual';
+
+  @override
+  String buddyAvatarLabel(int number) {
+    return 'Avatar $number';
+  }
+
+  @override
+  String get buddyTonePrompt => 'Tom';
+
+  @override
+  String get buddyNext => 'Seguinte';
+
+  @override
+  String get buddyBack => 'Voltar';
+
+  @override
+  String get buddyCreate => 'Criar Buddy';
+
+  @override
+  String get buddySuggestItalianTeacher => 'Professor de italiano';
+
+  @override
+  String get buddySuggestEnglishPartner => 'Parceiro de conversação em inglês';
+
+  @override
+  String get buddySuggestRunningCoach => 'Treinador de corrida';
+
+  @override
+  String get buddySuggestMovieBuddy => 'Buddy de cinema';
+
+  @override
+  String get buddySuggestTravelPlanner => 'Planeador de viagens económicas';
+
+  @override
+  String get buddySuggestCookingFriend => 'Amigo da cozinha';
+
+  @override
+  String get buddySuggestInterviewCoach => 'Coach de entrevistas de emprego';
+
+  @override
+  String get buddySuggestDebatePartner => 'Parceiro de debate amigável';
+
+  @override
+  String get buddySettingRole => 'Função';
+
+  @override
+  String get buddySettingTone => 'Tom';
+
+  @override
+  String get buddySettingTopic => 'Tema';
+
+  @override
+  String get buddySettingLevel => 'Nível';
+
+  @override
+  String get buddySettingLanguage => 'Língua';
+
+  @override
+  String get buddySettingCefr => 'Nível de língua';
+
+  @override
+  String get buddySettingCheckIns => 'Check-ins';
+
+  @override
+  String buddySettingCheckInsSubtitle(String name) {
+    return '$name pode escrever-te primeiro após um dia tranquilo';
+  }
+
+  @override
+  String buddyMemoryTitle(String name) {
+    return 'O que $name recorda';
+  }
+
+  @override
+  String buddyMemoryEmpty(String name) {
+    return 'Ainda nada. $name recorda coisas úteis que partilhas, como os teus objetivos ou temas favoritos.';
+  }
+
+  @override
+  String get buddyMemoryForget => 'Esquecer';
+
+  @override
+  String get buddyMemoryForgetAll => 'Esquecer tudo';
+
+  @override
+  String buddyMemoryForgetAllConfirm(String name) {
+    return '$name vai esquecer tudo o que recorda sobre ti. Esta ação não pode ser anulada.';
+  }
+
+  @override
+  String get buddyClearChat => 'Limpar chat';
+
+  @override
+  String buddyClearChatConfirm(String name) {
+    return 'Eliminar todas as mensagens com $name? Esta ação não pode ser anulada.';
+  }
+
+  @override
+  String buddyClearChatAlsoForget(String name) {
+    return 'Esquecer também o que $name recorda';
+  }
+
+  @override
+  String get buddyClear => 'Limpar';
+
+  @override
+  String get buddyDelete => 'Eliminar Buddy';
+
+  @override
+  String buddyDeleteConfirm(String name) {
+    return 'Eliminar $name? Todas as mensagens e memórias serão eliminadas. Esta ação não pode ser anulada.';
+  }
+
+  @override
+  String get buddySaved => 'Guardado';
+
+  @override
+  String get notificationCatBuddies => 'Buddies';
+
+  @override
+  String get notificationCatBuddiesSubtitle =>
+      'Mensagens de check-in dos teus Buddies com IA';
+
+  @override
+  String get buddyRole_friend => 'Amigo';
+
+  @override
+  String get buddyRoleDesc_friend => 'Um companheiro simpático para conversar';
+
+  @override
+  String get buddyRole_expert => 'Especialista';
+
+  @override
+  String get buddyRoleDesc_expert => 'Conhece bem o tema e explica-o';
+
+  @override
+  String get buddyRole_teacher => 'Professor';
+
+  @override
+  String get buddyRoleDesc_teacher => 'Ensina passo a passo e corrige-te';
+
+  @override
+  String get buddyRole_coach => 'Coach';
+
+  @override
+  String get buddyRoleDesc_coach => 'Motiva-te e ajuda-te a atingir objetivos';
+
+  @override
+  String get buddyRole_conversation_partner => 'Parceiro de conversação';
+
+  @override
+  String get buddyRoleDesc_conversation_partner =>
+      'Mantém a conversa para poderes praticar';
+
+  @override
+  String get buddyRole_debate_partner => 'Parceiro de debate';
+
+  @override
+  String get buddyRoleDesc_debate_partner =>
+      'Defende educadamente o outro lado';
+
+  @override
+  String get buddyTone_warm => 'Caloroso';
+
+  @override
+  String get buddyTone_funny => 'Divertido';
+
+  @override
+  String get buddyTone_calm => 'Calmo';
+
+  @override
+  String get buddyTone_direct => 'Direto';
+
+  @override
+  String get buddyTone_formal => 'Formal';
+
+  @override
+  String get buddyTone_playful => 'Brincalhão';
+
+  @override
+  String get buddyLevel_beginner => 'Principiante';
+
+  @override
+  String get buddyLevel_intermediate => 'Intermédio';
+
+  @override
+  String get buddyLevel_expert => 'Especialista';
+
+  @override
+  String get buddyLang_en => 'Inglês';
+
+  @override
+  String get buddyLang_de => 'Alemão';
+
+  @override
+  String get buddyLang_es => 'Espanhol';
+
+  @override
+  String get buddyLang_fr => 'Francês';
+
+  @override
+  String get buddyLang_it => 'Italiano';
+
+  @override
+  String get buddyLang_pt => 'Português (Portugal)';
+
+  @override
+  String get buddyLang_pt_BR => 'Português (Brasil)';
+
+  @override
+  String get buddyTopicGroup_languages => 'Línguas e cultura';
+
+  @override
+  String get buddyTopicGroup_travel => 'Viagens';
+
+  @override
+  String get buddyTopicGroup_sport => 'Desporto e fitness';
+
+  @override
+  String get buddyTopicGroup_arts => 'Arte e música';
+
+  @override
+  String get buddyTopicGroup_food => 'Comida e bebida';
+
+  @override
+  String get buddyTopicGroup_knowledge => 'Conhecimento';
+
+  @override
+  String get buddyTopicGroup_tech => 'Tecnologia e jogos';
+
+  @override
+  String get buddyTopicGroup_career => 'Carreira e estudos';
+
+  @override
+  String get buddyTopicGroup_lifestyle => 'Estilo de vida e casa';
+
+  @override
+  String get buddyTopicGroup_entertainment => 'Entretenimento';
+
+  @override
+  String get buddyTopicGroup_wellbeing => 'Bem-estar';
+
+  @override
+  String get buddyTopicGroup_friendship => 'Amizade e diversão';
+
+  @override
+  String get buddyTopic_practice_english => 'Praticar inglês';
+
+  @override
+  String get buddyTopic_practice_italian => 'Praticar italiano';
+
+  @override
+  String get buddyTopic_practice_spanish => 'Praticar espanhol';
+
+  @override
+  String get buddyTopic_practice_french => 'Praticar francês';
+
+  @override
+  String get buddyTopic_practice_german => 'Praticar alemão';
+
+  @override
+  String get buddyTopic_practice_portuguese => 'Praticar português';
+
+  @override
+  String get buddyTopic_slang_idioms => 'Calão e expressões';
+
+  @override
+  String get buddyTopic_world_cultures => 'Culturas do mundo';
+
+  @override
+  String get buddyTopic_etiquette => 'Etiqueta e boas maneiras';
+
+  @override
+  String get buddyTopic_festivals => 'Festas e tradições';
+
+  @override
+  String get buddyTopic_pronunciation => 'Pronúncia';
+
+  @override
+  String get buddyTopic_city_guides => 'Guias de cidades';
+
+  @override
+  String get buddyTopic_budget_travel => 'Viajar barato';
+
+  @override
+  String get buddyTopic_backpacking => 'Mochilão';
+
+  @override
+  String get buddyTopic_road_trips => 'Viagens de carro';
+
+  @override
+  String get buddyTopic_local_food_travel => 'Comida local em viagem';
+
+  @override
+  String get buddyTopic_packing => 'Dicas para a mala';
+
+  @override
+  String get buddyTopic_solo_travel => 'Viajar sozinho';
+
+  @override
+  String get buddyTopic_travel_phrases => 'Frases para viajar';
+
+  @override
+  String get buddyTopic_nature_trips => 'Passeios na natureza';
+
+  @override
+  String get buddyTopic_travel_stories => 'Histórias de viagem';
+
+  @override
+  String get buddyTopic_gym => 'Ginásio';
+
+  @override
+  String get buddyTopic_running => 'Corrida';
+
+  @override
+  String get buddyTopic_football => 'Futebol';
+
+  @override
+  String get buddyTopic_basketball => 'Basquetebol';
+
+  @override
+  String get buddyTopic_tennis => 'Ténis';
+
+  @override
+  String get buddyTopic_yoga => 'Ioga';
+
+  @override
+  String get buddyTopic_cycling => 'Ciclismo';
+
+  @override
+  String get buddyTopic_swimming => 'Natação';
+
+  @override
+  String get buddyTopic_martial_arts => 'Artes marciais';
+
+  @override
+  String get buddyTopic_hiking => 'Caminhadas';
+
+  @override
+  String get buddyTopic_home_workouts => 'Treino em casa';
+
+  @override
+  String get buddyTopic_painting => 'Pintura';
+
+  @override
+  String get buddyTopic_drawing => 'Desenho';
+
+  @override
+  String get buddyTopic_photography => 'Fotografia';
+
+  @override
+  String get buddyTopic_music_theory => 'Teoria musical';
+
+  @override
+  String get buddyTopic_guitar => 'Guitarra';
+
+  @override
+  String get buddyTopic_piano => 'Piano';
+
+  @override
+  String get buddyTopic_singing => 'Canto';
+
+  @override
+  String get buddyTopic_design => 'Design';
+
+  @override
+  String get buddyTopic_creative_writing => 'Escrita criativa';
+
+  @override
+  String get buddyTopic_poetry => 'Poesia';
+
+  @override
+  String get buddyTopic_crafts => 'Trabalhos manuais';
+
+  @override
+  String get buddyTopic_cooking => 'Culinária';
+
+  @override
+  String get buddyTopic_baking => 'Pastelaria';
+
+  @override
+  String get buddyTopic_coffee => 'Café';
+
+  @override
+  String get buddyTopic_tea => 'Chá';
+
+  @override
+  String get buddyTopic_vegan => 'Vegan e vegetariano';
+
+  @override
+  String get buddyTopic_world_cuisines => 'Cozinhas do mundo';
+
+  @override
+  String get buddyTopic_wine_culture => 'Cultura do vinho';
+
+  @override
+  String get buddyTopic_barbecue => 'Churrasco e grelhados';
+
+  @override
+  String get buddyTopic_meal_prep => 'Preparar refeições';
+
+  @override
+  String get buddyTopic_street_food => 'Comida de rua';
+
+  @override
+  String get buddyTopic_history => 'História';
+
+  @override
+  String get buddyTopic_astronomy => 'Astronomia e espaço';
+
+  @override
+  String get buddyTopic_philosophy => 'Filosofia';
+
+  @override
+  String get buddyTopic_science => 'Ciência';
+
+  @override
+  String get buddyTopic_geography => 'Geografia';
+
+  @override
+  String get buddyTopic_mythology => 'Mitos e lendas';
+
+  @override
+  String get buddyTopic_economics_basics => 'Noções de economia';
+
+  @override
+  String get buddyTopic_nature_animals => 'Natureza e animais';
+
+  @override
+  String get buddyTopic_environment => 'Ambiente';
+
+  @override
+  String get buddyTopic_trivia => 'Curiosidades';
+
+  @override
+  String get buddyTopic_coding => 'Programação';
+
+  @override
+  String get buddyTopic_ai => 'Inteligência artificial';
+
+  @override
+  String get buddyTopic_gadgets => 'Gadgets';
+
+  @override
+  String get buddyTopic_gaming => 'Videojogos';
+
+  @override
+  String get buddyTopic_cybersecurity_basics => 'Segurança online';
+
+  @override
+  String get buddyTopic_3d_printing => 'Impressão 3D';
+
+  @override
+  String get buddyTopic_web_design => 'Web design';
+
+  @override
+  String get buddyTopic_robotics => 'Robótica e eletrónica';
+
+  @override
+  String get buddyTopic_apps_productivity => 'Apps e ferramentas digitais';
+
+  @override
+  String get buddyTopic_science_fiction => 'Ficção científica';
+
+  @override
+  String get buddyTopic_job_interviews => 'Entrevistas de emprego';
+
+  @override
+  String get buddyTopic_cv => 'CV e carta de apresentação';
+
+  @override
+  String get buddyTopic_public_speaking => 'Falar em público';
+
+  @override
+  String get buddyTopic_entrepreneurship => 'Criar um negócio';
+
+  @override
+  String get buddyTopic_marketing => 'Marketing e redes sociais';
+
+  @override
+  String get buddyTopic_negotiation => 'Negociação';
+
+  @override
+  String get buddyTopic_productivity_work => 'Produtividade no trabalho';
+
+  @override
+  String get buddyTopic_remote_work => 'Teletrabalho';
+
+  @override
+  String get buddyTopic_leadership => 'Liderança';
+
+  @override
+  String get buddyTopic_studying => 'Estudo e exames';
+
+  @override
+  String get buddyTopic_habits => 'Bons hábitos';
+
+  @override
+  String get buddyTopic_minimalism => 'Minimalismo';
+
+  @override
+  String get buddyTopic_gardening => 'Jardinagem e plantas';
+
+  @override
+  String get buddyTopic_pets => 'Animais de estimação';
+
+  @override
+  String get buddyTopic_diy => 'Bricolage e reparações';
+
+  @override
+  String get buddyTopic_home_organisation => 'Organização da casa';
+
+  @override
+  String get buddyTopic_fashion_basics => 'Moda e estilo';
+
+  @override
+  String get buddyTopic_budgeting_basics => 'Gerir o orçamento';
+
+  @override
+  String get buddyTopic_moving_abroad => 'Mudar para o estrangeiro';
+
+  @override
+  String get buddyTopic_parenting_tips => 'Dicas para pais';
+
+  @override
+  String get buddyTopic_movies => 'Filmes';
+
+  @override
+  String get buddyTopic_books => 'Livros';
+
+  @override
+  String get buddyTopic_anime => 'Anime e manga';
+
+  @override
+  String get buddyTopic_series => 'Séries';
+
+  @override
+  String get buddyTopic_board_games => 'Jogos de tabuleiro';
+
+  @override
+  String get buddyTopic_music_genres => 'Música';
+
+  @override
+  String get buddyTopic_podcasts => 'Podcasts';
+
+  @override
+  String get buddyTopic_comedy => 'Humor e piadas';
+
+  @override
+  String get buddyTopic_puzzles => 'Puzzles e adivinhas';
+
+  @override
+  String get buddyTopic_theatre => 'Teatro e musicais';
+
+  @override
+  String get buddyTopic_motivation => 'Motivação';
+
+  @override
+  String get buddyTopic_sleep_habits => 'Hábitos de sono';
+
+  @override
+  String get buddyTopic_stress_basics => 'Aliviar o stress';
+
+  @override
+  String get buddyTopic_mindfulness => 'Mindfulness e respiração';
+
+  @override
+  String get buddyTopic_gratitude => 'Gratidão';
+
+  @override
+  String get buddyTopic_healthy_eating => 'Alimentação saudável';
+
+  @override
+  String get buddyTopic_digital_detox => 'Desintoxicação digital';
+
+  @override
+  String get buddyTopic_self_confidence => 'Autoconfiança';
+
+  @override
+  String get buddyTopic_casual_chat => 'Conversa descontraída';
+
+  @override
+  String get buddyTopic_good_listener => 'Alguém que ouve';
+
+  @override
+  String get buddyTopic_joke_buddy => 'Buddy das piadas';
+
+  @override
+  String get buddyTopic_debate_partner => 'Debates amigáveis';
+
+  @override
+  String get buddyTopic_daily_checkin => 'Check-in diário';
+
+  @override
+  String get buddyTopic_make_friends => 'Fazer amigos';
+
+  @override
+  String get buddyTopic_cultural_exchange => 'Intercâmbio cultural';
+
+  @override
+  String get buddyTopic_goal_buddy => 'Buddy de objetivos';
+
+  @override
+  String get buddyTopic_storytelling => 'Contar histórias juntos';
+
+  @override
+  String get buddyTopic_would_you_rather => 'O que preferias?';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -57055,4 +57872,821 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get deletionPendingTooLate =>
       'Sua conta já está sendo excluída. Não é mais possível interromper.';
+
+  @override
+  String get messagesTabBuddies => 'Buddies';
+
+  @override
+  String get buddyAiBadge => 'IA';
+
+  @override
+  String get buddiesFeatureName => 'Buddies com IA';
+
+  @override
+  String get buddiesEmptyTitle => 'Conheça seu Buddy';
+
+  @override
+  String get buddiesEmptyBody =>
+      'Um Buddy é um amigo de chat com IA para as coisas que importam para você: praticar um idioma, planejar uma viagem, falar de filmes ou só bater papo.';
+
+  @override
+  String get buddiesCreateButton => 'Crie seu Buddy';
+
+  @override
+  String get buddiesNewButton => 'Novo Buddy';
+
+  @override
+  String buddiesPlanUsage(int count, int limit) {
+    return '$count de $limit Buddies';
+  }
+
+  @override
+  String buddyFreeRepliesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Restam $count respostas grátis hoje',
+      one: 'Resta 1 resposta grátis hoje',
+      zero: 'Você não tem mais respostas grátis hoje',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String buddyThenCoinsPerReply(int coins) {
+    String _temp0 = intl.Intl.pluralLogic(
+      coins,
+      locale: localeName,
+      other: 'depois, $coins moedas por resposta',
+      one: 'depois, 1 moeda por resposta',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get buddyLockedBadge => 'Bloqueado';
+
+  @override
+  String get buddyLockedHint =>
+      'Bloqueado no seu plano. Faça upgrade para conversar de novo.';
+
+  @override
+  String get buddyLockedTitle => 'Este Buddy está bloqueado';
+
+  @override
+  String buddyLimitBody(int limit) {
+    String _temp0 = intl.Intl.pluralLogic(
+      limit,
+      locale: localeName,
+      other: 'Seu plano inclui $limit Buddies.',
+      one: 'Seu plano inclui 1 Buddy.',
+    );
+    return '$_temp0 Faça upgrade do plano para ter mais.';
+  }
+
+  @override
+  String get buddyLockedBanner =>
+      'Este Buddy está bloqueado no seu plano atual. Faça upgrade para continuar conversando.';
+
+  @override
+  String get buddyUpgrade => 'Fazer upgrade';
+
+  @override
+  String get buddyErrorRateLimited =>
+      'Você está enviando mensagens rápido demais. Faça uma pausa curta e tente de novo.';
+
+  @override
+  String get buddyErrorUnavailable =>
+      'Seu Buddy não pode responder agora. Tente de novo em instantes.';
+
+  @override
+  String buddyErrorTooLong(int max) {
+    return 'As mensagens para um Buddy podem ter no máximo $max caracteres.';
+  }
+
+  @override
+  String get buddyErrorConsentNeeded =>
+      'Para conversar com um Buddy, permita primeiro os serviços de IA.';
+
+  @override
+  String buddyInsufficientCoinsBody(int coins) {
+    String _temp0 = intl.Intl.pluralLogic(
+      coins,
+      locale: localeName,
+      other: '$coins moedas',
+      one: '1 moeda',
+    );
+    return 'Você já usou as respostas grátis de hoje. Agora cada resposta custa $_temp0.';
+  }
+
+  @override
+  String get buddyBuyCoins => 'Obter moedas';
+
+  @override
+  String get buddyNotSent => 'Não enviada. Toque para tentar de novo.';
+
+  @override
+  String buddyTyping(String name) {
+    return '$name está digitando…';
+  }
+
+  @override
+  String buddyInputHint(String name) {
+    return 'Mensagem para $name…';
+  }
+
+  @override
+  String get buddyCheckInLabel => 'Check-in';
+
+  @override
+  String get buddySafetyLabel => 'Informações de apoio';
+
+  @override
+  String get buddyTranslate => 'Traduzir';
+
+  @override
+  String get buddyShowOriginal => 'Ver original';
+
+  @override
+  String get buddyTranslateFailed => 'Não foi possível traduzir esta mensagem.';
+
+  @override
+  String get buddyReport => 'Denunciar';
+
+  @override
+  String get buddyReportTitle => 'Denunciar esta mensagem de IA';
+
+  @override
+  String get buddyCopy => 'Copiar';
+
+  @override
+  String get buddyCopied => 'Copiado';
+
+  @override
+  String buddyChatEmpty(String name) {
+    return 'Diga oi para $name! Seu Buddy responde em poucos segundos.';
+  }
+
+  @override
+  String buddyAiDisclosure(String name) {
+    return '$name é uma IA, não uma pessoa real. As respostas podem estar erradas. Não compartilhe senhas nem dados muito pessoais.';
+  }
+
+  @override
+  String get buddyQuickSettings => 'Configurações do Buddy';
+
+  @override
+  String get buddyBuilderTitle => 'Crie seu Buddy';
+
+  @override
+  String buddyStepOf(int step, int total) {
+    return 'Etapa $step de $total';
+  }
+
+  @override
+  String get buddyTopicPrompt => 'Sobre o que você quer conversar?';
+
+  @override
+  String get buddyTopicSearchHint => 'Buscar temas';
+
+  @override
+  String get buddyNoTopicsFound => 'Nenhum tema encontrado';
+
+  @override
+  String get buddySuggestionsTitle => 'Início rápido';
+
+  @override
+  String get buddyRolePrompt => 'Como seu Buddy deve ajudar você?';
+
+  @override
+  String get buddyLanguagePrompt => 'Qual idioma seu Buddy deve falar?';
+
+  @override
+  String get buddyLevelPrompt => 'Seu nível';
+
+  @override
+  String get buddyCefrPrompt => 'Nível do idioma (opcional)';
+
+  @override
+  String get buddyCefrNone => 'Não sei';
+
+  @override
+  String get buddyNamePrompt => 'Dê um nome ao seu Buddy';
+
+  @override
+  String get buddyNameHint => 'ex.: Sunny';
+
+  @override
+  String get buddyNameInvalid =>
+      'Use de 1 a 24 letras, números, espaços, pontos, apóstrofos ou hifens.';
+
+  @override
+  String get buddyAvatarPrompt => 'Escolha um visual';
+
+  @override
+  String buddyAvatarLabel(int number) {
+    return 'Avatar $number';
+  }
+
+  @override
+  String get buddyTonePrompt => 'Tom';
+
+  @override
+  String get buddyNext => 'Próximo';
+
+  @override
+  String get buddyBack => 'Voltar';
+
+  @override
+  String get buddyCreate => 'Criar Buddy';
+
+  @override
+  String get buddySuggestItalianTeacher => 'Professor de italiano';
+
+  @override
+  String get buddySuggestEnglishPartner => 'Parceiro de conversação em inglês';
+
+  @override
+  String get buddySuggestRunningCoach => 'Treinador de corrida';
+
+  @override
+  String get buddySuggestMovieBuddy => 'Buddy de cinema';
+
+  @override
+  String get buddySuggestTravelPlanner => 'Planejador de viagens econômicas';
+
+  @override
+  String get buddySuggestCookingFriend => 'Amigo da cozinha';
+
+  @override
+  String get buddySuggestInterviewCoach => 'Coach de entrevistas de emprego';
+
+  @override
+  String get buddySuggestDebatePartner => 'Parceiro de debate amigável';
+
+  @override
+  String get buddySettingRole => 'Função';
+
+  @override
+  String get buddySettingTone => 'Tom';
+
+  @override
+  String get buddySettingTopic => 'Tema';
+
+  @override
+  String get buddySettingLevel => 'Nível';
+
+  @override
+  String get buddySettingLanguage => 'Idioma';
+
+  @override
+  String get buddySettingCefr => 'Nível do idioma';
+
+  @override
+  String get buddySettingCheckIns => 'Check-ins';
+
+  @override
+  String buddySettingCheckInsSubtitle(String name) {
+    return '$name pode escrever primeiro depois de um dia tranquilo';
+  }
+
+  @override
+  String buddyMemoryTitle(String name) {
+    return 'O que $name lembra';
+  }
+
+  @override
+  String buddyMemoryEmpty(String name) {
+    return 'Nada ainda. $name lembra coisas úteis que você compartilha, como seus objetivos ou temas favoritos.';
+  }
+
+  @override
+  String get buddyMemoryForget => 'Esquecer';
+
+  @override
+  String get buddyMemoryForgetAll => 'Esquecer tudo';
+
+  @override
+  String buddyMemoryForgetAllConfirm(String name) {
+    return '$name vai esquecer tudo o que lembra sobre você. Essa ação não pode ser desfeita.';
+  }
+
+  @override
+  String get buddyClearChat => 'Limpar chat';
+
+  @override
+  String buddyClearChatConfirm(String name) {
+    return 'Excluir todas as mensagens com $name? Essa ação não pode ser desfeita.';
+  }
+
+  @override
+  String buddyClearChatAlsoForget(String name) {
+    return 'Esquecer também o que $name lembra';
+  }
+
+  @override
+  String get buddyClear => 'Limpar';
+
+  @override
+  String get buddyDelete => 'Excluir Buddy';
+
+  @override
+  String buddyDeleteConfirm(String name) {
+    return 'Excluir $name? Todas as mensagens e memórias serão excluídas. Essa ação não pode ser desfeita.';
+  }
+
+  @override
+  String get buddySaved => 'Salvo';
+
+  @override
+  String get notificationCatBuddies => 'Buddies';
+
+  @override
+  String get notificationCatBuddiesSubtitle =>
+      'Mensagens de check-in dos seus Buddies com IA';
+
+  @override
+  String get buddyRole_friend => 'Amigo';
+
+  @override
+  String get buddyRoleDesc_friend => 'Um companheiro simpático para bater papo';
+
+  @override
+  String get buddyRole_expert => 'Especialista';
+
+  @override
+  String get buddyRoleDesc_expert => 'Conhece bem o tema e explica';
+
+  @override
+  String get buddyRole_teacher => 'Professor';
+
+  @override
+  String get buddyRoleDesc_teacher => 'Ensina passo a passo e corrige você';
+
+  @override
+  String get buddyRole_coach => 'Coach';
+
+  @override
+  String get buddyRoleDesc_coach => 'Motiva você e ajuda a alcançar metas';
+
+  @override
+  String get buddyRole_conversation_partner => 'Parceiro de conversação';
+
+  @override
+  String get buddyRoleDesc_conversation_partner =>
+      'Mantém a conversa para você praticar';
+
+  @override
+  String get buddyRole_debate_partner => 'Parceiro de debate';
+
+  @override
+  String get buddyRoleDesc_debate_partner =>
+      'Defende educadamente o outro lado';
+
+  @override
+  String get buddyTone_warm => 'Acolhedor';
+
+  @override
+  String get buddyTone_funny => 'Engraçado';
+
+  @override
+  String get buddyTone_calm => 'Calmo';
+
+  @override
+  String get buddyTone_direct => 'Direto';
+
+  @override
+  String get buddyTone_formal => 'Formal';
+
+  @override
+  String get buddyTone_playful => 'Brincalhão';
+
+  @override
+  String get buddyLevel_beginner => 'Iniciante';
+
+  @override
+  String get buddyLevel_intermediate => 'Intermediário';
+
+  @override
+  String get buddyLevel_expert => 'Especialista';
+
+  @override
+  String get buddyLang_en => 'Inglês';
+
+  @override
+  String get buddyLang_de => 'Alemão';
+
+  @override
+  String get buddyLang_es => 'Espanhol';
+
+  @override
+  String get buddyLang_fr => 'Francês';
+
+  @override
+  String get buddyLang_it => 'Italiano';
+
+  @override
+  String get buddyLang_pt => 'Português (Portugal)';
+
+  @override
+  String get buddyLang_pt_BR => 'Português (Brasil)';
+
+  @override
+  String get buddyTopicGroup_languages => 'Idiomas e cultura';
+
+  @override
+  String get buddyTopicGroup_travel => 'Viagens';
+
+  @override
+  String get buddyTopicGroup_sport => 'Esporte e fitness';
+
+  @override
+  String get buddyTopicGroup_arts => 'Arte e música';
+
+  @override
+  String get buddyTopicGroup_food => 'Comida e bebida';
+
+  @override
+  String get buddyTopicGroup_knowledge => 'Conhecimento';
+
+  @override
+  String get buddyTopicGroup_tech => 'Tecnologia e games';
+
+  @override
+  String get buddyTopicGroup_career => 'Carreira e estudos';
+
+  @override
+  String get buddyTopicGroup_lifestyle => 'Estilo de vida e casa';
+
+  @override
+  String get buddyTopicGroup_entertainment => 'Entretenimento';
+
+  @override
+  String get buddyTopicGroup_wellbeing => 'Bem-estar';
+
+  @override
+  String get buddyTopicGroup_friendship => 'Amizade e diversão';
+
+  @override
+  String get buddyTopic_practice_english => 'Praticar inglês';
+
+  @override
+  String get buddyTopic_practice_italian => 'Praticar italiano';
+
+  @override
+  String get buddyTopic_practice_spanish => 'Praticar espanhol';
+
+  @override
+  String get buddyTopic_practice_french => 'Praticar francês';
+
+  @override
+  String get buddyTopic_practice_german => 'Praticar alemão';
+
+  @override
+  String get buddyTopic_practice_portuguese => 'Praticar português';
+
+  @override
+  String get buddyTopic_slang_idioms => 'Gírias e expressões';
+
+  @override
+  String get buddyTopic_world_cultures => 'Culturas do mundo';
+
+  @override
+  String get buddyTopic_etiquette => 'Etiqueta e boas maneiras';
+
+  @override
+  String get buddyTopic_festivals => 'Festas e tradições';
+
+  @override
+  String get buddyTopic_pronunciation => 'Pronúncia';
+
+  @override
+  String get buddyTopic_city_guides => 'Guias de cidades';
+
+  @override
+  String get buddyTopic_budget_travel => 'Viajar barato';
+
+  @override
+  String get buddyTopic_backpacking => 'Mochilão';
+
+  @override
+  String get buddyTopic_road_trips => 'Viagens de carro';
+
+  @override
+  String get buddyTopic_local_food_travel => 'Comida local na viagem';
+
+  @override
+  String get buddyTopic_packing => 'Dicas para fazer a mala';
+
+  @override
+  String get buddyTopic_solo_travel => 'Viajar sozinho';
+
+  @override
+  String get buddyTopic_travel_phrases => 'Frases para viajar';
+
+  @override
+  String get buddyTopic_nature_trips => 'Passeios na natureza';
+
+  @override
+  String get buddyTopic_travel_stories => 'Histórias de viagem';
+
+  @override
+  String get buddyTopic_gym => 'Academia';
+
+  @override
+  String get buddyTopic_running => 'Corrida';
+
+  @override
+  String get buddyTopic_football => 'Futebol';
+
+  @override
+  String get buddyTopic_basketball => 'Basquete';
+
+  @override
+  String get buddyTopic_tennis => 'Tênis';
+
+  @override
+  String get buddyTopic_yoga => 'Ioga';
+
+  @override
+  String get buddyTopic_cycling => 'Ciclismo';
+
+  @override
+  String get buddyTopic_swimming => 'Natação';
+
+  @override
+  String get buddyTopic_martial_arts => 'Artes marciais';
+
+  @override
+  String get buddyTopic_hiking => 'Trilhas';
+
+  @override
+  String get buddyTopic_home_workouts => 'Treino em casa';
+
+  @override
+  String get buddyTopic_painting => 'Pintura';
+
+  @override
+  String get buddyTopic_drawing => 'Desenho';
+
+  @override
+  String get buddyTopic_photography => 'Fotografia';
+
+  @override
+  String get buddyTopic_music_theory => 'Teoria musical';
+
+  @override
+  String get buddyTopic_guitar => 'Violão e guitarra';
+
+  @override
+  String get buddyTopic_piano => 'Piano';
+
+  @override
+  String get buddyTopic_singing => 'Canto';
+
+  @override
+  String get buddyTopic_design => 'Design';
+
+  @override
+  String get buddyTopic_creative_writing => 'Escrita criativa';
+
+  @override
+  String get buddyTopic_poetry => 'Poesia';
+
+  @override
+  String get buddyTopic_crafts => 'Artesanato';
+
+  @override
+  String get buddyTopic_cooking => 'Culinária';
+
+  @override
+  String get buddyTopic_baking => 'Confeitaria';
+
+  @override
+  String get buddyTopic_coffee => 'Café';
+
+  @override
+  String get buddyTopic_tea => 'Chá';
+
+  @override
+  String get buddyTopic_vegan => 'Vegano e vegetariano';
+
+  @override
+  String get buddyTopic_world_cuisines => 'Cozinhas do mundo';
+
+  @override
+  String get buddyTopic_wine_culture => 'Cultura do vinho';
+
+  @override
+  String get buddyTopic_barbecue => 'Churrasco e grelhados';
+
+  @override
+  String get buddyTopic_meal_prep => 'Marmitas da semana';
+
+  @override
+  String get buddyTopic_street_food => 'Comida de rua';
+
+  @override
+  String get buddyTopic_history => 'História';
+
+  @override
+  String get buddyTopic_astronomy => 'Astronomia e espaço';
+
+  @override
+  String get buddyTopic_philosophy => 'Filosofia';
+
+  @override
+  String get buddyTopic_science => 'Ciência';
+
+  @override
+  String get buddyTopic_geography => 'Geografia';
+
+  @override
+  String get buddyTopic_mythology => 'Mitos e lendas';
+
+  @override
+  String get buddyTopic_economics_basics => 'Noções de economia';
+
+  @override
+  String get buddyTopic_nature_animals => 'Natureza e animais';
+
+  @override
+  String get buddyTopic_environment => 'Meio ambiente';
+
+  @override
+  String get buddyTopic_trivia => 'Curiosidades';
+
+  @override
+  String get buddyTopic_coding => 'Programação';
+
+  @override
+  String get buddyTopic_ai => 'Inteligência artificial';
+
+  @override
+  String get buddyTopic_gadgets => 'Gadgets';
+
+  @override
+  String get buddyTopic_gaming => 'Videogames';
+
+  @override
+  String get buddyTopic_cybersecurity_basics => 'Segurança online';
+
+  @override
+  String get buddyTopic_3d_printing => 'Impressão 3D';
+
+  @override
+  String get buddyTopic_web_design => 'Web design';
+
+  @override
+  String get buddyTopic_robotics => 'Robótica e eletrônica';
+
+  @override
+  String get buddyTopic_apps_productivity => 'Apps e ferramentas digitais';
+
+  @override
+  String get buddyTopic_science_fiction => 'Ficção científica';
+
+  @override
+  String get buddyTopic_job_interviews => 'Entrevistas de emprego';
+
+  @override
+  String get buddyTopic_cv => 'Currículo e carta de apresentação';
+
+  @override
+  String get buddyTopic_public_speaking => 'Falar em público';
+
+  @override
+  String get buddyTopic_entrepreneurship => 'Abrir um negócio';
+
+  @override
+  String get buddyTopic_marketing => 'Marketing e redes sociais';
+
+  @override
+  String get buddyTopic_negotiation => 'Negociação';
+
+  @override
+  String get buddyTopic_productivity_work => 'Produtividade no trabalho';
+
+  @override
+  String get buddyTopic_remote_work => 'Trabalho remoto';
+
+  @override
+  String get buddyTopic_leadership => 'Liderança';
+
+  @override
+  String get buddyTopic_studying => 'Estudos e provas';
+
+  @override
+  String get buddyTopic_habits => 'Bons hábitos';
+
+  @override
+  String get buddyTopic_minimalism => 'Minimalismo';
+
+  @override
+  String get buddyTopic_gardening => 'Jardinagem e plantas';
+
+  @override
+  String get buddyTopic_pets => 'Pets';
+
+  @override
+  String get buddyTopic_diy => 'Faça você mesmo e reparos';
+
+  @override
+  String get buddyTopic_home_organisation => 'Organização da casa';
+
+  @override
+  String get buddyTopic_fashion_basics => 'Moda e estilo';
+
+  @override
+  String get buddyTopic_budgeting_basics => 'Organizar o orçamento';
+
+  @override
+  String get buddyTopic_moving_abroad => 'Morar no exterior';
+
+  @override
+  String get buddyTopic_parenting_tips => 'Dicas para pais';
+
+  @override
+  String get buddyTopic_movies => 'Filmes';
+
+  @override
+  String get buddyTopic_books => 'Livros';
+
+  @override
+  String get buddyTopic_anime => 'Anime e mangá';
+
+  @override
+  String get buddyTopic_series => 'Séries';
+
+  @override
+  String get buddyTopic_board_games => 'Jogos de tabuleiro';
+
+  @override
+  String get buddyTopic_music_genres => 'Música';
+
+  @override
+  String get buddyTopic_podcasts => 'Podcasts';
+
+  @override
+  String get buddyTopic_comedy => 'Humor e piadas';
+
+  @override
+  String get buddyTopic_puzzles => 'Quebra-cabeças e charadas';
+
+  @override
+  String get buddyTopic_theatre => 'Teatro e musicais';
+
+  @override
+  String get buddyTopic_motivation => 'Motivação';
+
+  @override
+  String get buddyTopic_sleep_habits => 'Hábitos de sono';
+
+  @override
+  String get buddyTopic_stress_basics => 'Aliviar o estresse';
+
+  @override
+  String get buddyTopic_mindfulness => 'Mindfulness e respiração';
+
+  @override
+  String get buddyTopic_gratitude => 'Gratidão';
+
+  @override
+  String get buddyTopic_healthy_eating => 'Alimentação saudável';
+
+  @override
+  String get buddyTopic_digital_detox => 'Detox digital';
+
+  @override
+  String get buddyTopic_self_confidence => 'Autoconfiança';
+
+  @override
+  String get buddyTopic_casual_chat => 'Bate-papo';
+
+  @override
+  String get buddyTopic_good_listener => 'Alguém para ouvir';
+
+  @override
+  String get buddyTopic_joke_buddy => 'Buddy das piadas';
+
+  @override
+  String get buddyTopic_debate_partner => 'Debates amigáveis';
+
+  @override
+  String get buddyTopic_daily_checkin => 'Check-in diário';
+
+  @override
+  String get buddyTopic_make_friends => 'Fazer amigos';
+
+  @override
+  String get buddyTopic_cultural_exchange => 'Intercâmbio cultural';
+
+  @override
+  String get buddyTopic_goal_buddy => 'Buddy de metas';
+
+  @override
+  String get buddyTopic_storytelling => 'Contar histórias juntos';
+
+  @override
+  String get buddyTopic_would_you_rather => 'O que você prefere?';
 }

@@ -18246,5 +18246,1098 @@
   "deletionPendingTooLate": "Your account is already being deleted. It can’t be stopped now.",
   "@deletionPendingTooLate": {
     "description": "Snackbar: the deletion is already running and cannot be withdrawn"
+  },
+  "messagesTabBuddies": "Buddies",
+  "@messagesTabBuddies": {
+    "description": "Exchanges tab label: AI chat friends (GreenGo Buddies)"
+  },
+  "buddyAiBadge": "AI",
+  "@buddyAiBadge": {
+    "description": "Small badge on AI Buddy avatars and messages: this is an AI, not a person"
+  },
+  "buddiesFeatureName": "AI Buddies",
+  "@buddiesFeatureName": {
+    "description": "Feature name in the upgrade dialog"
+  },
+  "buddiesEmptyTitle": "Meet your Buddy",
+  "@buddiesEmptyTitle": {
+    "description": "Buddies tab empty state title"
+  },
+  "buddiesEmptyBody": "A Buddy is an AI chat friend for the things you care about: practise a language, plan a trip, talk about films or just chat.",
+  "@buddiesEmptyBody": {
+    "description": "Buddies tab empty state text"
+  },
+  "buddiesCreateButton": "Create your Buddy",
+  "@buddiesCreateButton": {
+    "description": "Button: start the Buddy builder"
+  },
+  "buddiesNewButton": "New Buddy",
+  "@buddiesNewButton": {
+    "description": "Button: create another Buddy"
+  },
+  "buddiesPlanUsage": "{count} of {limit} Buddies",
+  "@buddiesPlanUsage": {
+    "description": "How many Buddies the user has out of the plan limit, e.g. '2 of 3 Buddies'",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "buddyFreeRepliesLeft": "{count, plural, =0{No free replies left today} =1{1 free reply left today} other{{count} free replies left today}}",
+  "@buddyFreeRepliesLeft": {
+    "description": "Free AI Buddy replies left today",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "buddyThenCoinsPerReply": "{coins, plural, =1{then 1 coin per reply} other{then {coins} coins per reply}}",
+  "@buddyThenCoinsPerReply": {
+    "description": "After the free replies, each Buddy reply costs coins; shown after the free-replies count",
+    "placeholders": {
+      "coins": {
+        "type": "int"
+      }
+    }
+  },
+  "buddyLockedBadge": "Locked",
+  "@buddyLockedBadge": {
+    "description": "Badge on a Buddy that is locked on the current plan"
+  },
+  "buddyLockedHint": "Locked on your plan. Upgrade to chat again.",
+  "@buddyLockedHint": {
+    "description": "Subtitle of a locked Buddy in the list"
+  },
+  "buddyLockedTitle": "This Buddy is locked",
+  "@buddyLockedTitle": {
+    "description": "Dialog title: Buddy beyond the plan limit"
+  },
+  "buddyLimitBody": "{limit, plural, =1{Your plan includes 1 Buddy.} other{Your plan includes {limit} Buddies.}} Upgrade your plan for more.",
+  "@buddyLimitBody": {
+    "description": "Upgrade dialog text when the Buddy limit is reached or a Buddy is locked",
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "buddyLockedBanner": "This Buddy is locked on your current plan. Upgrade to keep chatting.",
+  "@buddyLockedBanner": {
+    "description": "Banner in a locked Buddy chat instead of the input"
+  },
+  "buddyUpgrade": "Upgrade",
+  "@buddyUpgrade": {
+    "description": "Button: open the membership plans"
+  },
+  "buddyErrorRateLimited": "You are sending messages too fast. Take a short break and try again.",
+  "@buddyErrorRateLimited": {
+    "description": "Error: too many Buddy messages in a short time"
+  },
+  "buddyErrorUnavailable": "Your Buddy can't answer right now. Please try again in a moment.",
+  "@buddyErrorUnavailable": {
+    "description": "Error: the AI service is not available"
+  },
+  "buddyErrorTooLong": "Messages to a Buddy can be at most {max} characters.",
+  "@buddyErrorTooLong": {
+    "description": "Error: message too long",
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "buddyErrorConsentNeeded": "To chat with a Buddy, please allow AI services first.",
+  "@buddyErrorConsentNeeded": {
+    "description": "Error: user declined the AI-processing notice"
+  },
+  "buddyInsufficientCoinsBody": "You used today's free Buddy replies. Each reply now costs {coins, plural, =1{1 coin} other{{coins} coins}}.",
+  "@buddyInsufficientCoinsBody": {
+    "description": "Dialog text: no coins left for a Buddy reply",
+    "placeholders": {
+      "coins": {
+        "type": "int"
+      }
+    }
+  },
+  "buddyBuyCoins": "Get coins",
+  "@buddyBuyCoins": {
+    "description": "Button: open the coin shop"
+  },
+  "buddyNotSent": "Not sent. Tap to try again.",
+  "@buddyNotSent": {
+    "description": "Under a user message that failed to send"
+  },
+  "buddyTyping": "{name} is typing…",
+  "@buddyTyping": {
+    "description": "Typing indicator while the AI Buddy prepares a reply",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "buddyInputHint": "Message {name}…",
+  "@buddyInputHint": {
+    "description": "Chat input hint",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "buddyCheckInLabel": "Check-in",
+  "@buddyCheckInLabel": {
+    "description": "Label on a message the Buddy sent on its own after a quiet period"
+  },
+  "buddySafetyLabel": "Support information",
+  "@buddySafetyLabel": {
+    "description": "Label on a safety message with helplines"
+  },
+  "buddyTranslate": "Translate",
+  "@buddyTranslate": {
+    "description": "Button on a Buddy message: translate it"
+  },
+  "buddyShowOriginal": "Show original",
+  "@buddyShowOriginal": {
+    "description": "Button: show the untranslated Buddy message"
+  },
+  "buddyTranslateFailed": "Could not translate this message.",
+  "@buddyTranslateFailed": {
+    "description": "Snackbar: translation failed"
+  },
+  "buddyReport": "Report",
+  "@buddyReport": {
+    "description": "Button on a Buddy message: report it"
+  },
+  "buddyReportTitle": "Report this AI message",
+  "@buddyReportTitle": {
+    "description": "Title of the report dialog for a Buddy message"
+  },
+  "buddyCopy": "Copy",
+  "@buddyCopy": {
+    "description": "Button: copy the message text"
+  },
+  "buddyCopied": "Copied",
+  "@buddyCopied": {
+    "description": "Snackbar after copying a message"
+  },
+  "buddyChatEmpty": "Say hello to {name}! Your Buddy answers in a few seconds.",
+  "@buddyChatEmpty": {
+    "description": "Empty chat with a Buddy",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "buddyAiDisclosure": "{name} is an AI, not a real person. Replies can be wrong. Don't share passwords or very personal details.",
+  "@buddyAiDisclosure": {
+    "description": "Notice at the top of a Buddy chat",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "buddyQuickSettings": "Buddy settings",
+  "@buddyQuickSettings": {
+    "description": "Tooltip and title of the Buddy settings sheet"
+  },
+  "buddyBuilderTitle": "Create your Buddy",
+  "@buddyBuilderTitle": {
+    "description": "Title of the Buddy builder"
+  },
+  "buddyStepOf": "Step {step} of {total}",
+  "@buddyStepOf": {
+    "description": "Builder progress",
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "buddyTopicPrompt": "What do you want to talk about?",
+  "@buddyTopicPrompt": {
+    "description": "Builder step 1 title"
+  },
+  "buddyTopicSearchHint": "Search topics",
+  "@buddyTopicSearchHint": {
+    "description": "Search field hint in the topic picker"
+  },
+  "buddyNoTopicsFound": "No topics found",
+  "@buddyNoTopicsFound": {
+    "description": "Topic search without results"
+  },
+  "buddySuggestionsTitle": "Quick start",
+  "@buddySuggestionsTitle": {
+    "description": "Header of ready-made Buddy suggestions"
+  },
+  "buddyRolePrompt": "How should your Buddy help?",
+  "@buddyRolePrompt": {
+    "description": "Builder step 2 title"
+  },
+  "buddyLanguagePrompt": "Which language should your Buddy speak?",
+  "@buddyLanguagePrompt": {
+    "description": "Builder step 3 title"
+  },
+  "buddyLevelPrompt": "Your level",
+  "@buddyLevelPrompt": {
+    "description": "Builder: user's level in the topic"
+  },
+  "buddyCefrPrompt": "Language level (optional)",
+  "@buddyCefrPrompt": {
+    "description": "Builder: CEFR level for language practice"
+  },
+  "buddyCefrNone": "Not sure",
+  "@buddyCefrNone": {
+    "description": "CEFR option: no level chosen"
+  },
+  "buddyNamePrompt": "Give your Buddy a name",
+  "@buddyNamePrompt": {
+    "description": "Builder step 4: name field label"
+  },
+  "buddyNameHint": "e.g. Sunny",
+  "@buddyNameHint": {
+    "description": "Name field hint"
+  },
+  "buddyNameInvalid": "Use 1 to 24 letters, numbers, spaces, dots, apostrophes or hyphens.",
+  "@buddyNameInvalid": {
+    "description": "Validation error for the Buddy name"
+  },
+  "buddyAvatarPrompt": "Choose a look",
+  "@buddyAvatarPrompt": {
+    "description": "Builder: avatar picker title"
+  },
+  "buddyAvatarLabel": "Avatar {number}",
+  "@buddyAvatarLabel": {
+    "description": "Accessibility label of an avatar choice",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "buddyTonePrompt": "Tone",
+  "@buddyTonePrompt": {
+    "description": "Builder: tone picker title"
+  },
+  "buddyNext": "Next",
+  "@buddyNext": {
+    "description": "Builder: next step"
+  },
+  "buddyBack": "Back",
+  "@buddyBack": {
+    "description": "Builder: previous step"
+  },
+  "buddyCreate": "Create Buddy",
+  "@buddyCreate": {
+    "description": "Builder: final create button"
+  },
+  "buddySuggestItalianTeacher": "Italian teacher",
+  "@buddySuggestItalianTeacher": {
+    "description": "Ready-made Buddy suggestion"
+  },
+  "buddySuggestEnglishPartner": "English conversation partner",
+  "@buddySuggestEnglishPartner": {
+    "description": "Ready-made Buddy suggestion"
+  },
+  "buddySuggestRunningCoach": "Running coach",
+  "@buddySuggestRunningCoach": {
+    "description": "Ready-made Buddy suggestion"
+  },
+  "buddySuggestMovieBuddy": "Film buddy",
+  "@buddySuggestMovieBuddy": {
+    "description": "Ready-made Buddy suggestion: someone to talk about films with"
+  },
+  "buddySuggestTravelPlanner": "Budget travel planner",
+  "@buddySuggestTravelPlanner": {
+    "description": "Ready-made Buddy suggestion"
+  },
+  "buddySuggestCookingFriend": "Cooking friend",
+  "@buddySuggestCookingFriend": {
+    "description": "Ready-made Buddy suggestion"
+  },
+  "buddySuggestInterviewCoach": "Job interview coach",
+  "@buddySuggestInterviewCoach": {
+    "description": "Ready-made Buddy suggestion"
+  },
+  "buddySuggestDebatePartner": "Friendly debate partner",
+  "@buddySuggestDebatePartner": {
+    "description": "Ready-made Buddy suggestion"
+  },
+  "buddySettingRole": "Role",
+  "@buddySettingRole": {
+    "description": "Settings row label"
+  },
+  "buddySettingTone": "Tone",
+  "@buddySettingTone": {
+    "description": "Settings row label"
+  },
+  "buddySettingTopic": "Topic",
+  "@buddySettingTopic": {
+    "description": "Settings row label"
+  },
+  "buddySettingLevel": "Level",
+  "@buddySettingLevel": {
+    "description": "Settings row label"
+  },
+  "buddySettingLanguage": "Language",
+  "@buddySettingLanguage": {
+    "description": "Settings row label"
+  },
+  "buddySettingCefr": "Language level",
+  "@buddySettingCefr": {
+    "description": "Settings row label (CEFR)"
+  },
+  "buddySettingCheckIns": "Check-ins",
+  "@buddySettingCheckIns": {
+    "description": "Switch: the Buddy may write first"
+  },
+  "buddySettingCheckInsSubtitle": "{name} may write first after a quiet day",
+  "@buddySettingCheckInsSubtitle": {
+    "description": "Check-ins switch subtitle",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "buddyMemoryTitle": "What {name} remembers",
+  "@buddyMemoryTitle": {
+    "description": "Section title: facts the Buddy remembers",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "buddyMemoryEmpty": "Nothing yet. {name} remembers useful things you share, like your goals or favourite topics.",
+  "@buddyMemoryEmpty": {
+    "description": "Empty memory list",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "buddyMemoryForget": "Forget",
+  "@buddyMemoryForget": {
+    "description": "Button: delete one remembered fact"
+  },
+  "buddyMemoryForgetAll": "Forget everything",
+  "@buddyMemoryForgetAll": {
+    "description": "Button: delete all remembered facts"
+  },
+  "buddyMemoryForgetAllConfirm": "{name} will forget everything it remembers about you. This can't be undone.",
+  "@buddyMemoryForgetAllConfirm": {
+    "description": "Confirm dialog: forget all",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "buddyClearChat": "Clear chat",
+  "@buddyClearChat": {
+    "description": "Button: delete all messages with the Buddy"
+  },
+  "buddyClearChatConfirm": "Delete all messages with {name}? This can't be undone.",
+  "@buddyClearChatConfirm": {
+    "description": "Confirm dialog: clear chat",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "buddyClearChatAlsoForget": "Also forget what {name} remembers",
+  "@buddyClearChatAlsoForget": {
+    "description": "Checkbox in the clear-chat dialog",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "buddyClear": "Clear",
+  "@buddyClear": {
+    "description": "Confirm button: clear chat"
+  },
+  "buddyDelete": "Delete Buddy",
+  "@buddyDelete": {
+    "description": "Button: delete the Buddy"
+  },
+  "buddyDeleteConfirm": "Delete {name}? All messages and memories are deleted. This can't be undone.",
+  "@buddyDeleteConfirm": {
+    "description": "Confirm dialog: delete Buddy",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "buddySaved": "Saved",
+  "@buddySaved": {
+    "description": "Snackbar after saving Buddy settings"
+  },
+  "notificationCatBuddies": "Buddies",
+  "@notificationCatBuddies": {
+    "description": "Notification settings: category for AI Buddy check-ins"
+  },
+  "notificationCatBuddiesSubtitle": "Check-in messages from your AI Buddies",
+  "@notificationCatBuddiesSubtitle": {
+    "description": "Notification settings: Buddies category subtitle"
+  },
+  "buddyRole_friend": "Friend",
+  "@buddyRole_friend": {
+    "description": "AI Buddy role name"
+  },
+  "buddyRoleDesc_friend": "A friendly companion to chat with",
+  "@buddyRoleDesc_friend": {
+    "description": "Short description of the Buddy role 'Friend'"
+  },
+  "buddyRole_expert": "Expert",
+  "@buddyRole_expert": {
+    "description": "AI Buddy role name"
+  },
+  "buddyRoleDesc_expert": "Knows the topic well and explains it",
+  "@buddyRoleDesc_expert": {
+    "description": "Short description of the Buddy role 'Expert'"
+  },
+  "buddyRole_teacher": "Teacher",
+  "@buddyRole_teacher": {
+    "description": "AI Buddy role name"
+  },
+  "buddyRoleDesc_teacher": "Teaches step by step and corrects you",
+  "@buddyRoleDesc_teacher": {
+    "description": "Short description of the Buddy role 'Teacher'"
+  },
+  "buddyRole_coach": "Coach",
+  "@buddyRole_coach": {
+    "description": "AI Buddy role name"
+  },
+  "buddyRoleDesc_coach": "Motivates you and helps you reach goals",
+  "@buddyRoleDesc_coach": {
+    "description": "Short description of the Buddy role 'Coach'"
+  },
+  "buddyRole_conversation_partner": "Conversation partner",
+  "@buddyRole_conversation_partner": {
+    "description": "AI Buddy role name"
+  },
+  "buddyRoleDesc_conversation_partner": "Keeps the conversation going so you can practise",
+  "@buddyRoleDesc_conversation_partner": {
+    "description": "Short description of the Buddy role 'Conversation partner'"
+  },
+  "buddyRole_debate_partner": "Debate partner",
+  "@buddyRole_debate_partner": {
+    "description": "AI Buddy role name"
+  },
+  "buddyRoleDesc_debate_partner": "Politely argues the other side",
+  "@buddyRoleDesc_debate_partner": {
+    "description": "Short description of the Buddy role 'Debate partner'"
+  },
+  "buddyTone_warm": "Warm",
+  "@buddyTone_warm": {
+    "description": "AI Buddy tone of voice (adjective)"
+  },
+  "buddyTone_funny": "Funny",
+  "@buddyTone_funny": {
+    "description": "AI Buddy tone of voice (adjective)"
+  },
+  "buddyTone_calm": "Calm",
+  "@buddyTone_calm": {
+    "description": "AI Buddy tone of voice (adjective)"
+  },
+  "buddyTone_direct": "Direct",
+  "@buddyTone_direct": {
+    "description": "AI Buddy tone of voice (adjective)"
+  },
+  "buddyTone_formal": "Formal",
+  "@buddyTone_formal": {
+    "description": "AI Buddy tone of voice (adjective)"
+  },
+  "buddyTone_playful": "Playful",
+  "@buddyTone_playful": {
+    "description": "AI Buddy tone of voice (adjective)"
+  },
+  "buddyLevel_beginner": "Beginner",
+  "@buddyLevel_beginner": {
+    "description": "User's skill level in the Buddy topic"
+  },
+  "buddyLevel_intermediate": "Intermediate",
+  "@buddyLevel_intermediate": {
+    "description": "User's skill level in the Buddy topic"
+  },
+  "buddyLevel_expert": "Expert",
+  "@buddyLevel_expert": {
+    "description": "User's skill level in the Buddy topic"
+  },
+  "buddyLang_en": "English",
+  "@buddyLang_en": {
+    "description": "Language the Buddy speaks"
+  },
+  "buddyLang_de": "German",
+  "@buddyLang_de": {
+    "description": "Language the Buddy speaks"
+  },
+  "buddyLang_es": "Spanish",
+  "@buddyLang_es": {
+    "description": "Language the Buddy speaks"
+  },
+  "buddyLang_fr": "French",
+  "@buddyLang_fr": {
+    "description": "Language the Buddy speaks"
+  },
+  "buddyLang_it": "Italian",
+  "@buddyLang_it": {
+    "description": "Language the Buddy speaks"
+  },
+  "buddyLang_pt": "Portuguese (Portugal)",
+  "@buddyLang_pt": {
+    "description": "Language the Buddy speaks"
+  },
+  "buddyLang_pt_BR": "Portuguese (Brazil)",
+  "@buddyLang_pt_BR": {
+    "description": "Language the Buddy speaks"
+  },
+  "buddyTopicGroup_languages": "Languages & culture",
+  "@buddyTopicGroup_languages": {
+    "description": "Group of Buddy topics"
+  },
+  "buddyTopicGroup_travel": "Travel",
+  "@buddyTopicGroup_travel": {
+    "description": "Group of Buddy topics"
+  },
+  "buddyTopicGroup_sport": "Sport & fitness",
+  "@buddyTopicGroup_sport": {
+    "description": "Group of Buddy topics"
+  },
+  "buddyTopicGroup_arts": "Arts & music",
+  "@buddyTopicGroup_arts": {
+    "description": "Group of Buddy topics"
+  },
+  "buddyTopicGroup_food": "Food & drink",
+  "@buddyTopicGroup_food": {
+    "description": "Group of Buddy topics"
+  },
+  "buddyTopicGroup_knowledge": "Knowledge",
+  "@buddyTopicGroup_knowledge": {
+    "description": "Group of Buddy topics"
+  },
+  "buddyTopicGroup_tech": "Tech & games",
+  "@buddyTopicGroup_tech": {
+    "description": "Group of Buddy topics"
+  },
+  "buddyTopicGroup_career": "Career & study",
+  "@buddyTopicGroup_career": {
+    "description": "Group of Buddy topics"
+  },
+  "buddyTopicGroup_lifestyle": "Lifestyle & home",
+  "@buddyTopicGroup_lifestyle": {
+    "description": "Group of Buddy topics"
+  },
+  "buddyTopicGroup_entertainment": "Entertainment",
+  "@buddyTopicGroup_entertainment": {
+    "description": "Group of Buddy topics"
+  },
+  "buddyTopicGroup_wellbeing": "Wellbeing",
+  "@buddyTopicGroup_wellbeing": {
+    "description": "Group of Buddy topics"
+  },
+  "buddyTopicGroup_friendship": "Friendship & fun",
+  "@buddyTopicGroup_friendship": {
+    "description": "Group of Buddy topics"
+  },
+  "buddyTopic_practice_english": "Practise English",
+  "@buddyTopic_practice_english": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_practice_italian": "Practise Italian",
+  "@buddyTopic_practice_italian": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_practice_spanish": "Practise Spanish",
+  "@buddyTopic_practice_spanish": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_practice_french": "Practise French",
+  "@buddyTopic_practice_french": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_practice_german": "Practise German",
+  "@buddyTopic_practice_german": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_practice_portuguese": "Practise Portuguese",
+  "@buddyTopic_practice_portuguese": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_slang_idioms": "Slang & idioms",
+  "@buddyTopic_slang_idioms": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_world_cultures": "World cultures",
+  "@buddyTopic_world_cultures": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_etiquette": "Etiquette & manners",
+  "@buddyTopic_etiquette": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_festivals": "Festivals & traditions",
+  "@buddyTopic_festivals": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_pronunciation": "Pronunciation",
+  "@buddyTopic_pronunciation": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_city_guides": "City guides",
+  "@buddyTopic_city_guides": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_budget_travel": "Budget travel",
+  "@buddyTopic_budget_travel": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_backpacking": "Backpacking",
+  "@buddyTopic_backpacking": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_road_trips": "Road trips",
+  "@buddyTopic_road_trips": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_local_food_travel": "Local food on the road",
+  "@buddyTopic_local_food_travel": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_packing": "Packing tips",
+  "@buddyTopic_packing": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_solo_travel": "Solo travel",
+  "@buddyTopic_solo_travel": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_travel_phrases": "Travel phrases",
+  "@buddyTopic_travel_phrases": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_nature_trips": "Nature trips",
+  "@buddyTopic_nature_trips": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_travel_stories": "Travel stories",
+  "@buddyTopic_travel_stories": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_gym": "Gym training",
+  "@buddyTopic_gym": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_running": "Running",
+  "@buddyTopic_running": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_football": "Football",
+  "@buddyTopic_football": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_basketball": "Basketball",
+  "@buddyTopic_basketball": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_tennis": "Tennis",
+  "@buddyTopic_tennis": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_yoga": "Yoga",
+  "@buddyTopic_yoga": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_cycling": "Cycling",
+  "@buddyTopic_cycling": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_swimming": "Swimming",
+  "@buddyTopic_swimming": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_martial_arts": "Martial arts",
+  "@buddyTopic_martial_arts": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_hiking": "Hiking",
+  "@buddyTopic_hiking": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_home_workouts": "Home workouts",
+  "@buddyTopic_home_workouts": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_painting": "Painting",
+  "@buddyTopic_painting": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_drawing": "Drawing",
+  "@buddyTopic_drawing": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_photography": "Photography",
+  "@buddyTopic_photography": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_music_theory": "Music theory",
+  "@buddyTopic_music_theory": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_guitar": "Guitar",
+  "@buddyTopic_guitar": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_piano": "Piano",
+  "@buddyTopic_piano": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_singing": "Singing",
+  "@buddyTopic_singing": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_design": "Design",
+  "@buddyTopic_design": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_creative_writing": "Creative writing",
+  "@buddyTopic_creative_writing": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_poetry": "Poetry",
+  "@buddyTopic_poetry": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_crafts": "Crafts & DIY art",
+  "@buddyTopic_crafts": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_cooking": "Cooking",
+  "@buddyTopic_cooking": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_baking": "Baking",
+  "@buddyTopic_baking": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_coffee": "Coffee",
+  "@buddyTopic_coffee": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_tea": "Tea",
+  "@buddyTopic_tea": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_vegan": "Vegan & vegetarian",
+  "@buddyTopic_vegan": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_world_cuisines": "World cuisines",
+  "@buddyTopic_world_cuisines": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_wine_culture": "Wine culture",
+  "@buddyTopic_wine_culture": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_barbecue": "Barbecue & grilling",
+  "@buddyTopic_barbecue": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_meal_prep": "Meal prep",
+  "@buddyTopic_meal_prep": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_street_food": "Street food",
+  "@buddyTopic_street_food": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_history": "History",
+  "@buddyTopic_history": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_astronomy": "Astronomy & space",
+  "@buddyTopic_astronomy": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_philosophy": "Philosophy",
+  "@buddyTopic_philosophy": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_science": "Science",
+  "@buddyTopic_science": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_geography": "Geography",
+  "@buddyTopic_geography": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_mythology": "Myths & legends",
+  "@buddyTopic_mythology": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_economics_basics": "Economics basics",
+  "@buddyTopic_economics_basics": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_nature_animals": "Nature & animals",
+  "@buddyTopic_nature_animals": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_environment": "Environment",
+  "@buddyTopic_environment": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_trivia": "Trivia & fun facts",
+  "@buddyTopic_trivia": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_coding": "Coding",
+  "@buddyTopic_coding": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_ai": "Artificial intelligence",
+  "@buddyTopic_ai": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_gadgets": "Gadgets",
+  "@buddyTopic_gadgets": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_gaming": "Video games",
+  "@buddyTopic_gaming": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_cybersecurity_basics": "Online safety",
+  "@buddyTopic_cybersecurity_basics": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_3d_printing": "3D printing",
+  "@buddyTopic_3d_printing": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_web_design": "Web design",
+  "@buddyTopic_web_design": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_robotics": "Robotics & electronics",
+  "@buddyTopic_robotics": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_apps_productivity": "Apps & digital tools",
+  "@buddyTopic_apps_productivity": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_science_fiction": "Science fiction",
+  "@buddyTopic_science_fiction": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_job_interviews": "Job interviews",
+  "@buddyTopic_job_interviews": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_cv": "CV & cover letter",
+  "@buddyTopic_cv": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_public_speaking": "Public speaking",
+  "@buddyTopic_public_speaking": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_entrepreneurship": "Starting a business",
+  "@buddyTopic_entrepreneurship": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_marketing": "Marketing & social media",
+  "@buddyTopic_marketing": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_negotiation": "Negotiation",
+  "@buddyTopic_negotiation": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_productivity_work": "Productivity at work",
+  "@buddyTopic_productivity_work": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_remote_work": "Remote work",
+  "@buddyTopic_remote_work": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_leadership": "Leadership",
+  "@buddyTopic_leadership": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_studying": "Studying & exams",
+  "@buddyTopic_studying": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_habits": "Good habits",
+  "@buddyTopic_habits": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_minimalism": "Minimalism",
+  "@buddyTopic_minimalism": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_gardening": "Gardening & plants",
+  "@buddyTopic_gardening": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_pets": "Pets",
+  "@buddyTopic_pets": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_diy": "DIY & home repairs",
+  "@buddyTopic_diy": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_home_organisation": "Home organisation",
+  "@buddyTopic_home_organisation": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_fashion_basics": "Fashion & style",
+  "@buddyTopic_fashion_basics": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_budgeting_basics": "Budgeting basics",
+  "@buddyTopic_budgeting_basics": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_moving_abroad": "Moving abroad",
+  "@buddyTopic_moving_abroad": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_parenting_tips": "Parenting tips",
+  "@buddyTopic_parenting_tips": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_movies": "Films",
+  "@buddyTopic_movies": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_books": "Books",
+  "@buddyTopic_books": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_anime": "Anime & manga",
+  "@buddyTopic_anime": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_series": "TV series",
+  "@buddyTopic_series": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_board_games": "Board games",
+  "@buddyTopic_board_games": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_music_genres": "Music",
+  "@buddyTopic_music_genres": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_podcasts": "Podcasts",
+  "@buddyTopic_podcasts": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_comedy": "Comedy & jokes",
+  "@buddyTopic_comedy": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_puzzles": "Puzzles & riddles",
+  "@buddyTopic_puzzles": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_theatre": "Theatre & musicals",
+  "@buddyTopic_theatre": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_motivation": "Motivation",
+  "@buddyTopic_motivation": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_sleep_habits": "Sleep habits",
+  "@buddyTopic_sleep_habits": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_stress_basics": "Stress relief",
+  "@buddyTopic_stress_basics": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_mindfulness": "Mindfulness & breathing",
+  "@buddyTopic_mindfulness": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_gratitude": "Gratitude",
+  "@buddyTopic_gratitude": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_healthy_eating": "Healthy eating",
+  "@buddyTopic_healthy_eating": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_digital_detox": "Digital detox",
+  "@buddyTopic_digital_detox": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_self_confidence": "Self-confidence",
+  "@buddyTopic_self_confidence": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_casual_chat": "Casual chat",
+  "@buddyTopic_casual_chat": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_good_listener": "A good listener",
+  "@buddyTopic_good_listener": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_joke_buddy": "Joke buddy",
+  "@buddyTopic_joke_buddy": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_debate_partner": "Friendly debates",
+  "@buddyTopic_debate_partner": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_daily_checkin": "Daily check-in",
+  "@buddyTopic_daily_checkin": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_make_friends": "Making friends",
+  "@buddyTopic_make_friends": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_cultural_exchange": "Cultural exchange",
+  "@buddyTopic_cultural_exchange": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_goal_buddy": "Goal buddy",
+  "@buddyTopic_goal_buddy": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_storytelling": "Storytelling together",
+  "@buddyTopic_storytelling": {
+    "description": "Buddy chat topic label"
+  },
+  "buddyTopic_would_you_rather": "Would you rather?",
+  "@buddyTopic_would_you_rather": {
+    "description": "Buddy chat topic label"
   }
 }

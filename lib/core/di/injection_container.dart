@@ -142,6 +142,9 @@ import '../../features/notifications/data/datasources/notification_remote_dataso
 import '../../features/notifications/data/repositories/notification_repository_impl.dart';
 import '../../features/notifications/domain/repositories/notification_repository.dart';
 import '../../features/notifications/domain/usecases/get_notification_preferences.dart';
+import '../../features/buddies/data/datasources/buddies_remote_datasource.dart';
+import '../../features/buddies/data/repositories/buddies_repository_impl.dart';
+import '../../features/buddies/domain/repositories/buddies_repository.dart';
 import '../../features/notifications/domain/usecases/get_notifications.dart';
 import '../../features/notifications/domain/usecases/mark_all_notifications_read.dart';
 import '../../features/notifications/domain/usecases/mark_notification_read.dart';
@@ -887,6 +890,11 @@ Future<void> init() async {
     ),
   );
 
+
+  //! Features - GreenGo Buddies (AI chat friends; callables + owner-only reads)
+  sl.registerLazySingleton<BuddiesRepository>(
+    () => BuddiesRepositoryImpl(remote: BuddiesRemoteDataSource()),
+  );
 
   //! Core Services
   sl.registerLazySingleton(AnalyticsService.new);

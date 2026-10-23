@@ -1,0 +1,178 @@
+import 'dart:async';
+
+import 'package:cloud_functions/cloud_functions.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:greengo_chat/core/services/app_sound_service.dart';
+import 'package:greengo_chat/features/buddies/domain/entities/buddy.dart';
+import 'package:greengo_chat/features/buddies/domain/entities/buddy_message.dart';
+import 'package:greengo_chat/features/buddies/presentation/screens/buddy_chat_screen.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
+
+import '../../support/buddies_fakes.dart';
+
+void main() {
+  late FakeBuddiesRepository repo;
+  late FakeBuddyPrompts prompts;
+  final t0 = DateTime(2026, 10, 20, 9);
+
+  setUp(() {
+    repo = FakeBuddiesRepository();
+    prompts = FakeBuddyPrompts();
+  });
+
+  tearDown(() => repo.dispose());
+
+  Future<void> open(WidgetTester tester, {bool locked = false, FakeBuddyPrompts? p}) async {
+    tester.view.physicalSize = const Size(1080, 2400);
+    tester.view.devicePixelRatio = 2.5;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+      home: BuddyChatScreen(
+        userId: 'u1',
+        buddyId: 'b1',
+        initialBuddy: fakeBuddy('b1'),
+        locked: locked,
+        repository: repo,
+        prompts: p ?? prompts,
+      ),
+    ));
+    await tester.pump();
+    await tester.pump();
+  }
+
+  testWidgets('header, AI notice, check-in mark, quota line, 500-char counter', (tester) async {
+    repo.latest = BuddyMessagePage(messages: [
+      fakeMessage('m1', BuddyMessageRole.buddy, 'How was your day?', t0, kind: BuddyMessageKind.checkin),
+    ], hasMore: false);
+    await open(tester);
+
+    expect(find.text('Sunny'), findsOneWidget);
+    expect(find.text('Films'), findsOneWidget);
+    expect(find.byKey(const ValueKey('buddy-ai-badge')), findsWidgets);
+    expect(find.byKey(const ValueKey('buddy-ai-disclosure')), findsOneWidget);
+    expect(find.text('How was your day?'), findsOneWidget);
+    expect(find.byKey(const ValueKey('buddy-msg-mark-checkin')), findsOneWidget);
+    expect(find.text('7 free replies left today · then 1 coin per reply'), findsOneWidget);
+    expect(find.text('0/500'), findsOneWidget);
+    expect(find.byKey(const ValueKey('buddy-tone-warm')), findsNothing);
+  });
+
+  testWidgets('send: typing indicator, reply, sounds only after success', (tester) async {
+    await open(tester);
+    repo.sendGate = Completer<void>();
+    await tester.enterText(find.byKey(const ValueKey('buddy-input')), 'Hello there');
+    await tester.pump();
+    await tester.tap(find.byKey(const ValueKey('buddy-send')));
+    await tester.pump();
+    await tester.pump();
+    expect(find.byKey(const ValueKey('buddy-typing')), findsOneWidget);
+    expect(find.text('Sunny is typing…'), findsOneWidget);
+    expect(prompts.sounds, isEmpty);
+
+    repo.sendGate!.complete();
+    await tester.pump();
+    await tester.pump();
+    expect(find.byKey(const ValueKey('buddy-typing')), findsNothing);
+    expect(find.text('Reply to Hello there'), findsOneWidget);
+    expect(find.text('5 free replies left today · then 1 coin per reply'), findsOneWidget);
+    await tester.pump(const Duration(milliseconds: 400));
+    expect(prompts.sounds, [AppSound.messageSent, AppSound.newMessage]);
+  });
+
+  testWidgets('no coins left -> coin shop prompt; failed message can be retried', (tester) async {
+    repo.sendAnswers.add(FirebaseFunctionsException(
+        code: 'failed-precondition', message: 'insufficient-coins: x', details: const {'reason': 'insufficient-coins'}));
+    await open(tester);
+    await tester.enterText(find.byKey(const ValueKey('buddy-input')), 'Hi');
+    await tester.pump();
+    await tester.tap(find.byKey(const ValueKey('buddy-send')));
+    await tester.pump();
+    await tester.pump();
+    expect(prompts.calls, ['coins:1']);
+    expect(find.text('Not sent. Tap to try again.'), findsOneWidget);
+    expect(prompts.sounds, isEmpty);
+
+    await tester.tap(find.text('Not sent. Tap to try again.'));
+    await tester.pump();
+    await tester.pump();
+    expect(repo.sent.map((s) => s['requestId']).toSet().length, 1);
+    expect(find.text('Reply to Hi'), findsOneWidget);
+  });
+
+  testWidgets('AI notice required -> consent sheet, then automatic retry', (tester) async {
+    repo.sendAnswers.add(FirebaseFunctionsException(
+        code: 'permission-denied',
+        message: 'x',
+        details: const {'code': 'AI_CONSENT_UPDATE_REQUIRED', 'details': {'reason': 'AI_CONSENT_UPDATE_REQUIRED'}}));
+    await open(tester);
+    await tester.enterText(find.byKey(const ValueKey('buddy-input')), 'Ciao');
+    await tester.pump();
+    await tester.tap(find.byKey(const ValueKey('buddy-send')));
+    await tester.pump();
+    await tester.pump();
+    await tester.pump();
+    expect(prompts.calls, ['consent:true']);
+    expect(repo.sent.length, 2);
+    expect(repo.sent[0]['requestId'], repo.sent[1]['requestId']);
+    expect(find.text('Reply to Ciao'), findsOneWidget);
+  });
+
+  testWidgets('translate and report on Buddy messages', (tester) async {
+    repo.latest = BuddyMessagePage(messages: [
+      fakeMessage('m1', BuddyMessageRole.buddy, 'Good morning', t0),
+      fakeMessage('m2', BuddyMessageRole.user, 'Morning!', t0.add(const Duration(minutes: 1))),
+    ], hasMore: false);
+    await open(tester);
+    expect(find.byKey(const ValueKey('buddy-translate-m2')), findsNothing, reason: 'not on my messages');
+
+    await tester.tap(find.byKey(const ValueKey('buddy-translate-m1')));
+    await tester.pump();
+    await tester.pump();
+    expect(find.text('Traduzione'), findsOneWidget);
+    expect(find.text('Show original'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('buddy-translate-m1')));
+    await tester.pump();
+    expect(find.text('Good morning'), findsOneWidget);
+
+    await tester.tap(find.byKey(const ValueKey('buddy-report-m1')));
+    await tester.pump();
+    expect(prompts.calls, ['translate:en', 'report:m1']);
+  });
+
+  testWidgets('locked Buddy: upgrade banner instead of the input', (tester) async {
+    await open(tester, locked: true);
+    expect(find.byKey(const ValueKey('buddy-locked-bar')), findsOneWidget);
+    expect(find.byKey(const ValueKey('buddy-input')), findsNothing);
+    await tester.tap(find.text('Upgrade'));
+    await tester.pump();
+    expect(prompts.calls, ['upgrade:1']);
+  });
+
+  testWidgets('quick settings: memory list, forget all, tone change', (tester) async {
+    await open(tester);
+    repo.buddy.add(fakeBuddy('b1',
+        memory: const [BuddyMemoryFact(id: 'f1', text: 'Training for a 10k race')]));
+    await tester.pump();
+    await tester.tap(find.byKey(const ValueKey('buddy-settings-button')));
+    await tester.pumpAndSettle();
+
+    expect(find.text('What Sunny remembers'), findsOneWidget);
+    expect(find.text('Training for a 10k race'), findsOneWidget);
+
+    await tester.tap(find.byKey(const ValueKey('buddy-setting-tone')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('buddy-option-calm')));
+    await tester.pumpAndSettle();
+    expect(repo.updates.single, {'tone': 'calm'});
+
+    await tester.ensureVisible(find.byKey(const ValueKey('buddy-memory-forget-all')));
+    await tester.tap(find.byKey(const ValueKey('buddy-memory-forget-all')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('buddy-confirm')));
+    await tester.pumpAndSettle();
+    expect(repo.forgotten, [null]);
+  });
+}

@@ -20,6 +20,8 @@ class NotificationPreferences extends Equatable {
     this.communityChat = false,
     this.announcements = true,
     this.tips = false,
+    // GreenGo Buddies check-ins (an AI Buddy writes first). Default ON.
+    this.buddies = true,
     // Marketing & promotional pushes (admin broadcasts). Explicit opt-in:
     // OFF unless the user turns it on (ePrivacy / LGPD).
     this.marketing = false,
@@ -54,6 +56,10 @@ class NotificationPreferences extends Equatable {
 
   /// Community tips. Default OFF.
   final bool tips;
+
+  /// GreenGo Buddies check-ins (AI Buddy writes first). Default ON
+  /// (server CATEGORY_DEFAULTS.buddies).
+  final bool buddies;
 
   /// Marketing & promotions (admin broadcasts). Default OFF (opt-in).
   final bool marketing;
@@ -96,6 +102,7 @@ class NotificationPreferences extends Equatable {
     bool? communityChat,
     bool? announcements,
     bool? tips,
+    bool? buddies,
     bool? marketing,
     bool? soundEnabled,
     bool? vibrationEnabled,
@@ -113,6 +120,7 @@ class NotificationPreferences extends Equatable {
       communityChat: communityChat ?? this.communityChat,
       announcements: announcements ?? this.announcements,
       tips: tips ?? this.tips,
+      buddies: buddies ?? this.buddies,
       marketing: marketing ?? this.marketing,
       soundEnabled: soundEnabled ?? this.soundEnabled,
       vibrationEnabled: vibrationEnabled ?? this.vibrationEnabled,
@@ -133,6 +141,7 @@ class NotificationPreferences extends Equatable {
         communityChat,
         announcements,
         tips,
+        buddies,
         marketing,
         soundEnabled,
         vibrationEnabled,

@@ -89,7 +89,7 @@ void main() {
     // Backing out with "Decline" changes nothing and records nothing.
     await tester.tap(find.byKey(const Key('aiServicesSwitch')));
     await tester.pumpAndSettle();
-    expect(find.textContaining('Google Gemini'), findsOneWidget);
+    expect(find.textContaining('Alibaba Cloud Qwen'), findsOneWidget); // AI notice v3 (2026-10-23)
     await tester.ensureVisible(find.byKey(const Key('aiConsentDecline')));
     await tester.pump();
     await tester.tap(find.byKey(const Key('aiConsentDecline')));
