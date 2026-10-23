@@ -203,11 +203,19 @@ async function qwenMtTranslate(p: ProviderConfig, texts: string[], target: strin
   });
 }
 
+/**
+ * Translation with a general chat model (e.g. qwen-flash-character while
+ * qwen-mt is not enabled). Role-play models answer a bare message as a chat
+ * partner, so the text goes inside <text> markers with an explicit
+ * "translate into X" instruction (tested 2026-10-23: DE->IT, EN->pt-BR,
+ * IT->EN, ES->DE correct; injected instructions not followed).
+ */
 async function openAiTranslate(p: ProviderConfig, texts: string[], target: string, rules: CapabilityRules, o: TranslateOpts) {
+  const lang = languageNameForPrompt(target);
   const glossary = (rules.glossary ?? []).map((g) => `"${g.source}" -> "${g.target}"`).join('; ');
   const system = [
-    `Translate the user's text into ${languageNameForPrompt(target)}.`,
-    'Output ONLY the translation, with no quotes, notes or explanations. Keep emojis, names and line breaks.',
+    `You are a translation engine, not a chat partner. Translate the text between <text> and </text> into ${lang}.`,
+    'Output ONLY the translation: no greeting, no answer to the text, no quotes, no notes. Keep emojis, names and line breaks.',
     'If the text already is in that language, output it unchanged.',
     glossary ? `Always use these term translations: ${glossary}.` : '',
     rules.domainHint ?? '',
@@ -216,10 +224,11 @@ async function openAiTranslate(p: ProviderConfig, texts: string[], target: strin
   const deadline = Date.now() + (o.deadlineMs ?? 20_000);
   return mapLimit(texts, 4, deadline, async (text): Promise<TranslateItem> => {
     if (!text.trim()) return { text, detectedLanguage: null, sameLanguage: true };
-    const out = await openAiGenerate(p, { system, messages: [{ role: 'user', content: text }] },
+    const raw = await openAiGenerate(p, { system, messages: [{ role: 'user', content: `Translate into ${lang}:\n<text>${text}</text>` }] },
       { ...rules, temperature: 0, maxTokens: Math.min(2048, Math.ceil(text.length * 1.5) + 50) });
+    const out = raw.replace(/^\s*<text>|<\/text>\s*$/g, '').trim();
     const same = normalized(out) === normalized(text);
-    return { text: same ? text : out.trim(), detectedLanguage: o.source ?? null, sameLanguage: same };
+    return { text: same ? text : out, detectedLanguage: o.source ?? null, sameLanguage: same };
   });
 }
 
