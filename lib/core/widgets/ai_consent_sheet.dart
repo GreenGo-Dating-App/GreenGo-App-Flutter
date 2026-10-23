@@ -64,7 +64,7 @@ class _AiConsentSheetBody extends StatelessWidget {
                 const Icon(Icons.auto_awesome, color: AppColors.richGold),
                 const SizedBox(width: 10),
                 Expanded(
-                  child: Text(l10n.aiConsentTitleV2,
+                  child: Text(l10n.aiConsentTitleV3,
                       style: const TextStyle(
                           color: AppColors.textPrimary,
                           fontSize: 18,
@@ -73,14 +73,14 @@ class _AiConsentSheetBody extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 14),
-            Text(l10n.aiConsentIntroV2,
+            Text(l10n.aiConsentIntroV3,
                 style: const TextStyle(
                     color: AppColors.textPrimary, fontSize: 14, height: 1.4)),
             const SizedBox(height: 14),
-            point(Icons.business, l10n.aiConsentProvidersV2),
-            point(Icons.chat_bubble_outline, l10n.aiConsentWhatSentV2),
-            point(Icons.translate, l10n.aiConsentTranslateReceived),
-            point(Icons.g_translate, l10n.aiConsentAutoTranslate),
+            point(Icons.business, l10n.aiConsentProvidersV3),
+            point(Icons.chat_bubble_outline, l10n.aiConsentWhatSentV3),
+            point(Icons.translate, l10n.aiConsentTranslateReceivedV3),
+            point(Icons.g_translate, l10n.aiConsentAutoTranslateV3),
             point(Icons.help_outline, l10n.aiConsentWhy),
             point(Icons.toggle_off_outlined, l10n.aiConsentDeclineInfo),
             const SizedBox(height: 8),

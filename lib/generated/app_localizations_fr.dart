@@ -28576,6 +28576,30 @@ class AppLocalizationsFr extends AppLocalizations {
       'Traduction automatique : les conseils des communautés, les descriptions d\'événements et d\'expériences et les avis écrits par d\'autres personnes s\'affichent dans ta langue. Leur texte (jamais le tien, jamais ton profil) est envoyé au service de traduction de Google. Si tu refuses, tu vois le texte original et tu peux toucher Traduire à tout moment.';
 
   @override
+  String get aiConsentTitleV3 =>
+      'Les fonctions d\'IA utilisent les services d\'Alibaba Cloud, de Google et d\'Anthropic';
+
+  @override
+  String get aiConsentIntroV3 =>
+      'La traduction des messages, la lecture à voix haute, le coach linguistique IA, les GreenGo Buddies (amis de discussion IA) et l\'assistant d\'aide ne fonctionnent que si GreenGo envoie le texte concerné à ces fournisseurs.';
+
+  @override
+  String get aiConsentProvidersV3 =>
+      'Qui : les modèles Qwen d\'Alibaba Cloud, avec un traitement aux États-Unis (traductions, lecture à voix haute, coach IA et GreenGo Buddies) ; Google (traduction, audio et coach IA quand Qwen n\'est pas disponible) ; Anthropic Claude (assistant d\'aide).';
+
+  @override
+  String get aiConsentWhatSentV3 =>
+      'Ce qui est envoyé : uniquement le texte du message sur lequel tu utilises la fonction (y compris les messages que d\'autres personnes t\'ont envoyés, tes discussions avec tes Buddies et les messages que tu écris à l\'assistance) et les langues. Jamais ton nom, tes photos ni ton profil.';
+
+  @override
+  String get aiConsentTranslateReceivedV3 =>
+      'Les messages que tu reçois peuvent être traduits quand tu touches Traduire ; le texte est envoyé à Alibaba Cloud (Qwen) ou, à défaut, à Google.';
+
+  @override
+  String get aiConsentAutoTranslateV3 =>
+      'Traduction automatique : les conseils des communautés, les descriptions d\'événements et d\'expériences et les avis écrits par d\'autres personnes s\'affichent dans ta langue. Leur texte (jamais le tien, jamais ton profil) est envoyé à Alibaba Cloud (Qwen) ou à Google. Si tu refuses, tu vois le texte original et tu peux toucher Traduire à tout moment.';
+
+  @override
   String get aiServicesFeatureAutoTranslate =>
       'Traduction automatique des conseils des communautés, des événements, des expériences et des avis dans ta langue';
 

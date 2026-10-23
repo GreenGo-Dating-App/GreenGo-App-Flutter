@@ -28454,6 +28454,30 @@ class AppLocalizationsIt extends AppLocalizations {
       'Traduzione automatica: i consigli delle community, le descrizioni di eventi ed esperienze e le recensioni scritte da altre persone vengono mostrati nella tua lingua. Il loro testo (mai il tuo, mai il tuo profilo) viene inviato al servizio di traduzione di Google. Se rifiuti, vedi il testo originale e puoi toccare Traduci in qualsiasi momento.';
 
   @override
+  String get aiConsentTitleV3 =>
+      'Le funzioni IA usano servizi di Alibaba Cloud, Google e Anthropic';
+
+  @override
+  String get aiConsentIntroV3 =>
+      'La traduzione dei messaggi, la lettura ad alta voce, il coach linguistico IA, i GreenGo Buddies (amici IA con cui chattare) e l\'assistente di supporto funzionano solo se GreenGo invia a questi fornitori il testo interessato.';
+
+  @override
+  String get aiConsentProvidersV3 =>
+      'Chi: i modelli Qwen di Alibaba Cloud, con elaborazione negli Stati Uniti (traduzioni, lettura ad alta voce, coach IA e GreenGo Buddies); Google (traduzioni, audio e coach IA quando Qwen non è disponibile); Anthropic Claude (assistente di supporto).';
+
+  @override
+  String get aiConsentWhatSentV3 =>
+      'Cosa viene inviato: solo il testo del messaggio su cui usi la funzione (compresi i messaggi che altre persone ti hanno inviato, le tue chat con i tuoi Buddies e i messaggi che scrivi al supporto) e le lingue. Mai il tuo nome, le tue foto o il tuo profilo.';
+
+  @override
+  String get aiConsentTranslateReceivedV3 =>
+      'I messaggi che ricevi possono essere tradotti quando tocchi Traduci; il testo viene inviato ad Alibaba Cloud (Qwen) o, in alternativa, a Google.';
+
+  @override
+  String get aiConsentAutoTranslateV3 =>
+      'Traduzione automatica: i consigli delle community, le descrizioni di eventi ed esperienze e le recensioni scritte da altre persone vengono mostrati nella tua lingua. Il loro testo (mai il tuo, mai il tuo profilo) viene inviato ad Alibaba Cloud (Qwen) o a Google. Se rifiuti, vedi il testo originale e puoi toccare Traduci in qualsiasi momento.';
+
+  @override
   String get aiServicesFeatureAutoTranslate =>
       'Traduzione automatica di consigli delle community, eventi, esperienze e recensioni nella tua lingua';
 

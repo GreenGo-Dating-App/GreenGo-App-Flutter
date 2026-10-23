@@ -28149,6 +28149,30 @@ class AppLocalizationsEn extends AppLocalizations {
       'Automatic translation: community tips, event and experience descriptions and reviews written by other people are shown in your language. Their text (never yours, never your profile) is sent to Google\'s translation service. If you decline, you see the original text and can tap Translate at any time.';
 
   @override
+  String get aiConsentTitleV3 =>
+      'AI features use Alibaba Cloud, Google and Anthropic services';
+
+  @override
+  String get aiConsentIntroV3 =>
+      'Translating messages, read-aloud audio, the AI language coach, GreenGo Buddies (AI chat friends) and the support assistant only work if GreenGo sends the text involved to these providers.';
+
+  @override
+  String get aiConsentProvidersV3 =>
+      'Who: Alibaba Cloud Qwen models, processed in the USA (translations, read-aloud audio, AI coach and GreenGo Buddies); Google (translation, audio and AI coach when Qwen is unavailable); Anthropic Claude (support assistant).';
+
+  @override
+  String get aiConsentWhatSentV3 =>
+      'What is sent: only the text of the message you use the feature on (including messages other people sent you, your chats with your Buddies and the messages you write to support) and the languages. Never your name, photos or profile.';
+
+  @override
+  String get aiConsentTranslateReceivedV3 =>
+      'Messages you receive may be translated when you tap Translate; the text is sent to Alibaba Cloud (Qwen) or, as a fallback, to Google.';
+
+  @override
+  String get aiConsentAutoTranslateV3 =>
+      'Automatic translation: community tips, event and experience descriptions and reviews written by other people are shown in your language. Their text (never yours, never your profile) is sent to Alibaba Cloud (Qwen) or Google. If you decline, you see the original text and can tap Translate at any time.';
+
+  @override
   String get aiServicesFeatureAutoTranslate =>
       'Automatic translation of community tips, events, experiences and reviews into your language';
 

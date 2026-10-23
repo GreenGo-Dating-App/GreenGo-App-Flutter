@@ -48046,6 +48046,42 @@ abstract class AppLocalizations {
   /// **'Automatic translation: community tips, event and experience descriptions and reviews written by other people are shown in your language. Their text (never yours, never your profile) is sent to Google\'s translation service. If you decline, you see the original text and can tap Translate at any time.'**
   String get aiConsentAutoTranslate;
 
+  /// AI consent sheet v3 title (names Alibaba Cloud / Qwen)
+  ///
+  /// In en, this message translates to:
+  /// **'AI features use Alibaba Cloud, Google and Anthropic services'**
+  String get aiConsentTitleV3;
+
+  /// AI consent sheet v3: which features send text to AI providers
+  ///
+  /// In en, this message translates to:
+  /// **'Translating messages, read-aloud audio, the AI language coach, GreenGo Buddies (AI chat friends) and the support assistant only work if GreenGo sends the text involved to these providers.'**
+  String get aiConsentIntroV3;
+
+  /// AI consent sheet v3: provider list (Alibaba Cloud Qwen, Google, Anthropic)
+  ///
+  /// In en, this message translates to:
+  /// **'Who: Alibaba Cloud Qwen models, processed in the USA (translations, read-aloud audio, AI coach and GreenGo Buddies); Google (translation, audio and AI coach when Qwen is unavailable); Anthropic Claude (support assistant).'**
+  String get aiConsentProvidersV3;
+
+  /// AI consent sheet v3: what is sent (incl. GreenGo Buddies chats)
+  ///
+  /// In en, this message translates to:
+  /// **'What is sent: only the text of the message you use the feature on (including messages other people sent you, your chats with your Buddies and the messages you write to support) and the languages. Never your name, photos or profile.'**
+  String get aiConsentWhatSentV3;
+
+  /// AI consent sheet v3: translation of received messages
+  ///
+  /// In en, this message translates to:
+  /// **'Messages you receive may be translated when you tap Translate; the text is sent to Alibaba Cloud (Qwen) or, as a fallback, to Google.'**
+  String get aiConsentTranslateReceivedV3;
+
+  /// AI consent sheet v3: automatic translation of public content written by others
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic translation: community tips, event and experience descriptions and reviews written by other people are shown in your language. Their text (never yours, never your profile) is sent to Alibaba Cloud (Qwen) or Google. If you decline, you see the original text and can tap Translate at any time.'**
+  String get aiConsentAutoTranslateV3;
+
   /// AI services settings card: feature covered by the switch (automatic translation)
   ///
   /// In en, this message translates to:

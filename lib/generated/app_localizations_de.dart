@@ -28487,6 +28487,30 @@ class AppLocalizationsDe extends AppLocalizations {
       'Automatische Übersetzung: Community-Tipps, Beschreibungen von Events und Erlebnissen sowie Bewertungen anderer Personen werden in deiner Sprache angezeigt. Ihr Text (nie deiner, nie dein Profil) wird an den Übersetzungsdienst von Google gesendet. Wenn du ablehnst, siehst du den Originaltext und kannst jederzeit auf Übersetzen tippen.';
 
   @override
+  String get aiConsentTitleV3 =>
+      'KI-Funktionen nutzen Dienste von Alibaba Cloud, Google und Anthropic';
+
+  @override
+  String get aiConsentIntroV3 =>
+      'Das Übersetzen von Nachrichten, das Vorlesen, der KI-Sprachcoach, GreenGo Buddies (KI-Chatfreunde) und der Support-Assistent funktionieren nur, wenn GreenGo den betreffenden Text an diese Anbieter sendet.';
+
+  @override
+  String get aiConsentProvidersV3 =>
+      'Wer: Qwen-Modelle von Alibaba Cloud, Verarbeitung in den USA (Übersetzungen, Vorlesen, KI-Coach und GreenGo Buddies); Google (Übersetzung, Audio und KI-Coach, wenn Qwen nicht verfügbar ist); Anthropic Claude (Support-Assistent).';
+
+  @override
+  String get aiConsentWhatSentV3 =>
+      'Was gesendet wird: nur der Text der Nachricht, für die du die Funktion nutzt (auch Nachrichten, die dir andere geschickt haben, deine Chats mit deinen Buddies und Nachrichten an den Support), und die Sprachen. Niemals dein Name, deine Fotos oder dein Profil.';
+
+  @override
+  String get aiConsentTranslateReceivedV3 =>
+      'Empfangene Nachrichten können übersetzt werden, wenn du auf Übersetzen tippst; der Text wird an Alibaba Cloud (Qwen) oder ersatzweise an Google gesendet.';
+
+  @override
+  String get aiConsentAutoTranslateV3 =>
+      'Automatische Übersetzung: Community-Tipps, Beschreibungen von Events und Erlebnissen sowie Bewertungen anderer Personen werden in deiner Sprache angezeigt. Deren Text (nie deiner, nie dein Profil) wird an Alibaba Cloud (Qwen) oder Google gesendet. Wenn du ablehnst, siehst du den Originaltext und kannst jederzeit auf Übersetzen tippen.';
+
+  @override
   String get aiServicesFeatureAutoTranslate =>
       'Automatische Übersetzung von Community-Tipps, Events, Erlebnissen und Bewertungen in deine Sprache';
 

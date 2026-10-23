@@ -28386,6 +28386,30 @@ class AppLocalizationsPt extends AppLocalizations {
       'Tradução automática: as dicas das comunidades, as descrições de eventos e experiências e as avaliações escritas por outras pessoas são mostradas no teu idioma. O texto delas (nunca o teu, nunca o teu perfil) é enviado ao serviço de tradução da Google. Se recusares, vês o texto original e podes tocar em Traduzir quando quiseres.';
 
   @override
+  String get aiConsentTitleV3 =>
+      'As funcionalidades de IA usam serviços da Alibaba Cloud, da Google e da Anthropic';
+
+  @override
+  String get aiConsentIntroV3 =>
+      'A tradução de mensagens, a leitura em voz alta, o treinador de línguas com IA, os GreenGo Buddies (amigos de conversa com IA) e o assistente de apoio só funcionam se o GreenGo enviar o texto em causa a estes fornecedores.';
+
+  @override
+  String get aiConsentProvidersV3 =>
+      'Quem: os modelos Qwen da Alibaba Cloud, com processamento nos EUA (traduções, leitura em voz alta, treinador de IA e GreenGo Buddies); Google (tradução, áudio e treinador de IA quando o Qwen não está disponível); Anthropic Claude (assistente de apoio).';
+
+  @override
+  String get aiConsentWhatSentV3 =>
+      'O que é enviado: apenas o texto da mensagem em que usa a funcionalidade (incluindo mensagens que outras pessoas lhe enviaram, as suas conversas com os seus Buddies e as mensagens que escreve ao apoio) e os idiomas. Nunca o seu nome, as suas fotos nem o seu perfil.';
+
+  @override
+  String get aiConsentTranslateReceivedV3 =>
+      'As mensagens que recebe podem ser traduzidas quando toca em Traduzir; o texto é enviado à Alibaba Cloud (Qwen) ou, em alternativa, à Google.';
+
+  @override
+  String get aiConsentAutoTranslateV3 =>
+      'Tradução automática: as dicas das comunidades, as descrições de eventos e experiências e as avaliações escritas por outras pessoas são mostradas no seu idioma. O texto delas (nunca o seu, nunca o seu perfil) é enviado à Alibaba Cloud (Qwen) ou à Google. Se recusar, vê o texto original e pode tocar em Traduzir a qualquer momento.';
+
+  @override
   String get aiServicesFeatureAutoTranslate =>
       'Tradução automática de dicas das comunidades, eventos, experiências e avaliações para o teu idioma';
 
@@ -56889,6 +56913,30 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get aiConsentAutoTranslate =>
       'Tradução automática: dicas das comunidades, descrições de eventos e experiências e avaliações escritas por outras pessoas são mostradas no seu idioma. O texto delas (nunca o seu, nunca o seu perfil) é enviado ao serviço de tradução do Google. Se você recusar, verá o texto original e poderá tocar em Traduzir quando quiser.';
+
+  @override
+  String get aiConsentTitleV3 =>
+      'Os recursos de IA usam serviços da Alibaba Cloud, do Google e da Anthropic';
+
+  @override
+  String get aiConsentIntroV3 =>
+      'A tradução de mensagens, a leitura em voz alta, o coach de idiomas com IA, os GreenGo Buddies (amigos de bate-papo com IA) e o assistente de suporte só funcionam se o GreenGo enviar o texto envolvido para esses provedores.';
+
+  @override
+  String get aiConsentProvidersV3 =>
+      'Quem: os modelos Qwen da Alibaba Cloud, com processamento nos EUA (traduções, leitura em voz alta, coach de IA e GreenGo Buddies); Google (tradução, áudio e coach de IA quando o Qwen não está disponível); Anthropic Claude (assistente de suporte).';
+
+  @override
+  String get aiConsentWhatSentV3 =>
+      'O que é enviado: apenas o texto da mensagem em que você usa o recurso (incluindo mensagens que outras pessoas te enviaram, suas conversas com seus Buddies e as mensagens que você escreve para o suporte) e os idiomas. Nunca seu nome, suas fotos ou seu perfil.';
+
+  @override
+  String get aiConsentTranslateReceivedV3 =>
+      'As mensagens que você recebe podem ser traduzidas quando você toca em Traduzir; o texto é enviado para a Alibaba Cloud (Qwen) ou, como alternativa, para o Google.';
+
+  @override
+  String get aiConsentAutoTranslateV3 =>
+      'Tradução automática: dicas das comunidades, descrições de eventos e experiências e avaliações escritas por outras pessoas são mostradas no seu idioma. O texto delas (nunca o seu, nunca o seu perfil) é enviado para a Alibaba Cloud (Qwen) ou para o Google. Se você recusar, vê o texto original e pode tocar em Traduzir a qualquer momento.';
 
   @override
   String get aiServicesFeatureAutoTranslate =>

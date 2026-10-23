@@ -106,16 +106,16 @@ void main() {
       expect(s.status, AiConsentStatus.unknown);
     });
 
-    test('a version-1 acceptance (Google only) asks again: v2 names Anthropic',
+    test('a version-2 acceptance asks again: v3 names Alibaba Cloud (Qwen)',
         () async {
-      expect(AiConsentService.currentVersion, 2);
-      final store = MemStore()..data['ai_consent_u1'] = '{"v":1,"a":true,"s":true}';
+      expect(AiConsentService.currentVersion, 3);
+      final store = MemStore()..data['ai_consent_u1'] = '{"v":2,"a":true,"s":true}';
       final rec = FakeRecorder();
       final s = svc(store, rec, () => 'u1');
       await s.load();
       expect(s.status, AiConsentStatus.unknown);
       await s.setDecision(accepted: true);
-      expect(rec.versions, [2]);
+      expect(rec.versions, [3]);
     });
 
     test('listeners hear the decision', () async {
@@ -313,12 +313,14 @@ void main() {
       await tester.pumpAndSettle();
     }
 
-    testWidgets('names Google services; Allow grants', (tester) async {
+    testWidgets('names Alibaba Cloud, Google and Anthropic; Allow grants', (tester) async {
       final rec = FakeRecorder();
       final s = svc(MemStore(), rec, () => 'u1');
       bool? result;
       await pump(tester, s, (r) => result = r);
-      expect(find.textContaining('Google Gemini'), findsOneWidget);
+      // v3 (2026-10-23): Qwen is the primary provider, Google the fallback.
+      expect(find.textContaining('Alibaba Cloud Qwen'), findsOneWidget);
+      expect(find.textContaining('Google (translation'), findsOneWidget);
       // Audit 2026-10: the support assistant's provider is named too.
       expect(find.textContaining('Anthropic Claude'), findsOneWidget);
       await tester.ensureVisible(find.byKey(const Key('aiConsentAccept')));

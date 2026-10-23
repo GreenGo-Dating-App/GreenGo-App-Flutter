@@ -95,7 +95,10 @@ class AiConsentService {
   /// Bump when the consent text changes materially: everyone is asked again.
   /// 2: Anthropic (support assistant) named in the notice (legal audit
   /// 2026-10). Everyone who accepted version 1 is asked again.
-  static const int currentVersion = 2;
+  /// 3: Alibaba Cloud (Qwen, processed in the USA) and GreenGo Buddies named
+  /// (2026-10-23, DRAFT wording pending legal review). The server only routes
+  /// a user's text to Qwen after a version-3 acceptance.
+  static const int currentVersion = 3;
 
   final AiConsentStore _store;
   final AiConsentRecorder _recorder;

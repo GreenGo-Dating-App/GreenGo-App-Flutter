@@ -1,12 +1,20 @@
 {
   "projects": {
-    "default": "greengo-chat"
+    "default": "greengo-chat",
+    "test": "greengo-chat-test"
   },
   "targets": {
     "greengo-chat": {
       "hosting": {
         "app": [
           "greengo-chat"
+        ]
+      }
+    },
+    "greengo-chat-test": {
+      "hosting": {
+        "app": [
+          "greengo-chat-test"
         ]
       }
     }
