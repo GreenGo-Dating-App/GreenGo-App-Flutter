@@ -23,6 +23,7 @@ import {
 import { removeProviderKey, secretNameFor, writeProviderKey } from './router/secrets';
 import { testProvider } from './router/router';
 import { isMockAllowed } from './router/mock';
+import { APP_LANGUAGES, MODEL_LANGUAGES, providerLanguages } from './router/languages';
 import { AI_USAGE_STATS, USAGE_SHARDS, dayKey } from './router/usage';
 import { AiConfig, CAPABILITIES, Capability, PROVIDER_TYPES, TYPE_KINDS, TYPE_NEEDS_KEY } from './router/types';
 
@@ -77,6 +78,9 @@ function publicView(c: AiConfig) {
     defaults: { routes: DEFAULT_ROUTES, rules: DEFAULT_RULES },
     keyStore: 'Google Cloud Secret Manager',
     mockAvailable: isMockAllowed(),
+    appLanguages: APP_LANGUAGES,
+    providerLanguages: Object.fromEntries(Object.values(c.providers).map((p) => [p.id, providerLanguages(p)])),
+    modelLanguages: MODEL_LANGUAGES,
     modelCatalog: MODEL_CATALOG,
   };
 }
@@ -161,6 +165,8 @@ export const MODEL_CATALOG: { id: string; label: string; types: string[]; kinds:
   { id: 'qwen-mt-plus', label: 'Qwen-MT Plus', types: ['qwen_mt'], kinds: ['translate'] },
   { id: 'qwen-mt-lite', label: 'Qwen-MT Lite', types: ['qwen_mt'], kinds: ['translate'] },
   { id: 'qwen3-tts-flash', label: 'Qwen3 TTS Flash', types: ['qwen_tts'], kinds: ['tts'] },
+  { id: 'qwen-audio-3.1-tts-flash', label: 'Qwen-Audio 3.1 TTS Flash (WebSocket)', types: ['qwen_audio_tts'], kinds: ['tts'] },
+  { id: 'qwen-audio-3.1-tts-plus', label: 'Qwen-Audio 3.1 TTS Plus (WebSocket)', types: ['qwen_audio_tts'], kinds: ['tts'] },
   // Small open models for a self-hosted engine (Ollama / vLLM, OpenAI-compatible /v1).
   { id: 'qwen3:0.6b', label: 'Qwen3 0.6B (Ollama)', types: ['openai_compatible'], kinds: ['text', 'translate'] },
   { id: 'qwen3:1.7b', label: 'Qwen3 1.7B (Ollama)', types: ['openai_compatible'], kinds: ['text', 'translate'] },

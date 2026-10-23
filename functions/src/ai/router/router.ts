@@ -15,6 +15,7 @@ import { generateWith, translateWith, ttsWith, TranslateOpts } from './adapters'
 import { loadConfig } from './config';
 import { applyReplyRules } from './rules';
 import { recordUsage } from './usage';
+import { supportsLanguage } from './languages';
 import {
   AiConfig, CallContext, Capability, CapabilityRules, GenerateRequest, GenerateResult, ProviderConfig, ProviderError,
   TYPE_KINDS, TranslateResult, TtsRequest, TtsResult, capabilityKind,
@@ -99,7 +100,7 @@ export async function translate(
   const rules = config.rules[cap] ?? {};
   const items: TranslateResult['items'] = texts.map(() => null);
   const providers: TranslateResult['providers'] = texts.map(() => null);
-  const chain = eligibleChain(config, cap, ctx);
+  const chain = eligibleChain(config, cap, ctx).filter((p) => supportsLanguage(p, target));
   for (let i = 0; i < chain.length; i++) {
     const todo = texts.map((_, k) => k).filter((k) => items[k] === null);
     if (!todo.length) break;
@@ -131,7 +132,7 @@ export async function translate(
 export async function speak(cap: Capability, req: TtsRequest, ctx: CallContext): Promise<TtsResult> {
   const config = await loadConfig();
   const rules = config.rules[cap] ?? {};
-  const chain = eligibleChain(config, cap, ctx);
+  const chain = eligibleChain(config, cap, ctx).filter((p) => supportsLanguage(p, req.language));
   if (!chain.length) throw new NoProviderError(cap);
   let last: unknown = null;
   for (let i = 0; i < chain.length; i++) {

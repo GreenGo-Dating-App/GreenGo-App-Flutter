@@ -162,7 +162,7 @@ describe('config validation', () => {
     for (const id of ['qwen_flash', 'qwen_mt_flash', 'qwen_tts', 'qwen_mt_public']) expect(c.providers[id].keyName).toBe('dashscope');
     expect(c.providers.qwen_flash.minConsentVersion).toBe(3);
     expect(c.providers.qwen_mt_public.minConsentVersion).toBe(0);
-    expect(c.providers.qwen_flash.baseUrl).toContain('dashscope-us.aliyuncs.com');
+    expect(c.providers.qwen_flash.baseUrl).toContain('dashscope-intl.aliyuncs.com');
   });
 
   it('defaults reproduce the pre-router providers', () => {
@@ -200,7 +200,7 @@ describe('generate', () => {
     expect(r.text.startsWith('Ciao!')).toBe(true);
     expect(r.providerId).toBe('qwen_flash');
     const [url, init] = fetchMock.mock.calls[0];
-    expect(url).toBe('https://dashscope-us.aliyuncs.com/compatible-mode/v1/chat/completions');
+    expect(url).toBe('https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completions');
     expect(init.headers.Authorization).toBe('Bearer sk-test-1234');
     const body = JSON.parse(init.body);
     expect(body.model).toBe('qwen-flash');
@@ -290,7 +290,7 @@ describe('speak', () => {
     expect(r.audio.length).toBe(3);
     const body = JSON.parse(fetchMock.mock.calls[0][1].body);
     expect(body).toEqual({ model: 'qwen3-tts-flash', input: { text: 'Ciao', voice: 'Cherry', language_type: 'Italian' } });
-    expect(fetchMock.mock.calls[0][0]).toBe('https://dashscope-us.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation');
+    expect(fetchMock.mock.calls[0][0]).toBe('https://dashscope-intl.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation');
   });
 
   it('lets Google speak a language Qwen TTS does not support', async () => {
@@ -380,5 +380,101 @@ describe('custom OpenAI-compatible engine without a key (e.g. Ollama)', () => {
     } finally {
       if (prev === undefined) delete process.env.FUNCTIONS_EMULATOR; else process.env.FUNCTIONS_EMULATOR = prev;
     }
+  });
+});
+
+// --------------------------------------------- Qwen-Audio TTS over WebSocket
+import { _setWsFactory, audioVoice, audioWsUrl } from '../qwenAudioTts';
+import { providerLanguages, supportsLanguage } from '../languages';
+
+describe('qwen_audio_tts (WebSocket)', () => {
+  const provider = { id: 'qwen_audio_tts', label: 'QA', type: 'qwen_audio_tts' as const, enabled: true,
+    baseUrl: 'https://dashscope-intl.aliyuncs.com', model: 'qwen-audio-3.1-tts-flash', keyName: 'dashscope', minConsentVersion: 0 };
+  const sent: any[] = [];
+  let headersSeen: Record<string, string> = {};
+  let urlSeen = '';
+  function fakeServer(mode: 'ok' | 'fail') {
+    _setWsFactory((url, headers) => {
+      urlSeen = url; headersSeen = headers;
+      const ws: any = { binaryType: '', close: jest.fn() };
+      ws.send = (data: string) => {
+        const m = JSON.parse(data); sent.push(m);
+        const a = m.header.action;
+        setImmediate(() => {
+          if (a === 'run-task') ws.onmessage({ data: JSON.stringify({ header: { event: 'task-started' } }) });
+          if (a === 'finish-task') {
+            if (mode === 'fail') return ws.onmessage({ data: JSON.stringify({ header: { event: 'task-failed', error_code: 'InvalidParameter' } }) });
+            ws.onmessage({ data: new Uint8Array([0xff, 0xfb, 1]).buffer });
+            ws.onmessage({ data: new Uint8Array([2, 3]).buffer });
+            ws.onmessage({ data: JSON.stringify({ header: { event: 'task-finished' } }) });
+          }
+        });
+      };
+      setImmediate(() => ws.onopen({}));
+      return ws;
+    });
+  }
+  beforeEach(() => { sent.length = 0; });
+  afterAll(() => _setWsFactory(null));
+
+  it('runs run-task -> continue-task -> finish-task and joins the binary mp3 frames', async () => {
+    fakeServer('ok');
+    const c = defaultConfig();
+    c.providers.qwen_audio_tts = provider;
+    c.routes.tts = { enabled: true, chain: ['qwen_audio_tts', 'google_tts'] };
+    _setConfig(c);
+    const r = await speak('tts', { text: 'Hola a todos', language: 'es', isMale: false }, { consentVersion: 0 });
+    expect(r).toMatchObject({ contentType: 'audio/mpeg', extension: 'mp3', voice: 'qwen:longanhuan_v3.1', providerId: 'qwen_audio_tts' });
+    expect([...r.audio]).toEqual([0xff, 0xfb, 1, 2, 3]);
+    expect(urlSeen).toBe('wss://dashscope-intl.aliyuncs.com/api-ws/v1/inference');
+    expect(headersSeen.Authorization).toBe('bearer sk-test-1234');
+    expect(sent.map((m) => m.header.action)).toEqual(['run-task', 'continue-task', 'finish-task']);
+    expect(new Set(sent.map((m) => m.header.task_id)).size).toBe(1);
+    expect(sent[0].payload).toMatchObject({ task: 'tts', function: 'SpeechSynthesizer', model: 'qwen-audio-3.1-tts-flash' });
+    expect(sent[1].payload.input.text).toBe('Hola a todos');
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
+  it('falls back to the next provider when the model refuses', async () => {
+    fakeServer('fail');
+    process.env.CLOUD_TTS_API_KEY = 'tts-key';
+    fetchMock.mockResolvedValueOnce(json({ audioContent: Buffer.from('mp3').toString('base64') }));
+    const c = defaultConfig();
+    c.providers.qwen_audio_tts = provider;
+    c.routes.tts = { enabled: true, chain: ['qwen_audio_tts', 'google_tts'] };
+    _setConfig(c);
+    const r = await speak('tts', { text: 'Ciao', language: 'it', isMale: true }, { consentVersion: 0 });
+    expect(r.providerId).toBe('google_tts');
+    delete process.env.CLOUD_TTS_API_KEY;
+  });
+
+  it('picks voices per language (English voices for en, multilingual for es/it, custom override)', () => {
+    expect(audioVoice(provider, 'en', false)).toBe('Abby_v3.1');
+    expect(audioVoice(provider, 'pt-BR', true)).toBe('xunanchuan_v3.1');
+    expect(audioVoice(provider, 'es', false)).toBe('longanhuan_v3.1');
+    expect(audioVoice({ ...provider, options: { voices: { it: { female: 'X_v3.1' } } } }, 'it', false)).toBe('X_v3.1');
+    expect(audioVoice(provider, 'xx', false)).toBeNull();
+    expect(audioWsUrl('https://dashscope-intl.aliyuncs.com/api/v1')).toBe('wss://dashscope-intl.aliyuncs.com/api-ws/v1/inference');
+  });
+});
+
+describe('supported languages per model', () => {
+  const p = (options?: any, model = 'qwen-mt-flash') => ({ id: 'x', label: 'x', type: 'qwen_mt' as const, enabled: true, model, options });
+  it('shows vendor info, and an admin list overrides it', () => {
+    expect(providerLanguages(p()).languages).toContain('pt-BR');
+    expect(providerLanguages(p(undefined, 'unknown-model')).languages).toBeNull();
+    expect(providerLanguages(p({ languages: ['it', 'pt_br'] })).languages).toEqual(['it', 'pt-BR']);
+  });
+  it('the router skips a provider only for languages an admin excluded', async () => {
+    expect(supportsLanguage(p(), 'es')).toBe(true);
+    expect(supportsLanguage(p({ languages: ['it', 'pt'] }), 'es')).toBe(false);
+    expect(supportsLanguage(p({ languages: ['it', 'pt'] }), 'pt-BR')).toBe(true);
+    const c = qwenConfig();
+    c.providers.qwen_mt_flash = { ...c.providers.qwen_mt_flash, options: { languages: ['it'] } };
+    _setConfig(c);
+    fetchMock.mockResolvedValueOnce(json({ data: { translations: [{ translatedText: 'Hola', detectedSourceLanguage: 'en' }] } }));
+    const r = await translate('translate_chat', ['Hi'], 'es', { consentVersion: 3 });
+    expect(r.providers[0]).toBe('google_v2');
+    expect(String(fetchMock.mock.calls[0][0])).toContain('translation.googleapis.com');
   });
 });

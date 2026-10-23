@@ -9,6 +9,7 @@ import { freeTranslateMany, normalizeTarget, sameBaseLanguage } from '../../mess
 import { accessToken, fetchBytes, fetchJson, getServerKey } from './http';
 import { readProviderKey } from './secrets';
 import { mockGenerate, mockSpeak, mockTranslate } from './mock';
+import { qwenAudioTts } from './qwenAudioTts';
 import { keyNameOf } from './config';
 import {
   CapabilityRules, ChatMessage, GenerateRequest, ProviderConfig, ProviderError, TranslateItem, TtsRequest, TtsResult,
@@ -384,6 +385,7 @@ export async function ttsWith(p: ProviderConfig, req: TtsRequest, rules: Capabil
   switch (p.type) {
     case 'google_tts': return googleTts(p, req, rules);
     case 'qwen_tts': return qwenTts(p, req, rules);
+    case 'qwen_audio_tts': return qwenAudioTts(p, await keyFor(p), req, rules);
     case 'mock': return { ...mockSpeak(), providerId: p.id };
     default: throw new ProviderError(`${p.type} cannot speak`, 0, false);
   }

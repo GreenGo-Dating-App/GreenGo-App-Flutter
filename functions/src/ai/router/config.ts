@@ -92,8 +92,12 @@ export function defaultConfig(): AiConfig {
   };
 }
 
-/** US (Virginia) DashScope endpoint (owner decision 2026-10-23). */
-export const DASHSCOPE_US = 'https://dashscope-us.aliyuncs.com';
+/**
+ * DashScope endpoint used by the Qwen preset. The owner's Model Studio key is
+ * in the International (Singapore) region (keys only work in their own
+ * region; the US one rejected it on 2026-10-23). Name kept for the callers.
+ */
+export const DASHSCOPE_US = 'https://dashscope-intl.aliyuncs.com';
 
 /** Providers + routes written by "Load Qwen preset" (keys are added separately). */
 export function qwenPreset(base: AiConfig): AiConfig {
@@ -113,6 +117,11 @@ export function qwenPreset(base: AiConfig): AiConfig {
     type: 'qwen_tts', baseUrl: `${DASHSCOPE_US}/api/v1`, model: 'qwen3-tts-flash',
     options: { voices: { default: { male: 'Ethan', female: 'Cherry' } } },
   };
+  // Qwen-Audio 3.1 TTS (WebSocket only; voices per language in qwenAudioTts.ts).
+  c.providers.qwen_audio_tts = {
+    ...(c.providers.qwen_audio_tts ?? {}), ...common, id: 'qwen_audio_tts', label: 'Qwen-Audio 3.1 TTS Flash',
+    type: 'qwen_audio_tts', baseUrl: 'https://dashscope-intl.aliyuncs.com', model: 'qwen-audio-3.1-tts-flash',
+  };
   // Public texts carry no personal data: no consent gate for that route, so
   // the public chain uses a consent-free copy of the MT provider.
   c.providers.qwen_mt_public = {
@@ -124,7 +133,7 @@ export function qwenPreset(base: AiConfig): AiConfig {
     translate_public: { enabled: true, chain: ['qwen_mt_public', 'google_free'] },
     text_assist: { enabled: true, chain: ['qwen_flash', 'gemini'] },
     text_buddies: { enabled: true, chain: ['qwen_flash'] },
-    tts: { enabled: true, chain: ['qwen_tts', 'google_tts'] },
+    tts: { enabled: true, chain: ['qwen_audio_tts', 'qwen_tts', 'google_tts'] },
   };
   return c;
 }
@@ -204,7 +213,7 @@ export function validateProvider(raw: any, existing?: ProviderConfig): ProviderC
   if (!PROVIDER_TYPES.includes(raw?.type)) throw new ConfigError('Unknown provider type');
   if (raw.type === 'mock' && !isMockAllowed()) throw new ConfigError('The mock provider is only allowed in test projects');
   const type = raw.type as ProviderConfig['type'];
-  const needsUrl = type === 'openai_compatible' || type === 'qwen_mt' || type === 'qwen_tts';
+  const needsUrl = type === 'openai_compatible' || type === 'qwen_mt' || type === 'qwen_tts' || type === 'qwen_audio_tts';
   const p: ProviderConfig = {
     id,
     type,

@@ -25,6 +25,7 @@ export const PROVIDER_TYPES = [
   'openai_compatible', // Qwen (DashScope compatible-mode), OpenAI, DeepSeek, vLLM ...
   'qwen_mt', // Qwen-MT translation (compatible-mode + translation_options)
   'qwen_tts', // Qwen TTS (DashScope multimodal-generation)
+  'qwen_audio_tts', // Qwen-Audio TTS 3.x (DashScope WebSocket, CosyVoice protocol)
   'gemini', // Google Gemini generateContent
   'google_translate_v2', // official Cloud Translation v2 (service account, no key)
   'google_free', // unofficial free Google Translate endpoint (no key)
@@ -38,6 +39,7 @@ export const TYPE_KINDS: Record<ProviderType, CapabilityKind[]> = {
   openai_compatible: ['text', 'translate'],
   qwen_mt: ['translate'],
   qwen_tts: ['tts'],
+  qwen_audio_tts: ['tts'],
   gemini: ['text'],
   google_translate_v2: ['translate'],
   google_free: ['translate'],
@@ -50,6 +52,7 @@ export const TYPE_NEEDS_KEY: Record<ProviderType, boolean> = {
   openai_compatible: true,
   qwen_mt: true,
   qwen_tts: true,
+  qwen_audio_tts: true,
   gemini: true,
   google_translate_v2: false,
   google_free: false,
