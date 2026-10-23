@@ -29,6 +29,7 @@ export const PROVIDER_TYPES = [
   'google_translate_v2', // official Cloud Translation v2 (service account, no key)
   'google_free', // unofficial free Google Translate endpoint (no key)
   'google_tts', // Google Cloud Text-to-Speech (Chirp 3 HD)
+  'mock', // canned key-free answers for tests (never in production, see mock.ts)
 ] as const;
 export type ProviderType = typeof PROVIDER_TYPES[number];
 
@@ -41,6 +42,7 @@ export const TYPE_KINDS: Record<ProviderType, CapabilityKind[]> = {
   google_translate_v2: ['translate'],
   google_free: ['translate'],
   google_tts: ['tts'],
+  mock: ['text', 'translate', 'tts'],
 };
 
 /** Types that need an API key (the Google ones may fall back to legacy keys). */
@@ -52,6 +54,7 @@ export const TYPE_NEEDS_KEY: Record<ProviderType, boolean> = {
   google_translate_v2: false,
   google_free: false,
   google_tts: true,
+  mock: false,
 };
 
 export interface ProviderConfig {

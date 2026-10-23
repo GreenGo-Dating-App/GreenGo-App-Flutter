@@ -8,6 +8,7 @@
 import { freeTranslateMany, normalizeTarget, sameBaseLanguage } from '../../messaging/freeTranslate';
 import { accessToken, fetchBytes, fetchJson, getServerKey } from './http';
 import { readProviderKey } from './secrets';
+import { mockGenerate, mockSpeak, mockTranslate } from './mock';
 import { keyNameOf } from './config';
 import {
   CapabilityRules, ChatMessage, GenerateRequest, ProviderConfig, ProviderError, TranslateItem, TtsRequest, TtsResult,
@@ -37,7 +38,12 @@ export function languageNameForPrompt(code: string): string {
 const classify = (status: number, what: string) =>
   new ProviderError(`${what} HTTP ${status}`, status, status === 0 || status === 408 || status === 429 || status >= 500);
 
+/** Self-hosted engines without a key (e.g. Ollama behind a tunnel): options.noAuth. */
+const noAuth = (p: ProviderConfig) => (p.options as any)?.noAuth === true;
+const authHeader = (key: string): Record<string, string> => (key ? { Authorization: `Bearer ${key}` } : {});
+
 async function keyFor(p: ProviderConfig, legacy?: () => Promise<string | null>): Promise<string> {
+  if (noAuth(p)) return (await readProviderKey(keyNameOf(p))) ?? '';
   const k = (await readProviderKey(keyNameOf(p))) ?? (legacy ? await legacy() : null);
   if (!k) throw new ProviderError(`no API key for ${p.id}`, 0, false);
   return k;
@@ -93,7 +99,7 @@ async function openAiGenerate(p: ProviderConfig, req: GenerateRequest, rules: Ca
   try {
     r = await fetchJson(joinUrl(p.baseUrl!, 'chat/completions'), {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
+      headers: { 'Content-Type': 'application/json', ...authHeader(key) },
       body: JSON.stringify(body),
     }, rules.timeoutMs ?? 20_000);
   } catch (e: any) {
@@ -141,6 +147,7 @@ export async function generateWith(p: ProviderConfig, req: GenerateRequest, rule
   switch (p.type) {
     case 'openai_compatible': return openAiGenerate(p, req, rules);
     case 'gemini': return geminiGenerate(p, req, rules);
+    case 'mock': return mockGenerate(req);
     default: throw new ProviderError(`${p.type} cannot generate text`, 0, false);
   }
 }
@@ -270,6 +277,7 @@ export async function translateWith(
     case 'openai_compatible': return openAiTranslate(p, texts, target, rules, o);
     case 'google_translate_v2': return googleV2Translate(texts, target, rules, o);
     case 'google_free': return googleFreeTranslate(texts, target, rules, o);
+    case 'mock': return mockTranslate(texts, target);
     default: throw new ProviderError(`${p.type} cannot translate`, 0, false);
   }
 }
@@ -367,6 +375,7 @@ export async function ttsWith(p: ProviderConfig, req: TtsRequest, rules: Capabil
   switch (p.type) {
     case 'google_tts': return googleTts(p, req, rules);
     case 'qwen_tts': return qwenTts(p, req, rules);
+    case 'mock': return { ...mockSpeak(), providerId: p.id };
     default: throw new ProviderError(`${p.type} cannot speak`, 0, false);
   }
 }

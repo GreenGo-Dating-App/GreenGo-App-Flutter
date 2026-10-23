@@ -14,6 +14,7 @@
  */
 import * as admin from 'firebase-admin';
 import '../../shared/firebaseAdmin';
+import { isMockAllowed } from './mock';
 import {
   AiConfig, CAPABILITIES, Capability, CapabilityRules, PROVIDER_TYPES, ProviderConfig, RouteConfig,
   TYPE_KINDS, capabilityKind,
@@ -128,6 +129,17 @@ export function qwenPreset(base: AiConfig): AiConfig {
   return c;
 }
 
+/** Test projects only: every capability answered by the key-free mock. */
+export function mockPreset(base: AiConfig): AiConfig {
+  if (!isMockAllowed()) throw new ConfigError('The mock provider is only allowed in test projects');
+  const c: AiConfig = JSON.parse(JSON.stringify(base));
+  c.providers.mock = { id: 'mock', label: 'Mock AI (test only)', type: 'mock', enabled: true, minConsentVersion: 0, model: 'mock' };
+  for (const cap of CAPABILITIES) {
+    c.routes[cap] = { enabled: true, chain: ['mock', ...c.routes[cap].chain.filter((id) => id !== 'mock')].slice(0, 5) };
+  }
+  return c;
+}
+
 // ---------------------------------------------------------------- validation
 
 export class ConfigError extends Error {
@@ -154,9 +166,12 @@ export function validateBaseUrl(v: unknown): string {
   } catch {
     throw new ConfigError('baseUrl is not a valid URL');
   }
-  if (u.protocol !== 'https:') throw new ConfigError('baseUrl must use https');
   if (u.username || u.password) throw new ConfigError('baseUrl must not contain credentials');
   if (u.search || u.hash) throw new ConfigError('baseUrl must not contain a query or fragment');
+  // Local Functions emulator only: a local engine such as Ollama on http://localhost:11434.
+  const localDev = process.env.FUNCTIONS_EMULATOR === 'true' && /^(localhost|127\.0\.0\.1)$/.test(u.hostname);
+  if (localDev) return u.toString().replace(/\/+$/, '');
+  if (u.protocol !== 'https:') throw new ConfigError('baseUrl must use https (expose a local engine through an https tunnel)');
   if (PRIVATE_HOST.some((re) => re.test(u.hostname))) throw new ConfigError('baseUrl host is not allowed');
   return u.toString().replace(/\/+$/, '');
 }
@@ -187,6 +202,7 @@ export function validateProvider(raw: any, existing?: ProviderConfig): ProviderC
   const id = String(raw?.id ?? '');
   if (!PROVIDER_ID.test(id)) throw new ConfigError('id must be 2-40 characters: a-z, 0-9, _');
   if (!PROVIDER_TYPES.includes(raw?.type)) throw new ConfigError('Unknown provider type');
+  if (raw.type === 'mock' && !isMockAllowed()) throw new ConfigError('The mock provider is only allowed in test projects');
   const type = raw.type as ProviderConfig['type'];
   const needsUrl = type === 'openai_compatible' || type === 'qwen_mt' || type === 'qwen_tts';
   const p: ProviderConfig = {
@@ -271,7 +287,9 @@ export function normalizeConfig(raw: any): AiConfig {
   if (!raw || typeof raw !== 'object') return d;
   const providers: Record<string, ProviderConfig> = { ...d.providers };
   for (const [id, p] of Object.entries<any>(raw.providers ?? {})) {
-    if (PROVIDER_ID.test(id) && p && PROVIDER_TYPES.includes(p.type)) providers[id] = { ...p, id };
+    if (PROVIDER_ID.test(id) && p && PROVIDER_TYPES.includes(p.type) && (p.type !== 'mock' || isMockAllowed())) {
+      providers[id] = { ...p, id };
+    }
   }
   const routes = { ...d.routes };
   const rules = { ...d.rules };

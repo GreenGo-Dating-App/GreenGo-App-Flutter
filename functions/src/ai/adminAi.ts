@@ -18,10 +18,11 @@ import '../shared/firebaseAdmin';
 import { AdminRole, requireAdmin } from '../shared/adminAuth';
 import {
   AI_CONFIG_DOC, BUILTIN_PROVIDERS, ConfigError, DEFAULT_ROUTES, DEFAULT_RULES, PROVIDER_ID, defaultConfig,
-  invalidateConfigCache, keyNameOf, normalizeConfig, qwenPreset, validateBaseUrl, validateProvider, validateRoute, validateRules,
+  invalidateConfigCache, keyNameOf, mockPreset, normalizeConfig, qwenPreset, validateBaseUrl, validateProvider, validateRoute, validateRules,
 } from './router/config';
 import { removeProviderKey, secretNameFor, writeProviderKey } from './router/secrets';
 import { testProvider } from './router/router';
+import { isMockAllowed } from './router/mock';
 import { AI_USAGE_STATS, USAGE_SHARDS, dayKey } from './router/usage';
 import { AiConfig, CAPABILITIES, Capability, PROVIDER_TYPES, TYPE_KINDS, TYPE_NEEDS_KEY } from './router/types';
 
@@ -75,6 +76,7 @@ function publicView(c: AiConfig) {
     builtinProviders: Object.keys(BUILTIN_PROVIDERS),
     defaults: { routes: DEFAULT_ROUTES, rules: DEFAULT_RULES },
     keyStore: 'Google Cloud Secret Manager',
+    mockAvailable: isMockAllowed(),
     modelCatalog: MODEL_CATALOG,
   };
 }
@@ -159,20 +161,28 @@ export const MODEL_CATALOG: { id: string; label: string; types: string[]; kinds:
   { id: 'qwen-mt-plus', label: 'Qwen-MT Plus', types: ['qwen_mt'], kinds: ['translate'] },
   { id: 'qwen-mt-lite', label: 'Qwen-MT Lite', types: ['qwen_mt'], kinds: ['translate'] },
   { id: 'qwen3-tts-flash', label: 'Qwen3 TTS Flash', types: ['qwen_tts'], kinds: ['tts'] },
+  // Small open models for a self-hosted engine (Ollama / vLLM, OpenAI-compatible /v1).
+  { id: 'qwen3:0.6b', label: 'Qwen3 0.6B (Ollama)', types: ['openai_compatible'], kinds: ['text', 'translate'] },
+  { id: 'qwen3:1.7b', label: 'Qwen3 1.7B (Ollama)', types: ['openai_compatible'], kinds: ['text', 'translate'] },
+  { id: 'qwen2.5:0.5b', label: 'Qwen2.5 0.5B (Ollama)', types: ['openai_compatible'], kinds: ['text', 'translate'] },
+  { id: 'qwen2.5:1.5b', label: 'Qwen2.5 1.5B (Ollama)', types: ['openai_compatible'], kinds: ['text', 'translate'] },
+  { id: 'llama3.2:1b', label: 'Llama 3.2 1B (Ollama)', types: ['openai_compatible'], kinds: ['text', 'translate'] },
+  { id: 'gemma3:1b', label: 'Gemma 3 1B (Ollama)', types: ['openai_compatible'], kinds: ['text', 'translate'] },
   { id: 'gemini-2.0-flash', label: 'Gemini 2.0 Flash', types: ['gemini'], kinds: ['text'] },
   { id: 'gemini-flash-latest', label: 'Gemini Flash (latest)', types: ['gemini'], kinds: ['text'] },
 ];
 
 /** GET {baseUrl}/models with the provider's key (OpenAI-compatible APIs). */
-async function liveModels(p: { baseUrl?: string; type: string; id: string; keyName?: string }): Promise<string[]> {
+async function liveModels(p: { baseUrl?: string; type: string; id: string; keyName?: string; options?: Record<string, unknown> }): Promise<string[]> {
   const { readProviderKey } = await import('./router/secrets');
   const { fetchJson } = await import('./router/http');
   if (!p.baseUrl) return [];
   const key = await readProviderKey(p.keyName || p.id);
-  if (!key) throw new HttpsError('failed-precondition', 'Save the API key first');
+  const open = (p as any).options?.noAuth === true;
+  if (!key && !open) throw new HttpsError('failed-precondition', 'Save the API key first');
   // TTS endpoints live under /api/v1: list from the compatible-mode root.
   const base = p.type === 'qwen_tts' ? p.baseUrl.replace(/\/api\/v1$/, '/compatible-mode/v1') : p.baseUrl;
-  const r = await fetchJson(`${base.replace(/\/+$/, '')}/models`, { headers: { Authorization: `Bearer ${key}` } }, 15_000);
+  const r = await fetchJson(`${base.replace(/\/+$/, '')}/models`, { headers: key ? { Authorization: `Bearer ${key}` } : {} }, 15_000);
   if (!r.ok) throw new HttpsError('unavailable', `The provider answered HTTP ${r.status} to /models`);
   const list = Array.isArray(r.body?.data) ? r.body.data : [];
   return list.map((m: any) => String(m?.id ?? '')).filter(Boolean).sort();
@@ -284,6 +294,18 @@ const WRITES: Record<string, (d: any, uid: string) => Promise<{ result: unknown;
   async applyQwenPreset(_d, uid) {
     const saved = await saveConfig(qwenPreset(await readConfig()), uid, 'Qwen preset applied');
     return { result: publicView(saved), audit: { preset: 'qwen' } };
+  },
+
+  /** Test projects only: route every capability to the key-free mock first. */
+  async applyMockPreset(_d, uid) {
+    let next: AiConfig;
+    try {
+      next = mockPreset(await readConfig());
+    } catch (e) {
+      return bad(e);
+    }
+    const saved = await saveConfig(next, uid, 'Mock preset applied (test project)');
+    return { result: publicView(saved), audit: { preset: 'mock' } };
   },
 
   async resetToDefaults(_d, uid) {

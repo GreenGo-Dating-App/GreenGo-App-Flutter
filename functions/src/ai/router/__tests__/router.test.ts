@@ -302,3 +302,83 @@ describe('speak', () => {
     delete process.env.CLOUD_TTS_API_KEY;
   });
 });
+
+// ------------------------------------------------------------------- mock
+import { isMockAllowed, mockGenerate, mockSpeak, mockTranslate } from '../mock';
+import { mockPreset, validateProvider } from '../config';
+import { applyReplyRules as applyRules, graphemeLength as glen } from '../rules';
+
+describe('mock provider (test projects only)', () => {
+  const saved = process.env.GCLOUD_PROJECT;
+  afterEach(() => { process.env.GCLOUD_PROJECT = saved; });
+
+  it('is refused in production', () => {
+    process.env.GCLOUD_PROJECT = 'greengo-chat';
+    expect(isMockAllowed()).toBe(false);
+    expect(() => mockGenerate({ messages: [{ role: 'user', content: 'hi' }] })).toThrow(/production/);
+    expect(() => validateProvider({ id: 'mock', type: 'mock' })).toThrow(/test projects/);
+    expect(() => mockPreset(defaultConfig())).toThrow(/test projects/);
+  });
+
+  it('answers every capability in a test project, no key and no network', async () => {
+    process.env.GCLOUD_PROJECT = 'greengo-chat-test';
+    _setConfig(mockPreset(defaultConfig()));
+    const g = await generate('text_buddies', { system: 'Always reply in Italian.', messages: [{ role: 'user', content: 'Ciao!' }] }, { consentVersion: 0 });
+    expect(g.providerId).toBe('mock');
+    expect(g.text).toMatch(/^(Che bello|Fantastico|Ottimo)/);
+    expect(glen(g.text)).toBeLessThanOrEqual(200);
+    expect(applyRules(g.text, { bannedTerms: [] }).banned).toBeNull();
+    const t = await translate('translate_chat', ['Hello'], 'pt-BR', { consentVersion: 0 });
+    expect(t.items[0]?.text).toBe('[→pt-BR] Hello');
+    const s = await speak('tts', { text: 'Ciao', language: 'it', isMale: false }, { consentVersion: 0 });
+    expect(s.audio.subarray(0, 4).toString()).toBe('RIFF');
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
+  it('returns valid JSON for memory, summary and chat-helper prompts', () => {
+    process.env.GCLOUD_PROJECT = 'greengo-chat-test';
+    const j = (content: string) => JSON.parse(mockGenerate({ messages: [{ role: 'user', content }], json: true }));
+    expect(j('Current memory facts (JSON): ["Likes pizza"]\nReturn {"facts": [...]}').facts[0]).toBe('Likes pizza');
+    expect(typeof j('Return {"summary": "..."}').summary).toBe('string');
+    expect(j('Suggest exactly 3 short replies').replies).toHaveLength(3);
+    expect(j('Assess the CEFR difficulty level').level).toBe('A2');
+    expect(mockTranslate(['a'], 'it')[0].text).toBe('[→it] a');
+    expect(mockSpeak().contentType).toBe('audio/wav');
+  });
+});
+
+// ---------------------------------------------------- custom engine (Ollama)
+describe('custom OpenAI-compatible engine without a key (e.g. Ollama)', () => {
+  const ollama = (baseUrl = 'https://my-ollama.example.com/v1') => {
+    const c = defaultConfig();
+    c.providers.ollama = { id: 'ollama', label: 'Ollama', type: 'openai_compatible', enabled: true, baseUrl,
+      model: 'qwen2.5:0.5b', minConsentVersion: 0, options: { noAuth: true } };
+    c.routes.text_buddies = { enabled: true, chain: ['ollama'] };
+    return c;
+  };
+
+  it('calls the engine with no Authorization header and no saved key', async () => {
+    keys.clear();
+    _setConfig(ollama());
+    fetchMock.mockResolvedValueOnce(chat('Ciao! Come va?'));
+    const r = await generate('text_buddies', { messages: [{ role: 'user', content: 'hi' }] }, { consentVersion: 0 });
+    expect(r.providerId).toBe('ollama');
+    const [url, init] = fetchMock.mock.calls[0];
+    expect(url).toBe('https://my-ollama.example.com/v1/chat/completions');
+    expect(init.headers.Authorization).toBeUndefined();
+    expect(JSON.parse(init.body).model).toBe('qwen2.5:0.5b');
+  });
+
+  it('accepts http://localhost only inside the Functions emulator', () => {
+    const prev = process.env.FUNCTIONS_EMULATOR;
+    try {
+      delete process.env.FUNCTIONS_EMULATOR;
+      expect(() => validateBaseUrl('http://localhost:11434/v1')).toThrow(ConfigError);
+      process.env.FUNCTIONS_EMULATOR = 'true';
+      expect(validateBaseUrl('http://localhost:11434/v1/')).toBe('http://localhost:11434/v1');
+      expect(() => validateBaseUrl('http://10.0.0.5:11434/v1')).toThrow(ConfigError);
+    } finally {
+      if (prev === undefined) delete process.env.FUNCTIONS_EMULATOR; else process.env.FUNCTIONS_EMULATOR = prev;
+    }
+  });
+});
