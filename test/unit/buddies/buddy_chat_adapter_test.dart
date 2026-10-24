@@ -68,4 +68,14 @@ void main() {
     expect(BuddyChatAdapter.keywordMatches('Rome', const [], null), isNull,
         reason: 'index loading: the bubble matches by itself');
   });
+
+  test('a translation into another language is never shown (old English cache in an Italian chat)', () {
+    final m = BuddyMessage(id: 'm2', role: BuddyMessageRole.buddy, text: 'Hi, how are you?', createdAt: at,
+        translation: const BuddyTranslation(text: 'Hi there, how are you doing?', lang: 'en'));
+    expect(BuddyChatAdapter.shownTranslation(m, chatLanguage: 'it', buddyLanguage: 'de'), isNull);
+    final it = BuddyMessage(id: 'm3', role: BuddyMessageRole.buddy, text: 'Hallo, wie geht es dir?', createdAt: at,
+        translation: const BuddyTranslation(text: 'Ciao, come stai?', lang: 'it'));
+    expect(BuddyChatAdapter.shownTranslation(it, chatLanguage: 'it', buddyLanguage: 'de'), 'Ciao, come stai?');
+    expect(BuddyChatAdapter.shownTranslation(it, chatLanguage: 'it', buddyLanguage: 'it'), isNull);
+  });
 }

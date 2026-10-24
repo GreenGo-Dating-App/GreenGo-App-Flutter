@@ -71,6 +71,9 @@ class BuddyChatAdapter {
     if (baseLanguage(chatLanguage) == baseLanguage(buddyLanguage)) return null;
     final lang = m.translation?.lang;
     if (lang != null && m.isBuddy && baseLanguage(lang) == baseLanguage(buddyLanguage)) return null;
+    // A translation into another language (e.g. an old English one in the
+    // device cache) is never shown in a chat translated into Italian.
+    if (lang != null && baseLanguage(lang) != baseLanguage(chatLanguage)) return null;
     if (sameText(t, m.text)) return null;
     return t;
   }

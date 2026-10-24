@@ -362,10 +362,14 @@ String buddyTranslatedIntoLabel(AppLocalizations l10n, String code) =>
     l10n.buddyTranslatedInto('${languageFlagEmoji(code)} ${buddyLanguageLabel(l10n, code)}'.trim());
 
 /// The language [buddy]'s chat is translated into: its `chatLanguage`, else
-/// (older Buddies, display only) the app language.
+/// (older Buddies) the Buddy's own language, exactly like the server, so an
+/// Italian Buddy is never shown "translated into English" because the app
+/// or phone is in English.
 String buddyChatLanguageOf(BuildContext context, Buddy? buddy) {
   final c = buddy?.settings.chatLanguage;
   if (c != null && BuddyCatalog.languages.contains(c)) return c;
+  final own = buddy?.settings.language;
+  if (own != null && BuddyCatalog.languages.contains(own)) return own;
   final l = Localizations.localeOf(context);
   return BuddyCatalog.languageForLocale(l.languageCode, l.countryCode);
 }
